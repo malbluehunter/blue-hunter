@@ -14,6 +14,10 @@
 .bnr_item {
   width: 30%;
 }
+.bnr_item:hover {
+  background-color: #000;
+  opacity: 0.4;
+}
 .bnr_list {
   margin-top: get_vw(50);
 }

@@ -18,32 +18,40 @@ const Footer = () => {
           <FollowUs />
           <ul className={styles.bnr_list}>
             <li className={styles.bnr_item}>
-              <StaticImage
-                src="../../assets/images/common/bnr_footer_01.png"
-                alt="日本財団 海と日本PROJECT"
-                layout="fullWidth"
-              />
+              <a href="">
+                <StaticImage
+                  src="../../assets/images/common/bnr_footer_01.png"
+                  alt="日本財団 海と日本PROJECT"
+                  layout="fullWidth"
+                />
+              </a>
             </li>
             <li className={styles.bnr_item}>
-              <StaticImage
-                src="../../assets/images/common/bnr_footer_02.png"
-                alt="日本財団 海と日本PROJECT"
-                layout="fullWidth"
-              />
+              <a href="">
+                <StaticImage
+                  src="../../assets/images/common/bnr_footer_02.png"
+                  alt="日本財団 海と日本PROJECT"
+                  layout="fullWidth"
+                />
+              </a>
             </li>
             <li className={styles.bnr_item}>
-              <StaticImage
-                src="../../assets/images/common/bnr_footer_03.png"
-                alt="日本財団 海と日本PROJECT"
-                layout="fullWidth"
-              />
+              <a href="">
+                <StaticImage
+                  src="../../assets/images/common/bnr_footer_03.png"
+                  alt="日本財団 海と日本PROJECT"
+                  layout="fullWidth"
+                />
+              </a>
             </li>
             <li className={styles.bnr_item}>
-              <StaticImage
-                src="../../assets/images/common/bnr_footer_04.png"
-                alt="日本財団 海と日本PROJECT"
-                layout="fullWidth"
-              />
+              <a href="">
+                <StaticImage
+                  src="../../assets/images/common/bnr_footer_04.png"
+                  alt="日本財団 海と日本PROJECT"
+                  layout="fullWidth"
+                />
+              </a>
             </li>
           </ul>
           <Copyright text="Copyright © The Nippon Foundation" />

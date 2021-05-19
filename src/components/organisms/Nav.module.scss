@@ -18,7 +18,7 @@
   border-right: 1px solid rgba(17, 43, 58, 0.2);
   font-weight: bold;
   height: get_vw(45);
-  padding-top: 3px;
+  padding-top: get_vw(3);
   background-repeat: no-repeat;
   margin-top: get_vw(12);
 }
