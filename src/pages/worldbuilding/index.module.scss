@@ -1,0 +1,38 @@
+@import "../../assets/scss/mixin";
+
+.container {
+  background-image: url("../../assets/images/common/bg_world.png");
+  background-size: cover;
+}
+.contents_wraper {
+  margin: get_vw(30) auto;
+  width: get_vw(1024);
+  height: get_vw(1000);
+}
+.bread_area {
+  margin-top: get_vw(18);
+}
+.contents_area {
+  position: relative;
+  color: #fff;
+  width: get_vw(750);
+  @include fz_vw(12);
+}
+.contents_area_top {
+  background: url("../../assets/images/common/contentsArea_top.png") no-repeat;
+  background-position: get_vw(8) top;
+  height: get_vw(159);
+}
+.contents_area_inner {
+  width: get_vw(750);
+  background: url("../../assets/images/common/contentsArea_center.png") repeat-y;
+  background-position: get_vw(8) center;
+  background-size: 97.8%;
+}
+.contents_area_bottom {
+  background: url("../../assets/images/common/contentsArea_bottom.png")
+    no-repeat;
+  background-position: center bottom;
+  width: get_vw(750);
+  height: get_vw(145);
+}

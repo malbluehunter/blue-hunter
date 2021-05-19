@@ -1,0 +1,26 @@
+@import "../../assets/scss/mixin";
+
+.bread ul {
+  display: flex;
+  list-style-type: none;
+}
+.bread li a {
+  padding: 5px;
+  color: #fff;
+  @include fz_vw(12);
+  opacity: 0.8;
+  text-decoration: underline;
+}
+.bread li:last-child a {
+  text-decoration: none;
+  color: #43dbf2;
+}
+.bread li:after {
+  content: "\003e";
+  margin-left: get_vw(3);
+  margin-right: get_vw(3);
+  color: #43dbf2;
+}
+.bread li:last-child::after {
+  content: "";
+}

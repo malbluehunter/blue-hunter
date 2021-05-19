@@ -1,0 +1,48 @@
+// Media Query メディアクエリ
+// ex) @include mq(md){};
+// --------------------------------------------------
+
+// Breakpoint ブレイクポイント
+$breakpoints: (
+  "sm": "screen and (min-width: 415px)",
+  "sp-only": "screen and (max-width: 767px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 1028px)",
+  "xl": "screen and (min-width: 1230px)",
+) !default;
+
+// @mixinでメディアクエリを呼び出す
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// Size Auto Calculation サイズ自動計算
+// --------------------------------------------------
+
+// vw function SPデザイン幅基準のサイズ(768)
+// ex) width: get_vw(100);
+@function get_vw($size, $viewport: 1440) {
+  $rate: 100 / $viewport;
+
+  @return $rate * $size * 1vw;
+}
+
+// font-size mixin
+// ex) @include fz_vw(20);
+@mixin fz_vw($font_size: 10) {
+  font-size: get_vw($font_size);
+}
+
+// margin-bottom mixin
+// ex) @include mgbtm_vw(20);
+@mixin mgbtm_vw($mg_btm: 10) {
+  margin-bottom: get_vw($mg_btm);
+}
+
+// padding-bottom mixin
+// ex) @include pdbtm_vw(20);
+@mixin pdbtm_vw($pd_btm: 10) {
+  padding-bottom: get_vw($pd_btm);
+}
