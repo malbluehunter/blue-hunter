@@ -1,0 +1,19 @@
+@import "../../assets/scss/mixin";
+
+.wrapper {
+  position: relative;
+  width: get_vw(165);
+  margin: auto;
+}
+.text {
+  font-family: DIN Condensed;
+  @include fz_vw(24);
+}
+.img {
+  width: get_vw(55);
+}
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -2,14 +2,14 @@ import * as React from "react"
 import * as styles from "./Nav.module.scss"
 import { StaticImage } from "gatsby-plugin-image"
 
-const Navi = () => {
+const Nav = () => {
   return (
     <div className={styles.wrap}>
       <div className={styles.lang_area}>
         <div className={styles.lang_item_01}>
           <a className={styles.lang_item_link}>
             <StaticImage
-              src="../../assets/images/common/text_en.png"
+              src="../../assets/images/common/text_ja.png"
               alt="日本語"
               layout="fullWidth"
               className={styles.lang_item_img_01}
@@ -118,4 +118,4 @@ const Navi = () => {
   )
 }
 
-export default Navi
+export default Nav

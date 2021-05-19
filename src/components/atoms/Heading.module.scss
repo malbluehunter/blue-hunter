@@ -1,0 +1,6 @@
+@import "../../assets/scss/mixin";
+
+.heading {
+  @include fz_vw(26);
+  color: #fff;
+}

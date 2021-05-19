@@ -1,9 +1,35 @@
 @import "../../assets/scss/mixin";
 
-.logo__wrapper {
-  display: flex;
+.footer_area {
+  position: relative;
+  width: 100%;
+  padding: get_vw(28) 0 get_vw(38);
+  background-color: #112b3a;
 }
-.header__wraper {
+.bnr_list {
   display: flex;
   justify-content: space-between;
+  margin-top: get_vw(35);
+}
+.bnr_item {
+  width: 30%;
+}
+.bnr_list {
+  margin-top: get_vw(50);
+}
+.bnr_item:nth-child(1) {
+  width: get_vw(259);
+}
+.bnr_item:nth-child(2) {
+  width: get_vw(176);
+}
+.bnr_item:nth-child(3) {
+  width: get_vw(90);
+}
+.bnr_item:nth-child(4) {
+  width: get_vw(90);
+}
+.footer_inner {
+  width: get_vw(705);
+  margin: auto;
 }

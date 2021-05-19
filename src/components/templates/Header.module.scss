@@ -3,7 +3,13 @@
 .logo__wrapper {
   display: flex;
 }
-.header__wraper {
+.header__wrapper {
   display: flex;
   justify-content: space-between;
+}
+.nav_area {
+  position: fixed;
+  top: get_vw(4);
+  right: 0;
+  z-index: 100;
 }

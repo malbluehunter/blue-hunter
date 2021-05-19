@@ -2,7 +2,6 @@
 
 .wrap {
   position: relative;
-  margin-top: 0.35vw;
   text-align: center;
 }
 .inner {
@@ -116,6 +115,7 @@
   text-align: center;
   margin: get_vw(3) auto;
   z-index: 3;
+  color: #112b3a;
 }
 .inner_item_img_01 {
   width: get_vw(42);
