@@ -4,7 +4,7 @@
   position: relative;
 
   @include mq(md) {
-    max-width: get_vw(260);
+    max-width: get_vw(265);
   }
 }
 .LocalNav_area {
@@ -28,7 +28,6 @@
   font-weight: bold;
   line-height: 2;
   margin: 0 auto;
-  // text-indent: -1em;
 
   @include mq(md) {
     @include fz_vw(12);
@@ -38,17 +37,25 @@
 .LocalNav_list a {
   color: #fff;
 }
+
 .LocalNav_item {
+  @include fz_vw_sp(14);
+  list-style: decimal;
+  list-style-position: inside;
+  color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding: get_vw_sp(15) 0;
+  font-weight: bold;
 
   @include mq(md) {
+    @include fz_vw(14);
     padding: get_vw(14) 0;
   }
 }
 .LocalNav_item:last-child {
   position: relative;
   text-align: center;
+  list-style: none;
   @include mq(md) {
     border-bottom: none;
     padding: get_vw(15) 0 get_vw(12);
@@ -68,7 +75,7 @@
 
   @include mq(md) {
     top: get_vw(24);
-    right: get_vw(20);
+    right: get_vw(30);
     width: get_vw(5);
     height: get_vw(5);
     border-top: 1px solid #fff;
@@ -96,19 +103,25 @@
   font-weight: bold;
 
   @include mq(md) {
-    top: get_vw(13);
+    top: get_vw(16);
     @include fz_vw(14);
   }
 }
 .LocalNav_list_02 {
+  list-style: inside;
   margin-left: get_vw_sp(9);
+  font-weight: bold;
 
   @include mq(md) {
     margin-left: get_vw(9);
   }
 }
 .LocalNav_list_02 li {
-  @include fz_vw(12);
+  @include fz_vw_sp(12);
+
+  @include mq(md) {
+    @include fz_vw(12);
+  }
 }
 .btn_openClose {
   cursor: pointer;
@@ -133,4 +146,8 @@
 .btn_openClose[aria-expanded="false"] {
   bottom: get_vw_sp(12);
   left: get_vw_sp(160);
+}
+
+.LocalNav_item.current {
+  color: #43dbf2;
 }

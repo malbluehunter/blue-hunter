@@ -7,6 +7,5 @@
 
   @include mq(md) {
     @include fz_vw(26);
-    font-weight: normal;
   }
 }

@@ -51,21 +51,21 @@
   }
 }
 .main_contents_area_top {
-  padding: get_vw_sp(15) get_vw_sp(27) get_vw_sp(0);
+  padding: get_vw_sp(11) get_vw_sp(27) 0;
   background: url("../../../assets/images/common/contentsArea_top.png")
     no-repeat;
-  background-position: get_vw(7) top;
-  background-size: 98.9%;
-  height: get_vw_sp(55);
+  background-position: get_vw(-5) top;
+  background-size: 100%;
 
   @include mq(md) {
-    height: get_vw(124);
-    padding: get_vw(20) get_vw(50) get_vw(16);
+    background-position: get_vw(-1) top;
+    height: get_vw(50);
+    padding: get_vw(19) get_vw(50) get_vw(3);
   }
 }
-.main_contents_area_inner {
+.main_contents_area_middle {
   position: relative;
-  padding: get_vw_sp(30) get_vw_sp(27) 0;
+  padding: get_vw_sp(10) 0;
   background: url("../../../assets/images/common/contentsArea_center.png")
     repeat-y;
   background-position: get_vw_sp(2) get_vw_sp(0);
@@ -77,6 +77,10 @@
     padding: 0 get_vw(50);
     width: get_vw(650);
   }
+}
+.main_contents_area_inner {
+  width: 80%;
+  margin: auto;
 }
 .main_contents_area_bottom {
   background: url("../../../assets/images/common/contentsArea_bottom.png")
@@ -91,26 +95,19 @@
     height: get_vw(143);
   }
 }
-.heading {
-  margin-top: get_vw(16);
-}
+
 .line {
-  position: absolute;
   width: get_vw_sp(285);
-  top: get_vw_sp(7);
-  left: get_vw_sp(20);
-  margin-left: get_vw(-7);
-  margin-top: get_vw(18);
-  width: get_vw_sw(670);
+  margin: get_vw_sp(10) auto;
 
   @include mq(md) {
-    width: get_vw(670);
-    top: get_vw(-45);
-    left: get_vw(47);
+    margin: get_vw(18) auto get_vw(22);
+    width: get_vw(660);
+    margin-left: get_vw(-10);
   }
 }
-.img__wrap {
-  margin-top: get_vw(38);
+.img_wrapper {
+  margin-top: get_vw(25);
 }
 .bnr_area {
   margin: get_vw_sp(30) calc(50% - 50vw);
@@ -121,4 +118,25 @@
 }
 main {
   position: relative;
+}
+.textLeading_wrapper {
+  margin-top: get_vw_sp(33);
+
+  @include mq(md) {
+    margin-top: get_vw(45);
+  }
+}
+.textMediumSub_wrapper {
+  margin-top: get_vw_sp(13);
+
+  @include mq(md) {
+    margin-top: get_vw(15);
+  }
+}
+.textAnnotation_wrapper {
+  margin-top: get_vw_sp(14);
+
+  @include mq(md) {
+    margin-top: get_vw(15);
+  }
 }

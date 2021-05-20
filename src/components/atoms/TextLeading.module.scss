@@ -1,0 +1,14 @@
+@import "../../assets/scss/mixin";
+
+.leading {
+  @include fz_vw_sp(20);
+  font-weight: bold;
+  padding: 0 get_vw(10);
+  background: transparent;
+  line-height: 1.1;
+  border-left: solid 5px #43dbf2;
+
+  @include mq(md) {
+    @include fz_vw(20);
+  }
+}

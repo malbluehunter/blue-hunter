@@ -20,37 +20,37 @@ const LocalNav = () => {
         />
       </div>
       <div className={styles.LocalNav_area} aria-expanded={isOpen}>
-        <ol className={styles.LocalNav_list}>
+        <ol className={styles.LocalNav_list} start="0">
           <li className={`${styles.LocalNav_item} ${styles.current}`}>
-            <a href="">0. 予備知識としてのCCZ</a>
+            <a href="">予備知識としてのCCZ</a>
           </li>
           <li className={styles.LocalNav_item}>
             <a href="">
-              1. 2行パターン海洋都市圏の誕生海洋都市圏の誕生海洋都市圏の誕生
+              2行パターン海洋都市圏の誕生海洋都市圏の誕生海洋都市圏の誕生
             </a>
             <ul className={styles.LocalNav_list_02}>
               <li className={styles.LocalNav_item_02}>
-                <a href="">・2行パターングラン=ムー【GRAND/MW】海洋都市圏の誕生</a>
+                <a href="">2行パターングラン=ムー【GRAND/MW】海洋都市圏の誕生</a>
               </li>
             </ul>
           </li>
           <li className={styles.LocalNav_item}>
-            <a href="">２. 国家か、都市か。</a>
+            <a href="">国家か、都市か。</a>
           </li>
           <li className={styles.LocalNav_item}>
-            <a href="">3. 国連から超都連へ。</a>
+            <a href="">国連から超都連へ。</a>
             <ul className={styles.LocalNav_list_02}>
               <li className={styles.LocalNav_item_02}>
-                <a href="">・The Encyclopedia of ”Octa/M”（1）</a>
+                <a href="">The Encyclopedia of ”Octa/M”（1）</a>
               </li>
               <li className={styles.LocalNav_item_02}>
-                <a href="">・The Encyclopedia of ”Octa/M”（2）</a>
+                <a href="">The Encyclopedia of ”Octa/M”（2）</a>
               </li>
               <li className={styles.LocalNav_item_02}>
-                <a href="">・The Encyclopedia of ”Octa/M”（3）</a>
+                <a href="">The Encyclopedia of ”Octa/M”（3）</a>
               </li>
               <li className={styles.LocalNav_item_02}>
-                <a href="">・The Encyclopedia of ”Octa/M”（4）</a>
+                <a href="">The Encyclopedia of ”Octa/M”（4）</a>
               </li>
             </ul>
           </li>

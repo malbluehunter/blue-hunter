@@ -110,7 +110,7 @@
     background-repeat: no-repeat;
   }
   & .inner_item_inner {
-    width: get_vw(100);
+    width: get_vw(98);
   }
 
   & .text {
@@ -155,25 +155,21 @@
   display: flex;
   z-index: 2;
 }
-.lang_item_01 {
-  width: get_vw(83);
-}
+.lang_item_01,
 .lang_item_02 {
   width: get_vw(88);
 }
 .lang_item_01 {
-  // background-image: url("../../assets/images/common/text_ja_hover.png");
+  background-image: url("../../assets/images/common/text_ja_hover.png");
   background-repeat: no-repeat;
   background-position: get_vw(3.75) get_vw(7.2);
   background-size: get_vw(78);
-  margin: auto;
 }
 .lang_item_02 {
   background-image: url("../../assets/images/common/text_en_hover.png");
   background-repeat: no-repeat;
   background-position: get_vw(3.75) get_vw(7.2);
   background-size: get_vw(78);
-  margin: auto;
 }
 .lang_item_link:hover img {
   visibility: hidden;

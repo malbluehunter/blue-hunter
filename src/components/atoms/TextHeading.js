@@ -1,10 +1,10 @@
 // import { getMainProps } from "gatsby-plugin-image/dist/src/components/hooks"
 import * as React from "react"
-import * as styles from "./Heading.module.scss"
+import * as styles from "./TextHeading.module.scss"
 
-const Heading = props => {
+const TextHeading = props => {
   const { text } = props
   return <h3 className={styles.heading}>{text}</h3>
 }
 
-export default Heading
+export default TextHeading
