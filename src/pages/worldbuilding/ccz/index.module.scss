@@ -1,0 +1,126 @@
+@import "../../../assets/scss/mixin";
+
+.container {
+  background-image: url("../../../assets/images/common/bg_world.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contents_wrapper {
+  margin: get_vw(30) auto 0;
+  padding-bottom: get_vw(80);
+  padding-top: get_vw_sp(35);
+  width: 87%;
+
+  @include mq(md) {
+    width: get_vw(1100);
+    padding-top: 0;
+  }
+  @include mq(lg) {
+    width: get_vw(1024);
+  }
+}
+.bread_area {
+  margin-top: get_vw_sp(15);
+  overflow-x: scroll;
+
+  /* テキストを改行しないようにする */
+  word-break: keep-all;
+  white-space: nowrap;
+
+  /* スクロールの動きを滑らかにする */
+  -webkit-overflow-scrolling: touch;
+
+  @include mq(md) {
+    margin-top: get_vw(18);
+  }
+}
+.contents_inner {
+  margin-top: get_vw_sp(20);
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include mq(md) {
+    margin-top: get_vw(30);
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.main_contents_area {
+  position: relative;
+  margin: get_vw_sp(20) auto 0;
+
+  @include mq(md) {
+    margin: 0;
+    width: get_vw(750);
+  }
+}
+.main_contents_area_top {
+  padding: get_vw_sp(15) get_vw_sp(27) get_vw_sp(0);
+  background: url("../../../assets/images/common/contentsArea_top.png") no-repeat;
+  background-position: get_vw(7) top;
+  background-size: 98.9%;
+  height: get_vw_sp(55);
+
+  @include mq(md) {
+    height: get_vw(124);
+    padding: get_vw(20) get_vw(50) get_vw(16);
+  }
+}
+.main_contents_area_inner {
+  position: relative;
+  padding: get_vw_sp(30) get_vw_sp(27) 0;
+  background: url("../../../assets/images/common/contentsArea_center.png") repeat-y;
+  background-position: get_vw_sp(2) get_vw_sp(0);
+  background-size: 97.7%;
+  margin-top: -1px;
+
+  @include mq(md) {
+    background-position: get_vw(7) center;
+    padding: 0 get_vw(50);
+    width: get_vw(650);
+  }
+}
+.main_contents_area_bottom {
+  background: url("../../../assets/images/common/contentsArea_bottom.png")
+    no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  background-position: -1px -2px;
+  height: get_vw_sp(62);
+
+  @include mq(md) {
+    width: get_vw(750);
+    height: get_vw(143);
+  }
+}
+.heading {
+  margin-top: get_vw(16);
+}
+.line {
+  position: absolute;
+  width: get_vw_sp(285);
+  top: get_vw_sp(7);
+  left: get_vw_sp(20);
+  margin-left: get_vw(-7);
+  margin-top: get_vw(18);
+  width: get_vw_sw(670);
+
+  @include mq(md) {
+    width: get_vw(670);
+    top: get_vw(-45);
+    left: get_vw(47);
+  }
+}
+.img__wrap {
+  margin-top: get_vw(38);
+}
+.bnr_area {
+  margin: get_vw_sp(30) calc(50% - 50vw);
+
+  @include mq(md) {
+    margin: get_vw(80) 0;
+  }
+}
+main {
+  position: relative;
+}

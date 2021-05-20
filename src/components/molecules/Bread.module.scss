@@ -5,10 +5,15 @@
   list-style-type: none;
 }
 .bread li a {
-  padding: get_vw(5);
   color: #fff;
-  @include fz_vw(12);
   text-decoration: underline;
+  padding: get_vw(5);
+  @include fz_vw_sp(12);
+
+  @include mq(md) {
+    padding: get_vw(5);
+    @include fz_vw(12);
+  }
 }
 .bread li:last-child a {
   text-decoration: none;

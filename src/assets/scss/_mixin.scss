@@ -29,10 +29,20 @@ $breakpoints: (
   @return $rate * $size * 1vw;
 }
 
+@function get_vw_sp($size, $viewport: 375) {
+  $rate: 100 / $viewport;
+
+  @return $rate * $size * 1vw;
+}
+
 // font-size mixin
 // ex) @include fz_vw(20);
 @mixin fz_vw($font_size: 10) {
   font-size: get_vw($font_size);
+}
+
+@mixin fz_vw_sp($font_size: 10) {
+  font-size: get_vw_sp($font_size);
 }
 
 // margin-bottom mixin

@@ -1,6 +1,11 @@
 @import "../../assets/scss/mixin";
 
 .img__wrap {
-width: 16.66vw;
-margin-right: auto;
+  display: none;
+
+  @include mq(md) {
+    display: block;
+    width: 16.66vw;
+    margin-right: auto;
+  }
 }

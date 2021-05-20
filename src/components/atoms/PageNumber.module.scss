@@ -1,7 +1,12 @@
 @import "../../assets/scss/mixin";
 
 .text {
-  @include fz_vw(16);
+  @include fz_vw_sp(15);
+  text-align: center;
+
+  @include mq(md) {
+    @include fz_vw(16);
+  }
 }
 .text_highlight {
   color: #43dbf2;

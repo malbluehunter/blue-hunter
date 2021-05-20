@@ -1,0 +1,17 @@
+@import "../../assets/scss/mixin";
+
+.img__wrap {
+  position: absolute;
+  bottom: get_vw_sp(40);
+  right: get_vw_sp(155);
+  cursor: pointer;
+  width: get_vw_sp(64);
+
+  @include mq(md) {
+    z-index: 100;
+    position: fixed;
+    bottom: get_vw(20);
+    right: get_vw(20);
+    width: get_vw(64);
+  }
+}

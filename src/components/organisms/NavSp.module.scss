@@ -1,0 +1,108 @@
+@import "../../assets/scss/mixin";
+
+/* ハンバーガーボタン */
+.hamburger {
+  display: block;
+  position: fixed;
+  z-index: 102;
+  top: get_vw_sp(18);
+  right: get_vw_sp(10);
+  cursor: pointer;
+  text-align: center;
+}
+
+nav.globalMenuSp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: translateY(-100%);
+  transition: all 0.6s;
+  width: 100%;
+  z-index: 100;
+}
+
+nav.globalMenuSp ul .inner_item {
+  border-bottom: 1px solid rgba(17, 43, 58, 0.2);
+}
+nav.globalMenuSp ul .inner_item:last-child {
+  border-bottom: none;
+}
+
+.nav_sp_wrapper {
+  @include mq(lg) {
+    display: none;
+  }
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  transform: translateY(0%);
+  padding-top: get_vw_sp(25);
+  top: 16vw;
+  left: 0;
+}
+.inner_item:first-child {
+  border-top: 1px solid rgba(17, 43, 58, 0.2);
+}
+.inner_item {
+  text-align: center;
+  padding: get_vw_sp(12) 0 get_vw_sp(10);
+}
+.inner_item_img_01 {
+  width: get_vw_sp(68);
+}
+.inner_item_img_02 {
+  width: get_vw_sp(76);
+}
+.inner_item_img_03 {
+  width: get_vw_sp(200);
+}
+.inner_item_img_04 {
+  width: get_vw_sp(136);
+}
+.inner_item_img_05 {
+  width: get_vw_sp(61);
+}
+.inner_item_img_06 {
+  width: get_vw_sp(100);
+}
+
+.text {
+  @include fz_vw_sp(15);
+  font-weight: bold;
+  color: #112b3a;
+}
+
+.inner_list {
+  width: 85%;
+  height: 90vh;
+  margin: auto;
+}
+.inner_item_logo_01 {
+  position: absolute !important;
+  top: 1px;
+  left: 0;
+  width: get_vw_sp(63);
+}
+.inner_item_logo_02 {
+  width: get_vw_sp(102);
+}
+.lang_item_img {
+  width: get_vw_sp(93);
+}
+.lang_area {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: get_vw_sp(198);
+}
+.logo_area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100vw;
+  background-color: #fff;
+  z-index: 101;
+}

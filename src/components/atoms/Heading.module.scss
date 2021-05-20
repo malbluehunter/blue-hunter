@@ -1,6 +1,12 @@
 @import "../../assets/scss/mixin";
 
 .heading {
-  @include fz_vw(26);
+  @include fz_vw_sp(24);
+  font-weight: bold;
   color: #fff;
+
+  @include mq(md) {
+    @include fz_vw(26);
+    font-weight: normal;
+  }
 }

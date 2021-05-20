@@ -32,32 +32,16 @@ const LocalNav = () => {
             <a href="">3. 国連から超都連へ。</a>
             <ul className={styles.LocalNav_list_02}>
               <li className={styles.LocalNav_item_02}>
-                <a href="">
-                  ・The Encyclopedia of ”Octa/M”
-                  <br />
-                  （1）
-                </a>
+                <a href="">・The Encyclopedia of ”Octa/M”（1）</a>
               </li>
               <li className={styles.LocalNav_item_02}>
-                <a href="">
-                  ・The Encyclopedia of ”Octa/M”
-                  <br />
-                  （2）
-                </a>
+                <a href="">・The Encyclopedia of ”Octa/M”（2）</a>
               </li>
               <li className={styles.LocalNav_item_02}>
-                <a href="">
-                  ・The Encyclopedia of ”Octa/M”
-                  <br />
-                  （3）
-                </a>
+                <a href="">・The Encyclopedia of ”Octa/M”（3）</a>
               </li>
               <li className={styles.LocalNav_item_02}>
-                <a href="">
-                  ・The Encyclopedia of ”Octa/M”
-                  <br />
-                  （4）
-                </a>
+                <a href="">・The Encyclopedia of ”Octa/M”（4）</a>
               </li>
             </ul>
           </li>
@@ -65,6 +49,9 @@ const LocalNav = () => {
             <a href="">世界観・設定トップへ戻る</a>
           </li>
         </ul>
+        <div className={styles.btn_openClose}>
+          <p><span class="icon_close">×</span> CLOSE</p>
+        </div>
       </div>
       <div className={styles.localNav_bottom}>
         <StaticImage

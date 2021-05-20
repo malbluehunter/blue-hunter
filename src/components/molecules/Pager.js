@@ -7,9 +7,9 @@ import * as styles from "./Pager.module.scss"
 const Pager = () => {
   return (
     <div className={styles.pager}>
-      <ButtonPrev href="#" />
+      <ButtonPrev href="#"/>
       <PageNumber number="1" total="10" />
-      <ButtonNext href="#" />
+      <ButtonNext href="#"Î />
     </div>
   )
 }

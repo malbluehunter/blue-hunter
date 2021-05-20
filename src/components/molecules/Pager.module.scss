@@ -1,9 +1,13 @@
 @import "../../assets/scss/mixin";
 
 .pager {
+  display: none;
   width: 100%;
-  display: flex;
   justify-content: space-between;
   margin-top: get_vw(35);
   align-items: center;
+
+  @include mq(md) {
+    display: flex;
+  }
 }

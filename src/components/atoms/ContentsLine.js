@@ -4,10 +4,12 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const ContentsLine = () => {
   return (
-    <StaticImage
-      src="../../assets/images/common/line_content.png"
-      layout="fullWidth"
-    />
+    <div className={styles.line_area}>
+      <StaticImage
+        src="../../assets/images/common/line_content.png"
+        layout="fullWidth"
+      />
+    </div>
   )
 }
 export default ContentsLine

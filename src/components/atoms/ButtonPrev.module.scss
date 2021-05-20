@@ -1,2 +1,9 @@
 @import "../../assets/scss/mixin";
 
+.btn_wrapper {
+  width: get_vw_sp(150);
+
+  @include mq(md) {
+    width: get_vw(276);
+  }
+}

@@ -2,18 +2,33 @@
 
 .wrapper {
   position: relative;
-  width: get_vw(165);
+  width: get_vw_sp(160);
   margin: auto;
+
+  @include mq(md) {
+    width: get_vw(165);
+  }
 }
 .text {
   font-family: DIN Condensed;
-  @include fz_vw(24);
+  @include fz_vw_sp(24);
+
+  @include mq(md) {
+    @include fz_vw(24);
+  }
 }
 .img {
-  width: get_vw(55);
+  width: get_vw_sp(55);
+
+  @include mq(md) {
+    width: get_vw(55);
+  }
 }
 .link {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.link:hover .text {
+  color: #43dbf2;
 }

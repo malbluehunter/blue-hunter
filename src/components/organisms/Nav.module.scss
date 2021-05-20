@@ -1,8 +1,12 @@
 @import "../../assets/scss/mixin";
 
 .wrap {
-  position: relative;
-  text-align: center;
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: relative;
+    text-align: center;
+  }
 }
 .inner {
   position: absolute;
@@ -21,6 +25,9 @@
   padding-top: get_vw(3);
   background-repeat: no-repeat;
   margin-top: get_vw(12);
+}
+.inner_item:last-child .inner_item_inner {
+  border-right: none;
 }
 .inner_item {
   height: 100%;
