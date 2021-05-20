@@ -13,7 +13,6 @@ const NavSp = () => {
       changeState(true)
     } else {
       changeState(false)
-      body.style.overflow = "hidden"
     }
   }
 

@@ -5,7 +5,7 @@ const Bread = props => {
   const { page01, page02, page03 } = props
   return (
     <div className={styles.bread}>
-      <ul>
+      <ol>
         <li>
           <a href="/">{page01}</a>
         </li>
@@ -15,7 +15,7 @@ const Bread = props => {
         <li>
           <a href="#">{page03}</a>
         </li>
-      </ul>
+      </ol>
     </div>
   )
 }

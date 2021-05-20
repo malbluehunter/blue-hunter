@@ -16,7 +16,9 @@
   }
 }
 .bread li {
-  // display: grid;
+  display: inline;
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
 .bread li:last-child a {
   text-decoration: none;
@@ -26,7 +28,7 @@
   content: "\003e";
   margin-left: get_vw(3);
   margin-right: get_vw(3);
-  color: #43dbf2;
+  color: #fff;
 }
 // .bread li:last-child::after {
 //   content: "";
