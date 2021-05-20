@@ -24,7 +24,7 @@ const Footer = () => {
           <FollowUs />
           <ul className={styles.bnr_list}>
             <li className={styles.bnr_item}>
-              <a href="https://uminohi.jp/">
+              <a href="https://uminohi.jp/" target="_blank">
                 <StaticImage
                   src="../../assets/images/common/bnr_footer_01.png"
                   alt="日本財団 海と日本PROJECT"
@@ -33,7 +33,7 @@ const Footer = () => {
               </a>
             </li>
             <li className={styles.bnr_item}>
-              <a href="https://world-eggs.jp/">
+              <a href="https://world-eggs.jp/" target="_blank">
                 <StaticImage
                   src="../../assets/images/common/bnr_footer_02.png"
                   alt="Worldeggs"
@@ -42,7 +42,7 @@ const Footer = () => {
               </a>
             </li>
             <li className={styles.bnr_item}>
-              <a href="https://cannajapan.co.jp/">
+              <a href="https://cannajapan.co.jp/" target="_blank">
                 <StaticImage
                   src="../../assets/images/common/bnr_footer_03.png"
                   alt="カンナジャパン"
@@ -51,7 +51,7 @@ const Footer = () => {
               </a>
             </li>
             <li className={styles.bnr_item}>
-              <a href="https://myanimelist.net/">
+              <a href="https://myanimelist.net/" target="_blank">
                 <StaticImage
                   src="../../assets/images/common/bnr_footer_04.png"
                   alt="MAL"

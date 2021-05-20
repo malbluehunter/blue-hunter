@@ -30,6 +30,6 @@
   margin-right: get_vw(3);
   color: #fff;
 }
-// .bread li:last-child::after {
-//   content: "";
-// }
+.bread li:last-child::after {
+  content: "";
+}

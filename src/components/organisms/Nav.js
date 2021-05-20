@@ -9,7 +9,7 @@ const Nav = () => {
         <div className={styles.lang_item_01}>
           <a className={styles.lang_item_link}>
             <StaticImage
-              src="../../assets/images/common/text_ja.png"
+              src="../../assets/images/common/text_ja_hover.png"
               alt="日本語"
               layout="fullWidth"
               className={styles.lang_item_img_01}

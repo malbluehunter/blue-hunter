@@ -6,9 +6,9 @@ const ButtonPrev = props => {
   const { href } = props
 
   return (
-    <a href={href} className={styles.btn_wrapper}>
+    <div className={styles.btn_wrapper}>
       <StaticImage src="../../assets/images/world/btn_prev.png" alt="PREV" />
-    </a>
+    </div>
   )
 }
 export default ButtonPrev

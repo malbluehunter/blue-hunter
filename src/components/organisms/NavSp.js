@@ -22,11 +22,13 @@ const NavSp = () => {
         {isClose ? <HamburgerOpen /> : <HamburgerClose />}
       </div>
       <div className={styles.logo_area}>
-        <StaticImage
-          src="../../assets/images/common/logo_sp.png"
-          alt="ロゴ"
-          className={styles.inner_item_logo_01}
-        />
+        <a href="https://uminohi.jp/" target="_blank">
+          <StaticImage
+            src="../../assets/images/common/logo_sp.png"
+            alt="ロゴ"
+            className={styles.inner_item_logo_01}
+          />
+        </a>
         <StaticImage
           src="../../assets/images/common/logo_bluehunter_sp.png"
           alt="ロゴ"
@@ -100,7 +102,7 @@ const NavSp = () => {
               <li className={styles.lang_item}>
                 <a href="#" className={styles.lang_item_link}>
                   <StaticImage
-                    src="../../assets/images/common/text_ja_sp.png"
+                    src="../../assets/images/common/text_ja_hover_sp.png"
                     alt="Special"
                     className={styles.lang_item_img}
                   />

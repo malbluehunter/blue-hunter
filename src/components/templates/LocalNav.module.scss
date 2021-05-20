@@ -1,17 +1,34 @@
 @import "../../assets/scss/mixin";
+
+.localNav {
+  position: relative;
+
+  @include mq(md) {
+    max-width: get_vw(260);
+  }
+}
 .LocalNav_area {
   background-color: rgba($color: #112b3a, $alpha: 0.75);
-  padding: 0 get_vw_sp(20);
+  padding: 0 get_vw_sp(20) get_vw_sp(30);
+  overflow: hidden;
+  max-height: 1000px;
+  transition: max-height 1s ease-in-out;
 
   @include mq(md) {
     padding: 0 get_vw(18);
   }
+}
+.LocalNav_area[aria-expanded="false"] {
+  max-height: 0px;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  padding-bottom: get_vw_sp(8);
 }
 .LocalNav_list {
   @include fz_vw_sp(14);
   font-weight: bold;
   line-height: 2;
   margin: 0 auto;
+  // text-indent: -1em;
 
   @include mq(md) {
     @include fz_vw(12);
@@ -26,7 +43,7 @@
   padding: get_vw_sp(15) 0;
 
   @include mq(md) {
-    padding: get_vw(15) 0;
+    padding: get_vw(14) 0;
   }
 }
 .LocalNav_item:last-child {
@@ -61,6 +78,7 @@
 .current a {
   color: #43dbf2;
 }
+
 .LocalNav_item a:hover {
   color: #43dbf2;
 }
@@ -89,7 +107,12 @@
     margin-left: get_vw(9);
   }
 }
+.LocalNav_list_02 li {
+  @include fz_vw(12);
+}
 .btn_openClose {
+  cursor: pointer;
+
   @include mq(md) {
     display: none;
   }
@@ -101,9 +124,13 @@
   margin-top: get_vw_sp(13);
   line-height: 1;
 }
-.icon_close {
-  font-size: 34px !important;
-  margin-right: get_vw_sp(10);
+.btn_openClose {
+  position: absolute;
+  bottom: get_vw_sp(15);
+  left: 0;
+  right: 0;
 }
-
-
+.btn_openClose[aria-expanded="false"] {
+  bottom: get_vw_sp(12);
+  left: get_vw_sp(160);
+}

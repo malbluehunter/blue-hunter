@@ -88,6 +88,13 @@ nav.globalMenuSp.active {
 .inner_item_logo_02 {
   width: get_vw_sp(102);
 }
+.lang_item:nth-child(1) {
+  width: get_vw_sp(26);
+  margin: auto 0;
+}
+.lang_item:nth-child(2) {
+  margin: auto 0;
+}
 .lang_item_img {
   width: get_vw_sp(93);
 }

@@ -4,13 +4,13 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Logo = () => {
   return (
-    <div className={styles.img__wrap}>
+    <a href="https://uminohi.jp/" className={styles.img__wrap} target="_blank">
       <StaticImage
         src="../../assets/images/common/logo.png"
         alt="BLUE HUNTER"
         layout="fullWidth"
       />
-    </div>
+    </a>
   )
 }
 export default Logo
