@@ -1,9 +1,13 @@
 @import "../../../assets/scss/mixin";
 
 .container {
-  background-image: url("../../../assets/images/common/bg_world.png");
+  background-image: url("../../../assets/images/common/bg_main_sp.png");
   background-size: cover;
   background-attachment: fixed;
+
+  @include mq(md) {
+    background-image: url("../../../assets/images/common/bg_main.png");
+  }
 }
 .contents_wrapper {
   margin: get_vw(30) auto 0;
@@ -48,7 +52,8 @@
 }
 .main_contents_area_top {
   padding: get_vw_sp(15) get_vw_sp(27) get_vw_sp(0);
-  background: url("../../../assets/images/common/contentsArea_top.png") no-repeat;
+  background: url("../../../assets/images/common/contentsArea_top.png")
+    no-repeat;
   background-position: get_vw(7) top;
   background-size: 98.9%;
   height: get_vw_sp(55);
@@ -61,7 +66,8 @@
 .main_contents_area_inner {
   position: relative;
   padding: get_vw_sp(30) get_vw_sp(27) 0;
-  background: url("../../../assets/images/common/contentsArea_center.png") repeat-y;
+  background: url("../../../assets/images/common/contentsArea_center.png")
+    repeat-y;
   background-position: get_vw_sp(2) get_vw_sp(0);
   background-size: 97.7%;
   margin-top: -1px;
