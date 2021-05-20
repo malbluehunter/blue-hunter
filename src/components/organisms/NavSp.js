@@ -8,10 +8,12 @@ const NavSp = () => {
   const [isClose, changeState] = useState(false)
 
   function handleClick() {
+    const body = document.getElementsByTagName("body")
     if (isClose === false) {
       changeState(true)
     } else {
       changeState(false)
+      body.style.overflow = "hidden"
     }
   }
 

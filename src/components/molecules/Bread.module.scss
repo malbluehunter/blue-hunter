@@ -15,6 +15,9 @@
     @include fz_vw(12);
   }
 }
+.bread li {
+  // display: grid;
+}
 .bread li:last-child a {
   text-decoration: none;
   color: #43dbf2;
@@ -25,6 +28,6 @@
   margin-right: get_vw(3);
   color: #43dbf2;
 }
-.bread li:last-child::after {
-  content: "";
-}
+// .bread li:last-child::after {
+//   content: "";
+// }

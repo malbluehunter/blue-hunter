@@ -30,7 +30,7 @@ nav.globalMenuSp ul .inner_item:last-child {
 }
 
 .nav_sp_wrapper {
-  @include mq(lg) {
+  @include mq(md) {
     display: none;
   }
 }
