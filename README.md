@@ -1,105 +1,362 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's blog starter
-</h1>
+## 依存アプリケーション
+- [Node v8.2以上](https://nodejs.org/ja/)
+- [npm v5.2以降が必要](https://www.npmjs.com/) npmバージョン5.2以降が必要
+- [Yarn](https://classic.yarnpkg.com/ja/)
+- [Gatsby](https://www.gatsbyjs.com/)ReactベースのSSGフレームワーク
 
-Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+## フォルダ構成
+基本的に修正することになるのは`/src/`ディレクト配下のファイルのみです。
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+- `/src/assets/images/`(mal様修正範囲)
+画像は全てこちらに保存します。
 
-## 🚀 Quick start
+- `/src/assets/scss/`(TAM側で修正)
+サイト全体のベースとなるcssファイルのため、基本的に修正することはありません。
 
-1.  **Create a Gatsby site.**
+- `/src/components/`(基本的にTAM側で修正)
+各ページで読みこんでいるボタンや、テキストの元となるコンポーネントが格納されているフォルダ。
 
-    Use the Gatsby CLI to create a new site, specifying the blog starter.
+- `/src/pages/`(mal様修正範囲)
+固定ページ用のフォルダ。ここに置いたファイルがそのままURLに表示される。
 
-    ```shell
-    # create a new Gatsby site using the blog starter
-    gatsby new my-blog-starter https://github.com/gatsbyjs/gatsby-starter-blog
-    ```
+- `/src/stories/`(TAM側で修正)
+スタイガイド用のファイル。基本的に触ることはありません。
 
-1.  **Start developing.**
+- `/src/templates/`(TAM側で修正)
+ブログ記事のテンプレート用。基本的に触ることはありません。
 
-    Navigate into your new site’s directory and start it up.
+## 利用方法
+以下「開発環境の設定」にしたがってコマンドを実行すると静的Webサイト構築で必要な環境が整います。
 
-    ```shell
-    cd my-blog-starter/
-    gatsby develop
-    ```
 
-1.  **Open the source code and start editing!**
+### 開発環境の設定
+1. Githubの`develop`ブランチからclone(https://github.com/malbluehunter/blue-hunter)
 
-    Your site is now running at `http://localhost:8000`!
+2. パッケージのインストール
+パッケージマネジャーにnpmもしくはYarnを使用します。特別な理由がない場合はYarnの利用を推奨します。
+テンプレートのダウンロード完了後、該当ディレクトリでターミナルを開き以下のコマンドを入力してください。
+`npm install`
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+    ※Yarnを使う場合
+    yarnをインストールします。(Homerewからインストールする場合)
+    `brew install yarn`
+    下記コマンドを入力してパッケージをインストールします。
+    `yarn install`
 
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+[Yarn | 概要](https://classic.yarnpkg.com/ja/docs/getting-started)
 
-## 🚀 Quick start (Gatsby Cloud)
+3. 初期ビルド
+デフォルトで用意されているHTML, CSS, JSファイルを以下コマンドで出力します。
+`npm run build`
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+    ※Yarnの場合
+    `yarn build`
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-blog)
+3. 開発スタート
+初期ビルドでHTMLファイル等のファイルがdistディレクトリ配下に出力されているのを確認できたら以下コマンドを実行し開発を進めます。
+`npm run develop`
 
-## 🧐 What's inside?
+    ※Yarnの場合
+    `yarn develop`
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+## コマンド一覧
+開発環境で事前に用意されているコマンド一覧です。  
+利用ケースも記載していますので状況に応じて使い分けてください。
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+### 開発起動コマンド
+標準ブラウザを立ち上げ、ファイルの変更を監視し、gulpfile.jsで設定されているタスクを実行します。開発時に利用します。   
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+`npm run start`
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+※Yarnの場合
+`yarn start`
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+***
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+### ビルドコマンド
+distフォルダー内のファイルをすべて削除し、開発環境タスクを実行します。開発時に利用します。  
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+`npm run build`
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
+※Yarnの場合
+`yarn build`
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+***
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+### リリースコマンド
+distフォルダー内のファイルをすべて削除し、本番環境タスクを実行します。納品時に利用します。  
 
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+`npm run release`
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+※Yarnの場合
+`yarn release`
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+***
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+### 削除コマンド
+distフォルダー内のファイルをすべて削除します。不要なファイルが出力されてしまった場合などで利用します。  
 
-## 🎓 Learning Gatsby
+`npm run clean`
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
+※Yarnの場合
+`yarn clean`
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+***
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+### HTMLバリデーションコマンド
+HTMLの検証を行います。納品・開発時に利用します。  
 
-## 💫 Deploy
+`npm run htmlValidate`
 
-[Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/cloud/)
+※Yarnの場合
+`yarn htmlValidate`
 
-Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
+***
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+### TypeScriptバリデーションコマンド
+TypeScriptの検証を行います。納品・開発時に利用します。
+修正必要箇所が見つかった場合はTypeScript補正コマンドを実行してみてください。  
+検証設定はeslintrc.jsonに記述されています。
+
+`npm run lint`
+
+※Yarnの場合
+`yarn lint`
+
+***
+
+### TypeScript補正コマンド
+TypeScriptの検証で見つかったエラー内容を補正します。納品・開発時に利用します。    
+検証設定はeslintrc.jsonに記述されています。
+
+`npm run lint:fix`
+
+※Yarnの場合
+`yarn lint:fix`
+
+***
+
+### SCSS補正コマンド
+stylelint-config-standardに基いてSCSSの補正を行います。開発時に利用します。  
+検証レポートはSCSSファイルをトランスパイル時に都度表示されます。検証設定はstylelintrc.jsonに記述されています。  
+
+[stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
+
+`npm run stylelint`
+
+※Yarnの場合
+`yarn stylelint`
+
+## HTMLについて
+HTMLのメタ言語にPugを採用し、ファイルの分割管理ができるよう設計されています。
+共通パーツなどはPugのIncludesを利用して管理します。SSIで分割ファイルを任意の場所に出力することも可能です。  
+SSIのファイルはssiディレクトリ配下に格納し、接頭辞に "ssi" を付与します。SSIの利用例は以下になります。
+
+```
+//- SSIバナーエリア
+<!--#include virtual="/assets/ssi/ssi-bnr.html" -->
+```
+
+サイト情報やメタ情報はあらかじめテンプレートを用意しています。プロジェクトに合わせて変更してください。 
+
+マークアップはHTML5およびW3Cの規格に準拠した形で行ってください。
+HTMLバリデーションのタスクを用意していますので、納品・開発時にはHTMLバリデーションコマンドを実行して検証してください。
+
+### ディレクトリ構成
+- **\_data/site.json:** サイトの基本情報を記述します。
+- **\_mixin/_all.pug:** mixinのエントリーポイントです。各mixinをまとめてインクルードする共通ファイルテンプレートです。
+- **\_mixin/_picture.pug:** picture要素による画像の出し分けを行うmixinです。
+- **\_partial/_site.pug:** headタグ内の記述をまとめた共通ファイルテンプレートです。
+- **\_partial/_script.pug:** JavaScriptの読み込みをまとめた共通ファイルテンプレートです。
+- **\_template/_layout.pug:** レイアウトを司るテンプレートです。共通ファイルテンプレートをまとめてインクルードします。
+
+[HTML5](https://developer.mozilla.org/ja/docs/Web/Guide/HTML/HTML5)
+
+[W3C Markup Validation Service](https://validator.w3.org/)
+
+## CSSについて
+CSSのメタ言語にSCSSを採用し、FLOCSSベースのCSS設計に対応します。プロジェクトに応じて改変してください。
+ユーザーエージェントの初期化にはHTML5 Doctor Reset CSSを利用しています。Eric Mayer’s Reset CSSをHTML5に対応させたCSSリセットです。
+「」や『』などの約物を半角化させる為、Yaku Han JPを読み込んでいます。また、印刷用Print CSSをデフォルトで用意しています。
+CSS, SCSSバリデーションタスクを用意していますので、納品・開発時にはSCSS補正コマンドを実行して検証・補正を行ってください。
+
+[FLOCSS](https://www.tam-tam.co.jp/tipsnote/html_css/post10205.html)
+
+[HTML5 Doctor Reset CSS](http://html5doctor.com/html-5-reset-stylesheet/)
+
+[Yaku Han JP](https://yakuhanjp.qranoko.jp/)
+
+### ディレクトリ構成
+- **common.scss:** SCSSのエントリーポイント
+- **\_print.scss:** 印刷用CSSでcommon.scssへインポート
+- **fundation:** リセットCSSやMixinファイルを格納
+- **layout:** ヘッダー、フッターなどレイアウトを構成するファイルを格納
+- **object/component:** 再利用可能なコンポーネントを構成するファイルを格納
+- **object/project:** プロジェクト固有のパターンを構成するコンポーネントファイルを格納
+- **object/utility:** 余白やインデントといった補助的なファイルを格納
+
+***
+
+#### Common
+サイト内で使用するCSSモジュールを読み込みます。SCSSファイルのエントリーポイントになります。  
+Foundationレイヤー以外のCSSモジュールはglobを用いてインポートします。
+
+**src/assets/_scss/common.scss**
+
+***
+
+#### Base
+サイトのベースとなるデフォルトスタイルを定義します。標準のリセットCSSにはCSS Remedyを採用しています。
+
+**src/assets/_scss/foundation/_base.scss**
+
+***
+
+#### Variable
+再利用を想定する値を変数に格納します。
+標準でコンテンツ幅変数、フォント変数、カラー変数を用意しています。
+
+**src/assets/_scss/foundation/_variable.scss**
+
+***
+
+#### Mixin
+メディアクエリ、vw自動計算、フォントサイズ自動計算、フォームリセット、フォームプレイスホルダーカラー、ホバーアクションなどWebフロントエンド開発で頻出する記述をMixinや変数として設定しています。
+利用方法は以下ディレクトリのファイル内コメントを参照してください。
+
+**src/assets/_scss/foundation/_mixin.scss**
+
+***
+
+#### Utility
+margin, paddingそれぞれ5px毎に余白を取るclassを用意しています。
+ex) Class Name: u-mb10, u-mb15, u-mb20, u-pt10, u-pt20, u-pt30
+詳しくは以下ディレクトリのファイル内コメントを参照してください。
+
+**src/assets/_scss/object/utility/_margin.scss**
+**src/assets/_scss/object/utility/_padding.scss**
+
+改行位置を指定するclassを用意しています。
+ex) Class Name: .u-newLine-pc, .u-newLine-sp
+詳しくは以下ディレクトリのファイル内コメントを参照してください。
+
+**src/assets/_scss/object/utility/_newLine.scss**
+
+CSSのDisplayプロパティを制御するclassを用意しています。
+ex) Class Name: .u-dsp-block, .u-dsp-none
+詳しくは以下ディレクトリのファイル内コメントを参照してください。
+
+**src/assets/_scss/object/utility/_display.scss**
+
+文字インデントを制御するclassを用意しています。
+ex) Class Name: .u-indent
+詳しくは以下ディレクトリのファイル内コメントを参照してください。
+
+**src/assets/_scss/object/utility/_indent.scss**
+
+***
+
+#### Print
+印刷用CSSを定義します。
+
+**src/assets/_scss/_print.scss**
+
+## JavaScriptについて
+TypeScriptを採用し、静的型付き言語としてJavaScriptを扱います。
+TypeScriptのエントリーポイントはmain.tsとします。
+インポート先モジュールはwebpackを用いてバンドルしindex.jsとして出力します。
+型システムは厳密にし過ぎず、生産性を重視した思想でコーディングを行います。
+レガシーブラウザとの互換性を保つ為、polyfillを入れる場合は必要なモジュールをpolyfill.tsでインポートしてください。
+TypeScriptのバリデーションタスクを用意していますので、納品・開発時にはTypeScriptバリデーションコマンド、TypeScript補正コマンドを実行して検証・補正を行ってください。
+
+[がんばらないTypeScript](https://employment.en-japan.com/engineerhub/entry/2019/04/16/103000)
+
+### ディレクトリ構成
+- **main.ts:** TypeScriptのエントリーポイント
+- **namespace:** 名前空間で分けたTypeScriptファイルを格納
+- **helper:** メディアクエリの設定などある一定の判断や計算を行うTypeScriptファイルを格納
+- **api:** APIとの通信処理に用いるTypeScriptファイルを格納
+
+#### Namespace
+使用状況によって名前空間を分けてファイルを用意します。書かれた処理はHTMLに紐ずきます。
+ex) sample.tsはサンプルで任意の文字列を返します。
+詳しくは以下ディレクトリのファイル内コメントを参照してください。
+
+**src/assets/ts/namespace/**
+
+#### Helper
+重複する判断や加工、計算などを使用用途に分けてファイルを用意します。
+ex) mediaQuery.tsはメディアクエリの判定を行います。
+詳しくは以下ディレクトリのファイル内コメントを参照してください。
+
+**src/assets/ts/helper/**
+
+#### Api
+APIやDBと通信する際の処理を書いたファイルを用意します。
+ex) placeholder.tsはサンプルでAPI通信を行います。
+
+**src/assets/ts/api/**
+
+## 画像について
+画像ファイルは標準で解像度を70%に圧縮するよう設定されています。必要に応じてgulpfile.jsの設定を変更してください。
+画像の自動圧縮は適宜 `npm run build` を実行して不要な画像ファイルがdistディレクトリに残らないよう心がけてください。
+
+### 画像命名規則
+画像ファイル、フォルダー名で使用する文字記号は「半角英数字・ハイフン・アンダースコア」のみとしてください。
+全角やその他記号を利用した場合、文字化けなどのバグが発生します。
+
+#### 共通画像の命名
+サイト全体で使用するロゴ画像やアイコンなどはshareフォルダーに格納します。
+以下ディレクトリを参照してください。
+
+**src/assets/img/share/**
+
+共通画像の命名は以下フォーマットにしたがってください。
+
+**/share/share + "_" +（内容が推測可能な任意の文字列）+ "（複数種類あれば連番or種類を表す任意の文字列）" + ".（拡張子）"**
+
+サンプルで `share_bg_01.jpg` が格納されていますので開発時には削除してください。
+
+#### 画面固有画像の命名
+ページ単位で使用するロゴ画像やアイコンなどはpageフォルダー以下にページ名のフォルダーを作成して画像を格納します。
+sampleというページで利用する画像であればsampleフォルダーを作成します。
+以下ディレクトリを参照してください。
+
+**src/assets/img/page/**
+
+ページ単位で使用する画像の命名は以下フォーマットにしたがってください。
+
+**/page/ページ名フォルダー/（ページ名）+ "_" +（内容が推測可能な任意の文字列）+ "_" +（複数種類あれば連番or種類を表す任意の文字列）+ ".（拡張子）"**
+
+#### 内容が推測可能な任意の文字列
+命名の際は以下の文字列を参照してみてください。
+
+* 見出し `heading`
+* ロゴ画像 `logo`
+* ナビゲーション `nav`
+* 背景画像 `bg`
+* 画像テキスト `txt`
+* 画像タイトル `ttl`
+* アイコン `icon`
+* 画像全般 `img`
+* 写真 `pic`
+* バナー `bnr`
+* ボタン `btn`
+
+## SVGスプライトについて
+アイコン類にはSVGスプライトを採用しています。Gulpを起動させた状態で利用したいSVGファイルを `/assets/svg` 配下へ格納するとSVGファイルを結合し `sprite.svg` として出力します。以下ディレクトリを参照してください。
+
+**src/assets/svg/**
+**dist/assets/svg/sprite.svg**
+
+利用時は以下のようにしてアイコンを呼び出します。SVGファイル名はIDと紐づけられます。
+
+```
+<!-- SVGスプライト出力 -->
+<svg class="icon" role="img">
+  <use xlink:href="/assets/svg/sprite.svg#icon01"></use>
+</svg>
+<!--//End SVGスプライト出力 -->
+```
+
+[Icon System with SVG Sprites](https://css-tricks.com/svg-sprites-use-better-icon-fonts/)

@@ -81,6 +81,10 @@
 .main_contents_area_inner {
   width: 80%;
   margin: auto;
+  @include mq(md) {
+    width: auto;
+    margin: 0;
+  }
 }
 .main_contents_area_bottom {
   background: url("../../../assets/images/common/contentsArea_bottom.png")
@@ -88,17 +92,18 @@
   background-position: center bottom;
   background-size: 100%;
   background-position: -1px -2px;
-  height: get_vw_sp(62);
+  height: get_vw_sp(38);
 
   @include mq(md) {
     width: get_vw(750);
-    height: get_vw(143);
+    height: get_vw(80);
   }
 }
 
 .line {
-  width: get_vw_sp(285);
+  width: get_vw_sp(265);
   margin: get_vw_sp(10) auto;
+  margin-left: get_vw_sp(-5);
 
   @include mq(md) {
     margin: get_vw(18) auto get_vw(22);
