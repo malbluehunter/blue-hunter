@@ -19,9 +19,11 @@
   }
 }
 .LocalNav_area[aria-expanded="false"] {
-  max-height: 0px;
-  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
-  padding-bottom: get_vw_sp(8);
+  @include mq(sp-only) {
+    max-height: 0px;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+    padding-bottom: get_vw_sp(8);
+  }
 }
 .LocalNav_list {
   @include fz_vw_sp(14);
@@ -144,8 +146,10 @@
   right: 0;
 }
 .btn_openClose[aria-expanded="false"] {
-  bottom: get_vw_sp(12);
-  left: get_vw_sp(160);
+  @include mq(sp-only) {
+    bottom: get_vw_sp(12);
+    left: get_vw_sp(160);
+  }
 }
 
 .LocalNav_item.current {

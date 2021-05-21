@@ -5,7 +5,7 @@ import TextClose from "../atoms/TextClose"
 import IconDownArrow from "../atoms/IconDownArrow"
 
 const LocalNav = () => {
-  const [isOpen, setisOpen] = useState(true)
+  const [isOpen, setisOpen] = useState(false)
   const toggle = () => {
     isOpen ? setisOpen(false) : setisOpen(true)
   }

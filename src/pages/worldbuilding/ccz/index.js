@@ -30,6 +30,7 @@ const WorldbuildingTop = () => {
     <div className={styles.container}>
       <Header />
       <main>
+        {/* --------------------------------------- 修正範囲 開始 --------------------------------------- */}
         <div className={styles.contents_wrapper}>
           <TitleWorld />
           <div className={styles.bread_area}>
@@ -72,6 +73,7 @@ const WorldbuildingTop = () => {
                   </div>
                 </div>
               </div>
+              {/* --------------------------------------- 修正範囲 終了 --------------------------------------- */}
               <div className={styles.main_contents_area_bottom}></div>
               <div>
                 <Pager />
