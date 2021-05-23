@@ -1,9 +1,16 @@
 @import "../../../assets/scss/mixin";
 
-.container {
+.container::before {
   background-image: url("../../../assets/images/common/bg_main_sp.png");
   background-size: cover;
   background-attachment: fixed;
+
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
 
   @include mq(md) {
     background-image: url("../../../assets/images/common/bg_main.png");

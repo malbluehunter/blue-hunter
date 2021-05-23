@@ -2,13 +2,11 @@
 
 /* ハンバーガーボタン */
 .hamburger {
-  display: block;
   position: fixed;
   z-index: 102;
   top: get_vw_sp(18);
   right: get_vw_sp(10);
   cursor: pointer;
-  text-align: center;
 }
 
 nav.globalMenuSp {
@@ -76,14 +74,13 @@ nav.globalMenuSp.active {
 
 .inner_list {
   width: 85%;
-  height: 90vh;
   margin: auto;
 }
 .inner_item_logo_01 {
   position: absolute !important;
   top: 1px;
   left: 0;
-  width: get_vw_sp(63);
+  width: get_vw_sp(60);
 }
 .inner_item_logo_02 {
   width: get_vw_sp(102);
