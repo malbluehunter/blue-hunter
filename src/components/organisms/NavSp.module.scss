@@ -80,6 +80,10 @@ nav.globalMenuSp.active {
   margin: auto;
   height: 115vh;
   overflow: scroll;
+
+  @include mq(sm) {
+    height: 155vh;
+  }
 }
 .inner_item_logo_01 {
   position: absolute !important;
