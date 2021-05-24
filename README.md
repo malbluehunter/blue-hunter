@@ -13,31 +13,26 @@
 2. パッケージのインストール
 パッケージマネジャーにnpmもしくはYarnを使用します。特別な理由がない場合はYarnの利用を推奨します。
 テンプレートのダウンロード完了後、該当ディレクトリでターミナルを開き以下のコマンドを入力してください。
-`npm install`
+`yarn install`
 
-    ※Yarnを使う場合
+    ※Yarnをインストールしていない場合
     yarnをインストールします。(Homerewからインストールする場合)
     `brew install yarn`
-    下記コマンドを入力してパッケージをインストールします。
-    `yarn install`
 
 [Yarn | 概要](https://classic.yarnpkg.com/ja/docs/getting-started)
 
-3. 初期ビルド
-デフォルトで用意されているHTML, CSS, JSファイルを以下コマンドで出力します。
-`npm run build`
+4. gatsby cliのインストール
+GatsbyJSのCLIをインストールするとgatsbyコマンドを利用することができます。
+`sudo npm install -g gatsby-cli`
 
-    ※Yarnの場合
-    `yarn build`
+    PWはPCを起動するときPWを入力
 
 3. 開発スタート
-初期ビルドでHTMLファイル等のファイルがdistディレクトリ配下に出力されているのを確認できたら以下コマンドを実行し開発を進めます。
-`npm run develop`
+以下コマンドを実行し開発を進めます。
+`yarn develop`
 
-    ※Yarnの場合
-    `yarn develop`
 
-(http://localhost:8000/)でローカル環境表示されます。
+(http://localhost:8000/)でローカル環境に表示されます。
 
 ## フォルダ構成
 基本的に修正することになるのは`/src/`ディレクト配下のファイルのみです。
@@ -107,4 +102,3 @@
 - Netlifyと連携しているため自動でテスト環境に反映されます。(反映されるまでに数分かかります。)
 - TAM側は「TAM」ブランチで作業します。
 - masterでpushすると本番環境に反映されるため、こちらのブランチで作業しないようにお願いします。
-
