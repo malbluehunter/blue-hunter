@@ -1,23 +1,23 @@
 import React, { useEffect } from "react"
-import TitleWorld from "../../../components/atoms/TitleWorld"
-import Bread from "../../../components/molecules/Bread"
-import Header from "../../../components/templates/Header"
+import TitleWorld from "../../components/atoms/TitleWorld"
+import Bread from "../../components/molecules/Bread"
+import Header from "../../components/templates/Header"
 import * as styles from "./index.module.scss"
-import TextHeading from "../../../components/atoms/TextHeading"
+import TextHeading from "../../components/atoms/TextHeading"
 import { StaticImage } from "gatsby-plugin-image"
-import ContentsTopText from "../../../components/atoms/ContentsTopText"
-import ContentsLine from "../../../components/atoms/ContentsLine"
-import TextMedium from "../../../components/atoms/TextMedium"
-import Pager from "../../../components/molecules/Pager"
-import BnrArt from "../../../components/atoms/BnrArt"
-import Footer from "../../../components/templates/Footer"
-import LocalNav from "../../../components/templates/LocalNav"
-import ScrollToTop from "../../../components/atoms/ScrollToTop"
-import ContentsLineSp from "../../../components/atoms/ContentsLineSp"
-import PagerSp from "../../../components/molecules/PagerSp"
-import TextLeading from "../../../components/atoms/TextLeading"
-import TextAnnotation from "../../../components/atoms/TextAnnotation"
-import TextMediumSub from "../../../components/atoms/TextMediumSub"
+import ContentsTopText from "../../components/atoms/ContentsTopText"
+import ContentsLine from "../../components/atoms/ContentsLine"
+import TextMedium from "../../components/atoms/TextMedium"
+import Pager from "../../components/molecules/Pager"
+import BnrArt from "../../components/atoms/BnrArt"
+import Footer from "../../components/templates/Footer"
+import LocalNav from "../../components/templates/LocalNav"
+import ScrollToTop from "../../components/atoms/ScrollToTop"
+import ContentsLineSp from "../../components/atoms/ContentsLineSp"
+import PagerSp from "../../components/molecules/PagerSp"
+import TextLeading from "../../components/atoms/TextLeading"
+import TextAnnotation from "../../components/atoms/TextAnnotation"
+import TextMediumSub from "../../components/atoms/TextMediumSub"
 
 const WorldbuildingTop = () => {
   useEffect(() => {
@@ -34,6 +34,7 @@ const WorldbuildingTop = () => {
         <div className={styles.contents_wrapper}>
           <TitleWorld />
           <div className={styles.bread_area}>
+            {/* パンクズリスト */}
             <Bread
               page01="TOP"
               page02="世界観・設定"
@@ -57,7 +58,7 @@ const WorldbuildingTop = () => {
                   <TextMedium text="2020年現在、ハワイ南東沖にあるクラリオン断層帯とクリッパートン断層帯に囲まれたCCZ（クラリオン・クリッパートン領域）は、鉱物資源であるマンガン団塊が豊富に存在し、海洋法に基づく国際海底機構（本部はジャマイカ）がその採掘権を管理している。⽇本も⼀部、採掘権を⺠間企業DORD経由で取得。他に英国、ロシア、ドイツ、フランス、インド、中国、韓国など。アメリカは海洋法を批准しないが、独⾃のルートにて採掘権を主張している。" />
                   <div className={styles.img_wrapper}>
                     <StaticImage
-                      src="../../../assets/images/world/world_img_01.png"
+                      src="../../assets/images/world/world_img_01.png"
                       alt=""
                       layout="fullWidth"
                     />

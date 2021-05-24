@@ -8,7 +8,7 @@ const NavSp = () => {
   const [isClose, changeState] = useState(false)
 
   function handleClick() {
-    const body = document.getElementsByTagName("body")
+
     if (isClose === false) {
       changeState(true)
     } else {
@@ -35,7 +35,7 @@ const NavSp = () => {
           className={styles.inner_item_logo_02}
         />
       </div>
-      <nav class={`${isClose ? styles.active : ""} ${styles.globalMenuSp}`}>
+      <nav className={`${isClose ? styles.active : ""} ${styles.globalMenuSp}`}>
         <ul className={styles.inner_list}>
           <li className={styles.inner_item}>
             <a href="#" className={styles.inner_item_link}>

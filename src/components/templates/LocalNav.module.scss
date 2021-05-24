@@ -76,8 +76,8 @@
   border-right: 1px solid #fff;
 
   @include mq(md) {
-    top: get_vw(24);
-    right: get_vw(30);
+    top: get_vw(26);
+    right: get_vw(24);
     width: get_vw(5);
     height: get_vw(5);
     border-top: 1px solid #fff;
@@ -90,6 +90,10 @@
 
 .LocalNav_item a:hover {
   color: #43dbf2;
+
+  & .LocalNav_item::marker {
+    color: #43dbf2;
+  }
 }
 .localNav_top {
   position: relative;

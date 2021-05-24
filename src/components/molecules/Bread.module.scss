@@ -4,9 +4,10 @@
   display: flex;
   list-style-type: none;
 }
-.bread li a {
+.bread li a,
+.bread li p {
+  display: inline-block;
   color: #fff;
-  text-decoration: underline;
   padding: get_vw(5);
   @include fz_vw_sp(12);
 
@@ -15,12 +16,15 @@
     @include fz_vw(12);
   }
 }
+.bread li a {
+  text-decoration: underline;
+}
 .bread li {
   display: inline;
   overflow-wrap: break-word;
   word-break: break-all;
 }
-.bread li:last-child a {
+.bread li:last-child {
   text-decoration: none;
 }
 .bread li:after {

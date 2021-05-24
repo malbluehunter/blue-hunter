@@ -3,11 +3,11 @@ import * as styles from "./ButtonNext.module.scss"
 import { StaticImage } from "gatsby-plugin-image"
 
 const ButtonNext = props => {
-  const { href } = props
+  const { hrefNext, isDisabledNext } = props
 
   return (
-    <a href={href} className={styles.btn_wrapper}>
-      <StaticImage src="../../assets/images/world/btn_next.png" alt="NEXT" />
+    <a href={hrefNext} className={`${styles.btn_wrapper} ${isDisabledNext ? styles.disabled : ""}`}>
+      {isDisabledNext ? <StaticImage src="../../assets/images/world/btn_next_disabled.png" alt="PREV" /> : <StaticImage src="../../assets/images/world/btn_next.png" alt="PREV" />}
     </a>
   )
 }

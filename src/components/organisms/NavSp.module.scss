@@ -18,6 +18,9 @@ nav.globalMenuSp {
   transition: all 0.6s;
   width: 100%;
   z-index: 100;
+
+  height: 100%;
+  overflow-y: auto;
 }
 
 nav.globalMenuSp ul .inner_item {
@@ -37,7 +40,7 @@ nav.globalMenuSp ul .inner_item:last-child {
 nav.globalMenuSp.active {
   transform: translateY(0%);
   padding-top: get_vw_sp(25);
-  top: 16vw;
+  top: 15.5vw;
   left: 0;
 }
 .inner_item:first-child {
@@ -75,6 +78,8 @@ nav.globalMenuSp.active {
 .inner_list {
   width: 85%;
   margin: auto;
+  height: 115vh;
+  overflow: scroll;
 }
 .inner_item_logo_01 {
   position: absolute !important;
@@ -109,4 +114,11 @@ nav.globalMenuSp.active {
   width: 100vw;
   background-color: #fff;
   z-index: 101;
+}
+
+body.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
 }

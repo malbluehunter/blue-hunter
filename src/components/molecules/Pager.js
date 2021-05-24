@@ -4,12 +4,14 @@ import ButtonPrev from "../atoms/ButtonPrev"
 import PageNumber from "../atoms/PageNumber"
 import * as styles from "./Pager.module.scss"
 
-const Pager = () => {
+const Pager = props => {
+  const { hrefNext, hrefPrev, disabledNext, isDisabledPrev } = props
+
   return (
     <div className={styles.pager}>
-      <ButtonPrev href="#"/>
+      <ButtonPrev hrefPrev={hrefPrev} isDisabledPrev={isDisabledPrev} />
       <PageNumber number="1" total="10" />
-      <ButtonNext href="#"Î />
+      <ButtonNext hrefNext={hrefNext} disabledNext={disabledNext} />
     </div>
   )
 }
