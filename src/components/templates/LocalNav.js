@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "./LocalNav.module.scss"
 import TextClose from "../atoms/TextClose"
 import IconDownArrow from "../atoms/IconDownArrow"
@@ -15,7 +14,7 @@ const LocalNav = () => {
     <div className={styles.localNav}>
       <div className={styles.localNav_top}>
         <p className={styles.localNav_top_text}>物語の背景 MENU</p>
-        <StaticImage src="../../assets/images/common/local_nav_top.png" layout="fullWidth" />
+        <img src="/common/local_nav_top.png" />
       </div>
       <div className={styles.LocalNav_area} aria-expanded={isOpen}>
         <ol className={styles.LocalNav_list} start="0">
@@ -56,7 +55,7 @@ const LocalNav = () => {
         </ol>
       </div>
       <div className={styles.localNav_bottom}>
-        <StaticImage src="../../assets/images/common/local_nav_bottom.png" layout="fullWidth" />
+        <img src="/common/local_nav_bottom.png" />
       </div>
       <div className={styles.btn_openClose} aria-expanded={isOpen} onClick={toggle}>
         {isOpen ? <TextClose /> : <IconDownArrow />}
