@@ -44,7 +44,7 @@
   background-size: get_vw(90);
 
   &:hover {
-    background-image: url("../../assets/images/common/nav_text_news_hover.png");
+    background-image: url("/common/nav_text_news_hover.png");
     background-position: 0;
     background-repeat: no-repeat;
   }
@@ -57,7 +57,7 @@
   background-size: get_vw(90);
 
   &:hover {
-    background-image: url("../../assets/images/common/nav_text_comic_hover.png");
+    background-image: url("/common/nav_text_comic_hover.png");
     background-position: 0;
     background-repeat: no-repeat;
   }
@@ -69,7 +69,7 @@
   background-size: get_vw(160);
 
   &:hover {
-    background-image: url("../../assets/images/common/nav_text_world_hover.png");
+    background-image: url("/common/nav_text_world_hover.png");
     background-position: 0;
     background-repeat: no-repeat;
   }
@@ -81,7 +81,7 @@
   background-size: get_vw(130);
 
   &:hover {
-    background-image: url("../../assets/images/common/nav_text_characters_hover.png");
+    background-image: url("/common/nav_text_characters_hover.png");
     background-position: 0;
     background-repeat: no-repeat;
   }
@@ -93,7 +93,7 @@
   background-size: get_vw(90);
 
   &:hover {
-    background-image: url("../../assets/images/common/nav_text_staff_hover.png");
+    background-image: url("/common/nav_text_staff_hover.png");
     background-position: 0;
     background-repeat: no-repeat;
   }
@@ -105,7 +105,7 @@
   background-size: get_vw(100);
 
   &:hover {
-    background-image: url("../../assets/images/common/nav_text_special_hover.png");
+    background-image: url("/common/nav_text_special_hover.png");
     background-position: 0;
     background-repeat: no-repeat;
   }
@@ -160,13 +160,13 @@
   width: get_vw(88);
 }
 .lang_item_01 {
-  background-image: url("../../assets/images/common/text_ja_hover.png");
+  background-image: url("/common/text_ja_hover.png");
   background-repeat: no-repeat;
   background-position: get_vw(3.75) get_vw(7.2);
   background-size: get_vw(78);
 }
 .lang_item_02 {
-  background-image: url("../../assets/images/common/text_en_hover.png");
+  background-image: url("/common/text_en_hover.png");
   background-repeat: no-repeat;
   background-position: get_vw(3.75) get_vw(7.2);
   background-size: get_vw(78);

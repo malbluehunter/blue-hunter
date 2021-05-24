@@ -1,7 +1,7 @@
 @import "../../../../assets/scss/mixin";
 
 .container::before {
-  background-image: url("../../../../assets/images/common/bg_main_sp.png");
+  background-image: url("/common/bg_main_sp.png");
   background-size: cover;
   // background-attachment: fixed;
 
@@ -13,7 +13,7 @@
   content: "";
 
   @include mq(md) {
-    background-image: url("../../../../assets/images/common/bg_main.png");
+    background-image: url("/common/bg_main.png");
   }
 }
 .contents_wrapper {
@@ -59,7 +59,7 @@
 }
 .main_contents_area_top {
   padding: get_vw_sp(11) get_vw_sp(27) 0;
-  background: url("../../../../assets/images/common/contentsArea_top.png")
+  background: url("/common/contentsArea_top.png")
     no-repeat;
   background-position: get_vw(-5) top;
   background-size: 100%;
@@ -73,7 +73,7 @@
 .main_contents_area_middle {
   position: relative;
   padding: get_vw_sp(10) 0;
-  background: url("../../../../assets/images/common/contentsArea_center.png")
+  background: url("/common/contentsArea_center.png")
     repeat-y;
   background-position: get_vw_sp(2) get_vw_sp(0);
   background-size: 97.7%;
@@ -94,7 +94,7 @@
   }
 }
 .main_contents_area_bottom {
-  background: url("../../../../assets/images/common/contentsArea_bottom.png")
+  background: url("/common/contentsArea_bottom.png")
     no-repeat;
   background-position: center bottom;
   background-size: 100%;
