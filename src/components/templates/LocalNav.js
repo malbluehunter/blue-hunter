@@ -14,7 +14,9 @@ const LocalNav = () => {
     <div className={styles.localNav}>
       <div className={styles.localNav_top}>
         <p className={styles.localNav_top_text}>物語の背景 MENU</p>
-        <img src="/common/local_nav_top.png" />
+        <div className={styles.top_img_wrapper}>
+          <img src="/common/local_nav_top.png" />
+        </div>
       </div>
       <div className={styles.LocalNav_area} aria-expanded={isOpen}>
         <ol className={styles.LocalNav_list} start="0">

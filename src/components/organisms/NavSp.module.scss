@@ -40,7 +40,7 @@ nav.globalMenuSp ul .inner_item:last-child {
 nav.globalMenuSp.active {
   transform: translateY(0%);
   padding-top: get_vw_sp(25);
-  top: 15.5vw;
+  top: 15.3vw;
   left: 0;
 }
 .inner_item:first-child {
@@ -95,7 +95,6 @@ nav.globalMenuSp.active {
   width: get_vw_sp(102);
 }
 .lang_item:nth-child(1) {
-  width: get_vw_sp(26);
   margin: auto 0;
 }
 .lang_item:nth-child(2) {
