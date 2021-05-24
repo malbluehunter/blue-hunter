@@ -39,6 +39,7 @@ const WorldbuildingTop = () => {
         <meta property="og:url" content="https://manga.uminohi.jp/worldbuilding/background/ccz/" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「Blue Hunter」公式サイト" />
+        <meta property="og:image" content="https://manga.uminohi.jp/ogp.png" />
       </Helmet>
       {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
 
