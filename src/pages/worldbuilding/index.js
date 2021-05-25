@@ -18,7 +18,7 @@ import TextLeading from "../../components/atoms/TextLeading"
 import TextAnnotation from "../../components/atoms/TextAnnotation"
 import TextMediumSub from "../../components/atoms/TextMediumSub"
 
-const WorldbuildingTop = () => {
+const WorldPage = () => {
   useEffect(() => {
     const contents = document.getElementsByClassName("contents_area_inner")
     const contentsHight = contents.offsetHight
@@ -89,4 +89,4 @@ const WorldbuildingTop = () => {
   )
 }
 
-export default WorldbuildingTop
+export default WorldPage

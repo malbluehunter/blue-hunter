@@ -19,12 +19,7 @@ import TextMediumSub from "../../../../components/atoms/TextMediumSub"
 import { Helmet } from "react-helmet"
 import PageTitle from "../../../../components/atoms/PageTitle"
 
-const WorldbuildingTop = () => {
-  useEffect(() => {
-    const contents = document.getElementsByClassName("contents_area_inner")
-    const contentsHight = contents.offsetHight
-    console.log(contentsHight)
-  })
+const WorldPage = () => {
 
   return (
     <>
@@ -106,4 +101,4 @@ const WorldbuildingTop = () => {
   )
 }
 
-export default WorldbuildingTop
+export default WorldPage
