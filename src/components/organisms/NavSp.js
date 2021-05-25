@@ -67,12 +67,14 @@ const NavSp = () => {
             <ul className={styles.lang_area}>
               <li className={styles.lang_item}>
                 <a href="#" className={styles.lang_item_link}>
-                  <img src="/common/text_ja_hover_sp.png" alt="日本語" className={styles.lang_item_img} />
+                  <p className={styles.lang_item_text}>日本語</p>
+                  <img src="/common/bg_language.png" alt="日本語" className={styles.lang_item_img} />
                 </a>
               </li>
               <li className={styles.lang_item}>
                 <a href="#" className={styles.lang_item_link}>
-                  <img src="/common/text_en_sp.png" alt="English" className={styles.lang_item_img} />
+                  <p className={styles.lang_item_text}>English</p>
+                  <img src="/common/bg_language.png" alt="English" className={styles.lang_item_img} />
                 </a>
               </li>
             </ul>

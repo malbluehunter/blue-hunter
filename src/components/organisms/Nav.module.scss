@@ -8,7 +8,7 @@
     text-align: center;
   }
 }
-.inner {
+.menu {
   position: absolute;
   display: flex;
   top: 2.97vw;
@@ -18,21 +18,24 @@
 .nav_bg {
   width: get_vw(820);
 }
-.inner_item_inner {
+.menu_item_inner {
   border-right: 1px solid rgba(17, 43, 58, 0.2);
   font-weight: bold;
   height: get_vw(45);
-  padding-top: get_vw(3);
   background-repeat: no-repeat;
-  margin-top: get_vw(12);
 }
-.inner_item:last-child .inner_item_inner {
+.menu_item_inner .menu_item_link {
+  display: inline-block;
+  padding: get_vw(16) 0 get_vw(8);
+  width: 100%;
+}
+.menu_item:last-child .menu_item_inner {
   border-right: none;
 }
-.inner_item {
+.menu_item {
   height: 100%;
 }
-.inner_item:hover {
+.menu_item:hover {
   & img {
     visibility: hidden;
   }
@@ -40,7 +43,7 @@
     color: #fff;
   }
 }
-.inner_item:nth-child(1) {
+.menu_item:nth-child(1) {
   background-size: get_vw(90);
 
   &:hover {
@@ -49,11 +52,11 @@
     background-repeat: no-repeat;
   }
 
-  & .inner_item_inner {
+  & .menu_item_inner {
     width: get_vw(90);
   }
 }
-.inner_item:nth-child(2) {
+.menu_item:nth-child(2) {
   background-size: get_vw(90);
 
   &:hover {
@@ -61,11 +64,11 @@
     background-position: 0;
     background-repeat: no-repeat;
   }
-  & .inner_item_inner {
+  & .menu_item_inner {
     width: get_vw(90);
   }
 }
-.inner_item:nth-child(3) {
+.menu_item:nth-child(3) {
   background-size: get_vw(160);
 
   &:hover {
@@ -73,11 +76,11 @@
     background-position: 0;
     background-repeat: no-repeat;
   }
-  & .inner_item_inner {
+  & .menu_item_inner {
     width: get_vw(160);
   }
 }
-.inner_item:nth-child(4) {
+.menu_item:nth-child(4) {
   background-size: get_vw(130);
 
   &:hover {
@@ -85,11 +88,11 @@
     background-position: 0;
     background-repeat: no-repeat;
   }
-  & .inner_item_inner {
+  & .menu_item_inner {
     width: get_vw(130);
   }
 }
-.inner_item:nth-child(5) {
+.menu_item:nth-child(5) {
   background-size: get_vw(90);
 
   &:hover {
@@ -97,11 +100,11 @@
     background-position: 0;
     background-repeat: no-repeat;
   }
-  & .inner_item_inner {
+  & .menu_item_inner {
     width: get_vw(90);
   }
 }
-.inner_item:nth-child(6) {
+.menu_item:nth-child(6) {
   background-size: get_vw(100);
 
   &:hover {
@@ -109,12 +112,12 @@
     background-position: 0;
     background-repeat: no-repeat;
   }
-  & .inner_item_inner {
+  & .menu_item_inner {
     width: get_vw(98);
   }
 
   & .text {
-    margin-top: get_vw(-2);
+    margin-top: get_vw(1);
   }
 }
 .text {
@@ -124,27 +127,27 @@
   z-index: 3;
   color: #112b3a;
 }
-.inner_item_img_01 {
+.menu_item_img_01 {
   width: get_vw(42);
   margin: auto;
 }
-.inner_item_img_02 {
+.menu_item_img_02 {
   width: get_vw(48);
   margin: auto;
 }
-.inner_item_img_03 {
+.menu_item_img_03 {
   width: get_vw(129);
   margin: auto;
 }
-.inner_item_img_04 {
+.menu_item_img_04 {
   width: get_vw(86);
   margin: auto;
 }
-.inner_item_img_05 {
+.menu_item_img_05 {
   width: get_vw(39);
   margin: auto;
 }
-.inner_item_img_06 {
+.menu_item_img_06 {
   width: get_vw(59);
   margin: auto;
 }
@@ -155,25 +158,47 @@
   display: flex;
   z-index: 2;
 }
-.lang_item_01,
-.lang_item_02 {
+.lang_item {
+  position: relative;
   width: get_vw(88);
-}
-.lang_item_01 {
-  background-image: url("/common/text_ja_hover.png");
+  background-image: url("/common/bg_language_hover.png");
   background-repeat: no-repeat;
-  background-position: get_vw(3.75) get_vw(7.2);
+  background-position: get_vw(4.5) get_vw(7.2);
   background-size: get_vw(78);
 }
-.lang_item_02 {
-  background-image: url("/common/text_en_hover.png");
-  background-repeat: no-repeat;
-  background-position: get_vw(3.75) get_vw(7.2);
-  background-size: get_vw(78);
+.lang_item_link {
+  width: 6.3vw;
+  cursor: pointer;
+  display: inline-block;
 }
 .lang_item_link:hover img {
   visibility: hidden;
 }
 
-.inner_item_link:hover {
+.lang_text {
+  position: absolute;
+  color: rgba(17, 43, 58, 0.5);
+  @include fz_vw(12);
+  font-weight: bold;
+}
+.lang_item:nth-child(1) .lang_text {
+  top: get_vw(8);
+  left: get_vw(22);
+
+  @include mq(lg) {
+    top: get_vw(10);
+    left: get_vw(26);
+  }
+}
+.lang_item:nth-child(2) .lang_text {
+  top: get_vw(8);
+  left: get_vw(19);
+
+  @include mq(lg) {
+    top: get_vw(10);
+    left: get_vw(23);
+  }
+}
+.lang_item_link:hover .lang_text {
+  color: #fff;
 }

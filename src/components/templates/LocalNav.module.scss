@@ -90,10 +90,6 @@
 
 .LocalNav_item a:hover {
   color: #43dbf2;
-
-  & .LocalNav_item::marker {
-    color: #43dbf2;
-  }
 }
 .localNav_top {
   position: relative;

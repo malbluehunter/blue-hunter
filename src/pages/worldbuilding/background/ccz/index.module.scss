@@ -77,7 +77,6 @@
     repeat-y;
   background-position: get_vw_sp(2) get_vw_sp(0);
   background-size: 97.7%;
-  margin-top: -1px;
 
   @include mq(md) {
     background-position: get_vw(7) center;

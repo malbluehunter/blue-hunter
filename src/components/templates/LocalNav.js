@@ -9,10 +9,11 @@ const LocalNav = () => {
   const toggle = () => {
     isOpen ? setisOpen(false) : setisOpen(true)
   }
+  const itemList = ["The Encyclopedia of ”Octa/M”（1）", "The Encyclopedia of ”Octa/M”（2）", "The Encyclopedia of ”Octa/M”（3）"]
 
   return (
     <div className={styles.localNav}>
-      <div className={styles.localNav_top}>
+      <div className={styles.localNav_top} onClick={toggle}>
         <p className={styles.localNav_top_text}>物語の背景 MENU</p>
         <div className={styles.top_img_wrapper}>
           <img src="/common/local_nav_top.png" />
