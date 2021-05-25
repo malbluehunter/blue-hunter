@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import TitleWorld from "../../components/atoms/TitleWorld"
+import PageTitle from "../../components/atoms/PageTitle"
 import Bread from "../../components/molecules/Bread"
 import Header from "../../components/templates/Header"
 import * as styles from "./index.module.scss"
@@ -31,7 +31,9 @@ const WorldbuildingTop = () => {
       <main>
         {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
         <div className={styles.contents_wrapper}>
-          <TitleWorld />
+          <div className={styles.page_title_wrapper}>
+            <PageTitle src="/world/ttl_world.png" />
+          </div>
           <div className={styles.bread_area}>
             {/* パンクズリスト */}
             <Bread page01="TOP" page02="世界観・設定" page03="物語の背景 - 0.予備知識としてのCCZ" />

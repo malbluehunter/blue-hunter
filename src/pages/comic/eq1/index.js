@@ -1,23 +1,23 @@
 import React, { useEffect } from "react"
-import Bread from "../../../../components/molecules/Bread"
-import Header from "../../../../components/templates/Header"
+import PageTitle from "../../../components/atoms/PageTitle"
+import Bread from "../../../components/molecules/Bread"
+import Header from "../../../components/templates/Header"
 import * as styles from "./index.module.scss"
-import TextHeading from "../../../../components/atoms/TextHeading"
-import ContentsTopText from "../../../../components/atoms/ContentsTopText"
-import ContentsLine from "../../../../components/atoms/ContentsLine"
-import TextMedium from "../../../../components/atoms/TextMedium"
-import Pager from "../../../../components/molecules/Pager"
-import BnrArt from "../../../../components/atoms/BnrArt"
-import Footer from "../../../../components/templates/Footer"
-import LocalNav from "../../../../components/templates/LocalNav"
-import ScrollToTop from "../../../../components/atoms/ScrollToTop"
-import ContentsLineSp from "../../../../components/atoms/ContentsLineSp"
-import PagerSp from "../../../../components/molecules/PagerSp"
-import TextLeading from "../../../../components/atoms/TextLeading"
-import TextAnnotation from "../../../../components/atoms/TextAnnotation"
-import TextMediumSub from "../../../../components/atoms/TextMediumSub"
+import TextHeading from "../../../components/atoms/TextHeading"
+import ContentsTopText from "../../../components/atoms/ContentsTopText"
+import ContentsLine from "../../../components/atoms/ContentsLine"
+import TextMedium from "../../../components/atoms/TextMedium"
+import Pager from "../../../components/molecules/Pager"
+import BnrArt from "../../../components/atoms/BnrArt"
+import Footer from "../../../components/templates/Footer"
+import LocalNav from "../../../components/templates/LocalNav"
+import ScrollToTop from "../../../components/atoms/ScrollToTop"
+import ContentsLineSp from "../../../components/atoms/ContentsLineSp"
+import PagerSp from "../../../components/molecules/PagerSp"
+import TextLeading from "../../../components/atoms/TextLeading"
+import TextAnnotation from "../../../components/atoms/TextAnnotation"
+import TextMediumSub from "../../../components/atoms/TextMediumSub"
 import { Helmet } from "react-helmet"
-import PageTitle from "../../../../components/atoms/PageTitle"
 
 const WorldbuildingTop = () => {
   useEffect(() => {
@@ -48,11 +48,11 @@ const WorldbuildingTop = () => {
           {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
           <div className={styles.contents_wrapper}>
             <div className={styles.page_title_wrapper}>
-              <PageTitle src="/world/ttl_world.png" />
+              <PageTitle src="/comic/ttl_comic.png" />
             </div>
             <div className={styles.bread_area}>
               {/* パンクズリスト */}
-              <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../index.html" page03="物語の背景 - 0.予備知識としてのCCZ" />
+              <Bread page01="TOP" href01="/" page03="物語の背景 - 0.予備知識としてのCC" />
             </div>
             <div className={styles.contents_inner}>
               <div className={styles.main_contents_area}>
