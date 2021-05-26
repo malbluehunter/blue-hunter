@@ -3,6 +3,7 @@
 .text {
   @include fz_vw_sp(15);
   text-align: center;
+  font-weight: bold;
 
   @include mq(md) {
     @include fz_vw(16);

@@ -23,9 +23,9 @@
   width: 87%;
 
   @include mq(md) {
-    width: get_vw(1024);
+    width: 1035px;
     padding-top: 0;
-    margin-bottom: get_vw(80);
+    margin: 0 auto 80px;
   }
   @include mq(lg) {
   }
@@ -118,10 +118,10 @@
   margin-top: get_vw(25);
 }
 .bnr_area {
-  width: 100%;
   margin: get_vw_sp(28) calc(50% - 50vw);
 
   @include mq(md) {
+    width: 100%;
     margin: get_vw(80) 0 0;
   }
 }
