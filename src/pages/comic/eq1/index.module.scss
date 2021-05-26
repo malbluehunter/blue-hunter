@@ -18,14 +18,14 @@
 }
 .contents_wrapper {
   margin: get_vw(30) auto 0;
-  padding-bottom: get_vw(80);
   padding-top: get_vw_sp(35);
+  margin-bottom: get_vw_sp(140);
   width: 87%;
 
   @include mq(md) {
-    width: 1035px;
-    margin: auto;
+    width: get_vw(1024);
     padding-top: 0;
+    margin-bottom: get_vw(80);
   }
   @include mq(lg) {
   }
@@ -119,7 +119,7 @@
 }
 .bnr_area {
   width: 100%;
-  margin: get_vw_sp(30) calc(50% - 50vw);
+  margin: get_vw_sp(28) calc(50% - 50vw);
 
   @include mq(md) {
     margin: get_vw(80) 0 0;

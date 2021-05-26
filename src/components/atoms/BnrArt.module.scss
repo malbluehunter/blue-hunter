@@ -2,12 +2,7 @@
 .bnr_wrapper:hover {
   opacity: 0.9;
 }
-.bnr_wrapper {
-  margin-bottom: get_vw_sp(140);
-  @include mq(md) {
-    margin-bottom: 0;
-  }
-}
+
 .bnr_img {
   @include mq(md) {
     margin: auto;
