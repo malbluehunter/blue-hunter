@@ -19,6 +19,9 @@
 .bread li a {
   text-decoration: underline;
 }
+.bread li a:hover {
+  text-decoration: none;
+}
 .bread li {
   display: inline;
   overflow-wrap: break-word;
