@@ -2,6 +2,8 @@
 
 .localNav {
   position: relative;
+  width: 93%;
+  margin: auto;
 
   @include mq(md) {
     width: 268px;
@@ -9,7 +11,7 @@
 }
 .LocalNav_area {
   background-color: rgba($color: #112b3a, $alpha: 0.75);
-  padding: 0 get_vw_sp(20) get_vw_sp(30);
+  padding: 0 get_vw_sp(17) get_vw_sp(30);
   overflow: hidden;
   max-height: 1000px;
   transition: max-height 1s ease-in-out;
@@ -111,7 +113,7 @@
 .btn_openClose[aria-expanded="false"] {
   @include mq(sp-only) {
     bottom: get_vw_sp(12);
-    left: get_vw_sp(160);
+    left: get_vw_sp(147);
   }
 }
 
