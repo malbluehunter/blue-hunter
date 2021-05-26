@@ -5,9 +5,9 @@
   background-size: cover;
   // background-attachment: fixed;
 
-  position:fixed;
-  top:0;
-  left:0;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   content: "";
@@ -23,8 +23,8 @@
   width: 87%;
 
   @include mq(md) {
-    // width: get_vw(1100);
-    width: get_vw(1024);
+    width: 1035px;
+    margin: auto;
     padding-top: 0;
   }
   @include mq(lg) {
@@ -54,13 +54,12 @@
 
   @include mq(md) {
     margin: 0;
-    width: get_vw(750);
+    width: 750px;
   }
 }
 .main_contents_area_top {
   padding: get_vw_sp(11) get_vw_sp(27) 0;
-  background: url("/common/contentsArea_top.png")
-    no-repeat;
+  background: url("/common/contentsArea_top.png") no-repeat;
   background-position: get_vw(-5) top;
   background-size: 100%;
 
@@ -73,8 +72,7 @@
 .main_contents_area_middle {
   position: relative;
   padding: get_vw_sp(10) 0;
-  background: url("/common/contentsArea_center.png")
-    repeat-y;
+  background: url("/common/contentsArea_center.png") repeat-y;
   background-position: get_vw_sp(2) get_vw_sp(0);
   background-size: 97.7%;
 
@@ -93,8 +91,7 @@
   }
 }
 .main_contents_area_bottom {
-  background: url("/common/contentsArea_bottom.png")
-    no-repeat;
+  background: url("/common/contentsArea_bottom.png") no-repeat;
   background-position: center bottom;
   background-size: 100%;
   background-position: -1px -2px;
@@ -121,10 +118,11 @@
   margin-top: get_vw(25);
 }
 .bnr_area {
+  width: 100%;
   margin: get_vw_sp(30) calc(50% - 50vw);
 
   @include mq(md) {
-    margin: get_vw(80) 0;
+    margin: get_vw(80) 0 0;
   }
 }
 main {
@@ -159,3 +157,42 @@ main {
     width: get_vw(111);
   }
 }
+
+// .label
+.label {
+  position: relative;
+  width: 96%;
+  height: 48px;
+  background-color: rgba(17, 43, 58, 0.8);
+  text-align: center;
+  display: flex;
+  margin: 30px auto 0;
+}
+.label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid rgba(17, 43, 58, 0.8);
+  border-top: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+}
+.label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-right: 20px solid rgba(17, 43, 58, 0.8);
+  border-top: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+}
+.label_item {
+  color: #fff;
+  font-size: 16px;;
+  margin: auto;
+}
+

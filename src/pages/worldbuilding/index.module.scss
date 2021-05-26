@@ -125,7 +125,7 @@
   margin: get_vw_sp(30) calc(50% - 50vw);
 
   @include mq(md) {
-    margin: get_vw(80) 0;
+    margin: get_vw(80) 0 0;
   }
 }
 main {

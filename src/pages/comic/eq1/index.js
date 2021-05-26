@@ -1,16 +1,16 @@
-import React, { useEffect } from "react"
+import React from "react"
 import PageTitle from "../../../components/atoms/PageTitle"
 import Header from "../../../components/templates/Header"
 import * as styles from "./index.module.scss"
-import Pager from "../../../components/molecules/Pager"
-import BnrArt from "../../../components/atoms/BnrArt"
 import Footer from "../../../components/templates/Footer"
-import LocalNav from "../../../components/templates/LocalNav"
 import ScrollToTop from "../../../components/atoms/ScrollToTop"
 import PagerSp from "../../../components/molecules/PagerSp"
 import { Helmet } from "react-helmet"
 import BreadShort from "../../../components/molecules/BreadShort"
 import ComicArea from "../../../components/organisms/ComicArea"
+import LocalNavComic from "../../../components/templates/LocalNavComic"
+import PagerComic from "../../../components/molecules/PagerComic"
+import ComicSnsArea from "../../../components/molecules/ComicSnsArea"
 
 const ComicPage = () => {
   // マンガ画像を表示順で設定
@@ -44,25 +44,28 @@ const ComicPage = () => {
               {/* パンクズリスト */}
               <BreadShort page01="TOP" href01="/" page02="マンガ - 第2話" />
             </div>
+            <div className={styles.label}>
+              <div className={styles.label_item}>【全13話】毎週x曜日最新話公開！</div>
+            </div>
             <div className={styles.contents_inner}>
               <div className={styles.main_contents_area}>
-                <ComicArea src={src} />
-                <ol class="step">
-                  <li class="is-current">STEP1</li>
-                  <li>STEP2</li>
-                  <li>STEP3</li>
-                </ol>
+                <div className={styles.comic_wrapper}>
+                  <ComicArea src={src} />
+                </div>
                 {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
                 <div>
-                  <Pager hrefNext="/" hrefPrev="/" disabledNext={false} isDisabledPrev={true} />
+                  <ComicSnsArea />
+                  <PagerComic hrefNext="/" hrefPrev="/" disabledNext={false} isDisabledPrev={true} />
                   <PagerSp />
                 </div>
                 <div className={styles.bnr_area}>
-                  <BnrArt />
+                  <a href="https://bha.myanimelist.net" className={styles.bnr_link} target="_blank">
+                    <img className={styles.bnr_img} src="/common/bnr_art.png" alt="アートコンペ作品募集中" />
+                  </a>
                 </div>
               </div>
               <div className={styles.localNav_area}>
-                <LocalNav />
+                <LocalNavComic />
               </div>
             </div>
           </div>

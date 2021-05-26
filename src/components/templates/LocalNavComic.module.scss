@@ -4,7 +4,7 @@
   position: relative;
 
   @include mq(md) {
-    width: get_vw(265);
+    width: 268px;
   }
 }
 .LocalNav_area {
@@ -15,7 +15,7 @@
   transition: max-height 1s ease-in-out;
 
   @include mq(md) {
-    padding: 0 get_vw(18);
+    padding: 0 18px;
   }
 }
 .LocalNav_area[aria-expanded="false"] {
@@ -32,7 +32,7 @@
   margin: 0 auto;
 
   @include mq(md) {
-    @include fz_vw(12);
+    font-size: 12px;
     font-weight: normal;
   }
 }
@@ -41,17 +41,16 @@
 }
 
 .LocalNav_item {
+  text-align: center;
   @include fz_vw_sp(14);
-  list-style: decimal;
-  list-style-position: inside;
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding: get_vw_sp(15) 0;
   font-weight: bold;
 
   @include mq(md) {
-    @include fz_vw(14);
-    padding: get_vw(14) 0;
+    font-size: 14px;
+    padding: 14px 0;
   }
 }
 .LocalNav_item:last-child {
@@ -60,30 +59,10 @@
   list-style: none;
   @include mq(md) {
     border-bottom: none;
-    padding: get_vw(15) 0 get_vw(12);
+    padding: 15px 0 12px;
   }
 }
-.LocalNav_item:last-child::after {
-  position: absolute;
-  top: get_vw_sp(26);
-  right: get_vw_sp(50);
-  content: "";
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  width: get_vw_sp(5);
-  height: get_vw_sp(5);
-  border-top: 1px solid #fff;
-  border-right: 1px solid #fff;
 
-  @include mq(md) {
-    top: get_vw(26);
-    right: get_vw(24);
-    width: get_vw(5);
-    height: get_vw(5);
-    border-top: 1px solid #fff;
-    border-right: 1px solid #fff;
-  }
-}
 .current a {
   color: #43dbf2;
 }
@@ -105,24 +84,8 @@
   font-weight: bold;
 
   @include mq(md) {
-    top: get_vw(16);
-    @include fz_vw(14);
-  }
-}
-.LocalNav_list_02 {
-  list-style: inside;
-  margin-left: get_vw_sp(9);
-  font-weight: bold;
-
-  @include mq(md) {
-    margin-left: get_vw(9);
-  }
-}
-.LocalNav_list_02 li {
-  @include fz_vw_sp(12);
-
-  @include mq(md) {
-    @include fz_vw(12);
+    top: 16px;
+    font-size: 14px;
   }
 }
 .btn_openClose {
@@ -167,4 +130,7 @@
 }
 .localNav_bottom img {
   width: 100%;
+}
+.disabled a {
+  color: rgba($color: #fff, $alpha: 0.3);
 }

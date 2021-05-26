@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Bread from "../../../../components/molecules/Bread"
 import Header from "../../../../components/templates/Header"
 import * as styles from "./index.module.scss"
@@ -20,7 +20,6 @@ import { Helmet } from "react-helmet"
 import PageTitle from "../../../../components/atoms/PageTitle"
 
 const WorldPage = () => {
-
   return (
     <>
       {/* --------------------------------------- mal様修正範囲(meta情報) 開始 --------------------------------------- */}

@@ -6,7 +6,7 @@ import FollowUs from "../molecules/FollowUs"
 const Footer = () => {
   return (
     <footer>
-      <div>
+      <div className={styles.footer_bg_wrapper}>
         <img src="/common/bg_footer.png" className={styles.footer_bg} />
         <img src="/common/bg_footer_sp.png" className={styles.footer_bg_sp} />
       </div>

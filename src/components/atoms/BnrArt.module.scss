@@ -9,8 +9,6 @@
   }
 }
 .bnr_img {
-  // width: 100vw;
-
   @include mq(md) {
     margin: auto;
     width: 52vw;

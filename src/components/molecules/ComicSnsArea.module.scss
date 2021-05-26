@@ -1,0 +1,26 @@
+@import "../../assets/scss/mixin";
+
+.sns_area {
+  width: 170px;
+  text-align: center;
+  margin: 35px auto 0;
+}
+.facebook_wrapper {
+  width: 70px;
+}
+.twitter_wrapper {
+  width: 70px;
+
+  & img {
+    height: 100%;
+  }
+}
+.text {
+  font-family: DIN Condensed;
+  font-size: 24px;
+}
+.sns_icon_wrapper {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}

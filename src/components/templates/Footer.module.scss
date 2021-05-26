@@ -1,5 +1,8 @@
 @import "../../assets/scss/mixin";
 
+footer {
+  position: relative;
+}
 .footer_area {
   position: relative;
   width: 100%;
@@ -99,4 +102,10 @@
   @include mq(md) {
     display: none;
   }
+}
+.footer_bg_wrapper {
+  position: absolute;
+  top: get_vw(-25);
+  left: 0;
+  z-index: 2;
 }

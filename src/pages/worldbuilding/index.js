@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import PageTitle from "../../components/atoms/PageTitle"
 import Bread from "../../components/molecules/Bread"
 import Header from "../../components/templates/Header"
@@ -19,12 +19,6 @@ import TextAnnotation from "../../components/atoms/TextAnnotation"
 import TextMediumSub from "../../components/atoms/TextMediumSub"
 
 const WorldPage = () => {
-  useEffect(() => {
-    const contents = document.getElementsByClassName("contents_area_inner")
-    const contentsHight = contents.offsetHight
-    console.log(contentsHight)
-  })
-
   return (
     <div className={styles.container}>
       <Header />
