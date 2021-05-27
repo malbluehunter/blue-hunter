@@ -1,0 +1,33 @@
+@import "../../assets/scss/mixin";
+
+.container::before {
+  background-image: url("/common/bg_main_sp.webp");
+  background-size: cover;
+  // background-attachment: fixed;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+
+  @include mq(md) {
+    background-image: url("/common/bg_main.webp");
+  }
+}
+.contents_wrapper {
+  margin: 0 auto;
+  padding-top: get_vw_sp(35);
+  margin-bottom: get_vw_sp(140);
+  width: 87%;
+
+  @include mq(md) {
+    width: get_vw(1024);
+    padding-top: 0;
+    margin-top: get_vw(25);
+    margin-bottom: get_vw(80);
+  }
+  @include mq(lg) {
+  }
+}

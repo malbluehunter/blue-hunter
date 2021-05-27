@@ -1,0 +1,16 @@
+@import "../../assets/scss/mixin";
+
+
+.main_contents_area_bottom {
+  background: url("/common/contentsArea_bottom.png") no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  background-position: get_vw_sp(-1) get_vw_sp(0);
+  height: get_vw_sp(38);
+
+  @include mq(md) {
+    width: get_vw(750);
+    height: get_vw(80);
+    background-position: get_vw(-1) get_vw(0);
+  }
+}

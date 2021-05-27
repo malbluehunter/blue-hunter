@@ -11,7 +11,7 @@ const Header = () => {
       <div className={styles.header__wrapper}>
         <div className={styles.logo__wrapper}>
           <Logo />
-          <LogoBlueHunter />
+          <LogoBlueHunter href="/"/>
         </div>
         <div className={styles.nav_area}>
           <NavSp />

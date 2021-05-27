@@ -2,11 +2,11 @@ import * as React from "react"
 import * as styles from "./PageTitle.module.scss"
 
 const PageTitle = props => {
-  const { src } = props
+  const { src, alt } = props
 
   return (
     <div className={styles.img__wrap}>
-      <img src={src} alt="The World of Blue Hunter" />
+      <img src={src} alt={alt} />
     </div>
   )
 }

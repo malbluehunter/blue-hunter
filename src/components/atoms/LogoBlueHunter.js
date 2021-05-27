@@ -1,11 +1,13 @@
 import * as React from "react"
 import * as styles from "./LogoBlueHunter.module.scss"
 
-const LogoBlueHunter = () => {
+const LogoBlueHunter = props => {
+  const { href } = props
+
   return (
-    <div className={styles.img__wrap}>
+    <a href={href} className={styles.img__wrap}>
       <img src="/common/logo_bluehunter.png" alt="BLUE HUNTER" />
-    </div>
+    </a>
   )
 }
 export default LogoBlueHunter

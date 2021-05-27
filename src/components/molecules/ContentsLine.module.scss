@@ -1,0 +1,13 @@
+@import "../../assets/scss/mixin";
+
+.line {
+  width: get_vw_sp(278);
+  margin: get_vw_sp(10) auto;
+  margin-left: get_vw_sp(-5);
+
+  @include mq(md) {
+    margin: get_vw(18) auto get_vw(22);
+    width: get_vw(660);
+    margin-left: get_vw(-10);
+  }
+}

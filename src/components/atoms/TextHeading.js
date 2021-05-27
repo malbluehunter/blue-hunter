@@ -4,7 +4,12 @@ import * as styles from "./TextHeading.module.scss"
 
 const TextHeading = props => {
   const { text } = props
-  return <h3 className={styles.heading}>{text}</h3>
+
+  return (
+    <div className={styles.heading_wrapper}>
+      <h3 className={styles.heading}>{text}</h3>
+    </div>
+  )
 }
 
 export default TextHeading

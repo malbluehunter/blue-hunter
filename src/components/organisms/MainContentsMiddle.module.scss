@@ -1,0 +1,23 @@
+@import "../../assets/scss/mixin";
+
+.main_contents_area_middle {
+  position: relative;
+  padding: get_vw_sp(10) 0;
+  background: url("/common/contentsArea_center.png") repeat-y;
+  background-position: get_vw_sp(2) get_vw_sp(0);
+  background-size: 97.7%;
+
+  @include mq(md) {
+    background-position: get_vw(7) center;
+    padding: 0 get_vw(50);
+    width: get_vw(650);
+  }
+}
+.main_contents_area_inner {
+  width: 83%;
+  margin: auto;
+  @include mq(md) {
+    width: auto;
+    margin: 0;
+  }
+}
