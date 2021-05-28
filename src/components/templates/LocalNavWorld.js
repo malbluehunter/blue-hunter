@@ -1,9 +1,9 @@
 import React, { useState } from "react"
-import * as styles from "./LocalNav.module.scss"
+import * as styles from "./LocalNavWorld.module.scss"
 import TextClose from "../atoms/TextClose"
 import IconDownArrow from "../atoms/IconDownArrow"
 
-const LocalNav = () => {
+const LocalNavWorld = () => {
   const [isOpen, setisOpen] = useState(false)
 
   const toggle = () => {
@@ -69,4 +69,4 @@ const LocalNav = () => {
   )
 }
 
-export default LocalNav
+export default LocalNavWorld

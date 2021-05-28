@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import * as styles from "./LocalNavComic.module.scss"
 import TextClose from "../atoms/TextClose"
-import IconDownArrow from "../atoms/IconDownArrow"
+import IconDownArrowComic from "../atoms/IconDownArrowComic"
+import LabelNew from "../atoms/LabelNew"
 
 const LocalNavComic = () => {
   const [isOpen, setisOpen] = useState(false)
@@ -9,7 +10,6 @@ const LocalNavComic = () => {
   const toggle = () => {
     isOpen ? setisOpen(false) : setisOpen(true)
   }
-  const itemList = ["The Encyclopedia of ”Octa/M”（1）", "The Encyclopedia of ”Octa/M”（2）", "The Encyclopedia of ”Octa/M”（3）"]
 
   return (
     <div className={styles.localNav}>
@@ -25,7 +25,8 @@ const LocalNavComic = () => {
             <a href="">第1話</a>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.current}`}>
-            <a href="">第2話</a>
+              <a href="">第2話</a>
+              <LabelNew />
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
             <a href="">第3話</a>
@@ -67,7 +68,7 @@ const LocalNavComic = () => {
         <img src="/common/local_nav_bottom.png" />
       </div>
       <div className={styles.btn_openClose} aria-expanded={isOpen} onClick={toggle}>
-        {isOpen ? <TextClose /> : <IconDownArrow />}
+        {isOpen ? <TextClose /> : <IconDownArrowComic />}
       </div>
     </div>
   )

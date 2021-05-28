@@ -21,9 +21,11 @@ const NavSp = () => {
       </div>
       <div className={styles.logo_area}>
         <a href="https://uminohi.jp/" target="_blank">
-          <img src="/common/logo_sp.png" alt="ロゴ" className={styles.inner_item_logo_01} />
+          <img src="/common/logo_sp.png" alt="日本財団 海と日本PROJECT" className={styles.inner_item_logo_01} />
         </a>
-        <img src="/common/logo_bluehunter_sp.png" alt="ロゴ" className={styles.inner_item_logo_02} />
+        <a href="/">
+          <img src="/common/logo_bluehunter_sp.png" alt="BLUE HUNTER" className={styles.inner_item_logo_02} />
+        </a>
       </div>
       <nav className={`${isClose ? styles.active : ""} ${styles.globalMenuSp}`}>
         <ul className={styles.inner_list}>

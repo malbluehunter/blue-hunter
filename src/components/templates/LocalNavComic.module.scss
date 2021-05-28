@@ -2,29 +2,41 @@
 
 .localNav {
   position: relative;
-  width: 93%;
   margin: auto;
+  width: 87%;
 
   @include mq(md) {
+    width: 400px;
+  }
+
+  @include mq(lg-sub) {
     width: 268px;
+    margin: 0;
   }
 }
 .LocalNav_area {
   background-color: rgba($color: #112b3a, $alpha: 0.75);
-  padding: 0 get_vw_sp(17) get_vw_sp(30);
+  padding: 0 get_vw_sp(18) get_vw_sp(30);
   overflow: hidden;
   max-height: 1000px;
   transition: max-height 1s ease-in-out;
 
   @include mq(md) {
+    padding: 0 17px 30px;
+  }
+
+  @include mq(lg-sub) {
     padding: 0 18px;
   }
 }
 .LocalNav_area[aria-expanded="false"] {
-  @include mq(sp-only) {
-    max-height: 0px;
-    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
-    padding-bottom: get_vw_sp(8);
+  max-height: 0px;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  padding-bottom: 8px;
+
+  @include mq(lg-sub) {
+    max-height: none;
+    padding-bottom: 0;
   }
 }
 .LocalNav_list {
@@ -33,7 +45,7 @@
   line-height: 2;
   margin: 0 auto;
 
-  @include mq(md) {
+  @include mq(lg-sub) {
     font-size: 12px;
     font-weight: normal;
   }
@@ -43,6 +55,7 @@
 }
 
 .LocalNav_item {
+  position: relative;
   text-align: center;
   @include fz_vw_sp(14);
   color: #fff;
@@ -51,6 +64,11 @@
   font-weight: bold;
 
   @include mq(md) {
+    font-size: 16px;
+    padding: 15px 0;
+  }
+
+  @include mq(lg-sub) {
     font-size: 14px;
     padding: 14px 0;
   }
@@ -59,8 +77,10 @@
   position: relative;
   text-align: center;
   list-style: none;
-  @include mq(md) {
-    border-bottom: none;
+  padding: 0;
+  border-bottom: none;
+
+  @include mq(lg-sub) {
     padding: 15px 0 12px;
   }
 }
@@ -82,10 +102,15 @@
   right: 0;
   z-index: 2;
   text-align: center;
-  @include fz_vw_sp(14);
+  @include fz_vw_sp(15);
   font-weight: bold;
 
   @include mq(md) {
+    top: 25px;
+    font-size: 20px;
+  }
+
+  @include mq(lg-sub) {
     top: 16px;
     font-size: 14px;
   }
@@ -93,7 +118,7 @@
 .btn_openClose {
   cursor: pointer;
 
-  @include mq(md) {
+  @include mq(lg-sub) {
     display: none;
   }
 }
@@ -101,19 +126,31 @@
   font-family: DIN Condensed;
   @include fz_vw_sp(18);
   text-align: center;
-  margin-top: get_vw_sp(13);
+  margin-top: 13px;
   line-height: 1;
+
+  @include mq(md) {
+    font-size: 22px;
+  }
 }
 .btn_openClose {
   position: absolute;
-  bottom: get_vw_sp(15);
+  bottom: 15px;
   left: 0;
   right: 0;
 }
 .btn_openClose[aria-expanded="false"] {
-  @include mq(sp-only) {
-    bottom: get_vw_sp(12);
-    left: get_vw_sp(147);
+  bottom: get_vw_sp(10);
+  left: get_vw_sp(158);
+
+  @include mq(md) {
+    bottom: 12px;
+    left: 200px;
+  }
+
+  @include mq(lg-sub) {
+    bottom: 0;
+    left: 0;
   }
 }
 

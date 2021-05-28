@@ -1,6 +1,6 @@
 import * as React from "react"
 import BnrArt from "../atoms/BnrArt"
-import LocalNav from "../templates/LocalNav"
+import LocalNav from "../templates/LocalNavWorld"
 import MainContentsArea from "./MainContentsArea"
 import PagerArea from "./PagerArea"
 import * as styles from "./WorldContentsInner.module.scss"

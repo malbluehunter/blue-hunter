@@ -11,10 +11,14 @@ const ComicSnsArea = () => {
       </div>
       <div className={styles.sns_icon_wrapper}>
         <div className={styles.facebook_wrapper}>
-          <IconFacebook />
+          <a href="">
+            <IconFacebook />
+          </a>
         </div>
         <div className={styles.twitter_wrapper}>
-          <IconTwitter />
+          <a href="">
+            <IconTwitter />
+          </a>
         </div>
       </div>
     </div>

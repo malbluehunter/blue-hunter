@@ -35,7 +35,9 @@ const WorldPage = () => {
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
       <LayoutTwoColumn>
         {/* ページタイトル */}
-        <PageTitle src="/world/ttl_world.png" alt="The World of Blue Hunter" />
+        <div className={styles.pageTitle_wrapper}>
+          <PageTitle src="/world/ttl_world.png" alt="The World of Blue Hunter" />
+        </div>
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../index.html" page03="物語の背景 - 0.予備知識としてのCCZ" />
         <WorldContentsInner>

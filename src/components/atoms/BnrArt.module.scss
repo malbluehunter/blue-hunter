@@ -6,6 +6,5 @@
 .bnr_img {
   @include mq(md) {
     margin: auto;
-    width: 52vw;
   }
 }

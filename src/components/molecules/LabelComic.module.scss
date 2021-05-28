@@ -1,0 +1,66 @@
+@import "../../assets/scss/mixin";
+
+.label {
+  position: relative;
+  width: 83%;
+  height: get_vw_sp(27);
+  background-color: rgba(17, 43, 58, 0.8);
+  text-align: center;
+  display: flex;
+  margin: get_vw_sp(26) auto 0;
+
+  @include mq(md) {
+    width: 726px;
+    height: 48px;
+    margin-top: 30px;
+  }
+
+  @include mq(lg-sub) {
+    width: 96%;
+  }
+}
+.label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: get_vw_sp(-10);
+  width: 0;
+  height: 0;
+  border-left: get_vw_sp(10) solid rgba(17, 43, 58, 0.8);
+  border-top: get_vw_sp(13) solid transparent;
+  border-bottom: get_vw_sp(14) solid transparent;
+
+  @include mq(md) {
+    right: -20px;
+    border-left: 20px solid rgba(17, 43, 58, 0.8);
+    border-top: 24px solid transparent;
+    border-bottom: 24px solid transparent;
+  }
+}
+.label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: get_vw_sp(-10);
+  width: 0;
+  height: 0;
+  border-right: get_vw_sp(10) solid rgba(17, 43, 58, 0.8);
+  border-top: get_vw_sp(13) solid transparent;
+  border-bottom: get_vw_sp(14) solid transparent;
+
+  @include mq(md) {
+    left: -20px;
+    border-right: 20px solid rgba(17, 43, 58, 0.8);
+    border-top: 24px solid transparent;
+    border-bottom: 24px solid transparent;
+  }
+}
+.label_item {
+  @include fz_vw_sp(15);
+  color: #fff;
+  margin: auto;
+
+  @include mq(md) {
+    font-size: 16px;
+  }
+}

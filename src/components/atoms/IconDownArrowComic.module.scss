@@ -1,0 +1,16 @@
+@import "../../assets/scss/mixin";
+
+.arrow {
+  border-bottom: solid get_vw_sp(3) #fff;
+  border-right: solid get_vw_sp(3) #fff;
+  width: get_vw_sp(10);
+  height: get_vw_sp(10);
+  transform: rotate(45deg);
+
+  @include mq(md) {
+    border-bottom: solid 3px #fff;
+    border-right: solid 3px #fff;
+    width: 10px;
+    height: 10px;
+  }
+}

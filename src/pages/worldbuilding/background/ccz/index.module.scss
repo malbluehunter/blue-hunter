@@ -27,5 +27,16 @@ main {
     margin-top: get_vw(15);
   }
 }
+.pageTitle_wrapper {
+  width: 100%;
+  margin: auto;
 
+  @include mq(md) {
+    width: get_vw(421);
+  }
 
+  & img {
+    image-rendering: -webkit-optimize-contrast;
+    -webkit-backface-visibility: hidden;
+  }
+}

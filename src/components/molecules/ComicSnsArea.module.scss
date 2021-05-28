@@ -1,15 +1,28 @@
 @import "../../assets/scss/mixin";
 
 .sns_area {
-  width: 170px;
   text-align: center;
-  margin: 35px auto 0;
+  width: get_vw_sp(145);
+  margin: get_vw_sp(16) auto 0;
+
+  @include mq(md) {
+    width: 170px;
+    margin-top: 35px;
+  }
 }
 .facebook_wrapper {
-  width: 70px;
+  width: get_vw_sp(58);
+
+  @include mq(md) {
+    width: 70px;
+  }
 }
 .twitter_wrapper {
-  width: 70px;
+  width: get_vw_sp(57);
+
+  @include mq(md) {
+    width: 70px;
+  }
 
   & img {
     height: 100%;
@@ -17,7 +30,11 @@
 }
 .text {
   font-family: DIN Condensed;
-  font-size: 24px;
+  @include fz_vw_sp(18);
+
+  @include mq(md) {
+    font-size: 24px;
+  }
 }
 .sns_icon_wrapper {
   margin-top: 10px;
