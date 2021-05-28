@@ -22,14 +22,14 @@ const WorldPage = () => {
       <Helmet>
         <html lang="ja" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 開始 --------------------------------------- */}
-        <title>世界観・設定 | 「Blue Hunter」公式サイト</title>
-        <meta name="description" content="ブルーハンタープロジェクト公式サイト。2021年6月より漫画「Blue Hunter」を連載開始！最新ニュースや設定資料集、スペシャル情報等をこちらからお届けします。" />
-        <meta name="keywords" content="Blue Hunter, ブルーハンター, ブルーハンタープロジェクト, 無料漫画, アートコンペ " />
+        <title>世界観・設定 | 「BLUE HUNTER」公式サイト</title>
+        <meta name="description" content="ブルーハンタープロジェクト公式サイト。2021年6月より漫画「BLUE HUNTER」を連載開始！最新ニュースや設定資料集、スペシャル情報等をこちらからお届けします。" />
+        <meta name="keywords" content="BLUE HUNTER, ブルーハンター, ブルーハンタープロジェクト, 無料漫画, アートコンペ " />
         <link rel="canonical" href="https://manga.uminohi.jp/worldbuilding/background/ccz/" />
         <meta property="og:url" content="https://manga.uminohi.jp/worldbuilding/background/ccz/" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
         <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="「Blue Hunter」公式サイト" />
+        <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
         <meta property="og:image" content="https://manga.uminohi.jp/ogp.png" />
         <link rel="preload" as="image" href="../../../../static/common/nav_text_news_hover.png" />
         <link rel="preload" as="image" href="../../../../static/common/nav_text_comic_hover.png" />
@@ -45,7 +45,7 @@ const WorldPage = () => {
       <LayoutTwoColumn>
         {/* ページタイトル */}
         <div className={styles.pageTitle_wrapper}>
-          <PageTitle src="/world/ttl_world.png" alt="The World of Blue Hunter" />
+          <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../index.html" page03="物語の背景 - 0.予備知識としてのCCZ" />
