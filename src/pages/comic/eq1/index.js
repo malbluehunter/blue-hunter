@@ -1,11 +1,9 @@
 import React from "react"
 import PageTitle from "../../../components/atoms/PageTitle"
 import * as styles from "./index.module.scss"
-import PagerSp from "../../../components/molecules/PagerSp"
 import { Helmet } from "react-helmet"
 import BreadShort from "../../../components/molecules/BreadShort"
 import ComicArea from "../../../components/organisms/ComicArea"
-import PagerComic from "../../../components/molecules/PagerComic"
 import ComicSnsArea from "../../../components/molecules/ComicSnsArea"
 import LayoutTwoColumnComic from "../../../components/templates/LayoutTwoColumnComic"
 import ComicContentsInner from "../../../components/organisms/ComicContentsInner"
@@ -19,19 +17,25 @@ const ComicPage = () => {
 
   return (
     <>
-      {/* --------------------------------------- mal様修正範囲(meta情報) 開始 --------------------------------------- */}
       <Helmet>
         <html lang="ja" />
-        <title>世界観・設定 | 「Blue Hunter」公式サイト</title>
+      {/* --------------------------------------- mal様修正範囲(meta情報) 開始 --------------------------------------- */}
+        <title>第1話 | 「Blue Hunter」公式サイト</title>
         <meta name="description" content="ブルーハンタープロジェクト公式サイト。2021年6月より漫画「Blue Hunter」を連載開始！最新ニュースや設定資料集、スペシャル情報等をこちらからお届けします。" />
         <meta name="keywords" content="Blue Hunter, ブルーハンター, ブルーハンタープロジェクト, 無料漫画, アートコンペ " />
-        <link rel="canonical" href="https://manga.uminohi.jp/worldbuilding/background/ccz/" />
-        <meta property="og:url" content="https://manga.uminohi.jp/worldbuilding/background/ccz/" />
+        <link rel="canonical" href="https://manga.uminohi.jp/comic/eq1/" />
+        <meta property="og:url" content="https://manga.uminohi.jp/comic/eq1/" />
+      {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「Blue Hunter」公式サイト" />
         <meta property="og:image" content="https://manga.uminohi.jp/ogp.png" />
+        <link rel="preload" as="image" href="../../../../static/common/nav_text_news_hover.png"/>
+        <link rel="preload" as="image" href="../../../../static/common/nav_text_comic_hover.png"/>
+        <link rel="preload" as="image" href="../../../../static/common/nav_text_world_hover.png"/>
+        <link rel="preload" as="image" href="../../../../static/common/nav_text_characters_hover.png"/>
+        <link rel="preload" as="image" href="../../../../static/common/nav_text_staff_hover.png"/>
+        <link rel="preload" as="image" href="../../../../static/common/nav_text_special_hover.png"/>
       </Helmet>
-      {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
       <LayoutTwoColumnComic>

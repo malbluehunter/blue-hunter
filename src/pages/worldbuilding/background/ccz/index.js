@@ -18,19 +18,27 @@ import WorldContentsInner from "../../../../components/organisms/WorldContentsIn
 const WorldPage = () => {
   return (
     <>
-      {/* --------------------------------------- mal様修正範囲(meta情報) 開始 --------------------------------------- */}
       <Helmet>
         <html lang="ja" />
+      {/* --------------------------------------- mal様修正範囲(meta情報) 開始 --------------------------------------- */}
         <title>世界観・設定 | 「Blue Hunter」公式サイト</title>
         <meta name="description" content="ブルーハンタープロジェクト公式サイト。2021年6月より漫画「Blue Hunter」を連載開始！最新ニュースや設定資料集、スペシャル情報等をこちらからお届けします。" />
         <meta name="keywords" content="Blue Hunter, ブルーハンター, ブルーハンタープロジェクト, 無料漫画, アートコンペ " />
         <link rel="canonical" href="https://manga.uminohi.jp/worldbuilding/background/ccz/" />
         <meta property="og:url" content="https://manga.uminohi.jp/worldbuilding/background/ccz/" />
+      {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「Blue Hunter」公式サイト" />
         <meta property="og:image" content="https://manga.uminohi.jp/ogp.png" />
+        <link rel="preload" as="image" href="../../../../static/common/nav_text_news_hover.png"/>
+        <link rel="preload" as="image" href="../../../../static/common/nav_text_comic_hover.png"/>
+        <link rel="preload" as="image" href="../../../../static/common/nav_text_world_hover.png"/>
+        <link rel="preload" as="image" href="../../../../static/common/nav_text_characters_hover.png"/>
+        <link rel="preload" as="image" href="../../../../static/common/nav_text_staff_hover.png"/>
+        <link rel="preload" as="image" href="../../../../static/common/nav_text_special_hover.png"/>
       </Helmet>
-      {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
+
+      <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
       <LayoutTwoColumn>
