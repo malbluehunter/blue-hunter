@@ -6,7 +6,7 @@ const ButtonNext = props => {
 
   return (
     <a href={hrefNext} className={`${styles.btn_wrapper} ${isDisabledNext ? styles.disabled : ""}`}>
-      {isDisabledNext ? <img src="/world/btn_next_disabled.png" alt="PREV" /> : <img src="/world/btn_next.png" alt="PREV" />}
+      {isDisabledNext ? <img src="/world/btn_next_disabled.png" alt="NEXT" /> : <img src="/world/btn_next.png" alt="NEXT" />}
     </a>
   )
 }

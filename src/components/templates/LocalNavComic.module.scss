@@ -94,6 +94,11 @@
 }
 .localNav_top {
   position: relative;
+  cursor: pointer;
+
+  @include mq(lg-sub) {
+    cursor: auto;
+  }
 }
 .localNav_top_text {
   position: absolute;
@@ -172,4 +177,5 @@
 }
 .disabled a {
   color: rgba($color: #fff, $alpha: 0.3);
+  pointer-events: none;
 }

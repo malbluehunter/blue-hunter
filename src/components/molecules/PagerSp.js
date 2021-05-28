@@ -4,14 +4,16 @@ import ButtonPrevSp from "../atoms/ButtonPrevSp"
 import PageNumber from "../atoms/PageNumber"
 import * as styles from "./PagerSp.module.scss"
 
-const PagerSp = () => {
+const PagerSp = props => {
+  const { hrefNext, hrefPrev, isDisabledNext, isDisabledPrev, number } = props
+
   return (
     <div className={styles.pager}>
       <div className={styles.pager_inner}>
-        <PageNumber number="1" total="10" />
+        <PageNumber number={number} total="10" />
         <div className={styles.btn_area}>
-          <ButtonPrevSp href="#" />
-          <ButtonNextSp href="#" />
+          <ButtonPrevSp hrefPrev={hrefPrev} isDisabledPrev={isDisabledPrev} />
+          <ButtonNextSp hrefNext={hrefNext} isDisabledNext={isDisabledNext} />
         </div>
       </div>
     </div>

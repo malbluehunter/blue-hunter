@@ -4,12 +4,12 @@ import ButtonPrev from "../atoms/ButtonPrev"
 import * as styles from "./PagerComic.module.scss"
 
 const PagerComic = props => {
-  const { hrefNext, hrefPrev, disabledNext, isDisabledPrev } = props
+  const { hrefNext, hrefPrev, isDisabledNext, isDisabledPrev } = props
 
   return (
     <div className={styles.pager}>
       <ButtonPrev hrefPrev={hrefPrev} isDisabledPrev={isDisabledPrev} />
-      <Button hrefNext={hrefNext} disabledNext={disabledNext} />
+      <Button hrefNext={hrefNext} isDisabledNext={isDisabledNext} />
     </div>
   )
 }
