@@ -13,6 +13,28 @@ function PrevArrow(props) {
 }
 
 const SliderCharacters = props => {
+  const { pathname } = props
+  let number
+
+  switch (pathname) {
+    case "/characters/kakeru/":
+      number = 1
+    case "/characters/viola/":
+      number = 2
+    case "/characters/tsukito/":
+      number = 3
+    case "/characters/hawk/":
+      number = 4
+    case "/characters/yoshinori/":
+      number = 5
+    case "/characters/skull/":
+      number = 6
+    case "/characters/jazz/":
+      number = 7
+    case "/characters/nagisa/":
+      number = 8
+  }
+
   const settings = {
     className: "center",
     centerMode: true,
@@ -23,8 +45,10 @@ const SliderCharacters = props => {
     focusOnSelect: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    initialSlide: number,
+    swipe: true,
+    swipeToSlide: true,
   }
-  const { pathname } = props
 
   return (
     <>
@@ -32,7 +56,7 @@ const SliderCharacters = props => {
         <Slider {...settings} className={styles.slider}>
           {pathname.match(/kakeru/) ? (
             <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/characters/kakeru/">
-              <img src="/characters/character01_current.png" alt="カケル" className={styles.current_img} />{" "}
+              <img src="/characters/character01_current.png" alt="カケル" className={styles.current_img} />
             </a>
           ) : (
             <a className={styles.slider_item} href="/characters/kakeru/">
@@ -41,7 +65,7 @@ const SliderCharacters = props => {
           )}
           {pathname.match(/viola/) ? (
             <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/characters/viola/">
-              <img src="/characters/character02_current.png" alt="ヴィオラ" className={styles.current_img} />{" "}
+              <img src="/characters/character02_current.png" alt="ヴィオラ" className={styles.current_img} />
             </a>
           ) : (
             <a className={styles.slider_item} href="/characters/viola/">
@@ -50,7 +74,7 @@ const SliderCharacters = props => {
           )}
           {pathname.match(/tsukito/) ? (
             <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/characters/tsukito/">
-              <img src="/characters/character03_current.png" alt="月人" className={styles.current_img} />{" "}
+              <img src="/characters/character03_current.png" alt="月人" className={styles.current_img} />
             </a>
           ) : (
             <a className={styles.slider_item} href="/characters/kakeru/">
@@ -59,7 +83,7 @@ const SliderCharacters = props => {
           )}
           {pathname.match(/hawk/) ? (
             <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/characters/hawk/">
-              <img src="/characters/character04_current.png" alt="ホーク" className={styles.current_img} />{" "}
+              <img src="/characters/character04_current.png" alt="ホーク" className={styles.current_img} />
             </a>
           ) : (
             <a className={styles.slider_item} href="/characters/hawk/">
@@ -68,7 +92,7 @@ const SliderCharacters = props => {
           )}
           {pathname.match(/yoshinori/) ? (
             <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/characters/yoshinori/">
-              <img src="/characters/character05_current.png" alt="生頼紀誉師" className={styles.current_img} />{" "}
+              <img src="/characters/character05_current.png" alt="生頼紀誉師" className={styles.current_img} />
             </a>
           ) : (
             <a className={styles.slider_item} href="/characters/yoshinori/">
@@ -77,7 +101,7 @@ const SliderCharacters = props => {
           )}
           {pathname.match(/skull/) ? (
             <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/characters/skull/">
-              <img src="/characters/character06_current.png" alt="スカル" className={styles.current_img} />{" "}
+              <img src="/characters/character06_current.png" alt="スカル" className={styles.current_img} />
             </a>
           ) : (
             <a className={styles.slider_item} href="/characters/skull/">
@@ -86,7 +110,7 @@ const SliderCharacters = props => {
           )}
           {pathname.match(/jazz/) ? (
             <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/characters/jazz/">
-              <img src="/characters/character07_current.png" alt="JAZz" className={styles.current_img} />{" "}
+              <img src="/characters/character07_current.png" alt="JAZz" className={styles.current_img} />
             </a>
           ) : (
             <a className={styles.slider_item} href="/characters/jazz/">
@@ -95,7 +119,7 @@ const SliderCharacters = props => {
           )}
           {pathname.match(/nagisa/) ? (
             <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/characters/nagisa/">
-              <img src="/characters/character08_current.png" alt="上原渚" className={styles.current_img} />{" "}
+              <img src="/characters/character08_current.png" alt="上原渚" className={styles.current_img} />
             </a>
           ) : (
             <a className={styles.slider_item} href="/characters/nagisa/">

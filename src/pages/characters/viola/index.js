@@ -9,7 +9,7 @@ import ContentsInner from "../../../components/organisms/ContentsInner"
 import LayoutTwoColumn from "../../../components/templates/LayoutTwoColumn"
 import TextHeadingCharacters from "../../../components/atoms/TextHeadingCharacters"
 import Label02 from "../../../components/molecules/Label02"
-import SliderCharacters02 from "../../../components/organisms/SliderCharacters02"
+import SliderCharacters from "../../../components/organisms/SliderCharacters"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import BnrArt from "../../../components/atoms/BnrArt"
@@ -30,12 +30,12 @@ const CharactersPage = ({ location }) => {
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
         <meta property="og:image" content="https://manga.uminohi.jp/ogp.png" />
-        <link rel="preload" as="image" href="../../../static/common/nav_text_news_hover.png" />
-        <link rel="preload" as="image" href="../../../static/common/nav_text_comic_hover.png" />
-        <link rel="preload" as="image" href="../../../static/common/nav_text_world_hover.png" />
-        <link rel="preload" as="image" href="../../../static/common/nav_text_characters_hover.png" />
-        <link rel="preload" as="image" href="../../../static/common/nav_text_staff_hover.png" />
-        <link rel="preload" as="image" href="../../../static/common/nav_text_special_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_news_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_comic_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_world_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_characters_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_staff_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_special_hover.png" />
         <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
       </Helmet>
@@ -48,7 +48,7 @@ const CharactersPage = ({ location }) => {
         </div>
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/" page02="キャラクター - カケル" />
-        <SliderCharacters02 pathname={location.pathname} />
+        <SliderCharacters pathname={location.pathname} />
         <ContentsInner>
           <MainContentsMiddle02>
             <div className={styles.contents_inner}>
