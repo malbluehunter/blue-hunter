@@ -65,12 +65,17 @@
     margin: get_vw(80) 0 0;
   }
 }
-.current_img {
-  width: 82%;
-  margin: 9% auto 0;
+.current_wrapper {
+  margin: 9% 8% 0;
 
   @include mq(md) {
-    width: get_vw(76);
-    margin: get_vw(8) get_vw(8) 0;
+    margin: 0.9% 1% 0;
+  }
+}
+.current_img {
+  width: 82%;
+
+  @include mq(md) {
+    width: 100%;
   }
 }

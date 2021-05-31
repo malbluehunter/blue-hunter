@@ -30,9 +30,15 @@ const SliderCharacters = props => {
     <>
       <div className={styles.slider_sp}>
         <Slider {...settings} className={styles.slider}>
-          <a className={styles.slider_item} href="/characters/kakeru/">
-            {pathname.match(/kakeru/) ? <img src="/characters/character01_current.png" alt="カケル" className={styles.current_img} /> : <img src="/characters/character01.png" alt="カケル" />}
-          </a>
+          {pathname.match(/kakeru/) ? (
+            <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/characters/kakeru/">
+              <img src="/characters/character01_current.png" alt="カケル" className={styles.current_img} />{" "}
+            </a>
+          ) : (
+            <a className={styles.slider_item} href="/characters/kakeru/">
+              <img src="/characters/character01.png" alt="カケル" />
+            </a>
+          )}
           <a className={styles.slider_item} href="/characters/kakeru/">
             <img src="/characters/character02.png" alt="" />
           </a>
@@ -57,9 +63,15 @@ const SliderCharacters = props => {
         </Slider>
       </div>
       <div className={styles.slider_pc}>
-        <a className={styles.slider_item} href="/characters/kakeru/">
-          {pathname.match(/kakeru/) ? <img src="/characters/character01_current.png" alt="カケル" className={styles.current_img} /> : <img src="/characters/character01.png" alt="カケル" />}
-        </a>
+        {pathname.match(/kakeru/) ? (
+          <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/characters/kakeru/">
+            <img src="/characters/character01_current.png" alt="カケル" className={styles.current_img} />{" "}
+          </a>
+        ) : (
+          <a className={styles.slider_item} href="/characters/kakeru/">
+            <img src="/characters/character01.png" alt="カケル" />
+          </a>
+        )}
         <a className={styles.slider_item} href="/characters/kakeru/">
           <img src="/characters/character02.png" alt="" />
         </a>
