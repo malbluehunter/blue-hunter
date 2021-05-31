@@ -1,6 +1,6 @@
 @import "../../assets/scss/mixin";
 
-.label {
+.label01 {
   position: relative;
   width: 83%;
   height: get_vw_sp(27);
@@ -19,7 +19,7 @@
     width: 96%;
   }
 }
-.label::after {
+.label01::after {
   content: "";
   position: absolute;
   top: 0;
@@ -37,7 +37,7 @@
     border-bottom: 24px solid transparent;
   }
 }
-.label::before {
+.label01::before {
   content: "";
   position: absolute;
   top: 0;
@@ -55,7 +55,7 @@
     border-bottom: 24px solid transparent;
   }
 }
-.label_item {
+.label01_item {
   @include fz_vw_sp(15);
   color: #fff;
   margin: auto;

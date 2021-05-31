@@ -8,4 +8,12 @@
     width: 16.66vw;
     margin-right: auto;
   }
+
+  & img {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+
+.img__wrap:hover img {
+  opacity: 0.8;
 }

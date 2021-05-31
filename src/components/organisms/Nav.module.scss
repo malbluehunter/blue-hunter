@@ -190,7 +190,7 @@
   left: get_vw(22);
 
   @include mq(lg) {
-    top: get_vw(10);
+    top: get_vw(9);
     left: get_vw(26);
   }
 }
@@ -199,7 +199,6 @@
   left: get_vw(19);
 
   @include mq(lg) {
-    top: get_vw(10);
     left: get_vw(23);
   }
 }

@@ -49,7 +49,10 @@
     border-right: 3px solid #0078ce;
   }
 }
-.gray .text {
+.disabled {
+  pointer-events: none;
+}
+.disabled .text {
   color: #fff;
   top: get_vw_sp(8);
   left: get_vw_sp(90);
@@ -59,6 +62,6 @@
     left: 190px;
   }
 }
-.gray .text::after {
+.disabled .text::after {
   content: none;
 }
