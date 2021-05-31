@@ -10,10 +10,13 @@ import LayoutTwoColumn from "../../../components/templates/LayoutTwoColumn"
 import TextHeadingCharacters from "../../../components/atoms/TextHeadingCharacters"
 import Label02 from "../../../components/molecules/Label02"
 import SliderCharacters from "../../../components/organisms/SliderCharacters"
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import PagerArea from "../../../components/organisms/PagerArea"
+import BnrArt from "../../../components/atoms/BnrArt"
+import PagerAreaCharacters from "../../../components/organisms/PagerAreaCharacters"
 
-const CharactersPage = () => {
+const CharactersPage = ({ location }) => {
   return (
     <>
       <Helmet>
@@ -42,11 +45,11 @@ const CharactersPage = () => {
       <LayoutTwoColumn>
         {/* ページタイトル */}
         <div className={styles.pageTitle_wrapper}>
-          <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
+          <PageTitle src="/characters/ttl_characters.png" alt="Characters" />
         </div>
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/" page02="キャラクター - カケル" />
-        <SliderCharacters />
+        <SliderCharacters pathname={location.pathname} />
         <ContentsInner>
           <MainContentsMiddle02>
             <div className={styles.contents_inner}>
@@ -69,6 +72,11 @@ const CharactersPage = () => {
           </MainContentsMiddle02>
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </ContentsInner>
+        {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
+        <PagerAreaCharacters hrefPrev="" hrefNext="./marine-metropolitan-areas/" isDisabledPrev={false} isDisabledNext={false} />
+        <div className={styles.bnr_area}>
+          <BnrArt />
+        </div>
       </LayoutTwoColumn>
     </>
   )

@@ -1,7 +1,6 @@
 import * as React from "react"
 import * as styles from "./SliderCharacters.module.scss"
 import Slider from "react-slick"
-// import { useLocation } from "react-router-dom"
 
 function NextArrow(props) {
   const { onClick } = props
@@ -13,9 +12,7 @@ function PrevArrow(props) {
   return <div className={`${styles.slick_arrow} ${styles.slick_next}`} onClick={onClick} />
 }
 
-const SliderCharacters = () => {
-  // const location = useLocation()
-
+const SliderCharacters = props => {
   const settings = {
     className: "center",
     centerMode: true,
@@ -27,30 +24,63 @@ const SliderCharacters = () => {
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   }
-
-  // console.log(location.pathname)
+  const { pathname } = props
 
   return (
     <>
-      <div>
+      <div className={styles.slider_sp}>
         <Slider {...settings} className={styles.slider}>
-          {/* <div className={styles.slider_item}>{location.pathname.match(/kakeru/) ? <img src="/characters/character01.png" alt="" /> : <img src="/characters/character01_current.png" alt="" />}</div> */}
-          <div className={styles.slider_item}>
+          <a className={styles.slider_item} href="/characters/kakeru/">
+            {pathname.match(/kakeru/) ? <img src="/characters/character01_current.png" alt="カケル" className={styles.current_img} /> : <img src="/characters/character01.png" alt="カケル" />}
+          </a>
+          <a className={styles.slider_item} href="/characters/kakeru/">
             <img src="/characters/character02.png" alt="" />
-          </div>
-          <div className={styles.slider_item}>
+          </a>
+          <a className={styles.slider_item} href="/characters/kakeru/">
             <img src="/characters/character03.png" alt="" />
-          </div>
-          <div className={styles.slider_item}>
+          </a>
+          <a className={styles.slider_item} href="/characters/kakeru/">
             <img src="/characters/character04.png" alt="" />
-          </div>
-          <div className={styles.slider_item}>
+          </a>
+          <a className={styles.slider_item} href="/characters/kakeru/">
             <img src="/characters/character05.png" alt="" />
-          </div>
-          <div className={styles.slider_item}>
+          </a>
+          <a className={styles.slider_item} href="/characters/kakeru/">
             <img src="/characters/character06.png" alt="" />
-          </div>
+          </a>
+          <a className={styles.slider_item} href="/characters/kakeru/">
+            <img src="/characters/character07.png" alt="" />
+          </a>
+          <a className={styles.slider_item} href="/characters/kakeru/">
+            <img src="/characters/character08.png" alt="" />
+          </a>
         </Slider>
+      </div>
+      <div className={styles.slider_pc}>
+        <a className={styles.slider_item} href="/characters/kakeru/">
+          {pathname.match(/kakeru/) ? <img src="/characters/character01_current.png" alt="カケル" className={styles.current_img} /> : <img src="/characters/character01.png" alt="カケル" />}
+        </a>
+        <a className={styles.slider_item} href="/characters/kakeru/">
+          <img src="/characters/character02.png" alt="" />
+        </a>
+        <a className={styles.slider_item} href="/characters/kakeru/">
+          <img src="/characters/character03.png" alt="" />
+        </a>
+        <a className={styles.slider_item} href="/characters/kakeru/">
+          <img src="/characters/character04.png" alt="" />
+        </a>
+        <a className={styles.slider_item} href="/characters/kakeru/">
+          <img src="/characters/character05.png" alt="" />
+        </a>
+        <a className={styles.slider_item} href="/characters/kakeru/">
+          <img src="/characters/character06.png" alt="" />
+        </a>
+        <a className={styles.slider_item} href="/characters/kakeru/">
+          <img src="/characters/character07.png" alt="" />
+        </a>
+        <a className={styles.slider_item} href="/characters/kakeru/">
+          <img src="/characters/character08.png" alt="" />
+        </a>
       </div>
     </>
   )
