@@ -65,7 +65,7 @@ const CharactersPage = ({ location }) => {
                 </div>
               </div>
               <div className={styles.img_area}>
-                <img src="/characters/kakeru.png" alt="" />
+                <img src="/characters/viola.png" alt="" />
               </div>
             </div>
           </MainContentsMiddle>
