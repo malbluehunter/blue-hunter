@@ -10,7 +10,7 @@ import LayoutTwoColumn from "../../../../components/templates/LayoutTwoColumn"
 import PageTitle from "../../../../components/atoms/PageTitle"
 import Bread from "../../../../components/molecules/Bread"
 import MainContentsTop from "../../../../components/organisms/MainContentsTop"
-import MainContentsMiddle from "../../../../components/organisms/MainContentsMiddle"
+import MainContentsMiddleWorld from "../../../../components/organisms/MainContentsMiddleWorld"
 import ContentsLine from "../../../../components/molecules/ContentsLine"
 import MainContentsBottom from "../../../../components/organisms/MainContentsBottom"
 import WorldContentsInner from "../../../../components/organisms/WorldContentsInner"
@@ -31,15 +31,13 @@ const WorldPage = () => {
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
         <meta property="og:image" content="https://manga.uminohi.jp/ogp.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_news_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_comic_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_world_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_characters_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_staff_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_special_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_news_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_comic_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_world_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_characters_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_staff_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_special_hover.png" />
       </Helmet>
-
-      <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
       <LayoutTwoColumn>
@@ -51,7 +49,7 @@ const WorldPage = () => {
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../index.html" page03="物語の背景 - The Encyclopedia of ”Octa/M”(1)" />
         <WorldContentsInner>
           <MainContentsTop text="物語の背景" />
-          <MainContentsMiddle>
+          <MainContentsMiddleWorld>
             <TextHeading text="The Encyclopedia of ”Octa/M”(1)" />
             <ContentsLine />
             <TextMedium text="4層構造を基本とし、第1層と第2層は8本のビルで接続され、⼀体の「メガフロート」として⽔上に浮かぶ。" />
@@ -84,7 +82,7 @@ const WorldPage = () => {
               <TextMediumSub text="第2〜第3層・・・Ｖシリンダー" />
               <TextMediumSub text="第3〜第4層・・・Ｓシリンダー" />
             </div>
-          </MainContentsMiddle>
+          </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../un-to-uic/" hrefNext="../octam2/" isDisabledPrev={false} isDisabledNext={false}  number={6} />

@@ -10,7 +10,7 @@ import LayoutTwoColumn from "../../../../components/templates/LayoutTwoColumn"
 import PageTitle from "../../../../components/atoms/PageTitle"
 import Bread from "../../../../components/molecules/Bread"
 import MainContentsTop from "../../../../components/organisms/MainContentsTop"
-import MainContentsMiddle from "../../../../components/organisms/MainContentsMiddle"
+import MainContentsMiddleWorld from "../../../../components/organisms/MainContentsMiddleWorld"
 import ContentsLine from "../../../../components/molecules/ContentsLine"
 import MainContentsBottom from "../../../../components/organisms/MainContentsBottom"
 import WorldContentsInner from "../../../../components/organisms/WorldContentsInner"
@@ -31,15 +31,13 @@ const WorldPage = () => {
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
         <meta property="og:image" content="https://manga.uminohi.jp/ogp.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_news_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_comic_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_world_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_characters_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_staff_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_special_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_news_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_comic_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_world_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_characters_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_staff_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_special_hover.png" />
       </Helmet>
-
-      <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
       <LayoutTwoColumn>
@@ -51,7 +49,7 @@ const WorldPage = () => {
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../index.html" page03="物語の背景 - 0.予備知識としてのCCZ" />
         <WorldContentsInner>
           <MainContentsTop text="物語の背景" />
-          <MainContentsMiddle>
+          <MainContentsMiddleWorld>
             <TextHeading text="0.予備知識としてのCCZ" />
             <ContentsLine />
             <TextMedium text="2020年現在、ハワイ南東沖にあるクラリオン断層帯とクリッパートン断層帯に囲まれたCCZ（クラリオン・クリッパートン領域）は、鉱物資源であるマンガン団塊が豊富に存在し、海洋法に基づく国際海底機構（本部はジャマイカ）がその採掘権を管理している。⽇本も⼀部、採掘権を⺠間企業DORD経由で取得。他に英国、ロシア、ドイツ、フランス、インド、中国、韓国など。アメリカは海洋法を批准しないが、独⾃のルートにて採掘権を主張している。" />
@@ -67,7 +65,7 @@ const WorldPage = () => {
             <div className={styles.textAnnotation_wrapper}>
               <TextAnnotation text="＊注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン。" />
             </div>
-          </MainContentsMiddle>
+          </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="" hrefNext="../marine-metropolitan-areas/" isDisabledPrev={true} isDisabledNext={false}  number={1} />

@@ -1,8 +1,6 @@
 import * as React from "react"
-import BnrArt from "../atoms/BnrArt"
 import MainContentsArea02 from "./MainContentsArea02"
 import * as styles from "./ContentsInner.module.scss"
-import PagerArea from "./PagerArea"
 
 const ContentsInner = ({ children }) => {
   return (

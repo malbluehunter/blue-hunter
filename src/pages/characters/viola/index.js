@@ -4,7 +4,7 @@ import TextMedium from "../../../components/atoms/TextMedium"
 import { Helmet } from "react-helmet"
 import PageTitle from "../../../components/atoms/PageTitle"
 import BreadShort from "../../../components/molecules/BreadShort"
-import MainContentsMiddle02 from "../../../components/organisms/MainContentsMiddle02"
+import MainContentsMiddle from "../../../components/organisms/MainContentsMiddle"
 import ContentsInner from "../../../components/organisms/ContentsInner"
 import LayoutTwoColumn from "../../../components/templates/LayoutTwoColumn"
 import TextHeadingCharacters from "../../../components/atoms/TextHeadingCharacters"
@@ -50,7 +50,7 @@ const CharactersPage = ({ location }) => {
         <BreadShort page01="TOP" href01="/" page02="キャラクター - カケル" />
         <SliderCharacters pathname={location.pathname} />
         <ContentsInner>
-          <MainContentsMiddle02>
+          <MainContentsMiddle>
             <div className={styles.contents_inner}>
               <div className={styles.text_area}>
                 <TextHeadingCharacters text="カケル" />
@@ -68,7 +68,7 @@ const CharactersPage = ({ location }) => {
                 <img src="/characters/kakeru.png" alt="" />
               </div>
             </div>
-          </MainContentsMiddle02>
+          </MainContentsMiddle>
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </ContentsInner>
         {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}

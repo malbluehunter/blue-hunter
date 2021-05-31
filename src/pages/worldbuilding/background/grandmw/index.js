@@ -10,7 +10,7 @@ import LayoutTwoColumn from "../../../../components/templates/LayoutTwoColumn"
 import PageTitle from "../../../../components/atoms/PageTitle"
 import Bread from "../../../../components/molecules/Bread"
 import MainContentsTop from "../../../../components/organisms/MainContentsTop"
-import MainContentsMiddle from "../../../../components/organisms/MainContentsMiddle"
+import MainContentsMiddleWorld from "../../../../components/organisms/MainContentsMiddleWorld"
 import ContentsLine from "../../../../components/molecules/ContentsLine"
 import MainContentsBottom from "../../../../components/organisms/MainContentsBottom"
 import WorldContentsInner from "../../../../components/organisms/WorldContentsInner"
@@ -31,15 +31,13 @@ const WorldPage = () => {
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
         <meta property="og:image" content="https://manga.uminohi.jp/ogp.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_news_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_comic_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_world_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_characters_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_staff_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_special_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_news_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_comic_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_world_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_characters_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_staff_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_special_hover.png" />
       </Helmet>
-
-      <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
       <LayoutTwoColumn>
@@ -51,7 +49,7 @@ const WorldPage = () => {
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../index.html" page03="物語の背景 - グラン=ムー【GRAND/MW】" />
         <WorldContentsInner>
           <MainContentsTop text="物語の背景" />
-          <MainContentsMiddle>
+          <MainContentsMiddleWorld>
             <TextHeading text="グラン=ムー【GRAND/MW】" />
             <ContentsLine />
             <div className={styles.textLeading_wrapper}>
@@ -83,7 +81,7 @@ const WorldPage = () => {
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="開発⺟体となったのはMWVC (MwVisionComitee：CCZに関係する百以上の研究機関・事業体）。第1都市の段階で農産・⽔産・鉱物資源およびエネルギーの⾃給⾃⾜を達成し、またフェアチェーンを基礎とする⾼度な独⽴⾃治（MW⽅式）を標榜。壮⼤なモデルケースとなり、⼈類社会を牽引し続けている" />
             </div>
-          </MainContentsMiddle>
+          </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../marine-metropolitan-areas/" hrefNext="../nation-or-city/" isDisabledPrev={false} isDisabledNext={false}  number={3} />

@@ -10,7 +10,7 @@ import LayoutTwoColumn from "../../../../components/templates/LayoutTwoColumn"
 import PageTitle from "../../../../components/atoms/PageTitle"
 import Bread from "../../../../components/molecules/Bread"
 import MainContentsTop from "../../../../components/organisms/MainContentsTop"
-import MainContentsMiddle from "../../../../components/organisms/MainContentsMiddle"
+import MainContentsMiddleWorld from "../../../../components/organisms/MainContentsMiddleWorld"
 import ContentsLine from "../../../../components/molecules/ContentsLine"
 import MainContentsBottom from "../../../../components/organisms/MainContentsBottom"
 import WorldContentsInner from "../../../../components/organisms/WorldContentsInner"
@@ -31,15 +31,13 @@ const WorldPage = () => {
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
         <meta property="og:image" content="https://manga.uminohi.jp/ogp.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_news_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_comic_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_world_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_characters_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_staff_hover.png" />
-        <link rel="preload" as="image" href="../../../../static/common/nav_text_special_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_news_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_comic_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_world_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_characters_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_staff_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_special_hover.png" />
       </Helmet>
-
-      <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
       <LayoutTwoColumn>
@@ -51,12 +49,12 @@ const WorldPage = () => {
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../index.html" page03="物語の背景 - 3.国連から超都連へ。" />
         <WorldContentsInner>
           <MainContentsTop text="物語の背景" />
-          <MainContentsMiddle>
+          <MainContentsMiddleWorld>
             <TextHeading text="3.国連から超都連へ。" />
             <ContentsLine />
             <TextMedium text="2020〜2040年にかけ、国家単位での利害調整を担う国連（UN = United Nations）は地球環境の保全において充分な役割を果たせず、形骸化し、その存在意義が問われていた。20世紀由来の国家という枠組み、その利害のベースにある⾃由経済／資本主義社会、それらの有り様を踏み越えた環境問題の解決。⼈類は何もかも問い直す時期に差し掛かっていたのである。" />
             <TextMedium text="そんな折、新たな統治スタイルとしてグラン＝ムーが確⽴したフェアチェーン由来の「MW⽅式」が脚光を浴び、それを共通基盤とする都市圏同⼠の交流＝iRCOT（超都代表委員会）もまた国連に変わり得る存在とみなされ、⼤きな期待を集めていく。" />
-          </MainContentsMiddle>
+          </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../nation-or-city/" hrefNext="../octam1/" isDisabledPrev={false} isDisabledNext={false}  number={5} />
