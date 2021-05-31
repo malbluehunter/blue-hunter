@@ -1,0 +1,57 @@
+@import "../../../assets/scss/mixin";
+
+.img_wrapper {
+  margin-top: get_vw(25);
+}
+main {
+  position: relative;
+}
+.textLeading_wrapper {
+  margin-top: get_vw_sp(33);
+
+  @include mq(md) {
+    margin-top: get_vw(45);
+  }
+}
+.textMediumSub_wrapper {
+  margin-top: get_vw_sp(13);
+
+  @include mq(md) {
+    margin-top: get_vw(15);
+  }
+}
+.textAnnotation_wrapper {
+  margin-top: get_vw_sp(14);
+
+  @include mq(md) {
+    margin-top: get_vw(15);
+  }
+}
+.pageTitle_wrapper {
+  width: 100%;
+  margin: auto;
+
+  @include mq(md) {
+    width: get_vw(421);
+  }
+
+  & img {
+    image-rendering: -webkit-optimize-contrast;
+    -webkit-backface-visibility: hidden;
+  }
+}
+.lavel02_wrapper {
+  width: 87%;
+  margin: get_vw(22) auto 0;
+}
+.text_area {
+  width: get_vw(455);
+}
+.contents_inner {
+  display: flex;
+}
+.img_area {
+  position: absolute;
+  top: get_vw(-35);
+  right: get_vw(60);
+}

@@ -17,6 +17,7 @@
   color: #fff;
   padding: get_vw(5);
   @include fz_vw_sp(12);
+  font-weight: bold;
 
   @include mq(md) {
     padding: get_vw(5);

@@ -1,0 +1,40 @@
+@import "../../assets/scss/mixin";
+
+.contents_inner {
+  margin-top: get_vw_sp(20);
+
+  @include mq(md) {
+    margin-top: get_vw(30);
+  }
+}
+.bnr_area {
+  margin: get_vw_sp(28) calc(50% - 50vw);
+
+  @include mq(md) {
+    margin: get_vw(80) 0 0;
+  }
+}
+.main_contents_area_top {
+  padding: get_vw_sp(10) get_vw_sp(27) 0;
+  background: url("/common/contentsArea_top.png") no-repeat;
+  background-position: get_vw(-5) top;
+  background-size: 100%;
+
+  @include mq(md) {
+    background-position: get_vw(-1) top;
+    height: get_vw(76);
+    padding: get_vw(19) get_vw(50) get_vw(3);
+  }
+}
+.main_contents_area_bottom {
+  background: url("/common/contentsArea_bottom.png") no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  background-position: get_vw_sp(-1) get_vw_sp(0);
+  height: get_vw_sp(38);
+
+  @include mq(md) {
+    height: get_vw(110);
+    background-position: get_vw(-1) get_vw(0);
+  }
+}

@@ -8,8 +8,8 @@
   background-size: 97.7%;
 
   @include mq(md) {
-    background-position: get_vw(7) center;
-    padding: 0 get_vw(50);
+    background-position: get_vw(10) center;
+    padding: 0 get_vw(57);
   }
 }
 .main_contents_area_inner {
