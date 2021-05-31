@@ -25,8 +25,8 @@ const WorldPage = () => {
         <title>世界観・設定 | 「BLUE HUNTER」公式サイト</title>
         <meta name="description" content="ブルーハンタープロジェクト公式サイト。2021年6月より漫画「BLUE HUNTER」を連載開始！最新ニュースや設定資料集、スペシャル情報等をこちらからお届けします。" />
         <meta name="keywords" content="BLUE HUNTER, ブルーハンター, ブルーハンタープロジェクト, 無料漫画, アートコンペ " />
-        <link rel="canonical" href="https://manga.uminohi.jp/worldbuilding/background/ccz/" />
-        <meta property="og:url" content="https://manga.uminohi.jp/worldbuilding/background/ccz/" />
+        <link rel="canonical" href="https://manga.uminohi.jp/worldbuilding/background/marine-metropolitan-areas/" />
+        <meta property="og:url" content="https://manga.uminohi.jp/worldbuilding/background/marine-metropolitan-areas/" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
@@ -48,29 +48,24 @@ const WorldPage = () => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../index.html" page03="物語の背景 - 0.予備知識としてのCCZ" />
+        <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../index.html" page03="物語の背景 - 1.海洋都市圏の誕生" />
         <WorldContentsInner>
           <MainContentsTop text="物語の背景" />
           <MainContentsMiddle>
-            <TextHeading text="0.予備知識としてのCCZ" />
+            <TextHeading text="1.海洋都市圏の誕生" />
             <ContentsLine />
-            <TextMedium text="2020年現在、ハワイ南東沖にあるクラリオン断層帯とクリッパートン断層帯に囲まれたCCZ（クラリオン・クリッパートン領域）は、鉱物資源であるマンガン団塊が豊富に存在し、海洋法に基づく国際海底機構（本部はジャマイカ）がその採掘権を管理している。⽇本も⼀部、採掘権を⺠間企業DORD経由で取得。他に英国、ロシア、ドイツ、フランス、インド、中国、韓国など。アメリカは海洋法を批准しないが、独⾃のルートにて採掘権を主張している。" />
+            <TextMedium text="2020年頃になって囁かれ始めたが、それ以前には⻑らく⾒過ごされてきた⼈類最⼤の「盲点」。それは鉄や銅など、⼤量に採掘できると信じられてきたコモンメタルの枯渇であった。2030年代、CCZのマンガン団塊採掘による銅の供給が急務となり、持続可能な海洋拠点グラン＝ムーが構想され、キリバス共和国に全世界から研究者・技術者が家族を伴って参集した。彼らがクリスマス島の東沖に初代採掘場テトラムを建造・運⽤し、10年にわたって研究を続けた結果、総勢1000名規模におよぶ「外部から独⽴した持続可能な海上⽣活圏」が誕⽣したのである。" />
+            <TextMedium text="かつてのCERN*と同様、グラン＝ムーでは本来の⽬的を超越した100以上の学際領域における研究テーマが⼤幅な進展をみせた。その中には「フェアチェーン」も含まれ、研究者や技術者の家族から成る住⺠たちが積極的に社会実験に参画、来たるべき⼈類社会の「⻘写真」となり、世界をリードする役割を担った。" />
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_01.png" alt="" />
-            </div>
-            <div className={styles.textLeading_wrapper}>
-              <TextLeading text="見出しパターン" />
-            </div>
-            <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン。" />
+              <img src="/world/world_img_background_02.png" alt="" />
             </div>
             <div className={styles.textAnnotation_wrapper}>
-              <TextAnnotation text="＊注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン。" />
+              <TextAnnotation text="＊ CERN（欧州原⼦核研究機構）1954年に発⾜。全周27km（⼭⼿線は全周34.5km）もの地下巨⼤加速器「LHC」をスイスとフランスの国境付近に建造した。その際、世界中の物理学研究者が研究のためにこの地へ移住し、両国に数千億円規模の経済効果をもたらしたといわれる。このような国際共同研究の拠点として地域が名乗りをあげることは莫⼤な経済効果が期待できるものであり、と同時に、CERNにおいて素粒⼦物理学の進歩に加え、インターネットの基礎たる「WWW（ワールドワイドウェブ）」が誕⽣したことは記憶に新しい。フェアチェーンはまさに「グラン＝ムー版WWW」といえる。" />
             </div>
           </MainContentsMiddle>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-          <PagerArea hrefPrev="" hrefNext="../marine-metropolitan-areas/" isDisabledPrev={true} isDisabledNext={false}  number={1} />
+          <PagerArea hrefPrev="../ccz/" hrefNext="../grandmw/" isDisabledPrev={false} isDisabledNext={false}  number={2} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </WorldContentsInner>
       </LayoutTwoColumn>

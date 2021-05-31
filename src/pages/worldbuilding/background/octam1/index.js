@@ -25,8 +25,8 @@ const WorldPage = () => {
         <title>世界観・設定 | 「BLUE HUNTER」公式サイト</title>
         <meta name="description" content="ブルーハンタープロジェクト公式サイト。2021年6月より漫画「BLUE HUNTER」を連載開始！最新ニュースや設定資料集、スペシャル情報等をこちらからお届けします。" />
         <meta name="keywords" content="BLUE HUNTER, ブルーハンター, ブルーハンタープロジェクト, 無料漫画, アートコンペ " />
-        <link rel="canonical" href="https://manga.uminohi.jp/worldbuilding/background/ccz/" />
-        <meta property="og:url" content="https://manga.uminohi.jp/worldbuilding/background/ccz/" />
+        <link rel="canonical" href="https://manga.uminohi.jp/worldbuilding/background/octam1/" />
+        <meta property="og:url" content="https://manga.uminohi.jp/worldbuilding/background/octam1/" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
@@ -48,29 +48,46 @@ const WorldPage = () => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../index.html" page03="物語の背景 - 0.予備知識としてのCCZ" />
+        <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../index.html" page03="物語の背景 - The Encyclopedia of ”Octa/M”(1)" />
         <WorldContentsInner>
           <MainContentsTop text="物語の背景" />
           <MainContentsMiddle>
-            <TextHeading text="0.予備知識としてのCCZ" />
+            <TextHeading text="The Encyclopedia of ”Octa/M”(1)" />
             <ContentsLine />
-            <TextMedium text="2020年現在、ハワイ南東沖にあるクラリオン断層帯とクリッパートン断層帯に囲まれたCCZ（クラリオン・クリッパートン領域）は、鉱物資源であるマンガン団塊が豊富に存在し、海洋法に基づく国際海底機構（本部はジャマイカ）がその採掘権を管理している。⽇本も⼀部、採掘権を⺠間企業DORD経由で取得。他に英国、ロシア、ドイツ、フランス、インド、中国、韓国など。アメリカは海洋法を批准しないが、独⾃のルートにて採掘権を主張している。" />
+            <TextMedium text="4層構造を基本とし、第1層と第2層は8本のビルで接続され、⼀体の「メガフロート」として⽔上に浮かぶ。" />
+            <TextMedium text="第2〜第4層の間にある「ライン」＝2重螺旋のエレベーター（貨物列⾞・トロッコ）が鉱物資源等の運搬を担う。" />
+            <TextMedium text="螺旋で囲われた部分は「シリンダー」と呼ばれ、- 1000m近傍まで（酸素極⼩層まで）は養殖等、⽔産事業が展開される。また、産業廃棄物はシリンダーの外へ漏れないように計算されている。" />
+            <TextMedium text="8本あるタワーの最下層にエレベーターが8基（基本的に⼈間⽤）あり、ハイドロストラクチャーの応⽤（⽔圧を調整）で垂直⽅向へ⾏き来する。第2・第3層はワイヤーで海底にアンカリングされており、バラストとして機能するボールが上下に移動することで各層の⽔平を（独⽴して）保とうとする。" />
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_01.png" alt="" />
+              <img src="/world/world_img_background_05.png" alt="" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="見出しパターン" />
+              <TextLeading text="各層の名称" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン。" />
+              <TextMediumSub text="第1層= ST. INSULAM （「島」という意味のラテン語）" />
+              <TextMediumSub text="第2層= ST. VADUM （「浅い」という意味のラテン語）" />
+              <TextMediumSub text="第3層= ST. ALTUM （「深い」という意味のラテン語）" />
+              <TextMediumSub text="第4層= ST. SOL UM （「底」という意味のラテン語）" />
             </div>
-            <div className={styles.textAnnotation_wrapper}>
-              <TextAnnotation text="＊注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン。" />
+            <div className={styles.textLeading_wrapper}>
+              <TextLeading text="各ラインの名称" />
+            </div>
+            <div className={styles.textMediumSub_wrapper}>
+              <TextMediumSub text="第2〜第3層・・・Vライン" />
+              <TextMediumSub text="第3〜第4層・・・Sライン" />
+            </div>
+            <div className={styles.textLeading_wrapper}>
+              <TextLeading text="各シリンダーの名称" />
+            </div>
+            <div className={styles.textMediumSub_wrapper}>
+              <TextMediumSub text="第2〜第3層・・・Ｖシリンダー" />
+              <TextMediumSub text="第3〜第4層・・・Ｓシリンダー" />
             </div>
           </MainContentsMiddle>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-          <PagerArea hrefPrev="" hrefNext="../marine-metropolitan-areas/" isDisabledPrev={true} isDisabledNext={false}  number={1} />
+          <PagerArea hrefPrev="../un-to-uic/" hrefNext="../octam2/" isDisabledPrev={false} isDisabledNext={false}  number={6} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </WorldContentsInner>
       </LayoutTwoColumn>
