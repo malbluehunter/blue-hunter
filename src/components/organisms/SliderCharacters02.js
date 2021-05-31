@@ -1,5 +1,5 @@
 import * as React from "react"
-import * as styles from "./SliderCharacters.module.scss"
+import * as styles from "./SliderCharacters02.module.scss"
 import Slider from "react-slick"
 
 function NextArrow(props) {
@@ -12,7 +12,7 @@ function PrevArrow(props) {
   return <div className={`${styles.slick_arrow} ${styles.slick_next}`} onClick={onClick} />
 }
 
-const SliderCharacters = props => {
+const SliderCharacters02 = props => {
   const settings = {
     className: "center",
     centerMode: true,
@@ -30,15 +30,6 @@ const SliderCharacters = props => {
     <>
       <div className={styles.slider_sp}>
         <Slider {...settings} className={styles.slider}>
-          {pathname.match(/kakeru/) ? (
-            <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/characters/kakeru/">
-              <img src="/characters/character01_current.png" alt="カケル" className={styles.current_img} />{" "}
-            </a>
-          ) : (
-            <a className={styles.slider_item} href="/characters/kakeru/">
-              <img src="/characters/character01.png" alt="カケル" />
-            </a>
-          )}
           {pathname.match(/viola/) ? (
             <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/characters/viola/">
               <img src="/characters/character02_current.png" alt="ヴィオラ" className={styles.current_img} />{" "}
@@ -100,6 +91,15 @@ const SliderCharacters = props => {
           ) : (
             <a className={styles.slider_item} href="/characters/nagisa/">
               <img src="/characters/character08.png" alt="上原渚" />
+            </a>
+          )}
+          {pathname.match(/kakeru/) ? (
+            <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/characters/kakeru/">
+              <img src="/characters/character01_current.png" alt="カケル" className={styles.current_img} />{" "}
+            </a>
+          ) : (
+            <a className={styles.slider_item} href="/characters/kakeru/">
+              <img src="/characters/character01.png" alt="カケル" />
             </a>
           )}
         </Slider>
@@ -182,4 +182,4 @@ const SliderCharacters = props => {
   )
 }
 
-export default SliderCharacters
+export default SliderCharacters02
