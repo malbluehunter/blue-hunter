@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import BnrArt from "../../../components/atoms/BnrArt"
 import PagerAreaCharacters from "../../../components/organisms/PagerAreaCharacters"
+import HeadLink from "../../../components/templates/Headlink"
 
 const CharactersPage = ({ location }) => {
   return (
@@ -30,15 +31,10 @@ const CharactersPage = ({ location }) => {
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
         <meta property="og:image" content="https://manga.uminohi.jp/ogp.png" />
-        <link rel="preload" as="image" href="/common/nav_text_news_hover.png"/>
-        <link rel="preload" as="image" href="/common/nav_text_comic_hover.png"/>
-        <link rel="preload" as="image" href="/common/nav_text_world_hover.png"/>
-        <link rel="preload" as="image" href="/common/nav_text_characters_hover.png"/>
-        <link rel="preload" as="image" href="/common/nav_text_staff_hover.png"/>
-        <link rel="preload" as="image" href="/common/nav_text_special_hover.png"/>
         <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
       </Helmet>
+      <HeadLink />
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
       <LayoutTwoColumn>

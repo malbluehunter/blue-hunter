@@ -76,6 +76,10 @@ main {
 }
 .text_wrapper {
   margin-top: get_vw_sp(10);
+
+  @include mq(md) {
+    margin-top: get_vw(22);
+  }
 }
 .bnr_area {
   margin: get_vw_sp(28) calc(50% - 50vw);

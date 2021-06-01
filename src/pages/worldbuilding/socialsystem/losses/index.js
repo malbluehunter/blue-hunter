@@ -15,6 +15,7 @@ import ContentsLine from "../../../../components/molecules/ContentsLine"
 import MainContentsBottom from "../../../../components/organisms/MainContentsBottom"
 import WorldContentsInner from "../../../../components/organisms/WorldContentsInner"
 import PagerArea from "../../../../components/organisms/PagerArea"
+import HeadLink from "../../../../components/templates/Headlink"
 
 const WorldPage = () => {
   return (
@@ -38,6 +39,7 @@ const WorldPage = () => {
         <link rel="preload" as="image" href="/common/nav_text_staff_hover.png" />
         <link rel="preload" as="image" href="/common/nav_text_special_hover.png" />
       </Helmet>
+      <HeadLink />
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
       <LayoutTwoColumn>
@@ -53,11 +55,11 @@ const WorldPage = () => {
             <TextHeading text="ロス -悪行-" />
             <ContentsLine />
             <TextMedium text="2社会に悪影響を与える「ロス（悪⾏）」（具体的には、化⽯燃料を⼀⽅的に使うなど）は原則として禁じられており、あまりに酷いとタスクの計上が停⽌されたり、移動の禁⽌といった罰則を受ける。但し、ゲインとロスはバランスをとるものであり、トータルでプラスを⽬指すべきものである。" />
-            </MainContentsMiddleWorld>
+          </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-          <PagerArea hrefPrev="../gains/" hrefNext="../fairchain/" isDisabledPrev={false} isDisabledNext={false}  number={4} />
-      {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
+          <PagerArea hrefPrev="../gains/" hrefNext="../fairchain/" isDisabledPrev={false} isDisabledNext={false} number={4} />
+          {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </WorldContentsInner>
       </LayoutTwoColumn>
     </>

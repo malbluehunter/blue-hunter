@@ -15,6 +15,7 @@ import ContentsLine from "../../../../components/molecules/ContentsLine"
 import MainContentsBottom from "../../../../components/organisms/MainContentsBottom"
 import WorldContentsInner from "../../../../components/organisms/WorldContentsInner"
 import PagerArea from "../../../../components/organisms/PagerArea"
+import HeadLink from "../../../../components/templates/Headlink"
 
 const WorldPage = () => {
   return (
@@ -38,6 +39,7 @@ const WorldPage = () => {
         <link rel="preload" as="image" href="/common/nav_text_staff_hover.png" />
         <link rel="preload" as="image" href="/common/nav_text_special_hover.png" />
       </Helmet>
+      <HeadLink />
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
       <LayoutTwoColumn>
@@ -60,8 +62,8 @@ const WorldPage = () => {
           </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-          <PagerArea hrefPrev="" hrefNext="../link/" isDisabledPrev={true} isDisabledNext={false}  number={1} />
-      {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
+          <PagerArea hrefPrev="" hrefNext="../link/" isDisabledPrev={true} isDisabledNext={false} number={1} />
+          {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </WorldContentsInner>
       </LayoutTwoColumn>
     </>

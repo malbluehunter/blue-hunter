@@ -15,6 +15,7 @@ import ContentsLine from "../../../../components/molecules/ContentsLine"
 import MainContentsBottom from "../../../../components/organisms/MainContentsBottom"
 import WorldContentsInner from "../../../../components/organisms/WorldContentsInner"
 import PagerArea from "../../../../components/organisms/PagerArea"
+import HeadLink from "../../../../components/templates/Headlink"
 
 const WorldPage = () => {
   return (
@@ -38,6 +39,7 @@ const WorldPage = () => {
         <link rel="preload" as="image" href="/common/nav_text_staff_hover.png" />
         <link rel="preload" as="image" href="/common/nav_text_special_hover.png" />
       </Helmet>
+      <HeadLink />
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
       <LayoutTwoColumn>
@@ -79,11 +81,11 @@ const WorldPage = () => {
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="撮影された⽣物が新種であると判定されるには、⽣体の保護とDNA解析が必要になる。それが済んで、初めて最初の写真の発⾒者および保護したハンターに「ブルー」が付与される。" />
             </div>
-            </MainContentsMiddleWorld>
+          </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-          <PagerArea hrefPrev="../rarity/" hrefNext="" isDisabledPrev={false} isDisabledNext={true}  number={8} />
-      {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
+          <PagerArea hrefPrev="../rarity/" hrefNext="" isDisabledPrev={false} isDisabledNext={true} number={8} />
+          {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </WorldContentsInner>
       </LayoutTwoColumn>
     </>
