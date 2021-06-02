@@ -55,7 +55,7 @@ table {
   border: 1px rgba(255, 255, 255, 0.3) solid;
   border-left: none;
   border-right: none;
-  @include fz_vw_sp(15);
+  @include fz_vw_sp(14);
   font-weight: bold;
 
   @include mq(md) {
