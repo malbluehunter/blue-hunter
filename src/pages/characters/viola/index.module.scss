@@ -69,8 +69,8 @@ main {
   @include mq(md) {
     position: absolute;
     top: get_vw(-35);
-    right: get_vw(60);
-    width: get_vw(455);
+    right: get_vw(25);
+    width: get_vw(559);
     margin: 0;
   }
 }
