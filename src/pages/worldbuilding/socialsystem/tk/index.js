@@ -57,7 +57,7 @@ const WorldPage = () => {
             <TextMedium text="1分毎に刻まれる⾏動単位。プラス（ゲイン）とマイナス（ロス）があり、フェアチェーンに改竄できない形で記録される。1⽇あたりすべてをゲインすれば累計で+1440Tkとなるが、ロスもあるため、相場的には⼀⽇の累計で-100〜+100Tkの間になる。過去にTkをゲインした⼈（あるいは組織）は、その範囲でのロスが許される。うまく運⽤すれば1⼈あたり年間数千〜数万程度もTkを蓄積するといわれている。別名「財布の中⾝」。" />
             <TextMedium text="海洋都市の住⺠は⾐⾷住で1⽇あたり500Tkほどのロスを避けられない（いわゆるミニマムロス）が、各都市のゲインによって相殺を受けられる。つまり登録市⺠はそれだけで1⽇あたり500Tkほどのミニマムゲインを取得できる。多くの市⺠が⽇々、±0Tkで⽣きていく。感覚的には100Tk=千円。カケルが⾷ったフカヒレ丼は、値段をつければ2000Tk。" />
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_sosialsystem_01" alt="" />
+              <img src="/world/world_img_sosialsystem_01.png" alt="" />
             </div>
           </MainContentsMiddleWorld>
           <MainContentsBottom />
