@@ -6,7 +6,7 @@ import * as styles from "./HeaderTop.module.scss"
 
 const HeaderTop = () => {
   return (
-    <header>
+    <header className={styles.header}>
       <div className={styles.header__wrapper}>
         <div className={styles.logo__wrapper}>
           <LogoTop />
