@@ -1,9 +1,9 @@
 import * as React from "react"
 import IconFacebook from "../atoms/IconFacebook"
 import IconTwitter from "../atoms/IconTwitter"
-import * as styles from "./ComicSnsArea.module.scss"
+import * as styles from "./ShareArea.module.scss"
 
-const ComicSnsArea = () => {
+const ShareArea = () => {
   return (
     <div className={styles.sns_area}>
       <div className={styles.text_area}>
@@ -24,4 +24,4 @@ const ComicSnsArea = () => {
     </div>
   )
 }
-export default ComicSnsArea
+export default ShareArea

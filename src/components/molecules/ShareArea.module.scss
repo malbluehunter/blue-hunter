@@ -29,7 +29,7 @@
   }
 }
 .text {
-  font-family: DIN Condensed;
+  font-family: "DIN Condensed", "Oswald", sans-serif;
   @include fz_vw_sp(18);
 
   @include mq(md) {

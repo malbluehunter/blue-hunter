@@ -7,9 +7,11 @@ $breakpoints: (
   "sm": "screen and (min-width: 540px)",
   "sp-only": "screen and (max-width: 767px)",
   "md": "screen and (min-width: 768px)",
+  "md-lg": "screen and (min-width: 860px)",
   "lg": "screen and (min-width: 1028px)",
-  "lg-sub": "screen and (min-width: 1060px)",
-  "xl": "screen and (min-width: 1230px)",
+  "lg-xl": "screen and (min-width: 1060px)",
+  "xl": "screen and (min-width: 1200px)",
+  "xxl": "screen and (min-width: 1480px)",
 ) !default;
 
 // @mixinでメディアクエリを呼び出す

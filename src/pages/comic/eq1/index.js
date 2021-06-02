@@ -4,7 +4,7 @@ import * as styles from "./index.module.scss"
 import { Helmet } from "react-helmet"
 import BreadShort from "../../../components/molecules/BreadShort"
 import ComicArea from "../../../components/organisms/ComicArea"
-import ComicSnsArea from "../../../components/molecules/ComicSnsArea"
+import ShareArea from "../../../components/molecules/ShareArea"
 import LayoutTwoColumnComic from "../../../components/templates/LayoutTwoColumnComic"
 import ComicContentsInner from "../../../components/organisms/ComicContentsInner"
 import Button from "../../../components/atoms/Button"
@@ -49,7 +49,7 @@ const ComicPage = () => {
             <ComicArea src={src} />
           </div>
           <div>
-            <ComicSnsArea />
+            <ShareArea />
             <div className={styles.btn_wrapper}>
               <div className={styles.btn_next}>
                 <Button href="#" isDisabled={false}>

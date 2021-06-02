@@ -154,7 +154,7 @@
   }
 }
 .btn_openClose p {
-  font-family: DIN Condensed;
+  font-family: "DIN Condensed", "Oswald", sans-serif;
   @include fz_vw_sp(18);
   text-align: center;
   margin-top: get_vw_sp(13);

@@ -9,7 +9,7 @@
     width: 400px;
   }
 
-  @include mq(lg-sub) {
+  @include mq(lg-xl) {
     width: 268px;
     margin: 0;
   }
@@ -25,7 +25,7 @@
     padding: 0 17px 30px;
   }
 
-  @include mq(lg-sub) {
+  @include mq(lg-xl) {
     padding: 0 18px;
   }
 }
@@ -34,7 +34,7 @@
   transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
   padding-bottom: 8px;
 
-  @include mq(lg-sub) {
+  @include mq(lg-xl) {
     max-height: none;
     padding-bottom: 0;
   }
@@ -45,7 +45,7 @@
   line-height: 2;
   margin: 0 auto;
 
-  @include mq(lg-sub) {
+  @include mq(lg-xl) {
     font-size: 12px;
     font-weight: normal;
   }
@@ -68,7 +68,7 @@
     padding: 15px 0;
   }
 
-  @include mq(lg-sub) {
+  @include mq(lg-xl) {
     font-size: 14px;
     padding: 14px 0;
   }
@@ -80,7 +80,7 @@
   padding: 0;
   border-bottom: none;
 
-  @include mq(lg-sub) {
+  @include mq(lg-xl) {
     padding: 15px 0 12px;
   }
 }
@@ -96,7 +96,7 @@
   position: relative;
   cursor: pointer;
 
-  @include mq(lg-sub) {
+  @include mq(lg-xl) {
     cursor: auto;
   }
 }
@@ -115,7 +115,7 @@
     font-size: 20px;
   }
 
-  @include mq(lg-sub) {
+  @include mq(lg-xl) {
     top: 16px;
     font-size: 14px;
   }
@@ -123,12 +123,12 @@
 .btn_openClose {
   cursor: pointer;
 
-  @include mq(lg-sub) {
+  @include mq(lg-xl) {
     display: none;
   }
 }
 .btn_openClose p {
-  font-family: DIN Condensed;
+  font-family: "DIN Condensed", "Oswald", sans-serif;
   @include fz_vw_sp(18);
   text-align: center;
   margin-top: 13px;
@@ -153,7 +153,7 @@
     left: 200px;
   }
 
-  @include mq(lg-sub) {
+  @include mq(lg-xl) {
     bottom: 0;
     left: 0;
   }

@@ -15,7 +15,7 @@
     height: 20px;
   }
 
-  @include mq(lg-sub) {
+  @include mq(lg-xl) {
     top: 18px;
     right: 40px;
     width: 38px;
@@ -26,7 +26,7 @@
   @include fz_vw_sp(16);
   color: #112b3a;
   line-height: 1.5;
-  font-family: DIN Condensed;
+  font-family: "DIN Condensed", "Oswald", sans-serif;
 
   @include mq(md) {
     font-size: 16px;

@@ -15,7 +15,7 @@
     margin-top: 30px;
   }
 
-  @include mq(lg-sub) {
+  @include mq(lg-xl) {
     width: 96%;
   }
 }

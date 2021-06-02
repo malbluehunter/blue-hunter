@@ -50,6 +50,8 @@ main {
   }
 }
 .text_area {
+  z-index: 2;
+
   @include mq(md) {
     width: get_vw(455);
   }
@@ -69,8 +71,8 @@ main {
   @include mq(md) {
     position: absolute;
     top: get_vw(-35);
-    right: get_vw(60);
-    width: get_vw(455);
+    right: get_vw(100);
+    width: get_vw(555);
     margin: 0;
   }
 }

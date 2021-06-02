@@ -1,0 +1,41 @@
+@import "../../assets/scss/mixin";
+
+
+.contents_wrapper {
+  position: relative;
+  background: url("/top/bg_dolphin_top.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding-top: get_vw_sp(35);
+  margin-bottom: get_vw_sp(140);
+  width: 100vw;
+
+  @include mq(md) {
+    padding-top: 0;
+    margin: get_vw(-40) auto get_vw(-25);
+  }
+}
+.contents_wrapper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: get_vw(42);
+  bottom: 0;
+  background: url("/top/bg_blue_top.png");
+  background-size: contain;
+  background-repeat: repeat;
+  width: 100vw;
+  z-index: -1;
+
+  @include mq(md) {
+    background-position-y: get_vw(250);
+  }
+}
+.bubble_wrapper {
+  position: absolute;
+  width: 86%;
+  top: get_vw(350);
+  left: get_vw(95);
+}
