@@ -78,16 +78,32 @@ const WorldPage = () => {
                 <tr className={styles.table_tr}>
                   <td className={styles.td_leading}>2033</td>
                   <td className={styles.td_item}>
-                    ダミーテキストです。ダミーテキストです。
+                    ダミーテキストです。
                     <br className={styles.view_sp} />
-                    ダミーテキストです。ダミーテキストです。
+                    ダミーテキストです。
+                    <br className={styles.view_sp} />
+                    ダミーテキストです。
+                    <br className={styles.view_sp} />
+                    ダミーテキストです。
                   </td>
-                  <td className={styles.td_item}>ダミーテキストです。ダミーテキストです。</td>
+                  <td className={styles.td_item}>
+                    ダミーテキストです。
+                    <br className={styles.view_sp} />
+                    ダミーテキストです。
+                  </td>
                 </tr>
                 <tr className={styles.table_tr}>
                   <td className={styles.td_leading}>2034</td>
-                  <td className={styles.td_item}>ダミーテキストです。ダミーテキストです。</td>
-                  <td className={styles.td_item}>ダミーテキストです。ダミーテキストです。</td>
+                  <td className={styles.td_item}>
+                    ダミーテキストです。
+                    <br className={styles.view_sp} />
+                    ダミーテキストです。
+                  </td>
+                  <td className={styles.td_item}>
+                    ダミーテキストです。
+                    <br className={styles.view_sp} />
+                    ダミーテキストです。
+                  </td>
                 </tr>
               </table>
             </div>
@@ -131,7 +147,6 @@ const WorldPage = () => {
               </table>
             </div>
             {/* テーブル(見出しなし) 終了 */}
-
           </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
