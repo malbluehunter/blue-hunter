@@ -52,14 +52,14 @@ const WorldPage = () => {
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_machinery_01.png" alt="" />
             </div>
+            <div className={styles.img_wrapper}>
+              <img src="/world/world_img_machinery_02.png" alt="" />
+            </div>
             <div className={styles.textLeading_wrapper}>
               <TextLeading text="1. 第1艦橋 -ヘッドブリッジ-" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="「龍神」「攻天」のメンテナンス用カーゴを兼ねた狭いブリッジで、開閉式のシースルー型キャノピーを持つ。普段は展望台または宴会場である。" />
-            </div>
-            <div className={styles.img_wrapper}>
-              <img src="/world/world_img_machinery_02.png" alt="" />
             </div>
             <div className={styles.textLeading_wrapper}>
               <TextLeading text="2. ステップ" />
