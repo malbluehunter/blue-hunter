@@ -1,7 +1,7 @@
 import * as React from "react"
 import ScrollToTop from "../atoms/ScrollToTop"
 import Footer from "./Footer"
-import HeaderTop from "./Headertop"
+import HeaderTop from "./HeaderTop"
 import * as styles from "./LayoutTop.module.scss"
 import TopMainVisual from "./TopMainVisual"
 

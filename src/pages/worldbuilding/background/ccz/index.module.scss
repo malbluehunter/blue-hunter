@@ -40,3 +40,104 @@ main {
     -webkit-backface-visibility: hidden;
   }
 }
+
+// ----- テーブル -----
+// 共通
+table {
+  color: #fff;
+
+  @include mq(sp-only) {
+    white-space: nowrap;
+    border-collapse: collapse;
+  }
+}
+.table_tr {
+  border: 1px rgba(255, 255, 255, 0.3) solid;
+  border-left: none;
+  border-right: none;
+  @include fz_vw_sp(15);
+  font-weight: bold;
+
+  @include mq(md) {
+    @include fz_vw(14);
+  }
+
+  & th {
+    background-color: rgba(17, 43, 58, 0.5);
+    text-align: center;
+    padding: get_vw_sp(15) 0;
+    border-right: 1px rgba(255, 255, 255, 0.3) solid;
+
+    @include mq(md) {
+      padding: get_vw(15) 0;
+    }
+  }
+  & th:last-child {
+    border-right: none;
+  }
+  & .td_leading {
+    background-color: rgba(17, 43, 58, 0.5);
+    padding: 0 get_vw_sp(15);
+    vertical-align: middle;
+    border-right: 1px rgba(255, 255, 255, 0.3) solid;
+
+    @include mq(md) {
+      padding: 0 get_vw(15);
+    }
+  }
+  & .td_item {
+    padding: get_vw_sp(15);
+    border-right: 1px rgba(255, 255, 255, 0.3) solid;
+    vertical-align: middle;
+
+    @include mq(md) {
+      padding: get_vw(15);
+    }
+  }
+  & .td_item:last-child {
+    border-right: none;
+  }
+}
+.view_sp {
+  @include mq(md) {
+    display: none;
+  }
+}
+// 見出しあり
+.table_leading_wrapper {
+  margin-top: get_vw(30);
+
+  @include mq(sp-only) {
+    margin-top: get_vw_sp(30);
+    overflow-x: scroll;
+    width: get_vw_sp(265);
+  }
+
+  & .td_item {
+    width: 44%;
+  }
+
+  & .td_leading {
+    text-align: center;
+  }
+}
+// 見出しなし
+.table_sub_wrapper {
+  margin-top: get_vw(30);
+
+  @include mq(sp-only) {
+    margin-top: get_vw_sp(30);
+    overflow-x: scroll;
+    width: get_vw_sp(265);
+  }
+
+  & .td_leading {
+    width: get_vw(90);
+  }
+  & .td_item:nth-child(2) {
+    width: get_vw(95);
+  }
+  & .td_item:nth-child(3) {
+    width: get_vw(35);
+  }
+}

@@ -9,7 +9,6 @@ import LayoutTwoColumnComic from "../../../components/templates/LayoutTwoColumnC
 import ComicContentsInner from "../../../components/organisms/ComicContentsInner"
 import Button from "../../../components/atoms/Button"
 import Label01 from "../../../components/molecules/Label01"
-import HeadLink from "../../../components/templates/Headlink"
 
 const ComicPage = () => {
   // /* --------------------------------------- mal様修正範囲(マンガ画像を表示順で設定) 開始 --------------------------------------- */
@@ -30,8 +29,15 @@ const ComicPage = () => {
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
         <meta property="og:image" content="https://manga.uminohi.jp/ogp.png" />
+        <link rel="preload" as="image" href="/common/nav_text_news_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_comic_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_world_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_characters_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_staff_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_special_hover.png" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet" />
       </Helmet>
-      <HeadLink />
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
       <LayoutTwoColumnComic>
