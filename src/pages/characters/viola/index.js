@@ -24,8 +24,8 @@ const CharactersPage = ({ location }) => {
         <title>キャラクター | 「BLUE HUNTER」公式サイト</title>
         <meta name="description" content="ブルーハンタープロジェクト公式サイト。2021年6月より漫画「BLUE HUNTER」を連載開始！最新ニュースや設定資料集、スペシャル情報等をこちらからお届けします。" />
         <meta name="keywords" content="BLUE HUNTER, ブルーハンター, ブルーハンタープロジェクト, 無料漫画, アートコンペ " />
-        <link rel="canonical" href="https://manga.uminohi.jp/characters/kakeru/" />
-        <meta property="og:url" content="https://manga.uminohi.jp/characters/kakeru/" />
+        <link rel="canonical" href="https://manga.uminohi.jp/characters/viola/" />
+        <meta property="og:url" content="https://manga.uminohi.jp/characters/viola/" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
@@ -49,25 +49,25 @@ const CharactersPage = ({ location }) => {
           <PageTitle src="/characters/ttl_characters.png" alt="Characters" />
         </div>
         {/* パンクズリスト */}
-        <BreadShort page01="TOP" href01="/" page02="キャラクター - カケル" />
+        <BreadShort page01="TOP" href01="/" page02="キャラクター - ヴィオラ" />
         <SliderCharacters pathname={location.pathname} />
         <ContentsInner>
           <MainContentsMiddle>
             <div className={styles.contents_inner}>
               <div className={styles.text_area}>
-                <TextHeadingCharacters text="カケル" />
+                <TextHeadingCharacters text="ヴィオラ" />
                 <div className={styles.lavel02_wrapper}>
-                  <Label02 text="保護士/プロテクター" />
+                  <Label02 text="誘導士/シーカー" />
                 </div>
                 <div className={styles.text_wrapper}>
-                  <TextMedium text="プロテクター（保護⼠）を志す１５歳の少年。主⼈公。" />
-                  <TextMedium text="ウェイクライドの達⼈で勉強は苦⼿。ガーデンで⽣物の写真を撮る孤児達の夢＝新種⽣物の発⾒（ブルーの獲得）を、保護⼠として⾃分の⼿で叶えてやりたいと考えている。" />
-                  <TextMedium text="10年前のヴァルハラ事故において、研究者である⽗親が⾏⽅不明となり、以来ATL1にて⺟親と⼆⼈暮らし。いつか正式なブルーハンターとなり、都市間を移動しながら⽗親を捜索する、という夢がある。ハンターギルド「ψ 」の下っ端（カデット）だが、時に⼤⼈以上の能⼒を発揮し、皆を魅了していく。" />
-                  <TextMedium text="⾜の裏に紋章のような⼿術跡がある。" />
+                <TextMedium text="漂流していたところを救助された16歳の美少⼥。気が強い。" />
+                  <TextMedium text="下船を拒否し、ψオルカ号に寝泊まりするカデットの1⼈。捕獲した⽣物の管理や飼育を担う。" />
+                  <TextMedium text="微生物（マイクローブ）を知覚する量⼦感性が鋭く、その能⼒が故に狙われており、カケルたちにも⽣い⽴ちの⼀切を秘密にしている。ギルドを隠れ蓑にして⾝を守ろうという魂胆。しばらくすると才覚を発揮し、UNABARAの切り札である超絶的なシーカー（誘導⼠）となる。" />
+                  <TextMedium text="腰に紋章のような⼿術跡があり、⽔着になるのが絶対に嫌。" />
                 </div>
               </div>
               <div className={styles.img_area}>
-                <img src="/characters/viola.png" alt="" />
+                <img src="/characters/viola.png" alt="ヴィオラ" />
               </div>
             </div>
           </MainContentsMiddle>
