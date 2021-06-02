@@ -61,6 +61,71 @@ const WorldPage = () => {
             <div className={styles.textAnnotation_wrapper}>
               <TextAnnotation text="＊注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン。" />
             </div>
+            {/* テーブル(見出しあり) 開始 */}
+            <div className={styles.table_leading_wrapper}>
+              <table className={styles.table_leading}>
+                <tr className={styles.table_tr}>
+                  <th></th>
+                  <th className={styles.table_th}>世界の動向</th>
+                  <th className={styles.table_th}>技術の動向</th>
+                </tr>
+                <tr className={styles.table_tr}>
+                  <td className={styles.td_leading}>2033</td>
+                  <td className={styles.td_item}>
+                    ダミーテキストです。ダミーテキストです。
+                    <br className={styles.view_sp} />
+                    ダミーテキストです。ダミーテキストです。
+                  </td>
+                  <td className={styles.td_item}>ダミーテキストです。ダミーテキストです。</td>
+                </tr>
+                <tr className={styles.table_tr}>
+                  <td className={styles.td_leading}>2034</td>
+                  <td className={styles.td_item}>ダミーテキストです。ダミーテキストです。</td>
+                  <td className={styles.td_item}>ダミーテキストです。ダミーテキストです。</td>
+                </tr>
+              </table>
+            </div>
+            {/* テーブル(見出しあり) 終了 */}
+
+            {/* テーブル(見出しなし) 開始 */}
+            <div className={styles.table_sub_wrapper}>
+              <table className={styles.table_sub}>
+                <tr className={styles.table_tr}>
+                  <td className={styles.td_leading}>
+                    ギルド
+                    <br />
+                    (調査部・2〜)
+                  </td>
+                  <td className={styles.td_item}>
+                    ギルドマスター
+                    <br />
+                    （艦長が兼務）
+                  </td>
+                  <td className={styles.td_item}>
+                    誘導士
+                    <br />
+                    Seeker
+                  </td>
+                  <td className={styles.td_item}>
+                    ダミーテキストです。ダミーテキストです。ダミーテキストです。
+                    <br className={styles.view_sp} />
+                    ダミーテキストです。ダミーテキストです。ダミーテキストです。
+                  </td>
+                </tr>
+                <tr className={styles.table_tr}>
+                  <td className={styles.td_leading}></td>
+                  <td className={styles.td_item}></td>
+                  <td className={styles.td_item}>
+                    保育士
+                    <br />
+                    Protector
+                  </td>
+                  <td className={styles.td_item}>ダミーテキストです。ダミーテキストです。</td>
+                </tr>
+              </table>
+            </div>
+            {/* テーブル(見出しなし) 終了 */}
+
           </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
