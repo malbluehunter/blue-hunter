@@ -1,18 +1,17 @@
 @import "../../assets/scss/mixin";
 
-
 .contents_wrapper {
   position: relative;
-  background: url("/top/bg_dolphin_top.webp");
+  background-image: url("/top/bg_dolphin_top_sp.webp");
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 0 auto;
-  padding-top: get_vw_sp(35);
-  margin-bottom: get_vw_sp(140);
+  margin: 0 auto get_vw_sp(-25);
+  padding: get_vw_sp(35) 0 get_vw_sp(145);
   width: 100vw;
 
   @include mq(md) {
-    padding-top: 0;
+    background-image: url("/top/bg_dolphin_top.webp");
+    padding: 0;
     margin: get_vw(-40) auto get_vw(-25);
   }
 }
@@ -38,4 +37,9 @@
   width: 86%;
   top: get_vw(350);
   left: get_vw(95);
+}
+.hidden {
+  @include mq(sp-only) {
+    display: none;
+  }
 }

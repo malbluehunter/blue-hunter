@@ -41,10 +41,6 @@ const TopMainVisual = () => {
             <img src="/top/top_hero_sp.png" alt="" />
           </picture>
         </div>
-        <div className={styles.scroll_wrapper}>
-          <p className={styles.scroll_text}>SCROLL</p>
-          <img src="/top/img_scroll.png" alt="" />
-        </div>
       </div>
     </div>
   )

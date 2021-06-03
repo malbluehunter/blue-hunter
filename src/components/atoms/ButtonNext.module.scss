@@ -7,10 +7,6 @@
   @include mq(md) {
     width: get_vw(276);
   }
-
-  & img {
-    -webkit-backface-visibility: hidden;
-  }
 }
 .btn_wrapper:hover {
   opacity: 0.8;

@@ -1,0 +1,18 @@
+@import "../../assets/scss/mixin";
+
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+
+  @include mq(md) {
+    display: none;
+  }
+}
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+

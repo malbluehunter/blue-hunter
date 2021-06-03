@@ -1,13 +1,14 @@
 @import "../../assets/scss/mixin";
 
 .img_wrap {
-  display: none;
+  display: inline-block;
+  width: get_vw_sp(125);
+  height: get_vw_sp(120);
+  background-color: #fff;
 
   @include mq(md) {
     width: get_vw(301);
     height: get_vw(287);
-    display: block;
-    background-color: #fff;
   }
 
   & img {

@@ -1,17 +1,27 @@
 @import "../assets/scss/mixin";
 
 .contents_inner {
-  max-width: 780px;
   width: 100%;
-  padding: get_vw(130) 0 get_vw(78);
   margin: auto;
+  padding-top: get_vw_sp(234);
+
+  @include mq(md) {
+    max-width: 780px;
+    padding: get_vw(130) 0 get_vw(78);
+  }
 }
 .description {
-  width: 64%;
-  margin: auto;
+  width: 87%;
+  margin: 0 auto get_vw_sp(50);
+
+  @include mq(md) {
+    width: 64%;
+  }
 }
 .comic_wrapper {
-  margin-top: get_vw(80);
+  @include mq(md) {
+    margin-top: get_vw(80);
+  }
 }
 .btn_wrapper {
   width: 87%;
@@ -36,10 +46,48 @@
   }
 }
 .bnr_area {
-  margin: get_vw_sp(28) calc(50% - 50vw);
+  margin: get_vw_sp(28) calc(50% - 50vw) 0;
 
   @include mq(md) {
     width: 100%;
     margin: get_vw(80) 0 0;
+  }
+}
+.scroll_wrapper {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: get_vw(720);
+    text-align: center;
+    z-index: 10;
+  }
+  @include mq(xl) {
+    top: -40px;
+  }
+  @include mq(xxl) {
+    top: -30px;
+  }
+
+  & p {
+    font-family: "DIN Condensed", "Oswald", sans-serif;
+
+    @include mq(md) {
+      font-size: 14px;
+    }
+    @include mq(xl) {
+      font-size: 16px;
+    }
+  }
+
+  & img {
+    @include mq(md) {
+      width: 7px;
+    }
+    @include mq(xl) {
+      width: 9px;
+    }
   }
 }

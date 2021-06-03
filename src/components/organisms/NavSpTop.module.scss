@@ -1,0 +1,114 @@
+@import "../../assets/scss/mixin";
+
+/* ハンバーガーボタン */
+.hamburger {
+  position: absolute;
+  top: get_vw_sp(15);
+  left: get_vw_sp(24);
+  z-index: 102;
+  cursor: pointer;
+}
+nav.globalMenuSp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: translateY(-100%);
+  transition: all 0.6s;
+  width: 100%;
+  z-index: 100;
+
+  height: 100%;
+  overflow-y: auto;
+}
+nav.globalMenuSp ul .inner_item {
+  border-bottom: 1px solid rgba(17, 43, 58, 0.2);
+}
+nav.globalMenuSp ul .inner_item:last-child {
+  border-bottom: none;
+}
+.nav_sp_wrapper {
+  position: relative;
+  background-image: url("/top/bg_hamburger.png");
+  background-repeat: no-repeat;
+  background-size: 98%;
+  width: get_vw_sp(70);
+  height: get_vw_sp(63);
+
+  @include mq(md) {
+    display: none;
+  }
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  transform: translateY(0%);
+  padding-top: get_vw_sp(25);
+  top: get_vw_sp(-25);
+  left: 0;
+}
+.inner_item:first-child {
+  border-top: 1px solid rgba(17, 43, 58, 0.2);
+}
+.inner_item {
+  text-align: center;
+  padding: get_vw_sp(12) 0 get_vw_sp(10);
+}
+.inner_item_img_01 {
+  width: get_vw_sp(68);
+}
+.inner_item_img_02 {
+  width: get_vw_sp(76);
+}
+.inner_item_img_03 {
+  width: get_vw_sp(200);
+}
+.inner_item_img_04 {
+  width: get_vw_sp(136);
+}
+.inner_item_img_05 {
+  width: get_vw_sp(61);
+}
+.inner_item_img_06 {
+  width: get_vw_sp(100);
+}
+
+.text {
+  @include fz_vw_sp(15);
+  font-weight: bold;
+  color: #112b3a;
+  margin-top: get_vw_sp(2);
+}
+
+.inner_list {
+  width: 85%;
+  margin: auto;
+  overflow: scroll;
+  padding-bottom: get_vw_sp(80);
+}
+.lang_item {
+  position: relative;
+}
+.lang_item_text {
+  position: absolute;
+  color: rgba(17, 43, 58, 0.5);
+  @include fz_vw_sp(12);
+  font-weight: bold;
+}
+.lang_item:nth-child(1) .lang_item_text {
+  top: get_vw_sp(10);
+  left: get_vw_sp(28);
+}
+.lang_item:nth-child(2) .lang_item_text {
+  top: get_vw_sp(10);
+  left: get_vw_sp(25);
+}
+.lang_item_img {
+  width: get_vw_sp(93);
+}
+.lang_area {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: get_vw_sp(198);
+}

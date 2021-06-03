@@ -83,8 +83,7 @@ video {
   outline: 0;
   border: 0;
   background: transparent;
-  font-family: "Noto Sans CJK JP Subset", "Noto Sans", "Noto Sans CJK JP",
-    sans-serif;
+  font-family: "Noto Sans CJK JP Subset", "Noto Sans", "Noto Sans CJK JP", sans-serif;
 }
 
 body {
@@ -197,8 +196,7 @@ p,
 div,
 select,
 textarea {
-  font-family: "Noto Sans CJK JP Subset", "Noto Sans", "Noto Sans CJK JP",
-    sans-serif;
+  font-family: "Noto Sans CJK JP Subset", "Noto Sans", "Noto Sans CJK JP", sans-serif;
 }
 
 body {
@@ -235,6 +233,7 @@ img {
   vertical-align: top;
   width: 100%;
   height: auto;
+  -webkit-backface-visibility: hidden;
 }
 
 label {

@@ -39,6 +39,7 @@
 .menu_item {
   height: 100%;
 }
+.current,
 .menu_item:hover {
   & img {
     visibility: hidden;
@@ -50,7 +51,8 @@
 .menu_item:nth-child(1) {
   background-size: get_vw(90);
 
-  &:hover {
+  &:hover,
+  &.current {
     background-image: url("/common/nav_text_news_hover.png");
     background-position: 0;
     background-repeat: no-repeat;
@@ -202,6 +204,8 @@
     left: get_vw(23);
   }
 }
-.lang_item_link:hover .lang_text {
-  color: #fff;
+.lang_item_link:hover {
+  & .lang_text {
+    color: #fff;
+  }
 }
