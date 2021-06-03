@@ -56,6 +56,21 @@ const WorldPage = () => {
             <ContentsLine />
             <TextMedium text="2020〜2040年にかけ、国家単位での利害調整を担う国連（UN = United Nations）は地球環境の保全において充分な役割を果たせず、形骸化し、その存在意義が問われていた。20世紀由来の国家という枠組み、その利害のベースにある⾃由経済／資本主義社会、それらの有り様を踏み越えた環境問題の解決。⼈類は何もかも問い直す時期に差し掛かっていたのである。" />
             <TextMedium text="そんな折、新たな統治スタイルとしてグラン＝ムーが確⽴したフェアチェーン由来の「MW⽅式」が脚光を浴び、それを共通基盤とする都市圏同⼠の交流＝iRCOT（超都代表委員会）もまた国連に変わり得る存在とみなされ、⼤きな期待を集めていく。" />
+            <div className={styles.textLeading_wrapper}>
+              <TextLeading text="超都（iC = independent cities）" />
+            </div>
+            <div className={styles.textMediumSub_wrapper}>
+              <TextMediumSub text="直訳は「独⽴都市」。国際連合の「国際」など、国家間を意味する⾔葉にかわり、都市と都市の間で結ばれる条約などに冠される接辞語。超都代表委員会、超都統海軍など。" />
+            </div>
+            <div className={styles.textLeading_wrapper}>
+              <TextLeading text="iRCOT（iCitiesRepresentative Committee・・・超都代表委員会）" />
+              <TextLeading text="UiC（United iC・・・超都連" />
+            </div>
+            <div className={styles.textMediumSub_wrapper}>
+              <TextMediumSub text="2040年代中盤にはグラン＝ムーを⼿本とする海洋都市圏パクシオラ（CCZ東端）などが次々と竣⼯。それを受けて初期の計画⺟体MWVCは解体され、複数都市圏を統括するiRCOTの発⾜が2044年に宣⾔された。" />
+              <TextMediumSub text="iRCOTはフェアチェーンを基盤とする斬新な施策を次々と打ち出し、テストケースとして⼈類社会の未来図を描き続けている。国連はそのiRCOTを取り込む形で、2047年には国都連（UNiC・・・United Nations or iCities）を発⾜させた。しかし結局のところは機能せず、2050年のUiC（超都連）創⽴を促す呼び⽔となっただけであった。" />
+              <TextMediumSub text="UiCはiRCOTの路線を継承したが、陸上の独⽴都市圏であるオルトフラン（旧・⽶国カリフォルニア州）などを含む点でやや異なり、また安全保障および警察機構の⾼度な連携についても議論を重ね、国連軍に代替するUiC Navy（超都統海軍）等を発⾜させた。例年、各都市圏は代表団を出して年次超都総会を開き、環境保全のガイドラインや超都法を議論し、数年に⼀度は事務総⻑を選んでいる。" />
+            </div>
             <div className={styles.table_leading_wrapper}>
               <table className={styles.table_leading}>
                 <tr className={styles.table_tr}>
