@@ -4,7 +4,9 @@ import Nav from "../organisms/Nav"
 import NavSp from "../organisms/NavSp"
 import * as styles from "./HeaderTop.module.scss"
 
-const HeaderTop = () => {
+const HeaderTop = props => {
+  const { pathname } = props
+
   return (
     <header className={styles.header}>
       <div className={styles.header__wrapper}>
@@ -12,8 +14,8 @@ const HeaderTop = () => {
           <LogoTop />
         </div>
         <div className={styles.nav_area}>
-          <NavSp />
-          <Nav />
+          <NavSp pathname={pathname} />
+          <Nav pathname={pathname} />
         </div>
       </div>
     </header>

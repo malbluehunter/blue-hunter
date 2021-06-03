@@ -16,7 +16,7 @@ import MainContentsBottom from "../../../../components/organisms/MainContentsBot
 import WorldContentsInner from "../../../../components/organisms/WorldContentsInner"
 import PagerArea from "../../../../components/organisms/PagerArea"
 
-const WorldPage = () => {
+const WorldPage = ({ location }) => {
   return (
     <>
       <Helmet>
@@ -43,7 +43,7 @@ const WorldPage = () => {
 
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
-      <LayoutTwoColumn>
+      <LayoutTwoColumn pathname={location.pathname}>
         {/* ページタイトル */}
         <div className={styles.pageTitle_wrapper}>
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />

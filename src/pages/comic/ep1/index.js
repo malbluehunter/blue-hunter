@@ -10,7 +10,7 @@ import ComicContentsInner from "../../../components/organisms/ComicContentsInner
 import Button from "../../../components/atoms/Button"
 import Label01 from "../../../components/molecules/Label01"
 
-const ComicPage = () => {
+const ComicPage = ({ location }) => {
   // /* --------------------------------------- mal様修正範囲(マンガ画像を表示順で設定) 開始 --------------------------------------- */
   const src = ["/comic/img_comic_01.jpg", "/comic/img_comic_02.jpg"]
   // /* --------------------------------------- mal様修正範囲(マンガ画像を表示順で設定) 終了 --------------------------------------- */
@@ -40,7 +40,7 @@ const ComicPage = () => {
       </Helmet>
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
-      <LayoutTwoColumnComic>
+      <LayoutTwoColumnComic pathname={location.pathname}>
         {/* ページタイトル */}
         <div className={styles.pageTitle_wrapper}>
           <PageTitle src="/comic/ttl_comic.png" />

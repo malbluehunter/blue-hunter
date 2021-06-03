@@ -16,6 +16,8 @@ const SliderCharacters = props => {
   const { pathname } = props
   let number
 
+  console.log(pathname);
+
   switch (pathname) {
     case "/characters/kakeru/":
       number = 1

@@ -5,17 +5,19 @@ import Nav from "../organisms/Nav"
 import NavSp from "../organisms/NavSp"
 import * as styles from "./Header.module.scss"
 
-const Header = () => {
+const Header = props => {
+  const { pathname } = props
+
   return (
     <header>
       <div className={styles.header__wrapper}>
         <div className={styles.logo__wrapper}>
           <Logo />
-          <LogoBlueHunter href="/"/>
+          <LogoBlueHunter href="/" />
         </div>
         <div className={styles.nav_area}>
-          <NavSp />
-          <Nav />
+          <NavSp pathname={pathname} />
+          <Nav pathname={pathname} />
         </div>
       </div>
     </header>

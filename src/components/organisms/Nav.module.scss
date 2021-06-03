@@ -69,7 +69,8 @@
 .menu_item:nth-child(2) {
   background-size: get_vw(90);
 
-  &:hover {
+  &:hover,
+  &.current {
     background-image: url("/common/nav_text_comic_hover.png");
     background-position: 0;
     background-repeat: no-repeat;
@@ -81,7 +82,8 @@
 .menu_item:nth-child(3) {
   background-size: get_vw(160);
 
-  &:hover {
+  &:hover,
+  &.current {
     background-image: url("/common/nav_text_world_hover.png");
     background-position: 0;
     background-repeat: no-repeat;
@@ -93,7 +95,8 @@
 .menu_item:nth-child(4) {
   background-size: get_vw(130);
 
-  &:hover {
+  &:hover,
+  &.current {
     background-image: url("/common/nav_text_characters_hover.png");
     background-position: 0;
     background-repeat: no-repeat;
@@ -103,11 +106,12 @@
   }
 }
 .menu_item:nth-child(5) {
-  background-size: get_vw(93);
+  background-size: get_vw(91);
 
-  &:hover {
+  &:hover,
+  &.current {
     background-image: url("/common/nav_text_staff_hover.png");
-    background-position: 0;
+    background-position: get_vw(1);
     background-repeat: no-repeat;
   }
   & .menu_item_inner {
@@ -117,7 +121,8 @@
 .menu_item:nth-child(6) {
   background-size: get_vw(102);
 
-  &:hover {
+  &:hover,
+  &.current {
     background-image: url("/common/nav_text_special_hover.png");
     background-position: 0;
     background-repeat: no-repeat;
@@ -175,6 +180,21 @@
   background-repeat: no-repeat;
   background-position: get_vw(6.5) get_vw(7.2);
   background-size: get_vw(76);
+
+  &.current {
+    background-size: 83%;
+    background-image: url("/common/bg_language_hover.png");
+    background-repeat: no-repeat;
+    background-position: get_vw(8.5) get_vw(9);
+
+    & .lang_item_img {
+      visibility: hidden;
+    }
+
+    & .lang_item_text {
+      color: #fff;
+    }
+  }
 }
 .lang_item_link {
   width: 100%;
@@ -185,7 +205,7 @@
   visibility: hidden;
 }
 
-.lang_text {
+.lang_item_text {
   position: absolute;
   color: rgba(17, 43, 58, 0.5);
   @include fz_vw(10);
@@ -195,7 +215,7 @@
     @include fz_vw(12);
   }
 }
-.lang_item:nth-child(1) .lang_text {
+.lang_item:nth-child(1) .lang_item_text {
   top: get_vw(4);
   left: get_vw(20);
 
@@ -204,7 +224,7 @@
     left: get_vw(26);
   }
 }
-.lang_item:nth-child(2) .lang_text {
+.lang_item:nth-child(2) .lang_item_text {
   top: get_vw(5);
   left: get_vw(17);
 
@@ -214,7 +234,7 @@
   }
 }
 .lang_item_link:hover {
-  & .lang_text {
+  & .lang_item_text {
     color: #fff;
   }
 }

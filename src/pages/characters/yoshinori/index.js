@@ -43,7 +43,7 @@ const CharactersPage = ({ location }) => {
       </Helmet>
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
-      <LayoutTwoColumn>
+      <LayoutTwoColumn pathname={location.pathname}>
         {/* ページタイトル */}
         <div className={styles.pageTitle_wrapper}>
           <PageTitle src="/characters/ttl_characters.png" alt="Characters" />

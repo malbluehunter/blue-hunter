@@ -6,7 +6,8 @@ import HeaderTopSp from "./HeaderTopSp"
 import * as styles from "./LayoutTop.module.scss"
 import TopMainVisual from "./TopMainVisual"
 
-const LayoutTop = ({ children }) => {
+const LayoutTop = props => {
+  const { pathname, children } = props
   // SP：一定量スクロールでグローバルナビを表示
   const [navbar, setNavbar] = useState(false)
 
@@ -30,9 +31,9 @@ const LayoutTop = ({ children }) => {
     <>
       <div className={styles.container}>
         <div className={navbar ? "" : styles.hidden}>
-          <HeaderTop />
+          <HeaderTop pathname={pathname} />
         </div>
-        <HeaderTopSp />
+        <HeaderTopSp pathname={pathname} />
         <main>
           <TopMainVisual />
           <div className={styles.contents_wrapper}>{children}</div>

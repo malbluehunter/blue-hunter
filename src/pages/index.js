@@ -7,7 +7,7 @@ import LayoutTop from "../components/templates/LayoutTop"
 import Button from "../components/atoms/Button"
 import BnrArt from "../components/atoms/BnrArt"
 
-const TopPage = () => {
+const TopPage = ({ location }) => {
   // /* --------------------------------------- mal様修正範囲(マンガ画像を表示順で設定) 開始 --------------------------------------- */
   const src = ["/top/img_comic_01.webp"]
   // /* --------------------------------------- mal様修正範囲(マンガ画像を表示順で設定) 終了 --------------------------------------- */
@@ -36,7 +36,7 @@ const TopPage = () => {
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet" />
       </Helmet>
 
-      <LayoutTop>
+      <LayoutTop pathname={location.pathname}>
         <div className={styles.contents_inner}>
           <div className={styles.scroll_wrapper}>
             <p className={styles.scroll_text}>SCROLL</p>
