@@ -1,9 +1,7 @@
 import * as React from "react"
 import * as styles from "./Nav.module.scss"
 
-const Nav = props => {
-  const { pathname } = props
-
+const Nav = () => {
   return (
     <div className={styles.wrap}>
       <div className={styles.lang_area}>
@@ -25,7 +23,7 @@ const Nav = props => {
       </div>
       <div className={styles.menu}>
         <div className={styles.menu_item}>
-          <div className={pathname.match(/news/) ? styles.current : ""}>
+          <div className={styles.menu_item_inner}>
             <a className={styles.menu_item_link} href="/news/">
               <img src="/common/nav_text_news.svg" alt="News" className={styles.menu_item_img_01} />
               <p className={styles.text}>ニュース</p>
