@@ -56,6 +56,98 @@ const WorldPage = ({ location }) => {
             <ContentsLine />
             <TextMedium text="2020〜2040年にかけ、国家単位での利害調整を担う国連（UN = United Nations）は地球環境の保全において充分な役割を果たせず、形骸化し、その存在意義が問われていた。20世紀由来の国家という枠組み、その利害のベースにある⾃由経済／資本主義社会、それらの有り様を踏み越えた環境問題の解決。⼈類は何もかも問い直す時期に差し掛かっていたのである。" />
             <TextMedium text="そんな折、新たな統治スタイルとしてグラン＝ムーが確⽴したフェアチェーン由来の「MW⽅式」が脚光を浴び、それを共通基盤とする都市圏同⼠の交流＝iRCOT（超都代表委員会）もまた国連に変わり得る存在とみなされ、⼤きな期待を集めていく。" />
+            <div className={styles.table_leading_wrapper}>
+              <table className={styles.table_leading}>
+                <tr className={styles.table_tr}>
+                  <th></th>
+                  <th className={styles.table_th}>世界の動向</th>
+                  <th className={styles.table_th}>技術の動向</th>
+                </tr>
+                <tr className={styles.table_tr}>
+                  <td className={styles.td_leading}>2033</td>
+                  <td className={styles.td_item}>
+                    グラン＝ムー着⼯
+                    <br className={styles.view_sp} />
+                    （第１都市）
+                  </td>
+                  <td className={styles.td_item}>
+                  </td>
+                </tr>
+                <tr className={styles.table_tr}>
+                  <td className={styles.td_leading}>2034</td>
+                  <td className={styles.td_item}>
+                    パクシオラ、ジーグ、アトラス、
+                    <br className={styles.view_sp} />
+                    グラズヘイム着⼯
+                  </td>
+                  <td className={styles.td_item}></td>
+                </tr>
+                <tr className={styles.table_tr}>
+                  <td className={styles.td_leading}></td>
+                  <td className={styles.td_item}></td>
+                  <td className={styles.td_item}>
+                    フェアチェーン・
+                    <br className={styles.view_sp} />
+                    シーフォースの基礎技術を確⽴
+                  </td>
+                </tr>
+                <tr className={styles.table_tr}>
+                  <td className={styles.td_leading}>2041</td>
+                  <td className={styles.td_item}>
+                    グラン＝ムー第１都市竣⼯、
+                    <br className={styles.view_sp} />
+                    第２都市着工
+                  </td>
+                  <td className={styles.td_item}>
+                    MW式タスクシステム
+                    <br className={styles.view_sp} />
+                    運⽤開始
+                  </td>
+                </tr>
+                <tr className={styles.table_tr}>
+                  <td className={styles.td_leading}>2044</td>
+                  <td className={styles.td_item}>
+                    パクシオラ第１都市竣⼯、
+                    <br className={styles.view_sp} />
+                    iRCOT（超都代表委員会）発足
+                  </td>
+                  <td className={styles.td_item}>
+                    超都連携型MW式タスクシステム
+                    <br className={styles.view_sp} />
+                    運⽤開始
+                  </td>
+                </tr>
+                <tr className={styles.table_tr}>
+                  <td className={styles.td_leading}>2045</td>
+                  <td className={styles.td_item}>
+                    国連がグラン＝ムー、パクシオラ
+                    <br className={styles.view_sp} />
+                    ほか５つの海洋都市圏について
+                    <br className={styles.view_sp} />
+                    ⾃治を承認
+                  </td>
+                  <td className={styles.td_item}></td>
+                </tr>
+                <tr className={styles.table_tr}>
+                  <td className={styles.td_leading}>2047</td>
+                  <td className={styles.td_item}>
+                    UNiC（国都連）発⾜
+                  </td>
+                  <td className={styles.td_item}></td>
+                </tr>
+                <tr className={styles.table_tr}>
+                  <td className={styles.td_leading}>2050</td>
+                  <td className={styles.td_item}>
+                    UiC（超都連）発⾜、
+                    <br className={styles.view_sp} />
+                    海洋9都市圏、
+                    <br className={styles.view_sp} />
+                    地上12都市圏が参画
+                  </td>
+                  <td className={styles.td_item}></td>
+                </tr>
+              </table>
+            </div>
           </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
