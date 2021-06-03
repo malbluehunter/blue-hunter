@@ -1,0 +1,98 @@
+@import "../../assets/scss/mixin";
+
+.localNav {
+  position: relative;
+  width: 93%;
+  margin: auto;
+
+  @include mq(md) {
+    width: get_vw(265);
+  }
+}
+.LocalNav_area {
+  background-color: rgba($color: #112b3a, $alpha: 0.75);
+  padding: 0 get_vw_sp(17) get_vw_sp(30);
+  overflow: hidden;
+  max-height: 1000px;
+  transition: max-height 1s ease-in-out;
+
+  @include mq(md) {
+    padding: 0 get_vw(18) get_vw(18);
+  }
+}
+.LocalNav_area[aria-expanded="false"] {
+  @include mq(sp-only) {
+    max-height: 0px;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+    padding-bottom: get_vw_sp(8);
+  }
+}
+.LocalNav_list {
+  @include fz_vw_sp(14);
+  font-weight: bold;
+  line-height: 2;
+  margin: 0 auto;
+
+  @include mq(md) {
+    @include fz_vw(12);
+    font-weight: normal;
+  }
+}
+.LocalNav_list a {
+  color: #fff;
+}
+
+.LocalNav_item {
+  @include fz_vw_sp(14);
+  list-style-position: inside;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: get_vw_sp(15) 0 get_vw_sp(15) 1em;
+  font-weight: bold;
+  text-indent: -1em;
+
+  @include mq(md) {
+    @include fz_vw(14);
+    padding: get_vw(14) 0 get_vw(14) 1em;
+  }
+
+  & a {
+    margin-left: get_vw_sp(-2);
+
+    @include mq(md) {
+      margin-left: get_vw(-2);
+    }
+  }
+}
+.LocalNav_item:first-child {
+  padding-top: 0;
+}
+.current a {
+  color: #43dbf2;
+}
+
+.LocalNav_item a:hover {
+  color: #43dbf2;
+}
+
+.LocalNav_item.current {
+  color: #43dbf2;
+}
+
+.top_img_wrapper {
+  width: 100%;
+}
+.top_img_wrapper img {
+  width: 100%;
+}
+.localNav_bottom {
+  width: 100%;
+}
+.localNav_bottom img {
+  width: 100%;
+}
+.date {
+  @include fz_vw(12);
+  font-weight: bold;
+  color: rgba($color: #fff, $alpha: 0.5);
+}

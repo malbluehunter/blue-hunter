@@ -9,7 +9,6 @@ const LocalNavWorld = () => {
   const toggle = () => {
     isOpen ? setisOpen(false) : setisOpen(true)
   }
-  const itemList = ["The Encyclopedia of ”Octa/M”（1）", "The Encyclopedia of ”Octa/M”（2）", "The Encyclopedia of ”Octa/M”（3）"]
 
   return (
     <div>
