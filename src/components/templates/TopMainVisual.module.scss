@@ -34,11 +34,12 @@
     right: get_vw(240);
   }
   @include mq(xl) {
-    bottom: 150px;
+    bottom: 95px;
     right: get_vw(200);
   }
   @include mq(xxl) {
-    right: get_vw(240);
+    right: auto;
+    left: get_vw(300);
   }
 }
 .logo_bluehunter_wrapper {
@@ -80,7 +81,7 @@
     width: 656px;
   }
   @include mq(xl) {
-    bottom: -520px;
+    bottom: -580px;
     right: get_vw(0);
     width: 820px;
   }
@@ -255,7 +256,7 @@
     width: 210px;
   }
   @include mq(xl) {
-    bottom: 230px;
+    bottom: 175px;
     right: get_vw(20);
     width: 292px;
   }
