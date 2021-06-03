@@ -3,16 +3,12 @@
 .img_wrap {
   display: inline-block;
   width: get_vw_sp(125);
-  height: get_vw_sp(120);
+  height: 100%;
   background-color: #fff;
 
   @include mq(md) {
-    width: get_vw(301);
-    height: get_vw(287);
-  }
-
-  & img {
-    image-rendering: -webkit-optimize-contrast;
+    width: get_vw(260);
+    height: 100%;
   }
 }
 .img_wrap:hover img {

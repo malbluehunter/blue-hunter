@@ -8,6 +8,7 @@ import TopMainVisual from "./TopMainVisual"
 
 const LayoutTop = props => {
   const { pathname, children } = props
+
   // SP：一定量スクロールでグローバルナビを表示
   const [navbar, setNavbar] = useState(false)
 
