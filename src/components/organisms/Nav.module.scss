@@ -26,8 +26,12 @@
 .menu_item_inner .menu_item_link {
   border-right: 1px solid rgba(17, 43, 58, 0.2);
   display: inline-block;
-  margin: get_vw(12) 0 get_vw(6);
+  margin: get_vw(9) 0 get_vw(6);
   width: 100%;
+
+  @include mq(lg) {
+    margin-top: get_vw(12);
+  }
 
   & img {
     padding-top: get_vw(5);
@@ -184,12 +188,16 @@
 .lang_text {
   position: absolute;
   color: rgba(17, 43, 58, 0.5);
-  @include fz_vw(12);
+  @include fz_vw(10);
   font-weight: bold;
+
+  @include mq(lg) {
+    @include fz_vw(12);
+  }
 }
 .lang_item:nth-child(1) .lang_text {
-  top: get_vw(8);
-  left: get_vw(22);
+  top: get_vw(4);
+  left: get_vw(20);
 
   @include mq(lg) {
     top: get_vw(9);
@@ -197,10 +205,11 @@
   }
 }
 .lang_item:nth-child(2) .lang_text {
-  top: get_vw(8);
-  left: get_vw(19);
+  top: get_vw(5);
+  left: get_vw(17);
 
   @include mq(lg) {
+    top: get_vw(8);
     left: get_vw(23);
   }
 }
