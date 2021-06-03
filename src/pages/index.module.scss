@@ -16,6 +16,7 @@
 
   @include mq(md) {
     width: 64%;
+    margin: 0 auto;
   }
 }
 .comic_wrapper {
@@ -51,43 +52,5 @@
   @include mq(md) {
     width: 100%;
     margin: get_vw(80) 0 0;
-  }
-}
-.scroll_wrapper {
-  display: none;
-
-  @include mq(md) {
-    display: block;
-    position: absolute;
-    top: -30px;
-    left: get_vw(720);
-    text-align: center;
-    z-index: 10;
-  }
-  @include mq(xl) {
-    top: -40px;
-  }
-  @include mq(xxl) {
-    top: -30px;
-  }
-
-  & p {
-    font-family: "DIN Condensed", "Oswald", sans-serif;
-
-    @include mq(md) {
-      font-size: 14px;
-    }
-    @include mq(xl) {
-      font-size: 16px;
-    }
-  }
-
-  & img {
-    @include mq(md) {
-      width: 7px;
-    }
-    @include mq(xl) {
-      width: 9px;
-    }
   }
 }

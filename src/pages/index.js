@@ -38,10 +38,6 @@ const TopPage = ({ location }) => {
 
       <LayoutTop pathname={location.pathname}>
         <div className={styles.contents_inner}>
-          <div className={styles.scroll_wrapper}>
-            <p className={styles.scroll_text}>SCROLL</p>
-            <img src="/top/img_scroll.png" alt="" />
-          </div>
           <div className={styles.description}>
             <img src="/top/description_top.png" alt="" />
           </div>

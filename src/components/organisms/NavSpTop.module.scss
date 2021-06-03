@@ -62,9 +62,9 @@ nav.globalMenuSp.active {
     & img {
       visibility: hidden;
     }
-  }
-  & .text {
-    color: #fff;
+    & .text {
+      color: #fff;
+    }
   }
 }
 .inner_item:nth-child(1) {
@@ -131,6 +131,21 @@ nav.globalMenuSp.active {
 }
 .lang_item {
   position: relative;
+
+  &.current {
+    background-size: 83%;
+    background-image: url("/common/bg_language_hover_sp.png");
+    background-repeat: no-repeat;
+    background-position: get_vw_sp(8.5) get_vw_sp(9);
+
+    & .lang_item_img {
+      visibility: hidden;
+    }
+
+    & .lang_item_text {
+      color: #fff;
+    }
+  }
 }
 .lang_item_text {
   position: absolute;

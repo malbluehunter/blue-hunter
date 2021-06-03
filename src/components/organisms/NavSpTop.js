@@ -13,7 +13,10 @@ const NavSpTop = props => {
   let charactersCurrent = false
   let staffCurrent = false
   let specialCurrent = false
+  let jaCurrent = false
+  let enCurrent = false
 
+  // ナビの現在地表示の設定
   if (pathname.match(/news/)) {
     newsCurrent = true
   } else if (pathname.match(/comic/)) {
@@ -26,6 +29,13 @@ const NavSpTop = props => {
     staffCurrent = true
   } else if (pathname.match(/special/)) {
     specialCurrent = true
+  }
+
+  // 言語の現在地表示の設定
+  if (!pathname.match(/en/)) {
+    jaCurrent = true
+  } else if (pathname.match(/en/)) {
+    enCurrent = true
   }
 
   const [isClose, changeState] = useState(false)
@@ -83,13 +93,13 @@ const NavSpTop = props => {
           </li>
           <li className={styles.inner_item}>
             <ul className={styles.lang_area}>
-              <li className={styles.lang_item}>
+              <li className={`${styles.lang_item} ${jaCurrent ? styles.current : ""}`}>
                 <a href="#" className={styles.lang_item_link}>
                   <p className={styles.lang_item_text}>日本語</p>
                   <img src="/common/bg_language.png" alt="日本語" className={styles.lang_item_img} />
                 </a>
               </li>
-              <li className={styles.lang_item}>
+              <li className={`${styles.lang_item} ${enCurrent ? styles.current : ""}`}>
                 <a href="#" className={styles.lang_item_link}>
                   <p className={styles.lang_item_text}>English</p>
                   <img src="/common/bg_language.png" alt="English" className={styles.lang_item_img} />
