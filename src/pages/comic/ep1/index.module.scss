@@ -66,10 +66,11 @@ main {
   }
 }
 .btn_plan {
-  margin: auto;
+  margin: get_vw_sp(3) auto 0;
 
   @include mq(md) {
     width: 568px;
+    margin: 0 auto;
   }
 }
 .bread_wrapper {

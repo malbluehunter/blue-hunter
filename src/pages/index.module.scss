@@ -40,10 +40,11 @@
   }
 }
 .btn_plan {
-  margin: auto;
+  margin: get_vw_sp(3) auto 0;
 
   @include mq(md) {
     width: 568px;
+    margin: get_vw(3) auto 0;
   }
 }
 .bnr_area {

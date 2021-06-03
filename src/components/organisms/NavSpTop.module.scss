@@ -7,6 +7,13 @@
   left: get_vw_sp(24);
   z-index: 102;
   cursor: pointer;
+
+  &.active {
+    position: fixed;
+    top: get_vw_sp(18);
+    right: get_vw_sp(10);
+    left: auto;
+  }
 }
 nav.globalMenuSp {
   position: fixed;
@@ -44,7 +51,7 @@ nav.globalMenuSp ul .inner_item:last-child {
 nav.globalMenuSp.active {
   transform: translateY(0%);
   padding-top: get_vw_sp(25);
-  top: get_vw_sp(-25);
+  top: get_vw_sp(55);
   left: 0;
 }
 .inner_item:first-child {
@@ -169,4 +176,27 @@ nav.globalMenuSp.active {
   justify-content: space-between;
   margin: auto;
   width: get_vw_sp(198);
+}
+.logo_area {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100vw;
+  background-color: #fff;
+  z-index: 101;
+
+  &.active {
+    display: block;
+  }
+}
+.inner_item_logo_01 {
+  position: absolute !important;
+  top: 1px;
+  left: 0;
+  width: get_vw_sp(59);
+}
+.inner_item_logo_02 {
+  width: get_vw_sp(102);
 }
