@@ -48,16 +48,15 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="テクノロジー - 系統樹" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Technology - Phylogenetic Tree" />
         <WorldContentsInner>
-          <MainContentsTop text="テクノロジー" />
+          <MainContentsTop text="Technology" />
           <MainContentsMiddleWorld>
-            <TextHeading text="系統樹" />
+            <TextHeading text="Phylogenetic Tree" />
             <ContentsLine />
-            <TextMedium text="⽣命の進化を「樹」に⾒⽴てて表したもので、⽣物の「分類」を「枝」に⾒⽴てている。すべての⽣物はある1つの種から⽣じ、その種がいろいろな「枝」に分かれ、さらにその枝がまた新たな枝に分かれ・・・といった具合にどんどん枝分かれしていき、最後には「葉(種にあたる)」がつく、といった具合。" />
+            <TextMedium text="The evolution of life is often represented as a tree, with branches corresponding to the classification of organisms. All living things share the same origin which is the trunk, which then divides into various branches, which in turn divide into new branches and so on until it ends up as a leaf on the end. This leaf corresponds to a single species." />
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="この系統樹という考え⽅は現在広く受け⼊れられているが、分⼦⽣物学の発展に伴い、実際はきれいに枝分かれがして
-おり葉がはっきりわかれている・・・というわけではなく、その葉同⼠も⼊り乱れている、という⾒⽅もある。描き⽅にも円型、あるいは始点のないものなど、様々ある。" />
+              <TextMediumSub text="This idea of a phylogenetic tree is now widely accepted, but with the development of molecular biology, the reality is that the branches may be neither so neatly divided nor the leaves so clearly separated as previously thought and that rather the leaves are intermingled. There are various ways to depict the evolution of life, such as circular or even without a starting point." />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_technology_02.png" alt="" />

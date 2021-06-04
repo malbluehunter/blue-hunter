@@ -48,136 +48,142 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="ブルーハンター組織図 - ハンターギルド組織図" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Road to Blue Hunter - The Organisation of Hunter Guilds" />
         <WorldContentsInner>
-          <MainContentsTop text="ブルーハンター組織図" />
+          <MainContentsTop text="Road to Blue Hunter" />
           <MainContentsMiddleWorld>
-            <TextHeading text="ハンターギルド組織図" />
+            <TextHeading text="The Organisation of Hunter Guilds" />
             <ContentsLine />
-            <TextMedium text="ハンターはチーム単位（ギルド）で⾏動し、役割分担がある。また船（ゼロシップ）はギルドと独⽴で運営され、乗組員は3交代制で運航を司る。環境DNA分析などで情報を収集し、船を導く役割を「シーカー（誘導⼠）」、⾄近距離へ接近し、調査あるいは捕獲（保護）する役割を「プロテクター（保護⼠）」という。この2⼈が最⼩単位。船の上と⽔中に分かれ、ミッションを遂⾏するため船に乗る。捕獲した⽣物の分析・管理（飼育）を担う「サーチャー（⽣物⼠）」は、保護⼠およびカデットが兼ねるケースが多い。乗船せずリモートでプロジェクトに参加する場合もある。ギルドによっては、海底のUGを操作する「オペレイター（操縦⼠）」が参加するケースもある。保護⼠とコンビを組み、壮⼤なプロジェクトを遂⾏する。" />
+            <TextMedium text="Hunters act in teams known as Guilds, of which each member is assigned a role. Each Guild runs a type of ship called a ZEROship, and work is split into 3 rotating shifts." />
+            <TextMedium text="Seekers take on the role of collecting data via the analysis of environmental DNA (eDNA) and guide the ship. Protectors take on the role of getting close to specimens in order to investigate or capture them." />
+            <TextMedium text="A unit must contain at least one Protector and one Seeker, boarding the ship to complete the mission with somebody above and somebody below the water’s surface.." />
+            <TextMedium text="Searchers are responsible for analyzing or taking care of captured specimens. It is not uncommon for Cadets or Protectors to also take on the role of Searcher." />
+            <TextMedium text="It's also possible to take part in a mission remotely, without boarding the ship. Some guilds also have an Operator take part, who controls UG on the seabed. By teaming up with Protectors, it’s possible to take on large-scale projects." />
             <div className={styles.table_sub_wrapper}>
               <table className={styles.table_sub}>
                 <tr className={styles.table_tr}>
                   <td className={styles.td_leading}>
-                    ギルド
+                    Guild
                     <br />
-                    (調査部・2〜)
+                    (Research Team)
                   </td>
                   <td className={styles.td_item}>
-                    ギルドマスター
+                    Guild Master
                     <br />
-                    （艦長が兼務）
+                    (Also acts as Captain)
                   </td>
                   <td className={styles.td_item}>
-                    誘導士
-                    <br />
                     Seeker
                   </td>
                   <td className={styles.td_item}>
-                    環境DNA調査に基づく運⾏計画の策定／
+                    Draws up a plan of action based on eDNA analysis / 
                     <br className={styles.view_sp} />
-                    船上から保護士を誘導。
+                    Guides the Protectors from onboard the ship
                   </td>
                 </tr>
                 <tr className={styles.table_tr}>
                   <td className={styles.td_leading}></td>
                   <td className={styles.td_item}></td>
                   <td className={styles.td_item}>
-                    保護士
-                    <br />
                     Protector
                   </td>
                   <td className={styles.td_item}>
-                    ⽣物保護の遂⾏。水上・海中で⾏動する。
+                    Responsible for the safe capture of specimens. 
                     <br className={styles.view_sp} />
-                    水中ミッションには2名以上でのダイヴが
+                    Works both above and under the water. 
                     <br className={styles.view_sp} />
-                    法で定められている。
+                    For underwater missions, it is legally required 
+                    <br className={styles.view_sp} />
+                    that at least two Protectors work together
                   </td>
                 </tr>
                 <tr className={styles.table_tr}>
                   <td className={styles.td_leading}></td>
                   <td className={styles.td_item}></td>
                   <td className={styles.td_item}>
-                    ⽣物士
-                    <br />
                     Searcher
                   </td>
                   <td className={styles.td_item}>
-                    保護した⽣物の管理・分析、およびギルド
+                    Responsible for the organisation 
                     <br className={styles.view_sp} />
-                    全体の知識サポート。
+                    and analysis of captured specimens 
+                    <br className={styles.view_sp} />
+                    and acts as all-round brains for the Guild.
                   </td>
                 </tr>
                 <tr className={styles.table_tr}>
                   <td className={styles.td_leading}></td>
                   <td className={styles.td_item}></td>
                   <td className={styles.td_item}>
-                    カデット
+                    Cadet
                   </td>
                   <td className={styles.td_item}>
-                    ギルド全体のサポート。水夫、⾒習いに相
+                    All-round support. Acts as a crewman 
                     <br className={styles.view_sp} />
-                    当。無資格の学⽣、アルバイトなど。
+                    and apprentice. Usually made up of 
+                    <br className={styles.view_sp} />
+                    students and part-timers
                   </td>
                 </tr>
                 <tr className={styles.table_tr}>
                   <td className={styles.td_leading}>
-                    ギルド
+                    Guild
                     <br />
-                    （甲板部・7）
+                    (Deck Team・7)
                   </td>
                   <td className={styles.td_item}>
-                    航機長
+                    Captain
                   </td>
                   <td className={styles.td_item}>
-                    航機士
+                    Navigation Officer 
                     <br />
-                    （1st, 2nd, 3rd）
-                    <br />
-                    ３名
+                    (1st, 2nd, 3rd)
                   </td>
                   <td className={styles.td_item}>
-                    3交代制で運⾏を司る。この時代の「航海士」
+                    Operate the ship in a cycle of 3 shifts.
                     <br className={styles.view_sp} />
-                    兼「機関士」。
+                    Act as both Navigation Officers 
+                    <br className={styles.view_sp} />
+                    and Engineers.
                   </td>
                 </tr>
                 <tr className={styles.table_tr}>
                   <td className={styles.td_leading}>
-                    ギルド
+                    Guild
                     <br />
-                    （作戦部・4）
+                    (Strategy Team・4)
                   </td>
                   <td className={styles.td_item}>
-                    作戦長
+                    Commander
                     <br />
-                    （漁労長）
+                    (Fishing Chief)
                   </td>
                   <td className={styles.td_item}>
-                    作戦員３名
+                    Strategists x3
                   </td>
                   <td className={styles.td_item}>
-                    潜水艇の運⾏、漁（投網）の実施およびダ
+                    Operates underwater vessels. 
                     <br className={styles.view_sp} />
-                    イビングのサポート。
+                    Support fishing (via fishing nets) 
+                    <br className={styles.view_sp} />
+                    and diving.
                   </td>
                 </tr>
                 <tr className={styles.table_tr}>
                   <td className={styles.td_leading}>
-                    ギルド
+                    Guild
                     <br />
-                    （総務部・5）
+                    (General Affairs・5)
                   </td>
                   <td className={styles.td_item}>
-                    料理長・医師
+                    Head Chef
                     <br />
-                    マネージャー
+                    Medical manager
                   </td>
                   <td className={styles.td_item}>
-                    調理師
+                    Chef
                     <br />
-                    看護士
+                    Nurse
                   </td>
                   <td className={styles.td_item}></td>
                 </tr>

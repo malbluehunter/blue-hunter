@@ -48,21 +48,21 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="メカ・アイテム - -ネットボウ-" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Machinery - Netbow" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
+          <MainContentsTop text="Machinery" />
           <MainContentsMiddleWorld>
-            <TextHeading text="-ネットボウ-" />
+            <TextHeading text="Netbow" />
             <ContentsLine />
-            <TextMedium text="⽣き物を傷つけず捕らえられるネット発⽣器。普段は⼸（ボウ）の形状をしている。「ネットボウ！」のかけ声とともに球形に展開する。球体の内側の圧⼒や酸素量などを調整できるため、とらえた⽣体を傷つけず、かつ外敵からも守る。" />
+            <TextMedium text="A net generator that can capture living creatures without harming them. It usually takes the shape of an archery bow. It will expand into a spherical shape at the user’s command word “Netbow!”. The pressure and oxygen levels inside the sphere can be adjusted so as not to harm the captured specimen and to also keep it sheltered from foreign objects or creatures. The net itself consists of a water-based electromagnetic net which is a mesh of normal temperature ice created using the structural factors of water molecules." />
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="構造⽔を利⽤した電磁柵（⽔分⼦の構造因⼦を利⽤して常温氷の網⽬を作ることができる）であり、保護⼠たちが⽣物捕獲に利⽤する。個⼈タイプは最⼤で直径5メートル程に拡張できるが、かなりの腕⼒が必要。" />
+              <TextMediumSub text="Personal Netbows can expand to a max diameter of around 5m, but requires considerable strength from the wielder" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="体内に⽔分を持つ⽣物たちは、ボウが形成する⽔分⼦膜と反発し合うため、網の内側か外側に必ず位置し、展開時に貫通することがないので安全性が⾼い。太陽電池で充電を⾏い、半分の電⼒を失うと、⽔と⼸に戻る。⼸は⽔に浮かぶ。" />
+              <TextMediumSub text="Organisms containing water will be repelled by the water molecule film formed by the bow, and so always be located either outside or inside the net will not be hit during deployment. This makes the Netbow an extremely safe piece of equipment. If the Netbow loses power, the net will simply return to being regular water. The Netbow is powered by solar energy and can float on water." />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="分⼦流体⼒学の権威・海原博⼠のアイデアが元になり、トミノ・スペクティヴ社が実⽤化した。" />
+              <TextMediumSub text="It is based on an idea by molecular fluid dynamics expert Professor Unabara, and was developed for practical use by Tomino Spective Company." />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_machinery_06.png" alt="" />

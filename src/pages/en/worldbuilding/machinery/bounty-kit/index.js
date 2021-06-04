@@ -48,13 +48,13 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="メカ・アイテム - バウンティキット" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Machinery - Bounty Kit" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
+          <MainContentsTop text="Machinery" />
           <MainContentsMiddleWorld>
-            <TextHeading text="バウンティキット" />
+            <TextHeading text="Bounty Kit" />
             <ContentsLine />
-            <TextMedium text="ブルーハンターのアイテム。⽣物や道具に擬態させる「ナノボール」、⽣物を傷つけず捕らえられる電磁ネット発⽣器「ネットボウ」など。それぞれがロボットであり、個⼈が管理するマイAIを転送（ジャックイン）させることができる。各々が同期し、持ち主との会話が可能。" />
+            <TextMedium text="Items used by Blue Hunters. Items include the Nano Ball, which can mimic living things and tools, and the Netbow, which is an electromagnetic net generator that can capture living things without harming them. Each item is a robot and the user can ‘jack-in’ their personal My-AI system. They can sync with each other, and it’s possible for them to communicate verbally with the user." />
             </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}

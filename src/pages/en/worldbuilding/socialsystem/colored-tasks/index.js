@@ -48,13 +48,13 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="社会制度 - カラータスク" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Social System - Colored Tasks" />
         <WorldContentsInner>
-          <MainContentsTop text="社会制度" />
+          <MainContentsTop text="Social System" />
           <MainContentsMiddleWorld>
-            <TextHeading text="カラータスク" />
+            <TextHeading text="Colored Tasks" />
             <ContentsLine />
-            <TextMedium text="「たくさんの仕事を作り出した」タスクが「すばらしいタスク」とみなされ、ステータスが特定のカラーで表現される（カラータスク）。地上では「グリーン」や「オレンジ」が、宇宙都市には「パープル」などがあり、⾊の濃淡を含め膨⼤な種類がある。" />
+            <TextMedium text="A task that 'creates a lot of work' is considered a 'superb task'. It is indicated as such with a particular color and is therefore known as a Colored Task. Tasks in terrestrial areas are usually 'green' and 'orange', and tasks in extraterrestrial areas are often 'purple'. As the colors come in different shades, there are a huge number of types of colored tasks." />
             </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}

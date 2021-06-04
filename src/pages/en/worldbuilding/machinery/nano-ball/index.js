@@ -48,23 +48,23 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="メカ・アイテム - -ナノボール-" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Machinery - Nano Ball" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
+          <MainContentsTop text="Machinery" />
           <MainContentsMiddleWorld>
-            <TextHeading text="-ナノボール-" />
+            <TextHeading text="Nano Ball" />
             <ContentsLine />
-            <TextMedium text="作戦遂⾏の切り札である変形ロボット。制御コアの周囲を⼈⼯昆⾍（ナノマシン）で被われたボール型ユーティリティ。ハンターの命令によって特定の⽣物や道具に変形（擬態）する。ターゲット⽣物が苦⼿なもの、あるいは好物へと変貌することで、捕獲ミッションをスムースに遂⾏できる。" />
+            <TextMedium text="This transforming robot is a Hunter’s trump card during their operations. A ball-shaped utility consisting of a control core and covered in nanomachines. It can transform into other creatures and even objects at the Hunter's command. By mimicking things the target creature may like or even dislike, capture missions can run much more smoothly." />
             <div className={styles.textAnnotation_wrapper}>
-              <TextAnnotation text="＊どんな⽣物に変形するか、カード型ＵＩで指定。" />
+              <TextAnnotation text="* The transformation is determined using a card-shaped UI." />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_machinery_05.png" alt="" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="群体で形状を構築する⼤量の⼈⼯昆⾍（ナノボット）と制御核（コアボット）から成る擬態システム。第３世代（3rd.と呼ばれる）以降、⽣分解できるようになり環境負荷が著しく低減した。ルール上、ハンターが利⽤していいのは3rd.以降。" />
-              <TextMediumSub text="コアボットが電⼒の⼤半を失うとボール状に強制収縮し、容れ物として使うと中⾝を傷つける可能性があって、ネットボウのように⽣物の捕獲網として利⽤することは禁じられている。セーフティ機能をONにしていれば、強制収縮せずバラバラに散る。逆にセーフティがOFFのとき、中⾝を⼋つ裂きにする凄まじい凶器となる。" />
-              <TextMediumSub text="第3世代以降は⾷糧にもできるため、サバイバルキットとして常備されるようになった。「こんなもの⾷べるぐらいなら死んだほうがマシ（ヴィオラ・談）」" />
+              <TextMediumSub text="The control nucleus (Core Bot) is covered in a huge number of artificial insects known as Nano Bots which can cluster together to form various shapes. Nano Balls that are 3rd Generation and later are also biodegradable, meaning their burden on the environment is significantly reduced." />
+              <TextMediumSub text="As the Core Bot loses power, it forces the Nano Ball to contract back into a sphere. This means that anything held inside it could be hurt, and therefore it is not allowed to use the Nano Balls to capture creatures in place of a Netbow. Nano Balls also have a safety feature which, if switched on, means the Nano Ball will simply disintegrate when it loses power instead of contracting back into a sphere. However, switching the safety feature off means the Nano Ball could be used as a ferocious weapon that can tear apart whatever is unlucky to be inside it at the time." />
+              <TextMediumSub text="3rd Gen. Nano Balls and later are able to provide edible rations, and therefore are also used as a survival kit. According to Viola “Starvation is the better option rather than this.”" />
             </div>
           </MainContentsMiddleWorld>
           <MainContentsBottom />

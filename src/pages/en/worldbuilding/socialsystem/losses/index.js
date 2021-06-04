@@ -48,13 +48,13 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="社会制度 - ロス -悪行-" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Social System - Losses" />
         <WorldContentsInner>
-          <MainContentsTop text="社会制度" />
+          <MainContentsTop text="Social System" />
           <MainContentsMiddleWorld>
-            <TextHeading text="ロス -悪行-" />
+            <TextHeading text="Losses" />
             <ContentsLine />
-            <TextMedium text="2社会に悪影響を与える「ロス（悪⾏）」（具体的には、化⽯燃料を⼀⽅的に使うなど）は原則として禁じられており、あまりに酷いとタスクの計上が停⽌されたり、移動の禁⽌といった罰則を受ける。但し、ゲインとロスはバランスをとるものであり、トータルでプラスを⽬指すべきものである。" />
+            <TextMedium text="'Losses' are made through actions that adversely affect society (specifically, the unilateral use of fossil fuels). If too many Losses are made, Task-counting may be frozen, and movement may be prohibited. However, Gains and Losses are meant to be balanced, and the goal is to keep a positive total." />
           </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}

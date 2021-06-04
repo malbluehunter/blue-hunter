@@ -49,13 +49,15 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="社会制度 - フェアチェーン" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Social System - Fairchain" />
         <WorldContentsInner>
-          <MainContentsTop text="社会制度" />
+          <MainContentsTop text="Social System" />
           <MainContentsMiddleWorld>
-            <TextHeading text="フェアチェーン" />
+            <TextHeading text="Fairchain" />
             <ContentsLine />
-            <TextMedium text="全世界のタスクは⾰新的なブロックチェーン技術である量⼦情報分散システム「フェアチェーン」で管理され、あらゆる営みが超⾼速量⼦演算網を使い、秒単位で更新されている。個⼈のIDと各タスクは厳密に結び付けられており、改竄不可能。その中で、特に価値があると認定されたタスクには、多い時で数万〜数⼗万ものノーマルなタスクが連結（エンゲージ）される。" />
+            <TextMedium text="Tasks around the world are managed by Fairchain, an innovative quantum information-distributing blockchain system." />
+            <TextMedium text="Tasks around the world are managed by Fairchain, an innovative quantum information-distributing blockchain system. Utilizing an ultra-high-speed quantum network, all activity is updated at the rate of once every second." />
+            <TextMedium text="One’s Tk are strictly tied to one’s personal ID and cannot be falsified. Tens or hundreds of thousands of normal Tasks are engaged to other Tasks that are identified as particularly valuable." />
           </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}

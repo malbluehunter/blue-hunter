@@ -48,13 +48,14 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="テクノロジー - 生態儀 -ビオバース-" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Technology - Bioverse" />
         <WorldContentsInner>
-          <MainContentsTop text="テクノロジー" />
+          <MainContentsTop text="Technology" />
           <MainContentsMiddleWorld>
-            <TextHeading text="生態儀 -ビオバース-" />
+            <TextHeading text="Bioverse" />
             <ContentsLine />
-            <TextMedium text="⽣物の特徴や種の関係性をカードで表現するバーチャルなユーザーインターフェース。3DCGで変化し、球形（儀）になったり、平⾯になったりする。敵や⽣物との対戦時に主⼈公などが使う。主に系統樹モード、相対モード等が切り替えて使われ、作戦司令室ではサーチャーが⾳声で、⽔中（前述したXRビュー）ではハンターが脳波コマンドにて操作。ナノボールの変形など、この画⾯に対するカードをからめた主⼈公の動作が⼀つの⾒せ場になる。" />
+            <TextMedium text="A virtual user interface that expresses the characteristics of living things and the relationships between species via cards. It can use CG to transform into various shapes such as becoming spherical or flat. The protagonist can use them when facing enemies or creatures. Used by the main characters when fighting against enemies and creatures. It can switch between different modes, usually the Phylogenetic Tree Mode and the Relative Mode. when being used in the Control Room, it is operated by voice. When being used underwater, it is operated by brain waves in the above-mentioned ΣR/ΣV." />
+            <TextMedium text="One of the highlights of this system is seeing the main characters use the cards to transform their Nano Ball." />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_technology_01.png" alt="" />
             </div>

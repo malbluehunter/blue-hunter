@@ -48,62 +48,67 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="社会制度 - Rrt -レアリティ-" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Social System - Rarity (Rrt)" />
         <WorldContentsInner>
-          <MainContentsTop text="社会制度" />
+          <MainContentsTop text="Social System" />
           <MainContentsMiddleWorld>
-            <TextHeading text="Rrt -レアリティ-" />
+            <TextHeading text="Rarity (Rrt)" />
             <ContentsLine />
-            <TextMedium text="Light(★)/Normal(★★)/Deep(★★★)/Extreme(★★★★)の4段階。進歩的成果の貴重さに対する権威付けであり、⽣物の場合はカードがその深さの⻘で縁取られる。〜1万Lk未満はLight（ライトブルー）、〜10万Lk未満をNormal、〜100万Lk未満をDeepと位置付ける。両⽣類のグリーンとブルーなど、同⼀⽣物に2種類以上の⾊に対するRrtが与えられるケース（ダブル・レアリティ）もある。Rrtを認定されたタスクは「カラードタスク（海の場合はブルータスク）」と呼ばれる。⼀つのタスクに複数の⾊が付与されることもある。「ブルー狙い」「ブルーが欲しい」という場合は「本⼈が進歩的な成果に相当するTkを実施し、結果として（あるいは事前に）Lkが伸び、AIがLkの成⻑曲線よりRrtを判定するまで」を⾔う。" />
+            <TextMedium text="Split into four levels which are: Light(★)/Normal(★★)/Deep(★★★)/Extreme(★★★★)" />
+            <TextMedium text="In the case of living things, a shade of blue can be seen on the card which corresponds with how important the achievement is." />
+            <TextMedium text="Those worth less than 1000Lk are Light, 1000-100,000Lk are Normal, and 100,000-1,000,000 are Deep. There are also some creatures with double rarities, such as those that are classed as both green and blue." />
+            <TextMedium text="Rrt-certified tasks are known as 'Colored Tasks'. Tasks which are associated with the ocean are blue, and those associated with the land are green. Some Tasks may be assigned multiple colors." />
+            <TextMedium text="'Aiming for Blue' and 'I want Blue' means to carry out a Task corresponding to a progressive achievement, and the Lk will increase as a result (or in advance), thus leading to the AI judge on the Rrt based on the Lk growth curve." />
+            <div className={styles.textHeading_wrapper}>
+              <TextHeading text="Color Criteria" />
+            </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="要調査系統群" />
-              <TextLeading text="通称「億水の漂因」" />
+              <TextLeading text="1st Order: Powder Blue" />
+              <TextLeading text="Specimens needing research" />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_02.png" alt="" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="調整依頼。遺伝⼦（⾝体の⼀部分）などの物理的な⽣体情報や写真、⽬撃証⾔などを総合し、少なくとも過去に存在したと考えられる未発⾒⽣物群。ハンターたちが「未発⾒」「ターゲット」と呼ぶカード。正式名が与えられず、仮称で呼ばれることが多い。「六枚⽻」「針ウロコ」など。" />
+              <TextMediumSub text="Adjustment request. Physical evidence such as DNA is combined with photographic evidence and eyewitness testimonies to make an informed hypothesis as to the existence of a specimen, even if already extinct. Hunters call these cards “Undiscovered” or “Targets”. They have no official names and so are often called by temporary names based on their physical traits, such as “6 feathers” or “needle scales”." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="要保護系統群" />
-              <TextLeading text="通称「万青の潜因」" />
+              <TextLeading text="2nd Order: Aqua Blue" />
+              <TextLeading text="3rd Order: Sky Blue" />
+              <TextLeading text="4th Order: Royal Blue" />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_03.png" alt="" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="調整依頼。⽣体または死後数時間以内の完全な遺体について回収例があり、現⽣する単独系統とみなされ、徹底した保護が求められる科学的に重要な⽣物群（＝ブルーに認定されたカード）。パウダーとして登録された情報はハンターの働き次第でブルーにアップグレードされるか、または偽情報として破棄されるかの⼆択となる。AIによってアクア〜ロイヤルまでレアリティが推定される。" />
+              <TextMediumSub text="Adjustment request. Either a living or recently deceased specimen has been captured and is considered an extant isolated system and must be thoroughly protected (i.e. Blue-certified cards) due to their scientific importance. Cards registered as Power Blue will be upgraded or even destroyed (if the information was proven to be false) after the Hunter has taken action. AI will certify these cards on a scale of Aqua to Royal Blue." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="要警戒系統群" />
-              <TextLeading text="通称「千碧の禁因」" />
+              <TextLeading text="5th Order: Taboo Navy" />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_04.png" alt="" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="⽣体の回収例と環境汚染の被害例が報告されており、ハンター以外の保護⾏為を禁じられた⽣物群。希にブルーからアップグレードされる。" />
+              <TextMediumSub text="Groups of organisms for which a specimen has been recovered and environmental pollution has been reported. May not be captured by anybody other than a Hunter. In some rare cases these have been upgraded from Blue." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="要駆除系統群" />
-              <TextLeading text="通称「百紺の滅因」" />
+              <TextLeading text="6th Order: Enemy Purple" />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_05.png" alt="" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="⽣体の回収例と環境汚染の被害例、甚⼤な実害が報告されており、ハンターが駆除・殲滅すべき⽣物群。希にタブーからアップグレードされる。" />
+              <TextMediumSub text="Groups of organisms for which a specimen has been recovered and environmental pollution as well as serious harm has been reported. Hunters are to exterminate such organisms. In some rare cases these have been upgraded from Navy." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="災因系統群" />
-              <TextLeading text="通称「十黒の災因」" />
+              <TextLeading text="7th Order: Disaster Black" />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_06.png" alt="" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="数億種いる現⽣⽣物のなかで⼗種に満たないほどの危険性が疑われる⽣物群。遭遇した場合、⽣息領域からの避難が義務づけられる。ブラックリスト。表に出てこないカード。" />
+              <TextMediumSub text="Of the millions of species in existence, less than 10 species are suspected dangerous enough for this classification. If one encounters such a creature, evacuation of its habitat is mandatory.  Blacklisted. These cards are usually kept secret." />
             </div>
           </MainContentsMiddleWorld>
           <MainContentsBottom />

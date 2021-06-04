@@ -48,13 +48,13 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="メカ・アイテム - -Σ(シグマ)グラス-" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Machinery - Σ-Glasses" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
+          <MainContentsTop text="Machinery" />
           <MainContentsMiddleWorld>
-            <TextHeading text="-Σ(シグマ)グラス-" />
+            <TextHeading text="Σ-Glasses (Pronounced: ‘Sigma Glasses’)" />
             <ContentsLine />
-            <TextMedium text="ΣR（Σリアリティ）、ΣＶ（Σビュー）などに対応する多⽬的ゴーグル。ハンターギルドの創始者であるΣ（ミネルヴァや⽣ 頼などがメンバーとして在籍）が開発し、その後普及した。ハンターの眼を潮⾵や紫外線から守る意味もある。" />
+            <TextMedium text="Multipurpose goggles designed for ΣR and ΣV. It was invented by Σ, the creator of Hunter Guilds (Minerva and Ourai belong to their guild). The goggles are now a common sight, and protect the wearer's eyes from UV rays and the sea breeze." />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_machinery_10.png" alt="" />
             </div>

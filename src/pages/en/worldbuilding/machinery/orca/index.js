@@ -48,13 +48,14 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="メカ・アイテム - ψOrca -オルカ号-" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Machinery - ψOrca" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
+          <MainContentsTop text="Machinery" />
           <MainContentsMiddleWorld>
-            <TextHeading text="ψOrca -オルカ号-" />
+            <TextHeading text="ψOrca (Pronounced: ‘Psi-Orca’)" />
             <ContentsLine />
-            <TextMedium text="ブルーハンターが乗る自給自足船。太陽電池や風力、潮汐力等を駆使し、海水を電気分解して水素を生成・貯蔵しつつ航行する。動力を自給自足 するのみならず、海中電力網（シーフォース）にも供給。ψオルカ号をはじめとしたゼロシップに分類される船でミッションを成し遂げれば、より多くゲインしたとみなされ、評価が⾼い。危機回避や⽣命救助が⽬的の場合は、プラスエミッション（ロス）が許されている。" />
+            <TextMedium text="A self-sufficient ship used by Blue Hunters. As well as making full use of solar batteries, wind power and tidal force, it also creates and stores hydrogen by breaking down surrounding seawater. Not only is it self-sufficient, but it also supplies energy to the underwater power grid (Sea Force). Completing missions using ZEROships such as the ψOrca usually leads to more Gains and are seen very positively. Completing a mission at a Loss (i.e. plus emissions) is acceptable in the event of necessary withdrawal from a dangerous or life-threatening situation." />
+            
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_machinery_01.png" alt="" />
             </div>
@@ -62,46 +63,48 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_machinery_02.png" alt="" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="1. 第1艦橋 -ヘッドブリッジ-" />
+              <TextLeading text="1. First Bridge: Headbridge" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="「龍神」「攻天」のメンテナンス用カーゴを兼ねた狭いブリッジで、開閉式のシースルー型キャノピーを持つ。普段は展望台または宴会場である。" />
+              <TextMediumSub text="A small bridge which also serves as storage for cargo needed for maintenance of the Ryujin and Kouten. It has a see-through canopy that can open up fully. Generally used as an observation deck or banquet hall." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="2. ステップ" />
+              <TextLeading text="2. Step" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="第1艦橋（ヘッドブリッジ）に通じている。出入口にハッチがあるので、セミサブモード時に浸水せず機密が保たれます。カケルはこのドアに頭をぶつけました。" />
+              <TextMediumSub text="Connects to the 1st Bridge Headbridge" />
+              <TextMediumSub text="There is a hatch entry, so you can enter/exit the craft while it is in semi-sub mode. Kakeru once hit his head on this door." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="3. 第2甲板 -ボトムデッキ-" />
+              <TextLeading text="3. Second deck: Bottom Deck" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="ミッションパッケージを積むことが前提のフラットな甲板。生物捕獲用、生物駆除用、戦闘用などパッケージの種類は多岐にわたる。セミサブモード時に水没するため、窓のついたバスのような遊覧用パッケージもある。パッケージの高さは第1甲板まで。" />
+              <TextMediumSub text="A flat deck designed for the loading of mission packages. There are many different types of packages from ones for capturing live specimens, for exterminating specimens, for combat and more." />
+              <TextMediumSub text="This part is underwater when the ψOrca is in semi-sub mode, and there is a package which turns the deck into something of a sight-seeing bus with windows. The maximum package height is up to the 1st Bridge." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="4. カーゴベイ" />
+              <TextLeading text="4. Cargo Bay" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="カーゴには各種装備と「雷神（探査艇）」もしくは「遊天（水陸両用ドローンカー」を格納。どちらかをミッションパッケージとして第２甲板（2nd.Deck）に積載することも可能。" />
+              <TextMediumSub text="The cargo stores all equipment as well as Raijin (probe) and Kouten (drone car suitable for both land and sea). Either of these can be taken to the 2nd Deck as a passion package." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="-ノーマルモード-" />
+              <TextLeading text="Normal Mode" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="ミッションパッケージを換装・メンテナンスする時、太陽電池を使った蓄電、さらには港湾など浅瀬を航行する時にこの形態をとる。ハイドロストラクチャーにより、きわめて小さなバラストタンクで喫水線を変更可能。" />
+              <TextMediumSub text="This is the mode used when replacing or maintaining mission packages, charging solar cells or navigating shallow waters such as harbors. The waterline can be adjusted using extremely small ballast tanks." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="-セミサブモード-" />
+              <TextLeading text="Semi-sub Mode" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="水没型のミッションパッケージを活用する時の状態。ROVなどを投下するクレーンが不要。第1甲板と第1ブリッジが水面上にあって、やや大型のプレジャーボートのようにみえる。「前足」のウォータージェット2発は推進・後退の両用であり、互い違いに使うことで転舵し、船体下部のポッドでプロペラ推進する。" />
+              <TextMediumSub text="This mode is used for submerged mission packages. There is no need for a crane when lowering ROVs. The 1st Deck and Bridge are located above sea level, so from above water it just seems like quite a large pleasure craft. The two 'forelegs' are used to move forwards and backwards, and can be used alternately to steer. Pods near the bottom of the hull contain propellers used to propel the ship." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="-バーストモード-" />
+              <TextLeading text="Burst Mode" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="ウォータージェット2発を全開にして疾走。このとき上腕部の起電力でハイドロストラクチャーを使った擬似水中翼を形成し、50km/h を超えると船体が浮き上がる（後部は剛体の水中翼で浮上）。後部の2発が動作する際、船体下部のポッドは吸水口として作動。" />
+              <TextMediumSub text="The ship runs at full throttle with 4 water jets. Pseudo-hydrofoils are formed using electromotive force in the upper arms. If the ship surpasses 50km/h, the hull begins to rise (the rear part lifts using rigid hydrofoils). When the two jets at the back are running, the pod at the bottom of the hull will intake water." />
             </div>
           </MainContentsMiddleWorld>
           <MainContentsBottom />

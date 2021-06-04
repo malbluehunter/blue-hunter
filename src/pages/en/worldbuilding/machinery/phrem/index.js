@@ -48,21 +48,18 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="メカ・アイテム - -フレン-" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Machinery - PHREM" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
+          <MainContentsTop text="Machinery" />
           <MainContentsMiddleWorld>
-            <TextHeading text="-フレン-" />
+            <TextHeading text="PHREM (Peripheral devices for Human Resource Encoder and Memory)" />
             <ContentsLine />
-            <TextMedium text="個⼈が⾝体に装着するTkエンコーダ＆メモリー機能付きAIデバイス。カケルの場合は腕に装着している。マイAIを搭載し、使役する個⼈が愛称で呼ぶことは可能（カケルのフレンは「オヤジ」で起動）だが、マイAIとしての正式名称は個⼈の識別番号に紐付けられている（1⼈あたり1体のみ）。" />
+            <TextMedium text="An AI device with a Tk encoder and memory function that individuals wear on their body. Kakeru wears his on his arm. By equipping a PHREM device with My-AI, it's possible to assign it a nickname (for example, Kakeru activates his with the name 'OYAJI'), but the official names of each My-AI are linked to the individual's identification number (one per person)." />
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="フレンはTkの計測性能によってローエンド（±144）、ミドルレンジ（±720）、ハイエンド（±1440）と分かれている。カケルのフレンはミドルレンジで、1⽇あたり最⼤720Tkまでの蓄積が可能。たとえば蓄積されたTkが100だと、カケルが「本⽇の稼ぎはお幾ら万円？」と聞けば、0.1と表⽰してくれる。" />
+              <TextMediumSub text="PHREM devices are divided into low-end (±144), middle range (±720), and high-end (±1440) devices based on the amount of Tk they can store. Kakeru's PHREM device is in the middle range and can accumulate up to 720Tk per day. So for example, if Kakeru had accumulated 100Tk that day, he can ask “How many dollars did I earn today” and will get 20 as the answer." />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="ミドルレンジのフレンは消費電⼒を抑える⽬的で（屋外での視認性も考慮されている）、モノクロ表⽰になっていることが多い。視認性を⾼めるにはΣグラスを使う。ハンターが使うフレンは耐⽔圧能に⾼いスペックが求められ、カケルのフレン「オヤジ」には300m級のコーティングが施されている。" />
-            </div>
-            <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="また、カケルのフレンはホログラムプロジェクション機能を有している。" />
+              <TextMediumSub text="Middle-range PHREM devices usually display in monochrome in order to reduce power consumption as well as to make it easier to view when out in the sunlight. Σglasses can also be used to improve visibility. Hunters often go for PHREM devices with high water pressure resistance, and Kakeru's OYAJI has a coating that lets it withstand depths of 300 meters. OYAJI is also able to project holograms." />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_01.png" alt="" />

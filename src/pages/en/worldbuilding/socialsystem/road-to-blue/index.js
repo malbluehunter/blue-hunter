@@ -48,38 +48,38 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="社会制度 - ブルーへの道程" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Social System - The Road to Blue" />
         <WorldContentsInner>
-          <MainContentsTop text="社会制度" />
+          <MainContentsTop text="Social System" />
           <MainContentsMiddleWorld>
-            <TextHeading text="ブルーへの道程" />
+            <TextHeading text="The Road to Blue" />
             <ContentsLine />
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="1.撮影" />
+              <TextLeading text="1. Photography/Filming" />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_07.png" alt="" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="誰かがUGなどを使って撮影した⽣物の写真・動画が、フェアチェーンに登録され、全世界に共有される。" />
+              <TextMediumSub text="Somebody captures footage of a creature using Underwater Gear etc and uploads it to the Fairchain so it can be accessed from all over the world." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="2.分析" />
+              <TextLeading text="2. Analysis" />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_08.png" alt="" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="撮影当時の座標、および関係したUGの⽔質調査結果等が分析にかけられ、環境DNAが判明し、そこから研究者たちによって⽣ 物の種類が推測され、新種の可能性が⾼ければ探索計画（バウンティプロジェクト）が始まる。（Wanted! の状態）" />
+              <TextMediumSub text="The environmental DNA (eDNA) is identified by analyzing various details such as the coordinates of where the footage was taken and water samples taken by the UG. Once researchers can make an educated guess as to its species, if it is likely to be a new species, a Bounty Project will begin." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="3.保護" />
+              <TextLeading text="3. Capture" />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_09.png" alt="" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="撮影された⽣物が新種であると判定されるには、⽣体の保護とDNA解析が必要になる。それが済んで、初めて最初の写真の発⾒者および保護したハンターに「ブルー」が付与される。" />
+              <TextMediumSub text="It is necessary to capture a specimen and analyze its DNA in order to determine whether or not it is a new species. If so, the person who took the original footage and the Hunter who captured it will be awarded Blue." />
             </div>
           </MainContentsMiddleWorld>
           <MainContentsBottom />

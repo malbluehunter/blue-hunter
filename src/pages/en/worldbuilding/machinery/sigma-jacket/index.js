@@ -48,13 +48,13 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="メカ・アイテム - -Σ(シグマ)ジャケット-" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Machinery - Σ-Jacket" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
+          <MainContentsTop text="Machinery" />
           <MainContentsMiddleWorld>
-            <TextHeading text="-Σ(シグマ)ジャケット-" />
+            <TextHeading text="Σ-Jacket (Pronounced: ‘Sigma Jacket’)" />
             <ContentsLine />
-            <TextMedium text="マイAIをロードできる多機能ライフジャケット。ハンターギルド（またはハンターシップ）のロゴがついているのが⼀般的。" />
+            <TextMedium text="A multifunctional life jacket which can be loaded with MY-AI. Commonly displays the crest of the wearer's Guild or their Hunterships." />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_machinery_09.png" alt="" />
             </div>

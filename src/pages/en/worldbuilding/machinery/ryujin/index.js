@@ -48,13 +48,14 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="メカ・アイテム - ウェイクライダー 龍神" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Machinery - Wake Rider Ryujin" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
+          <MainContentsTop text="Machinery" />
           <MainContentsMiddleWorld>
-            <TextHeading text="ウェイクライダー 龍神" />
+            <TextHeading text="Wake Rider Ryujin" />
             <ContentsLine />
-            <TextMedium text="100km/h以上ものスピードを誇るウェイクライダー「⿓神」（遠隔操縦ジェットスキー&amp;合体分離式ウェイクボード）を操る少年が、⽚⼿にボール型ユーティリティのナノボールを持っている。⽔上ミッションではウェイクライダーの⾳で⽣物をドライブ（追う）またはエスケイプ（逃げる）しつつ、ハンターは最⼤100メートルもの距離をとってターゲットの前後へ、時には空中をジャンプしつつ⾃在に回り込む。⽔中ミッションではシーポッド（いわゆる⽔中スクーター）がこの役割を担う。" />
+            <TextMedium text="Wake Riders consist of a remotely controlled jet ski and an attached wakeboard behind it. Ryujin is a Wake Rider that boasts a top speed of over 100km. Users will operate the Wake Rider with one hand and hold onto a Nano Ball in the other. In missions that take place on the surface of the water, the noise of the Wake Rider will be used to escape, i.e drive creatures to certain points, and Hunters can freely surround the target at distances of no more than 100 meters. At times the Hunters may even jump into the air." />
+            <TextMedium text="For underwater missions, Sea Pods (underwater scooters) perform the same function as Wake Riders." />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_machinery_03.jpg" alt="" />
             </div>

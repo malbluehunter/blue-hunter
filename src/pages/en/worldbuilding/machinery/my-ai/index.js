@@ -48,13 +48,13 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="メカ・アイテム - -マイAI-" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Machinery - My-AI" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
+          <MainContentsTop text="Machinery" />
           <MainContentsMiddleWorld>
-            <TextHeading text="-マイAI-" />
+            <TextHeading text="My-AI" />
             <ContentsLine />
-            <TextMedium text="この時代、責任能⼒を問われる条件下で⽤いるロボット（事故を起こす可能性のある⾃動操舵船など）は個⼈にひもづけられることが義務化されており、そういったロボットのAIは「マイAI」と呼ばれ、個⼈が注意深くブリーディングする。政治AIなども政治家である個⼈がブリーディングしたものとみなされる。社会維持に使われる共働AIは膨⼤に分散するマイAIの総意として機能する。" />
+            <TextMedium text="In this era, there are many robotic systems that require a sincere sense of responsibility (such as automatically steering ships). Therefore, it is legally required that such machines are tied to an individual. The AI loaded into these machines are known as My-AI, and individuals breed these with particular care. AIs bred by politicians are political AIs. Collaborative AIs used to maintain social order function as the consensus of the vastly distributed My-AI." />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_01.png" alt="" />
             </div>

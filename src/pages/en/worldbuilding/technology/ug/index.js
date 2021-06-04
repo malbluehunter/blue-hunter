@@ -48,14 +48,15 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="テクノロジー - UG［Underwater Gear］" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Technology - Underwater Gear (UG)" />
         <WorldContentsInner>
-          <MainContentsTop text="テクノロジー" />
+          <MainContentsTop text="Technology" />
           <MainContentsMiddleWorld>
-            <TextHeading text="UG［Underwater Gear］" />
+            <TextHeading text="Underwater Gear (UG)" />
             <ContentsLine />
-            <TextMedium text="海中建機・探索ロボットの総称。" />
-            <TextMedium text="この時代、海中には電⼒網のシーフォースがはりめぐらされているため、ロボットたちは浮上することなく、ほぼ無限に海中で稼働し続けられる。全⻑100メートルを超える⼤きさのデカブツも存在する。また、事故で操作不能となった巨⼤な建機が「幽霊UG」となり、勝⼿に動き回っていることもあるという・・・" />
+            <TextMedium text="A general term underwater construction and probing robots. With the Sea Force power grid, the robots are able to work almost indefinitely without needing to surface." />
+            <TextMedium text="There are some huge UG that exceed 100m in height." />
+            <TextMedium text="There are also rumors so-called 'Ghost UG' which became nonoperational after an accident, but is moving around on its own...." />
             </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}

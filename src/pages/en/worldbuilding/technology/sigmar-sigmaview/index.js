@@ -48,24 +48,21 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="テクノロジー - ΣＲ(シグマアール)/ΣV(シグマビュー)" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Technology - ΣR/ΣV" />
         <WorldContentsInner>
-          <MainContentsTop text="テクノロジー" />
+          <MainContentsTop text="Technology" />
           <MainContentsMiddleWorld>
-            <TextHeading text="ΣＲ(シグマアール)/ΣV(シグマビュー)" />
+            <TextHeading text="ΣR/ΣV (Pronounced: ‘Sigma-R / Sigma-View’)" />
             <ContentsLine />
-            <TextMedium text="ハンターが海中で使う仮想空間U/I（およびそれを使うための⾼性能⽔中ゴーグル）。脳波コマンドに反応し、⼼の中で「海転！」と呟くことでログイン。ログアウトは「転海」。" />
+            <TextMedium text="A virtual space UI used by Hunters while underwater (may also refer to the high performance underwater goggles used to view it). It reacts to brain waves, and the user needs to say 'SUBMERGE' in their mind in order to log in. The command to log out is 'EMERGE'. The sea will display as pure white, and coordinates are mapped out with a mesh-like grid. The view within the ΣV corresponds exactly to the real world, and Hunters use the colors displayed in these 'blocks' to move, think and capture the target specimens." />
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="視界の中で海が真っ⽩になり、メッシュ状に区切られたグリッド（座標世界）が出現する。現実の海に1対1で対応しており、区切られた範囲を⽰す「ブロック」の⾊情報を頼りにハンターは移動し、考え、捕獲すべきターゲット⽣物を追い詰めていく。" />
+              <TextMediumSub text="Example" />
+              <TextMediumSub text="Red Block:  Traces of eDNA" />
+              <TextMediumSub text="Blue Blocks: Forecast Area" />
+              <TextMediumSub text="Crosses: Living Creatures" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="例）" />
-              <TextMediumSub text="⾚ブロック・・・環境DNAの痕跡" />
-              <TextMediumSub text="⻘ブロック・・・絞り込まれた予想エリア" />
-              <TextMediumSub text="⼗字・・・⽣物反応" />
-            </div>
-            <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="ハンターギルドの開祖「Σ」が開発したものである。そもそもΣには数学的に「積分」の意味もあり、ハンターに不可⽋な全情報を⼀⽬で認識できるような集約されたUIを⽬指し、開発された。" />
+              <TextMediumSub text="Σ (Sigma) is the name of the original Hunter Guild and has the mathematical meaning of 'summation'. Their aim in developing and releasing this UI was to make it so Hunters can see all the essential information they need at the blink of an eye." />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_01.png" alt="" />

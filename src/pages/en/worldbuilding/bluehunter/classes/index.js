@@ -48,26 +48,26 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="ブルーハンター組織図 - 認定海洋保全官「BLUE HUNTER」の階級" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Road to Blue Hunter - 認定海洋保全官「BLUE HUNTER」の階級" />
         <WorldContentsInner>
-          <MainContentsTop text="ブルーハンター組織図" />
+          <MainContentsTop text="Road to Blue Hunter" />
           <MainContentsMiddleWorld>
             <TextHeading text="認定海洋保全官「BLUE HUNTER」の階級" />
             <ContentsLine />
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="class -クラス-" />
+              <TextLeading text="Classes" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="ハンター評議会（カウンシル）に所属するハンターの階級。クラスアップはLv、DpやBkなど（後述）を総合し、かつ評議会が実績を値踏みして決定する。⽣頼とミネルヴァはclass=5、JAZzとビリー＝class4、渚＝class3、⽉⼈とホーク＝class１。カケルは⽬下、class0。" />
+              <TextMediumSub text="Hunters belonging to the Hunter Council are split into classes. Classes are determined by the Hunter's Lv, Dp and Bk, as well as their achievements, which are appraised in a special conference. Ourai and Minerva belong to Class 5. JAZz and Billy belong to Class 4. Nagisa belongs to Class 3. Tsukito and Hawk belong to Class 2, and Kakeru is in the lowest class, Class 0." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="ハンターランキング" />
+              <TextLeading text="Hunter Ranking" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="各class毎に公開されているランキング。クラスアップに関わる5つの指標が計算に採⽤されており、善⾏（+Tk、ゲイン）を重ねただけでは伸びない。カケルはclass=0の中で50位前後をうろうろしている。史上最年少でclass=1に昇格を果たした⽉⼈とホークは現在トップ20にランクインし、class2への昇格間近と⾔われている。" />
+              <TextMediumSub text="Rankings are published for each class. There are five characteristics taken into account when advancing to the next class — simply accumulating Tk is not enough. Kakeru is hovering around 50th place within Class 0. Tsukito is the youngest person to ever be promoted to Class 1, and together with Hawk ranks in the top 20 of their Class. It is said that they are close to being promoted to Class 2." />
             </div>
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_ bluehunter_01.png" alt="" />
+              <img src="/world/world_img_ bluehunter_01_en.png" alt="" />
             </div>
             </MainContentsMiddleWorld>
           <MainContentsBottom />

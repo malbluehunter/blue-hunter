@@ -48,13 +48,13 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="社会制度 - Lk -リンク-" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Social System - Link (Lk)" />
         <WorldContentsInner>
-          <MainContentsTop text="社会制度" />
+          <MainContentsTop text="Social System" />
           <MainContentsMiddleWorld>
-            <TextHeading text="Lk -リンク-" />
+            <TextHeading text="Link (Lk)" />
             <ContentsLine />
-            <TextMedium text="1つのTkに付随する重要度の指標。他のタスクに参照されている（リンクが貼られている＝エンゲージ）数をフェアチェーン上でカウントする。たとえば「数学におけるゼロの発⾒」といった⼈類史上に残る進歩的な成果には数千万Lkが貼られることもあり得る。6枚⽻については、保護される前に70万Lkもがカウントされており、発⾒後は200万Lkまで伸ばした。解明が進むことにより、Lkの伸びは指数関数的に鈍っていくことが知られており、AIの統合組織u-AI（ユナイテッドAI）が漸近するLk数を予想し、Rrtを認定する。（注：遂⾏された当時のTkがプラスかマイナスかには依拠しない）。別名「尊さ」。" />
+            <TextMedium text="An index of importance associated with a single Task. The number of times it is referenced by other Tasks is counted within the Fairchain. If Lk is assigned then it is said to be ‘engaged’. Tens of millions of Lk can be attributed to achievements that contributed to the progression of human history, such as the discovery of zero in mathematics. For example, 700,000Lk were assigned to the newly-discovered creature '6 Feathers' prior to its capture, and this was later extended to 2 million. As the clarification of the specimen becomes clearer, the Lk growth slows down exponentially. Integrated AI organization “u-AI” (United AI) predicts the asymptotic close of the Lk and certifies the Rrt. (Note: It does not matter if the Tk was plus or minus at the time it was carried out.) Also referred to as 'virtue'." />
           </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}

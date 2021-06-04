@@ -48,13 +48,13 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="社会制度 - ゲイン -善行-" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Social System - Gains" />
         <WorldContentsInner>
-          <MainContentsTop text="社会制度" />
+          <MainContentsTop text="Social System" />
           <MainContentsMiddleWorld>
-            <TextHeading text="ゲイン -善行-" />
+            <TextHeading text="Gains" />
             <ContentsLine />
-            <TextMedium text="社会貢献を重ねた結果、タスクを多く「ゲイン（善⾏）」した者は各々の社会単位で「ソーシャルドライバー」に選出され、学級委員になったり、都市政治に参加したり、時には都市間を移動して会議に出るといった様々なミッションに参加する。" />
+            <TextMedium text="Individuals who gain a lot of Tk through contributions to society are selected as 'social drivers'. They usually become class representatives, may end up taking part in the politics of their city and are sometimes even selected to travel between cities to participate in meetings." />
           </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}

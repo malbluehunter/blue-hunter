@@ -48,14 +48,14 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="社会制度 - Tk -タスク-" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Social System - Tasks (Tk)" />
         <WorldContentsInner>
-          <MainContentsTop text="社会制度" />
+          <MainContentsTop text="Social System" />
           <MainContentsMiddleWorld>
-            <TextHeading text="Tk -タスク-" />
+            <TextHeading text="Tasks (Tk)" />
             <ContentsLine />
-            <TextMedium text="1分毎に刻まれる⾏動単位。プラス（ゲイン）とマイナス（ロス）があり、フェアチェーンに改竄できない形で記録される。1⽇あたりすべてをゲインすれば累計で+1440Tkとなるが、ロスもあるため、相場的には⼀⽇の累計で-100〜+100Tkの間になる。過去にTkをゲインした⼈（あるいは組織）は、その範囲でのロスが許される。うまく運⽤すれば1⼈あたり年間数千〜数万程度もTkを蓄積するといわれている。別名「財布の中⾝」。" />
-            <TextMedium text="海洋都市の住⺠は⾐⾷住で1⽇あたり500Tkほどのロスを避けられない（いわゆるミニマムロス）が、各都市のゲインによって相殺を受けられる。つまり登録市⺠はそれだけで1⽇あたり500Tkほどのミニマムゲインを取得できる。多くの市⺠が⽇々、±0Tkで⽣きていく。感覚的には100Tk=千円。カケルが⾷ったフカヒレ丼は、値段をつければ2000Tk。" />
+            <TextMedium text="A Task (Tk) is a unit that is updated every minute with either Gains or Losses based on behavior. They are documented within Fairchain and therefore absolutely cannot be tampered with. Receiving only Gains in a single day would result in +1440Tk. However, the average daily total usually amounts to between -100Tk and +100Tk due to unavoidable Losses. People or organizations who have gained Tk in the past are able to make Losses within that range. It is said that if utilized properly, a single citizen could possibly accumulate thousands to tens of thousands of Tk per year. Tk are also known as 'the contents of the wallet'. Citizens of marine cities are unable to avoid Losses of around 500Tk per day due to food, clothing and shelter (known as Minimum Loss), but it can be offset by the Gains of each city. In other words, each resident may be able to get a minimum Gain of about 500Tk per day just by that. Most residents are able to live at ±0Tk every day." />
+            <TextMedium text="For reference, 100Tk is about the equivalent of 10 USD. The shark fin bowl that Kakeru ate is worth 2000Tk." />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_01.png" alt="" />
             </div>
