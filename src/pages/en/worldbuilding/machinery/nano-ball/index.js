@@ -59,7 +59,11 @@ const WorldPage = ({ location }) => {
               <TextAnnotation text="* The transformation is determined using a card-shaped UI." />
             </div>
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_machinery_05.png" alt="" />
+              <picture>
+                <source srcset="/world/world_img_machinery_05_sp.png" media="(max-width: 767px)"/>
+                <source srcset="/world/world_img_machinery_05.png" media="(min-width: 767px)"/>
+                <img src="/world/world_img_machinery_05_sp.png" alt="" />
+              </picture>
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="The control nucleus (Core Bot) is covered in a huge number of artificial insects known as Nano Bots which can cluster together to form various shapes. Nano Balls that are 3rd Generation and later are also biodegradable, meaning their burden on the environment is significantly reduced." />

@@ -55,7 +55,11 @@ const WorldPage = ({ location }) => {
             <TextHeading text="The Encyclopedia of ”Octa/M”(4)" />
             <ContentsLine />
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_background_08.png" alt="" />
+              <picture>
+                <source srcset="/world/world_img_background_08_sp.png" media="(max-width: 767px)"/>
+                <source srcset="/world/world_img_background_08.png" media="(min-width: 767px)"/>
+                <img src="/world/world_img_background_08_sp.png" alt="" />
+              </picture>
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMedium text="第1層（インスラム）の居住空間は主に⾼さ200mある8本のタワーと、20〜30mほど厚みのある外壁部。海⽔で満たされたケイヴ（空洞）を⾒下ろすのが主な景観で、ケイヴ⾃体には太陽電池をスルーする形でうまく外光が取り⼊れられており、適度に明るい。またケイヴは8箇所の⽳があいており、港と呼ばれ、外洋と繋がっている。" />

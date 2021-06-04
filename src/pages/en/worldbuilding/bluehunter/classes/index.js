@@ -48,11 +48,11 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Road to Blue Hunter - 認定海洋保全官「BLUE HUNTER」の階級" />
+        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Road to Blue Hunter - Classes for Officially-Recognized Marine Conservationists: Blue Hunters" />
         <WorldContentsInner>
           <MainContentsTop text="Road to Blue Hunter" />
           <MainContentsMiddleWorld>
-            <TextHeading text="認定海洋保全官「BLUE HUNTER」の階級" />
+            <TextHeading text="Classes for Officially-Recognized Marine Conservationists: Blue Hunters" />
             <ContentsLine />
             <div className={styles.textLeading_wrapper}>
               <TextLeading text="Classes" />
