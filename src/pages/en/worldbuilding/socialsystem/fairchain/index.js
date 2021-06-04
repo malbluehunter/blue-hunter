@@ -16,11 +16,11 @@ import MainContentsBottom from "../../../../../components/organisms/MainContents
 import WorldContentsInner from "../../../../../components/organisms/WorldContentsInner"
 import PagerArea from "../../../../../components/organisms/PagerArea"
 
-const WorldPage = () => {
+const WorldPage = ({ location }) => {
   return (
     <>
       <Helmet>
-        <html lang="ja" />
+        <html lang="en" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 開始 --------------------------------------- */}
         <title>The World of BLUE HUNTER | BLUE HUNTER Official Site</title>
         <meta name="description" content="The official website for the BLUE HUNTER project. Free BLUE HUNTER manga starts June 2021! Check out all you need to know about the world of BLUE HUNTER here." />
@@ -43,7 +43,7 @@ const WorldPage = () => {
 
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
-      <LayoutTwoColumn>
+      <LayoutTwoColumn pathname={location.pathname}>
         {/* ページタイトル */}
         <div className={styles.pageTitle_wrapper}>
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
