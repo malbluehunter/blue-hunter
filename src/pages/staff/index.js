@@ -9,7 +9,7 @@ import LayoutTwoColumn from "../../components/templates/LayoutTwoColumn"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import BnrArt from "../../components/atoms/BnrArt"
-import TextLarge from "../../components/atoms/TextLarge"
+import TextLargeTrim from "../../components/atoms/TextLargeTrim"
 import Label03 from "../../components/molecules/Label03"
 import TextSmall from "../../components/atoms/TextSmall"
 
@@ -54,100 +54,100 @@ const StaffPage = ({ location }) => {
               <div className={styles.staff_name_item}>
                 <Label03 text={"総合プロデューサー"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"波房 克典"} />
+                  <TextLargeTrim text={"波房 克典"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"プロデューサー"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"岡村 哲也  /  北畑 幸大  /  渡邉 雅儀"} />
+                  <TextLargeTrim text={"岡村 哲也  /  北畑 幸大  /  渡邉 雅儀"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"制作ディレクター"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"スミス みか / 注連 菜都美"} />
+                  <TextLargeTrim text={"スミス みか / 注連 菜都美"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"原作・脚本・キャラクター＆メカニック原案"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"吾奏 伸"} />
+                  <TextLargeTrim text={"吾奏 伸"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"クリエイティブディレクター"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"内田 英武"} />
+                  <TextLargeTrim text={"内田 英武"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"アシスタントディレクター"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"石橋 明季"} />
+                  <TextLargeTrim text={"石橋 明季"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"プロダクションマネージャー"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"笠原 貫太"} />
+                  <TextLargeTrim text={"笠原 貫太"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"プロダクションデザイナー"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"中村 郁美 / 佐藤 宏美"} />
+                  <TextLargeTrim text={"中村 郁美 / 佐藤 宏美"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"ストーリーボード"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"糸曽 賢志 / 内田 英武 / 石橋 明季"} />
+                  <TextLargeTrim text={"糸曽 賢志 / 内田 英武 / 石橋 明季"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"キャラクターデザイン"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"中村 郁美 / 佐藤 宏美 / 石橋 明季 / ヤマユキモリ"} />
+                  <TextLargeTrim text={"中村 郁美 / 佐藤 宏美 / 石橋 明季 / ヤマユキモリ"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"メカニックデザイン"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"佐藤 翔太 / ヤマユキモリ"} />
+                  <TextLargeTrim text={"佐藤 翔太 / ヤマユキモリ"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"3Dモデリング"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"大橋 永志 / 脇谷 喜紀(仮)"} />
+                  <TextLargeTrim text={"大橋 永志 / 脇谷 喜紀(仮)"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"３Dライティング＆コンポジット"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"石橋 明季"} />
+                  <TextLargeTrim text={"石橋 明季"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"作画"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge
+                  <TextLargeTrim
                     text={
                       "高橋 絵梨子 / 165. / まきむら / はなほの / 石橋 明季 / 中村 郁美 /"
                     }
                   />
-                  <TextLarge
+                  <TextLargeTrim
                     text={
                       "佐藤 宏美 / 安田 悠一 / 黒棚 理解 / 天水 / こまちおファクトリー /"
                     }
                   />
-                  <TextLarge
+                  <TextLargeTrim
                     text={
                       "白夜 ゆう / 早川 マコト / へるにゃー / もちうさ / 甲斐 千鶴 /"
                     }
                   />
-                  <TextLarge
+                  <TextLargeTrim
                     text={
                       "ナツトモキ / 竹ノ輪 ちくわ / 宇野 ハジメ / 金田 なな"
                     }
@@ -157,31 +157,31 @@ const StaffPage = ({ location }) => {
               <div className={styles.staff_name_item}>
                 <Label03 text={"翻訳"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"デジタル職人株式会社"} />
+                  <TextLargeTrim text={"デジタル職人株式会社"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"WEBディレクター"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"柏崎 絵美"} />
+                  <TextLargeTrim text={"柏崎 絵美"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"WEB制作"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"株式会社 TAM"} />
+                  <TextLargeTrim text={"株式会社 TAM"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"プロモーション"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"株式会社MyAnimeList"} />
+                  <TextLargeTrim text={"株式会社MyAnimeList"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
                 <Label03 text={"協力"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"株式会社クラフトフロー / 株式会社シュガーフォックス"} />
+                  <TextLargeTrim text={"株式会社クラフトフロー / 株式会社シュガーフォックス"} />
                 </div>
               </div>
               <div className={styles.text_small_wrapper}>

@@ -8,10 +8,13 @@ import ContentsInner from "../../components/organisms/ContentsInner"
 import LayoutTwoColumn from "../../components/templates/LayoutTwoColumn"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import BnrArt from "../../components/atoms/BnrArt"
+import TextHeading from "../../components/atoms/TextHeading"
+import TextMedium from "../../components/atoms/TextMedium"
+import LineImg from "../../components/atoms/LineImg"
+import LineImgSp from "../../components/atoms/LineImgSp"
+import Label05 from "../../components/molecules/Label05"
+import Label04 from "../../components/molecules/Label04"
 import TextLarge from "../../components/atoms/TextLarge"
-import Label03 from "../../components/molecules/Label03"
-import TextSmall from "../../components/atoms/TextSmall"
 
 const SpecialPage = ({ location }) => {
   return (
@@ -22,8 +25,8 @@ const SpecialPage = ({ location }) => {
         <title>スペシャル | 「BLUE HUNTER」公式サイト</title>
         <meta name="description" content="ブルーハンタープロジェクト公式サイト。2021年6月より漫画「BLUE HUNTER」を連載開始！最新ニュースや設定資料集、スペシャル情報等をこちらからお届けします。" />
         <meta name="keywords" content="BLUE HUNTER, ブルーハンター, ブルーハンタープロジェクト, 無料漫画, アートコンペ " />
-        <link rel="canonical" href="https://manga.uminohi.jp/staff/" />
-        <meta property="og:url" content="https://manga.uminohi.jp/staff/" />
+        <link rel="canonical" href="https://manga.uminohi.jp/special/" />
+        <meta property="og:url" content="https://manga.uminohi.jp/special/" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
@@ -44,156 +47,179 @@ const SpecialPage = ({ location }) => {
       <LayoutTwoColumn pathname={location.pathname}>
         {/* ページタイトル */}
         <div className={styles.pageTitle_wrapper}>
-          <PageTitle src="/staff/ttl_staff.png" alt="Staff" />
+          <PageTitle src="/special/ttl_special.png" alt="Special" />
         </div>
         {/* パンクズリスト */}
-        <BreadShort page01="TOP" href01="/" page02="スタッフ" />
+        <BreadShort page01="TOP" href01="/" page02="スペシャル" />
         <ContentsInner>
           <MainContentsMiddle>
             <div className={styles.contents_inner}>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"総合プロデューサー"} />
+              <div className={styles.section01}>
+                <div className={styles.textHeading_wrapper}>
+                  <TextHeading text="最終選考審査会(仮）" />
+                </div>
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"波房 克典"} />
+                  <TextMedium text="表彰イベントの当日の様子を公開しています。などの簡単な説明文が入ります。表彰イベントの当日の様子を公開しています。などの簡単な説明文が入ります。" />
+                </div>
+                <div className={styles.video}>
+                  <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/0jqxkDfmvYo"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"プロデューサー"} />
-                <div className={styles.text_wrapper}>
-                  <TextLarge text={"岡村 哲也  /  北畑 幸大  /  渡邉 雅儀"} />
+              <div className={styles.section02}>
+                <div className={`${styles.textHeading_wrapper} ${styles.view_pc}`}>
+                  <TextHeading text={"アートコンペ受賞者結果発表"} />
                 </div>
-              </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"制作ディレクター"} />
-                <div className={styles.text_wrapper}>
-                  <TextLarge text={"スミス みか / 注連 菜都美"} />
+                <div className={`${styles.textHeading_wrapper} ${styles.view_sp}`}>
+                  <TextHeading text={"アートコンペ受賞者\n結果発表"} />
                 </div>
-              </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"原作・脚本・キャラクター＆メカニック原案"} />
-                <div className={styles.text_wrapper}>
-                  <TextLarge text={"吾奏 伸"} />
+                <div className={styles.line_wrapper}>
+                  <LineImg />
+                  <LineImgSp />
                 </div>
-              </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"クリエイティブディレクター"} />
-                <div className={styles.text_wrapper}>
-                  <TextLarge text={"内田 英武"} />
+                <Label04 text="Blue Hunter 大賞" />
+                <div className={styles.prizeMoney_wrapper}>
+                  <p>賞金 50万円</p>
                 </div>
-              </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"アシスタントディレクター"} />
-                <div className={styles.text_wrapper}>
-                  <TextLarge text={"石橋 明季"} />
+                <div className={styles.img_wrapper}>
+                  <img src="/special/special_img01.jpg" alt="" />
                 </div>
-              </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"プロダクションマネージャー"} />
-                <div className={styles.text_wrapper}>
-                  <TextLarge text={"笠原 貫太"} />
+                <div className={styles.prizeWinner_wrapper}>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="作品名" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="作品タイトルが入ります" />
+                    </div>
+                  </div>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="受賞者" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="山田 太郎" />
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"プロダクションデザイナー"} />
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"中村 郁美 / 佐藤 宏美"} />
-                </div>
-              </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"ストーリーボード"} />
-                <div className={styles.text_wrapper}>
-                  <TextLarge text={"糸曽 賢志 / 内田 英武 / 石橋 明季"} />
-                </div>
-              </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"キャラクターデザイン"} />
-                <div className={styles.text_wrapper}>
-                  <TextLarge text={"中村 郁美 / 佐藤 宏美 / 石橋 明季 / ヤマユキモリ"} />
-                </div>
-              </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"メカニックデザイン"} />
-                <div className={styles.text_wrapper}>
-                  <TextLarge text={"佐藤 翔太 / ヤマユキモリ"} />
-                </div>
-              </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"3Dモデリング"} />
-                <div className={styles.text_wrapper}>
-                  <TextLarge text={"大橋 永志 / 脇谷 喜紀(仮)"} />
-                </div>
-              </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"３Dライティング＆コンポジット"} />
-                <div className={styles.text_wrapper}>
-                  <TextLarge text={"石橋 明季"} />
-                </div>
-              </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"作画"} />
-                <div className={styles.text_wrapper}>
-                  <TextLarge
+                  <TextMedium
                     text={
-                      "高橋 絵梨子 / 165. / まきむら / はなほの / 石橋 明季 / 中村 郁美 /"
-                    }
-                  />
-                  <TextLarge
-                    text={
-                      "佐藤 宏美 / 安田 悠一 / 黒棚 理解 / 天水 / こまちおファクトリー /"
-                    }
-                  />
-                  <TextLarge
-                    text={
-                      "白夜 ゆう / 早川 マコト / へるにゃー / もちうさ / 甲斐 千鶴 /"
-                    }
-                  />
-                  <TextLarge
-                    text={
-                      "ナツトモキ / 竹ノ輪 ちくわ / 宇野 ハジメ / 金田 なな"
+                      "受賞者による作品の説明が入ります。（ナラティブです。）\n私は今日初めてこの学習院というものの中に這入はいりました。もっとも以前から学習院は多分この見当だろうぐらいに考えていたには相違そういありませんが、はっきりとは存じませんでした。中へ這入ったのは無論今日が初めてでございます。"
                     }
                   />
                 </div>
               </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"翻訳"} />
+              <div className={styles.section03}>
+                <div className={styles.line_wrapper}>
+                  <LineImg />
+                  <LineImgSp />
+                </div>
+                <Label04 text="審査員特別賞" />
+                <div className={styles.prizeMoney_wrapper}>
+                  <p>賞金 10万円</p>
+                </div>
+                <div className={styles.img_wrapper}>
+                  <img src="/special/special_img01.jpg" alt="" />
+                </div>
+                <div className={styles.prizeWinner_wrapper}>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="作品名" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="作品タイトルが入ります" />
+                    </div>
+                  </div>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="受賞者" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="山田 太郎" />
+                    </div>
+                  </div>
+                </div>
                 <div className={styles.text_wrapper}>
-                  <TextLarge text={"デジタル職人株式会社"} />
+                  <TextMedium
+                    text={
+                      "受賞者による作品の説明が入ります。（ナラティブです。）\n私は今日初めてこの学習院というものの中に這入はいりました。もっとも以前から学習院は多分この見当だろうぐらいに考えていたには相違そういありませんが、はっきりとは存じませんでした。中へ這入ったのは無論今日が初めてでございます。"
+                    }
+                  />
                 </div>
               </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"WEBディレクター"} />
-                <div className={styles.text_wrapper}>
-                  <TextLarge text={"柏崎 絵美"} />
-                </div>
+              <div className={styles.dot_wrapper}>
+                <img src="/special/dot_img.png" alt="・・・" />
               </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"WEB制作"} />
-                <div className={styles.text_wrapper}>
-                  <TextLarge text={"株式会社 TAM"} />
+              <div className={styles.section02}>
+                <div className={styles.textHeading_wrapper}>
+                  <TextHeading text="アートコンペ概要" />
                 </div>
-              </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"プロモーション"} />
-                <div className={styles.text_wrapper}>
-                  <TextLarge text={"株式会社MyAnimeList"} />
+                <div className={styles.line_wrapper}>
+                  <LineImg />
+                  <LineImgSp />
                 </div>
-              </div>
-              <div className={styles.staff_name_item}>
-                <Label03 text={"協力"} />
-                <div className={styles.text_wrapper}>
-                  <TextLarge text={"株式会社クラフトフロー / 株式会社シュガーフォックス"} />
+                {/* テーブル(見出しなし) 開始 */}
+                <div className={styles.table_sub_wrapper}>
+                  <table className={styles.table_sub}>
+                    <tr className={styles.table_tr}>
+                      <td className={styles.td_leading}>テーマ</td>
+                      <td className={styles.td_item}>
+                        ブルーハンターの世界を4つのテーマに分けて、アート作品を募集。
+                        <br />
+                        （１）メカ部門・・・ハンターたちが使いそうなアイテムや乗り物
+                        <br />
+                        （２）生物部門・・・ブルーハンターの世界に存在しそうな生き物
+                        <br />
+                        （３）ランドスケープ部門・・・温暖化や海面上昇が進んだ都市風景、温暖化が解消された建造物やインフラなど
+                        <br />
+                        （４）ブルーハンター部門・・・あなたが考える新キャラクターのデザイン
+                      </td>
+                    </tr>
+                    <tr className={styles.table_tr}>
+                      <td className={styles.td_leading}>賞</td>
+                      <td className={styles.td_item}>
+                        ・BH大賞　賞金50万円
+                        <br />
+                        ・審査員特別賞　賞金10万円
+                        <br />
+                        ・ナラティブ賞　賞金10万円
+                        <br />
+                        ・MALユーザー賞　賞金5万円
+                        <br />
+                        ・メカ部門賞　賞金5万円
+                        <br />
+                        ・生物部門賞　賞金5万円
+                        <br />
+                        ・ランドスケープ部門賞　賞金5万円
+                        <br />
+                        ・ブルーハンター部門賞　賞金5万円
+                        <br />
+                        ・キッズ部門賞　賞金5万円
+                      </td>
+                    </tr>
+                    <tr className={styles.table_tr}>
+                      <td className={styles.td_leading}>応募期間</td>
+                      <td className={styles.td_item}>2020年6月7日（月）〜8月30日（月）</td>
+                    </tr>
+                    <tr className={styles.table_tr}>
+                      <td className={styles.td_leading}>Web投票期間</td>
+                      <td className={styles.td_item}>2020年8月x日（x）〜x月x日（x）</td>
+                    </tr>
+                    <tr className={styles.table_tr}>
+                      <td className={styles.td_leading}>応募総数</td>
+                      <td className={styles.td_item}>1000件</td>
+                    </tr>
+                  </table>
                 </div>
-              </div>
-              <div className={styles.text_small_wrapper}>
-                <TextSmall text={"Special Thank you\nMAL users & MAL moderators"} />
+                {/* テーブル(見出しなし) 終了 */}
+                <div className={styles.text_wrapper}>
+                  <TextMedium text={"受賞者におかれましては、おめでとうございます。また、今回アートコンペに参加していただいたすべての皆さまに、心より感謝申し上げます。"} />
+                </div>
               </div>
             </div>
           </MainContentsMiddle>
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </ContentsInner>
-        <div className={styles.bnr_area}>
-          <BnrArt />
-        </div>
       </LayoutTwoColumn>
     </>
   )
