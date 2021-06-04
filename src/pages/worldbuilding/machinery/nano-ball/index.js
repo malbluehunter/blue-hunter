@@ -59,7 +59,11 @@ const WorldPage = ({ location }) => {
               <TextAnnotation text="＊どんな⽣物に変形するか、カード型ＵＩで指定。" />
             </div>
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_machinery_05.png" alt="" />
+              <picture>
+                <source srcset="/world/world_img_machinery_05_sp.png" media="(max-width: 767px)"/>
+                <source srcset="/world/world_img_machinery_05.png" media="(min-width: 767px)"/>
+                <img src="/world/world_img_machinery_05_sp.png" alt="" />
+              </picture>
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="群体で形状を構築する⼤量の⼈⼯昆⾍（ナノボット）と制御核（コアボット）から成る擬態システム。第３世代（3rd.と呼ばれる）以降、⽣分解できるようになり環境負荷が著しく低減した。ルール上、ハンターが利⽤していいのは3rd.以降。" />

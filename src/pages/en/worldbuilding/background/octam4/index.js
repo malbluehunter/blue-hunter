@@ -55,7 +55,11 @@ const WorldPage = ({ location }) => {
             <TextHeading text="Encyclopedia of Octa/M (4)" />
             <ContentsLine />
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_background_08.png" alt="" />
+              <picture>
+                <source srcset="/world/world_img_background_08_sp.png" media="(max-width: 767px)"/>
+                <source srcset="/world/world_img_background_08.png" media="(min-width: 767px)"/>
+                <img src="/world/world_img_background_08_sp.png" alt="" />
+              </picture>
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMedium text="The living space of the first layer (INSULAM) mainly consists of 8 200m-tall towers and an outer wall about 20-30m thick. From there the main view is of a cave filled with seawater. The cave itself is designed to let in sunlight for the solar panels, and so it looks relatively bright." />

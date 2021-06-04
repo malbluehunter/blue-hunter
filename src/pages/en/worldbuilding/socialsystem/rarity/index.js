@@ -54,7 +54,7 @@ const WorldPage = ({ location }) => {
           <MainContentsMiddleWorld>
             <TextHeading text="Rarity (Rrt)" />
             <ContentsLine />
-            <TextMedium text="Split into four levels which are: Light(★)/Normal(★★)/Deep(★★★)/Extreme(★★★★)" />
+            <TextMedium text="Split into four levels which are: Light( ★ )/Normal( ★★ )/Deep( ★★★ )/Extreme( ★★★★ )" />
             <TextMedium text="In the case of living things, a shade of blue can be seen on the card which corresponds with how important the achievement is." />
             <TextMedium text="Those worth less than 1000Lk are Light, 1000-100,000Lk are Normal, and 100,000-1,000,000 are Deep. There are also some creatures with double rarities, such as those that are classed as both green and blue." />
             <TextMedium text="Rrt-certified tasks are known as 'Colored Tasks'. Tasks which are associated with the ocean are blue, and those associated with the land are green. Some Tasks may be assigned multiple colors." />
@@ -67,7 +67,11 @@ const WorldPage = ({ location }) => {
               <TextLeading text="Specimens needing research" />
             </div>
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_sosialsystem_02.png" alt="" />
+              <picture>
+                <source srcset="/world/world_img_sosialsystem_02_sp.png" media="(max-width: 767px)"/>
+                <source srcset="/world/world_img_sosialsystem_02.png" media="(min-width: 767px)"/>
+                <img src="/world/world_img_sosialsystem_02.png" alt="" />
+              </picture>
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="Adjustment request. Physical evidence such as DNA is combined with photographic evidence and eyewitness testimonies to make an informed hypothesis as to the existence of a specimen, even if already extinct. Hunters call these cards “Undiscovered” or “Targets”. They have no official names and so are often called by temporary names based on their physical traits, such as “6 feathers” or “needle scales”." />
@@ -78,7 +82,11 @@ const WorldPage = ({ location }) => {
               <TextLeading text="4th Order: Royal Blue" />
             </div>
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_sosialsystem_03.png" alt="" />
+              <picture>
+                <source srcset="/world/world_img_sosialsystem_03_sp.png" media="(max-width: 767px)"/>
+                <source srcset="/world/world_img_sosialsystem_03.png" media="(min-width: 767px)"/>
+                <img src="/world/world_img_sosialsystem_03.png" alt="" />
+              </picture>
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="Adjustment request. Either a living or recently deceased specimen has been captured and is considered an extant isolated system and must be thoroughly protected (i.e. Blue-certified cards) due to their scientific importance. Cards registered as Power Blue will be upgraded or even destroyed (if the information was proven to be false) after the Hunter has taken action. AI will certify these cards on a scale of Aqua to Royal Blue." />
@@ -87,7 +95,11 @@ const WorldPage = ({ location }) => {
               <TextLeading text="5th Order: Taboo Navy" />
             </div>
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_sosialsystem_04.png" alt="" />
+              <picture>
+                <source srcset="/world/world_img_sosialsystem_04_sp.png" media="(max-width: 767px)"/>
+                <source srcset="/world/world_img_sosialsystem_04.png" media="(min-width: 767px)"/>
+                <img src="/world/world_img_sosialsystem_04.png" alt="" />
+              </picture>
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="Groups of organisms for which a specimen has been recovered and environmental pollution has been reported. May not be captured by anybody other than a Hunter. In some rare cases these have been upgraded from Blue." />
@@ -96,7 +108,11 @@ const WorldPage = ({ location }) => {
               <TextLeading text="6th Order: Enemy Purple" />
             </div>
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_sosialsystem_05.png" alt="" />
+              <picture>
+                <source srcset="/world/world_img_sosialsystem_05_sp.png" media="(max-width: 767px)"/>
+                <source srcset="/world/world_img_sosialsystem_05.png" media="(min-width: 767px)"/>
+                <img src="/world/world_img_sosialsystem_05.png" alt="" />
+              </picture>
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="Groups of organisms for which a specimen has been recovered and environmental pollution as well as serious harm has been reported. Hunters are to exterminate such organisms. In some rare cases these have been upgraded from Navy." />
@@ -105,7 +121,11 @@ const WorldPage = ({ location }) => {
               <TextLeading text="7th Order: Disaster Black" />
             </div>
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_sosialsystem_06.png" alt="" />
+              <picture>
+                <source srcset="/world/world_img_sosialsystem_06_sp.png" media="(max-width: 767px)"/>
+                <source srcset="/world/world_img_sosialsystem_06.png" media="(min-width: 767px)"/>
+                <img src="/world/world_img_sosialsystem_06.png" alt="" />
+              </picture>
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="Of the millions of species in existence, less than 10 species are suspected dangerous enough for this classification. If one encounters such a creature, evacuation of its habitat is mandatory.  Blacklisted. These cards are usually kept secret." />
