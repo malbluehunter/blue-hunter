@@ -83,7 +83,7 @@ const WorldPage = ({ location }) => {
                   <td className={styles.td_leading}></td>
                   <td className={styles.td_item}></td>
                   <td className={styles.td_item}>
-                    保護士
+                    捕獲士
                     <br />
                     Protector
                   </td>
@@ -113,7 +113,9 @@ const WorldPage = ({ location }) => {
                   <td className={styles.td_leading}></td>
                   <td className={styles.td_item}></td>
                   <td className={styles.td_item}>
-                    カデット
+                    研修生
+                    <br />
+                    Cadet
                   </td>
                   <td className={styles.td_item}>
                     ギルド全体のサポート。水夫、⾒習いに相
