@@ -71,7 +71,7 @@ const CharactersPage = ({ location }) => {
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </ContentsInner>
         {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-        <PagerAreaCharacters hrefPrev="" hrefNext="./marine-metropolitan-areas/" isDisabledPrev={false} isDisabledNext={false} />
+        <PagerAreaCharacters hrefPrev="../hawk/" hrefNext="../skull/" isDisabledPrev={false} isDisabledNext={false} />
         <div className={styles.bnr_area}>
           <BnrArt />
         </div>
