@@ -1,0 +1,19 @@
+@import "../../assets/scss/mixin";
+
+.label03 {
+  display: inline-block;
+  font-weight: bold;
+  background-color: #43dbf2;
+  padding: get_vw_sp(2) get_vw_sp(9);
+
+  @include mq(md) {
+    padding: get_vw(2) get_vw(8);
+  }
+}
+.label03_text {
+  @include fz_vw_sp(14);
+
+  @include mq(md) {
+    @include fz_vw(14);
+  }
+}

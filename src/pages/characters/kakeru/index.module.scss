@@ -70,8 +70,8 @@ main {
   @include mq(md) {
     position: absolute;
     top: get_vw(-35);
-    right: get_vw(100);
-    width: get_vw(555);
+    right: get_vw(70);
+    width: get_vw(462);
     margin: 0;
   }
 }
