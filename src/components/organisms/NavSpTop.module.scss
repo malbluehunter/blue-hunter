@@ -159,6 +159,7 @@ nav.globalMenuSp.active {
   color: rgba(17, 43, 58, 0.5);
   @include fz_vw_sp(12);
   font-weight: bold;
+  z-index: 2;
 }
 .lang_item:nth-child(1) .lang_item_text {
   top: get_vw_sp(10);

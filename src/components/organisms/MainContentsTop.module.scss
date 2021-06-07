@@ -1,14 +1,13 @@
 @import "../../assets/scss/mixin";
 
 .main_contents_area_top {
-  padding: get_vw_sp(10) get_vw_sp(27) 0;
+  padding: get_vw_sp(25) get_vw_sp(27) 0;
   background: url("/common/contentsArea_top.png") no-repeat;
   background-position: get_vw(-5) top;
-  background-size: 100%;
+  background-size: 100% 101%;
 
   @include mq(md) {
     background-position: get_vw(-1) top;
-    height: get_vw(50);
-    padding: get_vw(19) get_vw(50) get_vw(3);
+    padding: get_vw(40) get_vw(50) get_vw(20);
   }
 }

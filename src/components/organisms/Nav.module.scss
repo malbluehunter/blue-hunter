@@ -208,29 +208,34 @@
 .lang_item_text {
   position: absolute;
   color: rgba(17, 43, 58, 0.5);
-  @include fz_vw(10);
+  font-size: 10px;
   font-weight: bold;
+  z-index: 2;
 
   @include mq(lg) {
     @include fz_vw(12);
   }
 }
 .lang_item:nth-child(1) .lang_item_text {
-  top: get_vw(4);
+  top: 0;
   left: get_vw(20);
+  margin-top: get_vw(6);
 
   @include mq(lg) {
-    top: get_vw(9);
+    top: 0;
     left: get_vw(26);
+    margin-top: get_vw(10);
   }
 }
 .lang_item:nth-child(2) .lang_item_text {
-  top: get_vw(5);
+  top: 0;
   left: get_vw(17);
+  margin-top: get_vw(6);
 
   @include mq(lg) {
-    top: get_vw(8);
+    top: 0;
     left: get_vw(23);
+    margin-top: get_vw(9);
   }
 }
 .lang_item_link:hover {

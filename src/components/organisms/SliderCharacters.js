@@ -2,12 +2,12 @@ import React, { useEffect } from "react"
 import * as styles from "./SliderCharacters.module.scss"
 import Slider from "react-slick"
 
-function NextArrow(props) {
+const NextArrow = props => {
   const { onClick } = props
   return <div className={`${styles.slick_arrow} ${styles.slick_prev}`} onClick={onClick} />
 }
 
-function PrevArrow(props) {
+const PrevArrow = props => {
   const { onClick } = props
   return <div className={`${styles.slick_arrow} ${styles.slick_next}`} onClick={onClick} />
 }
@@ -16,23 +16,22 @@ const SliderCharacters = props => {
   const { pathname } = props
   let number
 
-  switch (pathname) {
-    case "/characters/kakeru/":
-      number = 1
-    case "/characters/viola/":
-      number = 2
-    case "/characters/tsukito/":
-      number = 3
-    case "/characters/hawk/":
-      number = 4
-    case "/characters/yoshinori/":
-      number = 5
-    case "/characters/skull/":
-      number = 6
-    case "/characters/jazz/":
-      number = 7
-    case "/characters/nagisa/":
-      number = 8
+  if (pathname.match(/kakeru/)) {
+    number = 0
+  } else if (pathname.match(/viola/)) {
+    number = 1
+  } else if (pathname.match(/tsukito/)) {
+    number = 2
+  } else if (pathname.match(/hawk/)) {
+    number = 3
+  } else if (pathname.match(/yoshinori/)) {
+    number = 4
+  } else if (pathname.match(/skull/)) {
+    number = 5
+  } else if (pathname.match(/jazz/)) {
+    number = 6
+  } else if (pathname.match(/nagisa/)) {
+    number = 7
   }
 
   const settings = {
@@ -45,13 +44,12 @@ const SliderCharacters = props => {
     focusOnSelect: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    initialSlide: 1,
+    initialSlide: number,
     swipe: true,
     swipeToSlide: true,
   }
   console.log(pathname)
   console.log(number)
-
 
   return (
     <>
