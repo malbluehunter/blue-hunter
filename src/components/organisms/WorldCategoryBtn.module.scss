@@ -41,6 +41,7 @@
   left: get_vw_sp(43);
   width: get_vw_sp(245);
   height: get_vw_sp(127);
+  z-index: 2;
 
   @include mq(md) {
     width: get_vw(240);
