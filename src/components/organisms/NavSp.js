@@ -49,7 +49,7 @@ const NavSp = props => {
 
   return (
     <div className={styles.nav_sp_wrapper}>
-      <div class={styles.hamburger} onClick={handleClick}>
+      <div className={styles.hamburger} onClick={handleClick}>
         {isClose ? <HamburgerOpen /> : <HamburgerClose />}
       </div>
       <div className={styles.logo_area}>

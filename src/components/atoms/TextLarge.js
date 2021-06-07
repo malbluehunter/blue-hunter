@@ -1,5 +1,5 @@
 // import { getMainProps } from "gatsby-plugin-image/dist/src/components/hooks"
-import React, { useState, useEffect } from "react"
+import React from "react"
 import * as styles from "./TextLarge.module.scss"
 
 const TextLarge = props => {

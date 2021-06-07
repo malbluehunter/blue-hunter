@@ -12,7 +12,7 @@ const WorldCategoryBtn = props => {
         <div className={styles.category_list}>
           <div className={styles.category_list_inner}>
             <p className={styles.text}>{item.text}</p>
-            <a href="" className={styles.btn_link}>
+            <a href={item.href} className={styles.btn_link}>
               <img className={styles.btn} src={item.btn} alt="MORE" />
             </a>
           </div>

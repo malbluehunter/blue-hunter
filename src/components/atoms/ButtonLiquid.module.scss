@@ -1,0 +1,45 @@
+@import "../../assets/scss/mixin";
+
+.btn_wrapper {
+  cursor: pointer;
+  position: relative;
+
+  & p {
+    padding: 0 0 0 get_vw(16);
+  }
+}
+.btn_wrapper:hover {
+  opacity: 0.8;
+}
+.text {
+  position: absolute;
+  display: flex;
+  top: get_vw_sp(14);
+  left: get_vw_sp(105);
+  color: #0078ce;
+  @include fz_vw_sp(15);
+  font-weight: bold;
+
+  @include mq(md) {
+    @include fz_vw(24);
+    top: get_vw(27);
+    left: get_vw(150);
+  }
+}
+
+.disabled {
+  pointer-events: none;
+}
+.disabled .text {
+  color: #fff;
+  top: get_vw_sp(8);
+  left: get_vw_sp(90);
+
+  @include mq(md) {
+    top: get_vw(18);
+    left: get_vw(190);
+  }
+}
+.disabled .text::after {
+  content: none;
+}
