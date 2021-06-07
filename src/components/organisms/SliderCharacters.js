@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useEffect } from "react"
 import * as styles from "./SliderCharacters.module.scss"
 import Slider from "react-slick"
 
@@ -15,8 +15,6 @@ function PrevArrow(props) {
 const SliderCharacters = props => {
   const { pathname } = props
   let number
-
-  console.log(pathname);
 
   switch (pathname) {
     case "/characters/kakeru/":
@@ -47,10 +45,13 @@ const SliderCharacters = props => {
     focusOnSelect: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    initialSlide: number,
+    initialSlide: 1,
     swipe: true,
     swipeToSlide: true,
   }
+  console.log(pathname)
+  console.log(number)
+
 
   return (
     <>
@@ -79,7 +80,7 @@ const SliderCharacters = props => {
               <img src="/characters/character03_current.png" alt="月人" className={styles.current_img} />
             </a>
           ) : (
-            <a className={styles.slider_item} href="/characters/kakeru/">
+            <a className={styles.slider_item} href="/characters/tsukito/">
               <img src="/characters/character03.png" alt="月人" />
             </a>
           )}
@@ -154,7 +155,7 @@ const SliderCharacters = props => {
             <img src="/characters/character03_current.png" alt="月人" className={styles.current_img} />{" "}
           </a>
         ) : (
-          <a className={styles.slider_item} href="/characters/kakeru/">
+          <a className={styles.slider_item} href="/characters/tsukito/">
             <img src="/characters/character03.png" alt="月人" />
           </a>
         )}

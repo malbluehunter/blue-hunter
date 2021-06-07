@@ -18,11 +18,11 @@ const NewsPage = ({ location }) => {
       <Helmet>
         <html lang="ja" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 開始 --------------------------------------- */}
-        <title>世界観・設定 | 「BLUE HUNTER」公式サイト</title>
+        <title>ニュース | 「BLUE HUNTER」公式サイト</title>
         <meta name="description" content="ブルーハンタープロジェクト公式サイト。2021年6月より漫画「BLUE HUNTER」を連載開始！最新ニュースや設定資料集、スペシャル情報等をこちらからお届けします。" />
         <meta name="keywords" content="BLUE HUNTER, ブルーハンター, ブルーハンタープロジェクト, 無料漫画, アートコンペ " />
-        <link rel="canonical" href="https://manga.uminohi.jp/worldbuilding/background/ccz/" />
-        <meta property="og:url" content="https://manga.uminohi.jp/worldbuilding/background/ccz/" />
+        <link rel="canonical" href="https://manga.uminohi.jp/news/" />
+        <meta property="og:url" content="https://manga.uminohi.jp/news/" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
