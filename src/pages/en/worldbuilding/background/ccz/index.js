@@ -59,7 +59,8 @@ const WorldPage = ({ location }) => {
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_01.png" alt="" />
             </div>
-            <div className={styles.textLeading_wrapper}>
+            {/* クライアント確認のためコメントアウト */}
+            {/* <div className={styles.textLeading_wrapper}>
               <TextLeading text="見出しパターン" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
@@ -67,9 +68,9 @@ const WorldPage = ({ location }) => {
             </div>
             <div className={styles.textAnnotation_wrapper}>
               <TextAnnotation text="＊注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン。" />
-            </div>
+            </div> */}
             {/* テーブル(見出しあり) 開始 */}
-            <div className={styles.table_leading_wrapper}>
+            {/* <div className={styles.table_leading_wrapper}>
               <table className={styles.table_leading}>
                 <tr className={styles.table_tr}>
                   <th></th>
@@ -107,11 +108,11 @@ const WorldPage = ({ location }) => {
                   </td>
                 </tr>
               </table>
-            </div>
+            </div> */}
             {/* テーブル(見出しあり) 終了 */}
 
             {/* テーブル(見出しなし) 開始 */}
-            <div className={styles.table_sub_wrapper}>
+            {/* <div className={styles.table_sub_wrapper}>
               <table className={styles.table_sub}>
                 <tr className={styles.table_tr}>
                   <td className={styles.td_leading}>
@@ -146,7 +147,7 @@ const WorldPage = ({ location }) => {
                   <td className={styles.td_item}>ダミーテキストです。ダミーテキストです。</td>
                 </tr>
               </table>
-            </div>
+            </div> */}
             {/* テーブル(見出しなし) 終了 */}
           </MainContentsMiddleWorld>
           <MainContentsBottom />
