@@ -105,12 +105,12 @@ main {
 }
 .insta_img {
   width: get_vw_sp(105);
-  height: get_vw_sp(105);
+  max-height: get_vw_sp(105);
   margin-top: get_vw_sp(10);
 
   @include mq(md) {
     width: get_vw(240);
-    height: get_vw(240);
+    max-height: get_vw(240);
     margin-top: get_vw(20);
   }
 }
