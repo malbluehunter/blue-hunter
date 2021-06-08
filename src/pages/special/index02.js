@@ -19,7 +19,7 @@ const SpecialPage = ({ location }) => {
 
   useEffect(() => {
     fetch(
-      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBAPyB2P8lkXhWqbPuTbxQgyYla9RhzXOttfP2iUnr87GBIRXNdJiN6hj8Mu2Uy7zmDwjhnHQ8Vv65WU5JLY8ro70qsZB6DCc02xZByx8yDXY56EYVZBxSzEZAGb1WY8SNZAHfK1YigdVRvOGWyZAdkSIJIq77Y9OvWZADT8L20E0"
+      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAEVJxuezuwBAGOOVNAICtSxZAT4qhuOKIfDL9jUTNgZCwzWuceyVBGjgdhkHVJ8JtB9QEhLP3AXQS8oksnN30YRDL6ZCWZBdhZAIYE7OTxNXoib9FbRfjdxnimBGWWZAdPWr9ZAZCZBq0tQXMvcYTkawSHwQqd6qz4KrdiizbjJHL2mxMXZCQpdZCl"
     ).then(response => {
       response
         .json() //ここでBodyからJSONを返す
@@ -127,7 +127,7 @@ const SpecialPage = ({ location }) => {
         </div>
         <div className={styles.btn_wrapper}>
           <ButtonLiquid href="#" isDisabled={false}>
-            #BHXXXXをもっと見る
+            #BH_MALをもっと見る
             <div className={styles.icon_wrapper}>
               <img src="/common/icon_instagram_02.svg" alt="インスタグラム アイコン" className={styles.icon} />
             </div>
