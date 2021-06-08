@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import * as styles from "./index02.module.scss"
 import { Helmet } from "react-helmet"
 import PageTitle from "../../components/atoms/PageTitle"
@@ -17,21 +17,18 @@ import ButtonLiquid from "../../components/atoms/ButtonLiquid"
 const SpecialPage = ({ location }) => {
   const [src, setSrc] = useState([])
 
-  useEffect(() => {
-    fetch(
-      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBAPJNjRIlWwVEiwQKURkCy6CeUN6PcXwsjivhK67q6FEZADXoFrrEZAzX7CtQvrcAHksywRZAWI2h1HaEhkScRO9q88ZBDryNZAW2XUz19y1LWn6Nzxq7vwJhZAErTlMmhOHcc34L6hisZCAcz4gUiOUR6ZCUi4oCKBwOuLVcpI2iuSa6fLJDyR4IyUzOGnjyg1BicpdkEcjlnGcB6BoFAb7vKWKjoel6Yh7KYhJkpmuZA"
-    ).then(response => {
-      response
-        .json() //ここでBodyからJSONを返す
-        .then(result => {
-          setSrc(result.data)
-          console.log(result)
-        })
-        .catch(e => {
-          console.log(e) //エラーをキャッチし表示
-        })
-    })
-  }, [])
+  fetch(
+    "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBAPJNjRIlWwVEiwQKURkCy6CeUN6PcXwsjivhK67q6FEZADXoFrrEZAzX7CtQvrcAHksywRZAWI2h1HaEhkScRO9q88ZBDryNZAW2XUz19y1LWn6Nzxq7vwJhZAErTlMmhOHcc34L6hisZCAcz4gUiOUR6ZCUi4oCKBwOuLVcpI2iuSa6fLJDyR4IyUzOGnjyg1BicpdkEcjlnGcB6BoFAb7vKWKjoel6Yh7KYhJkpmuZA"
+  ).then(response => {
+    response
+      .json() //ここでBodyからJSONを返す
+      .then(result => {
+        setSrc(result.data)
+      })
+      .catch(e => {
+        console.log(e) //エラーをキャッチし表示
+      })
+  })
 
   return (
     <>
