@@ -19,7 +19,7 @@ const SpecialPage = ({ location }) => {
 
   useEffect(() => {
     fetch(
-      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAEVJxuezuwBAGOOVNAICtSxZAT4qhuOKIfDL9jUTNgZCwzWuceyVBGjgdhkHVJ8JtB9QEhLP3AXQS8oksnN30YRDL6ZCWZBdhZAIYE7OTxNXoib9FbRfjdxnimBGWWZAdPWr9ZAZCZBq0tQXMvcYTkawSHwQqd6qz4KrdiizbjJHL2mxMXZCQpdZCl"
+      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAEVJxuezuwBABPZBE3ZAEsxJVhUvoJeZCzzKVJEGrSyiW6JCt5P4149QoxMVZBArYjRKHIJOimPszHPDI6gH2ZC0rcc5KQ4Ht9zzjRNZA4nFYId2rmCOjlLeVAOrNKkwTq79x2TZAP8OXBOYofMAbWhZAkPxnKZCls60MfBkrJjuTmcK03ZBJJfJv"
     ).then(response => {
       response
         .json() //ここでBodyからJSONを返す
@@ -104,22 +104,22 @@ const SpecialPage = ({ location }) => {
               srcItem.media_type == "CAROUSEL_ALBUM" ? ( // 画像が複数の場合
                 srcItem.children.data[0].media_type == "IMAGE" ? ( // 複数画像かつ画像がイメージの場合
                   <a href={srcItem.children.data[0].permalink}>
-                    <img src={srcItem.children.data[0].media_url} id={index} className={styles.insta_img} loading="lazy" />
+                    <img src={srcItem.children.data[0].media_url} key={index} className={styles.insta_img} loading="lazy" />
                   </a>
                 ) : (
                   // 複数画像かつ画像が動画の場合
                   <a href={srcItem.children.data[0].permalink}>
-                    <video src={srcItem.children.data[0].media_url} id={index} className={styles.insta_img} loading="lazy" />
+                    <video src={srcItem.children.data[0].media_url} key={index} className={styles.insta_img} loading="lazy" />
                   </a>
                 )
               ) : srcItem.media_type == "IMAGE" ? ( // 画像が1枚の場合
                 <a href={srcItem.permalink}>
-                  <img src={srcItem.media_url} id={index} className={styles.insta_img} loading="lazy" />
+                  <img src={srcItem.media_url} key={index} className={styles.insta_img} loading="lazy" />
                 </a>
               ) : (
                 // 画像が1枚かつ動画の場合
                 <a href={srcItem.permalink}>
-                  <video src={srcItem.media_url} id={index} className={styles.insta_img} loading="lazy" />
+                  <video src={srcItem.media_url} key={index} className={styles.insta_img} loading="lazy" />
                 </a>
               )
             )}
