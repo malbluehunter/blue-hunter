@@ -39,16 +39,16 @@ const Nav = props => {
     <div className={styles.wrap}>
       <div className={styles.lang_area}>
         <div className={`${styles.lang_item} ${jaCurrent ? styles.current : ""}`}>
-          <a className={styles.lang_item_link}>
+          <div className={styles.lang_item_link}>
             <p className={styles.lang_item_text}>日本語</p>
             <img src="/common/bg_language.png" alt="日本語" className={styles.lang_item_img} />
-          </a>
+          </div>
         </div>
         <div className={`${styles.lang_item} ${enCurrent ? styles.current : ""}`}>
-          <a className={styles.lang_item_link}>
+          <div className={styles.lang_item_link}>
             <p className={styles.lang_item_text}>English</p>
             <img src="/common/bg_language.png" alt="English" className={styles.lang_item_img} />
-          </a>
+          </div>
         </div>
       </div>
       <div className={styles.nav_bg}>

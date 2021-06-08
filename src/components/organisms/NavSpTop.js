@@ -102,13 +102,13 @@ const NavSpTop = props => {
           <li className={styles.inner_item}>
             <ul className={styles.lang_area}>
               <li className={`${styles.lang_item} ${jaCurrent ? styles.current : ""}`}>
-                <a href="#" className={styles.lang_item_link}>
+                <div className={styles.lang_item_link}>
                   <p className={styles.lang_item_text}>日本語</p>
                   <img src="/common/bg_language.png" alt="日本語" className={styles.lang_item_img} />
-                </a>
+                </div>
               </li>
               <li className={`${styles.lang_item} ${enCurrent ? styles.current : ""}`}>
-                <a href="#" className={styles.lang_item_link}>
+                <a className={styles.lang_item_link}>
                   <p className={styles.lang_item_text}>English</p>
                   <img src="/common/bg_language.png" alt="English" className={styles.lang_item_img} />
                 </a>

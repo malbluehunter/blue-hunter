@@ -19,41 +19,45 @@ const LocalNavWorld = () => {
             <img src="/common/local_nav_top.png" />
           </div>
         </div>
+        {/* 現在地の目次にstyles.currentを付与*/}
         <div className={styles.LocalNav_area} aria-expanded={isOpen}>
           <ol className={styles.LocalNav_list} start="0">
             <li className={`${styles.LocalNav_item} ${styles.current}`}>
-              <a href="">予備知識としてのCCZ</a>
+              <a href="/worldbuilding/background/ccz">予備知識としてのCCZ</a>
             </li>
             <li className={styles.LocalNav_item}>
-              <a href="">2行パターン海洋都市圏の誕生海洋都市圏の誕生海洋都市圏の誕生</a>
+              <a href="/worldbuilding/background/marine-metropolitan-areas">海洋都市圏の誕生</a>
               <ul className={styles.LocalNav_list_02}>
                 <li className={styles.LocalNav_item_02}>
-                  <a href="">2行パターングラン=ムー【GRAND/MW】海洋都市圏の誕生</a>
+                  <a href="/worldbuilding/background/grandmw">グラン=ムー【GRAND/MW】</a>
                 </li>
               </ul>
             </li>
             <li className={styles.LocalNav_item}>
-              <a href="">国家か、都市か。</a>
+              <a href="/worldbuilding/background/nation-or-city">国家か、都市か。</a>
             </li>
             <li className={styles.LocalNav_item}>
-              <a href="">国連から超都連へ。</a>
+              <a href="/worldbuilding/background/un-to-uic">国連から超都連へ。</a>
               <ul className={styles.LocalNav_list_02}>
                 <li className={styles.LocalNav_item_02}>
-                  <a href="">The Encyclopedia of ”Octa/M”（1）</a>
+                  <a href="/worldbuilding/background/octam1">The Encyclopedia of ”Octa/M”（1）</a>
                 </li>
                 <li className={styles.LocalNav_item_02}>
-                  <a href="">The Encyclopedia of ”Octa/M”（2）</a>
+                  <a href="/worldbuilding/background/octam2">The Encyclopedia of ”Octa/M”（2）</a>
                 </li>
                 <li className={styles.LocalNav_item_02}>
-                  <a href="">The Encyclopedia of ”Octa/M”（3）</a>
+                  <a href="/worldbuilding/background/octam3">The Encyclopedia of ”Octa/M”（3）</a>
                 </li>
                 <li className={styles.LocalNav_item_02}>
-                  <a href="">The Encyclopedia of ”Octa/M”（4）</a>
+                  <a href="/worldbuilding/background/seaforce">海中発送電塔（シーフォース）</a>
+                </li>
+                <li className={styles.LocalNav_item_02}>
+                  <a href="/worldbuilding/background/octam4">The Encyclopedia of ”Octa/M”（4）</a>
                 </li>
               </ul>
             </li>
             <li className={styles.LocalNav_item}>
-              <a href="">世界観・設定トップへ戻る</a>
+              <a href="/worldbuilding/">世界観・設定トップへ戻る</a>
             </li>
           </ol>
         </div>

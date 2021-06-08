@@ -63,7 +63,7 @@ const NavSp = props => {
       <nav className={`${isClose ? styles.active : ""} ${styles.globalMenuSp}`}>
         <ul className={styles.inner_list}>
           <li className={`${styles.inner_item} ${newsCurrent ? styles.current : ""}`}>
-            <a href="#" className={styles.inner_item_link} href="/news/">
+            <a href="/news/" className={styles.inner_item_link} href="/news/">
               <img src="/common/nav_text_news_sp.png" alt="News" className={styles.inner_item_img_01} />
               <p className={styles.text}>ニュース</p>
             </a>
@@ -101,16 +101,16 @@ const NavSp = props => {
           <li className={styles.inner_item}>
             <ul className={styles.lang_area}>
               <li className={`${styles.lang_item} ${jaCurrent ? styles.current : ""}`}>
-                <a href="#" className={styles.lang_item_link}>
+                <div className={styles.lang_item_link}>
                   <p className={styles.lang_item_text}>日本語</p>
                   <img src="/common/bg_language.png" alt="日本語" className={styles.lang_item_img} />
-                </a>
+                </div>
               </li>
               <li className={`${styles.lang_item} ${enCurrent ? styles.current : ""}`}>
-                <a href="#" className={styles.lang_item_link}>
+                <div className={styles.lang_item_link}>
                   <p className={styles.lang_item_text}>English</p>
                   <img src="/common/bg_language.png" alt="English" className={styles.lang_item_img} />
-                </a>
+                </div>
               </li>
             </ul>
           </li>
