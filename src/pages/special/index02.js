@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import * as styles from "./index02.module.scss"
 import { Helmet } from "react-helmet"
 import PageTitle from "../../components/atoms/PageTitle"
@@ -15,26 +15,17 @@ import TextAnnotation from "../../components/atoms/TextAnnotation"
 import ButtonLiquid from "../../components/atoms/ButtonLiquid"
 
 const SpecialPage = ({ location }) => {
-  const instaFeed = jsonObj => {
-    let instaData = jsonObj.data
-
-    instaData.map(dataItem => {
-      if (dataItem.media_type === "IMAGE") {
-        console.log(dataItem.media_url)
-      } else if (dataItem.media_type === "CAROUSEL_ALBUM") {
-        console.log(dataItem.children.data[0].media_url)
-      }
-    })
-  }
+  const [src, setSrc] = useState([])
 
   useEffect(() => {
     fetch(
-      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBAJx01RleC5LNitQyG4UyTF6vb9bi88DZBwqnfcQ6DWAy1Up6zWUbyEkZC3jlnUH5MuN7PqZAbPtJ4OgeQedz6ZAZAZBALHuZAv6pBSoBuhio5YihHjhOUxG2d5VsWLTlXXu7DovAIk56vj7Pmgl3lOI6qJ5qzIqPgZDZD"
+      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBAFQGOAIE4tS89Fxr8WIZCnlXdEUZCVQ9rus4GlxoiUp5T0RFtphbsD8SxAxBHebq89qJ7B0ZA2d8DdIXm4vyAir1otQ5ykLbUVf2OHu0H1aLq2dkNAraW8vals0rnbXB8WN1HZBx6XwZC3Hm19tJf8cizZBkk0K9zWPoQZAhZB2d"
     ).then(response => {
-      return response
+      response
         .json() //ここでBodyからJSONを返す
         .then(result => {
-          instaFeed(result) //取得したJSONデータを関数に渡す
+          setSrc(result.data)
+          console.log(result)
         })
         .catch(e => {
           console.log(e) //エラーをキャッチし表示
@@ -75,15 +66,12 @@ const SpecialPage = ({ location }) => {
         </div>
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/" page02="スペシャル" />
-        <ContentsInner>
-          <MainContentsMiddle>
-            <div className={styles.contents_inner}>
-              <div className={styles.section01}>
-                <div className={`${styles.textHeading_wrapper} ${styles.view_pc}`}>
-                  <TextHeading text={"アートコンペ受賞者結果発表"} />
-                </div>
-                <div className={`${styles.textHeading_wrapper} ${styles.view_sp}`}>
-                  <TextHeading text={"アートコンペ受賞者\n結果発表"} />
+        <div className={styles.contents_01}>
+          <ContentsInner>
+            <MainContentsMiddle>
+              <div className={styles.contents_inner}>
+                <div className={styles.textHeading_wrapper}>
+                  <TextHeading text={"アートコンペ開催"} />
                 </div>
                 <div className={styles.line_wrapper}>
                   <LineImg />
@@ -96,27 +84,47 @@ const SpecialPage = ({ location }) => {
                   <BnrArt />
                 </div>
               </div>
-            </div>
-          </MainContentsMiddle>
-        </ContentsInner>
-        <ContentsInner>
-          <MainContentsMiddle>
-            <div className={styles.contents_inner}>
-              <div className={styles.section01}>
-                <div className={`${styles.textHeading_wrapper} ${styles.view_pc}`}>
-                  <TextHeading text="アートコンペ応募作品" />
-                  <div className={styles.leading_wrapper}>
-                    <TextAnnotation text="作品は人気順で表示しています" />
-                  </div>
+            </MainContentsMiddle>
+          </ContentsInner>
+        </div>
+        <div className={styles.contents_02}>
+          <ContentsInner>
+            <MainContentsMiddle>
+              <div className={styles.contents_inner}>
+                <TextHeading text="アートコンペ応募作品" />
+                <div className={styles.leading_wrapper}>
+                  <TextAnnotation text="作品は人気順で表示しています" />
                 </div>
               </div>
-            </div>
-          </MainContentsMiddle>
-        </ContentsInner>
+            </MainContentsMiddle>
+          </ContentsInner>
+        </div>
         <div className={styles.insta_area}>
-          <div className={styles.insta_inner}>{/* {instaImages.map(instaImage => (
-              <img src={instaImage} alt="" />
-            ))} */}</div>
+          <div className={styles.insta_inner}>
+            {src.map((srcItem, index) =>
+              srcItem.media_type == "CAROUSEL_ALBUM" ? ( // 画像が複数の場合
+                srcItem.children.data[0].media_type == "IMAGE" ? ( // 複数画像かつ画像がイメージの場合
+                  <a href={srcItem.children.data[0].permalink}>
+                    <img src={srcItem.children.data[0].media_url} id={index} className={styles.insta_img} />
+                  </a>
+                ) : (
+                  // 複数画像かつ画像が動画の場合
+                  <a href={srcItem.children.data[0].permalink}>
+                    <video src={srcItem.children.data[0].media_url} id={index} className={styles.insta_img} />
+                  </a>
+                )
+              ) : srcItem.media_type == "IMAGE" ? ( // 画像が1枚の場合
+                <a href={srcItem.permalink}>
+                  <img src={srcItem.media_url} id={index} className={styles.insta_img} />
+                </a>
+              ) : (
+                // 画像が1枚かつ動画の場合
+                <a href={srcItem.permalink}>
+                  <video src={srcItem.media_url} id={index} className={styles.insta_img} />
+                </a>
+              )
+            )}
+          </div>
         </div>
         <div className={styles.btn_wrapper}>
           <ButtonLiquid href="#" isDisabled={false}>

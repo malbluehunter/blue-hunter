@@ -17,6 +17,7 @@ main {
 }
 .contents_inner {
   margin: auto;
+  text-align: center;
 
   @include mq(md) {
     width: get_vw(750);
@@ -25,9 +26,10 @@ main {
 .text_wrapper {
   white-space: pre-line;
   margin-top: get_vw_sp(12);
-  text-align: center;
+  text-align: left;
 
   @include mq(md) {
+    text-align: center;
     margin-top: get_vw(10);
   }
 }
@@ -36,14 +38,6 @@ main {
 
   @include mq(md) {
     margin-top: get_vw(18);
-  }
-}
-.textHeading_wrapper {
-  white-space: pre-line;
-  text-align: center;
-
-  @include mq(md) {
-    white-space: normal;
   }
 }
 .view_sp {
@@ -64,6 +58,8 @@ main {
   }
 }
 .bnr_wrapper {
+  margin-top: get_vw_sp(13);
+
   @include mq(md) {
     margin-top: get_vw(10);
   }
@@ -72,18 +68,56 @@ main {
   margin-top: get_vw(7);
 }
 .icon_wrapper {
+  width: get_vw_sp(15);
+  height: get_vw_sp(15);
+
   @include mq(md) {
     width: get_vw(25);
     height: get_vw(25);
   }
 }
 .btn_wrapper {
-  margin: get_vw(25) auto 0;
+  margin: get_vw_sp(15) auto 0;
 
   @include mq(md) {
+    margin: get_vw(30) auto 0;
     width: get_vw(577);
   }
 }
 .icon {
-  margin: get_vw(10) get_vw(8) get_vw(3);;
+  margin: get_vw_sp(6) get_vw_sp(7) get_vw_sp(3);
+
+  @include mq(md) {
+    margin: get_vw(10) get_vw(8) get_vw(3);
+  }
+}
+.insta_area {
+  margin-top: get_vw_sp(10);
+
+  @include mq(md) {
+    margin-top: get_vw(18);
+  }
+}
+.insta_inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.insta_img {
+  width: get_vw_sp(105);
+  height: get_vw_sp(105);
+  margin-top: get_vw_sp(10);
+
+  @include mq(md) {
+    width: get_vw(240);
+    height: get_vw(240);
+    margin-top: get_vw(20);
+  }
+}
+.contents_02 {
+  margin-top: get_vw_sp(10);
+
+  @include mq(md) {
+    margin-top: get_vw(40);
+  }
 }
