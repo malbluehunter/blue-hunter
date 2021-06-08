@@ -3,7 +3,7 @@ import * as styles from "./index.module.scss"
 import TextHeading from "../../../../components/atoms/TextHeading"
 import TextMedium from "../../../../components/atoms/TextMedium"
 import TextLeading from "../../../../components/atoms/TextLeading"
-import TextAnnotation from "../../../../components/atoms/TextAnnotation"
+import TextAnnotatioxn from "../../../../components/atoms/TextAnnotation"
 import TextMediumSub from "../../../../components/atoms/TextMediumSub"
 import { Helmet } from "react-helmet"
 import LayoutTwoColumn from "../../../../components/templates/LayoutTwoColumn"
@@ -15,6 +15,7 @@ import ContentsLine from "../../../../components/molecules/ContentsLine"
 import MainContentsBottom from "../../../../components/organisms/MainContentsBottom"
 import WorldContentsInner from "../../../../components/organisms/WorldContentsInner"
 import PagerArea from "../../../../components/organisms/PagerArea"
+import LocalNavWorld01 from "../../../../components/templates/LocalNavWorld01"
 
 const WorldPage = ({ location }) => {
   return (
@@ -48,18 +49,19 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../index.html" page03="物語の背景 - 0.予備知識としてのCCZ" />
-        <WorldContentsInner>
-          <MainContentsTop text="物語の背景" />
-          <MainContentsMiddleWorld>
-            <TextHeading text="0.予備知識としてのCCZ" />
-            <ContentsLine />
-            <TextMedium text="2020年現在、ハワイ南東沖にあるクラリオン断層帯とクリッパートン断層帯に囲まれたCCZ（クラリオン・クリッパートン領域）は、鉱物資源であるマンガン団塊が豊富に存在し、海洋法に基づく国際海底機構（本部はジャマイカ）がその採掘権を管理している。⽇本も⼀部、採掘権を⺠間企業DORD経由で取得。他に英国、ロシア、ドイツ、フランス、インド、中国、韓国など。アメリカは海洋法を批准しないが、独⾃のルートにて採掘権を主張している。" />
-            <div className={styles.img_wrapper}>
-              <img src="/world/world_img_01.png" alt="" />
-            </div>
-            {/* クライアント確認のためコメントアウト */}
-            {/* <div className={styles.textLeading_wrapper}>
+        <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="物語の背景 - 0.予備知識としてのCCZ" />
+        <div className={styles.contents_inner}>
+          <WorldContentsInner>
+            <MainContentsTop text="物語の背景" />
+            <MainContentsMiddleWorld>
+              <TextHeading text="0.予備知識としてのCCZ" />
+              <ContentsLine />
+              <TextMedium text="2020年現在、ハワイ南東沖にあるクラリオン断層帯とクリッパートン断層帯に囲まれたCCZ（クラリオン・クリッパートン領域）は、鉱物資源であるマンガン団塊が豊富に存在し、海洋法に基づく国際海底機構（本部はジャマイカ）がその採掘権を管理している。⽇本も⼀部、採掘権を⺠間企業DORD経由で取得。他に英国、ロシア、ドイツ、フランス、インド、中国、韓国など。アメリカは海洋法を批准しないが、独⾃のルートにて採掘権を主張している。" />
+              <div className={styles.img_wrapper}>
+                <img src="/world/world_img_01.png" alt="" />
+              </div>
+              {/* クライアント確認のためコメントアウト */}
+              {/* <div className={styles.textLeading_wrapper}>
               <TextLeading text="見出しパターン" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
@@ -68,8 +70,8 @@ const WorldPage = ({ location }) => {
             <div className={styles.textAnnotation_wrapper}>
               <TextAnnotation text="＊注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン注釈パターン。" />
             </div> */}
-            {/* テーブル(見出しあり) 開始 */}
-            {/* <div className={styles.table_leading_wrapper}>
+              {/* テーブル(見出しあり) 開始 */}
+              {/* <div className={styles.table_leading_wrapper}>
               <table className={styles.table_leading}>
                 <tr className={styles.table_tr}>
                   <th></th>
@@ -108,10 +110,10 @@ const WorldPage = ({ location }) => {
                 </tr>
               </table>
             </div> */}
-            {/* テーブル(見出しあり) 終了 */}
+              {/* テーブル(見出しあり) 終了 */}
 
-            {/* テーブル(見出しなし) 開始 */}
-            {/* <div className={styles.table_sub_wrapper}>
+              {/* テーブル(見出しなし) 開始 */}
+              {/* <div className={styles.table_sub_wrapper}>
               <table className={styles.table_sub}>
                 <tr className={styles.table_tr}>
                   <td className={styles.td_leading}>
@@ -147,13 +149,15 @@ const WorldPage = ({ location }) => {
                 </tr>
               </table>
             </div> */}
-            {/* テーブル(見出しなし) 終了 */}
-          </MainContentsMiddleWorld>
-          <MainContentsBottom />
-          {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-          <PagerArea hrefPrev="" hrefNext="../marine-metropolitan-areas/" isDisabledPrev={true} isDisabledNext={false} number={1} TotalNumber={10} />
-          {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
-        </WorldContentsInner>
+              {/* テーブル(見出しなし) 終了 */}
+            </MainContentsMiddleWorld>
+            <MainContentsBottom />
+            {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
+            <PagerArea hrefPrev="" hrefNext="../marine-metropolitan-areas/" isDisabledPrev={true} isDisabledNext={false} number={1} TotalNumber={10} />
+            {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
+          </WorldContentsInner>
+          <LocalNavWorld01 />
+        </div>
       </LayoutTwoColumn>
     </>
   )

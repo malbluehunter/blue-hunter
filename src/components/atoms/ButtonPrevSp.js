@@ -6,7 +6,7 @@ const ButtonPrevSp = props => {
 
   return (
     <a href={hrefPrev} className={`${styles.btn_wrapper} ${isDisabledPrev ? styles.disabled : ""}`}>
-      {isDisabledPrev ? <img src="/world/btn_prev_disabled_sp.png" alt="PREV" /> : <img src="/world/btn_prev_sp.png" alt="PREV" />}
+      {isDisabledPrev ? <img src="/world/btn_prev_disabled_sp.png" alt="PREV" loading="lazy" /> : <img src="/world/btn_prev_sp.png" alt="PREV" loading="lazy" />}
     </a>
   )
 }

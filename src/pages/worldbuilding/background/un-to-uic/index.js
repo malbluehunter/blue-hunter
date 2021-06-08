@@ -47,7 +47,7 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../index.html" page03="物語の背景 - 3.国連から超都連へ。" />
+        <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="物語の背景 - 3.国連から超都連へ。" />
         <WorldContentsInner>
           <MainContentsTop text="物語の背景" />
           <MainContentsMiddleWorld>

@@ -8,6 +8,6 @@
 
   @include mq(md) {
     background-position: get_vw(-1) top;
-    padding: get_vw(40) get_vw(50) get_vw(20);
+    padding: get_vw(27) get_vw(50) get_vw(20);
   }
 }
