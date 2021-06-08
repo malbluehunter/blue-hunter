@@ -80,7 +80,7 @@ const WorldPage = ({ location }) => {
         <div className={styles.pageTitle_wrapper}>
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
-        -{/* パンクズリスト */}
+        {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/" page02="世界観・設定" />
         <div className={styles.contents_inner}>
           <WorldCategoryBtn categoryInfo={categoryInfo} />

@@ -6,7 +6,7 @@ const ButtonLiquid = props => {
 
   return (
     <a href={href} className={`${styles.btn_wrapper} ${isDisabled ? styles.disabled : ""}`}>
-      {isDisabled ? <img src="/common/btn_disabled.png" alt="" /> : <img src="/common/btn.png" alt="" />}
+      {isDisabled ? <img src="/common/btn_disabled.png" alt="" loading="lazy" /> : <img src="/common/btn.png" alt="" loading="lazy" />}
       <p className={styles.text}>{children}</p>
     </a>
   )

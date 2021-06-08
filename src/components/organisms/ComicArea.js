@@ -9,7 +9,7 @@ const ComicArea = props => {
   return (
     <div className={styles.comic_wrapper}>
       {listItem.map((item, index) => (
-        <img src={item} alt={`マンガイメージ${index + 1}`} />
+        <img src={item} alt={`マンガイメージ${index + 1}`} loading="lazy" />
       ))}
     </div>
   )
