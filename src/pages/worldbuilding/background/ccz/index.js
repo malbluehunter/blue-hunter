@@ -57,9 +57,6 @@ const WorldPage = ({ location }) => {
               <TextHeading text="0.予備知識としてのCCZ" />
               <ContentsLine />
               <TextMedium text="2020年現在、ハワイ南東沖にあるクラリオン断層帯とクリッパートン断層帯に囲まれたCCZ（クラリオン・クリッパートン領域）は、鉱物資源であるマンガン団塊が豊富に存在し、海洋法に基づく国際海底機構（本部はジャマイカ）がその採掘権を管理している。⽇本も⼀部、採掘権を⺠間企業DORD経由で取得。他に英国、ロシア、ドイツ、フランス、インド、中国、韓国など。アメリカは海洋法を批准しないが、独⾃のルートにて採掘権を主張している。" />
-              <div className={styles.img_wrapper}>
-                <img src="/world/world_img_01.png" alt="" />
-              </div>
               {/* クライアント確認のためコメントアウト */}
               {/* <div className={styles.textLeading_wrapper}>
               <TextLeading text="見出しパターン" />

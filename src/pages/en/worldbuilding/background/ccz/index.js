@@ -56,9 +56,6 @@ const WorldPage = ({ location }) => {
             <ContentsLine />
             <TextMedium text="The Clarion-Clipperton Zone is a submarine fracture zone located between Hawaii and the Clipperton Islands in the Pacific ocean. The area is rich in a type of resource called manganese nodules, the mining of which must be authorised by the International Seabed Authority (based in Kingston, Jamaica). Japan has acquired some mining rights through the private enterprise Deep Oceans Resource Development (DORD). Other countries overseen by the ISA include the UK, Russia, Germany, France, India, China and South Korea. The United States has not ratified the United Nations Convention of the Sea and as such claims mining rights through its own channels.
 " />
-            <div className={styles.img_wrapper}>
-              <img src="/world/world_img_01.png" alt="" />
-            </div>
             {/* クライアント確認のためコメントアウト */}
             {/* <div className={styles.textLeading_wrapper}>
               <TextLeading text="見出しパターン" />
