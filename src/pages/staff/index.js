@@ -102,7 +102,7 @@ const StaffPage = ({ location }) => {
               <div className={styles.staff_name_item}>
                 <Label03 text={"ストーリーボード"} />
                 <div className={styles.text_wrapper}>
-                  <TextLargeTrim text={"糸曽 賢志 / 内田 英武 / 石橋 明季"} />
+                  <TextLargeTrim text={"内田 英武 / 石橋 明季"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
@@ -120,7 +120,7 @@ const StaffPage = ({ location }) => {
               <div className={styles.staff_name_item}>
                 <Label03 text={"3Dモデリング"} />
                 <div className={styles.text_wrapper}>
-                  <TextLargeTrim text={"大橋 永志 / 脇谷 喜紀(仮)"} />
+                  <TextLargeTrim text={"大橋 永志 / 脇谷 喜紀"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
@@ -149,7 +149,7 @@ const StaffPage = ({ location }) => {
                   />
                   <TextLargeTrim
                     text={
-                      "ナツトモキ / 竹ノ輪 ちくわ / 宇野 ハジメ / 金田 なな"
+                      "ナツトモキ / 竹ノ輪 ちくわ / 宇野 ハジメ / 金田 なな / 立陽"
                     }
                   />
                 </div>
