@@ -58,7 +58,7 @@ const WorldPage = ({ location }) => {
             </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-          <PagerArea hrefPrev="../sigma-jacket/" hrefNext="" isDisabledPrev={false} isDisabledNext={true}  number={9} TotalNumber={10} />
+          <PagerArea hrefPrev="../sigma-jacket/" hrefNext="" isDisabledPrev={false} isDisabledNext={true}  number={9} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </WorldContentsInner>
       </LayoutTwoColumn>

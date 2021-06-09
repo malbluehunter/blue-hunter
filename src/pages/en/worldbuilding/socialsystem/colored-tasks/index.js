@@ -55,7 +55,7 @@ const WorldPage = ({ location }) => {
             </MainContentsMiddleWorld>
           <MainContentsBottom />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-          <PagerArea hrefPrev="../fairchain/" hrefNext="../rarity/" isDisabledPrev={false} isDisabledNext={false}  number={6} TotalNumber={10} />
+          <PagerArea hrefPrev="../fairchain/" hrefNext="../rarity/" isDisabledPrev={false} isDisabledNext={false}  number={6} TotalNumber={8} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </WorldContentsInner>
       </LayoutTwoColumn>
