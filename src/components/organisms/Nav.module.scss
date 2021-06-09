@@ -11,17 +11,33 @@
 .menu {
   position: absolute;
   display: flex;
-  top: 2.97vw;
-  left: 10.8vw;
+  top: get_vw(43);
+  left: get_vw(148);
   height: get_vw(68);
 }
 .nav_bg {
-  width: get_vw(820);
+  width: get_vw(825);
+
+  & img {
+    margin-top: get_vw(2.5);
+  }
+}
+.menu_item_img_hover {
+  display: none;
 }
 .menu_item_inner {
   font-weight: bold;
-  height: get_vw(45);
   background-repeat: no-repeat;
+
+  &:hover {
+    & .menu_item_img_hover {
+      display: block;
+    }
+
+    & .menu_item_img {
+      display: none;
+    }
+  }
 }
 .menu_item_inner .menu_item_link {
   border-right: 1px solid rgba(17, 43, 58, 0.2);
@@ -45,90 +61,87 @@
 }
 .current,
 .menu_item:hover {
-  & img {
-    visibility: hidden;
-  }
   & .text {
     color: #fff;
   }
 }
 .menu_item:nth-child(1) {
-  background-size: get_vw(90);
+  background-size: get_vw(93);
 
   &:hover,
   &.current {
-    background-image: url("/common/nav_text_news_hover.png");
+    background-image: url("/common/nav_text_news_hover.webp");
     background-position: 0;
     background-repeat: no-repeat;
   }
 
   & .menu_item_inner {
-    width: get_vw(90);
+    width: get_vw(92);
   }
 }
 .menu_item:nth-child(2) {
-  background-size: get_vw(90);
+  background-size: get_vw(92);
 
   &:hover,
   &.current {
-    background-image: url("/common/nav_text_comic_hover.png");
+    background-image: url("/common/nav_text_comic_hover.webp");
     background-position: 0;
     background-repeat: no-repeat;
   }
   & .menu_item_inner {
-    width: get_vw(90);
+    width: get_vw(92);
   }
 }
 .menu_item:nth-child(3) {
-  background-size: get_vw(160);
+  background-size: get_vw(162);
 
   &:hover,
   &.current {
-    background-image: url("/common/nav_text_world_hover.png");
+    background-image: url("/common/nav_text_world_hover.webp");
     background-position: 0;
     background-repeat: no-repeat;
   }
   & .menu_item_inner {
-    width: get_vw(160);
+    width: get_vw(162);
   }
 }
 .menu_item:nth-child(4) {
-  background-size: get_vw(130);
+  background-size: get_vw(134);
 
   &:hover,
   &.current {
-    background-image: url("/common/nav_text_characters_hover.png");
+    background-image: url("/common/nav_text_characters_hover.webp");
     background-position: 0;
     background-repeat: no-repeat;
   }
   & .menu_item_inner {
-    width: get_vw(130);
+    width: get_vw(133);
   }
 }
 .menu_item:nth-child(5) {
-  background-size: get_vw(91);
+  background-size: get_vw(92);
 
   &:hover,
   &.current {
-    background-image: url("/common/nav_text_staff_hover.png");
+    background-image: url("/common/nav_text_staff_hover.webp");
     background-position: get_vw(1);
     background-repeat: no-repeat;
   }
   & .menu_item_inner {
-    width: get_vw(93);
+    width: get_vw(94);
   }
 }
 .menu_item:nth-child(6) {
-  background-size: get_vw(102);
+  background-size: get_vw(104);
 
   &:hover,
   &.current {
-    background-image: url("/common/nav_text_special_hover.png");
+    background-image: url("/common/nav_text_special_hover.webp");
     background-position: 0;
     background-repeat: no-repeat;
   }
   & .menu_item_inner {
-    width: get_vw(102);
+    width: get_vw(104);
   }
 
   & .text {

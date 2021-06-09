@@ -55,9 +55,9 @@
   background-repeat: no-repeat;
   padding: get_vw_sp(15) get_vw_sp(25);
   text-align: center;
+  z-index: 100;
 
   @include mq(md) {
-    z-index: 100;
     position: relative;
     text-align: initial;
     background-image: url("/top/top_newsArea.png");

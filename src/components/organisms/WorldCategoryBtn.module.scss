@@ -57,6 +57,12 @@
     flex-wrap: wrap;
   }
 }
-.btn_link:hover {
-  opacity: 0.6;
+.btn_link {
+  & img {
+    -webkit-backface-visibility: initial;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
 }

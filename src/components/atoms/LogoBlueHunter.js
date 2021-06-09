@@ -6,7 +6,7 @@ const LogoBlueHunter = props => {
 
   return (
     <a href={href} className={styles.img__wrap}>
-      <img src="/common/logo_bluehunter.png" alt="BLUE HUNTER" />
+      <img src="/common/logo_bluehunter.webp" alt="BLUE HUNTER" />
     </a>
   )
 }
