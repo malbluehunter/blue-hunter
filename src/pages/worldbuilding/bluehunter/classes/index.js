@@ -56,7 +56,7 @@ const WorldPage = ({ location }) => {
               <TextLeading text="class -クラス-" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="ハンター評議会（カウンシル）に所属するハンターの階級。クラスアップはLv、DpやBkなど（後述）を総合し、かつ評議会が実績を値踏みして決定する。⽣頼とミネルヴァはclass=5、JAZzとビリー＝class4、渚＝class3、⽉⼈とホーク＝class１。カケルは⽬下、class0。" />
+              <TextMediumSub text="ハンター評議会（カウンシル）に所属するハンターの階級。クラスアップはLv、DpやBkなど（後述）を総合し、かつ評議会が実績を値踏みして決定する。⽣頼はclass=5、JAZzとビリー＝class4、渚＝class3、⽉⼈とホーク＝class１。カケルは⽬下、class0。" />
             </div>
             <div className={styles.textLeading_wrapper}>
               <TextLeading text="ハンターランキング" />

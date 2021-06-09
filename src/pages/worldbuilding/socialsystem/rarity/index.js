@@ -54,6 +54,9 @@ const WorldPage = ({ location }) => {
             <TextHeading text="Rrt -レアリティ-" />
             <ContentsLine />
             <TextMedium text="Light( ★ )/Normal( ★★ )/Deep( ★★★ )/Extreme( ★★★★ )の4段階。進歩的成果の貴重さに対する権威付けであり、⽣物の場合はカードがその深さの⻘で縁取られる。〜1万Lk未満はLight（ライトブルー）、〜10万Lk未満をNormal、〜100万Lk未満をDeepと位置付ける。両⽣類のグリーンとブルーなど、同⼀⽣物に2種類以上の⾊に対するRrtが与えられるケース（ダブル・レアリティ）もある。Rrtを認定されたタスクは「カラードタスク（海の場合はブルータスク）」と呼ばれる。⼀つのタスクに複数の⾊が付与されることもある。「ブルー狙い」「ブルーが欲しい」という場合は「本⼈が進歩的な成果に相当するTkを実施し、結果として（あるいは事前に）Lkが伸び、AIがLkの成⻑曲線よりRrtを判定するまで」を⾔う。" />
+            <div className={styles.textHeading_wrapper}>
+              <TextHeading text="生物勧告基準" />
+            </div>
             <div className={styles.textLeading_wrapper}>
               <TextLeading text="要調査系統群" />
               <TextLeading text="通称「億水の漂因」" />
@@ -67,9 +70,6 @@ const WorldPage = ({ location }) => {
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="調整依頼。遺伝⼦（⾝体の⼀部分）などの物理的な⽣体情報や写真、⽬撃証⾔などを総合し、少なくとも過去に存在したと考えられる未発⾒⽣物群。ハンターたちが「未発⾒」「ターゲット」と呼ぶカード。正式名が与えられず、仮称で呼ばれることが多い。「六枚⽻」「針ウロコ」など。" />
-            </div>
-            <div className={styles.textHeading_wrapper}>
-              <TextHeading text="生物勧告基準" />
             </div>
             <div className={styles.textLeading_wrapper}>
               <TextLeading text="要保護系統群" />

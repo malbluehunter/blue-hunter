@@ -63,7 +63,7 @@ const WorldPage = ({ location }) => {
             </div>
             <div className={styles.textLeading_wrapper}>
               <TextLeading text="iRCOT（iCitiesRepresentative Committee・・・超都代表委員会）" />
-              <TextLeading text="UiC（United iC・・・超都連" />
+              <TextLeading text="UiC（United iC・・・超都連)" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="2040年代中盤にはグラン＝ムーを⼿本とする海洋都市圏パクシオラ（CCZ東端）などが次々と竣⼯。それを受けて初期の計画⺟体MWVCは解体され、複数都市圏を統括するiRCOTの発⾜が2044年に宣⾔された。" />
