@@ -4,7 +4,7 @@ import * as styles from "./Logo.module.scss"
 const Logo = () => {
   return (
     <a href="https://uminohi.jp/" className={styles.img__wrap} target="_blank">
-      <img src="/common/logo.png" alt="BLUE HUNTER" />
+      <img src="/common/logo.webp" alt="BLUE HUNTER" />
     </a>
   )
 }

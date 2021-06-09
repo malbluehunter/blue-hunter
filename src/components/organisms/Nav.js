@@ -52,13 +52,14 @@ const Nav = props => {
         </div>
       </div>
       <div className={styles.nav_bg}>
-        <img src="/common/bg_navi.png" alt="グローバルナビ背景" />
+        <img src="/common/bg_navi.webp" alt="グローバルナビ背景" />
       </div>
       <div className={styles.menu}>
         <div className={`${styles.menu_item} ${newsCurrent ? styles.current : ""}`}>
           <div className={styles.menu_item_inner}>
             <a className={styles.menu_item_link} href="/news/">
-              <img src="/common/nav_text_news.svg" alt="News" className={styles.menu_item_img_01} />
+              <img src={newsCurrent ? "/common/nav_text_news_current.svg" : "/common/nav_text_news.svg"} alt="News" className={`${styles.menu_item_img_01} ${styles.menu_item_img}`} />
+              <img src="/common/nav_text_news_current.svg" alt="News" className={`${styles.menu_item_img_01} ${styles.menu_item_img_hover}`} />
               <p className={styles.text}>ニュース</p>
             </a>
           </div>
@@ -66,7 +67,8 @@ const Nav = props => {
         <div className={`${styles.menu_item} ${comicCurrent ? styles.current : ""}`}>
           <div className={styles.menu_item_inner}>
             <a className={styles.menu_item_link} href="/comic/ep1/">
-              <img src="/common/nav_text_comic.svg" alt="Commic" className={styles.menu_item_img_02} />
+              <img src={comicCurrent ? "/common/nav_text_comic_current.svg" : "/common/nav_text_comic.svg"} alt="Commic" className={`${styles.menu_item_img_02} ${styles.menu_item_img}`} />
+              <img src="/common/nav_text_comic_current.svg" alt="Commic" className={`${styles.menu_item_img_02} ${styles.menu_item_img_hover}`} />
               <p className={styles.text}>マンガ</p>
             </a>
           </div>
@@ -74,7 +76,8 @@ const Nav = props => {
         <div className={`${styles.menu_item} ${worldbuildingCurrent ? styles.current : ""}`}>
           <div className={styles.menu_item_inner}>
             <a className={styles.menu_item_link} href="/worldbuilding/">
-              <img src="/common/nav_text_world.svg" alt="The World of BH" className={styles.menu_item_img_03} />
+              <img src={worldbuildingCurrent ? "/common/nav_text_world_current.svg" : "/common/nav_text_world.svg"} alt="The World of BH" className={`${styles.menu_item_img_03} ${styles.menu_item_img}`} />
+              <img src="/common/nav_text_world_current.svg" alt="The World of BH" className={`${styles.menu_item_img_03} ${styles.menu_item_img_hover}`} />
               <p className={styles.text}>世界観・設定</p>
             </a>
           </div>
@@ -82,7 +85,8 @@ const Nav = props => {
         <div className={`${styles.menu_item} ${charactersCurrent ? styles.current : ""}`}>
           <div className={styles.menu_item_inner}>
             <a className={styles.menu_item_link} href="/characters/kakeru/">
-              <img src="/common/nav_text_characters.svg" alt="Characters" className={styles.menu_item_img_04} />
+              <img src={charactersCurrent ? "/common/nav_text_characters_current.svg" : "/common/nav_text_characters.svg"} alt="Characters" className={`${styles.menu_item_img_04} ${styles.menu_item_img}`} />
+              <img src="/common/nav_text_characters_current.svg" alt="Characters" className={`${styles.menu_item_img_04} ${styles.menu_item_img_hover}`} />
               <p className={styles.text}>キャラクター</p>
             </a>
           </div>
@@ -90,7 +94,8 @@ const Nav = props => {
         <div className={`${styles.menu_item} ${staffCurrent ? styles.current : ""}`}>
           <div className={styles.menu_item_inner}>
             <a className={styles.menu_item_link} href="/staff/">
-              <img src="/common/nav_text_staff.svg" alt="Staff" className={styles.menu_item_img_05} />
+              <img src={staffCurrent ? "/common/nav_text_staff_current.svg" : "/common/nav_text_staff.svg"} alt="Staff" className={`${styles.menu_item_img_05} ${styles.menu_item_img}`} />
+              <img src="/common/nav_text_staff_current.svg" alt="Staff" className={`${styles.menu_item_img_05} ${styles.menu_item_img_hover}`} />
               <p className={styles.text}>スタッフ</p>
             </a>
           </div>
@@ -98,7 +103,8 @@ const Nav = props => {
         <div className={`${styles.menu_item} ${specialCurrent ? styles.current : ""}`}>
           <div className={styles.menu_item_inner}>
             <a className={styles.menu_item_link} href="/special/">
-              <img src="/common/nav_text_special.svg" alt="Special" className={styles.menu_item_img_06} />
+              <img src={specialCurrent ? "/common/nav_text_special_current.svg" : "/common/nav_text_special.svg"} alt="Special" className={`${styles.menu_item_img_06} ${styles.menu_item_img}`} />
+              <img src="/common/nav_text_special_current.svg" alt="Special" className={`${styles.menu_item_img_06} ${styles.menu_item_img_hover}`} />
               <p className={styles.text}>スペシャル</p>
             </a>
           </div>

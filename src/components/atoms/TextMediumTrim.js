@@ -25,9 +25,8 @@ const TextMediumTrim = props => {
 
   const displayText = () => {
     isOpen ? setIsOpen(false) : setIsOpen(true)
-    isOpen ?  trimText() : setNewsText(text)
+    isOpen ? trimText() : setNewsText(text)
   }
-  console.log(isOpen)
 
   return (
     <>
@@ -35,11 +34,17 @@ const TextMediumTrim = props => {
       {isHidden ? (
         ""
       ) : (
-        <div className={styles.next_read_wrapper}>
-          <p className={styles.next_read} onClick={displayText}>
-            {isOpen ? "＜閉じる＞" : "＜続きを読む＞"}
-          </p>
-        </div>
+        <>
+          {isOpen ? (
+            ""
+          ) : (
+            <div className={styles.next_read_wrapper}>
+              <p className={styles.next_read} onClick={displayText}>
+                ＜続きを読む＞
+              </p>
+            </div>
+          )}
+        </>
       )}
     </>
   )

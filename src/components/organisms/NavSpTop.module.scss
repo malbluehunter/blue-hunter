@@ -59,68 +59,53 @@ nav.globalMenuSp.active {
 }
 .inner_item {
   text-align: center;
-  padding: get_vw_sp(12) 0 get_vw_sp(10);
+  padding: get_vw_sp(18) get_vw_sp(20);
 
   &.current {
     background-size: 100%;
     background-position: 0;
     background-repeat: no-repeat;
 
-    & img {
-      visibility: hidden;
-    }
     & .text {
       color: #fff;
     }
   }
 }
 .inner_item:nth-child(1) {
+  border-top: 1px solid rgba(17, 43, 58, 0.2);
+}
+.inner_item {
   &.current {
-    background-image: url("/common/nav_text_news_hover_sp.png");
+    background-image: url("/common/bg_nav_sp.webp");
   }
 }
-.inner_item:nth-child(2) {
-  &.current {
-    background-image: url("/common/nav_text_comic_hover_sp.png");
-  }
-}
-.inner_item:nth-child(3) {
-  &.current {
-    background-image: url("/common/nav_text_world_hover_sp.png");
-  }
-}
-.inner_item:nth-child(4) {
-  &.current {
-    background-image: url("/common/nav_text_characters_hover_sp.png");
-  }
-}
-.inner_item:nth-child(5) {
-  &.current {
-    background-image: url("/common/nav_text_staff_hover_sp.png");
-  }
-}
-.inner_item:nth-child(6) {
-  &.current {
-    background-image: url("/common/nav_text_special_hover_sp.png");
+.inner_item_link {
+  display: flex;
+
+  & img {
+    margin-right: get_vw_sp(14);
   }
 }
 .inner_item_img_01 {
-  width: get_vw_sp(68);
+  width: get_vw_sp(42);
 }
 .inner_item_img_02 {
-  width: get_vw_sp(76);
+  width: get_vw_sp(63);
 }
 .inner_item_img_03 {
-  width: get_vw_sp(200);
+  width: get_vw_sp(73);
 }
 .inner_item_img_04 {
-  width: get_vw_sp(136);
+  width: get_vw_sp(183);
 }
 .inner_item_img_05 {
-  width: get_vw_sp(61);
+  width: get_vw_sp(132);
 }
 .inner_item_img_06 {
-  width: get_vw_sp(100);
+  width: get_vw_sp(59);
+}
+.inner_item_img_07 {
+  width: get_vw_sp(80);
 }
 
 .text {
@@ -131,7 +116,7 @@ nav.globalMenuSp.active {
 }
 
 .inner_list {
-  width: 85%;
+  width: 88%;
   margin: auto;
   overflow: scroll;
   padding-bottom: get_vw_sp(80);
@@ -199,5 +184,5 @@ nav.globalMenuSp.active {
   width: get_vw_sp(59);
 }
 .inner_item_logo_02 {
-  width: get_vw_sp(102);
+  width: get_vw_sp(110);
 }
