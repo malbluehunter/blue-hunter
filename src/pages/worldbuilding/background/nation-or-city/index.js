@@ -13,6 +13,7 @@ import ContentsLine from "../../../../components/molecules/ContentsLine"
 import MainContentsBottom from "../../../../components/organisms/MainContentsBottom"
 import WorldContentsInner from "../../../../components/organisms/WorldContentsInner"
 import PagerArea from "../../../../components/organisms/PagerArea"
+import LocalNavWorld01 from "../../../../components/templates/LocalNavWorld01"
 
 const WorldPage = ({ location }) => {
   return (
@@ -46,29 +47,32 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="物語の背景 - 2.国家か、都市か。" />
-        <WorldContentsInner>
-          <MainContentsTop pathname={location.pathname} text="物語の背景" />
-          <MainContentsMiddleWorld pathname={location.pathname}>
-            <TextHeading text="2.国家か、都市か。" />
-            <ContentsLine pathname={location.pathname} />
-            <TextMedium text="CCZの鉱物資源であるマンガン団塊（多⾦属団塊）は海底の表⾯に広く分布しており、⽯油などとは違って採掘しきった後は⽔平移動を余儀なくされる。そのため、あらかじめ⽔平に拡張を⾒込んだ「海洋都市圏」が計画され、発展した。（下図はグラン＝ムー構想）" />
-            <div className={styles.img_wrapper}>
-              <img src="/world/world_img_background_04.png" alt="" />
-            </div>
-            <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="あくまで海洋資源の採掘テクノロジーを追求すべく着想されたグラン＝ムーであったが、結果として⾃給⾃⾜可能な⽣活圏の在り⽅、さらには世界的なトレンドであった「次世代ブロックチェーン（フェアチェーン）」の研究開発において劇的な成果を体現する。" />
-              <TextMediumSub text="そもそもフェアチェーンの運⽤法たる「タスクシステム」は、2020〜2030年代までバルト3国およびヨーロッパを主体に学校や村といった単位で研究が進められたものであった。まずは初等教育機関において倫理⾯の成果をあげた後、その卒業⽣たちが⾏政および各種事業へ応⽤し、およそ10年をかけ実験的に先鞭をつけたものである。" />
-              <TextMediumSub text="いずれは⼤都市、ひいては国家単位で運⽤できるものと期待を寄せられていたタスクシステム。しかしながら、圧倒的に⾼いセキュリティと超⾼速処理を可能にする「次世代ブロックチェーン技術」が不可⽋であり、その実現が最⼤のネックであった。" />
-              <TextMediumSub text="2040年代に⼊り、量⼦コンピューティングに基づくブロックチェーン技術「フェアチェーン」が劇的な⾶躍を遂げた。壮⼤な社会実験場として全世界の⽿⽬を集めていたグラン＝ムーは、フェアチェーンを礎とするタスクシステムと⾼い⽣産性に裏打ちされた社会構造に⾒通しを⽴て、国家とは由来の異なる新たな⼈類の⾜場を樹⽴したのである。2045年、第2都市の竣⼯を前に、国連は海洋都市圏グラン＝ムーの独⽴⾃治を認めた。" />
-              <TextMediumSub text="グラン＝ムーの成功を受け、2040年代後半には同じCCZ内に海洋都市圏パクシオラが、また⻄太平洋にはコバルトリッチクラスト採掘を⽬的としたジーグ、⼤⻄洋では海嶺のエネルギー利⽤を⽬的としたアトラス等も竣⼯。いずれもMW⽅式とよばれる、タスクシステム／フェアチェーンを基礎とする⾃治を標榜し、多くの学術系・技術系移⺠を募り、受け⼊れた。2050年代後半には北⽶のオルトフランなど地上都市でもMW⽅式の採⽤が進み、国家による旧態依然とした統治は形骸化しつつある。" />
-            </div>
-          </MainContentsMiddleWorld>
-          <MainContentsBottom pathname={location.pathname} />
-          {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-          <PagerArea hrefPrev="../grandmw/" hrefNext="../un-to-uic/" isDisabledPrev={false} isDisabledNext={false}  number={4} TotalNumber={10} />
-      {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
-        </WorldContentsInner>
+        <Bread page01="TOP" href01="/" page02="世界観・設定" href02="/worldbuilding/" page03="物語の背景 - 2.国家か、都市か。" />
+        <div className={styles.contents_inner}>
+          <WorldContentsInner>
+            <MainContentsTop pathname={location.pathname} text="物語の背景" />
+            <MainContentsMiddleWorld pathname={location.pathname}>
+              <TextHeading text="2.国家か、都市か。" />
+              <ContentsLine pathname={location.pathname} />
+              <TextMedium text="CCZの鉱物資源であるマンガン団塊（多⾦属団塊）は海底の表⾯に広く分布しており、⽯油などとは違って採掘しきった後は⽔平移動を余儀なくされる。そのため、あらかじめ⽔平に拡張を⾒込んだ「海洋都市圏」が計画され、発展した。（下図はグラン＝ムー構想）" />
+              <div className={styles.img_wrapper}>
+                <img src="/world/world_img_background_04.png" alt="" />
+              </div>
+              <div className={styles.textMediumSub_wrapper}>
+                <TextMediumSub text="あくまで海洋資源の採掘テクノロジーを追求すべく着想されたグラン＝ムーであったが、結果として⾃給⾃⾜可能な⽣活圏の在り⽅、さらには世界的なトレンドであった「次世代ブロックチェーン（フェアチェーン）」の研究開発において劇的な成果を体現する。" />
+                <TextMediumSub text="そもそもフェアチェーンの運⽤法たる「タスクシステム」は、2020〜2030年代までバルト3国およびヨーロッパを主体に学校や村といった単位で研究が進められたものであった。まずは初等教育機関において倫理⾯の成果をあげた後、その卒業⽣たちが⾏政および各種事業へ応⽤し、およそ10年をかけ実験的に先鞭をつけたものである。" />
+                <TextMediumSub text="いずれは⼤都市、ひいては国家単位で運⽤できるものと期待を寄せられていたタスクシステム。しかしながら、圧倒的に⾼いセキュリティと超⾼速処理を可能にする「次世代ブロックチェーン技術」が不可⽋であり、その実現が最⼤のネックであった。" />
+                <TextMediumSub text="2040年代に⼊り、量⼦コンピューティングに基づくブロックチェーン技術「フェアチェーン」が劇的な⾶躍を遂げた。壮⼤な社会実験場として全世界の⽿⽬を集めていたグラン＝ムーは、フェアチェーンを礎とするタスクシステムと⾼い⽣産性に裏打ちされた社会構造に⾒通しを⽴て、国家とは由来の異なる新たな⼈類の⾜場を樹⽴したのである。2045年、第2都市の竣⼯を前に、国連は海洋都市圏グラン＝ムーの独⽴⾃治を認めた。" />
+                <TextMediumSub text="グラン＝ムーの成功を受け、2040年代後半には同じCCZ内に海洋都市圏パクシオラが、また⻄太平洋にはコバルトリッチクラスト採掘を⽬的としたジーグ、⼤⻄洋では海嶺のエネルギー利⽤を⽬的としたアトラス等も竣⼯。いずれもMW⽅式とよばれる、タスクシステム／フェアチェーンを基礎とする⾃治を標榜し、多くの学術系・技術系移⺠を募り、受け⼊れた。2050年代後半には北⽶のオルトフランなど地上都市でもMW⽅式の採⽤が進み、国家による旧態依然とした統治は形骸化しつつある。" />
+              </div>
+            </MainContentsMiddleWorld>
+            <MainContentsBottom pathname={location.pathname} />
+            {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
+            <PagerArea pathname={location.pathname} hrefPrev="../grandmw/" hrefNext="../un-to-uic/" isDisabledPrev={false} isDisabledNext={false} number={4} TotalNumber={10} />
+            {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
+          </WorldContentsInner>
+          <LocalNavWorld01 pathname={location.pathname} />
+        </div>
       </LayoutTwoColumn>
     </>
   )

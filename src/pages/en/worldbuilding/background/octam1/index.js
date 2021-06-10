@@ -14,6 +14,7 @@ import ContentsLine from "../../../../../components/molecules/ContentsLine"
 import MainContentsBottom from "../../../../../components/organisms/MainContentsBottom"
 import WorldContentsInner from "../../../../../components/organisms/WorldContentsInner"
 import PagerArea from "../../../../../components/organisms/PagerArea"
+import LocalNavWorld01 from "../../../../../components/templates/LocalNavWorld01"
 
 const WorldPage = ({ location }) => {
   return (
@@ -48,7 +49,8 @@ const WorldPage = ({ location }) => {
         </div>
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Background - Encyclopedia of Octa/M (1)" />
-        <WorldContentsInner>
+        <div className={styles.contents_inner}>
+          <WorldContentsInner>
           <MainContentsTop pathname={location.pathname} text="Background" />
           <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Encyclopedia of Octa/M (1)" />
@@ -95,9 +97,11 @@ const WorldPage = ({ location }) => {
           </MainContentsMiddleWorld>
           <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-          <PagerArea hrefPrev="../un-to-uic/" hrefNext="../octam2/" isDisabledPrev={false} isDisabledNext={false} number={6} TotalNumber={10} />
+          <PagerArea pathname={location.pathname} hrefPrev="../un-to-uic/" hrefNext="../octam2/" isDisabledPrev={false} isDisabledNext={false} number={6} TotalNumber={10} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </WorldContentsInner>
+        <LocalNavWorld01 pathname={location.pathname} />
+       </div>
       </LayoutTwoColumn>
     </>
   )

@@ -100,8 +100,9 @@
 }
 
 .LocalNav_item a:hover {
-  color: #43dbf2;
+  color: #43dbf2 !important;
 }
+
 .localNav_top {
   position: relative;
 }
@@ -114,6 +115,7 @@
   text-align: center;
   @include fz_vw_sp(14);
   font-weight: bold;
+  color: #000;
 
   @include mq(md) {
     top: get_vw(16);
@@ -167,15 +169,22 @@
   right: 0;
 }
 .btn_openClose[aria-expanded="false"] {
-
   @include mq(sp-only) {
     bottom: get_vw_sp(12);
     left: get_vw_sp(147);
   }
 }
 
-.LocalNav_item.current {
+.LocalNav_list .current {
   color: #43dbf2;
+
+  & .LocalNav_list_02 {
+    color: #fff;
+
+    & a {
+      color: #fff;
+    }
+  }
 }
 
 .top_img_wrapper {

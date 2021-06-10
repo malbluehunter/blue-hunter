@@ -12,6 +12,7 @@ import ContentsLine from "../../../../../components/molecules/ContentsLine"
 import MainContentsBottom from "../../../../../components/organisms/MainContentsBottom"
 import WorldContentsInner from "../../../../../components/organisms/WorldContentsInner"
 import PagerArea from "../../../../../components/organisms/PagerArea"
+import LocalNavWorld03 from "../../../../../components/templates/LocalNavWorld03"
 
 const WorldPage = ({ location }) => {
   return (
@@ -46,7 +47,8 @@ const WorldPage = ({ location }) => {
         </div>
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Road to Blue Hunter - The Organisation of Hunter Guilds" />
-        <WorldContentsInner>
+        <div className={styles.contents_inner}>
+          <WorldContentsInner>
           <MainContentsTop pathname={location.pathname} text="Road to Blue Hunter" />
           <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="The Organisation of Hunter Guilds" />
@@ -189,9 +191,11 @@ const WorldPage = ({ location }) => {
             </MainContentsMiddleWorld>
           <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-          <PagerArea hrefPrev="" hrefNext="../classes/" isDisabledPrev={true} isDisabledNext={false}  number={1} TotalNumber={2} />
+          <PagerArea pathname={location.pathname} hrefPrev="" hrefNext="../classes/" isDisabledPrev={true} isDisabledNext={false}  number={1} TotalNumber={2} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </WorldContentsInner>
+        <LocalNavWorld03 pathname={location.pathname} />
+       </div>
       </LayoutTwoColumn>
     </>
   )

@@ -140,3 +140,14 @@ table {
     width: get_vw(35);
   }
 }
+.contents_inner {
+  margin-top: get_vw_sp(20);
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include mq(md) {
+    margin-top: get_vw(30);
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}

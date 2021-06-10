@@ -16,7 +16,7 @@ const LocalNavComic = () => {
       <div className={styles.localNav_top} onClick={toggle}>
         <p className={styles.localNav_top_text}>シリーズ一覧</p>
         <div className={styles.top_img_wrapper}>
-          <img src="/common/local_nav_top.png" />
+          <img src="/common/local_nav_top_lightBlue.webp" />
         </div>
       </div>
       <div className={styles.LocalNav_area} aria-expanded={isOpen}>

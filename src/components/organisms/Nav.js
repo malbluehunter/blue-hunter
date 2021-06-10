@@ -13,25 +13,25 @@ const Nav = props => {
   let jaCurrent = false
   let enCurrent = false
 
-  // ナビの現在地表示の設定
-  if (pathname.match(/news/)) {
+  // ナビの現在地表示
+  if (pathname.match(/\/news\//)) {
     newsCurrent = true
-  } else if (pathname.match(/comic/)) {
+  } else if (pathname.match(/\/comic\//)) {
     comicCurrent = true
-  } else if (pathname.match(/worldbuilding/)) {
+  } else if (pathname.match(/\/worldbuilding\//)) {
     worldbuildingCurrent = true
-  } else if (pathname.match(/characters/)) {
+  } else if (pathname.match(/\/characters\//)) {
     charactersCurrent = true
-  } else if (pathname.match(/staff/)) {
+  } else if (pathname.match(/\/staff\//)) {
     staffCurrent = true
-  } else if (pathname.match(/special/)) {
+  } else if (pathname.match(/\/special\//)) {
     specialCurrent = true
   }
 
-  // 言語の現在地表示の設定
-  if (!pathname.match(/en/)) {
+  // 言語の現在地表示
+  if (!pathname.match(/\/en\//)) {
     jaCurrent = true
-  } else if (pathname.match(/en/)) {
+  } else if (pathname.match(/\/en\//)) {
     enCurrent = true
   }
 
@@ -76,7 +76,11 @@ const Nav = props => {
         <div className={`${styles.menu_item} ${worldbuildingCurrent ? styles.current : ""}`}>
           <div className={styles.menu_item_inner}>
             <a className={styles.menu_item_link} href="/worldbuilding/">
-              <img src={worldbuildingCurrent ? "/common/nav_text_world_current.svg" : "/common/nav_text_world.svg"} alt="The World of BH" className={`${styles.menu_item_img_03} ${styles.menu_item_img}`} />
+              <img
+                src={worldbuildingCurrent ? "/common/nav_text_world_current.svg" : "/common/nav_text_world.svg"}
+                alt="The World of BH"
+                className={`${styles.menu_item_img_03} ${styles.menu_item_img}`}
+              />
               <img src="/common/nav_text_world_current.svg" alt="The World of BH" className={`${styles.menu_item_img_03} ${styles.menu_item_img_hover}`} />
               <p className={styles.text}>世界観・設定</p>
             </a>
@@ -85,7 +89,11 @@ const Nav = props => {
         <div className={`${styles.menu_item} ${charactersCurrent ? styles.current : ""}`}>
           <div className={styles.menu_item_inner}>
             <a className={styles.menu_item_link} href="/characters/kakeru/">
-              <img src={charactersCurrent ? "/common/nav_text_characters_current.svg" : "/common/nav_text_characters.svg"} alt="Characters" className={`${styles.menu_item_img_04} ${styles.menu_item_img}`} />
+              <img
+                src={charactersCurrent ? "/common/nav_text_characters_current.svg" : "/common/nav_text_characters.svg"}
+                alt="Characters"
+                className={`${styles.menu_item_img_04} ${styles.menu_item_img}`}
+              />
               <img src="/common/nav_text_characters_current.svg" alt="Characters" className={`${styles.menu_item_img_04} ${styles.menu_item_img_hover}`} />
               <p className={styles.text}>キャラクター</p>
             </a>

@@ -13,6 +13,7 @@ import ContentsLine from "../../../../components/molecules/ContentsLine"
 import MainContentsBottom from "../../../../components/organisms/MainContentsBottom"
 import WorldContentsInner from "../../../../components/organisms/WorldContentsInner"
 import PagerArea from "../../../../components/organisms/PagerArea"
+import LocalNavWorld04 from "../../../../components/templates/LocalNavWorld04"
 
 const WorldPage = ({ location }) => {
   return (
@@ -46,8 +47,9 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="メカ・アイテム - -フレン-" />
-        <WorldContentsInner>
+        <Bread page01="TOP" href01="/" page02="世界観・設定" href02="/worldbuilding/" page03="メカ・アイテム - -フレン-" />
+        <div className={styles.contents_inner}>
+          <WorldContentsInner>
           <MainContentsTop pathname={location.pathname} text="メカ・アイテム" />
           <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="-フレン-" />
@@ -68,9 +70,11 @@ const WorldPage = ({ location }) => {
           </MainContentsMiddleWorld>
           <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-          <PagerArea hrefPrev="../netbow/" hrefNext="../my-ai/" isDisabledPrev={false} isDisabledNext={false}  number={6} TotalNumber={9} />
+          <PagerArea pathname={location.pathname} hrefPrev="../netbow/" hrefNext="../my-ai/" isDisabledPrev={false} isDisabledNext={false}  number={6} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </WorldContentsInner>
+        <LocalNavWorld04 pathname={location.pathname} />
+       </div>
       </LayoutTwoColumn>
     </>
   )
