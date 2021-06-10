@@ -10,13 +10,13 @@ const WorldCategoryBtn = props => {
     <div className={styles.category_wrapper}>
       {listItem.map(item => (
         <div className={styles.category_list}>
-          <div className={styles.category_list_inner}>
-            <p className={styles.text}>{item.text}</p>
-            <a href={item.href} className={styles.btn_link}>
+          <a href={item.href} className={styles.btn_link}>
+            <div className={styles.category_list_inner}>
+              <p className={styles.text}>{item.text}</p>
               <img className={styles.btn} src={item.btn} alt="MORE" />
-            </a>
-          </div>
-          <img className={styles.img} src={item.src} alt={item.alt} />
+            </div>
+            <img className={styles.img} src={item.src} alt={item.alt} />
+          </a>
         </div>
       ))}
     </div>

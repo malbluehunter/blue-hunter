@@ -19,7 +19,7 @@ const SpecialPage = ({ location }) => {
 
   useEffect(() => {
     fetch(
-      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBANvZBTnTQWRhz7Ja2YcoSbZCs8h5FGuFcafXRnFtfZCIyPYSvlDXpvAWSYKTQEd62cs7i7Ec4ieCKZApUmNlZA4mQS7XtbT4ZBpPFZCZCsSTfLWAzzpLTRPROZCTuyZCLa8ZAsXJEiPYGK4gFJdUZAmW5o5Hau2lcZCyto2FezcHAg696"
+      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBAPFpXN8lCxC00bAa4KVtdpN8RbSEGNz1TfL6kXXOzkWqfZBoBZBMOf6XhdZBOWVReoG3u9pQqEZC2HXAibWBpdXNZCy9vFSpLD0IO2Ie0MxjQosRzZAzLhiuQi3yZBM8evEq0Xz5z74PIsZBPz6OmqBfspFMmvSWqtxottj4heBk"
     ).then(response => {
       response
         .json() //ここでBodyからJSONを返す
