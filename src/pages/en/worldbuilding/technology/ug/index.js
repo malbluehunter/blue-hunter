@@ -47,15 +47,15 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Technology - Underwater Gear (UG)" />
         <WorldContentsInner>
-          <MainContentsTop text="Technology" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Technology" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Underwater Gear (UG)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="A general term underwater construction and probing robots. With the Sea Force power grid, the robots are able to work almost indefinitely without needing to surface." />
             <TextMedium text="There are some huge UG that exceed 100m in height." />
             <TextMedium text="There are also rumors so-called 'Ghost UG' which became nonoperational after an accident, but is moving around on its own...." />
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../sigmar-sigmaview/" hrefNext="../bioverse/" isDisabledPrev={false} isDisabledNext={false} number={2} TotalNumber={4} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

@@ -47,14 +47,14 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="物語の背景 - 海中発送電塔(シーフォース)" />
         <WorldContentsInner>
-          <MainContentsTop text="物語の背景" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="物語の背景" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="海中発送電塔(シーフォース)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="⾵⼒、太陽光、および潮⼒・熱⽔など様々な発電器を有し、海洋都市およびUGへの電⼒供給を担う⾃律稼働施設。1塔あたりの⾼さが1,000〜6,000mにも及ぶ巨⼤構造であり、グラン・ムー近傍のみで⼆百数⼗本が稼働中。垂直⽅向1,000mおきに「ベース」と呼ばれる浮遊構造体（ブイ）を規則正しく展開している。各ベースはケーブルで接続されており、最下層のみ⽔平⽅向のケーブルを展開、超⻑距離の送電を⾏う。" />
             <TextMedium text="また各ベースは周辺に⼩さな浮遊蓄電器（エレポール）を展開しており、UGや船はそれに接舷し、電⼒供給を受けられる。" />
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../octam3/" hrefNext="../octam4/" isDisabledPrev={false} isDisabledNext={false}  number={9} TotalNumber={10} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

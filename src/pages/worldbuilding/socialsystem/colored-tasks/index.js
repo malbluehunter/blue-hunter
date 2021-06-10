@@ -47,13 +47,13 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="社会制度 - カラータスク" />
         <WorldContentsInner>
-          <MainContentsTop text="社会制度" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="社会制度" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="カラータスク" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="「たくさんの仕事を作り出した」タスクが「すばらしいタスク」とみなされ、ステータスが特定のカラーで表現される（カラータスク）。地上では「グリーン」や「オレンジ」が、宇宙都市には「パープル」などがあり、⾊の濃淡を含め膨⼤な種類がある。" />
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../fairchain/" hrefNext="../rarity/" isDisabledPrev={false} isDisabledNext={false}  number={6} TotalNumber={8} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

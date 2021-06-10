@@ -73,14 +73,14 @@ GatsbyJSのCLIをインストールするとgatsbyコマンドを利用するこ
 
 3. コンポーネントの追加
 - 下記の通り大文字で始まるタグが一つのコンポーネントとなっています。
-  例） `<TextLeading text="見出しパターン" />`
+  例） `<TextLeading pathname={location.pathname} text="見出しパターン" />`
 - 追加したい場所に貼り付けて、`text`と記載されている場所に任意の文言を追加してください。
 
 4. クラスの追加
 - 下記の通り`class`ではなく、`className`と記載し、クラス名の前に`styles.`をつけます。
 ```
 <div className={styles.textLeading_wrapper}>
-    <TextLeading text="見出しパターン" />
+    <TextLeading pathname={location.pathname} text="見出しパターン" />
 </div>
 ```
 

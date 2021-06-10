@@ -48,10 +48,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Machinery - PHREM" />
         <WorldContentsInner>
-          <MainContentsTop text="Machinery" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Machinery" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="PHREM (Peripheral devices for Human Resource Encoder and Memory)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="An AI device with a Tk encoder and memory function that individuals wear on their body. Kakeru wears his on his arm. By equipping a PHREM device with My-AI, it's possible to assign it a nickname (for example, Kakeru activates his with the name 'OYAJI'), but the official names of each My-AI are linked to the individual's identification number (one per person)." />
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="PHREM devices are divided into low-end (±144), middle range (±720), and high-end (±1440) devices based on the amount of Tk they can store. Kakeru's PHREM device is in the middle range and can accumulate up to 720Tk per day. So for example, if Kakeru had accumulated 100Tk that day, he can ask “How many dollars did I earn today” and will get 20 as the answer." />
@@ -63,7 +63,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_01.png" alt="" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../netbow/" hrefNext="../my-ai/" isDisabledPrev={false} isDisabledNext={false}  number={6} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

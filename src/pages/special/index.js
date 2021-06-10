@@ -81,8 +81,8 @@ const SpecialPage = ({ location }) => {
                   <TextHeading text={"アートコンペ受賞者\n結果発表"} />
                 </div>
                 <div className={styles.line_wrapper}>
-                  <LineImg />
-                  <LineImgSp />
+                  <LineImg pathname={location.pathname} />
+                  <LineImgSp pathname={location.pathname} />
                 </div>
                 <Label04 text="Blue Hunter 大賞" />
                 <div className={styles.prizeMoney_wrapper}>
@@ -115,8 +115,8 @@ const SpecialPage = ({ location }) => {
               </div>
               <div className={styles.section03}>
                 <div className={styles.line_wrapper}>
-                  <LineImg />
-                  <LineImgSp />
+                  <LineImg pathname={location.pathname} />
+                  <LineImgSp pathname={location.pathname} />
                 </div>
                 <Label04 text="審査員特別賞" />
                 <div className={styles.prizeMoney_wrapper}>
@@ -155,8 +155,8 @@ const SpecialPage = ({ location }) => {
                   <TextHeading text="アートコンペ概要" />
                 </div>
                 <div className={styles.line_wrapper}>
-                  <LineImg />
-                  <LineImgSp />
+                  <LineImg pathname={location.pathname} />
+                  <LineImgSp pathname={location.pathname} />
                 </div>
                 {/* テーブル(見出しなし) 開始 */}
                 <div className={styles.table_sub_wrapper}>

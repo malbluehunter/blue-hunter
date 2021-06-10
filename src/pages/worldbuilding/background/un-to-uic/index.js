@@ -49,21 +49,21 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="物語の背景 - 3.国連から超都連へ。" />
         <WorldContentsInner>
-          <MainContentsTop text="物語の背景" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="物語の背景" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="3.国連から超都連へ。" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="2020〜2040年にかけ、国家単位での利害調整を担う国連（UN = United Nations）は地球環境の保全において充分な役割を果たせず、形骸化し、その存在意義が問われていた。20世紀由来の国家という枠組み、その利害のベースにある⾃由経済／資本主義社会、それらの有り様を踏み越えた環境問題の解決。⼈類は何もかも問い直す時期に差し掛かっていたのである。" />
             <TextMedium text="そんな折、新たな統治スタイルとしてグラン＝ムーが確⽴したフェアチェーン由来の「MW⽅式」が脚光を浴び、それを共通基盤とする都市圏同⼠の交流＝iRCOT（超都代表委員会）もまた国連に変わり得る存在とみなされ、⼤きな期待を集めていく。" />
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="超都（iC = independent cities）" />
+              <TextLeading pathname={location.pathname} text="超都（iC = independent cities）" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="直訳は「独⽴都市」。国際連合の「国際」など、国家間を意味する⾔葉にかわり、都市と都市の間で結ばれる条約などに冠される接辞語。超都代表委員会、超都統海軍など。" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="iRCOT（iCitiesRepresentative Committee・・・超都代表委員会）" />
-              <TextLeading text="UiC（United iC・・・超都連)" />
+              <TextLeading pathname={location.pathname} text="iRCOT（iCitiesRepresentative Committee・・・超都代表委員会）" />
+              <TextLeading pathname={location.pathname} text="UiC（United iC・・・超都連)" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="2040年代中盤にはグラン＝ムーを⼿本とする海洋都市圏パクシオラ（CCZ東端）などが次々と竣⼯。それを受けて初期の計画⺟体MWVCは解体され、複数都市圏を統括するiRCOTの発⾜が2044年に宣⾔された。" />
@@ -163,7 +163,7 @@ const WorldPage = ({ location }) => {
               </table>
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../nation-or-city/" hrefNext="../octam1/" isDisabledPrev={false} isDisabledNext={false}  number={5} TotalNumber={10} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

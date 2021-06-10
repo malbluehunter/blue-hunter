@@ -47,16 +47,16 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Machinery - Σ-Glasses" />
         <WorldContentsInner>
-          <MainContentsTop text="Machinery" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Machinery" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Σ-Glasses (Pronounced: ‘Sigma Glasses’)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="Multipurpose goggles designed for ΣR and ΣV. It was invented by Σ, the creator of Hunter Guilds (Minerva and Ourai belong to their guild). The goggles are now a common sight, and protect the wearer's eyes from UV rays and the sea breeze." />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_machinery_10.png" alt="" />
             </div>
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../sigma-jacket/" hrefNext="" isDisabledPrev={false} isDisabledNext={true}  number={9} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

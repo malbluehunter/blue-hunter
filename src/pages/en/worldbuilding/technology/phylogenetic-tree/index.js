@@ -48,10 +48,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Technology - Phylogenetic Tree" />
         <WorldContentsInner>
-          <MainContentsTop text="Technology" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Technology" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Phylogenetic Tree" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="The evolution of life is often represented as a tree, with branches corresponding to the classification of organisms. All living things share the same origin which is the trunk, which then divides into various branches, which in turn divide into new branches and so on until it ends up as a leaf on the end. This leaf corresponds to a single species." />
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="This idea of a phylogenetic tree is now widely accepted, but with the development of molecular biology, the reality is that the branches may be neither so neatly divided nor the leaves so clearly separated as previously thought and that rather the leaves are intermingled. There are various ways to depict the evolution of life, such as circular or even without a starting point." />
@@ -60,7 +60,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_technology_02.png" alt="" />
             </div>
            </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../bioverse/" hrefNext="" isDisabledPrev={false} isDisabledNext={true} number={4} TotalNumber={4} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

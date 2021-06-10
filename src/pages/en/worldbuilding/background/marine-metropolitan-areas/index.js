@@ -48,10 +48,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Background - 1. Birth of Marine Metropolitan Areas" />
         <WorldContentsInner>
-          <MainContentsTop text="Background" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Background" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="1. Birth of Marine Metropolitan Areas" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="Although it wasn’t until around 2020 that it became a highlighted issue, there was a serious blind spot which had been creeping up on us for many years — the exhaustion of common metals such as iron and copper, which we had erroneously believed could be mined in great amounts. In the 2030s, it became necessary to mine manganese nodules for their copper, and thus came the envisioning of the sustainable marine base GRAND/MW. Researchers and engineers came from across the globe with their families to the Republic of Kiribati. They built and ran Tetra/M on the eastern coast of Christmas Island, and 10 years of research resulted in the birth of the first fully sustainable marine living sphere free of outside influence, with a population of approximately 1000." />
             <TextMedium text="Like CERN* before it, GRAND/MW transcended its initial purpose by making significant progress in more than 100 interdisciplinary research subjects. One of these was Fairchain, led by the participation of GRAND/MW's citizens (i.e. researchers and their families) in social experiments allowing them to become a blueprint for the future of human society." />
             <div className={styles.textAnnotation_wrapper}>
@@ -59,7 +59,7 @@ const WorldPage = ({ location }) => {
               <TextAnnotation text="This kind of international joint research is expected to have a huge impact on the economy. In addition to the progress of particle physics, CERN is also the birthplace of the World Wide Web. It could similarly be said that Fairchain is the WWW of GRAND/MW." />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../ccz/" hrefNext="../grandmw/" isDisabledPrev={false} isDisabledNext={false} number={2} TotalNumber={10} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

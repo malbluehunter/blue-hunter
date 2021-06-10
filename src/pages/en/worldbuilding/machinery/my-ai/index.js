@@ -47,16 +47,16 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Machinery - My-AI" />
         <WorldContentsInner>
-          <MainContentsTop text="Machinery" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Machinery" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="My-AI" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="In this era, there are many robotic systems that require a sincere sense of responsibility (such as automatically steering ships). Therefore, it is legally required that such machines are tied to an individual. The AI loaded into these machines are known as My-AI, and individuals breed these with particular care. AIs bred by politicians are political AIs. Collaborative AIs used to maintain social order function as the consensus of the vastly distributed My-AI." />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_01.png" alt="" />
             </div>
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../phrem/" hrefNext="../sigma-jacket/" isDisabledPrev={false} isDisabledNext={false}  number={7} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

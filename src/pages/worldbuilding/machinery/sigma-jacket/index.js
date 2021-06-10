@@ -47,16 +47,16 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="メカ・アイテム - -Σ(シグマ)ジャケット-" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="メカ・アイテム" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="-Σ(シグマ)ジャケット-" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="マイAIをロードできる多機能ライフジャケット。ハンターギルド（またはハンターシップ）のロゴがついているのが⼀般的。" />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_machinery_09.png" alt="" />
             </div>
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../my-ai/" hrefNext="../sigma-glasses/" isDisabledPrev={false} isDisabledNext={false}  number={8} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

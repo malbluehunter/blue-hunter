@@ -6,9 +6,24 @@
   padding: 0 get_vw(10);
   background: transparent;
   line-height: 1.1;
-  border-left: solid 5px #43dbf2;
 
   @include mq(md) {
     @include fz_vw(20);
+  }
+
+  &.color_lightBlue {
+    border-left: solid 5px #43dbf2;
+  }
+  &.color_green {
+    border-left: solid 5px #4ef9cf;
+  }
+  &.color_yellow {
+    border-left: solid 5px #daf4a1;
+  }
+  &.color_blue {
+    border-left: solid 5px #6197e9;
+  }
+  &.color_purple {
+    border-left: solid 5px #c9a1fe;
   }
 }

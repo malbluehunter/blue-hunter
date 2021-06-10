@@ -49,23 +49,23 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Background - 3. From UN to UiC" />
         <WorldContentsInner>
-          <MainContentsTop text="Background" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Background" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="3. From UN to UiC" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="As its name suggests, the United Nations (UN) was responsible for coordinating the interests of nations. However, it did not play a significant enough role in the conservation of the environment and attracted much criticism in the 2020s-2040s, eventually becoming a mere shell of its former self." />
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="Mankind was approaching an age where it was time to question anything and everything, such as the 20th century idea of ‘the state’ consisting of economic liberalism and capitalism and its apathy to the environmental crisis." />
               <TextMediumSub text="It was around this time that GRAND/MW's style of ruling using Fairchain rose to prominence and became known as the MW Method. The system was adopted by other Independent Cities and they developed their own version of the UN known as iRCOT, and attracted a lot of attention from across the globe." />
               <div className={styles.textLeading_wrapper}>
-              <TextLeading text="Independent Cities (iC)" />
+              <TextLeading pathname={location.pathname} text="Independent Cities (iC)" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="The term iC or iCities is used to denote relations between other Independent Cities in the same way 'international' is used to denote relationships between nations. For example, iRCOT and UiC Navy" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="iCities Representative Committee (iRCOT)" />
-              <TextLeading text="United iCities (UiC)" />
+              <TextLeading pathname={location.pathname} text="iCities Representative Committee (iRCOT)" />
+              <TextLeading pathname={location.pathname} text="United iCities (UiC)" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="The mid-2040s saw the establishment of other marine metropolitan areas modelled after GRAND/MW, such as Paxiora on the easternmost part of the CCZ. This led to the dismantling of the MWVC, and the 2044 establishment of iRCOT, which united multiple metropolitan areas." />
@@ -176,7 +176,7 @@ const WorldPage = ({ location }) => {
               </table>
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../nation-or-city/" hrefNext="../octam1/" isDisabledPrev={false} isDisabledNext={false}  number={5} TotalNumber={10} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

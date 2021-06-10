@@ -49,10 +49,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="物語の背景 - The Encyclopedia of ”Octa/M”(1)" />
         <WorldContentsInner>
-          <MainContentsTop text="物語の背景" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="物語の背景" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="The Encyclopedia of ”Octa/M”(1)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="4層構造を基本とし、第1層と第2層は8本のビルで接続され、⼀体の「メガフロート」として⽔上に浮かぶ。" />
             <TextMedium text="第2〜第4層の間にある「ライン」＝2重螺旋のエレベーター（貨物列⾞・トロッコ）が鉱物資源等の運搬を担う。" />
             <TextMedium text="螺旋で囲われた部分は「シリンダー」と呼ばれ、- 1000m近傍まで（酸素極⼩層まで）は養殖等、⽔産事業が展開される。また、産業廃棄物はシリンダーの外へ漏れないように計算されている。" />
@@ -61,7 +61,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_background_05.png" alt="" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="各層の名称" />
+              <TextLeading pathname={location.pathname} text="各層の名称" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="第1層= ST. INSULAM （「島」という意味のラテン語）" />
@@ -70,21 +70,21 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="第4層= ST. SOL UM （「底」という意味のラテン語）" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="各ラインの名称" />
+              <TextLeading pathname={location.pathname} text="各ラインの名称" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="第2〜第3層・・・Vライン" />
               <TextMediumSub text="第3〜第4層・・・Sライン" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="各シリンダーの名称" />
+              <TextLeading pathname={location.pathname} text="各シリンダーの名称" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="第2〜第3層・・・Ｖシリンダー" />
               <TextMediumSub text="第3〜第4層・・・Ｓシリンダー" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../un-to-uic/" hrefNext="../octam2/" isDisabledPrev={false} isDisabledNext={false} number={6} TotalNumber={10} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

@@ -47,13 +47,13 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Social System - Colored Tasks" />
         <WorldContentsInner>
-          <MainContentsTop text="Social System" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Social System" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Colored Tasks" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="A task that 'creates a lot of work' is considered a 'superb task'. It is indicated as such with a particular color and is therefore known as a Colored Task. Tasks in terrestrial areas are usually 'green' and 'orange', and tasks in extraterrestrial areas are often 'purple'. As the colors come in different shades, there are a huge number of types of colored tasks." />
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../fairchain/" hrefNext="../rarity/" isDisabledPrev={false} isDisabledNext={false}  number={6} TotalNumber={8} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

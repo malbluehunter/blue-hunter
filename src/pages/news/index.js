@@ -47,10 +47,10 @@ const NewsPage = ({ location }) => {
         <BreadShort page01="TOP" href01="/" page02="ニュース" />
         <NewsContentsInner>
           <div className={styles.contents_01}>
-            <MainContentsTop text="2021.6.8" />
-            <MainContentsMiddleWorld>
+            <MainContentsTop pathname={location.pathname} text="2021.6.8" />
+            <MainContentsMiddleWorld pathname={location.pathname}>
               <TextHeading text="Blue Hunter公式アートコンペ開催Blue Hunter公式アートコンペ開催2行の場合" />
-              <ContentsLine />
+              <ContentsLine pathname={location.pathname} />
               <div className={styles.img_wrapper}>
                 <img src="/news/news_img01.png" alt="" />
               </div>
@@ -58,16 +58,16 @@ const NewsPage = ({ location }) => {
                 <TextMediumTrim text="「「Blue Hunter」のアートコンペの公募を開始しました。ニュースの記事がはいりますダミーテキスト200文字以上は省略して続きを読むボタンが表示される想定です。ニュースの記事がはいりますダミーテキスト200文字以上は省略して続きを読むボタンが表示される想定です。ニュースの記事がはいりますダミーテキスト200文字以上は省略して続きを読むボタンが表示される想定です。「「Blue Hunter」のアートコンペの公募を開始しました。ニュースの記事がはいりますダミーテキスト200文字以上は省略して続きを読むボタンが表示される想定です。ニュースの記事がはいりますダミーテキスト200文字以上は省略して続きを読むボタンが表示される想定です。ニュースの記事がはいりますダミーテキスト200文字以上は省略して続きを読むボタンが表示される想定です。" />
               </div>
             </MainContentsMiddleWorld>
-            <MainContentsBottom />
+            <MainContentsBottom pathname={location.pathname} />
           </div>
           <div className={styles.contents_02}>
-            <MainContentsTop text="2021.6.7" />
-            <MainContentsMiddleWorld>
+            <MainContentsTop pathname={location.pathname} text="2021.6.7" />
+            <MainContentsMiddleWorld pathname={location.pathname}>
               <TextHeading text="サイト公開しました" />
-              <ContentsLine />
+              <ContentsLine pathname={location.pathname} />
               <TextMediumTrim text="このたび、「Blue Hunter」の公式Webサイトを公開しました。Webサイトでは、「Blue Hunter」の情報や大切なお知らせを随時発信してまいります。" />
             </MainContentsMiddleWorld>
-            <MainContentsBottom />
+            <MainContentsBottom pathname={location.pathname} />
           </div>
         </NewsContentsInner>
       </LayoutTwoColumn>

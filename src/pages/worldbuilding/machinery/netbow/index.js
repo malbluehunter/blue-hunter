@@ -48,10 +48,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="メカ・アイテム - -ネットボウ-" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="メカ・アイテム" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="-ネットボウ-" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="⽣き物を傷つけず捕らえられるネット発⽣器。普段は⼸（ボウ）の形状をしている。「ネットボウ！」のかけ声とともに球形に展開する。球体の内側の圧⼒や酸素量などを調整できるため、とらえた⽣体を傷つけず、かつ外敵からも守る。" />
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="構造⽔を利⽤した電磁柵（⽔分⼦の構造因⼦を利⽤して常温氷の網⽬を作ることができる）であり、保護⼠たちが⽣物捕獲に利⽤する。個⼈タイプは最⼤で直径5メートル程に拡張できるが、かなりの腕⼒が必要。" />
@@ -66,7 +66,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_machinery_06.png" alt="" />
             </div>
            </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../nano-ball/" hrefNext="../phrem/" isDisabledPrev={false} isDisabledNext={false}  number={5} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

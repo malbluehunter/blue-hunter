@@ -48,10 +48,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="物語の背景 - 2.国家か、都市か。" />
         <WorldContentsInner>
-          <MainContentsTop text="物語の背景" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="物語の背景" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="2.国家か、都市か。" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="CCZの鉱物資源であるマンガン団塊（多⾦属団塊）は海底の表⾯に広く分布しており、⽯油などとは違って採掘しきった後は⽔平移動を余儀なくされる。そのため、あらかじめ⽔平に拡張を⾒込んだ「海洋都市圏」が計画され、発展した。（下図はグラン＝ムー構想）" />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_background_04.png" alt="" />
@@ -64,7 +64,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="グラン＝ムーの成功を受け、2040年代後半には同じCCZ内に海洋都市圏パクシオラが、また⻄太平洋にはコバルトリッチクラスト採掘を⽬的としたジーグ、⼤⻄洋では海嶺のエネルギー利⽤を⽬的としたアトラス等も竣⼯。いずれもMW⽅式とよばれる、タスクシステム／フェアチェーンを基礎とする⾃治を標榜し、多くの学術系・技術系移⺠を募り、受け⼊れた。2050年代後半には北⽶のオルトフランなど地上都市でもMW⽅式の採⽤が進み、国家による旧態依然とした統治は形骸化しつつある。" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../grandmw/" hrefNext="../un-to-uic/" isDisabledPrev={false} isDisabledNext={false}  number={4} TotalNumber={10} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

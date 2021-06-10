@@ -47,17 +47,17 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Technology - Bioverse" />
         <WorldContentsInner>
-          <MainContentsTop text="Technology" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Technology" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Bioverse" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="A virtual user interface that expresses the characteristics of living things and the relationships between species via cards. It can use CG to transform into various shapes such as becoming spherical or flat. The protagonist can use them when facing enemies or creatures. Used by the main characters when fighting against enemies and creatures. It can switch between different modes, usually the Phylogenetic Tree Mode and the Relative Mode. when being used in the Control Room, it is operated by voice. When being used underwater, it is operated by brain waves in the above-mentioned ΣR/ΣV." />
             <TextMedium text="One of the highlights of this system is seeing the main characters use the cards to transform their Nano Ball." />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_technology_01.png" alt="" />
             </div>
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../ug/" hrefNext="../phylogenetic-tree/" isDisabledPrev={false} isDisabledNext={false} number={3} TotalNumber={4} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

@@ -48,10 +48,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Technology - ΣR/ΣV" />
         <WorldContentsInner>
-          <MainContentsTop text="Technology" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Technology" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="ΣR/ΣV (Pronounced: ‘Sigma-R / Sigma-View’)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="A virtual space UI used by Hunters while underwater (may also refer to the high performance underwater goggles used to view it). It reacts to brain waves, and the user needs to say 'SUBMERGE' in their mind in order to log in. The command to log out is 'EMERGE'. The sea will display as pure white, and coordinates are mapped out with a mesh-like grid. The view within the ΣV corresponds exactly to the real world, and Hunters use the colors displayed in these 'blocks' to move, think and capture the target specimens." />
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="Example" />
@@ -66,7 +66,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_01.png" alt="" />
             </div>
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="" hrefNext="../ug/" isDisabledPrev={true} isDisabledNext={false} number={1} TotalNumber={4} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

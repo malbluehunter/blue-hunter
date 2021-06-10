@@ -47,10 +47,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="物語の背景 - The Encyclopedia of ”Octa/M”(2)" />
         <WorldContentsInner>
-          <MainContentsTop text="物語の背景" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="物語の背景" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="The Encyclopedia of ”Octa/M”(2)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="上空から⾒下ろすと、太陽電池から成る円環と8つの⾵⼒発電機から成る正8⾓形の組み合わせがみてとれる。" />
             <TextMedium text="各タワー間は真っ直ぐな道路（兼滑⾛路）が繋いでおり、OctaWayやOctaRidge（⼭背）など、Octa-という名称で呼ばれている。" />
             <TextMedium text="中央がカルデラのように凹んでおり、海⽔が溜まった直径500mほどの⼈⼯礁湖
@@ -59,7 +59,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_background_06.png" alt="" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../octam1/" hrefNext="../octam3/" isDisabledPrev={false} isDisabledNext={false}  number={7} TotalNumber={10} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

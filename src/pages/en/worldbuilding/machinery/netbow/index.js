@@ -48,10 +48,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Machinery - Netbow" />
         <WorldContentsInner>
-          <MainContentsTop text="Machinery" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Machinery" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Netbow" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="A net generator that can capture living creatures without harming them. It usually takes the shape of an archery bow. It will expand into a spherical shape at the user’s command word “Netbow!”. The pressure and oxygen levels inside the sphere can be adjusted so as not to harm the captured specimen and to also keep it sheltered from foreign objects or creatures. The net itself consists of a water-based electromagnetic net which is a mesh of normal temperature ice created using the structural factors of water molecules." />
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="Personal Netbows can expand to a max diameter of around 5m, but requires considerable strength from the wielder" />
@@ -66,7 +66,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_machinery_06.png" alt="" />
             </div>
            </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../nano-ball/" hrefNext="../phrem/" isDisabledPrev={false} isDisabledNext={false}  number={5} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

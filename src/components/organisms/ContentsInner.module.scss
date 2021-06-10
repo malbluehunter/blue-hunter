@@ -9,19 +9,19 @@
 }
 .main_contents_area_top {
   padding: get_vw_sp(10) get_vw_sp(27) 0;
-  background: url("/common/contentsArea_top.webp") no-repeat;
-  background-position: get_vw(-5) top;
-  background-size: 100%;
+  background: url("/common/contentsArea_top_lightBlue.webp") no-repeat;
+  background-position: get_vw_sp(2) top;
+  background-size: 98.9% 101%;
   height: get_vw_sp(21);
 
   @include mq(md) {
-    background-position: get_vw(-1) top;
+    background-position: get_vw(10) top;
     height: get_vw(76);
     padding: get_vw(19) get_vw(50) get_vw(3);
   }
 }
 .main_contents_area_bottom {
-  background: url("/common/contentsArea_bottom.webp") no-repeat;
+  background: url("/common/contentsArea_bottom_lightBlue.webp") no-repeat;
   background-position: center bottom;
   background-size: 100%;
   background-position: get_vw_sp(-1) get_vw_sp(0);
@@ -29,7 +29,6 @@
 
   @include mq(md) {
     height: get_vw(110);
-    background-position: get_vw(-1) get_vw(0);
+    background-position: get_vw(-2) get_vw(0);
   }
 }
-

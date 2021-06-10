@@ -47,13 +47,13 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Social System - Gains" />
         <WorldContentsInner>
-          <MainContentsTop text="Social System" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Social System" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Gains" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="Individuals who gain a lot of Tk through contributions to society are selected as 'social drivers'. They usually become class representatives, may end up taking part in the politics of their city and are sometimes even selected to travel between cities to participate in meetings." />
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../link/" hrefNext="../losses/" isDisabledPrev={false} isDisabledNext={false} number={3} TotalNumber={8} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

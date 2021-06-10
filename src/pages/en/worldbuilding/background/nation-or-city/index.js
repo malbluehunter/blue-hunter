@@ -48,10 +48,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Background - 2. A Nation? A City?" />
         <WorldContentsInner>
-          <MainContentsTop text="Background" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Background" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="2. A Nation? A City?" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="Manganese nodules (polymetallic clusters) are widely distributed on the surface of the seabed in the CCZ. Unlike when extracting petroleum, miners need to move horizontally after mining these nodules, which is why Marine Metropolitan Areas were designed with the foresight of being able to expand horizontally.  (Fig below is of GRAND/MW conceptual plan)" />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_background_04.png" alt="" />
@@ -70,7 +70,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="In the late 2050s, the MW Method was also adopted by terrestrial cities such as Ortofran in North America, and the days of being ruled by the nation seemed to come to a close." />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../grandmw/" hrefNext="../un-to-uic/" isDisabledPrev={false} isDisabledNext={false}  number={4} TotalNumber={10} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

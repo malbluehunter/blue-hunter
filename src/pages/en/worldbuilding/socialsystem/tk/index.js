@@ -47,17 +47,17 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Social System - Tasks (Tk)" />
         <WorldContentsInner>
-          <MainContentsTop text="Social System" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Social System" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Tasks (Tk)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="A Task (Tk) is a unit that is updated every minute with either Gains or Losses based on behavior. They are documented within Fairchain and therefore absolutely cannot be tampered with. Receiving only Gains in a single day would result in +1440Tk. However, the average daily total usually amounts to between -100Tk and +100Tk due to unavoidable Losses. People or organizations who have gained Tk in the past are able to make Losses within that range. It is said that if utilized properly, a single citizen could possibly accumulate thousands to tens of thousands of Tk per year. Tk are also known as 'the contents of the wallet'. Citizens of marine cities are unable to avoid Losses of around 500Tk per day due to food, clothing and shelter (known as Minimum Loss), but it can be offset by the Gains of each city. In other words, each resident may be able to get a minimum Gain of about 500Tk per day just by that. Most residents are able to live at ±0Tk every day." />
             <TextMedium text="For reference, 100Tk is about the equivalent of 10 USD. The shark fin bowl that Kakeru ate is worth 2000Tk." />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_01.png" alt="" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="" hrefNext="../link/" isDisabledPrev={true} isDisabledNext={false} number={1} TotalNumber={8} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

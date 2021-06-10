@@ -48,13 +48,13 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="社会制度 - フェアチェーン" />
         <WorldContentsInner>
-          <MainContentsTop text="社会制度" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="社会制度" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="フェアチェーン" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="全世界のタスクは⾰新的なブロックチェーン技術である量⼦情報分散システム「フェアチェーン」で管理され、あらゆる営みが超⾼速量⼦演算網を使い、秒単位で更新されている。個⼈のIDと各タスクは厳密に結び付けられており、改竄不可能。その中で、特に価値があると認定されたタスクには、多い時で数万〜数⼗万ものノーマルなタスクが連結（エンゲージ）される。" />
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../losses/" hrefNext="../colored-tasks/" isDisabledPrev={false} isDisabledNext={false}  number={5} TotalNumber={8} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

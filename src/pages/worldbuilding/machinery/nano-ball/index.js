@@ -49,10 +49,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="メカ・アイテム - -ナノボール-" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="メカ・アイテム" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="-ナノボール-" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="作戦遂⾏の切り札である変形ロボット。制御コアの周囲を⼈⼯昆⾍（ナノマシン）で被われたボール型ユーティリティ。ハンターの命令によって特定の⽣物や道具に変形（擬態）する。ターゲット⽣物が苦⼿なもの、あるいは好物へと変貌することで、捕獲ミッションをスムースに遂⾏できる。" />
             <div className={styles.textAnnotation_wrapper}>
               <TextAnnotation text="＊どんな⽣物に変形するか、カード型ＵＩで指定。" />
@@ -70,7 +70,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="第3世代以降は⾷糧にもできるため、サバイバルキットとして常備されるようになった。「こんなもの⾷べるぐらいなら死んだほうがマシ（ヴィオラ・談）」" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../bounty-kit/" hrefNext="../netbow/" isDisabledPrev={false} isDisabledNext={false}  number={4} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

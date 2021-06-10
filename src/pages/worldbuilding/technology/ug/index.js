@@ -47,14 +47,14 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="テクノロジー - UG［Underwater Gear］" />
         <WorldContentsInner>
-          <MainContentsTop text="テクノロジー" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="テクノロジー" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="UG［Underwater Gear］" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="海中建機・探索ロボットの総称。" />
             <TextMedium text="この時代、海中には電⼒網のシーフォースがはりめぐらされているため、ロボットたちは浮上することなく、ほぼ無限に海中で稼働し続けられる。全⻑100メートルを超える⼤きさのデカブツも存在する。また、事故で操作不能となった巨⼤な建機が「幽霊UG」となり、勝⼿に動き回っていることもあるという・・・" />
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../sigmar-sigmaview/" hrefNext="../bioverse/" isDisabledPrev={false} isDisabledNext={false} number={2} TotalNumber={4} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

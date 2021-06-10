@@ -47,10 +47,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Background - Encyclopedia of Octa/M (3)" />
         <WorldContentsInner>
-          <MainContentsTop text="Background" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Background" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Encyclopedia of Octa/M (3)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMediumSub text="The second layer (VADUM) consists of a factory located in a huge cavity, which was responsible for the automatic construction of the 3rd Layer using a 3D printer." />
             <TextMediumSub text="Likewise, the 3rd layer was responsible for the construction of the 4th layer. The diameter of each layer gets smaller and smaller, making the 4th layer the smallest." />
             <TextMediumSub text="The 4th layer is mainly responsible for the mining and refinement of mineral resources and energy. The 3rd layer contains a ballast and Elepoles as well as a docking station for the dispatch of UG (Underwater Gear). The 2nd layer contains a ballast as well as a manufacturing plant and various research facilities." />
@@ -59,7 +59,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_background_07.png" alt="" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../octam2/" hrefNext="../seaforce/" isDisabledPrev={false} isDisabledNext={false}  number={8} TotalNumber={10} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

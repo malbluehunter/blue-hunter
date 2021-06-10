@@ -49,10 +49,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Machinery - Nano Ball" />
         <WorldContentsInner>
-          <MainContentsTop text="Machinery" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Machinery" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Nano Ball" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="This transforming robot is a Hunter’s trump card during their operations. A ball-shaped utility consisting of a control core and covered in nanomachines. It can transform into other creatures and even objects at the Hunter's command. By mimicking things the target creature may like or even dislike, capture missions can run much more smoothly." />
             <div className={styles.textAnnotation_wrapper}>
               <TextAnnotation text="* The transformation is determined using a card-shaped UI." />
@@ -70,7 +70,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="3rd Gen. Nano Balls and later are able to provide edible rations, and therefore are also used as a survival kit. According to Viola “Starvation is the better option rather than this.”" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../bounty-kit/" hrefNext="../netbow/" isDisabledPrev={false} isDisabledNext={false}  number={4} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

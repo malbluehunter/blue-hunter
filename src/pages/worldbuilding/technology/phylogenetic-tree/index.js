@@ -48,10 +48,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="テクノロジー - 系統樹" />
         <WorldContentsInner>
-          <MainContentsTop text="テクノロジー" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="テクノロジー" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="系統樹" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="⽣命の進化を「樹」に⾒⽴てて表したもので、⽣物の「分類」を「枝」に⾒⽴てている。すべての⽣物はある1つの種から⽣じ、その種がいろいろな「枝」に分かれ、さらにその枝がまた新たな枝に分かれ・・・といった具合にどんどん枝分かれしていき、最後には「葉(種にあたる)」がつく、といった具合。" />
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="この系統樹という考え⽅は現在広く受け⼊れられているが、分⼦⽣物学の発展に伴い、実際はきれいに枝分かれがしており葉がはっきりわかれている・・・というわけではなく、その葉同⼠も⼊り乱れている、という⾒⽅もある。描き⽅にも円型、あるいは始点のないものなど、様々ある。" />
@@ -60,7 +60,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_technology_02.png" alt="" />
             </div>
            </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../bioverse/" hrefNext="" isDisabledPrev={false} isDisabledNext={true} number={4} TotalNumber={4} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

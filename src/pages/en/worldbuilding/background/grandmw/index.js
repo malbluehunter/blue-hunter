@@ -48,13 +48,13 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Background - GRAND/MW" />
         <WorldContentsInner>
-          <MainContentsTop text="Background" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Background" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="GRAND/MW" />
             <TextMediumSub text="Pronunciation: 'Gran Mu'" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="Overview" />
+              <TextLeading pathname={location.pathname} text="Overview" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="A marine metropolitan area developed with the aim of both making use of the resource-abundant marine area CCZ as well as to protect the environment. It began expanding from near Kiribati's Line Islands." />
@@ -67,25 +67,25 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_background_03.png" alt="" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="Population" />
+              <TextLeading pathname={location.pathname} text="Population" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="GRAND/MW is currently home to 136,000 residents. They are of varying descent such as Japanese, French, American, Micronesian/Polynesian and so on. Currently 20,000 people have relocated to Octa/M." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="Location" />
+              <TextLeading pathname={location.pathname} text="Location" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="GRAND/MW spreads 500km east from the easternmost tip of the Republic of Kiribati (Christmas Island). It is planned to expand to 1000km with the addition of Deca/M." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="Finance/Government" />
+              <TextLeading pathname={location.pathname} text="Finance/Government" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="GRAND/MW’s  developmental organization is the MW Vision Committee (MWVC), which is made up of over 100 enterprises and research organisations. The first city attained self-sufficiency in agriculture, fishing, mineral resources, and energy, as well as advocated a high-degree of self-governing autonomy (MW Method) based on the Fairchain system." />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../marine-metropolitan-areas/" hrefNext="../nation-or-city/" isDisabledPrev={false} isDisabledNext={false}  number={3} TotalNumber={10} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

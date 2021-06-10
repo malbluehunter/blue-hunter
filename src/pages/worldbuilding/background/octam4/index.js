@@ -47,10 +47,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="物語の背景 - The Encyclopedia of ”Octa/M”(4)" />
         <WorldContentsInner>
-          <MainContentsTop text="物語の背景" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="物語の背景" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="The Encyclopedia of ”Octa/M”(4)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <div className={styles.img_wrapper}>
               <picture>
                 <source srcset="/world/world_img_background_08_sp.png" media="(max-width: 767px)"/>
@@ -67,7 +67,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_background_09.png" alt="" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../seaforce/" hrefNext="" isDisabledPrev={false} isDisabledNext={true}  number={10} TotalNumber={10} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

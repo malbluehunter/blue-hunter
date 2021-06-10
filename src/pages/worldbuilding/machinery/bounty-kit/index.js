@@ -47,13 +47,13 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="メカ・アイテム - バウンティキット" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="メカ・アイテム" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="バウンティキット" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="ブルーハンターのアイテム。⽣物や道具に擬態させる「ナノボール」、⽣物を傷つけず捕らえられる電磁ネット発⽣器「ネットボウ」など。それぞれがロボットであり、個⼈が管理するマイAIを転送（ジャックイン）させることができる。各々が同期し、持ち主との会話が可能。" />
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../ryujin/" hrefNext="../nano-ball/" isDisabledPrev={false} isDisabledNext={false}  number={3} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

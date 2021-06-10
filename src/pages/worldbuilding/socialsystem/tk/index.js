@@ -47,17 +47,17 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="社会制度 - Tk -タスク-" />
         <WorldContentsInner>
-          <MainContentsTop text="社会制度" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="社会制度" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Tk -タスク-" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="1分毎に刻まれる⾏動単位。プラス（ゲイン）とマイナス（ロス）があり、フェアチェーンに改竄できない形で記録される。1⽇あたりすべてをゲインすれば累計で+1440Tkとなるが、ロスもあるため、相場的には⼀⽇の累計で-100〜+100Tkの間になる。過去にTkをゲインした⼈（あるいは組織）は、その範囲でのロスが許される。うまく運⽤すれば1⼈あたり年間数千〜数万程度もTkを蓄積するといわれている。別名「財布の中⾝」。" />
             <TextMedium text="海洋都市の住⺠は⾐⾷住で1⽇あたり500Tkほどのロスを避けられない（いわゆるミニマムロス）が、各都市のゲインによって相殺を受けられる。つまり登録市⺠はそれだけで1⽇あたり500Tkほどのミニマムゲインを取得できる。多くの市⺠が⽇々、±0Tkで⽣きていく。感覚的には100Tk=千円。" />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_01.png" alt="" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="" hrefNext="../link/" isDisabledPrev={true} isDisabledNext={false} number={1} TotalNumber={8} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

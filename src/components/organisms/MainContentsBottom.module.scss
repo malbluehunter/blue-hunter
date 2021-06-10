@@ -1,9 +1,8 @@
 @import "../../assets/scss/mixin";
 
-
 .main_contents_area_bottom {
-  background: url("/common/contentsArea_bottom.webp") no-repeat;
   background-position: center bottom;
+  background-repeat: no-repeat;
   background-size: 100%;
   background-position: get_vw_sp(-1) get_vw_sp(0);
   height: get_vw_sp(38);
@@ -11,5 +10,21 @@
   @include mq(md) {
     height: get_vw(80);
     background-position: get_vw(-1) get_vw(0);
+  }
+
+  &.color_lightBlue {
+    background-image: url("/common/contentsArea_bottom_lightBlue.webp");
+  }
+  &.color_green {
+    background-image: url("/common/contentsArea_bottom_green.webp");
+  }
+  &.color_yellow {
+    background-image: url("/common/contentsArea_bottom_yellow.webp");
+  }
+  &.color_blue {
+    background-image: url("/common/contentsArea_bottom_blue.webp");
+  }
+  &.color_purple {
+    background-image: url("/common/contentsArea_bottom_purple.webp");
   }
 }

@@ -47,10 +47,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Road to Blue Hunter - The Organisation of Hunter Guilds" />
         <WorldContentsInner>
-          <MainContentsTop text="Road to Blue Hunter" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Road to Blue Hunter" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="The Organisation of Hunter Guilds" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="Hunters act in teams known as Guilds, of which each member is assigned a role. Each Guild runs a type of ship called a ZEROship, and work is split into 3 rotating shifts." />
             <TextMedium text="Seekers take on the role of collecting data via the analysis of environmental DNA (eDNA) and guide the ship. Protectors take on the role of getting close to specimens in order to investigate or capture them." />
             <TextMedium text="A unit must contain at least one Protector and one Seeker, boarding the ship to complete the mission with somebody above and somebody below the water’s surface.." />
@@ -187,7 +187,7 @@ const WorldPage = ({ location }) => {
               </table>
             </div>
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="" hrefNext="../classes/" isDisabledPrev={true} isDisabledNext={false}  number={1} TotalNumber={2} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

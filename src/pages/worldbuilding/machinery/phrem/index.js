@@ -48,10 +48,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="メカ・アイテム - -フレン-" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="メカ・アイテム" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="-フレン-" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="個⼈が⾝体に装着するTkエンコーダ＆メモリー機能付きAIデバイス。カケルの場合は腕に装着している。マイAIを搭載し、使役する個⼈が愛称で呼ぶことは可能（カケルのフレンは「オヤジ」で起動）だが、マイAIとしての正式名称は個⼈の識別番号に紐付けられている（1⼈あたり1体のみ）。" />
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="フレンはTkの計測性能によってローエンド（±144）、ミドルレンジ（±720）、ハイエンド（±1440）と分かれている。カケルのフレンはミドルレンジで、1⽇あたり最⼤720Tkまでの蓄積が可能。たとえば蓄積されたTkが100だと、カケルが「本⽇の稼ぎはお幾ら万円？」と聞けば、0.1と表⽰してくれる。" />
@@ -66,7 +66,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_01.png" alt="" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../netbow/" hrefNext="../my-ai/" isDisabledPrev={false} isDisabledNext={false}  number={6} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

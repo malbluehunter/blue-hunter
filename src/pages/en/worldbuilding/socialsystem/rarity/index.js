@@ -49,10 +49,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Social System - Rarity (Rrt)" />
         <WorldContentsInner>
-          <MainContentsTop text="Social System" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Social System" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Rarity (Rrt)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="Split into four levels which are: Light( ★ )/Normal( ★★ )/Deep( ★★★ )/Extreme( ★★★★ )" />
             <TextMedium text="In the case of living things, a shade of blue can be seen on the card which corresponds with how important the achievement is." />
             <TextMedium text="Those worth less than 1000Lk are Light, 1000-100,000Lk are Normal, and 100,000-1,000,000 are Deep. There are also some creatures with double rarities, such as those that are classed as both green and blue." />
@@ -62,8 +62,8 @@ const WorldPage = ({ location }) => {
               <TextHeading text="Color Criteria" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="1st Order: Powder Blue" />
-              <TextLeading text="Specimens needing research" />
+              <TextLeading pathname={location.pathname} text="1st Order: Powder Blue" />
+              <TextLeading pathname={location.pathname} text="Specimens needing research" />
             </div>
             <div className={styles.img_wrapper}>
               <picture>
@@ -76,9 +76,9 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="Adjustment request. Physical evidence such as DNA is combined with photographic evidence and eyewitness testimonies to make an informed hypothesis as to the existence of a specimen, even if already extinct. Hunters call these cards “Undiscovered” or “Targets”. They have no official names and so are often called by temporary names based on their physical traits, such as “6 feathers” or “needle scales”." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="2nd Order: Aqua Blue" />
-              <TextLeading text="3rd Order: Sky Blue" />
-              <TextLeading text="4th Order: Royal Blue" />
+              <TextLeading pathname={location.pathname} text="2nd Order: Aqua Blue" />
+              <TextLeading pathname={location.pathname} text="3rd Order: Sky Blue" />
+              <TextLeading pathname={location.pathname} text="4th Order: Royal Blue" />
             </div>
             <div className={styles.img_wrapper}>
               <picture>
@@ -91,7 +91,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="Adjustment request. Either a living or recently deceased specimen has been captured and is considered an extant isolated system and must be thoroughly protected (i.e. Blue-certified cards) due to their scientific importance. Cards registered as Power Blue will be upgraded or even destroyed (if the information was proven to be false) after the Hunter has taken action. AI will certify these cards on a scale of Aqua to Royal Blue." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="5th Order: Taboo Navy" />
+              <TextLeading pathname={location.pathname} text="5th Order: Taboo Navy" />
             </div>
             <div className={styles.img_wrapper}>
               <picture>
@@ -104,7 +104,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="Groups of organisms for which a specimen has been recovered and environmental pollution has been reported. May not be captured by anybody other than a Hunter. In some rare cases these have been upgraded from Blue." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="6th Order: Enemy Purple" />
+              <TextLeading pathname={location.pathname} text="6th Order: Enemy Purple" />
             </div>
             <div className={styles.img_wrapper}>
               <picture>
@@ -117,7 +117,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="Groups of organisms for which a specimen has been recovered and environmental pollution as well as serious harm has been reported. Hunters are to exterminate such organisms. In some rare cases these have been upgraded from Navy." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="7th Order: Disaster Black" />
+              <TextLeading pathname={location.pathname} text="7th Order: Disaster Black" />
             </div>
             <div className={styles.img_wrapper}>
               <picture>
@@ -130,7 +130,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="Of the millions of species in existence, less than 10 species are suspected dangerous enough for this classification. If one encounters such a creature, evacuation of its habitat is mandatory.  Blacklisted. These cards are usually kept secret." />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../colored-tasks/" hrefNext="../road-to-blue/" isDisabledPrev={false} isDisabledNext={false} number={7} TotalNumber={8} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

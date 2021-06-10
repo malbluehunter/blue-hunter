@@ -49,17 +49,17 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="社会制度 - Rrt -レアリティ-" />
         <WorldContentsInner>
-          <MainContentsTop text="社会制度" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="社会制度" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Rrt -レアリティ-" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="Light( ★ )/Normal( ★★ )/Deep( ★★★ )/Extreme( ★★★★ )の4段階。進歩的成果の貴重さに対する権威付けであり、⽣物の場合はカードがその深さの⻘で縁取られる。〜1万Lk未満はLight（ライトブルー）、〜10万Lk未満をNormal、〜100万Lk未満をDeepと位置付ける。両⽣類のグリーンとブルーなど、同⼀⽣物に2種類以上の⾊に対するRrtが与えられるケース（ダブル・レアリティ）もある。Rrtを認定されたタスクは「カラードタスク（海の場合はブルータスク）」と呼ばれる。⼀つのタスクに複数の⾊が付与されることもある。「ブルー狙い」「ブルーが欲しい」という場合は「本⼈が進歩的な成果に相当するTkを実施し、結果として（あるいは事前に）Lkが伸び、AIがLkの成⻑曲線よりRrtを判定するまで」を⾔う。" />
             <div className={styles.textHeading_wrapper}>
               <TextHeading text="生物勧告基準" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="要調査系統群" />
-              <TextLeading text="通称「億水の漂因」" />
+              <TextLeading pathname={location.pathname} text="要調査系統群" />
+              <TextLeading pathname={location.pathname} text="通称「億水の漂因」" />
             </div>
             <div className={styles.img_wrapper}>
               <picture>
@@ -72,8 +72,8 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="調整依頼。遺伝⼦（⾝体の⼀部分）などの物理的な⽣体情報や写真、⽬撃証⾔などを総合し、少なくとも過去に存在したと考えられる未発⾒⽣物群。ハンターたちが「未発⾒」「ターゲット」と呼ぶカード。正式名が与えられず、仮称で呼ばれることが多い。「六枚⽻」「針ウロコ」など。" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="要保護系統群" />
-              <TextLeading text="通称「万青の潜因」" />
+              <TextLeading pathname={location.pathname} text="要保護系統群" />
+              <TextLeading pathname={location.pathname} text="通称「万青の潜因」" />
             </div>
             <div className={styles.img_wrapper}>
               <picture>
@@ -86,8 +86,8 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="調整依頼。⽣体または死後数時間以内の完全な遺体について回収例があり、現⽣する単独系統とみなされ、徹底した保護が求められる科学的に重要な⽣物群（＝ブルーに認定されたカード）。パウダーとして登録された情報はハンターの働き次第でブルーにアップグレードされるか、または偽情報として破棄されるかの⼆択となる。AIによってアクア〜ロイヤルまでレアリティが推定される。" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="要警戒系統群" />
-              <TextLeading text="通称「千碧の禁因」" />
+              <TextLeading pathname={location.pathname} text="要警戒系統群" />
+              <TextLeading pathname={location.pathname} text="通称「千碧の禁因」" />
             </div>
             <div className={styles.img_wrapper}>
               <picture>
@@ -100,8 +100,8 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="⽣体の回収例と環境汚染の被害例が報告されており、ハンター以外の保護⾏為を禁じられた⽣物群。希にブルーからアップグレードされる。" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="要駆除系統群" />
-              <TextLeading text="通称「百紺の滅因」" />
+              <TextLeading pathname={location.pathname} text="要駆除系統群" />
+              <TextLeading pathname={location.pathname} text="通称「百紺の滅因」" />
             </div>
             <div className={styles.img_wrapper}>
               <picture>
@@ -114,8 +114,8 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="⽣体の回収例と環境汚染の被害例、甚⼤な実害が報告されており、ハンターが駆除・殲滅すべき⽣物群。希にタブーからアップグレードされる。" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="災因系統群" />
-              <TextLeading text="通称「十黒の災因」" />
+              <TextLeading pathname={location.pathname} text="災因系統群" />
+              <TextLeading pathname={location.pathname} text="通称「十黒の災因」" />
             </div>
             <div className={styles.img_wrapper}>
               <picture>
@@ -128,7 +128,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="数億種いる現⽣⽣物のなかで⼗種に満たないほどの危険性が疑われる⽣物群。遭遇した場合、⽣息領域からの避難が義務づけられる。ブラックリスト。表に出てこないカード。" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../colored-tasks/" hrefNext="../road-to-blue/" isDisabledPrev={false} isDisabledNext={false} number={7} TotalNumber={8} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

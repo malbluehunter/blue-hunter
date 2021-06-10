@@ -47,17 +47,17 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Background - Encyclopedia of Octa/M (2)" />
         <WorldContentsInner>
-          <MainContentsTop text="Background" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Background" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Encyclopedia of Octa/M (2)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="The top-down view consists of solar cells shaped like a ring and an equilateral octagon made up of eight wind power generators. A straight road-cum-runway connects each tower. The prefix 'Octa-' is often used such as with OctaWay and OctaRidge." />
             <TextMedium text="The center is recessed like the caldera of a volcano, forming an artificial lagoon (OctaLagoon) with a diameter of about 500m. It collects seawater and functions as a tourist attraction. The center of the 1st and 2nd layers runs toward the cylinder in the sea and is nicknamed Fall-Hall." />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_background_06.png" alt="" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../octam1/" hrefNext="../octam3/" isDisabledPrev={false} isDisabledNext={false}  number={7} TotalNumber={10} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

@@ -8,4 +8,20 @@
   @include mq(md) {
     @include fz_vw(14);
   }
+
+  &.color_lightBlue {
+    color: #43dbf2;
+  }
+  &.color_green {
+    color: #4ef9cf;
+  }
+  &.color_yellow {
+    color: #daf4a1;
+  }
+  &.color_blue {
+    color: #6197e9;
+  }
+  &.color_purple {
+    color: #c9a1fe;
+  }
 }

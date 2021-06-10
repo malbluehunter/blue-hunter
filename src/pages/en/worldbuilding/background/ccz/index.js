@@ -23,7 +23,10 @@ const WorldPage = ({ location }) => {
         <html lang="en" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 開始 --------------------------------------- */}
         <title>The World of BLUE HUNTER | BLUE HUNTER Official Site</title>
-        <meta name="description" content="The official website for the BLUE HUNTER project. Free BLUE HUNTER manga starts June 2021! Check out all you need to know about the world of BLUE HUNTER here." />
+        <meta
+          name="description"
+          content="The official website for the BLUE HUNTER project. Free BLUE HUNTER manga starts June 2021! Check out all you need to know about the world of BLUE HUNTER here."
+        />
         <meta name="keywords" content="BLUE HUNTER, BH, BLUE HUNTER Project, Free Comic, Art Contest" />
         <link rel="canonical" href="https://manga.uminohi.jp/en/worldbuilding/background/ccz/" />
         <meta property="og:url" content="https://manga.uminohi.jp/en/worldbuilding/background/ccz/" />
@@ -50,15 +53,17 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Background - 0. Background Knowledge: CCZ" />
         <WorldContentsInner>
-          <MainContentsTop text="Background" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Background" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="0. Background Knowledge: CCZ" />
-            <ContentsLine />
-            <TextMedium text="The Clarion-Clipperton Zone is a submarine fracture zone located between Hawaii and the Clipperton Islands in the Pacific ocean. The area is rich in a type of resource called manganese nodules, the mining of which must be authorised by the International Seabed Authority (based in Kingston, Jamaica). Japan has acquired some mining rights through the private enterprise Deep Oceans Resource Development (DORD). Other countries overseen by the ISA include the UK, Russia, Germany, France, India, China and South Korea. The United States has not ratified the United Nations Convention of the Sea and as such claims mining rights through its own channels.
-" />
+            <ContentsLine pathname={location.pathname} />
+            <TextMedium
+              text="The Clarion-Clipperton Zone is a submarine fracture zone located between Hawaii and the Clipperton Islands in the Pacific ocean. The area is rich in a type of resource called manganese nodules, the mining of which must be authorised by the International Seabed Authority (based in Kingston, Jamaica). Japan has acquired some mining rights through the private enterprise Deep Oceans Resource Development (DORD). Other countries overseen by the ISA include the UK, Russia, Germany, France, India, China and South Korea. The United States has not ratified the United Nations Convention of the Sea and as such claims mining rights through its own channels.
+"
+            />
             {/* クライアント確認のためコメントアウト */}
             {/* <div className={styles.textLeading_wrapper}>
-              <TextLeading text="見出しパターン" />
+              <TextLeading pathname={location.pathname} text="見出しパターン" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン本文パターン。" />
@@ -147,7 +152,7 @@ const WorldPage = ({ location }) => {
             </div> */}
             {/* テーブル(見出しなし) 終了 */}
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="" hrefNext="../marine-metropolitan-areas/" isDisabledPrev={true} isDisabledNext={false} number={1} TotalNumber={10} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

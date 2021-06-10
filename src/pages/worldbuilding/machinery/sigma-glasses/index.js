@@ -47,16 +47,16 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="メカ・アイテム - -Σ(シグマ)グラス-" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="メカ・アイテム" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="-Σ(シグマ)グラス-" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="ΣR（Σリアリティ）、ΣＶ（Σビュー）などに対応する多⽬的ゴーグル。ハンターギルドの創始者であるΣ（シグマ）が開発し、その後普及した。ハンターの眼を潮⾵や紫外線から守る意味もある。" />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_machinery_10.png" alt="" />
             </div>
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../sigma-jacket/" hrefNext="" isDisabledPrev={false} isDisabledNext={true}  number={9} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

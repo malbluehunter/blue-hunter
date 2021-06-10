@@ -47,13 +47,13 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="社会制度 - ロス -悪行-" />
         <WorldContentsInner>
-          <MainContentsTop text="社会制度" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="社会制度" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="ロス -悪行-" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="社会に悪影響を与える「ロス（悪⾏）」（具体的には、化⽯燃料を⼀⽅的に使うなど）は原則として禁じられており、あまりに酷いとタスクの計上が停⽌されたり、移動の禁⽌といった罰則を受ける。但し、ゲインとロスはバランスをとるものであり、トータルでプラスを⽬指すべきものである。" />
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../gains/" hrefNext="../fairchain/" isDisabledPrev={false} isDisabledNext={false} number={4} TotalNumber={8} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

@@ -48,18 +48,18 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="ブルーハンター組織図 - 認定海洋保全官「BLUE HUNTER」の階級" />
         <WorldContentsInner>
-          <MainContentsTop text="ブルーハンター組織図" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="ブルーハンター組織図" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="認定海洋保全官「BLUE HUNTER」の階級" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="class -クラス-" />
+              <TextLeading pathname={location.pathname} text="class -クラス-" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="ハンター評議会（カウンシル）に所属するハンターの階級。クラスアップはLv、DpやBkなど（後述）を総合し、かつ評議会が実績を値踏みして決定する。⽣頼はclass=5、JAZzとビリー＝class4、渚＝class3、⽉⼈とホーク＝class１。カケルは⽬下、class0。" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="ハンターランキング" />
+              <TextLeading pathname={location.pathname} text="ハンターランキング" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="各class毎に公開されているランキング。クラスアップに関わる5つの指標が計算に採⽤されており、善⾏（+Tk、ゲイン）を重ねただけでは伸びない。カケルはclass=0の中で50位前後をうろうろしている。史上最年少でclass=1に昇格を果たした⽉⼈とホークは現在トップ20にランクインし、class2への昇格間近と⾔われている。" />
@@ -68,7 +68,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_ bluehunter_01.png" alt="" />
             </div>
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../guilds/" hrefNext="" isDisabledPrev={false} isDisabledNext={true}  number={2} TotalNumber={2} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

@@ -3,11 +3,13 @@ import LineImg from "../atoms/LineImg"
 import LineImgSp from "../atoms/LineImgSp"
 import * as styles from "./ContentsLine.module.scss"
 
-const ContentsLine = () => {
+const ContentsLine = props => {
+  const { pathname } = props
+
   return (
     <div className={styles.line}>
-      <LineImg />
-      <LineImgSp />
+      <LineImg pathname={pathname} />
+      <LineImgSp pathname={pathname} />
     </div>
   )
 }

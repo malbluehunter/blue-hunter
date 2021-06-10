@@ -47,16 +47,16 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="メカ・アイテム - -マイAI-" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="メカ・アイテム" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="-マイAI-" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="この時代、責任能⼒を問われる条件下で⽤いるロボット（事故を起こす可能性のある⾃動操舵船など）は個⼈にひもづけられることが義務化されており、そういったロボットのAIは「マイAI」と呼ばれ、個⼈が注意深くブリーディングする。政治AIなども政治家である個⼈がブリーディングしたものとみなされる。社会維持に使われる共働AIは膨⼤に分散するマイAIの総意として機能する。" />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_01.png" alt="" />
             </div>
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../phrem/" hrefNext="../sigma-jacket/" isDisabledPrev={false} isDisabledNext={false}  number={7} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

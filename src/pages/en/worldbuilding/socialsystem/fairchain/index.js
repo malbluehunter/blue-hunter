@@ -48,15 +48,15 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Social System - Fairchain" />
         <WorldContentsInner>
-          <MainContentsTop text="Social System" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Social System" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Fairchain" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="Tasks around the world are managed by Fairchain, an innovative quantum information-distributing blockchain system." />
             <TextMedium text="Tasks around the world are managed by Fairchain, an innovative quantum information-distributing blockchain system. Utilizing an ultra-high-speed quantum network, all activity is updated at the rate of once every second." />
             <TextMedium text="One’s Tk are strictly tied to one’s personal ID and cannot be falsified. Tens or hundreds of thousands of normal Tasks are engaged to other Tasks that are identified as particularly valuable." />
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../losses/" hrefNext="../colored-tasks/" isDisabledPrev={false} isDisabledNext={false}  number={5} TotalNumber={8} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

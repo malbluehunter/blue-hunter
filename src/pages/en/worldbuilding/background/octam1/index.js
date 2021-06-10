@@ -49,10 +49,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Background - Encyclopedia of Octa/M (1)" />
         <WorldContentsInner>
-          <MainContentsTop text="Background" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Background" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Encyclopedia of Octa/M (1)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="Based on a four-layer structure, the first and second layers are connected by eight buildings and float on the water as a single 'mega float'. Freight trains and carts responsible for the transportation of mineral resources run along a set of double-helix elevators known as the 'line' that runs between the 2nd and 4th layers." />
             <TextMedium text="The areas surrounded by the helix are called 'cylinders', and fisheries and other aquaculture can be found until about 1000m below sea level, which is where the OMZ (oxygen minimum zone) begins. Industrial waste is carefully calculated to ensure there is no leakage from the cylinder." />
             <TextMedium text="There are eight elevators (mainly for human use) situated at the bottom of the eight towers, which are able to move vertically by applying hydro-structure (adjusting water pressure). The 2nd and 3rd layers are anchored to the seabed with wires, and balls that function as ballasts move up and down to independently keep each layer horizontal." />
@@ -60,7 +60,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_background_05.png" alt="" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="Names for each layer" />
+              <TextLeading pathname={location.pathname} text="Names for each layer" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="1st Stratum = ST. INSULAM" />
@@ -79,21 +79,21 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="From the latin for base" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="Names for each line" />
+              <TextLeading pathname={location.pathname} text="Names for each line" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="Between strata 2-3......v-line" />
               <TextMediumSub text="Between strata 3-4......s-line" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="Names for each cylinder" />
+              <TextLeading pathname={location.pathname} text="Names for each cylinder" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="Between strata 2-3......V cylinder" />
               <TextMediumSub text="Between strata 3-4......S cylinder" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../un-to-uic/" hrefNext="../octam2/" isDisabledPrev={false} isDisabledNext={false} number={6} TotalNumber={10} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

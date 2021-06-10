@@ -47,10 +47,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="物語の背景 - The Encyclopedia of ”Octa/M”(3)" />
         <WorldContentsInner>
-          <MainContentsTop text="物語の背景" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="物語の背景" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="The Encyclopedia of ”Octa/M”(3)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMediumSub text="第2層（VADUM）は広⼤な空洞の⼯場であり、3Dプリンターを使った第３層の⾃動建造を担った。第3層も同じく空洞型で、第4層の⾃動建造を担うことから、原理上、最下層が最も直径が⼩さい。" />
             <TextMediumSub text="第4層は主に鉱物資源とエネルギーの採掘・精製を、第3層はバラストおよびエレポールやＵＧの発着／補修ドックを、そして第2層はバラストおよび製造業、さまざまな研究開発を担う。" />
             <TextMediumSub text="⼈間の居住区はすべて第1層のインスラムに集約されており、1万世帯、3〜6万⼈程度の定住が可能。直径3kmの円＝およそ9km2は、千代⽥区よりやや狭い。" />
@@ -58,7 +58,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_background_07.png" alt="" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../octam2/" hrefNext="../seaforce/" isDisabledPrev={false} isDisabledNext={false}  number={8} TotalNumber={10} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

@@ -48,12 +48,12 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="社会制度 - ブルーへの道程" />
         <WorldContentsInner>
-          <MainContentsTop text="社会制度" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="社会制度" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="ブルーへの道程" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="1.撮影" />
+              <TextLeading pathname={location.pathname} text="1.撮影" />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_07.png" alt="" />
@@ -62,7 +62,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="誰かがUGなどを使って撮影した⽣物の写真・動画が、フェアチェーンに登録され、全世界に共有される。" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="2.分析" />
+              <TextLeading pathname={location.pathname} text="2.分析" />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_08.png" alt="" />
@@ -71,7 +71,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="撮影当時の座標、および関係したUGの⽔質調査結果等が分析にかけられ、環境DNAが判明し、そこから研究者たちによって⽣ 物の種類が推測され、新種の可能性が⾼ければ探索計画（バウンティプロジェクト）が始まる。（Wanted! の状態）" />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="3.保護" />
+              <TextLeading pathname={location.pathname} text="3.保護" />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_09.png" alt="" />
@@ -80,7 +80,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="撮影された⽣物が新種であると判定されるには、⽣体の保護とDNA解析が必要になる。それが済んで、初めて最初の写真の発⾒者および保護したハンターに「ブルー」が付与される。" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../rarity/" hrefNext="" isDisabledPrev={false} isDisabledNext={true} number={8} TotalNumber={8} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

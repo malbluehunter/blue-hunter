@@ -73,8 +73,8 @@ const SpecialPage = ({ location }) => {
                   <TextHeading text={"アートコンペ開催"} />
                 </div>
                 <div className={styles.line_wrapper}>
-                  <LineImg />
-                  <LineImgSp />
+                  <LineImg pathname={location.pathname} />
+                  <LineImgSp pathname={location.pathname} />
                 </div>
                 <div className={styles.text_wrapper}>
                   <TextMedium text="ブルーハンターをテーマにしたアートコンペを開催中です。詳しくは以下をご覧ください。" />

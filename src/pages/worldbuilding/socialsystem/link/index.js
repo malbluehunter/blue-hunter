@@ -47,13 +47,13 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="社会制度 - Lk -リンク-" />
         <WorldContentsInner>
-          <MainContentsTop text="社会制度" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="社会制度" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Lk -リンク-" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="1つのTkに付随する重要度の指標。他のタスクに参照されている（リンクが貼られている＝エンゲージ）数をフェアチェーン上でカウントする。たとえば「数学におけるゼロの発⾒」といった⼈類史上に残る進歩的な成果には数千万Lkが貼られることもあり得る。6枚⽻については、保護される前に70万Lkもがカウントされており、発⾒後は200万Lkまで伸ばした。解明が進むことにより、Lkの伸びは指数関数的に鈍っていくことが知られており、AIの統合組織u-AI（ユナイテッドAI）が漸近するLk数を予想し、Rrtを認定する。（注：遂⾏された当時のTkがプラスかマイナスかには依拠しない）。別名「尊さ」。" />
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../tk/" hrefNext="../gains/" isDisabledPrev={false} isDisabledNext={false} number={2} TotalNumber={8} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

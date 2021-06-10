@@ -47,10 +47,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="ブルーハンター組織図 - ハンターギルド組織図" />
         <WorldContentsInner>
-          <MainContentsTop text="ブルーハンター組織図" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="ブルーハンター組織図" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="ハンターギルド組織図" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="ハンターはチーム単位（ギルド）で⾏動し、役割分担がある。また船（ゼロシップ）はギルドと独⽴で運営され、乗組員は3交代制で運航を司る。環境DNA分析などで情報を収集し、船を導く役割を「シーカー（誘導⼠）」、⾄近距離へ接近し、調査あるいは捕獲（保護）する役割を「プロテクター（保護⼠）」という。この2⼈が最⼩単位。船の上と⽔中に分かれ、ミッションを遂⾏するため船に乗る。捕獲した⽣物の分析・管理（飼育）を担う「サーチャー（⽣物⼠）」は、保護⼠およびカデットが兼ねるケースが多い。乗船せずリモートでプロジェクトに参加する場合もある。ギルドによっては、海底のUGを操作する「オペレイター（操縦⼠）」が参加するケースもある。保護⼠とコンビを組み、壮⼤なプロジェクトを遂⾏する。" />
             <div className={styles.table_sub_wrapper}>
               <table className={styles.table_sub}>
@@ -183,7 +183,7 @@ const WorldPage = ({ location }) => {
               </table>
             </div>
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="" hrefNext="../classes/" isDisabledPrev={true} isDisabledNext={false}  number={1} TotalNumber={2} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

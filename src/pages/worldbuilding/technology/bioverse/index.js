@@ -47,16 +47,16 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="テクノロジー - 生態儀 -ビオバース-" />
         <WorldContentsInner>
-          <MainContentsTop text="テクノロジー" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="テクノロジー" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="生態儀 -ビオバース-" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="⽣物の特徴や種の関係性をカードで表現するバーチャルなユーザーインターフェース。3DCGで変化し、球形（儀）になったり、平⾯になったりする。敵や⽣物との対戦時に主⼈公などが使う。主に系統樹モード、相対モード等が切り替えて使われ、作戦司令室ではサーチャーが⾳声で、⽔中（前述したXRビュー）ではハンターが脳波コマンドにて操作。ナノボールの変形など、この画⾯に対するカードをからめた主⼈公の動作が⼀つの⾒せ場になる。" />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_technology_01.png" alt="" />
             </div>
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../ug/" hrefNext="../phylogenetic-tree/" isDisabledPrev={false} isDisabledNext={false} number={3} TotalNumber={4} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

@@ -48,12 +48,12 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Social System - The Road to Blue" />
         <WorldContentsInner>
-          <MainContentsTop text="Social System" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Social System" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="The Road to Blue" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="1. Photography/Filming" />
+              <TextLeading pathname={location.pathname} text="1. Photography/Filming" />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_07.png" alt="" />
@@ -62,7 +62,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="Somebody captures footage of a creature using Underwater Gear etc and uploads it to the Fairchain so it can be accessed from all over the world." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="2. Analysis" />
+              <TextLeading pathname={location.pathname} text="2. Analysis" />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_08.png" alt="" />
@@ -71,7 +71,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="The environmental DNA (eDNA) is identified by analyzing various details such as the coordinates of where the footage was taken and water samples taken by the UG. Once researchers can make an educated guess as to its species, if it is likely to be a new species, a Bounty Project will begin." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="3. Capture" />
+              <TextLeading pathname={location.pathname} text="3. Capture" />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_sosialsystem_09.png" alt="" />
@@ -80,7 +80,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="It is necessary to capture a specimen and analyze its DNA in order to determine whether or not it is a new species. If so, the person who took the original footage and the Hunter who captured it will be awarded Blue." />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../rarity/" hrefNext="" isDisabledPrev={false} isDisabledNext={true} number={8} TotalNumber={8} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

@@ -47,17 +47,17 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Background - Underwater Electrical Supply Towers (SeaForce)" />
         <WorldContentsInner>
-          <MainContentsTop text="Background" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Background" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Underwater Electrical Supply Towers (SeaForce)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="An autonomous facility that supplies energy to marine cities and UG. Energy is harvested from solar energy, wind power, tidal power and ocean thermal energy." />
             <TextMedium text="Each tower is very large, at about 1000-6000m in height, and there are over 200 of them in the vicinity of GRAND/MW alone." />
             <TextMedium text="Buoy-like floating structures known as bases are deployed every 1000m in vertical directions as specified by regulations." />
             <TextMedium text="Each base is connected by a cable, and horizontal cables connect them on the lower level only so as to be able to transmit power over long distances." />
             <TextMedium text="Near to each base there are small floating capacitors known as Elepoles, which can be used to supply power to UG and ships." />
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../octam3/" hrefNext="../octam4/" isDisabledPrev={false} isDisabledNext={false}  number={9} TotalNumber={10} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

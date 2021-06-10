@@ -47,10 +47,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="メカ・アイテム - ウェイクライダー 龍神" />
         <WorldContentsInner>
-          <MainContentsTop text="メカ・アイテム" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="メカ・アイテム" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="ウェイクライダー 龍神" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="100km/h以上ものスピードを誇るウェイクライダー「⿓神」（遠隔操縦ジェットスキー&amp;合体分離式ウェイクボード）。⽔上ミッションではウェイクライダーの⾳で⽣物をドライブ（追う）またはエスケイプ（逃げる）しつつ、ハンターは最⼤100メートルもの距離をとってターゲットの前後へ、時には空中をジャンプしつつ⾃在に回り込む。⽔中ミッションではシーポッド（いわゆる⽔中スクーター）がこの役割を担う。" />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_machinery_03.jpg" alt="" />
@@ -59,7 +59,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_machinery_04.jpg" alt="" />
             </div>
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../orca/" hrefNext="../bounty-kit/" isDisabledPrev={false} isDisabledNext={false}  number={2} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

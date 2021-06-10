@@ -48,18 +48,18 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Road to Blue Hunter - Classes for Officially-Recognized Marine Conservationists: Blue Hunters" />
         <WorldContentsInner>
-          <MainContentsTop text="Road to Blue Hunter" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Road to Blue Hunter" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Classes for Officially-Recognized Marine Conservationists: Blue Hunters" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="Classes" />
+              <TextLeading pathname={location.pathname} text="Classes" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="Hunters belonging to the Hunter Council are split into classes. Classes are determined by the Hunter's Lv, Dp and Bk, as well as their achievements, which are appraised in a special conference. Ourai and Minerva belong to Class 5. JAZz and Billy belong to Class 4. Nagisa belongs to Class 3. Tsukito and Hawk belong to Class 2, and Kakeru is in the lowest class, Class 0." />
             </div>
             <div className={styles.textLeading_wrapper}>
-              <TextLeading text="Hunter Ranking" />
+              <TextLeading pathname={location.pathname} text="Hunter Ranking" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="Rankings are published for each class. There are five characteristics taken into account when advancing to the next class — simply accumulating Tk is not enough. Kakeru is hovering around 50th place within Class 0. Tsukito is the youngest person to ever be promoted to Class 1, and together with Hawk ranks in the top 20 of their Class. It is said that they are close to being promoted to Class 2." />
@@ -68,7 +68,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_ bluehunter_01_en.png" alt="" />
             </div>
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../guilds/" hrefNext="" isDisabledPrev={false} isDisabledNext={true}  number={2} TotalNumber={2} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

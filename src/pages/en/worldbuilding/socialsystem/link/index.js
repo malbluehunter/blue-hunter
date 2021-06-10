@@ -47,13 +47,13 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Social System - Link (Lk)" />
         <WorldContentsInner>
-          <MainContentsTop text="Social System" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="Social System" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Link (Lk)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="An index of importance associated with a single Task. The number of times it is referenced by other Tasks is counted within the Fairchain. If Lk is assigned then it is said to be ‘engaged’. Tens of millions of Lk can be attributed to achievements that contributed to the progression of human history, such as the discovery of zero in mathematics. For example, 700,000Lk were assigned to the newly-discovered creature '6 Feathers' prior to its capture, and this was later extended to 2 million. As the clarification of the specimen becomes clearer, the Lk growth slows down exponentially. Integrated AI organization “u-AI” (United AI) predicts the asymptotic close of the Lk and certifies the Rrt. (Note: It does not matter if the Tk was plus or minus at the time it was carried out.) Also referred to as 'virtue'." />
           </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="../tk/" hrefNext="../gains/" isDisabledPrev={false} isDisabledNext={false} number={2} TotalNumber={8} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}

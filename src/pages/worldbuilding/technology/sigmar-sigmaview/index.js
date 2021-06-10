@@ -48,10 +48,10 @@ const WorldPage = ({ location }) => {
         {/* パンクズリスト */}
         <Bread page01="TOP" href01="/" page02="世界観・設定" href02="../../" page03="テクノロジー - ΣＲ(シグマアール)/ΣV(シグマビュー)" />
         <WorldContentsInner>
-          <MainContentsTop text="テクノロジー" />
-          <MainContentsMiddleWorld>
+          <MainContentsTop pathname={location.pathname} text="テクノロジー" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="ΣＲ(シグマアール)/ΣV(シグマビュー)" />
-            <ContentsLine />
+            <ContentsLine pathname={location.pathname} />
             <TextMedium text="ハンターが海中で使う仮想空間U/I（およびそれを使うための⾼性能⽔中ゴーグル）。脳波コマンドに反応し、⼼の中で「海転！」と呟くことでログイン。ログアウトは「転海」。" />
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="視界の中で海が真っ⽩になり、メッシュ状に区切られたグリッド（座標世界）が出現する。現実の海に1対1で対応しており、区切られた範囲を⽰す「ブロック」の⾊情報を頼りにハンターは移動し、考え、捕獲すべきターゲット⽣物を追い詰めていく。" />
@@ -69,7 +69,7 @@ const WorldPage = ({ location }) => {
               <img src="/world/world_img_01.png" alt="" />
             </div>
             </MainContentsMiddleWorld>
-          <MainContentsBottom />
+          <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
           <PagerArea hrefPrev="" hrefNext="../ug/" isDisabledPrev={true} isDisabledNext={false} number={1} TotalNumber={4} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
