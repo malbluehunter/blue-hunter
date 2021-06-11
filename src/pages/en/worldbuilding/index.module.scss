@@ -1,0 +1,33 @@
+@import "../../../assets/scss/mixin";
+
+main {
+  position: relative;
+}
+.pageTitle_wrapper {
+  width: 100%;
+  margin: auto;
+
+  @include mq(md) {
+    width: get_vw(421);
+  }
+
+  & img {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+.contents_inner {
+  margin: auto;
+
+  @include mq(md) {
+    margin-top: get_vw(25);
+    width: get_vw(1030);
+  }
+}
+.bnr_area {
+  margin: get_vw_sp(26) calc(50% - 50vw);
+
+  @include mq(md) {
+    width: get_vw(786);
+    margin: get_vw(40) auto 0;
+  }
+}
