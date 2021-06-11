@@ -11,8 +11,8 @@ const LocalNavWorld02 = props => {
   const href01 = "/worldbuilding/socialsystem/tk"
   const href02 = "/worldbuilding/socialsystem/link"
   const href03 = "/worldbuilding/socialsystem/gains"
-  const href04 = "/worldbuilding/socialsystem/fairchain"
-  const href05 = "/worldbuilding/socialsystem/losses"
+  const href04 = "/worldbuilding/socialsystem/losses"
+  const href05 = "/worldbuilding/socialsystem/fairchain"
   const href06 = "/worldbuilding/socialsystem/colored-tasks"
   const href07 = "/worldbuilding/socialsystem/rarity"
   const href08 = "/worldbuilding/socialsystem/road-to-blue"
@@ -26,7 +26,7 @@ const LocalNavWorld02 = props => {
     <div>
       <div className={styles.localNav}>
         <div className={styles.localNav_top} onClick={toggle}>
-          <p className={styles.localNav_top_text}>物語の背景 MENU</p>
+          <p className={styles.localNav_top_text}>社会制度 MENU</p>
           <div className={styles.top_img_wrapper}>
             <img src="/common/local_nav_top_green.webp" />
           </div>
@@ -35,25 +35,25 @@ const LocalNavWorld02 = props => {
         <div className={styles.LocalNav_area} aria-expanded={isOpen}>
           <ol className={styles.LocalNav_list} start="0">
             <li className={`${styles.LocalNav_item} ${pathname.match(href01) ? styles.current : ""}`}>
-              <a href={href01}>Tk</a>
+              <a href={href01}>Tk -タスク-</a>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href02) ? styles.current : ""}`}>
-              <a href={href02}>Lk</a>
+              <a href={href02}>Lk -リンク-</a>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href03) ? styles.current : ""}`}>
-              <a href={href03}>ゲイン</a>
+              <a href={href03}>ゲイン -善行-</a>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href04) ? styles.current : ""}`}>
-              <a href={href04}>フェアチャーン</a>
+              <a href={href04}>ロス -悪行-</a>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href05) ? styles.current : ""}`}>
-              <a href={href05}>ロス</a>
+              <a href={href05}>フェアチェーン</a>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href06) ? styles.current : ""}`}>
               <a href={href06}>カラータスク</a>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href07) ? styles.current : ""}`}>
-              <a href={href07}>Rrt</a>
+              <a href={href07}>Rrt -レアリティ-</a>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href08) ? styles.current : ""}`}>
               <a href={href08}>ブルーへの道程</a>
