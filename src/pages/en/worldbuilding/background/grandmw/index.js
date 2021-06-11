@@ -61,8 +61,8 @@ const WorldPage = ({ location }) => {
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="A marine metropolitan area developed with the aim of both making use of the resource-abundant marine area CCZ as well as to protect the environment. It began expanding from near Kiribati's Line Islands." />
               <TextMediumSub text="GRAND/MW is the first area to be recognised by the UN as an 'Independent City' and is not under the jurisdiction of any nation." />
-              <TextMediumSub text="The first city to be completed was Tetra/M in 2041, followed by Penta/M and later Hexa/M. The fourth city, Octa/M began operation in 2059 and is currently the central city." />
-              <TextMediumSub text="The fifth city, Deca/M is being built over the course of 10 years with plans for it to be double the size of Octa/M. (Octa/M is depicted in the figure to the right)." />
+              <TextMediumSub text="The first city to be completed was Tetra/M in 2041, followed by Penta/M and later Hexa/M. The fourth city, Octa/M, bagan operation in 2059 and is currently the central city." />
+              <TextMediumSub text="The fifth city, Deca/M is being built over the course of 10 years with plans for it to be double the size of Octa/M. (A figure of Octa/M can be seen below)." />
               <TextMediumSub text="GRAND/MW is the oldest of the Marine Metropolitan Areas, and together with Paxiora (located in the eastern part of the CCZ, starting from near Clarion island off the east coast of Central America) forms a central part of the UiC." />
             </div>
             <div className={styles.img_wrapper}>

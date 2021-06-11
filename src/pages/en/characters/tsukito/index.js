@@ -64,7 +64,6 @@ const CharactersPage = ({ location }) => {
                   <TextMedium text="He earned a doctorate in environmental biology at the tender age of 10, but due to illness may not have that much longer to live. He is extremely mature for his age and comes across as more mature than Kakeru and Viola. He is actually intersex, and often finds himself talking about marine life which have the ability to easily change sexes as it reminds him of himself. He dreams of solving the mystery behind his birth." />
                   <TextMedium text="He lives with his mother while his father, Professor Shingyoji, is currently participating in a certain urban development project. He continues to turn down invitations to powerful guilds due to his illness." />
                   <TextMedium text="He can often be found in Gardens 3-6." />
-                  <TextMedium text="Seeing Kakeru work towards fulfilling the dreams of the orphans in the Garden.Life support system" />
                 </div>
               </div>
               <div className={styles.img_area}>

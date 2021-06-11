@@ -85,7 +85,7 @@ const WorldPage = ({ location }) => {
                 <tr className={styles.table_tr}>
                   <td className={styles.td_leading}>2033</td>
                   <td className={styles.td_item}>
-                    onstruction begins on&nbsp;
+                   Contruction begins on&nbsp;
                     <br className={styles.view_sp} />
                     GRAND/MW
                   </td>
@@ -137,7 +137,7 @@ const WorldPage = ({ location }) => {
                     established
                   </td>
                   <td className={styles.td_item}>
-                    MW System Task System&nbsp;
+                    MW Method Task System&nbsp;
                     <br className={styles.view_sp} />
                     established across iCities
                   </td>

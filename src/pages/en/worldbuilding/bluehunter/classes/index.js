@@ -58,7 +58,7 @@ const WorldPage = ({ location }) => {
               <TextLeading pathname={location.pathname} text="Classes" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="Hunters belonging to the Hunter Council are split into classes. Classes are determined by the Hunter's Lv, Dp and Bk, as well as their achievements, which are appraised in a special conference. Ourai and Minerva belong to Class 5. JAZz and Billy belong to Class 4. Nagisa belongs to Class 3. Tsukito and Hawk belong to Class 2, and Kakeru is in the lowest class, Class 0." />
+              <TextMediumSub text="Hunters belonging to the Hunter Council are split into classes. Classes are determined by the Hunter's Lv, Dp and Bk, as well as their achievements, which are appraised in a special conference. Ourai belongs to Class 5. JAZz and Billy belong to Class 4. Nagisa belongs to Class 3. Tsukito and Hawk belong to Class 2, and Kakeru is in the lowest class, Class 0." />
             </div>
             <div className={styles.textLeading_wrapper}>
               <TextLeading pathname={location.pathname} text="Hunter Ranking" />

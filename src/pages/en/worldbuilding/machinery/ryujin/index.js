@@ -53,7 +53,7 @@ const WorldPage = ({ location }) => {
           <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Wake Rider Ryujin" />
             <ContentsLine pathname={location.pathname} />
-            <TextMedium text="Wake Riders consist of a remotely controlled jet ski and an attached wakeboard behind it. Ryujin is a Wake Rider that boasts a top speed of over 100km. Users will operate the Wake Rider with one hand and hold onto a Nano Ball in the other. In missions that take place on the surface of the water, the noise of the Wake Rider will be used to escape, i.e drive creatures to certain points, and Hunters can freely surround the target at distances of no more than 100 meters. At times the Hunters may even jump into the air." />
+            <TextMedium text="Wake Riders consist of a remotely controlled jet ski and an attached wakeboard behind it. Ryujin is a Wake Rider that boasts a top speed of over 100km. In missions that take place on the surface of the water, the noise of the Wake Rider will be used to escape, i.e drive creatures to certain points, and Hunters can freely surround the target at distances of no more than 100 meters. At times the Hunters may even jump into the air." />
             <TextMedium text="For underwater missions, Sea Pods (underwater scooters) perform the same function as Wake Riders." />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_machinery_03.jpg" alt="" />

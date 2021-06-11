@@ -66,7 +66,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="Already attracting global attention for being the location of a huge social experiment, GRAND/MW found itself the center of a new type of social system for humankind thanks to its use of the Task System built using Fairchain; as well as its social structure backed by high productivity." />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="In 2045, before the completion of its second city, the marine metropolitan area GRAND/MW was recognized by the United Nations as independent. Following the success of GRAND/MW, other marine metropolitan areas began to pop up in the late 2040s." />
+              <TextMediumSub text="In 2045, before the completion of its second city, the Marine Metropolitan Area GRAND/MW was recognized by the United Nations as independent. Following the success of GRAND/MW, other Marine Metropolitan Areas began to pop up in the late 2040s." />
               <TextMediumSub text="These areas included Paxiora (located in the CCZ), Zeeg (which focuses on mining the cobalt-rich crust of the Western Pacific) and Atlas (which focuses on using energy from oceanic ridges)." />
               <TextMediumSub text="All these areas advocated autonomy based on the Task System/Fairchain system known as the MW Method, and also became the home of many academics and engineers." />
               <TextMediumSub text="In the late 2050s, the MW Method was also adopted by terrestrial cities such as Ortofran in North America, and the days of being ruled by the nation seemed to come to a close." />

@@ -70,15 +70,15 @@ const WorldPage = ({ location }) => {
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="2nd Stratum = ST. VADUM" />
-              <TextMediumSub text="From the latin for shallow" />
+              <TextMediumSub text="From the latin for 'shallow'" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="3rd Stratum = ST. ALTUM" />
-              <TextMediumSub text="From the latin for deep" />
+              <TextMediumSub text="From the latin for 'deep'" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="4th Stratum = ST. SOLUM" />
-              <TextMediumSub text="From the latin for base" />
+              <TextMediumSub text="From the latin for 'base'" />
             </div>
             <div className={styles.textLeading_wrapper}>
               <TextLeading pathname={location.pathname} text="Names for each line" />

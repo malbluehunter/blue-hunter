@@ -53,7 +53,7 @@ const WorldPage = ({ location }) => {
           <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="Σ-Glasses (Pronounced: ‘Sigma Glasses’)" />
             <ContentsLine pathname={location.pathname} />
-            <TextMedium text="Multipurpose goggles designed for ΣR and ΣV. It was invented by Σ, the creator of Hunter Guilds (Minerva and Ourai belong to their guild). The goggles are now a common sight, and protect the wearer's eyes from UV rays and the sea breeze." />
+            <TextMedium text="Multipurpose goggles designed for ΣR and ΣV. It was invented by Σ, the creator of Hunter Guilds. The goggles are now a common sight, and protect the wearer's eyes from UV rays and the sea breeze." />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_machinery_10.png" alt="" />
             </div>

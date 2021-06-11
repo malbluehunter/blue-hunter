@@ -61,9 +61,9 @@ const CharactersPage = ({ location }) => {
                 </div>
                 <div className={styles.text_wrapper}>
                   <TextMedium text="A 15 year old boy who aims to become a Protector." />
-                  <TextMedium text="e doesn’t like studying but is a master at the Wake Rider. His ambition to become a Protector is inspired by the orphans who photograph creatures in the Garden. By becoming a Blue Hunter and discovering new creatures, he hopes to fulfill their dreams for them." />
+                  <TextMedium text="He doesn't like studying but is a master at the Wake Rider. His ambition to become a Protector is inspired by the orphans who photograph creatures in the Garden. By becoming a Blue Hunter and discovering new creatures, he hopes to fulfill their dreams for them." />
                   <TextMedium text="His father went missing during the Valhalla Incident 10 years ago and has been living together with his mother in GRAND/MW since. Becoming a true Blue Hunter would allow him to travel between cities, and he dreams that by doing this he may be able to search for his father. He is currently a Cadet in the Hunter Guild ψ (Psi). Despite being of the lowest rank, his ability to sometimes display prowess beyond even the adults makes him an appealing member of the group." />
-                  <TextMedium text="He has a crest-like surgical scar on the bottom of his foot..。" />
+                  <TextMedium text="He has a crest-like surgical scar on the bottom of his foot..." />
                 </div>
               </div>
               <div className={styles.img_area}>
