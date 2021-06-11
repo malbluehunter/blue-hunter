@@ -134,6 +134,15 @@
     margin: get_vw(-38) 0 0 get_vw(45);
   }
 }
+.text_wrapper_en {
+  width: get_vw_sp(390);
+  margin: get_vw_sp(-25) auto 0;
+
+  @include mq(md) {
+    width: get_vw(531);
+    margin: get_vw(-38) 0 0 get_vw(45);
+  }
+}
 .bnr_wrapper {
   position: absolute;
   bottom: get_vw_sp(-220);
