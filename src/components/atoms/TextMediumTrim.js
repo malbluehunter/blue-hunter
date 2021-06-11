@@ -40,7 +40,7 @@ const TextMediumTrim = props => {
           ) : (
             <div className={styles.next_read_wrapper}>
               <p className={styles.next_read} onClick={displayText}>
-                ＜続きを読む＞
+                ＜Read More＞
               </p>
             </div>
           )}
