@@ -53,7 +53,8 @@ const WorldPage = ({ location }) => {
           <WorldContentsInner>
           <MainContentsTop pathname={location.pathname} text="Machinery" />
           <MainContentsMiddleWorld pathname={location.pathname}>
-            <TextHeading text="ψOrca (Pronounced: ‘Psi-Orca’)" />
+            <TextHeading text="ψOrca" />
+            <TextMediumSub text="Pronunciation: 'Psi-Orca'" />
             <ContentsLine pathname={location.pathname} />
             <TextMedium text="A self-sufficient ship used by Blue Hunters. As well as making full use of solar batteries, wind power and tidal force, it also creates and stores hydrogen by breaking down surrounding seawater. Not only is it self-sufficient, but it also supplies energy to the underwater power grid (Sea Force). Completing missions using ZEROships such as the ψOrca usually leads to more Gains and are seen very positively. Completing a mission at a Loss (i.e. plus emissions) is acceptable in the event of necessary withdrawal from a dangerous or life-threatening situation." />
             

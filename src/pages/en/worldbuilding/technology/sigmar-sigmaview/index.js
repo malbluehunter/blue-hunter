@@ -52,7 +52,8 @@ const WorldPage = ({ location }) => {
           <WorldContentsInner>
           <MainContentsTop pathname={location.pathname} text="Technology" />
           <MainContentsMiddleWorld pathname={location.pathname}>
-            <TextHeading text="ΣR/ΣV (Pronounced: ‘Sigma-R / Sigma-View’)" />
+            <TextHeading text="ΣR/ΣV" />
+            <TextMedium text="Pronunciation: ‘Sigma-R' / 'Sigma-View’" />
             <ContentsLine pathname={location.pathname} />
             <TextMedium text="A virtual space UI used by Hunters while underwater (may also refer to the high performance underwater goggles used to view it). It reacts to brain waves, and the user needs to say 'SUBMERGE' in their mind in order to log in. The command to log out is 'EMERGE'. The sea will display as pure white, and coordinates are mapped out with a mesh-like grid. The view within the ΣV corresponds exactly to the real world, and Hunters use the colors displayed in these 'blocks' to move, think and capture the target specimens." />
             <div className={styles.textMediumSub_wrapper}>

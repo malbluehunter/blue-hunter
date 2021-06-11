@@ -61,8 +61,8 @@ const CharactersPage = ({ location }) => {
                 </div>
                 <div className={styles.text_wrapper}>
                 <TextMedium text="A strong-willed 16 year old girl rescued from being stranded in the ocean." />
-                  <TextMedium text="She sleeps on board the ψOrca and is unwilling to disembark. Her ranking is Cadet, and she manages and takes care of the captured creatures. She seems to be being pursued for her incredible quantum sensibilities and ability to perceive microbe-net and is using the guild as a way to keep herself hidden." />
-                  <TextMedium text="Eventually her abilities become apparent and she becomes a Seeker as well as ψ (Psi)'s trump card." />
+                  <TextMedium text="She sleeps on board the ψOrca and is unwilling to disembark. Her ranking is Cadet, and she manages and takes care of the captured creatures. She seems to be being pursued for her incredible quantum sensibilities and ability to perceive microbe-net. She seems to be using the guild as a way to keep herself hidden." />
+                  <TextMedium text="Eventually her abilities become apparent and she becomes a Seeker as well as ψ's trump card." />
                   <TextMedium text="She has a crest-like surgical scar on her lower back and absolutely will not wear a swimming costume." />
                 </div>
               </div>

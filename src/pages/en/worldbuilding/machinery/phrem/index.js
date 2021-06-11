@@ -52,7 +52,8 @@ const WorldPage = ({ location }) => {
           <WorldContentsInner>
           <MainContentsTop pathname={location.pathname} text="Machinery" />
           <MainContentsMiddleWorld pathname={location.pathname}>
-            <TextHeading text="PHREM (Peripheral devices for Human Resource Encoder and Memory)" />
+            <TextHeading text="PHREM" />
+            <TextMedium text="(Peripheral devices for Human Resource Encoder and Memory)" />
             <ContentsLine pathname={location.pathname} />
             <TextMedium text="An AI device with a Tk encoder and memory function that individuals wear on their body. Kakeru wears his on his arm. By equipping a PHREM device with My-AI, it's possible to assign it a nickname (for example, Kakeru activates his with the name 'OYAJI'), but the official names of each My-AI are linked to the individual's identification number (one per person)." />
             <div className={styles.textMediumSub_wrapper}>

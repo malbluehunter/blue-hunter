@@ -55,7 +55,7 @@ const WorldPage = ({ location }) => {
             <TextHeading text="Fairchain" />
             <ContentsLine pathname={location.pathname} />
             <TextMedium text="Tasks around the world are managed by Fairchain, an innovative quantum information-distributing blockchain system." />
-            <TextMedium text="Tasks around the world are managed by Fairchain, an innovative quantum information-distributing blockchain system. Utilizing an ultra-high-speed quantum network, all activity is updated at the rate of once every second." />
+            <TextMedium text="Utilizing an ultra-high-speed quantum network, all activity is updated at the rate of once every second." />
             <TextMedium text="One’s Tk are strictly tied to one’s personal ID and cannot be falsified. Tens or hundreds of thousands of normal Tasks are engaged to other Tasks that are identified as particularly valuable." />
           </MainContentsMiddleWorld>
           <MainContentsBottom pathname={location.pathname} />

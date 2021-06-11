@@ -56,7 +56,7 @@ const WorldPage = ({ location }) => {
             <MainContentsMiddleWorld pathname={location.pathname}>
               <TextHeading text="Bioverse" />
               <ContentsLine pathname={location.pathname} />
-              <TextMedium text="A virtual user interface that expresses the characteristics of living things and the relationships between species via cards. It can use CG to transform into various shapes such as becoming spherical or flat. The protagonist can use them when facing enemies or creatures. Used by the main characters when fighting against enemies and creatures. It can switch between different modes, usually the Phylogenetic Tree Mode and the Relative Mode. when being used in the Control Room, it is operated by voice. When being used underwater, it is operated by brain waves in the above-mentioned ΣR/ΣV." />
+              <TextMedium text="A virtual user interface that expresses the characteristics of living things and the relationships between species via cards. It can use CG to transform into various shapes such as becoming spherical or flat. The protagonist can use them when facing enemies or creatures. Used by the main characters when fighting against enemies and creatures. It can switch between different modes, usually the Phylogenetic Tree Mode and the Relative Mode. when being used in the Control Room, it is operated by voice. When being used underwater, it is operated by brain waves in the ΣR/ΣV." />
               <TextMedium text="One of the highlights of this system is seeing the main characters use the cards to transform their Nano Ball." />
               <div className={styles.img_wrapper}>
                 <img src="/world/world_img_technology_01.png" alt="" />

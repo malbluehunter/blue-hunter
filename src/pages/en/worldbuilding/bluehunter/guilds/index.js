@@ -55,7 +55,7 @@ const WorldPage = ({ location }) => {
             <ContentsLine pathname={location.pathname} />
             <TextMedium text="Hunters act in teams known as Guilds, of which each member is assigned a role. Each Guild runs a type of ship called a ZEROship, and work is split into 3 rotating shifts." />
             <TextMedium text="Seekers take on the role of collecting data via the analysis of environmental DNA (eDNA) and guide the ship. Protectors take on the role of getting close to specimens in order to investigate or capture them." />
-            <TextMedium text="A unit must contain at least one Protector and one Seeker, boarding the ship to complete the mission with somebody above and somebody below the water’s surface.." />
+            <TextMedium text="A unit must contain at least one Protector and one Seeker, boarding the ship to complete the mission with somebody above and somebody below the water’s surface." />
             <TextMedium text="Searchers are responsible for analyzing or taking care of captured specimens. It is not uncommon for Cadets or Protectors to also take on the role of Searcher." />
             <TextMedium text="It's also possible to take part in a mission remotely, without boarding the ship. Some guilds also have an Operator take part, who controls UG on the seabed. By teaming up with Protectors, it’s possible to take on large-scale projects." />
             <div className={styles.table_sub_wrapper}>
@@ -75,9 +75,9 @@ const WorldPage = ({ location }) => {
                     Seeker
                   </td>
                   <td className={styles.td_item}>
-                    Draws up a plan of action based on eDNA analysis / 
+                    Draws up a plan of action based on eDNA analysis /&nbsp;
                     <br className={styles.view_sp} />
-                    Guides the Protectors from onboard the ship
+                    Guides the Protectors from onboard the ship.
                   </td>
                 </tr>
                 <tr className={styles.table_tr}>
@@ -87,11 +87,11 @@ const WorldPage = ({ location }) => {
                     Protector
                   </td>
                   <td className={styles.td_item}>
-                    Responsible for the safe capture of specimens. 
+                    Responsible for the safe capture of specimens.&nbsp;
                     <br className={styles.view_sp} />
-                    Works both above and under the water. 
+                    Works both above and under the water.&nbsp;
                     <br className={styles.view_sp} />
-                    For underwater missions, it is legally required 
+                    For underwater missions, it is legally required&nbsp;
                     <br className={styles.view_sp} />
                     that at least two Protectors work together
                   </td>
@@ -103,9 +103,9 @@ const WorldPage = ({ location }) => {
                     Searcher
                   </td>
                   <td className={styles.td_item}>
-                    Responsible for the organisation 
+                    Responsible for the organisation&nbsp;
                     <br className={styles.view_sp} />
-                    and analysis of captured specimens 
+                    and analysis of captured specimens&nbsp;
                     <br className={styles.view_sp} />
                     and acts as all-round brains for the Guild.
                   </td>
@@ -117,9 +117,9 @@ const WorldPage = ({ location }) => {
                     Cadet
                   </td>
                   <td className={styles.td_item}>
-                    All-round support. Acts as a crewman 
+                    All-round support. Acts as a crewman&nbsp;
                     <br className={styles.view_sp} />
-                    and apprentice. Usually made up of 
+                    and apprentice. Usually made up of&nbsp;
                     <br className={styles.view_sp} />
                     students and part-timers
                   </td>
@@ -139,9 +139,9 @@ const WorldPage = ({ location }) => {
                     (1st, 2nd, 3rd)
                   </td>
                   <td className={styles.td_item}>
-                    Operate the ship in a cycle of 3 shifts.
+                    Operate the ship in a cycle of 3 shifts.&nbsp;
                     <br className={styles.view_sp} />
-                    Act as both Navigation Officers 
+                    Act as both Navigation Officers&nbsp;
                     <br className={styles.view_sp} />
                     and Engineers.
                   </td>
@@ -161,9 +161,9 @@ const WorldPage = ({ location }) => {
                     Strategists x3
                   </td>
                   <td className={styles.td_item}>
-                    Operates underwater vessels. 
+                    Operates underwater vessels.&nbsp;
                     <br className={styles.view_sp} />
-                    Support fishing (via fishing nets) 
+                    Support fishing (via fishing nets)&nbsp;
                     <br className={styles.view_sp} />
                     and diving.
                   </td>

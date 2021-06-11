@@ -51,7 +51,8 @@ const WorldPage = ({ location }) => {
           <WorldContentsInner>
           <MainContentsTop pathname={location.pathname} text="Machinery" />
           <MainContentsMiddleWorld pathname={location.pathname}>
-            <TextHeading text="Σ-Jacket (Pronounced: ‘Sigma Jacket’)" />
+            <TextHeading text="Σ-Jacket" />
+            <TextMedium text="Pronunciation: ‘Sigma Jacket’" />
             <ContentsLine pathname={location.pathname} />
             <TextMedium text="A multifunctional life jacket which can be loaded with MY-AI. Commonly displays the crest of the wearer's Guild or their Hunterships." />
             <div className={styles.img_wrapper}>
