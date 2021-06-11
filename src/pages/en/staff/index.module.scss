@@ -1,0 +1,61 @@
+@import "../../../assets/scss/mixin";
+
+main {
+  position: relative;
+}
+.pageTitle_wrapper {
+  width: get_vw_sp(72);
+  margin: auto;
+
+  @include mq(md) {
+    width: get_vw(94);
+  }
+
+  & img {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+.contents_inner {
+  margin: auto;
+  text-align: center;
+
+  @include mq(md) {
+  }
+}
+.bnr_area {
+  margin: get_vw_sp(28) calc(50% - 50vw);
+
+  @include mq(md) {
+    width: get_vw(786);
+    margin: get_vw(80) auto 0;
+  }
+}
+.text_wrapper {
+  margin-top: get_vw_sp(5);
+
+  @include mq(md) {
+    margin-top: get_vw(7);
+  }
+}
+.staff_name_item {
+  margin-top: get_vw_sp(23);
+  white-space: pre-line;
+
+  @include mq(md) {
+    margin-top: get_vw(30);
+    white-space: normal;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+.text_small_wrapper {
+  white-space: pre-line;
+  margin-top: get_vw_sp(20);
+
+  @include mq(md) {
+    margin-top: get_vw(25);
+    white-space: normal;
+  }
+}
