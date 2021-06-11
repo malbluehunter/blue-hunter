@@ -17,7 +17,7 @@ const StaffPage = ({ location }) => {
   return (
     <>
       <Helmet>
-        <html lang="ja" />
+        <html lang="en" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 開始 --------------------------------------- */}
         <title>Staff | BLUE HUNTER Official Site</title>
         <meta name="description" content="The official website for the BLUE HUNTER project. Free BLUE HUNTER manga starts June 2021! Check out all you need to know about the world of BLUE HUNTER here." />
