@@ -19,7 +19,7 @@ const SpecialPage = ({ location }) => {
 
   useEffect(() => {
     fetch(
-      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBAJMl55n1fYmNuXxmY6ADD9JuW7kWccfp8sUQsgwk5bNm3XfQWirJKDEImVXQCB1IqcokDjXlZBoobyT9zLQhV2VQXGsEjqlwlwj5O5dZC45VS4KL5N8sT5zxTeyNZCcff4X6PfApvA8g7o5Oatofv8HV6kmiid8QcMZBZBpFZAx67qaKaY18JAKSHVQTc7vN35kBpNnXZARC1CGsHQksUEH9WsGZBDeLLqaUOwZBwnxWh",
+      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=https://graph.facebook.com/v11.0/487150556039842/accounts?access_token=EAAGhQ8fkHakBAIhS25BLetAAGqjxnjsNJKKdWnkcZCOvUbawFofx18KoTvr0P4h34ZC1MscLW7smS2dgrAzLVGEF88MoRvtcVgeAJJNjtFQ7qLhQy8r1VAz2YRoRyTg6kDsn6eSRk0iHcfKvCMA5lpfw19cPg8xEnFtzC7qQZDZD",
       { mode: "cors" }
     ).then(response => {
       response
