@@ -19,7 +19,7 @@ const SpecialPage = ({ location }) => {
 
   useEffect(() => {
     fetch(
-      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBAMu7BoUwcmeFL8M1wuvxeootdIamRaoyR34oMiq48PmHjHZBBhdQZAuNEjgB8FZCMuBVikwOeZCd5a9GU8oviJzdTfuiph546mZAp6Qx6lroZBlLKBMb6ndEYZAmeK26zZBuWTrcY4PrfnV6050VIpv3xj3TBZCTlEnEdFut4OcQMwheIm4koAnTLFVJZCyCYl5LHZAMmJl4zCPzGdWty3sKBbefdaqnD91ZA9LzCeh6Ta5G"
+      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBAFF8NkvxSP6shCVn73WZBhjpngIjqtk2Vuws8x03INP3MeT1jP4y4vyjZAcezEbPdpZCWGVI5KDT2eXSB3ZB96nJmZAvOWx2sHQczbMZC0UMVW6U8jRy1ZABiVQLvNRZCCIKDPQ1ZAGEGbfJtEhsUjJew0QebKMGWoh87RQxHZB8Ih0j6JkFtcQqeD0b3ycgjeymm8FcHg2DWBrOmPeI3LMSnW8nZCscBlp5xqVGgjwkmI1"
     ).then(response => {
       response
         .json() //ここでbodyからJSONを返す
