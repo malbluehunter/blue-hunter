@@ -19,14 +19,8 @@ const SpecialPage = ({ location }) => {
 
   useEffect(() => {
     fetch(
-      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBABGRxD5sy6D5ictKppTbmaybZAEOOtcEquqIYbzbdlZCQshVDeLULrd1JvG6kW3QBpi0zyQaBf2UZBg14WZCPefDKQlhzMMvLzM7uZAZA7nIVxxHJno0olRiHPouSRRFHdwM4fDe4HZCKGK8oSRiN08sc1TeaD06W9Wakdw6el5JGPwXBXG5CJK7WhiobOhmpOt0A92ukACLDTFvZCmrNZBp7HuuZB7ES3c4SyTqtY70T3",
-      {
-        mode: "no-cors",
-        headers: {
-          Accept: "application/json",
-          "Access-Control-Allow-Origin": "*",
-        },
-      }
+      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBAJMl55n1fYmNuXxmY6ADD9JuW7kWccfp8sUQsgwk5bNm3XfQWirJKDEImVXQCB1IqcokDjXlZBoobyT9zLQhV2VQXGsEjqlwlwj5O5dZC45VS4KL5N8sT5zxTeyNZCcff4X6PfApvA8g7o5Oatofv8HV6kmiid8QcMZBZBpFZAx67qaKaY18JAKSHVQTc7vN35kBpNnXZARC1CGsHQksUEH9WsGZBDeLLqaUOwZBwnxWh",
+      { mode: "cors" }
     ).then(response => {
       response
         .json() //ここでbodyからJSONを返す

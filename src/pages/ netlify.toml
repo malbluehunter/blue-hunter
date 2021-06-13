@@ -2,11 +2,11 @@
 # routing internally.
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/index"
   status = 200
 
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
-  for = "/special/*"
+  for = "/*"
     [headers.values]
     Access-Control-Allow-Origin = "*"
