@@ -19,7 +19,14 @@ const SpecialPage = ({ location }) => {
 
   useEffect(() => {
     fetch(
-      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBAPa1rE7TZARLHrkr2sVZCe4bsgftSFkX3SUMkfHpOFyNWVjCC6gS9hm0cdBxwFKNeM1V3ikRUNib8yFTs3YKjYL3MkXEaZAIl6tpf8CwcvtwHNy6tpljQlOB5kbDxtsbm4nmTsXxS0chnWKvUJ4P10RwodpD8Af03GjIzL0rmHETBj7givx6UD9oKVEbwgBEgjZAasDJJZBaJ1nj8pUoLfszg4TYtulB9ZAxMaLkyL"
+      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBABGRxD5sy6D5ictKppTbmaybZAEOOtcEquqIYbzbdlZCQshVDeLULrd1JvG6kW3QBpi0zyQaBf2UZBg14WZCPefDKQlhzMMvLzM7uZAZA7nIVxxHJno0olRiHPouSRRFHdwM4fDe4HZCKGK8oSRiN08sc1TeaD06W9Wakdw6el5JGPwXBXG5CJK7WhiobOhmpOt0A92ukACLDTFvZCmrNZBp7HuuZB7ES3c4SyTqtY70T3",
+      {
+        mode: "no-cors",
+        headers: {
+          Accept: "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+      }
     ).then(response => {
       response
         .json() //ここでbodyからJSONを返す
