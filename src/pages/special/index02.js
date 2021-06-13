@@ -19,10 +19,10 @@ const SpecialPage = ({ location }) => {
 
   useEffect(() => {
     fetch(
-      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBAPFpXN8lCxC00bAa4KVtdpN8RbSEGNz1TfL6kXXOzkWqfZBoBZBMOf6XhdZBOWVReoG3u9pQqEZC2HXAibWBpdXNZCy9vFSpLD0IO2Ie0MxjQosRzZAzLhiuQi3yZBM8evEq0Xz5z74PIsZBPz6OmqBfspFMmvSWqtxottj4heBk"
+      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBAE3g1zyZCYQHflE31KVPBu2ZBkZC5hYSCcdgRZAU45pq1e9mw0QYJOeQXUUuWnGgQDtiXTIMxxxs03ZCY84Od2LNWPkIv3jrk9dbJqoRFgsUgqYZA7ZAcjsnSZBuWcBsxZBG4b1ZAbIaHjCGAiT2OFxAngHWx1ZAgSxV0C0UurYIxqx"
     ).then(response => {
       response
-        .json() //ここでBodyからJSONを返す
+        .json() //ここでbodyからJSONを返す
         .then(result => {
           setSrc(result.data)
         })
