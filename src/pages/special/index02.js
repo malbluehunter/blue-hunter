@@ -19,7 +19,7 @@ const SpecialPage = ({ location }) => {
 
   useEffect(() => {
     fetch(
-      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBAE3g1zyZCYQHflE31KVPBu2ZBkZC5hYSCcdgRZAU45pq1e9mw0QYJOeQXUUuWnGgQDtiXTIMxxxs03ZCY84Od2LNWPkIv3jrk9dbJqoRFgsUgqYZA7ZAcjsnSZBuWcBsxZBG4b1ZAbIaHjCGAiT2OFxAngHWx1ZAgSxV0C0UurYIxqx"
+      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBAMu7BoUwcmeFL8M1wuvxeootdIamRaoyR34oMiq48PmHjHZBBhdQZAuNEjgB8FZCMuBVikwOeZCd5a9GU8oviJzdTfuiph546mZAp6Qx6lroZBlLKBMb6ndEYZAmeK26zZBuWTrcY4PrfnV6050VIpv3xj3TBZCTlEnEdFut4OcQMwheIm4koAnTLFVJZCyCYl5LHZAMmJl4zCPzGdWty3sKBbefdaqnD91ZA9LzCeh6Ta5G"
     ).then(response => {
       response
         .json() //ここでbodyからJSONを返す
