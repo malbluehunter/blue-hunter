@@ -18,10 +18,7 @@ const SpecialPage = ({ location }) => {
   const [src, setSrc] = useState([])
 
   useEffect(() => {
-    fetch(
-      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=https://graph.facebook.com/v11.0/487150556039842/accounts?access_token=EAAGhQ8fkHakBAIhS25BLetAAGqjxnjsNJKKdWnkcZCOvUbawFofx18KoTvr0P4h34ZC1MscLW7smS2dgrAzLVGEF88MoRvtcVgeAJJNjtFQ7qLhQy8r1VAz2YRoRyTg6kDsn6eSRk0iHcfKvCMA5lpfw19cPg8xEnFtzC7qQZDZD",
-      { mode: "cors" }
-    ).then(response => {
+    fetch(process.env.ACCESS_TOKEN, { mode: "cors" }).then(response => {
       response
         .json() //ここでbodyからJSONを返す
         .then(result => {
