@@ -18,7 +18,7 @@ const SpecialPage = ({ location }) => {
   const [src, setSrc] = useState([])
 
   useEffect(() => {
-    fetch(process.env.GATSBY_ACCESS_TOKEN, { mode: "cors" }).then(response => {
+    fetch(process.env.GATSBY_ACCESS_TOKEN).then(response => {
       response
         .json() //ここでbodyからJSONを返す
         .then(result => {
