@@ -18,6 +18,7 @@ const SpecialPage = ({ location }) => {
   const [src, setSrc] = useState([])
   // const [src02, setSrc02] = useState([]) //26件以降の画像
 
+
   useEffect(() => {
     // 1~25件のデータを取得
     fetch(process.env.GATSBY_ACCESS_TOKEN).then(response => {
