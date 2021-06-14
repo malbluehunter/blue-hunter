@@ -16,20 +16,36 @@ import ButtonLiquid from "../../components/atoms/ButtonLiquid"
 
 const SpecialPage = ({ location }) => {
   const [src, setSrc] = useState([])
+  const [src02, setSrc02] = useState([]) //26件以降の画像
 
   useEffect(() => {
+    // 1~25件のデータを取得
     fetch(process.env.GATSBY_ACCESS_TOKEN).then(response => {
       response
         .json() //ここでbodyからJSONを返す
         .then(result => {
           setSrc(result.data)
+          console.log(result)
         })
         .catch(e => {
-          console.log(e) //エラーをキャッチし表示
+          console.log(e)
+        })
+    })
+    // 26~40件のデータを取得
+    fetch(
+      "https://graph.facebook.com/v11.0/17843900656018477/recent_media?access_token=EAAGhQ8fkHakBAAv7gYN0fg2Tfv3QlTH1sLIaXAZBaBantKfW42yeQidrYH90G2fHsvDqYRZBZCsxycdycRZCTD7LF5yGgZBHwsI4Dn1kQpAJxHx9GpK105ai6zN53ZAZCcNDQ83vs8z8pfe4rMzEM0LQpn7rKn0slnS2wNeZArXhPV9MJ2LxDwqn&pretty=1&fields=id%2Cmedia_url%2Cmedia_type%2Cpermalink%2Cchildren%7Bid%2Cmedia_type%2Cmedia_url%2Cpermalink%7D&user_id=17841447571286718&limit=25&after=UVZAGRVkxTldYMVpNTWxnMlV6SkxlVU5YYWtaUlYwUjVNMmhtV0RKU2RtSTNUVXBHT1ZAGTWFpMUtZAMUZAUWVU1Nk1pMVlkRnBRYmxkdGFFaE1UVFUyZAGpCV1MzSndRamt0WTBsQ1pEVmhUbGh6VTA0M1QxaEVSQT09"
+    ).then(response => {
+      response
+        .json() //ここでbodyからJSONを返す
+        .then(result => {
+          setSrc02(result.data)
+          console.log(result.data)
+        })
+        .catch(e => {
+          console.log(e)
         })
     })
   }, [])
-  console.log(process.env.GATSBY_ACCESS_TOKEN)
 
   return (
     <>
@@ -45,7 +61,7 @@ const SpecialPage = ({ location }) => {
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
         <meta property="og:image" content="https://manga.uminohi.jp/ogp.png" />
-        <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+        <link rel="stylesheet" type="text/css" ccharset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
         <link rel="preload" as="image" href="/common/nav_text_news_hover.webp" />
         <link rel="preload" as="image" href="/common/nav_text_comic_hover.webp" />
@@ -99,7 +115,32 @@ const SpecialPage = ({ location }) => {
         </div>
         <div className={styles.insta_area}>
           <div className={styles.insta_inner}>
+            {/* 1~25件のデータを表示 */}
             {src.map((srcItem, index) =>
+              srcItem.media_type == "CAROUSEL_ALBUM" ? ( // 画像が複数の場合
+                srcItem.children.data[0].media_type == "IMAGE" ? ( // 複数画像かつ画像がイメージの場合
+                  <a href={srcItem.children.data[0].permalink}>
+                    <img src={srcItem.children.data[0].media_url} key={index} className={styles.insta_img} />
+                  </a>
+                ) : (
+                  // 複数画像かつ画像が動画の場合
+                  <a href={srcItem.children.data[0].permalink}>
+                    <video src={srcItem.children.data[0].media_url} key={index} className={styles.insta_img} />
+                  </a>
+                )
+              ) : srcItem.media_type == "IMAGE" ? ( // 画像が1枚の場合
+                <a href={srcItem.permalink}>
+                  <img src={srcItem.media_url} key={index} className={styles.insta_img} />
+                </a>
+              ) : (
+                // 画像が1枚かつ動画の場合
+                <a href={srcItem.permalink}>
+                  <video src={srcItem.media_url} key={index} className={styles.insta_img} />
+                </a>
+              )
+            )}
+            {/* 26~40件のデータを表示 */}
+            {/* {src02.map((srcItem, index) =>
               srcItem.media_type == "CAROUSEL_ALBUM" ? ( // 画像が複数の場合
                 srcItem.children.data[0].media_type == "IMAGE" ? ( // 複数画像かつ画像がイメージの場合
                   <a href={srcItem.children.data[0].permalink}>
@@ -121,7 +162,7 @@ const SpecialPage = ({ location }) => {
                   <video src={srcItem.media_url} key={index} className={styles.insta_img} loading="lazy" />
                 </a>
               )
-            )}
+            )} */}
           </div>
         </div>
         <div className={styles.btn_wrapper}>
