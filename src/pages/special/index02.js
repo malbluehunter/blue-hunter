@@ -31,6 +31,7 @@ const SpecialPage = ({ location }) => {
           console.log(e)
         })
     })
+    console.log(process.env.GATSBY_ACCESS_TOKEN)
     // 26~40件のデータを取得
     // fetch(
     //   "https://graph.facebook.com/v11.0/17843900656018477/recent_media?access_token=EAAGhQ8fkHakBAAv7gYN0fg2Tfv3QlTH1sLIaXAZBaBantKfW42yeQidrYH90G2fHsvDqYRZBZCsxycdycRZCTD7LF5yGgZBHwsI4Dn1kQpAJxHx9GpK105ai6zN53ZAZCcNDQ83vs8z8pfe4rMzEM0LQpn7rKn0slnS2wNeZArXhPV9MJ2LxDwqn&pretty=1&fields=id%2Cmedia_url%2Cmedia_type%2Cpermalink%2Cchildren%7Bid%2Cmedia_type%2Cmedia_url%2Cpermalink%7D&user_id=17841447571286718&limit=25&after=UVZAGRVkxTldYMVpNTWxnMlV6SkxlVU5YYWtaUlYwUjVNMmhtV0RKU2RtSTNUVXBHT1ZAGTWFpMUtZAMUZAUWVU1Nk1pMVlkRnBRYmxkdGFFaE1UVFUyZAGpCV1MzSndRamt0WTBsQ1pEVmhUbGh6VTA0M1QxaEVSQT09"
