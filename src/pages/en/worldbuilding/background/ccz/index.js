@@ -15,7 +15,7 @@ import ContentsLine from "../../../../../components/molecules/ContentsLine"
 import MainContentsBottom from "../../../../../components/organisms/MainContentsBottom"
 import WorldContentsInner from "../../../../../components/organisms/WorldContentsInner"
 import PagerArea from "../../../../../components/organisms/PagerArea"
-import LocalNavWorld01 from "../../../../../components/templates/LocalNavWorld01"
+import LocalNavWorld01En from "../../../../../components/templates/LocalNavWorld01En"
 
 const WorldPage = ({ location }) => {
   return (
@@ -159,7 +159,7 @@ const WorldPage = ({ location }) => {
           <PagerArea pathname={location.pathname} hrefPrev="" hrefNext="../marine-metropolitan-areas/" isDisabledPrev={true} isDisabledNext={false} number={1} TotalNumber={10} />
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </WorldContentsInner>
-        <LocalNavWorld01 pathname={location.pathname} />
+        <LocalNavWorld01En pathname={location.pathname} />
        </div>
       </LayoutTwoColumn>
     </>

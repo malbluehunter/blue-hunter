@@ -13,7 +13,7 @@ import ContentsLine from "../../../../../components/molecules/ContentsLine"
 import MainContentsBottom from "../../../../../components/organisms/MainContentsBottom"
 import WorldContentsInner from "../../../../../components/organisms/WorldContentsInner"
 import PagerArea from "../../../../../components/organisms/PagerArea"
-import LocalNavWorld04 from "../../../../../components/templates/LocalNavWorld04"
+import LocalNavWorld04En from "../../../../../components/templates/LocalNavWorld04En"
 
 const WorldPage = ({ location }) => {
   return (
@@ -71,7 +71,7 @@ const WorldPage = ({ location }) => {
           <PagerArea pathname={location.pathname} hrefPrev="../netbow/" hrefNext="../my-ai/" isDisabledPrev={false} isDisabledNext={false}  number={6} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </WorldContentsInner>
-        <LocalNavWorld04 pathname={location.pathname} />
+        <LocalNavWorld04En pathname={location.pathname} />
        </div>
       </LayoutTwoColumn>
     </>
