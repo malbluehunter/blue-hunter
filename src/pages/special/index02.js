@@ -16,7 +16,6 @@ import ButtonLiquid from "../../components/atoms/ButtonLiquid"
 
 const SpecialPage = ({ location }) => {
   const [src, setSrc] = useState([])
-  // const [src02, setSrc02] = useState([]) //26件以降の画像
 
   useEffect(() => {
     // 1~25件のデータを取得
@@ -25,27 +24,11 @@ const SpecialPage = ({ location }) => {
         .json() //ここでbodyからJSONを返す
         .then(result => {
           setSrc(result.data)
-          console.log(result)
         })
         .catch(e => {
           console.log(e)
         })
     })
-    console.log(process.env.GATSBY_ACCESS_TOKEN)
-    // 26~40件のデータを取得
-    // fetch(
-    //   "https://graph.facebook.com/v11.0/17843900656018477/recent_media?access_token=EAAGhQ8fkHakBAAv7gYN0fg2Tfv3QlTH1sLIaXAZBaBantKfW42yeQidrYH90G2fHsvDqYRZBZCsxycdycRZCTD7LF5yGgZBHwsI4Dn1kQpAJxHx9GpK105ai6zN53ZAZCcNDQ83vs8z8pfe4rMzEM0LQpn7rKn0slnS2wNeZArXhPV9MJ2LxDwqn&pretty=1&fields=id%2Cmedia_url%2Cmedia_type%2Cpermalink%2Cchildren%7Bid%2Cmedia_type%2Cmedia_url%2Cpermalink%7D&user_id=17841447571286718&limit=25&after=UVZAGRVkxTldYMVpNTWxnMlV6SkxlVU5YYWtaUlYwUjVNMmhtV0RKU2RtSTNUVXBHT1ZAGTWFpMUtZAMUZAUWVU1Nk1pMVlkRnBRYmxkdGFFaE1UVFUyZAGpCV1MzSndRamt0WTBsQ1pEVmhUbGh6VTA0M1QxaEVSQT09"
-    // ).then(response => {
-    //   response
-    //     .json() //ここでbodyからJSONを返す
-    //     .then(result => {
-    //       setSrc02(result.data)
-    //       console.log(result.data)
-    //     })
-    //     .catch(e => {
-    //       console.log(e)
-    //     })
-    // })
   }, [])
 
   return (
@@ -116,58 +99,34 @@ const SpecialPage = ({ location }) => {
         </div>
         <div className={styles.insta_area}>
           <div className={styles.insta_inner}>
-            {/* 1~25件のデータを表示 */}
+            {/* インスタ40件のデータを表示 */}
             {src.map((srcItem, index) =>
               srcItem.media_type == "CAROUSEL_ALBUM" ? ( // 画像が複数の場合
                 srcItem.children.data[0].media_type == "IMAGE" ? ( // 複数画像かつ画像がイメージの場合
-                  <a href={srcItem.children.data[0].permalink}>
-                    <img src={srcItem.children.data[0].media_url} key={index} className={styles.insta_img} />
+                  <a href={srcItem.children.data[0].permalink} key={index}>
+                    <img src={srcItem.children.data[0].media_url} className={styles.insta_img} />
                   </a>
                 ) : (
                   // 複数画像かつ画像が動画の場合
-                  <a href={srcItem.children.data[0].permalink}>
-                    <video src={srcItem.children.data[0].media_url} key={index} className={styles.insta_img} />
+                  <a href={srcItem.children.data[0].permalink} key={index}>
+                    <video src={srcItem.children.data[0].media_url} className={styles.insta_img} />
                   </a>
                 )
               ) : srcItem.media_type == "IMAGE" ? ( // 画像が1枚の場合
-                <a href={srcItem.permalink}>
-                  <img src={srcItem.media_url} key={index} className={styles.insta_img} />
+                <a href={srcItem.permalink} key={index}>
+                  <img src={srcItem.media_url} className={styles.insta_img} />
                 </a>
               ) : (
                 // 画像が1枚かつ動画の場合
-                <a href={srcItem.permalink}>
-                  <video src={srcItem.media_url} key={index} className={styles.insta_img} />
+                <a href={srcItem.permalink} key={index}>
+                  <video src={srcItem.media_url} className={styles.insta_img} />
                 </a>
               )
             )}
-            {/* 26~40件のデータを表示 */}
-            {/* {src02.map((srcItem, index) =>
-              srcItem.media_type == "CAROUSEL_ALBUM" ? ( // 画像が複数の場合
-                srcItem.children.data[0].media_type == "IMAGE" ? ( // 複数画像かつ画像がイメージの場合
-                  <a href={srcItem.children.data[0].permalink}>
-                    <img src={srcItem.children.data[0].media_url} key={index} className={styles.insta_img} loading="lazy" />
-                  </a>
-                ) : (
-                  // 複数画像かつ画像が動画の場合
-                  <a href={srcItem.children.data[0].permalink}>
-                    <video src={srcItem.children.data[0].media_url} key={index} className={styles.insta_img} loading="lazy" />
-                  </a>
-                )
-              ) : srcItem.media_type == "IMAGE" ? ( // 画像が1枚の場合
-                <a href={srcItem.permalink}>
-                  <img src={srcItem.media_url} key={index} className={styles.insta_img} loading="lazy" />
-                </a>
-              ) : (
-                // 画像が1枚かつ動画の場合
-                <a href={srcItem.permalink}>
-                  <video src={srcItem.media_url} key={index} className={styles.insta_img} loading="lazy" />
-                </a>
-              )
-            )} */}
           </div>
         </div>
         <div className={styles.btn_wrapper}>
-          <ButtonLiquid href="#" isDisabled={false}>
+          <ButtonLiquid href="https://www.instagram.com/explore/tags/BH_MAL/?hl=ja" isDisabled={false}>
             #BH_MALをもっと見る
             <div className={styles.icon_wrapper}>
               <img src="/common/icon_instagram_02.svg" alt="インスタグラム アイコン" className={styles.icon} />
