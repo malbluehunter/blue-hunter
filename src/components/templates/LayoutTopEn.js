@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
 import ScrollToTop02 from "../atoms/ScrollToTop02"
 import Footer from "./Footer"
-import HeaderTop from "./HeaderTop"
-import HeaderTopSp from "./HeaderTopSp"
+import HeaderTop from "./HeaderTopEn"
+import HeaderTopSp from "./HeaderTopSpEn"
 import * as styles from "./LayoutTop.module.scss"
 import TopMainVisual from "./TopMainVisualEn"
 
