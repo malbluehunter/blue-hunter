@@ -74,7 +74,7 @@ const WorldPage = ({ location }) => {
           </MainContentsMiddleWorld>
           <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-          <PagerArea pathname={location.pathname} hrefPrev="../bounty-kit/" hrefNext="../netbow/" isDisabledPrev={false} isDisabledNext={false}  number={4} TotalNumber={9} />
+          <PagerArea pathname={location.pathname} hrefPrev="/worldbuilding/machinery/bounty-kit/" hrefNext="/worldbuilding/machinery/netbow/" isDisabledPrev={false} isDisabledNext={false}  number={4} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </WorldContentsInner>
         <LocalNavWorld04 pathname={location.pathname} />

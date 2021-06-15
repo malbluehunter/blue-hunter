@@ -72,7 +72,7 @@ const WorldPage = ({ location }) => {
             </MainContentsMiddleWorld>
           <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-          <PagerArea pathname={location.pathname} hrefPrev="../guilds/" hrefNext="" isDisabledPrev={false} isDisabledNext={true}  number={2} TotalNumber={2} />
+          <PagerArea pathname={location.pathname} hrefPrev="/worldbuilding/bluehunter/guilds/" hrefNext="" isDisabledPrev={false} isDisabledNext={true}  number={2} TotalNumber={2} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </WorldContentsInner>
         <LocalNavWorld03 pathname={location.pathname} />

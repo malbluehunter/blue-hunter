@@ -58,7 +58,7 @@ const WorldPage = ({ location }) => {
           </MainContentsMiddleWorld>
           <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-          <PagerArea pathname={location.pathname} hrefPrev="../octam3/" hrefNext="../octam4/" isDisabledPrev={false} isDisabledNext={false}  number={9} TotalNumber={10} />
+          <PagerArea pathname={location.pathname} hrefPrev="/worldbuilding/background/octam3/" hrefNext="/worldbuilding/background/octam4/" isDisabledPrev={false} isDisabledNext={false}  number={9} TotalNumber={10} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </WorldContentsInner>
         <LocalNavWorld01 pathname={location.pathname} />

@@ -86,7 +86,7 @@ const WorldPage = ({ location }) => {
             </MainContentsMiddleWorld>
             <MainContentsBottom pathname={location.pathname} />
             {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-            <PagerArea pathname={location.pathname} hrefPrev="../marine-metropolitan-areas/" hrefNext="../nation-or-city/" isDisabledPrev={false} isDisabledNext={false} number={3} TotalNumber={10} />
+            <PagerArea pathname={location.pathname} hrefPrev="/worldbuilding/background/marine-metropolitan-areas/" hrefNext="/worldbuilding/background/nation-or-city/" isDisabledPrev={false} isDisabledNext={false} number={3} TotalNumber={10} />
             {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
           </WorldContentsInner>
           <LocalNavWorld01 pathname={location.pathname} />
