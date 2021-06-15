@@ -77,7 +77,7 @@
 .LocalNav_item:last-child::after {
   position: absolute;
   top: get_vw_sp(26);
-  right: get_vw_sp(50);
+  right: get_vw_sp(0);
   content: "";
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -88,7 +88,7 @@
 
   @include mq(md) {
     top: get_vw(26);
-    right: get_vw(24);
+    right: get_vw(0);
     width: get_vw(5);
     height: get_vw(5);
     border-top: 1px solid #fff;

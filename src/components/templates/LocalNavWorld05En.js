@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import * as styles from "./LocalNavWorld05.module.scss"
+import * as styles from "./LocalNavWorld05En.module.scss"
 import TextClose from "../atoms/TextClose"
 import IconDownArrow from "../atoms/IconDownArrow"
 
@@ -43,7 +43,7 @@ const LocalNavWorld05 = props => {
               <a href={href04}>Phylogenetic Tree</a>
             </li>
             <li className={styles.LocalNav_item}>
-              <a href="/en/worldbuilding/">世界観・設定トップへ戻る</a>
+              <a href="/en/worldbuilding/">Return to The World of BH</a>
             </li>
           </ol>
         </div>

@@ -49,7 +49,7 @@ const ComicPage = ({ location }) => {
         <div className={styles.bread_wrapper}>
           <BreadShort page01="TOP" href01="/en" page02="Comic - Episode 1" />
         </div>
-        <Label01 text="【全13話】毎週x曜日最新話公開！" />
+        <Label01 text="Updated every Sunday!" />
         <ComicContentsInner>
           <div className={styles.comic_wrapper}>
             <ComicArea src={src} />
