@@ -1,6 +1,6 @@
 import * as React from "react"
 import * as styles from "./ComicContentsInner.module.scss"
-import LocalNavComic from "../templates/LocalNavComic"
+import LocalNavComic from "../templates/LocalNavComicEn"
 import BnrArt from "../atoms/BnrArtEn"
 import MainContentsAreaComic from "./MainContentsAreaComic"
 
