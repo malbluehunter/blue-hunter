@@ -1,6 +1,6 @@
 import * as React from "react"
 import BnrArt from "../atoms/BnrArtEn"
-import LocalNavNews from "../templates/LocalNavNews"
+import LocalNavNews from "../templates/LocalNavNewsEn"
 import MainContentsArea from "./MainContentsArea"
 import * as styles from "./NewsContentsInner.module.scss"
 
