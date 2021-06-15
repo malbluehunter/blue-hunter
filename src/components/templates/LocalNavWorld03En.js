@@ -20,7 +20,7 @@ const LocalNavWorld03 = props => {
     <div>
       <div className={styles.localNav}>
         <div className={styles.localNav_top} onClick={toggle}>
-          <p className={styles.localNav_top_text}>ブルーハンター組織図 MENU</p>
+          <p className={styles.localNav_top_text}>Road to Blue Hunter MENU</p>
           <div className={styles.top_img_wrapper}>
             <img src="/common/local_nav_top_yellow.webp" />
           </div>
@@ -29,13 +29,13 @@ const LocalNavWorld03 = props => {
         <div className={styles.LocalNav_area} aria-expanded={isOpen}>
           <ol className={styles.LocalNav_list} start="0">
             <li className={`${styles.LocalNav_item} ${pathname.match(href01) ? styles.current : ""}`}>
-              <a href={href01}>ハンターギルド組織図</a>
+              <a href={href01}>The Organisation of Hunter Guilds</a>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href02) ? styles.current : ""}`}>
-              <a href={href02}>認定海洋保全官「BLUE HUNTER」の階級</a>
+              <a href={href02}>Classes for Officially-Recognized Marine Conservationists: Blue Hunters</a>
             </li>
             <li className={styles.LocalNav_item}>
-              <a href="/worldbuilding/">世界観・設定トップへ戻る</a>
+              <a href="/en/worldbuilding/">世界観・設定トップへ戻る</a>
             </li>
           </ol>
         </div>

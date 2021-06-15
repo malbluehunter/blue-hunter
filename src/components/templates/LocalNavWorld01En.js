@@ -28,7 +28,7 @@ const LocalNavWorld01 = props => {
     <div>
       <div className={styles.localNav}>
         <div className={styles.localNav_top} onClick={toggle}>
-          <p className={styles.localNav_top_text}>物語の背景 MENU</p>
+          <p className={styles.localNav_top_text}>Background MENU</p>
           <div className={styles.top_img_wrapper}>
             <img src="/common/local_nav_top_lightBlue.webp" />
           </div>
@@ -37,41 +37,41 @@ const LocalNavWorld01 = props => {
         <div className={styles.LocalNav_area} aria-expanded={isOpen}>
           <ol className={styles.LocalNav_list} start="0">
             <li className={`${styles.LocalNav_item} ${pathname.match(href01) ? styles.current : ""}`}>
-              <a href={href01}>予備知識としてのCCZ</a>
+              <a href={href01}>Background Knowledge: CCZ</a>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href02) ? styles.current : ""}`}>
-              <a href={href02}>海洋都市圏の誕生</a>
+              <a href={href02}>Birth of Marine Metropolitan Areas</a>
               <ul className={styles.LocalNav_list_02}>
                 <li className={`${styles.LocalNav_item_02} ${pathname.match(href03) ? styles.current : ""}`}>
-                  <a href={href03}>グラン=ムー【GRAND/MW】</a>
+                  <a href={href03}>GRAND/MW</a>
                 </li>
               </ul>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href04) ? styles.current : ""}`}>
-              <a href={href04}>国家か、都市か。</a>
+              <a href={href04}>A Nation? A City?</a>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href05) ? styles.current : ""}`}>
-              <a href={href05}>国連から超都連へ。</a>
+              <a href={href05}>From UN to UiC</a>
               <ul className={styles.LocalNav_list_02}>
                 <li className={`${styles.LocalNav_item_02} ${pathname.match(href06) ? styles.current : ""}`}>
-                  <a href={href06}>The Encyclopedia of ”Octa/M”（1）</a>
+                  <a href={href06}>Encyclopedia of Octa/M (1)</a>
                 </li>
                 <li className={`${styles.LocalNav_item_02} ${pathname.match(href07) ? styles.current : ""}`}>
-                  <a href={href07}>The Encyclopedia of ”Octa/M”（2）</a>
+                  <a href={href07}>Encyclopedia of Octa/M (2)</a>
                 </li>
                 <li className={`${styles.LocalNav_item_02} ${pathname.match(href08) ? styles.current : ""}`}>
-                  <a href={href08}>The Encyclopedia of ”Octa/M”（3）</a>
+                  <a href={href08}>Encyclopedia of Octa/M (3)</a>
                 </li>
                 <li className={`${styles.LocalNav_item_02} ${pathname.match(href09) ? styles.current : ""}`}>
-                  <a href={href09}>海中発送電塔（シーフォース）</a>
+                  <a href={href09}>Underwater Electrical Supply Towers (SeaForce)</a>
                 </li>
                 <li className={`${styles.LocalNav_item_02} ${pathname.match(href10) ? styles.current : ""}`}>
-                  <a href={href10}>The Encyclopedia of ”Octa/M”（4）</a>
+                  <a href={href10}>Encyclopedia of Octa/M (4)</a>
                 </li>
               </ul>
             </li>
             <li className={styles.LocalNav_item}>
-              <a href="/worldbuilding/">世界観・設定トップへ戻る</a>
+              <a href="/en/worldbuilding/">世界観・設定トップへ戻る</a>
             </li>
           </ol>
         </div>

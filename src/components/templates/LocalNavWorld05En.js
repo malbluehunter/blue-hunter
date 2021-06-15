@@ -22,7 +22,7 @@ const LocalNavWorld05 = props => {
     <div>
       <div className={styles.localNav}>
         <div className={styles.localNav_top} onClick={toggle}>
-          <p className={styles.localNav_top_text}>テクノロジー MENU</p>
+          <p className={styles.localNav_top_text}>Technology MENU</p>
           <div className={styles.top_img_wrapper}>
             <img src="/common/local_nav_top_purple.webp" />
           </div>
@@ -31,19 +31,19 @@ const LocalNavWorld05 = props => {
         <div className={styles.LocalNav_area} aria-expanded={isOpen}>
           <ol className={styles.LocalNav_list} start="0">
             <li className={`${styles.LocalNav_item} ${pathname.match(href01) ? styles.current : ""}`}>
-              <a href={href01}>ΣＲ(シグマアール)/ΣV(シグマビュー)</a>
+              <a href={href01}>ΣR/ΣV</a>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href02) ? styles.current : ""}`}>
-              <a href={href02}>UG［Underwater Gear］</a>
+              <a href={href02}>Underwater Gear (UG)</a>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href03) ? styles.current : ""}`}>
-              <a href={href03}>生態儀 -ビオバース-</a>
+              <a href={href03}>Bioverse</a>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href04) ? styles.current : ""}`}>
-              <a href={href04}>系統樹</a>
+              <a href={href04}>Phylogenetic Tree</a>
             </li>
             <li className={styles.LocalNav_item}>
-              <a href="/worldbuilding/">世界観・設定トップへ戻る</a>
+              <a href="/en/worldbuilding/">世界観・設定トップへ戻る</a>
             </li>
           </ol>
         </div>
