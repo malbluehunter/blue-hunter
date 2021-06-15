@@ -9,7 +9,7 @@ import MainContentsTop from "../../../components/organisms/MainContentsTop"
 import MainContentsMiddleWorld from "../../../components/organisms/MainContentsMiddleWorld"
 import ContentsLine from "../../../components/molecules/ContentsLine"
 import MainContentsBottom from "../../../components/organisms/MainContentsBottom"
-import NewsContentsInner from "../../../components/organisms/NewsContentsInner"
+import NewsContentsInner from "../../../components/organisms/NewsContentsInnerEn"
 import BreadShort from "../../../components/molecules/BreadShort"
 
 const NewsPage = ({ location }) => {

@@ -6,7 +6,7 @@ import BreadShort from "../../../../components/molecules/BreadShort"
 import ComicArea from "../../../../components/organisms/ComicArea"
 import ShareArea from "../../../../components/molecules/ShareArea"
 import LayoutTwoColumnComic from "../../../../components/templates/LayoutTwoColumnComicEn"
-import ComicContentsInner from "../../../../components/organisms/ComicContentsInner"
+import ComicContentsInner from "../../../../components/organisms/ComicContentsInnerEn"
 import Button from "../../../../components/atoms/Button"
 import Label01 from "../../../../components/molecules/Label01"
 
