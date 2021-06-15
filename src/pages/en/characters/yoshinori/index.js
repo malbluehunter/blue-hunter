@@ -49,7 +49,7 @@ const CharactersPage = ({ location }) => {
           <PageTitle src="/characters/ttl_characters.png" alt="Characters" />
         </div>
         {/* パンクズリスト */}
-        <BreadShort page01="TOP" href01="/en" page02="Characters - Yoshinori Ourai" />
+        <BreadShort page01="TOP" href01="/en/" page02="Characters - Yoshinori Ourai" />
         <SliderCharacters pathname={location.pathname} />
         <ContentsInner>
           <MainContentsMiddle>

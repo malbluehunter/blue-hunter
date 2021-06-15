@@ -70,8 +70,10 @@ main {
 .icon_wrapper {
   width: get_vw_sp(15);
   height: get_vw_sp(15);
+  margin: get_vw_sp(18) 0 0 get_vw_sp(7);
 
   @include mq(md) {
+    margin: get_vw(19) 0 0 get_vw(10);
     width: get_vw(25);
     height: get_vw(25);
   }
@@ -82,13 +84,6 @@ main {
   @include mq(md) {
     margin: get_vw(30) auto 0;
     width: get_vw(577);
-  }
-}
-.icon {
-  margin: get_vw_sp(6) get_vw_sp(7) get_vw_sp(3);
-
-  @include mq(md) {
-    margin: get_vw(10) get_vw(8) get_vw(3);
   }
 }
 .insta_area {
@@ -119,5 +114,29 @@ main {
 
   @include mq(md) {
     margin-top: get_vw(40);
+  }
+}
+.insta_link {
+  margin: auto 0;
+}
+
+.btn_innner {
+  position: absolute;
+  display: flex;
+  top: get_vw_sp(1);
+  left: get_vw_sp(36);
+
+  @include mq(md) {
+    top: get_vw(18);
+    left: get_vw(80);
+  }
+}
+.btn_text {
+  color: #0078ce;
+  @include fz_vw_sp(15);
+  font-weight: bold;
+
+  @include mq(md) {
+    @include fz_vw(24);
   }
 }

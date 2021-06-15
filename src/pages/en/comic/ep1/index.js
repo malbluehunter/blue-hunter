@@ -47,7 +47,7 @@ const ComicPage = ({ location }) => {
         </div>
         {/* パンクズリスト */}
         <div className={styles.bread_wrapper}>
-          <BreadShort page01="TOP" href01="/en" page02="Comic - Episode 1" />
+          <BreadShort page01="TOP" href01="/en/" page02="Comic - Episode 1" />
         </div>
         <Label01 text="Updated every Sunday!" />
         <ComicContentsInner>

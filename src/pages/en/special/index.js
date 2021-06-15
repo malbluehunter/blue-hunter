@@ -50,7 +50,7 @@ const SpecialPage = ({ location }) => {
           <PageTitle src="/special/ttl_special.png" alt="Special" />
         </div>
         {/* パンクズリスト */}
-        <BreadShort page01="TOP" href01="/en" page02="Special" />
+        <BreadShort page01="TOP" href01="/en/" page02="Special" />
         <ContentsInner>
           <MainContentsMiddle>
             <div className={styles.contents_inner}>

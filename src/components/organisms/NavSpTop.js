@@ -51,6 +51,13 @@ const NavSpTop = props => {
     }
   }
 
+  // 英語ページに切り替え
+  const changeToEnURL = () => {
+    if (!pathname.match(/\/en\//)) {
+      window.location.href = `/en${pathname}`
+    }
+  }
+
   return (
     <div className={styles.nav_sp_wrapper}>
       <div class={`${isClose ? styles.active : ""} ${styles.hamburger}`} onClick={handleClick}>
@@ -116,7 +123,7 @@ const NavSpTop = props => {
                   <img src="/common/bg_language.png" alt="日本語" className={styles.lang_item_img} />
                 </div>
               </li>
-              <li className={`${styles.lang_item} ${enCurrent ? styles.current : ""}`}>
+              <li className={`${styles.lang_item} ${enCurrent ? styles.current : ""}`} onClick={changeToEnURL}>
                 <div className={styles.lang_item_link}>
                   <p className={styles.lang_item_text}>English</p>
                   <img src="/common/bg_language.png" alt="English" className={styles.lang_item_img} />

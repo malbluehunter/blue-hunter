@@ -102,22 +102,22 @@ const SpecialPage = ({ location }) => {
             {src.map((srcItem, index) =>
               srcItem.media_type == "CAROUSEL_ALBUM" ? ( // 画像が複数の場合
                 srcItem.children.data[0].media_type == "IMAGE" ? ( // 複数画像かつ画像がイメージの場合
-                  <a href={srcItem.children.data[0].permalink} key={index}>
+                  <a href={srcItem.children.data[0].permalink} key={index} className={styles.insta_link}>
                     <img src={srcItem.children.data[0].media_url} className={styles.insta_img} />
                   </a>
                 ) : (
                   // 複数画像かつ画像が動画の場合
-                  <a href={srcItem.children.data[0].permalink} key={index}>
+                  <a href={srcItem.children.data[0].permalink} key={index} className={styles.insta_link}>
                     <video src={srcItem.children.data[0].media_url} className={styles.insta_img} />
                   </a>
                 )
               ) : srcItem.media_type == "IMAGE" ? ( // 画像が1枚の場合
-                <a href={srcItem.permalink} key={index}>
+                <a href={srcItem.permalink} key={index} className={styles.insta_link}>
                   <img src={srcItem.media_url} className={styles.insta_img} />
                 </a>
               ) : (
                 // 画像が1枚かつ動画の場合
-                <a href={srcItem.permalink} key={index}>
+                <a href={srcItem.permalink} key={index} className={styles.insta_link}>
                   <video src={srcItem.media_url} className={styles.insta_img} />
                 </a>
               )
@@ -125,10 +125,14 @@ const SpecialPage = ({ location }) => {
           </div>
         </div>
         <div className={styles.btn_wrapper}>
-          <ButtonLiquid href="https://www.instagram.com/explore/tags/BH_MAL/?hl=ja" isDisabled={false}>
-            #BH_MALをもっと見る
-            <div className={styles.icon_wrapper}>
-              <img src="/common/icon_instagram_02.svg" alt="インスタグラム アイコン" className={styles.icon} />
+          <ButtonLiquid href="https://www.instagram.com/explore/tags/BH_MAL/?hl=en">
+            <div className={styles.btn_innner}>
+              <div className={styles.text_wrapper}>
+                <p className={styles.btn_text}>#BH_MALをもっと見る</p>
+              </div>
+              <div className={styles.icon_wrapper}>
+                <img src="/common/icon_instagram_02.svg" alt="インスタグラム アイコン" className={styles.icon} />
+              </div>
             </div>
           </ButtonLiquid>
         </div>

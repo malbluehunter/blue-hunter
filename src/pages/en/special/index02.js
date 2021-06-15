@@ -18,16 +18,14 @@ const SpecialPage = ({ location }) => {
   const [src, setSrc] = useState([])
 
   useEffect(() => {
-    fetch(
-      "https://graph.facebook.com/17843900656018477/recent_media?user_id=17841447571286718&fields=id,media_url,media_type,permalink,children{id,media_type,media_url,permalink}&access_token=EAAGhQ8fkHakBAPFpXN8lCxC00bAa4KVtdpN8RbSEGNz1TfL6kXXOzkWqfZBoBZBMOf6XhdZBOWVReoG3u9pQqEZC2HXAibWBpdXNZCy9vFSpLD0IO2Ie0MxjQosRzZAzLhiuQi3yZBM8evEq0Xz5z74PIsZBPz6OmqBfspFMmvSWqtxottj4heBk"
-    ).then(response => {
+    fetch(process.env.GATSBY_ACCESS_TOKEN).then(response => {
       response
-        .json() //ここでBodyからJSONを返す
+        .json() //ここでbodyからJSONを返す
         .then(result => {
           setSrc(result.data)
         })
         .catch(e => {
-          console.log(e) //エラーをキャッチし表示
+          console.log(e)
         })
     })
   }, [])
@@ -38,7 +36,10 @@ const SpecialPage = ({ location }) => {
         <html lang="en" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 開始 --------------------------------------- */}
         <title>Special | BLUE HUNTER Official Site</title>
-        <meta name="description" content="The official website for the BLUE HUNTER project. Free BLUE HUNTER manga starts June 2021! Check out all you need to know about the world of BLUE HUNTER here." />
+        <meta
+          name="description"
+          content="The official website for the BLUE HUNTER project. Free BLUE HUNTER manga starts June 2021! Check out all you need to know about the world of BLUE HUNTER here."
+        />
         <meta name="keywords" content="BLUE HUNTER, BH, BLUE HUNTER Project, Free Comic, Art Contest " />
         <link rel="canonical" href="https://manga.uminohi.jp/en/special/" />
         <meta property="og:url" content="https://manga.uminohi.jp/en/special/" />
@@ -64,7 +65,7 @@ const SpecialPage = ({ location }) => {
           <PageTitle src="/special/ttl_special.png" alt="Special" />
         </div>
         {/* パンクズリスト */}
-        <BreadShort page01="TOP" href01="/en" page02="Special" />
+        <BreadShort page01="TOP" href01="/en/" page02="Special" />
         <div className={styles.contents_01}>
           <ContentsInner>
             <MainContentsMiddle>
@@ -100,36 +101,41 @@ const SpecialPage = ({ location }) => {
         </div>
         <div className={styles.insta_area}>
           <div className={styles.insta_inner}>
+            {/* インスタ40件のデータを表示 */}
             {src.map((srcItem, index) =>
               srcItem.media_type == "CAROUSEL_ALBUM" ? ( // 画像が複数の場合
                 srcItem.children.data[0].media_type == "IMAGE" ? ( // 複数画像かつ画像がイメージの場合
-                  <a href={srcItem.children.data[0].permalink}>
-                    <img src={srcItem.children.data[0].media_url} key={index} className={styles.insta_img} loading="lazy" />
+                  <a href={srcItem.children.data[0].permalink} key={index} className={styles.insta_link}>
+                    <img src={srcItem.children.data[0].media_url} className={styles.insta_img} />
                   </a>
                 ) : (
                   // 複数画像かつ画像が動画の場合
-                  <a href={srcItem.children.data[0].permalink}>
-                    <video src={srcItem.children.data[0].media_url} key={index} className={styles.insta_img} loading="lazy" />
+                  <a href={srcItem.children.data[0].permalink} key={index} className={styles.insta_link}>
+                    <video src={srcItem.children.data[0].media_url} className={styles.insta_img} />
                   </a>
                 )
               ) : srcItem.media_type == "IMAGE" ? ( // 画像が1枚の場合
-                <a href={srcItem.permalink}>
-                  <img src={srcItem.media_url} key={index} className={styles.insta_img} loading="lazy" />
+                <a href={srcItem.permalink} key={index} className={styles.insta_link}>
+                  <img src={srcItem.media_url} className={styles.insta_img} />
                 </a>
               ) : (
                 // 画像が1枚かつ動画の場合
-                <a href={srcItem.permalink}>
-                  <video src={srcItem.media_url} key={index} className={styles.insta_img} loading="lazy" />
+                <a href={srcItem.permalink} key={index} className={styles.insta_link}>
+                  <video src={srcItem.media_url} className={styles.insta_img} />
                 </a>
               )
             )}
           </div>
         </div>
         <div className={styles.btn_wrapper}>
-          <ButtonLiquid href="#" isDisabled={false}>
-            See more with the #bh_mal tag
-            <div className={styles.icon_wrapper}>
-              <img src="/common/icon_instagram_02.svg" alt="インスタグラム アイコン" className={styles.icon} />
+          <ButtonLiquid href="#">
+            <div className={styles.btn_innner}>
+              <div className={styles.text_wrapper}>
+                <p className={styles.btn_text}>See more with the #bh_mal tag</p>
+              </div>
+              <div className={styles.icon_wrapper}>
+                <img src="/common/icon_instagram_02.svg" alt="インスタグラム アイコン" className={styles.icon} />
+              </div>
             </div>
           </ButtonLiquid>
         </div>

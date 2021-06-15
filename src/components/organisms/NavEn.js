@@ -35,10 +35,19 @@ const Nav = props => {
     enCurrent = true
   }
 
+  // 日本語ページに切り替え
+  const pathnameJa = pathname.replace("/en/", "/")
+
+  const changeToJaURL = () => {
+    if (pathname.match(/\/en\//)) {
+      window.location.href = pathnameJa
+    }
+  }
+
   return (
     <div className={styles.wrap}>
       <div className={styles.lang_area}>
-        <div className={`${styles.lang_item} ${jaCurrent ? styles.current : ""}`}>
+        <div className={`${styles.lang_item} ${jaCurrent ? styles.current : ""}`} onClick={changeToJaURL}>
           <div className={styles.lang_item_link}>
             <p className={styles.lang_item_text}>日本語</p>
             <img src="/common/bg_language.png" alt="日本語" className={styles.lang_item_img} />
