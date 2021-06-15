@@ -1,6 +1,6 @@
 import * as React from "react"
-import BnrArt from "../atoms/BnrArt_en"
-import BnrArtTop from "../atoms/BnrArtTop_en"
+import BnrArt from "../atoms/BnrArtEn"
+import BnrArtTop from "../atoms/BnrArtTopEn"
 import * as styles from "./TopMainVisual.module.scss"
 
 const TopMainVisual = () => {

@@ -4,7 +4,7 @@ import Footer from "./Footer"
 import HeaderTop from "./HeaderTop"
 import HeaderTopSp from "./HeaderTopSp"
 import * as styles from "./LayoutTop.module.scss"
-import TopMainVisual from "./TopMainVisual_en"
+import TopMainVisual from "./TopMainVisualEn"
 
 const LayoutTop = props => {
   const { pathname, children } = props

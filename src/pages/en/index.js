@@ -3,7 +3,7 @@ import * as styles from "./index.module.scss"
 import { Helmet } from "react-helmet"
 import ComicArea from "../../components/organisms/ComicArea"
 import ShareArea from "../../components/molecules/ShareArea"
-import LayoutTop from "../../components/templates/LayoutTop_en"
+import LayoutTop from "../../components/templates/LayoutTopEn"
 import Button from "../../components/atoms/Button"
 import BnrArt from "../../components/atoms/BnrArt"
 
