@@ -9,7 +9,7 @@ import ContentsInner from "../../../../components/organisms/ContentsInner"
 import LayoutTwoColumn from "../../../../components/templates/LayoutTwoColumn"
 import TextHeadingCharacters from "../../../../components/atoms/TextHeadingCharacters"
 import Label02 from "../../../../components/molecules/Label02"
-import SliderCharacters from "../../../../components/organisms/SliderCharacters"
+import SliderCharacters from "../../../../components/organisms/SliderCharactersEn"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import BnrArt from "../../../../components/atoms/BnrArtEn"
@@ -49,7 +49,7 @@ const CharactersPage = ({ location }) => {
           <PageTitle src="/characters/ttl_characters.png" alt="Characters" />
         </div>
         {/* パンクズリスト */}
-        <BreadShort page01="TOP" href01="/" page02="Characters - JAZz" />
+        <BreadShort page01="TOP" href01="/en" page02="Characters - JAZz" />
         <SliderCharacters pathname={location.pathname} />
         <ContentsInner>
           <MainContentsMiddle>
