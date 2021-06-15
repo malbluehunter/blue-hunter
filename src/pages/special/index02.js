@@ -18,7 +18,6 @@ const SpecialPage = ({ location }) => {
   const [src, setSrc] = useState([])
 
   useEffect(() => {
-    // 1~25件のデータを取得
     fetch(process.env.GATSBY_ACCESS_TOKEN).then(response => {
       response
         .json() //ここでbodyからJSONを返す
