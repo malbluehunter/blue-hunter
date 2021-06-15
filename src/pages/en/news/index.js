@@ -44,7 +44,7 @@ const NewsPage = ({ location }) => {
           <PageTitle src="/news/ttl_news.png" alt="NEWS" />
         </div>
         {/* パンクズリスト */}
-        <BreadShort page01="TOP" href01="/" page02="News" />
+        <BreadShort page01="TOP" href01="/en" page02="News" />
         <NewsContentsInner>
           <div className={styles.contents_01}>
             <MainContentsTop pathname={location.pathname} text="2021.6.8" />

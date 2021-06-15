@@ -47,7 +47,7 @@ const StaffPage = ({ location }) => {
           <PageTitle src="/staff/ttl_staff.png" alt="Staff" />
         </div>
         {/* パンクズリスト */}
-        <BreadShort page01="TOP" href01="/" page02="Staff" />
+        <BreadShort page01="TOP" href01="/en" page02="Staff" />
         <ContentsInner>
           <MainContentsMiddle>
             <div className={styles.contents_inner}>
