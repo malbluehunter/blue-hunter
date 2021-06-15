@@ -10,7 +10,7 @@ import MainContentsTop from "../../../../../components/organisms/MainContentsTop
 import MainContentsMiddleWorld from "../../../../../components/organisms/MainContentsMiddleWorld"
 import ContentsLine from "../../../../../components/molecules/ContentsLine"
 import MainContentsBottom from "../../../../../components/organisms/MainContentsBottom"
-import WorldContentsInner from "../../../../../components/organisms/WorldContentsInner"
+import WorldContentsInner from "../../../../../components/organisms/WorldContentsInnerEn"
 import PagerArea from "../../../../../components/organisms/PagerArea"
 import LocalNavWorld05En from "../../../../../components/templates/LocalNavWorld05En"
 
@@ -49,7 +49,7 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/" page02="The World of BH" href02="../../index.html" page03="Technology - Bioverse" />
+        <Bread page01="TOP" href01="/en" page02="The World of BH" href02="../../index.html" page03="Technology - Bioverse" />
         <div className={styles.contents_inner}>
           <WorldContentsInner>
             <MainContentsTop pathname={location.pathname} text="Technology" />

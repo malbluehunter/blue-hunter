@@ -12,7 +12,7 @@ import Label02 from "../../../../components/molecules/Label02"
 import SliderCharacters from "../../../../components/organisms/SliderCharacters"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import BnrArt from "../../../../components/atoms/BnrArt"
+import BnrArt from "../../../../components/atoms/BnrArtEn"
 import PagerAreaCharacters from "../../../../components/organisms/PagerAreaCharacters"
 
 const CharactersPage = ({ location }) => {

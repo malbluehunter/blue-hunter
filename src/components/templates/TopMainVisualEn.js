@@ -19,7 +19,7 @@ const TopMainVisual = () => {
               <p className={styles.news_date}>2021.6.8</p>
               <p className={styles.news_text}>BLUE HUNTER Art Contest BLUE HUNTER Art Contest</p>
             </a>
-            <a className={styles.news_btn} href="/news/">
+            <a className={styles.news_btn} href="/en/news/">
               <picture>
                 <source srcset="/top/top_newsArea_btn.png" media="(min-width: 768px)" />
                 <img src="/top/top_newsArea_btn_sp.png" alt="MORE" />

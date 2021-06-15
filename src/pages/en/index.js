@@ -5,7 +5,7 @@ import ComicArea from "../../components/organisms/ComicArea"
 import ShareArea from "../../components/molecules/ShareArea"
 import LayoutTop from "../../components/templates/LayoutTopEn"
 import Button from "../../components/atoms/Button"
-import BnrArt from "../../components/atoms/BnrArt"
+import BnrArt from "../../components/atoms/BnrArtEn"
 
 const TopPage = ({ location }) => {
   // /* --------------------------------------- mal様修正範囲(マンガ画像を表示順で設定) 開始 --------------------------------------- */

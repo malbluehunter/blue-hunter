@@ -10,7 +10,7 @@ import TextHeading from "../../../components/atoms/TextHeading"
 import TextMedium from "../../../components/atoms/TextMedium"
 import LineImg from "../../../components/atoms/LineImg"
 import LineImgSp from "../../../components/atoms/LineImgSp"
-import BnrArt from "../../../components/atoms/BnrArt"
+import BnrArt from "../../../components/atoms/BnrArtEn"
 import TextAnnotation from "../../../components/atoms/TextAnnotation"
 import ButtonLiquid from "../../../components/atoms/ButtonLiquid"
 

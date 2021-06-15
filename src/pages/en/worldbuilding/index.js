@@ -6,7 +6,7 @@ import BreadShort from "../../../components/molecules/BreadShort"
 import LayoutTwoColumn from "../../../components/templates/LayoutTwoColumn"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import BnrArt from "../../../components/atoms/BnrArt"
+import BnrArt from "../../../components/atoms/BnrArtEn"
 import WorldCategoryBtn from "../../../components/organisms/WorldCategoryBtn"
 
 const WorldPage = ({ location }) => {
