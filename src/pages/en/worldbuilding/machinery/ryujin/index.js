@@ -46,7 +46,7 @@ const WorldPage = ({ location }) => {
           <PageTitle src="/world/ttl_world.png" alt="The World of BLUE HUNTER" />
         </div>
         {/* パンクズリスト */}
-        <Bread page01="TOP" href01="/en" page02="The World of BH" href02="../../index.html" page03="Machinery - Wake Rider Ryujin" />
+        <Bread page01="TOP" href01="/en/" page02="The World of BH" href02="/en/worldbuilding/" page03="Machinery - Wake Rider Ryujin" />
         <div className={styles.contents_inner}>
           <WorldContentsInner>
           <MainContentsTop pathname={location.pathname} text="Machinery" />
@@ -64,7 +64,7 @@ const WorldPage = ({ location }) => {
           </MainContentsMiddleWorld>
           <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
-          <PagerArea pathname={location.pathname} hrefPrev="../orca/" hrefNext="../bounty-kit/" isDisabledPrev={false} isDisabledNext={false}  number={2} TotalNumber={9} />
+          <PagerArea pathname={location.pathname} hrefPrev="/en/worldbuilding/machinery/orca/" hrefNext="/en/worldbuilding/machinery/bounty-kit/" isDisabledPrev={false} isDisabledNext={false}  number={2} TotalNumber={9} />
       {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </WorldContentsInner>
         <LocalNavWorld04En pathname={location.pathname} />
