@@ -9,7 +9,84 @@ import BnrArt from "../components/atoms/BnrArt"
 
 const TopPage = ({ location }) => {
   // /* --------------------------------------- mal様修正範囲(マンガ画像を表示順で設定) 開始 --------------------------------------- */
-  const src = ["/top/img_comic_01.webp"]
+  const src = [
+    "/comic/01_ja/bh_001_01.png",
+    "/comic/01_ja/bh_001_02.png",
+    "/comic/01_ja/bh_001_03.png",
+    "/comic/01_ja/bh_001_04.png",
+    "/comic/01_ja/bh_001_05.png",
+    "/comic/01_ja/bh_001_06.png",
+    "/comic/01_ja/bh_001_07.png",
+    "/comic/01_ja/bh_001_08.png",
+    "/comic/01_ja/bh_001_09.png",
+    "/comic/01_ja/bh_001_10.png",
+    "/comic/01_ja/bh_001_11.png",
+    "/comic/01_ja/bh_001_12.png",
+    "/comic/01_ja/bh_001_13.png",
+    "/comic/01_ja/bh_001_14.png",
+    "/comic/01_ja/bh_001_15.png",
+    "/comic/01_ja/bh_001_16.png",
+    "/comic/01_ja/bh_001_17.png",
+    "/comic/01_ja/bh_001_18.png",
+    "/comic/01_ja/bh_001_19.png",
+    "/comic/01_ja/bh_001_20.png",
+    "/comic/01_ja/bh_001_21.png",
+    "/comic/01_ja/bh_001_22.png",
+    "/comic/01_ja/bh_001_23.png",
+    "/comic/01_ja/bh_001_24.png",
+    "/comic/01_ja/bh_001_25.png",
+    "/comic/01_ja/bh_001_26.png",
+    "/comic/01_ja/bh_001_27.png",
+    "/comic/01_ja/bh_001_28.png",
+    "/comic/01_ja/bh_001_29.png",
+    "/comic/01_ja/bh_001_30.png",
+    "/comic/01_ja/bh_001_31.png",
+    "/comic/01_ja/bh_001_32.png",
+    "/comic/01_ja/bh_001_33.png",
+    "/comic/01_ja/bh_001_34.png",
+    "/comic/01_ja/bh_001_35.png",
+    "/comic/01_ja/bh_001_36.png",
+    "/comic/01_ja/bh_001_37.png",
+    "/comic/01_ja/bh_001_38.png",
+    "/comic/01_ja/bh_001_39.png",
+    "/comic/01_ja/bh_001_40.png",
+    "/comic/01_ja/bh_001_41.png",
+    "/comic/01_ja/bh_001_42.png",
+    "/comic/01_ja/bh_001_43.png",
+    "/comic/01_ja/bh_001_44.png",
+    "/comic/01_ja/bh_001_45.png",
+    "/comic/01_ja/bh_001_46.png",
+    "/comic/01_ja/bh_001_47.png",
+    "/comic/01_ja/bh_001_48.png",
+    "/comic/01_ja/bh_001_49.png",
+    "/comic/01_ja/bh_001_50.png",
+    "/comic/01_ja/bh_001_51.png",
+    "/comic/01_ja/bh_001_52.png",
+    "/comic/01_ja/bh_001_53.png",
+    "/comic/01_ja/bh_001_54.png",
+    "/comic/01_ja/bh_001_55.png",
+    "/comic/01_ja/bh_001_56.png",
+    "/comic/01_ja/bh_001_57.png",
+    "/comic/01_ja/bh_001_58.png",
+    "/comic/01_ja/bh_001_59.png",
+    "/comic/01_ja/bh_001_60.png",
+    "/comic/01_ja/bh_001_61.png",
+    "/comic/01_ja/bh_001_62.png",
+    "/comic/01_ja/bh_001_63.png",
+    "/comic/01_ja/bh_001_64.png",
+    "/comic/01_ja/bh_001_65.png",
+    "/comic/01_ja/bh_001_66.png",
+    "/comic/01_ja/bh_001_67.png",
+    "/comic/01_ja/bh_001_68.png",
+    "/comic/01_ja/bh_001_69.png",
+    "/comic/01_ja/bh_001_70.png",
+    "/comic/01_ja/bh_001_71.png",
+    "/comic/01_ja/bh_001_72.png",
+    "/comic/01_ja/bh_001_73.png",
+    "/comic/01_ja/bh_001_74.png",
+    "/comic/01_ja/bh_001_75.png",
+    "/comic/01_ja/bh_001_76.png"
+  ]
   // /* --------------------------------------- mal様修正範囲(マンガ画像を表示順で設定) 終了 --------------------------------------- */
 
   return (
@@ -46,13 +123,13 @@ const TopPage = ({ location }) => {
           </div>
           <ShareArea />
           <div className={styles.btn_wrapper}>
-            <div className={styles.btn_next}>
-              <Button href="#" isDisabled={false}>
+            {/* <div className={styles.btn_next}>
+              <Button href="/comic/ep2/" isDisabled={false}>
                 第2話を読む
               </Button>
-            </div>
+            </div> */}
             <div className={styles.btn_plan}>
-              <Button isDisabled={true}>次回8/x 配信予定</Button>
+              <Button isDisabled={true}>次回6/28 配信予定</Button>
             </div>
           </div>
           <div className={styles.bnr_area}>
