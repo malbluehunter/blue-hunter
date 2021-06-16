@@ -65,9 +65,9 @@ const WorldPage = ({ location }) => {
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="Σ (Sigma) is the name of the original Hunter Guild and has the mathematical meaning of 'summation'. Their aim in developing and releasing this UI was to make it so Hunters can see all the essential information they need at the blink of an eye." />
             </div>
-            <div className={styles.img_wrapper}>
+            {/* <div className={styles.img_wrapper}>
               <img src="/world/world_img_technology_03.png" alt="" />
-            </div>
+            </div> */}
             </MainContentsMiddleWorld>
           <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}

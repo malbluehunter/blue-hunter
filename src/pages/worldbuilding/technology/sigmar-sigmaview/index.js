@@ -67,9 +67,9 @@ const WorldPage = ({ location }) => {
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="ハンターギルドの開祖「Σ」が開発したものである。そもそもΣには数学的に「積分」の意味もあり、ハンターに不可⽋な全情報を⼀⽬で認識できるような集約されたUIを⽬指し、開発された。" />
             </div>
-            <div className={styles.img_wrapper}>
+            {/* <div className={styles.img_wrapper}>
               <img src="/world/world_img_technology_03.png" alt="" />
-            </div>
+            </div> */}
             </MainContentsMiddleWorld>
           <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}
