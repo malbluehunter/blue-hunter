@@ -26,7 +26,7 @@ const NewsPage = ({ location }) => {
         {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="BLUE HUNTER Official Site" />
-        <meta property="og:image" content="https://manga.uminohi.jp/ogp.png" />
+        <meta property="og:image" content="https://manga.uminohi.jp/ogp_en.png" />
         <link rel="preload" as="image" href="/common/nav_text_news_hover.webp" />
         <link rel="preload" as="image" href="/common/nav_text_comic_hover.webp" />
         <link rel="preload" as="image" href="/common/nav_text_world_hover.webp" />
