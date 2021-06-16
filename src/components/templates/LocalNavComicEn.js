@@ -21,12 +21,19 @@ const LocalNavComic = () => {
       </div>
       <div className={styles.LocalNav_area} aria-expanded={isOpen}>
         <ul className={styles.LocalNav_list} start="0">
-          <li className={styles.LocalNav_item}>
+          {/* <li className={styles.LocalNav_item}>
             <a href="/en/comic/ep1/">Episode 1</a>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.current}`}>
               <a href="">Episode 2</a>
               <LabelNew />
+          </li> */}
+          <li className={`${styles.LocalNav_item} ${styles.current}`}>
+              <a href="/en/comic/ep1/">Episode 1</a>
+              <LabelNew />
+          </li>
+          <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
+            <a href="">Episode 2</a>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
             <a href="">Episode 3</a>

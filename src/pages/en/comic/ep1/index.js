@@ -138,7 +138,7 @@ const ComicPage = ({ location }) => {
         <div className={styles.bread_wrapper}>
           <BreadShort page01="TOP" href01="/en/" page02="Comic - Episode 1" />
         </div>
-        <Label01 text="Updated every Monday!" />
+        <Label01 text="Updated every Friday!" />
         <ComicContentsInner>
           <div className={styles.comic_wrapper}>
             <ComicArea src={src} />
@@ -152,7 +152,7 @@ const ComicPage = ({ location }) => {
                 </Button>
               </div> */}
               <div className={styles.btn_plan}>
-                <Button isDisabled={true}>Next chapter out 28 Jun</Button>
+                <Button isDisabled={true}>Next chapter out 16 July</Button>
               </div>
             </div>
           </div>
