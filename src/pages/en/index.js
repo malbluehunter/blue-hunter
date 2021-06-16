@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet"
 import ComicArea from "../../components/organisms/ComicArea"
 import ShareArea from "../../components/molecules/ShareArea"
 import LayoutTop from "../../components/templates/LayoutTopEn"
-import Button from "../../components/atoms/Button"
+import Button from "../../components/atoms/ButtonEn"
 import BnrArt from "../../components/atoms/BnrArtEn"
 
 const TopPage = ({ location }) => {
