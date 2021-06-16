@@ -7,7 +7,7 @@ import ComicArea from "../../../../components/organisms/ComicArea"
 import ShareArea from "../../../../components/molecules/ShareArea"
 import LayoutTwoColumnComic from "../../../../components/templates/LayoutTwoColumnComicEn"
 import ComicContentsInner from "../../../../components/organisms/ComicContentsInnerEn"
-import Button from "../../../../components/atoms/Button"
+import Button from "../../../../components/atoms/ButtonEn"
 import Label01 from "../../../../components/molecules/Label01"
 
 const ComicPage = ({ location }) => {
