@@ -54,9 +54,6 @@ const WorldPage = ({ location }) => {
             <TextHeading text="-マイAI-" />
             <ContentsLine pathname={location.pathname} />
             <TextMedium text="この時代、責任能⼒を問われる条件下で⽤いるロボット（事故を起こす可能性のある⾃動操舵船など）は個⼈にひもづけられることが義務化されており、そういったロボットのAIは「マイAI」と呼ばれ、個⼈が注意深くブリーディングする。政治AIなども政治家である個⼈がブリーディングしたものとみなされる。社会維持に使われる共働AIは膨⼤に分散するマイAIの総意として機能する。" />
-            <div className={styles.img_wrapper}>
-              <img src="/world/world_img_01.png" alt="" />
-            </div>
             </MainContentsMiddleWorld>
           <MainContentsBottom pathname={location.pathname} />
           {/* PREV、NEXTボタンのURL、ページ番号の設定。1ページ目はPREVボタンを非活性、最終ページはNEXTボタンを非活性にします。 各ページごとに設定お願いします。*/}

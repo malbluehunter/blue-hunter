@@ -63,7 +63,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="Middle-range PHREM devices usually display in monochrome in order to reduce power consumption as well as to make it easier to view when out in the sunlight. Σglasses can also be used to improve visibility. Hunters often go for PHREM devices with high water pressure resistance, and Kakeru's OYAJI has a coating that lets it withstand depths of 300 meters. OYAJI is also able to project holograms." />
             </div>
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_01.png" alt="" />
+              <img src="/world/world_img_machinery_07.png" alt="" />
             </div>
           </MainContentsMiddleWorld>
           <MainContentsBottom pathname={location.pathname} />

@@ -66,7 +66,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="Σ (Sigma) is the name of the original Hunter Guild and has the mathematical meaning of 'summation'. Their aim in developing and releasing this UI was to make it so Hunters can see all the essential information they need at the blink of an eye." />
             </div>
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_01.png" alt="" />
+              <img src="/world/world_img_technology_03.png" alt="" />
             </div>
             </MainContentsMiddleWorld>
           <MainContentsBottom pathname={location.pathname} />

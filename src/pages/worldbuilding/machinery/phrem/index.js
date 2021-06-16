@@ -65,7 +65,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="また、カケルのフレンはホログラムプロジェクション機能を有している。" />
             </div>
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_01.png" alt="" />
+              <img src="/world/world_img_machinery_07.png" alt="" />
             </div>
           </MainContentsMiddleWorld>
           <MainContentsBottom pathname={location.pathname} />

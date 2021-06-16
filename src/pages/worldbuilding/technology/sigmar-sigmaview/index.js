@@ -68,7 +68,7 @@ const WorldPage = ({ location }) => {
               <TextMediumSub text="ハンターギルドの開祖「Σ」が開発したものである。そもそもΣには数学的に「積分」の意味もあり、ハンターに不可⽋な全情報を⼀⽬で認識できるような集約されたUIを⽬指し、開発された。" />
             </div>
             <div className={styles.img_wrapper}>
-              <img src="/world/world_img_01.png" alt="" />
+              <img src="/world/world_img_technology_03.png" alt="" />
             </div>
             </MainContentsMiddleWorld>
           <MainContentsBottom pathname={location.pathname} />
