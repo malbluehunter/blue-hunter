@@ -10,6 +10,7 @@ import BnrArt from "../components/atoms/BnrArt"
 const TopPage = ({ location }) => {
   // /* --------------------------------------- mal様修正範囲(マンガ画像を表示順で設定) 開始 --------------------------------------- */
   const src = [
+    "/top/img_top_ep1_ja.png",
     "/comic/01_ja/bh_001_01.png",
     "/comic/01_ja/bh_001_02.png",
     "/comic/01_ja/bh_001_03.png",
