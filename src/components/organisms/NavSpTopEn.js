@@ -67,10 +67,16 @@ const NavSpTop = props => {
       </div>
       <div className={`${isClose ? styles.active : ""} ${styles.logo_area}`}>
         <a href="https://uminohi.jp/" target="_blank">
-          <img src="/common/logo_sp.webp" alt="日本財団 海と日本PROJECT" className={styles.inner_item_logo_01} />
+          <picture>
+            <source type="image/webp" srcset="/common/logo_sp.webp" />
+            <img src="/common/logo_sp.png" alt="日本財団 海と日本PROJECT" loading="lazy" className={styles.inner_item_logo_01} />
+          </picture>
         </a>
         <a href="/en/">
-          <img src="/common/logo_bluehunter_sp.webp" alt="BLUE HUNTER" className={styles.inner_item_logo_02} />
+          <picture>
+            <source type="image/webp" srcset="/common/logo_bluehunter_sp.webp" />
+            <img src="/common/logo_bluehunter_sp.png" alt="BLUE HUNTER" loading="lazy" className={styles.inner_item_logo_02} />
+          </picture>
         </a>
       </div>
       <nav className={`${isClose ? styles.active : ""} ${styles.globalMenuSp}`}>

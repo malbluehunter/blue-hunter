@@ -29,7 +29,10 @@ const LocalNavWorld04 = props => {
         <div className={styles.localNav_top} onClick={toggle}>
           <p className={styles.localNav_top_text}>メカ・アイテム MENU</p>
           <div className={styles.top_img_wrapper}>
-            <img src="/common/local_nav_top_blue.webp" />
+            <picture>
+              <source type="image/webp" srcset="/common/local_nav_top_blue.webp" />
+              <img src="/common/local_nav_top_blue.png" alt="" loading="lazy" />
+            </picture>
           </div>
         </div>
         {/* 現在地の目次にstyles.currentを付与*/}
@@ -62,7 +65,6 @@ const LocalNavWorld04 = props => {
                 <li className={`${styles.LocalNav_item_02} ${pathname.match(href09) ? styles.current : ""}`}>
                   <a href={href09}>-Σ(シグマ)グラス-</a>
                 </li>
-
               </ul>
             </li>
             <li className={styles.LocalNav_item}>

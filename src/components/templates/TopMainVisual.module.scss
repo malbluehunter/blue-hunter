@@ -2,7 +2,7 @@
 
 .mainVisual_area {
   position: relative;
-  background-image: url("/top/bg_main_top_sp.webp");
+  background-image: url("/top/bg_main_top_sp.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
@@ -11,7 +11,7 @@
   @include mq(md) {
     padding: get_vw(270) 0 get_vw(100);
     z-index: 0;
-    background-image: url("/top/bg_main_top.webp");
+    background-image: url("/top/bg_main_top.png");
   }
 }
 

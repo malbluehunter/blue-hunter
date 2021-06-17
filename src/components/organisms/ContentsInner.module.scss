@@ -9,7 +9,7 @@
 }
 .main_contents_area_top {
   padding: get_vw_sp(10) get_vw_sp(27) 0;
-  background: url("/common/contentsArea_top_lightBlue.webp") no-repeat;
+  background: url("/common/contentsArea_top_lightBlue.png") no-repeat;
   background-position: get_vw_sp(2) top;
   background-size: 98.9% 101%;
   height: get_vw_sp(21);
@@ -21,7 +21,7 @@
   }
 }
 .main_contents_area_bottom {
-  background: url("/common/contentsArea_bottom_lightBlue.webp") no-repeat;
+  background: url("/common/contentsArea_bottom_lightBlue.png") no-repeat;
   background-position: center bottom;
   background-size: 100%;
   background-position: get_vw_sp(-1) get_vw_sp(0);

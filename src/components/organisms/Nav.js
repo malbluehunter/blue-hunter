@@ -59,7 +59,10 @@ const Nav = props => {
         </div>
       </div>
       <div className={styles.nav_bg}>
-        <img src="/common/bg_navi.webp" alt="グローバルナビ背景" />
+        <picture>
+          <source type="image/webp" srcset="/common/bg_navi.webp" />
+          <img src="/common/bg_navi.png" alt="グローバルナビ背景" loading="lazy" />
+        </picture>
       </div>
       <div className={styles.menu}>
         <div className={`${styles.menu_item} ${newsCurrent ? styles.current : ""}`}>

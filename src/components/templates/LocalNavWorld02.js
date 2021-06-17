@@ -28,7 +28,10 @@ const LocalNavWorld02 = props => {
         <div className={styles.localNav_top} onClick={toggle}>
           <p className={styles.localNav_top_text}>社会制度 MENU</p>
           <div className={styles.top_img_wrapper}>
-            <img src="/common/local_nav_top_green.webp" />
+            <picture>
+              <source type="image/webp" srcset="/common/local_nav_top_green.webp" />
+              <img src="/common/local_nav_top_green.png" alt="" loading="lazy" />
+            </picture>
           </div>
         </div>
         {/* 現在地の目次にstyles.currentを付与*/}

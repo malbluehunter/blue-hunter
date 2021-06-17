@@ -117,7 +117,10 @@ const TopPage = ({ location }) => {
       <LayoutTop pathname={location.pathname}>
         <div className={styles.contents_inner}>
           <div className={styles.description}>
-            <img src="/top/description_top.webp" alt="" />
+            <picture>
+              <source type="image/webp" srcset="/top/description_top.webp" />
+              <img src="/top/description_top.png" alt="" loading="lazy" />
+            </picture>
           </div>
           <div className={styles.comic_wrapper}>
             <ComicArea src={src} />
