@@ -44,7 +44,7 @@
 
   @include mq(md) {
     left: get_vw(-20);
-    border-right: get_vw(20) solid rgba(67, 219, 242, 0.8);
+    border-right: get_vw(21) solid rgba(67, 219, 242, 0.8);
     border-top: get_vw(24) solid transparent;
     border-bottom: get_vw(24) solid transparent;
   }

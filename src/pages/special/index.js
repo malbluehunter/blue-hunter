@@ -33,12 +33,12 @@ const SpecialPage = ({ location }) => {
         <meta property="og:image" content="https://manga.uminohi.jp/ogp.png" />
         <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-        <link rel="preload" as="image" href="/common/nav_text_news_hover.webp" />
-        <link rel="preload" as="image" href="/common/nav_text_comic_hover.webp" />
-        <link rel="preload" as="image" href="/common/nav_text_world_hover.webp" />
-        <link rel="preload" as="image" href="/common/nav_text_characters_hover.webp" />
-        <link rel="preload" as="image" href="/common/nav_text_staff_hover.webp" />
-        <link rel="preload" as="image" href="/common/nav_text_special_hover.webp" />
+        <link rel="preload" as="image" href="/common/nav_text_news_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_comic_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_world_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_characters_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_staff_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_special_hover.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet" />
       </Helmet>
