@@ -16,7 +16,10 @@ const LocalNavComic = () => {
       <div className={styles.localNav_top} onClick={toggle}>
         <p className={styles.localNav_top_text}>シリーズ一覧</p>
         <div className={styles.top_img_wrapper}>
-          <img src="/common/local_nav_top_lightBlue.webp" />
+          <picture>
+            <source type="image/webp" srcset="/common/local_nav_top_lightBlue.webp" />
+            <img src="/common/local_nav_top_lightBlue.png" alt="" loading="lazy" />
+          </picture>
         </div>
       </div>
       <div className={styles.LocalNav_area} aria-expanded={isOpen}>
@@ -25,8 +28,8 @@ const LocalNavComic = () => {
             <a href="">第1話</a>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.current}`}>
-              <a href="">第2話</a>
-              <LabelNew />
+            <a href="">第2話</a>
+            <LabelNew />
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
             <a href="">第3話</a>

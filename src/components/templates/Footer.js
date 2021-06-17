@@ -16,22 +16,34 @@ const Footer = () => {
           <ul className={styles.bnr_list}>
             <li className={styles.bnr_item}>
               <a href="https://uminohi.jp/" target="_blank">
-                <img src="/common/bnr_footer_01.webp" alt="日本財団 海と日本PROJECT" loading="lazy" />
+                <picture>
+                  <source type="image/webp" srcset="/common/bnr_footer_01.webp" />
+                  <img src="/common/bnr_footer_01.png" alt="日本財団 海と日本PROJECT" loading="lazy" />
+                </picture>
               </a>
             </li>
             <li className={styles.bnr_item}>
               <a href="https://world-eggs.jp/" target="_blank">
-                <img src="/common/bnr_footer_02.webp" alt="Worldeggs" loading="lazy" />
+                <picture>
+                  <source type="image/webp" srcset="/common/bnr_footer_02.webp" />
+                  <img src="/common/bnr_footer_02.png" alt="Worldeggs" loading="lazy" />
+                </picture>
               </a>
             </li>
             <li className={styles.bnr_item}>
               <a href="https://cannajapan.co.jp/" target="_blank">
-                <img src="/common/bnr_footer_03.webp" alt="カンナジャパン" loading="lazy" />
+                <picture>
+                  <source type="image/webp" srcset="/common/bnr_footer_03.webp" />
+                  <img src="/common/bnr_footer_03.png" alt="カンナジャパン" loading="lazy" />
+                </picture>
               </a>
             </li>
             <li className={styles.bnr_item}>
               <a href="https://myanimelist.net/" target="_blank">
-                <img src="/common/bnr_footer_04.webp" alt="MAL" loading="lazy" />
+                <picture>
+                  <source type="image/webp" srcset="/common/bnr_footer_04.webp" />
+                  <img src="/common/bnr_footer_04.png" alt="MAL" loading="lazy" />
+                </picture>
               </a>
             </li>
           </ul>

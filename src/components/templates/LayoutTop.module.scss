@@ -2,7 +2,7 @@
 
 .contents_wrapper {
   position: relative;
-  background-image: url("/top/bg_dolphin_top_sp.webp");
+  background-image: url("/top/bg_dolphin_top_sp.png");
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto get_vw_sp(-25);
@@ -10,7 +10,7 @@
   width: 100vw;
 
   @include mq(md) {
-    background-image: url("/top/bg_dolphin_top.webp");
+    background-image: url("/top/bg_dolphin_top.png");
     padding: 0;
     margin: get_vw(-40) auto get_vw(-25);
   }
@@ -22,7 +22,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background: url("/top/bg_blue_top.webp");
+  background: url("/top/bg_blue_top.png");
   background-size: contain;
   background-repeat: repeat;
   width: 100vw;

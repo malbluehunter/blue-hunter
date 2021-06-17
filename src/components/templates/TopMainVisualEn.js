@@ -9,7 +9,10 @@ const TopMainVisual = () => {
       <div className={styles.mainVisual_area_inner}>
         <div className={styles.main_contents_area}>
           <div className={styles.logo_bluehunter_wrapper}>
-            <img src="/top/logo_bluehunter.webp" alt="BLUE HUNTER" />
+            <picture>
+              <source type="image/webp" srcset="/top/logo_bluehunter.webp" />
+              <img src="/top/logo_bluehunter.png" alt="BLUE HUNTER" loading="lazy" />
+            </picture>
           </div>
           <div className={styles.text_wrapper_en}>
             <img src="/top/top_main_text_en.png" alt="These vast waters, are hiding so much life" />
@@ -37,7 +40,7 @@ const TopMainVisual = () => {
         </div>
         <div className={styles.hero_wrapper}>
           <picture>
-            <source srcset="/top/top_hero.webp" media="(min-width: 768px)" />
+            <source srcset="/top/top_hero.png" media="(min-width: 768px)" />
             <img src="/top/top_hero_sp.webp" alt="" />
           </picture>
         </div>

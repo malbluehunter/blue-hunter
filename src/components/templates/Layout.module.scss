@@ -1,7 +1,7 @@
 @import "../../assets/scss/mixin";
 
 .container::before {
-  background-image: url("/common/bg_main_sp.webp");
+  background-image: url("/common/bg_main_sp.png");
   background-size: cover;
 
   position: fixed;
@@ -12,7 +12,7 @@
   content: "";
 
   @include mq(md) {
-    background-image: url("/common/bg_main.webp");
+    background-image: url("/common/bg_main.png");
   }
 }
 .contents_wrapper {

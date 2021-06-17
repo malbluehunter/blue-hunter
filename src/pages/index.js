@@ -9,7 +9,7 @@ import BnrArt from "../components/atoms/BnrArt"
 
 const TopPage = ({ location }) => {
   // /* --------------------------------------- mal様修正範囲(マンガ画像を表示順で設定) 開始 --------------------------------------- */
-  const src = ["/top/img_comic_01.webp"]
+  const src = ["/top/img_comic_01"]
   // /* --------------------------------------- mal様修正範囲(マンガ画像を表示順で設定) 終了 --------------------------------------- */
 
   return (
@@ -39,7 +39,10 @@ const TopPage = ({ location }) => {
       <LayoutTop pathname={location.pathname}>
         <div className={styles.contents_inner}>
           <div className={styles.description}>
-            <img src="/top/description_top.webp" alt="" />
+            <picture>
+              <source type="image/webp" srcset="/top/description_top.webp" />
+              <img src="/top/description_top.png" alt="" loading="lazy" />
+            </picture>
           </div>
           <div className={styles.comic_wrapper}>
             <ComicArea src={src} />
