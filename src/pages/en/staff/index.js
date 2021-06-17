@@ -37,7 +37,7 @@ const StaffPage = ({ location }) => {
         <link rel="preload" as="image" href="/common/nav_text_staff_hover.webp" />
         <link rel="preload" as="image" href="/common/nav_text_special_hover.webp" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet" /><meta name="robots" content="noindex" />
       </Helmet>
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
