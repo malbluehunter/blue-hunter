@@ -12,35 +12,35 @@ import WorldCategoryBtn from "../../components/organisms/WorldCategoryBtn"
 const WorldPage = ({ location }) => {
   const categoryInfo = [
     {
-      src: "/world/bg_top_01.webp",
+      src: "/world/bg_top_01.png",
       alt: "Background",
       text: "海洋都市圏「グラン=ムー」の成り立ちと発展を年譜に沿って説明します。",
       btn: "/world/btn_top_01.png",
       href: "/worldbuilding/background/ccz/",
     },
     {
-      src: "/world/bg_top_02.webp",
+      src: "/world/bg_top_02.png",
       alt: "Social System",
       text: "タスクやフェアチェーンとは？物語に欠かせない用語を解説します。",
       btn: "/world/btn_top_02.png",
       href: "/worldbuilding/socialsystem/tk/",
     },
     {
-      src: "/world/bg_top_03.webp",
+      src: "/world/bg_top_03.png",
       alt: "Road to Blue Hunter",
       text: "ハンターギルド組織やブルーハンターの階級について明らかにします。",
       btn: "/world/btn_top_03.png",
       href: "/worldbuilding/bluehunter/guilds/",
     },
     {
-      src: "/world/bg_top_04.webp",
+      src: "/world/bg_top_04.png",
       alt: "Machinery",
       text: "カケル達が搭乗するオルカ号や、ハンター達が使っている便利な道具の紹介です。",
       btn: "/world/btn_top_04.png",
       href: "/worldbuilding/machinery/orca/",
     },
     {
-      src: "/world/bg_top_05.webp",
+      src: "/world/bg_top_05.png",
       alt: "Technology",
       text: "2050年は今より技術が成熟した世界。進歩したテクノロジーの紹介です。",
       btn: "/world/btn_top_05.png",
@@ -64,12 +64,12 @@ const WorldPage = ({ location }) => {
         <meta property="og:image" content="https://manga.uminohi.jp/ogp.png" />
         <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-        <link rel="preload" as="image" href="/common/nav_text_news_hover.webp" />
-        <link rel="preload" as="image" href="/common/nav_text_comic_hover.webp" />
-        <link rel="preload" as="image" href="/common/nav_text_world_hover.webp" />
-        <link rel="preload" as="image" href="/common/nav_text_characters_hover.webp" />
-        <link rel="preload" as="image" href="/common/nav_text_staff_hover.webp" />
-        <link rel="preload" as="image" href="/common/nav_text_special_hover.webp" />
+        <link rel="preload" as="image" href="/common/nav_text_news_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_comic_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_world_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_characters_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_staff_hover.png" />
+        <link rel="preload" as="image" href="/common/nav_text_special_hover.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet" /><meta name="robots" content="noindex" />
       </Helmet>

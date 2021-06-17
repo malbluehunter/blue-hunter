@@ -13,9 +13,15 @@ const WorldCategoryBtn = props => {
           <a href={item.href} className={styles.btn_link}>
             <div className={styles.category_list_inner}>
               <p className={styles.text}>{item.text}</p>
-              <img className={styles.btn} src={item.btn} alt="MORE" />
+              <picture>
+                <source type="image/webp" srcset={`${item.btn.slice(0, -4)}.webp`} />
+                <img className={styles.btn} src={item.btn} alt="MORE" loading="lazy" />
+              </picture>
             </div>
-            <img className={styles.img} src={item.src} alt={item.alt} />
+            <picture>
+              <source type="image/webp" srcset={`${item.src.slice(0, -4)}.webp`} />
+              <img className={styles.img} src={item.src} alt={item.alt} loading="lazy" />
+            </picture>
           </a>
         </div>
       ))}
