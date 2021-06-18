@@ -58,12 +58,12 @@ const WorldPage = ({ location }) => {
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="視界の中で海が真っ⽩になり、メッシュ状に区切られたグリッド（座標世界）が出現する。現実の海に1対1で対応しており、区切られた範囲を⽰す「ブロック」の⾊情報を頼りにハンターは移動し、考え、捕獲すべきターゲット⽣物を追い詰めていく。" />
             </div>
-            <div className={styles.textMediumSub_wrapper}>
+            {/* <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="例）" />
               <TextMediumSub text="⾚ブロック・・・環境DNAの痕跡" />
               <TextMediumSub text="⻘ブロック・・・絞り込まれた予想エリア" />
               <TextMediumSub text="⼗字・・・⽣物反応" />
-            </div>
+            </div> */}
             <div className={styles.textMediumSub_wrapper}>
               <TextMediumSub text="ハンターギルドの開祖「Σ」が開発したものである。そもそもΣには数学的に「積分」の意味もあり、ハンターに不可⽋な全情報を⼀⽬で認識できるような集約されたUIを⽬指し、開発された。" />
             </div>

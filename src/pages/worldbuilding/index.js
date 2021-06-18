@@ -35,7 +35,7 @@ const WorldPage = ({ location }) => {
     {
       src: "/world/bg_top_04.png",
       alt: "Machinery",
-      text: "カケル達が搭乗するオルカ号や、ハンター達が使っている便利な道具の紹介です。",
+      text: "カケル達が搭乗するオルカ号や、ハンターが使う便利な道具の紹介です。",
       btn: "/world/btn_top_04.png",
       href: "/worldbuilding/machinery/orca/",
     },

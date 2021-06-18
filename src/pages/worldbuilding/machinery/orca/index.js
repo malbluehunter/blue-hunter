@@ -55,7 +55,7 @@ const WorldPage = ({ location }) => {
           <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="ψOrca -オルカ号-" />
             <ContentsLine pathname={location.pathname} />
-            <TextMedium text="ブルーハンターが乗る自給自足船。太陽電池や風力、潮汐力等を駆使し、海水を電気分解して水素を生成・貯蔵しつつ航行する。動力を自給自足 するのみならず、海中電力網（シーフォース）にも供給。ψオルカ号をはじめとしたゼロシップに分類される船でミッションを成し遂げれば、より多くゲインしたとみなされ、評価が⾼い。危機回避や⽣命救助が⽬的の場合は、プラスエミッション（ロス）が許されている。" />
+            <TextMedium text="ブルーハンターが乗る自給自足船。太陽電池や風力、潮汐力等を駆使し、海水を電気分解して水素を生成・貯蔵しつつ航行する。動力を自給自足するのみならず、海中電力網（シーフォース）にも供給。ψオルカ号をはじめとしたゼロシップに分類される船でミッションを成し遂げれば、より多くゲインしたとみなされ、評価が⾼い。危機回避や⽣命救助が⽬的の場合は、プラスエミッション（ロス）が許されている。" />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_machinery_01.png" alt="" />
             </div>
@@ -72,7 +72,7 @@ const WorldPage = ({ location }) => {
               <TextLeading pathname={location.pathname} text="2. ステップ" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="第1艦橋（ヘッドブリッジ）に通じている。出入口にハッチがあるので、セミサブモード時に浸水せず機密が保たれます。カケルはこのドアに頭をぶつけました。" />
+              <TextMediumSub text="第1艦橋（ヘッドブリッジ）に通じている。出入口にハッチがあるので、セミサブモード時に浸水せず機密が保たれる。カケルはこのドアに頭をぶつけた。" />
             </div>
             <div className={styles.textLeading_wrapper}>
               <TextLeading pathname={location.pathname} text="3. 第2甲板 -ボトムデッキ-" />
@@ -84,7 +84,7 @@ const WorldPage = ({ location }) => {
               <TextLeading pathname={location.pathname} text="4. カーゴベイ" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="カーゴには各種装備と「雷神（探査艇）」もしくは「遊天（水陸両用ドローンカー」を格納。どちらかをミッションパッケージとして第２甲板（2nd.Deck）に積載することも可能。" />
+              <TextMediumSub text="カーゴには各種装備と「雷神（探査艇）」もしくは「遊天（水陸両用ドローンカー)」を格納。どちらかをミッションパッケージとして第２甲板（2nd.Deck）に積載することも可能。" />
             </div>
             <div className={styles.textLeading_wrapper}>
               <TextLeading pathname={location.pathname} text="-ノーマルモード-" />

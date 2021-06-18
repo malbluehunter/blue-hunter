@@ -16,8 +16,8 @@ const LocalNavWorld01 = props => {
   const href06 = "/en/worldbuilding/background/octam1"
   const href07 = "/en/worldbuilding/background/octam2"
   const href08 = "/en/worldbuilding/background/octam3"
-  const href09 = "/en/worldbuilding/background/seaforce"
-  const href10 = "/en/worldbuilding/background/octam4"
+  const href09 = "/en/worldbuilding/background/octam4"
+  const href10 = "/en/worldbuilding/background/seaforce"
 
   // SPの時ローカルナビをクリックで開閉
   const toggle = () => {
@@ -66,10 +66,10 @@ const LocalNavWorld01 = props => {
                   <a href={href08}>Encyclopedia of Octa/M (3)</a>
                 </li>
                 <li className={`${styles.LocalNav_item_02} ${pathname.match(href09) ? styles.current : ""}`}>
-                  <a href={href09}>Underwater Electrical Supply Towers (SeaForce)</a>
+                  <a href={href09}>Encyclopedia of Octa/M (4)</a>
                 </li>
                 <li className={`${styles.LocalNav_item_02} ${pathname.match(href10) ? styles.current : ""}`}>
-                  <a href={href10}>Encyclopedia of Octa/M (4)</a>
+                  <a href={href10}>Underwater Electrical Supply Towers (SeaForce)</a>
                 </li>
               </ul>
             </li>

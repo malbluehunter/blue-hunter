@@ -81,7 +81,7 @@ const WorldPage = ({ location }) => {
                 <TextLeading pathname={location.pathname} text="経済・政治" />
               </div>
               <div className={styles.textMediumSub_wrapper}>
-                <TextMediumSub text="開発⺟体となったのはMWVC (MwVisionComitee：CCZに関係する百以上の研究機関・事業体）。第1都市の段階で農産・⽔産・鉱物資源およびエネルギーの⾃給⾃⾜を達成し、またフェアチェーンを基礎とする⾼度な独⽴⾃治（MW⽅式）を標榜。壮⼤なモデルケースとなり、⼈類社会を牽引し続けている" />
+                <TextMediumSub text="開発⺟体となったのはMWVC (MwVisionComitee：CCZに関係する百以上の研究機関・事業体）。第1都市の段階で農産・⽔産・鉱物資源およびエネルギーの⾃給⾃⾜を達成し、またフェアチェーンを基礎とする⾼度な独⽴⾃治（MW⽅式）を標榜。壮⼤なモデルケースとなり、⼈類社会を牽引し続けている。" />
               </div>
             </MainContentsMiddleWorld>
             <MainContentsBottom pathname={location.pathname} />

@@ -58,13 +58,13 @@ const WorldPage = ({ location }) => {
               <TextLeading pathname={location.pathname} text="class -クラス-" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="ハンター評議会（カウンシル）に所属するハンターの階級。クラスアップはLv、DpやBkなど（後述）を総合し、かつ評議会が実績を値踏みして決定する。⽣頼はclass=5、JAZzとビリー＝class4、渚＝class3、⽉⼈とホーク＝class１。カケルは⽬下、class0。" />
+              <TextMediumSub text="ハンター評議会（カウンシル）に所属するハンターの階級。クラスアップはLv、DpやBkなど（後述）を総合し、かつ評議会が実績を値踏みして決定する。⽣頼はclass=5、JAZzとビリーはclass=4、渚はclass=3、⽉⼈とホークはclass=１。カケルは⽬下、class=0。" />
             </div>
             <div className={styles.textLeading_wrapper}>
               <TextLeading pathname={location.pathname} text="ハンターランキング" />
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="各class毎に公開されているランキング。クラスアップに関わる5つの指標が計算に採⽤されており、善⾏（+Tk、ゲイン）を重ねただけでは伸びない。カケルはclass=0の中で50位前後をうろうろしている。史上最年少でclass=1に昇格を果たした⽉⼈とホークは現在トップ20にランクインし、class2への昇格間近と⾔われている。" />
+              <TextMediumSub text="各class毎に公開されているランキング。クラスアップに関わる5つの指標が計算に採⽤されており、善⾏（+Tk、ゲイン）を重ねただけでは伸びない。カケルはclass=0の中で50位前後をうろうろしている。史上最年少でclass=1に昇格を果たした⽉⼈とホークは現在トップ20にランクインし、class=2への昇格間近と⾔われている。" />
             </div>
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_ bluehunter_01.png" alt="" />

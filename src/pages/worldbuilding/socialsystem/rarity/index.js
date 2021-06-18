@@ -71,7 +71,7 @@ const WorldPage = ({ location }) => {
               </picture>
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="調整依頼。遺伝⼦（⾝体の⼀部分）などの物理的な⽣体情報や写真、⽬撃証⾔などを総合し、少なくとも過去に存在したと考えられる未発⾒⽣物群。ハンターたちが「未発⾒」「ターゲット」と呼ぶカード。正式名が与えられず、仮称で呼ばれることが多い。「六枚⽻」「針ウロコ」など。" />
+              <TextMediumSub text="調整依頼。遺伝⼦（⾝体の⼀部分）などの物理的な⽣体情報や写真、⽬撃証⾔などを総合し、少なくとも過去に存在したと考えられる未発⾒⽣物群。ハンターたちが「未発⾒」「ターゲット」と呼ぶカード。正式名が与えられず、仮称で呼ばれることが多い。「6枚⽻」「針ウロコ」など。" />
             </div>
             <div className={styles.textLeading_wrapper}>
               <TextLeading pathname={location.pathname} text="要保護系統群" />
