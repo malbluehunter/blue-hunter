@@ -62,7 +62,7 @@ nav.globalMenuSp.active {
   padding: get_vw_sp(18) get_vw_sp(20);
 
   &.current {
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: 0;
     background-repeat: no-repeat;
 
@@ -112,7 +112,7 @@ nav.globalMenuSp.active {
   @include fz_vw_sp(15);
   font-weight: bold;
   color: #112b3a;
-  margin-top: get_vw_sp(2);
+  margin: auto 0;
 }
 
 .inner_list {
