@@ -18,9 +18,9 @@ const TopMainVisual = () => {
             <img src="/top/top_main_text.png" alt="まだ見たことない海洋生物がこの広い海のどこかに存在しているんだ" />
           </div>
           <div className={styles.news_wrapper}>
-            <a className={styles.news_text_wrapper} href="#">
-              <p className={styles.news_date}>2021.6.8</p>
-              <p className={styles.news_text}>Blue Hunter公式アートコンペ開催。Hunter公式アートコンペ開催。</p>
+            <a className={styles.news_text_wrapper} href="/news/">
+              <p className={styles.news_date}>2021.7.9</p>
+              <p className={styles.news_text}>賞金総額50万円『BLUE HUNTER アートコンペティション』開催！</p>
             </a>
             <a className={styles.news_btn} href="/news/">
               <picture>

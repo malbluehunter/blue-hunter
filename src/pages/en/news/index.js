@@ -46,6 +46,32 @@ const NewsPage = ({ location }) => {
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/en/" page02="News" />
         <NewsContentsInner>
+           <div className={styles.contents_02} id="news_02">
+              <MainContentsTop pathname={location.pathname} text="9 July 2021" />
+              <MainContentsMiddleWorld pathname={location.pathname}>
+                <TextHeading text="500,000 JPY of prizes up for grabs in BLUE HUNTER Art Contest!" />
+                <ContentsLine pathname={location.pathname} />
+                <TextMediumTrim text="To celebrate the launch of BLUE HUNTER, a specially-themed art contest is being opened." />
+                <TextMediumTrim text="We are looking for works in various different categories showcasing original ideas, forms and settings that will lead to the future technology of the ocean!" />
+                <TextMediumTrim text="We will have plenty of prize categories suitable for people of all ages, so we hope to see many people taking part!" />
+                <div className={styles.img_wrapper}>
+                  <a href="https://bha.myanimelist.net/en">
+                    <img src="/common/bnr_art_en.png" alt="" />
+                  </a>
+                </div>
+              </MainContentsMiddleWorld>
+              <MainContentsBottom pathname={location.pathname} />
+            </div>
+            <div className={styles.contents_02} id="news_01">
+              <MainContentsTop pathname={location.pathname} text="9 July 2021" />
+              <MainContentsMiddleWorld pathname={location.pathname}>
+                <TextHeading text="Welcome to the BLUE HUNTER homepage" />
+                <ContentsLine pathname={location.pathname} />
+                <TextMediumTrim text="The BLUE HUNTER website is now officially open! Here you can find all you need to know about BLUE HUNTER, including all the latest news." />
+              </MainContentsMiddleWorld>
+              <MainContentsBottom pathname={location.pathname} />
+            </div>
+          {/* 投稿例をコメントアウト 
           <div className={styles.contents_01}>
             <MainContentsTop pathname={location.pathname} text="2021.6.8" />
             <MainContentsMiddleWorld pathname={location.pathname}>
@@ -68,7 +94,7 @@ const NewsPage = ({ location }) => {
               <TextMediumTrim text="このたび、「Blue Hunter」の公式Webサイトを公開しました。Webサイトでは、「Blue Hunter」の情報や大切なお知らせを随時発信してまいります。" />
             </MainContentsMiddleWorld>
             <MainContentsBottom pathname={location.pathname} />
-          </div>
+          </div> */}
         </NewsContentsInner>
       </LayoutTwoColumn>
     </>

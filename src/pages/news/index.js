@@ -46,6 +46,30 @@ const NewsPage = ({ location }) => {
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/" page02="ニュース" />
         <NewsContentsInner>
+          <div className={styles.contents_02} id="news_02">
+              <MainContentsTop pathname={location.pathname} text="2021.7.9" />
+              <MainContentsMiddleWorld pathname={location.pathname}>
+                <TextHeading text="賞金総額50万円『BLUE HUNTER アートコンペティション』開催！" />
+                <ContentsLine pathname={location.pathname} />
+                <TextMediumTrim text="BLUE HUNTER公開を記念して、BLUE HUNTERをテーマにしたアートコンペの開催が決定いたしました。『BLUE HUNTER アートコンペティション』では「海洋の未来技術を牽引するような、独創的な発想・造形・設定が表現された作品」を、部門別に募集いたします。キッズを対象にした賞もご用意がありますで、幅広い年齢の方にご参加いただけます。たくさんのご応募をお待ちしております！" />
+                <div className={styles.img_wrapper}>
+                  <a href="https://bha.myanimelist.net">
+                    <img src="/common/bnr_art.png" alt="" />
+                  </a>
+                </div>
+              </MainContentsMiddleWorld>
+              <MainContentsBottom pathname={location.pathname} />
+            </div>
+            <div className={styles.contents_02} id="news_01">
+              <MainContentsTop pathname={location.pathname} text="2021.7.9" />
+              <MainContentsMiddleWorld pathname={location.pathname}>
+                <TextHeading text="サイト公開しました" />
+                <ContentsLine pathname={location.pathname} />
+                <TextMediumTrim text="このたび、「BLUE HUNTER」の公式Webサイトを公開しました。Webサイトでは、「BLUE HUNTER」の情報や大切なお知らせを随時発信してまいります。" />
+              </MainContentsMiddleWorld>
+              <MainContentsBottom pathname={location.pathname} />
+            </div>
+          {/* 投稿例をコメントアウト
           <div className={styles.contents_01}>
             <MainContentsTop pathname={location.pathname} text="2021.6.8" />
             <MainContentsMiddleWorld pathname={location.pathname}>
@@ -68,7 +92,7 @@ const NewsPage = ({ location }) => {
               <TextMediumTrim text="このたび、「Blue Hunter」の公式Webサイトを公開しました。Webサイトでは、「Blue Hunter」の情報や大切なお知らせを随時発信してまいります。" />
             </MainContentsMiddleWorld>
             <MainContentsBottom pathname={location.pathname} />
-          </div>
+          </div> */}
         </NewsContentsInner>
       </LayoutTwoColumn>
     </>

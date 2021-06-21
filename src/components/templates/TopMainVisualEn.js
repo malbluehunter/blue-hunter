@@ -18,9 +18,9 @@ const TopMainVisual = () => {
             <img src="/top/top_main_text_en.png" alt="These vast waters, are hiding so much life" />
           </div>
           <div className={styles.news_wrapper}>
-            <a className={styles.news_text_wrapper} href="#">
-              <p className={styles.news_date}>2021.6.8</p>
-              <p className={styles.news_text}>BLUE HUNTER Art Contest BLUE HUNTER Art Contest</p>
+            <a className={styles.news_text_wrapper} href="/en/news/">
+              <p className={styles.news_date}>9 July 2021</p>
+              <p className={styles.news_text}>500,000 JPY of prizes up for grabs in BLUE HUNTER Art Contest!</p>
             </a>
             <a className={styles.news_btn} href="/en/news/">
               <picture>

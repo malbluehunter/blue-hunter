@@ -10,12 +10,12 @@ const LocalNavNews = () => {
       <div className={styles.localNav_area}>
         <ol className={styles.localNav_list} start="0">
           <li className={`${styles.localNav_item} ${styles.current}`}>
-            <a href="">Blue Hunter公式アートコンペ開催</a>
-            <p className={styles.date}>2021.6.8</p>
+            <a href="#news_02">賞金総額50万円『BLUE HUNTER アートコンペティション』開催！</a>
+            <p className={styles.date}>2021.7.9</p>
           </li>
           <li className={styles.localNav_item}>
-            <a href="">サイト公開しました</a>
-            <p className={styles.date}>2021.6.7</p>
+            <a href="#news_01">サイト公開しました</a>
+            <p className={styles.date}>2021.7.9</p>
           </li>
         </ol>
       </div>
