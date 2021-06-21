@@ -120,7 +120,7 @@ const Nav = props => {
         </div>
         <div className={`${styles.menu_item} ${specialCurrent ? styles.current : ""}`}>
           <div className={styles.menu_item_inner}>
-            <a className={styles.menu_item_link} href="/special/">
+            <a className={styles.menu_item_link} href="/special/index02">
               <img src={specialCurrent ? "/common/nav_text_special_current.svg" : "/common/nav_text_special.svg"} alt="Special" className={`${styles.menu_item_img_06} ${styles.menu_item_img}`} />
               <img src="/common/nav_text_special_current.svg" alt="Special" className={`${styles.menu_item_img_06} ${styles.menu_item_img_hover}`} />
               <p className={styles.text}>スペシャル</p>
