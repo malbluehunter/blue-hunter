@@ -10,6 +10,7 @@ const TextMediumTrim = props => {
 
   children.length < maxLength ? (isHidden = true) : (isHidden = false)
 
+  // 200文字以降の文字は削除し、「...」に置換
   const trimText = () => {
     function truncate(str, len) {
       return str.length <= len ? str : str.substr(0, len) + "..."
