@@ -129,6 +129,9 @@ a {
   margin: 0;
   padding: 0;
   background: transparent;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.3s;
 }
 
 p {
@@ -234,6 +237,7 @@ img {
   vertical-align: top;
   width: 100%;
   height: auto;
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
@@ -243,9 +247,4 @@ label {
 
 strong {
   font-weight: bold;
-}
-
-a {
-  text-decoration: none;
-  transition: opacity 0.3s;
 }

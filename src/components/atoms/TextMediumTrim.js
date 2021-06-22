@@ -1,22 +1,20 @@
-// import { getMainProps } from "gatsby-plugin-image/dist/src/components/hooks"
 import React, { useState, useEffect } from "react"
 import * as styles from "./TextMediumTrim.module.scss"
 
 const TextMediumTrim = props => {
-  const { text } = props
+  const { children } = props
   const maxLength = 200
   let isHidden = false
-  const [newsText, setNewsText] = useState(text)
+  const [newsText, setNewsText] = useState(children)
   const [isOpen, setIsOpen] = useState(false)
 
-  text.length < maxLength ? (isHidden = true) : (isHidden = false)
+  children.length < maxLength ? (isHidden = true) : (isHidden = false)
 
   const trimText = () => {
-    let string = newsText.replace(/\s+/g, "")
     function truncate(str, len) {
       return str.length <= len ? str : str.substr(0, len) + "..."
     }
-    setNewsText(truncate(string, maxLength))
+    setNewsText(truncate(newsText, maxLength))
   }
 
   useEffect(() => {
@@ -25,7 +23,7 @@ const TextMediumTrim = props => {
 
   const displayText = () => {
     isOpen ? setIsOpen(false) : setIsOpen(true)
-    isOpen ? trimText() : setNewsText(text)
+    isOpen ? trimText() : setNewsText(children)
   }
 
   return (
