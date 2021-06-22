@@ -51,9 +51,9 @@ const NewsPage = ({ location }) => {
               <MainContentsMiddleWorld pathname={location.pathname}>
                 <TextHeading text="500,000 JPY of prizes up for grabs in BLUE HUNTER Art Contest!" />
                 <ContentsLine pathname={location.pathname} />
-                <TextMediumTrim text="To celebrate the launch of BLUE HUNTER, a specially-themed art contest is being opened." />
-                <TextMediumTrim text="We are looking for works in various different categories showcasing original ideas, forms and settings that will lead to the future technology of the ocean!" />
-                <TextMediumTrim text="We will have plenty of prize categories suitable for people of all ages, so we hope to see many people taking part!" />
+                <TextMediumTrim><a href="">To celebrate</a> the launch of BLUE HUNTER, a specially-themed art contest is being opened.</TextMediumTrim>
+                <TextMediumTrim>We are looking for works in various different categories showcasing original ideas, forms and settings that will lead to the future technology of the ocean!</TextMediumTrim>
+                <TextMediumTrim>We will have plenty of prize categories suitable for people of all ages, so we hope to see many people taking part!</TextMediumTrim>
                 <div className={styles.img_wrapper}>
                   <a href="https://bha.myanimelist.net/en">
                     <img src="/common/bnr_art_en.png" alt="" />
@@ -67,7 +67,7 @@ const NewsPage = ({ location }) => {
               <MainContentsMiddleWorld pathname={location.pathname}>
                 <TextHeading text="Welcome to the BLUE HUNTER homepage" />
                 <ContentsLine pathname={location.pathname} />
-                <TextMediumTrim text="The BLUE HUNTER website is now officially open! Here you can find all you need to know about BLUE HUNTER, including all the latest news." />
+                <TextMediumTrim>The BLUE HUNTER website is now officially open! Here you can find all you need to know about BLUE HUNTER, including all the latest news.</TextMediumTrim>
               </MainContentsMiddleWorld>
               <MainContentsBottom pathname={location.pathname} />
             </div>

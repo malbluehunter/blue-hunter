@@ -3,6 +3,7 @@
 .main_contents_area {
   position: relative;
   margin: get_vw_sp(20) auto 0;
+  width: 100%;
 
   @include mq(md) {
     margin: 0;
