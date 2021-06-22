@@ -102,7 +102,7 @@ const StaffPage = ({ location }) => {
               <div className={styles.staff_name_item}>
                 <Label03 text={"Storyboard"} />
                 <div className={styles.text_wrapper}>
-                  <TextLargeTrim text={"Hidetake Uchida / Aki Ishibashi"} />
+                  <TextLargeTrim text={"Hidetake Uchida / Aki Ishibashi / Maru Chan"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
@@ -150,6 +150,11 @@ const StaffPage = ({ location }) => {
                   <TextLargeTrim
                     text={
                       "natsutomoki / Chikuwa Takenowa / Hajime Uno / Nana Kaneda / tatsuhi"
+                    }
+                  />
+                  <TextLargeTrim
+                    text={
+                      "Satomi Abe / Kubota Shinji / YURI"
                     }
                   />
                 </div>
