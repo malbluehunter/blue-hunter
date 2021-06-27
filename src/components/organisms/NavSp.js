@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import * as styles from "./NavSp.module.scss"
 import HamburgerClose from "../atoms/HamburgerClose"
 import HamburgerOpen from "../atoms/HamburgerOpen"
+import { Link } from "gatsby"
 
 const NavSp = props => {
   const { pathname } = props
@@ -63,62 +64,62 @@ const NavSp = props => {
         {isClose ? <HamburgerOpen /> : <HamburgerClose />}
       </div>
       <div className={styles.logo_area}>
-        <a href="https://uminohi.jp/" target="_blank">
+        <Link to="https://uminohi.jp/" target="_blank">
           <picture>
             <source type="image/webp" srcset="/common/logo_sp.webp" />
             <img src="/common/logo_sp.png" alt="日本財団 海と日本PROJECT" loading="lazy" className={styles.inner_item_logo_01} />
           </picture>
-        </a>
-        <a href="/">
+        </Link>
+        <Link to="/">
           <picture>
             <source type="image/webp" srcset="/common/logo_bluehunter_sp.webp" />
             <img src="/common/logo_bluehunter_sp.png" alt="BLUE HUNTER" loading="lazy" className={styles.inner_item_logo_02} />
           </picture>
-        </a>
+        </Link>
       </div>
       <nav className={`${isClose ? styles.active : ""} ${styles.globalMenuSp}`}>
         <ul className={styles.inner_list}>
           <li className={`${styles.inner_item} ${topCurrent ? styles.current : ""}`}>
-            <a className={styles.inner_item_link} href="/">
+            <Link className={styles.inner_item_link} to="/">
               <img src={topCurrent ? "/common/nav_text_top_current_sp.svg" : "/common/nav_text_top_sp.svg"} alt="Top" className={styles.inner_item_img_01} />
               <p className={styles.text}>トップ</p>
-            </a>
+            </Link>
           </li>
           <li className={`${styles.inner_item} ${newsCurrent ? styles.current : ""}`}>
-            <a className={styles.inner_item_link} href="/news/">
+            <Link className={styles.inner_item_link} to="/news/">
               <img src={newsCurrent ? "/common/nav_text_news_current_sp.svg" : "/common/nav_text_news_sp.svg"} alt="News" className={styles.inner_item_img_02} />
               <p className={styles.text}>ニュース</p>
-            </a>
+            </Link>
           </li>
           <li className={`${styles.inner_item} ${comicCurrent ? styles.current : ""}`}>
-            <a className={styles.inner_item_link} href="/comic/ep1/">
+            <Link className={styles.inner_item_link} to="/comic/ep1/">
               <img src={comicCurrent ? "/common/nav_text_comic_current_sp.svg" : "/common/nav_text_comic_sp.svg"} alt="Commic" className={styles.inner_item_img_03} />
               <p className={styles.text}>マンガ</p>
-            </a>
+            </Link>
           </li>
           <li className={`${styles.inner_item} ${worldbuildingCurrent ? styles.current : ""}`}>
-            <a className={styles.inner_item_link} href="/worldbuilding/">
+            <Link className={styles.inner_item_link} to="/worldbuilding/">
               <img src={worldbuildingCurrent ? "/common/nav_text_world_current_sp.svg" : "/common/nav_text_world_sp.svg"} alt="The World of BH" className={styles.inner_item_img_04} />
               <p className={styles.text}>世界観・設定</p>
-            </a>
+            </Link>
           </li>
           <li className={`${styles.inner_item} ${charactersCurrent ? styles.current : ""}`}>
-            <a className={styles.inner_item_link} href="/characters/kakeru/">
+            <Link className={styles.inner_item_link} to="/characters/kakeru/">
               <img src={charactersCurrent ? "/common/nav_text_characters_current_sp.svg" : "/common/nav_text_characters_sp.svg"} alt="Characters" className={styles.inner_item_img_05} />
               <p className={styles.text}>キャラクター</p>
-            </a>
+            </Link>
           </li>
           <li className={`${styles.inner_item} ${staffCurrent ? styles.current : ""}`}>
-            <a className={styles.inner_item_link} href="/staff/">
+            <Link className={styles.inner_item_link} to="/staff/">
               <img src={staffCurrent ? "/common/nav_text_staff_current_sp.svg" : "/common/nav_text_staff_sp.svg"} alt="Staff" className={styles.inner_item_img_06} />
               <p className={styles.text}>スタッフ</p>
-            </a>
+            </Link>
           </li>
           <li className={`${styles.inner_item} ${specialCurrent ? styles.current : ""}`}>
-            <a className={styles.inner_item_link} href="/special/index02">
+            <Link className={styles.inner_item_link} to="/special/index02">
               <img src={specialCurrent ? "/common/nav_text_special_current_sp.svg" : "/common/nav_text_special_sp.svg"} alt="Special" className={styles.inner_item_img_07} />
               <p className={styles.text}>スペシャル</p>
-            </a>
+            </Link>
           </li>
           <li className={styles.inner_item}>
             <ul className={styles.lang_area}>
