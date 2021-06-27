@@ -2,6 +2,7 @@ import * as React from "react"
 import BnrArt from "../atoms/BnrArt"
 import BnrArtTop from "../atoms/BnrArtTop"
 import * as styles from "./TopMainVisual.module.scss"
+import { Link } from "gatsby"
 
 const TopMainVisual = () => {
   return (
@@ -18,16 +19,16 @@ const TopMainVisual = () => {
             <img src="/top/top_main_text.png" alt="まだ見たことない海洋生物がこの広い海のどこかに存在しているんだ" />
           </div>
           <div className={styles.news_wrapper}>
-            <a className={styles.news_text_wrapper} href="/news/">
+            <Link className={styles.news_text_wrapper} to="/news/">
               <p className={styles.news_date}>2021.7.9</p>
               <p className={styles.news_text}>賞金総額50万円『BLUE HUNTER アートコンペティション』開催！</p>
-            </a>
-            <a className={styles.news_btn} href="/news/">
+            </Link>
+            <Link className={styles.news_btn} to="/news/">
               <picture>
                 <source srcset="/top/top_newsArea_btn.png" media="(min-width: 768px)" />
                 <img src="/top/top_newsArea_btn_sp.png" alt="MORE" />
               </picture>
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.bnr_wrapper}>

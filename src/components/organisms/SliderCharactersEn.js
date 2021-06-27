@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import * as styles from "./SliderCharacters.module.scss"
 import Slider from "react-slick"
+import { Link } from "gatsby"
 
 const NextArrow = props => {
   const { onClick } = props
@@ -56,151 +57,151 @@ const SliderCharacters = props => {
       <div className={styles.slider_sp}>
         <Slider {...settings} className={styles.slider}>
           {pathname.match(/kakeru/) ? (
-            <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/en/characters/kakeru/">
+            <Link className={`${styles.slider_item} ${styles.current_wrapper}`} to="/en/characters/kakeru/">
               <img src="/characters/character01_current.png" alt="カケル" className={styles.current_img} />
-            </a>
+            </Link>
           ) : (
-            <a className={styles.slider_item} href="/en/characters/kakeru/">
+            <Link className={styles.slider_item} to="/en/characters/kakeru/">
               <img src="/characters/character01.png" alt="カケル" />
-            </a>
+            </Link>
           )}
           {pathname.match(/viola/) ? (
-            <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/en/characters/viola/">
+            <Link className={`${styles.slider_item} ${styles.current_wrapper}`} to="/en/characters/viola/">
               <img src="/characters/character02_current.png" alt="ヴィオラ" className={styles.current_img} />
-            </a>
+            </Link>
           ) : (
-            <a className={styles.slider_item} href="/en/characters/viola/">
+            <Link className={styles.slider_item} to="/en/characters/viola/">
               <img src="/characters/character02.png" alt="ヴィオラ" />
-            </a>
+            </Link>
           )}
           {pathname.match(/tsukito/) ? (
-            <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/en/characters/tsukito/">
+            <Link className={`${styles.slider_item} ${styles.current_wrapper}`} to="/en/characters/tsukito/">
               <img src="/characters/character03_current.png" alt="月人" className={styles.current_img} />
-            </a>
+            </Link>
           ) : (
-            <a className={styles.slider_item} href="/en/characters/tsukito/">
+            <Link className={styles.slider_item} to="/en/characters/tsukito/">
               <img src="/characters/character03.png" alt="月人" />
-            </a>
+            </Link>
           )}
           {pathname.match(/hawk/) ? (
-            <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/en/characters/hawk/">
+            <Link className={`${styles.slider_item} ${styles.current_wrapper}`} to="/en/characters/hawk/">
               <img src="/characters/character04_current.png" alt="ホーク" className={styles.current_img} />
-            </a>
+            </Link>
           ) : (
-            <a className={styles.slider_item} href="/en/characters/hawk/">
+            <Link className={styles.slider_item} to="/en/characters/hawk/">
               <img src="/characters/character04.png" alt="ホーク" />
-            </a>
+            </Link>
           )}
           {pathname.match(/yoshinori/) ? (
-            <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/en/characters/yoshinori/">
+            <Link className={`${styles.slider_item} ${styles.current_wrapper}`} to="/en/characters/yoshinori/">
               <img src="/characters/character05_current.png" alt="生頼紀誉師" className={styles.current_img} />
-            </a>
+            </Link>
           ) : (
-            <a className={styles.slider_item} href="/en/characters/yoshinori/">
+            <Link className={styles.slider_item} to="/en/characters/yoshinori/">
               <img src="/characters/character05.png" alt="生頼紀誉師" />
-            </a>
+            </Link>
           )}
           {pathname.match(/skull/) ? (
-            <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/en/characters/skull/">
+            <Link className={`${styles.slider_item} ${styles.current_wrapper}`} to="/en/characters/skull/">
               <img src="/characters/character06_current.png" alt="スカル" className={styles.current_img} />
-            </a>
+            </Link>
           ) : (
-            <a className={styles.slider_item} href="/en/characters/skull/">
+            <Link className={styles.slider_item} to="/en/characters/skull/">
               <img src="/characters/character06.png" alt="スカル" />
-            </a>
+            </Link>
           )}
           {pathname.match(/jazz/) ? (
-            <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/en/characters/jazz/">
+            <Link className={`${styles.slider_item} ${styles.current_wrapper}`} to="/en/characters/jazz/">
               <img src="/characters/character07_current.png" alt="JAZz" className={styles.current_img} />
-            </a>
+            </Link>
           ) : (
-            <a className={styles.slider_item} href="/en/characters/jazz/">
+            <Link className={styles.slider_item} to="/en/characters/jazz/">
               <img src="/characters/character07.png" alt="JAZz" />
-            </a>
+            </Link>
           )}
           {pathname.match(/nagisa/) ? (
-            <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/en/characters/nagisa/">
+            <Link className={`${styles.slider_item} ${styles.current_wrapper}`} to="/en/characters/nagisa/">
               <img src="/characters/character08_current.png" alt="上原渚" className={styles.current_img} />
-            </a>
+            </Link>
           ) : (
-            <a className={styles.slider_item} href="/en/characters/nagisa/">
+            <Link className={styles.slider_item} to="/en/characters/nagisa/">
               <img src="/characters/character08.png" alt="上原渚" />
-            </a>
+            </Link>
           )}
         </Slider>
       </div>
       <div className={styles.slider_pc}>
         {pathname.match(/kakeru/) ? (
-          <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/en/characters/kakeru/">
+          <Link className={`${styles.slider_item} ${styles.current_wrapper}`} to="/en/characters/kakeru/">
             <img src="/characters/character01_current.png" alt="カケル" className={styles.current_img} />{" "}
-          </a>
+          </Link>
         ) : (
-          <a className={styles.slider_item} href="/en/characters/kakeru/">
+          <Link className={styles.slider_item} to="/en/characters/kakeru/">
             <img src="/characters/character01.png" alt="カケル" />
-          </a>
+          </Link>
         )}
         {pathname.match(/viola/) ? (
-          <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/en/characters/viola/">
+          <Link className={`${styles.slider_item} ${styles.current_wrapper}`} to="/en/characters/viola/">
             <img src="/characters/character02_current.png" alt="ヴィオラ" className={styles.current_img} />{" "}
-          </a>
+          </Link>
         ) : (
-          <a className={styles.slider_item} href="/en/characters/viola/">
+          <Link className={styles.slider_item} to="/en/characters/viola/">
             <img src="/characters/character02.png" alt="ヴィオラ" />
-          </a>
+          </Link>
         )}
         {pathname.match(/tsukito/) ? (
-          <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/en/characters/tsukito/">
+          <Link className={`${styles.slider_item} ${styles.current_wrapper}`} to="/en/characters/tsukito/">
             <img src="/characters/character03_current.png" alt="月人" className={styles.current_img} />{" "}
-          </a>
+          </Link>
         ) : (
-          <a className={styles.slider_item} href="/en/characters/tsukito/">
+          <Link className={styles.slider_item} to="/en/characters/tsukito/">
             <img src="/characters/character03.png" alt="月人" />
-          </a>
+          </Link>
         )}
         {pathname.match(/hawk/) ? (
-          <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/en/characters/hawk/">
+          <Link className={`${styles.slider_item} ${styles.current_wrapper}`} to="/en/characters/hawk/">
             <img src="/characters/character04_current.png" alt="ホーク" className={styles.current_img} />{" "}
-          </a>
+          </Link>
         ) : (
-          <a className={styles.slider_item} href="/en/characters/hawk/">
+          <Link className={styles.slider_item} to="/en/characters/hawk/">
             <img src="/characters/character04.png" alt="ホーク" />
-          </a>
+          </Link>
         )}
         {pathname.match(/yoshinori/) ? (
-          <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/en/characters/yoshinori/">
+          <Link className={`${styles.slider_item} ${styles.current_wrapper}`} to="/en/characters/yoshinori/">
             <img src="/characters/character05_current.png" alt="生頼紀誉師" className={styles.current_img} />{" "}
-          </a>
+          </Link>
         ) : (
-          <a className={styles.slider_item} href="/en/characters/yoshinori/">
+          <Link className={styles.slider_item} to="/en/characters/yoshinori/">
             <img src="/characters/character05.png" alt="生頼紀誉師" />
-          </a>
+          </Link>
         )}
         {pathname.match(/skull/) ? (
-          <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/en/characters/skull/">
+          <Link className={`${styles.slider_item} ${styles.current_wrapper}`} to="/en/characters/skull/">
             <img src="/characters/character06_current.png" alt="スカル" className={styles.current_img} />{" "}
-          </a>
+          </Link>
         ) : (
-          <a className={styles.slider_item} href="/en/characters/skull/">
+          <Link className={styles.slider_item} to="/en/characters/skull/">
             <img src="/characters/character06.png" alt="スカル" />
-          </a>
+          </Link>
         )}
         {pathname.match(/jazz/) ? (
-          <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/en/characters/jazz/">
+          <Link className={`${styles.slider_item} ${styles.current_wrapper}`} to="/en/characters/jazz/">
             <img src="/characters/character07_current.png" alt="JAZz" className={styles.current_img} />{" "}
-          </a>
+          </Link>
         ) : (
-          <a className={styles.slider_item} href="/en/characters/jazz/">
+          <Link className={styles.slider_item} to="/en/characters/jazz/">
             <img src="/characters/character07.png" alt="JAZz" />
-          </a>
+          </Link>
         )}
         {pathname.match(/nagisa/) ? (
-          <a className={`${styles.slider_item} ${styles.current_wrapper}`} href="/en/characters/nagisa/">
+          <Link className={`${styles.slider_item} ${styles.current_wrapper}`} to="/en/characters/nagisa/">
             <img src="/characters/character08_current.png" alt="上原渚" className={styles.current_img} />{" "}
-          </a>
+          </Link>
         ) : (
-          <a className={styles.slider_item} href="/en/characters/nagisa/">
+          <Link className={styles.slider_item} to="/en/characters/nagisa/">
             <img src="/characters/character08.png" alt="上原渚" />
-          </a>
+          </Link>
         )}
       </div>
     </>
