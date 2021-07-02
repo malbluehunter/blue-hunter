@@ -2,6 +2,7 @@ import React from "react"
 import * as styles from "./SliderCharacters.module.scss"
 import Slider from "react-slick"
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 
 const NextArrow = props => {
   const { onClick } = props
@@ -54,6 +55,17 @@ const SliderCharacters = props => {
 
   return (
     <>
+      <Helmet>
+        <link rel="preload" as="image" href="/characters/character01_current.png" />
+        <link rel="preload" as="image" href="/characters/character02_current.png" />
+        <link rel="preload" as="image" href="/characters/character03_current.png" />
+        <link rel="preload" as="image" href="/characters/character04_current.png" />
+        <link rel="preload" as="image" href="/characters/character05_current.png" />
+        <link rel="preload" as="image" href="/characters/character06_current.png" />
+        <link rel="preload" as="image" href="/characters/character07_current.png" />
+        <link rel="preload" as="image" href="/characters/character08_current.png" />
+      </Helmet>
+
       <div className={styles.slider_sp}>
         <Slider {...settings} className={styles.slider}>
           {pathname.match(/kakeru/) ? (
