@@ -3,7 +3,7 @@ import * as styles from "./Button.module.scss"
 import { Link } from "gatsby"
 
 const Button = props => {
-  const { href, isDisabled, children } = props
+  const { href = "#", isDisabled, children } = props
 
   return (
     <Link to={href} className={`${styles.btn_wrapper} ${isDisabled ? styles.disabled : ""}`}>

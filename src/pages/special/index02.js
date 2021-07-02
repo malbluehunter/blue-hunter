@@ -44,8 +44,6 @@ const SpecialPage = ({ location }) => {
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
         <meta property="og:image" content="https://manga.uminohi.jp/ogp.png" />
-        <link rel="stylesheet" type="text/css" ccharset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
         <link rel="preload" as="image" href="/common/nav_text_news_hover.png" />
         <link rel="preload" as="image" href="/common/nav_text_comic_hover.png" />
         <link rel="preload" as="image" href="/common/nav_text_world_hover.png" />
