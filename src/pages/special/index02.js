@@ -97,7 +97,7 @@ const SpecialPage = ({ location }) => {
               srcItem.media_type == "CAROUSEL_ALBUM" ? ( // 画像が複数の場合
                 srcItem.children.data[0].media_type == "IMAGE" ? ( // 複数画像かつ画像がイメージの場合
                   <a href={srcItem.children.data[0].permalink} key={index} className={styles.insta_link}>
-                    <img src={srcItem.children.data[0].media_url} className={styles.insta_img} />
+                    <img src={srcItem.children.data[0].media_url} className={styles.insta_img} alt="" />
                   </a>
                 ) : (
                   // 複数画像かつ画像が動画の場合
@@ -107,7 +107,7 @@ const SpecialPage = ({ location }) => {
                 )
               ) : srcItem.media_type == "IMAGE" ? ( // 画像が1枚の場合
                 <a href={srcItem.permalink} key={index} className={styles.insta_link}>
-                  <img src={srcItem.media_url} className={styles.insta_img} />
+                  <img src={srcItem.media_url} className={styles.insta_img} alt="" />
                 </a>
               ) : (
                 // 画像が1枚かつ動画の場合

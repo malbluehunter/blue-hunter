@@ -11,12 +11,12 @@ const ShareArea = () => {
       </div>
       <div className={styles.sns_icon_wrapper}>
         <div className={styles.facebook_wrapper}>
-          <a className={styles.link} href="https://www.facebook.com/share.php?u=https://manga.uminohi.jp">
+          <a className={styles.link} href="https://www.facebook.com/share.php?u=https://manga.uminohi.jp" target="_blank" rel="noopener">
             <IconFacebook />
           </a>
         </div>
         <div className={styles.twitter_wrapper}>
-          <a className={styles.link} href="https://twitter.com/share?url=https://manga.uminohi.jp&text=BLUE HUNTER Official Site&hashtags=bluehunter">
+          <a className={styles.link} href="https://twitter.com/share?url=https://manga.uminohi.jp&text=BLUE HUNTER Official Site&hashtags=bluehunter" target="_blank" rel="noopener">
             <IconTwitter />
           </a>
         </div>

@@ -67,7 +67,7 @@ const NavSpTop = props => {
         {isClose ? <HamburgerOpen /> : <HamburgerClose />}
       </div>
       <div className={`${isClose ? styles.active : ""} ${styles.logo_area}`}>
-        <Link to="https://uminohi.jp/" target="_blank">
+        <Link to="https://uminohi.jp/" target="_blank" rel="noopener">
           <picture>
             <source type="image/webp" srcset="/common/logo_sp.webp" />
             <img src="/common/logo_sp.png" alt="日本財団 海と日本PROJECT" loading="lazy" className={styles.inner_item_logo_01} />
