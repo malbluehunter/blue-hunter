@@ -136,14 +136,14 @@ const TopPage = ({ location }) => {
           </div>
           <ShareArea />
           <div className={styles.btn_wrapper}>
-            {/* <div className={styles.btn_next}>
+            <div className={styles.btn_next}>
               <Button href="/en/comic/ep2/" isDisabled={false}>
                 Read Chapter 2
               </Button>
-            </div> */}
-            <div className={styles.btn_plan}>
-              <Button isDisabled={true}>Next chapter out 28 Jun</Button>
             </div>
+            {/* <div className={styles.btn_plan}>
+              <Button isDisabled={true}>Next chapter out 28 Jun</Button>
+            </div> */}
           </div>
           <div className={styles.bnr_area}>
             <BnrArt />

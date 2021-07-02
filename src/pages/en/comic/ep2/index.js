@@ -13,94 +13,98 @@ import Label01 from "../../../../components/molecules/Label01"
 const ComicPage = ({ location }) => {
   // /* --------------------------------------- mal様修正範囲(マンガ画像を表示順で設定) 開始 --------------------------------------- */
   const src = [
-    "/comic/01_en/001_blue_001.jpg",
-    "/comic/01_en/001_blue_002.jpg",
-    "/comic/01_en/001_blue_003.jpg",
-    "/comic/01_en/001_blue_004.jpg",
-    "/comic/01_en/001_blue_005.jpg",
-    "/comic/01_en/001_blue_006.jpg",
-    "/comic/01_en/001_blue_007.jpg",
-    "/comic/01_en/001_blue_008.jpg",
-    "/comic/01_en/001_blue_009.jpg",
-    "/comic/01_en/001_blue_010.jpg",
-    "/comic/01_en/001_blue_011.jpg",
-    "/comic/01_en/001_blue_012.jpg",
-    "/comic/01_en/001_blue_013.jpg",
-    "/comic/01_en/001_blue_014.jpg",
-    "/comic/01_en/001_blue_015.jpg",
-    "/comic/01_en/001_blue_016.jpg",
-    "/comic/01_en/001_blue_017.jpg",
-    "/comic/01_en/001_blue_018.jpg",
-    "/comic/01_en/001_blue_019.jpg",
-    "/comic/01_en/001_blue_020.jpg",
-    "/comic/01_en/001_blue_021.jpg",
-    "/comic/01_en/001_blue_022.jpg",
-    "/comic/01_en/001_blue_023.jpg",
-    "/comic/01_en/001_blue_024.jpg",
-    "/comic/01_en/001_blue_025.jpg",
-    "/comic/01_en/001_blue_026.jpg",
-    "/comic/01_en/001_blue_027.jpg",
-    "/comic/01_en/001_blue_028.jpg",
-    "/comic/01_en/001_blue_029.jpg",
-    "/comic/01_en/001_blue_030.jpg",
-    "/comic/01_en/001_blue_031.jpg",
-    "/comic/01_en/001_blue_032.jpg",
-    "/comic/01_en/001_blue_033.jpg",
-    "/comic/01_en/001_blue_034.jpg",
-    "/comic/01_en/001_blue_035.jpg",
-    "/comic/01_en/001_blue_036.jpg",
-    "/comic/01_en/001_blue_037.jpg",
-    "/comic/01_en/001_blue_038.jpg",
-    "/comic/01_en/001_blue_039.jpg",
-    "/comic/01_en/001_blue_040.jpg",
-    "/comic/01_en/001_blue_041.jpg",
-    "/comic/01_en/001_blue_042.jpg",
-    "/comic/01_en/001_blue_043.jpg",
-    "/comic/01_en/001_blue_044.jpg",
-    "/comic/01_en/001_blue_045.jpg",
-    "/comic/01_en/001_blue_046.jpg",
-    "/comic/01_en/001_blue_047.jpg",
-    "/comic/01_en/001_blue_048.jpg",
-    "/comic/01_en/001_blue_049.jpg",
-    "/comic/01_en/001_blue_050.jpg",
-    "/comic/01_en/001_blue_051.jpg",
-    "/comic/01_en/001_blue_052.jpg",
-    "/comic/01_en/001_blue_053.jpg",
-    "/comic/01_en/001_blue_054.jpg",
-    "/comic/01_en/001_blue_055.jpg",
-    "/comic/01_en/001_blue_056.jpg",
-    "/comic/01_en/001_blue_057.jpg",
-    "/comic/01_en/001_blue_058.jpg",
-    "/comic/01_en/001_blue_059.jpg",
-    "/comic/01_en/001_blue_060.jpg",
-    "/comic/01_en/001_blue_061.jpg",
-    "/comic/01_en/001_blue_062.jpg",
-    "/comic/01_en/001_blue_063.jpg",
-    "/comic/01_en/001_blue_064.jpg",
-    "/comic/01_en/001_blue_065.jpg",
-    "/comic/01_en/001_blue_066.jpg",
-    "/comic/01_en/001_blue_067.jpg",
-    "/comic/01_en/001_blue_068.jpg",
-    "/comic/01_en/001_blue_069.jpg",
-    "/comic/01_en/001_blue_070.jpg",
-    "/comic/01_en/001_blue_071.jpg",
-    "/comic/01_en/001_blue_072.jpg",
-    "/comic/01_en/001_blue_073.jpg",
-    "/comic/01_en/001_blue_074.jpg",
-    "/comic/01_en/001_blue_075.jpg",
-    "/comic/01_en/001_blue_076.jpg",
-    "/comic/01_en/001_blue_077.jpg",
-    "/comic/01_en/001_blue_078.jpg",
-    "/comic/01_en/001_blue_079.jpg",
-    "/comic/01_en/001_blue_080.jpg",
-    "/comic/01_en/001_blue_081.jpg",
-    "/comic/01_en/001_blue_082.jpg",
-    "/comic/01_en/001_blue_083.jpg",
-    "/comic/01_en/001_blue_084.jpg",
-    "/comic/01_en/001_blue_085.jpg",
-    "/comic/01_en/001_blue_086.jpg",
-    "/comic/01_en/001_blue_087.jpg",
-    "/comic/01_en/001_blue_088.jpg"
+    "/comic/02_en/002_blue_001.jpg",
+    "/comic/02_en/002_blue_002.jpg",
+    "/comic/02_en/002_blue_003.jpg",
+    "/comic/02_en/002_blue_004.jpg",
+    "/comic/02_en/002_blue_005.jpg",
+    "/comic/02_en/002_blue_006.jpg",
+    "/comic/02_en/002_blue_007.jpg",
+    "/comic/02_en/002_blue_008.jpg",
+    "/comic/02_en/002_blue_009.jpg",
+    "/comic/02_en/002_blue_010.jpg",
+    "/comic/02_en/002_blue_011.jpg",
+    "/comic/02_en/002_blue_012.jpg",
+    "/comic/02_en/002_blue_013.jpg",
+    "/comic/02_en/002_blue_014.jpg",
+    "/comic/02_en/002_blue_015.jpg",
+    "/comic/02_en/002_blue_016.jpg",
+    "/comic/02_en/002_blue_017.jpg",
+    "/comic/02_en/002_blue_018.jpg",
+    "/comic/02_en/002_blue_019.jpg",
+    "/comic/02_en/002_blue_020.jpg",
+    "/comic/02_en/002_blue_021.jpg",
+    "/comic/02_en/002_blue_022.jpg",
+    "/comic/02_en/002_blue_023.jpg",
+    "/comic/02_en/002_blue_024.jpg",
+    "/comic/02_en/002_blue_025.jpg",
+    "/comic/02_en/002_blue_026.jpg",
+    "/comic/02_en/002_blue_027.jpg",
+    "/comic/02_en/002_blue_028.jpg",
+    "/comic/02_en/002_blue_029.jpg",
+    "/comic/02_en/002_blue_030.jpg",
+    "/comic/02_en/002_blue_031.jpg",
+    "/comic/02_en/002_blue_032.jpg",
+    "/comic/02_en/002_blue_033.jpg",
+    "/comic/02_en/002_blue_034.jpg",
+    "/comic/02_en/002_blue_035.jpg",
+    "/comic/02_en/002_blue_036.jpg",
+    "/comic/02_en/002_blue_037.jpg",
+    "/comic/02_en/002_blue_038.jpg",
+    "/comic/02_en/002_blue_039.jpg",
+    "/comic/02_en/002_blue_040.jpg",
+    "/comic/02_en/002_blue_041.jpg",
+    "/comic/02_en/002_blue_042.jpg",
+    "/comic/02_en/002_blue_043.jpg",
+    "/comic/02_en/002_blue_044.jpg",
+    "/comic/02_en/002_blue_045.jpg",
+    "/comic/02_en/002_blue_046.jpg",
+    "/comic/02_en/002_blue_047.jpg",
+    "/comic/02_en/002_blue_048.jpg",
+    "/comic/02_en/002_blue_049.jpg",
+    "/comic/02_en/002_blue_050.jpg",
+    "/comic/02_en/002_blue_051.jpg",
+    "/comic/02_en/002_blue_052.jpg",
+    "/comic/02_en/002_blue_053.jpg",
+    "/comic/02_en/002_blue_054.jpg",
+    "/comic/02_en/002_blue_055.jpg",
+    "/comic/02_en/002_blue_056.jpg",
+    "/comic/02_en/002_blue_057.jpg",
+    "/comic/02_en/002_blue_058.jpg",
+    "/comic/02_en/002_blue_059.jpg",
+    "/comic/02_en/002_blue_060.jpg",
+    "/comic/02_en/002_blue_061.jpg",
+    "/comic/02_en/002_blue_062.jpg",
+    "/comic/02_en/002_blue_063.jpg",
+    "/comic/02_en/002_blue_064.jpg",
+    "/comic/02_en/002_blue_065.jpg",
+    "/comic/02_en/002_blue_066.jpg",
+    "/comic/02_en/002_blue_067.jpg",
+    "/comic/02_en/002_blue_068.jpg",
+    "/comic/02_en/002_blue_069.jpg",
+    "/comic/02_en/002_blue_070.jpg",
+    "/comic/02_en/002_blue_071.jpg",
+    "/comic/02_en/002_blue_072.jpg",
+    "/comic/02_en/002_blue_073.jpg",
+    "/comic/02_en/002_blue_074.jpg",
+    "/comic/02_en/002_blue_075.jpg",
+    "/comic/02_en/002_blue_076.jpg",
+    "/comic/02_en/002_blue_077.jpg",
+    "/comic/02_en/002_blue_078.jpg",
+    "/comic/02_en/002_blue_079.jpg",
+    "/comic/02_en/002_blue_080.jpg",
+    "/comic/02_en/002_blue_081.jpg",
+    "/comic/02_en/002_blue_082.jpg",
+    "/comic/02_en/002_blue_083.jpg",
+    "/comic/02_en/002_blue_084.jpg",
+    "/comic/02_en/002_blue_085.jpg",
+    "/comic/02_en/002_blue_086.jpg",
+    "/comic/02_en/002_blue_087.jpg",
+    "/comic/02_en/002_blue_088.jpg",
+    "/comic/02_en/002_blue_089.jpg",
+    "/comic/02_en/002_blue_090.jpg",
+    "/comic/02_en/002_blue_091.jpg",
+    "/comic/02_en/002_blue_092.jpg"
   ]
   // /* --------------------------------------- mal様修正範囲(マンガ画像を表示順で設定) 終了 --------------------------------------- */
 
@@ -109,11 +113,11 @@ const ComicPage = ({ location }) => {
       <Helmet>
         <html lang="en" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 開始 --------------------------------------- */}
-        <title>Episode 1 | BLUE HUNTER Official Site</title>
+        <title>Episode 2 | BLUE HUNTER Official Site</title>
         <meta name="description" content="The official website for the BLUE HUNTER project. Free BLUE HUNTER manga starts June 2021! Check out all you need to know about the world of BLUE HUNTER here." />
         <meta name="keywords" content="BLUE HUNTER, BH, BLUE HUNTER Project, Free Comic, Art Contest  " />
-        <link rel="canonical" href="https://manga.uminohi.jp/en/comic/ep1/" />
-        <meta property="og:url" content="https://manga.uminohi.jp/en/comic/ep1/" />
+        <link rel="canonical" href="https://manga.uminohi.jp/en/comic/ep2/" />
+        <meta property="og:url" content="https://manga.uminohi.jp/en/comic/ep2/" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="BLUE HUNTER Official Site" />
@@ -136,7 +140,7 @@ const ComicPage = ({ location }) => {
         </div>
         {/* パンクズリスト */}
         <div className={styles.bread_wrapper}>
-          <BreadShort page01="TOP" href01="/en/" page02="Comic - Episode 1" />
+          <BreadShort page01="TOP" href01="/en/" page02="Comic - Episode 2" />
         </div>
         <Label01 text="Updated every Friday!" />
         <ComicContentsInner>
@@ -147,8 +151,8 @@ const ComicPage = ({ location }) => {
             <ShareArea />
             <div className={styles.btn_wrapper}>
               <div className={styles.btn_next}>
-                <Button href="/en/comic/ep2/" isDisabled={false}>
-                  Read Chapter 2
+                <Button href="/en/comic/ep3/" isDisabled={false}>
+                  Read Chapter 3
                 </Button>
               </div>
               {/* <div className={styles.btn_plan}>

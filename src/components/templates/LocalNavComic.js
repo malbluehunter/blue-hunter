@@ -32,15 +32,15 @@ const LocalNavComic = () => {
               <Link to="#">第2話</Link>
               <LabelNew />
           </li> */}
-          <li className={`${styles.LocalNav_item} ${styles.current}`}>
+          <li className={`${styles.LocalNav_item}`}>
               <Link to="/comic/ep1/">第1話</Link>
-              <LabelNew />
           </li>
-          <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
-            <Link to="#">第2話</Link>
+          <li className={`${styles.LocalNav_item}`}>
+            <Link to="/comic/ep2/">第2話</Link>
           </li>
-          <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
-            <Link to="#">第3話</Link>
+          <li className={`${styles.LocalNav_item} ${styles.current}`}>
+            <Link to="/comic/ep3/">第3話</Link>
+            <LabelNew />
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
             <Link to="#">第4話</Link>
