@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet"
 const HeadLink = () => {
   return (
     <Helmet>
-      <link rel="preload" as="image" href="/common/nav_text_news_hover.png" />
+      
       <link rel="preload" as="image" href="/common/nav_text_comic_hover.png" />
       <link rel="preload" as="image" href="/common/nav_text_world_hover.png" />
       <link rel="preload" as="image" href="/common/nav_text_characters_hover.png" />
