@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       <div className={styles.footer_bg_wrapper}>
         <img src="/common/bg_footer.png" className={styles.footer_bg} loading="lazy" />
-        <img src="/common/bg_footer_sp.png" className={styles.footer_bg_sp} loading="lazy" />
+        <img src="/common/bg_footer_sp.png" className={styles.footer_bg_sp} loading="lazy" alt="" />
       </div>
       <div className={styles.footer_area}>
         <div className={styles.footer_inner}>

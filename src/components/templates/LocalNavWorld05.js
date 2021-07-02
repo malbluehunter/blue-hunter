@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import * as styles from "./LocalNavWorld05.module.scss"
 import TextClose from "../atoms/TextClose"
 import IconDownArrow from "../atoms/IconDownArrow"
+import { Link } from "gatsby"
 
 const LocalNavWorld05 = props => {
   const { pathname } = props
@@ -34,24 +35,24 @@ const LocalNavWorld05 = props => {
         <div className={styles.LocalNav_area} aria-expanded={isOpen}>
           <ol className={styles.LocalNav_list} start="0">
             <li className={`${styles.LocalNav_item} ${pathname.match(href01) ? styles.current : ""}`}>
-              <a href={href01}>ΣＲ(シグマアール)/ΣV(シグマビュー)</a>
+              <Link to={href01}>ΣＲ(シグマアール)/ΣV(シグマビュー)</Link>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href02) ? styles.current : ""}`}>
-              <a href={href02}>UG［Underwater Gear］</a>
+              <Link to={href02}>UG［Underwater Gear］</Link>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href03) ? styles.current : ""}`}>
-              <a href={href03}>生態儀 -ビオバース-</a>
+              <Link to={href03}>生態儀 -ビオバース-</Link>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href04) ? styles.current : ""}`}>
-              <a href={href04}>系統樹</a>
+              <Link to={href04}>系統樹</Link>
             </li>
             <li className={styles.LocalNav_item}>
-              <a href="/worldbuilding/">世界観・設定トップへ戻る</a>
+              <Link to="/worldbuilding/">世界観・設定トップへ戻る</Link>
             </li>
           </ol>
         </div>
         <div className={styles.localNav_bottom}>
-          <img src="/common/local_nav_bottom.png" />
+          <img src="/common/local_nav_bottom.png" alt="" />
         </div>
         <div className={styles.btn_openClose} aria-expanded={isOpen} onClick={toggle}>
           {isOpen ? <TextClose /> : <IconDownArrow />}

@@ -53,7 +53,7 @@ const SpecialPage = ({ location }) => {
         <link rel="preload" as="image" href="/common/nav_text_staff_hover.png" />
         <link rel="preload" as="image" href="/common/nav_text_special_hover.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet" /><meta name="robots" content="noindex" />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet" />
       </Helmet>
 
       <LayoutTwoColumn pathname={location.pathname}>

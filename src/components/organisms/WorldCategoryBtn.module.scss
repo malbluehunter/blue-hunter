@@ -11,10 +11,12 @@
 .category_list {
   position: relative;
   width: get_vw_sp(325);
+  height: get_vw_sp(355);
   margin-top: get_vw_sp(20);
 
   @include mq(md) {
     width: get_vw(320);
+    height: get_vw(350);
     margin-right: get_vw(30);
     margin-top: 0;
   }

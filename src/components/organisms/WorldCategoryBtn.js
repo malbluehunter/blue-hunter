@@ -16,12 +16,12 @@ const WorldCategoryBtn = props => {
               <p className={styles.text}>{item.text}</p>
               <picture>
                 <source type="image/webp" srcset={`${item.btn.slice(0, -4)}.webp`} />
-                <img className={styles.btn} src={item.btn} alt="MORE" loading="lazy" />
+                <img className={styles.btn} src={item.btn} alt="MORE" />
               </picture>
             </div>
             <picture>
               <source type="image/webp" srcset={`${item.src.slice(0, -4)}.webp`} />
-              <img className={styles.img} src={item.src} alt={item.alt} loading="lazy" />
+              <img className={styles.img} src={item.src} alt={item.alt} />
             </picture>
           </Link>
         </div>

@@ -4,7 +4,7 @@ import * as styles from "./HamburgerOpen.module.scss"
 const HamburgerOpen = () => {
   return (
     <div className={styles.img__wrap}>
-      <img src="/common/hamburger_open.png" className={styles.img} />
+      <img src="/common/hamburger_open.png" className={styles.img} alt="" />
     </div>
   )
 }

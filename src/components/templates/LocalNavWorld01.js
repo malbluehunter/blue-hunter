@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import * as styles from "./LocalNavWorld01.module.scss"
 import TextClose from "../atoms/TextClose"
 import IconDownArrow from "../atoms/IconDownArrow"
+import { Link } from "gatsby"
 
 const LocalNavWorld01 = props => {
   const { pathname } = props
@@ -40,46 +41,46 @@ const LocalNavWorld01 = props => {
         <div className={styles.LocalNav_area} aria-expanded={isOpen}>
           <ol className={styles.LocalNav_list} start="0">
             <li className={`${styles.LocalNav_item} ${pathname.match(href01) ? styles.current : ""}`}>
-              <a href={href01}>予備知識としてのCCZ</a>
+              <Link to={href01}>予備知識としてのCCZ</Link>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href02) ? styles.current : ""}`}>
-              <a href={href02}>海洋都市圏の誕生</a>
+              <Link to={href02}>海洋都市圏の誕生</Link>
               <ul className={styles.LocalNav_list_02}>
                 <li className={`${styles.LocalNav_item_02} ${pathname.match(href03) ? styles.current : ""}`}>
-                  <a href={href03}>グラン=ムー【GRAND/MW】</a>
+                  <Link to={href03}>グラン=ムー【GRAND/MW】</Link>
                 </li>
               </ul>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href04) ? styles.current : ""}`}>
-              <a href={href04}>国家か、都市か。</a>
+              <Link to={href04}>国家か、都市か。</Link>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href05) ? styles.current : ""}`}>
-              <a href={href05}>国連から超都連へ。</a>
+              <Link to={href05}>国連から超都連へ。</Link>
               <ul className={styles.LocalNav_list_02}>
                 <li className={`${styles.LocalNav_item_02} ${pathname.match(href06) ? styles.current : ""}`}>
-                  <a href={href06}>The Encyclopedia of ”Octa/M”（1）</a>
+                  <Link to={href06}>The Encyclopedia of ”Octa/M”（1）</Link>
                 </li>
                 <li className={`${styles.LocalNav_item_02} ${pathname.match(href07) ? styles.current : ""}`}>
-                  <a href={href07}>The Encyclopedia of ”Octa/M”（2）</a>
+                  <Link to={href07}>The Encyclopedia of ”Octa/M”（2）</Link>
                 </li>
                 <li className={`${styles.LocalNav_item_02} ${pathname.match(href08) ? styles.current : ""}`}>
-                  <a href={href08}>The Encyclopedia of ”Octa/M”（3）</a>
+                  <Link to={href08}>The Encyclopedia of ”Octa/M”（3）</Link>
                 </li>
                 <li className={`${styles.LocalNav_item_02} ${pathname.match(href09) ? styles.current : ""}`}>
-                  <a href={href09}>The Encyclopedia of ”Octa/M”（4）</a>
+                  <Link to={href09}>The Encyclopedia of ”Octa/M”（4）</Link>
                 </li>
                 <li className={`${styles.LocalNav_item_02} ${pathname.match(href10) ? styles.current : ""}`}>
-                  <a href={href10}>海中発送電塔（シーフォース）</a>
+                  <Link to={href10}>海中発送電塔（シーフォース）</Link>
                 </li>
               </ul>
             </li>
             <li className={styles.LocalNav_item}>
-              <a href="/worldbuilding/">世界観・設定トップへ戻る</a>
+              <Link to="/worldbuilding/">世界観・設定トップへ戻る</Link>
             </li>
           </ol>
         </div>
         <div className={styles.localNav_bottom}>
-          <img src="/common/local_nav_bottom.png" />
+          <img src="/common/local_nav_bottom.png" alt="" />
         </div>
         <div className={styles.btn_openClose} aria-expanded={isOpen} onClick={toggle}>
           {isOpen ? <TextClose /> : <IconDownArrow />}

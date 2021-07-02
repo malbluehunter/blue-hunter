@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import * as styles from "./LocalNavWorld02.module.scss"
 import TextClose from "../atoms/TextClose"
 import IconDownArrow from "../atoms/IconDownArrow"
+import { Link } from "gatsby"
 
 const LocalNavWorld02 = props => {
   const { pathname } = props
@@ -38,36 +39,36 @@ const LocalNavWorld02 = props => {
         <div className={styles.LocalNav_area} aria-expanded={isOpen}>
           <ol className={styles.LocalNav_list} start="0">
             <li className={`${styles.LocalNav_item} ${pathname.match(href01) ? styles.current : ""}`}>
-              <a href={href01}>Tk -タスク-</a>
+              <Link to={href01}>Tk -タスク-</Link>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href02) ? styles.current : ""}`}>
-              <a href={href02}>Lk -リンク-</a>
+              <Link to={href02}>Lk -リンク-</Link>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href03) ? styles.current : ""}`}>
-              <a href={href03}>ゲイン -善行-</a>
+              <Link to={href03}>ゲイン -善行-</Link>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href04) ? styles.current : ""}`}>
-              <a href={href04}>ロス -悪行-</a>
+              <Link to={href04}>ロス -悪行-</Link>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href05) ? styles.current : ""}`}>
-              <a href={href05}>フェアチェーン</a>
+              <Link to={href05}>フェアチェーン</Link>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href06) ? styles.current : ""}`}>
-              <a href={href06}>カラータスク</a>
+              <Link to={href06}>カラータスク</Link>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href07) ? styles.current : ""}`}>
-              <a href={href07}>Rrt -レアリティ-</a>
+              <Link to={href07}>Rrt -レアリティ-</Link>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href08) ? styles.current : ""}`}>
-              <a href={href08}>ブルーへの道程</a>
+              <Link to={href08}>ブルーへの道程</Link>
             </li>
             <li className={styles.LocalNav_item}>
-              <a href="/worldbuilding/">世界観・設定トップへ戻る</a>
+              <Link to="/worldbuilding/">世界観・設定トップへ戻る</Link>
             </li>
           </ol>
         </div>
         <div className={styles.localNav_bottom}>
-          <img src="/common/local_nav_bottom.png" />
+          <img src="/common/local_nav_bottom.png" alt="" />
         </div>
         <div className={styles.btn_openClose} aria-expanded={isOpen} onClick={toggle}>
           {isOpen ? <TextClose /> : <IconDownArrow />}

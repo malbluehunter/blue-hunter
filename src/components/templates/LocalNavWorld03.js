@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import * as styles from "./LocalNavWorld03.module.scss"
 import TextClose from "../atoms/TextClose"
 import IconDownArrow from "../atoms/IconDownArrow"
+import { Link } from "gatsby"
 
 const LocalNavWorld03 = props => {
   const { pathname } = props
@@ -32,18 +33,18 @@ const LocalNavWorld03 = props => {
         <div className={styles.LocalNav_area} aria-expanded={isOpen}>
           <ol className={styles.LocalNav_list} start="0">
             <li className={`${styles.LocalNav_item} ${pathname.match(href01) ? styles.current : ""}`}>
-              <a href={href01}>ハンターギルド組織図</a>
+              <Link to={href01}>ハンターギルド組織図</Link>
             </li>
             <li className={`${styles.LocalNav_item} ${pathname.match(href02) ? styles.current : ""}`}>
-              <a href={href02}>認定海洋保全官「BLUE HUNTER」の階級</a>
+              <Link to={href02}>認定海洋保全官「BLUE HUNTER」の階級</Link>
             </li>
             <li className={styles.LocalNav_item}>
-              <a href="/worldbuilding/">世界観・設定トップへ戻る</a>
+              <Link to="/worldbuilding/">世界観・設定トップへ戻る</Link>
             </li>
           </ol>
         </div>
         <div className={styles.localNav_bottom}>
-          <img src="/common/local_nav_bottom.png" />
+          <img src="/common/local_nav_bottom.png" alt="" />
         </div>
         <div className={styles.btn_openClose} aria-expanded={isOpen} onClick={toggle}>
           {isOpen ? <TextClose /> : <IconDownArrow />}

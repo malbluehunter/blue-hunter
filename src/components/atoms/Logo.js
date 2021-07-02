@@ -6,7 +6,7 @@ const Logo = () => {
     <a href="https://uminohi.jp/" className={styles.img__wrap} target="_blank">
       <picture>
         <source type="image/webp" srcset="/common/logo.webp" />
-        <img src="/common/logo.png" alt="BLUE HUNTER" loading="lazy" />
+        <img src="/common/logo.png" alt="BLUE HUNTER" />
       </picture>
     </a>
   )

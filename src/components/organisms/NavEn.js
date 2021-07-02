@@ -64,7 +64,7 @@ const Nav = props => {
       <div className={styles.nav_bg}>
         <picture>
           <source type="image/webp" srcset="/common/bg_navi.webp" />
-          <img src="/common/bg_navi.png" alt="グローバルナビ背景" loading="lazy" />
+          <img src="/common/bg_navi.png" alt="グローバルナビ背景" />
         </picture>
       </div>
       <div className={styles.menu}>

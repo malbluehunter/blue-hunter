@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import * as styles from "./SliderCharacters.module.scss"
 import Slider from "react-slick"
 import { Link } from "gatsby"

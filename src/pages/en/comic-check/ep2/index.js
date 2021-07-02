@@ -136,7 +136,7 @@ const ComicPage = ({ location }) => {
       <LayoutTwoColumnComic pathname={location.pathname}>
         {/* ページタイトル */}
         <div className={styles.pageTitle_wrapper}>
-          <PageTitle src="/comic/ttl_comic.png" />
+          <PageTitle src="/comic/ttl_comic.png" alt="" />
         </div>
         {/* パンクズリスト */}
         <div className={styles.bread_wrapper}>

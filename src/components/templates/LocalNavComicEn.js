@@ -3,6 +3,7 @@ import * as styles from "./LocalNavComic.module.scss"
 import TextClose from "../atoms/TextClose"
 import IconDownArrowComic from "../atoms/IconDownArrowComic"
 import LabelNew from "../atoms/LabelNew"
+import { Link } from "gatsby"
 
 const LocalNavComic = () => {
   const [isOpen, setisOpen] = useState(false)
@@ -25,57 +26,57 @@ const LocalNavComic = () => {
       <div className={styles.LocalNav_area} aria-expanded={isOpen}>
         <ul className={styles.LocalNav_list} start="0">
           {/* <li className={styles.LocalNav_item}>
-            <a href="/en/comic/ep1/">Episode 1</a>
+            <Link to="/en/comic/ep1/">Episode 1</Link>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.current}`}>
-              <a href="">Episode 2</a>
+              <Link to="#">Episode 2</Link>
               <LabelNew />
           </li> */}
           <li className={`${styles.LocalNav_item} ${styles.current}`}>
-              <a href="/en/comic/ep1/">Episode 1</a>
+              <Link to="/en/comic/ep1/">Episode 1</Link>
               <LabelNew />
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
-            <a href="">Episode 2</a>
+            <Link to="#">Episode 2</Link>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
-            <a href="">Episode 3</a>
+            <Link to="#">Episode 3</Link>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
-            <a href="">Episode 4</a>
+            <Link to="#">Episode 4</Link>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
-            <a href="">Episode 5</a>
+            <Link to="#">Episode 5</Link>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
-            <a href="">Episode 6</a>
+            <Link to="#">Episode 6</Link>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
-            <a href="">Episode 7</a>
+            <Link to="#">Episode 7</Link>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
-            <a href="">Episode 8</a>
+            <Link to="#">Episode 8</Link>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
-            <a href="">Episode 9</a>
+            <Link to="#">Episode 9</Link>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
-            <a href="">Episode 10</a>
+            <Link to="#">Episode 10</Link>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
-            <a href="">Episode 11</a>
+            <Link to="#">Episode 11</Link>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
-            <a href="">Episode 12</a>
+            <Link to="#">Episode 12</Link>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
-            <a href="">Episode 13</a>
+            <Link to="#">Episode 13</Link>
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}></li>
         </ul>
       </div>
       <div className={styles.localNav_bottom}>
-        <img src="/common/local_nav_bottom.png" />
+        <img src="/common/local_nav_bottom.png" alt="" />
       </div>
       <div className={styles.btn_openClose} aria-expanded={isOpen} onClick={toggle}>
         {isOpen ? <TextClose /> : <IconDownArrowComic />}

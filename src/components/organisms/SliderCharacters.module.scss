@@ -73,9 +73,11 @@
   }
 }
 .current_img {
-  width: 82%;
+  width: get_vw_sp(70);
+  height: get_vw_sp(70);
 
   @include mq(md) {
-    width: 100%;
+    width: get_vw(60);
+    height: get_vw(60);
   }
 }
