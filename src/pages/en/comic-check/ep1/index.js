@@ -110,7 +110,7 @@ const ComicPage = ({ location }) => {
         <html lang="en" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 開始 --------------------------------------- */}
         <title>Episode 1 | BLUE HUNTER Official Site</title>
-        <meta name="description" content="The official website for the BLUE HUNTER project. Free BLUE HUNTER manga starts June 2021! Check out all you need to know about the world of BLUE HUNTER here." />
+        <meta name="description" content="The official website for the BLUE HUNTER project. Free BLUE HUNTER manga starts July 2021! Check out all you need to know about the world of BLUE HUNTER here." />
         <meta name="keywords" content="BLUE HUNTER, BH, BLUE HUNTER Project, Free Comic, Art Contest  " />
         <link rel="canonical" href="https://manga.uminohi.jp/en/comic/ep1/" />
         <meta property="og:url" content="https://manga.uminohi.jp/en/comic/ep1/" />

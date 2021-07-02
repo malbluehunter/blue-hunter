@@ -18,7 +18,7 @@ const StaffPage = ({ location }) => {
         <html lang="ja" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 開始 --------------------------------------- */}
         <title>スタッフ | 「BLUE HUNTER」公式サイト</title>
-        <meta name="description" content="ブルーハンタープロジェクト公式サイト。2021年6月より漫画「BLUE HUNTER」を連載開始！最新ニュースや設定資料集、スペシャル情報等をこちらからお届けします。" />
+        <meta name="description" content="ブルーハンタープロジェクト公式サイト。2021年7月より漫画「BLUE HUNTER」を連載開始！最新ニュースや設定資料集、スペシャル情報等をこちらからお届けします。" />
         <meta name="keywords" content="BLUE HUNTER, ブルーハンター, ブルーハンタープロジェクト, 無料漫画, アートコンペ " />
         <link rel="canonical" href="https://manga.uminohi.jp/staff/" />
         <meta property="og:url" content="https://manga.uminohi.jp/staff/" />
