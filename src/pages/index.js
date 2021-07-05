@@ -8,6 +8,7 @@ import Button from "../components/atoms/Button"
 import BnrArt from "../components/atoms/BnrArt"
 
 const TopPage = ({ location }) => {
+
   // /* --------------------------------------- mal様修正範囲(マンガ画像を表示順で設定) 開始 --------------------------------------- */
   const src = [
     "/top/img_top_ep1_ja.png",
