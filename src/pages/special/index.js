@@ -48,7 +48,7 @@ const SpecialPage = ({ location }) => {
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/" page02="スペシャル" />
         <ContentsInner>
-          <MainContentsMiddle>
+          {/* <MainContentsMiddle>
             <div className={styles.contents_inner}>
               <div className={styles.section01}>
                 <div className={styles.textHeading_wrapper}>
@@ -153,9 +153,9 @@ const SpecialPage = ({ location }) => {
                 <div className={styles.line_wrapper}>
                   <LineImg pathname={location.pathname} />
                   <LineImgSp pathname={location.pathname} />
-                </div>
+                </div> */}
                 {/* テーブル(見出しなし) 開始 */}
-                <div className={styles.table_sub_wrapper}>
+                {/* <div className={styles.table_sub_wrapper}>
                   <table className={styles.table_sub}>
                     <tr className={styles.table_tr}>
                       <td className={styles.td_leading}>テーマ</td>
@@ -206,14 +206,14 @@ const SpecialPage = ({ location }) => {
                       <td className={styles.td_item}>1000件</td>
                     </tr>
                   </table>
-                </div>
+                </div> */}
                 {/* テーブル(見出しなし) 終了 */}
-                <div className={styles.text_wrapper}>
+                {/* <div className={styles.text_wrapper}>
                   <TextMedium text={"受賞者におかれましては、おめでとうございます。また、今回アートコンペに参加していただいたすべての皆さまに、心より感謝申し上げます。"} />
                 </div>
               </div>
             </div>
-          </MainContentsMiddle>
+          </MainContentsMiddle> */}
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </ContentsInner>
       </LayoutTwoColumn>
