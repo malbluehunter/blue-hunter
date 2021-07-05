@@ -76,7 +76,7 @@ const SpecialPage = ({ location }) => {
                   <LineImgSp pathname={location.pathname} />
                 </div>
                 <div className={styles.text_wrapper}>
-                  <TextMedium text="ブルーハンターをテーマにしたアートコンペを開催中です。詳しくは以下をご覧ください。" />
+                  <TextMedium text="A BLUE HUNTER-themed art contest is now open! See below for more details." />
                 </div>
                 <div className={styles.bnr_wrapper}>
                   <BnrArt />
