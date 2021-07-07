@@ -75,7 +75,7 @@ const WorldPage = ({ location }) => {
               </picture>
             </div>
             <div className={styles.textMediumSub_wrapper}>
-              <TextMediumSub text="Adjustment request. Physical evidence such as DNA is combined with photographic evidence and eyewitness testimonies to make an informed hypothesis as to the existence of a specimen, even if already extinct. Hunters call these cards “Undiscovered” or “Targets”. They have no official names and so are often called by temporary names based on their physical traits, such as “6 feathers” or “needle scales”." />
+              <TextMediumSub text="Adjustment request. Physical evidence such as DNA is combined with photographic evidence and eyewitness testimonies to make an informed hypothesis as to the existence of a specimen, even if already extinct. Hunters call these cards “Undiscovered” or “Targets”. They have no official names and so are often called by temporary names based on their physical traits, such as “6 wings” or “needle scales”." />
             </div>
             <div className={styles.textLeading_wrapper}>
               <TextLeading pathname={location.pathname} text="2nd Order: Aqua Blue" />
