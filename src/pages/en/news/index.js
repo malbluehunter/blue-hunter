@@ -51,7 +51,7 @@ const NewsPage = ({ location }) => {
               <MainContentsMiddleWorld pathname={location.pathname}>
                 <TextHeading text="500,000 JPY of prizes up for grabs in BLUE HUNTER Art Contest!" />
                 <ContentsLine pathname={location.pathname} />
-                <TextMediumTrim><a className={styles.textlink} href="#">To celebrate</a> the launch of BLUE HUNTER, a specially-themed art contest is being opened.</TextMediumTrim>
+                <TextMediumTrim>To celebrate the launch of BLUE HUNTER, a specially-themed art contest is being opened.</TextMediumTrim>
                 <TextMediumTrim>We are looking for works in various different categories showcasing original ideas, forms and settings that will lead to the future technology of the ocean!</TextMediumTrim>
                 <TextMediumTrim>We will have plenty of prize categories suitable for people of all ages, so we hope to see many people taking part!</TextMediumTrim>
                 <div className={styles.img_wrapper}>
@@ -83,6 +83,7 @@ const NewsPage = ({ location }) => {
               <div className={styles.text_wrapper}>
                 <TextMediumTrim text="「「Blue Hunter」のアートコンペの公募を開始しました。ニュースの記事がはいりますダミーテキスト200文字以上は省略して続きを読むボタンが表示される想定です。ニュースの記事がはいりますダミーテキスト200文字以上は省略して続きを読むボタンが表示される想定です。ニュースの記事がはいりますダミーテキスト200文字以上は省略して続きを読むボタンが表示される想定です。「「Blue Hunter」のアートコンペの公募を開始しました。ニュースの記事がはいりますダミーテキスト200文字以上は省略して続きを読むボタンが表示される想定です。ニュースの記事がはいりますダミーテキスト200文字以上は省略して続きを読むボタンが表示される想定です。ニュースの記事がはいりますダミーテキスト200文字以上は省略して続きを読むボタンが表示される想定です。" />
               </div>
+              <TextMediumTrim><a className={styles.textlink} href="#">テキストリンク</a></TextMediumTrim>
             </MainContentsMiddleWorld>
             <MainContentsBottom pathname={location.pathname} />
           </div>
