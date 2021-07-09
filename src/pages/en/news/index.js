@@ -47,7 +47,7 @@ const NewsPage = ({ location }) => {
         <BreadShort page01="TOP" href01="/en/" page02="News" />
         <NewsContentsInner>
            <div className={styles.contents_02} id="news_02">
-              <MainContentsTop pathname={location.pathname} text="9 July 2021" />
+              <MainContentsTop pathname={location.pathname} text="July 9, 2021" />
               <MainContentsMiddleWorld pathname={location.pathname}>
                 <TextHeading text="500,000 JPY of prizes up for grabs in BLUE HUNTER Art Contest!" />
                 <ContentsLine pathname={location.pathname} />
@@ -63,7 +63,7 @@ const NewsPage = ({ location }) => {
               <MainContentsBottom pathname={location.pathname} />
             </div>
             <div className={styles.contents_02} id="news_01">
-              <MainContentsTop pathname={location.pathname} text="9 July 2021" />
+              <MainContentsTop pathname={location.pathname} text="July 9, 2021" />
               <MainContentsMiddleWorld pathname={location.pathname}>
                 <TextHeading text="Welcome to the BLUE HUNTER homepage" />
                 <ContentsLine pathname={location.pathname} />

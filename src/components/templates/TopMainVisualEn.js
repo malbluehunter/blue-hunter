@@ -20,7 +20,7 @@ const TopMainVisual = () => {
           </div>
           <div className={styles.news_wrapper}>
             <Link className={styles.news_text_wrapper} to="/en/news/">
-              <p className={styles.news_date}>9 July 2021</p>
+              <p className={styles.news_date}>July 9, 2021</p>
               <p className={styles.news_text}>500,000 JPY of prizes up for grabs in BLUE HUNTER Art Contest!</p>
             </Link>
             <Link className={styles.news_btn} to="/en/news/">
