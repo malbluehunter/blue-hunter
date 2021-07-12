@@ -49,13 +49,13 @@ const CharactersPage = ({ location }) => {
           <PageTitle src="/characters/ttl_characters.png" alt="Characters" />
         </div>
         {/* パンクズリスト */}
-        <BreadShort page01="TOP" href01="/en/" page02="Characters - Yoshinori Ourai" />
+        <BreadShort page01="TOP" href01="/en/" page02="Characters - Noriyoshi Ourai" />
         <SliderCharacters pathname={location.pathname} />
         <ContentsInner>
           <MainContentsMiddle>
             <div className={styles.contents_inner}>
               <div className={styles.text_area}>
-                <TextHeadingCharacters text="Yoshinori Ourai" />
+                <TextHeadingCharacters text="Noriyoshi Ourai" />
                 <div className={styles.lavel02_wrapper}>
                   <Label02 text="Guild master" />
                 </div>
@@ -64,7 +64,7 @@ const CharactersPage = ({ location }) => {
                 </div>
               </div>
               <div className={styles.img_area}>
-                <img src="/characters/orai.png" alt="Yoshinori Ourai" />
+                <img src="/characters/orai.png" alt="Noriyoshi Ourai" />
               </div>
             </div>
           </MainContentsMiddle>
