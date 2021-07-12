@@ -55,6 +55,9 @@ const CharactersPage = ({ location }) => {
           <MainContentsMiddle>
             <div className={styles.contents_inner}>
               <div className={styles.text_area}>
+                <div className={styles.rubi}>
+                  <TextMedium text="オウライノリヨシ" />
+                </div>
                 <TextHeadingCharacters text="生頼紀誉師" />
                 <div className={styles.lavel02_wrapper}>
                   <Label02 text="ギルドマスター" />

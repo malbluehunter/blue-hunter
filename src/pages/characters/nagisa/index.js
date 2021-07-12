@@ -55,9 +55,12 @@ const CharactersPage = ({ location }) => {
           <MainContentsMiddle>
             <div className={styles.contents_inner}>
               <div className={styles.text_area}>
+                <div className={styles.rubi}>
+                  <TextMedium text="ウエハラナギサ" />
+                </div>
                 <TextHeadingCharacters text="上原渚" />
                 <div className={styles.lavel02_wrapper}>
-                  <Label02 text="生物士" />
+                  <Label02 text="生物士/サーチャー" />
                 </div>
                 <div className={styles.text_wrapper}>
                   <TextMedium text="海洋都市代表団にも名を連ねる世界屈指の研究者であり、ψ（プサイ）の頭脳。" />

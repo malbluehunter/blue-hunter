@@ -57,7 +57,7 @@ const CharactersPage = ({ location }) => {
               <div className={styles.text_area}>
                 <TextHeadingCharacters text="ホーク" />
                 <div className={styles.lavel02_wrapper}>
-                  <Label02 text="操縦士／オペレイター" />
+                  <Label02 text="操縦士/オペレイター" />
                 </div>
                 <div className={styles.text_wrapper}>
                   <TextMedium text="ψのライバルにあたる有⼒ギルド「セイヴィアン」に所属するでオペレイター（操縦⼠）を担う超⼀流のブル−ハンター。ガーデン3の主のような存在であり、⼤⼈・⼦供によらず信頼は厚い。腕っ節の強い17歳の少年で、UGの扱いにおいて天才肌。" />

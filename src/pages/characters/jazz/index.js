@@ -55,9 +55,12 @@ const CharactersPage = ({ location }) => {
           <MainContentsMiddle>
             <div className={styles.contents_inner}>
               <div className={styles.text_area}>
+                <div className={styles.rubi}>
+                  <TextMedium text="ジャズ" />
+                </div>
                 <TextHeadingCharacters text="JAZz" />
                 <div className={styles.lavel02_wrapper}>
-                  <Label02 text="捕獲士" />
+                  <Label02 text="捕獲士/プロテクター" />
                 </div>
                 <div className={styles.text_wrapper}>
                   <TextMedium text="ψ（プサイ）のエース。技術・体力の両方に秀でており、現役最高レベルと名高い。" />
