@@ -56,7 +56,7 @@ const StaffPage = ({ location }) => {
               <div className={styles.staff_name_item}>
                 <Label03 text={"Producers"} />
                 <div className={styles.text_wrapper}>
-                  <TextLargeTrim text={"Tetsuya Okamura  /  Yukihiro Kitahata  /  Masayoshi Watanabe"} />
+                  <TextLargeTrim text={"Tetsuya Okamura  /  Yukihiro Kitahata  /  Masanori Watanabe"} />
                 </div>
               </div>
               <div className={styles.staff_name_item}>
