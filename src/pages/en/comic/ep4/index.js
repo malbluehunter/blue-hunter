@@ -115,8 +115,8 @@ const ComicPage = ({ location }) => {
         <title>Episode 4 | BLUE HUNTER Official Site</title>
         <meta name="description" content="The official website for the BLUE HUNTER project. Free BLUE HUNTER manga starts July 2021! Check out all you need to know about the world of BLUE HUNTER here." />
         <meta name="keywords" content="BLUE HUNTER, BH, BLUE HUNTER Project, Free Comic, Art Contest  " />
-        <link rel="canonical" href="https://manga.uminohi.jp/en/comic/ep1/" />
-        <meta property="og:url" content="https://manga.uminohi.jp/en/comic/ep1/" />
+        <link rel="canonical" href="https://manga.uminohi.jp/en/comic/ep4/" />
+        <meta property="og:url" content="https://manga.uminohi.jp/en/comic/ep4/" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="BLUE HUNTER Official Site" />
@@ -154,6 +154,9 @@ const ComicPage = ({ location }) => {
                   Read Chapter 5
                 </Button>
               </div> */}
+              <div className={styles.btn_plan}>
+                <Button isDisabled={true}>Next chapter out July 21</Button>
+              </div>
             </div>
           </div>
         </ComicContentsInner>

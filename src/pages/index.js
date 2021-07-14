@@ -134,7 +134,7 @@ const TopPage = ({ location }) => {
               </Button>
             </div>
             {/* <div className={styles.btn_plan}>
-              <Button isDisabled={true}>次回7/16 配信予定</Button>
+              <Button isDisabled={true}>次回7/21 配信予定</Button>
             </div> */}
           </div>
           <div className={styles.bnr_area}>

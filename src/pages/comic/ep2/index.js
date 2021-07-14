@@ -126,7 +126,7 @@ const ComicPage = ({ location }) => {
         <div className={styles.bread_wrapper}>
           <BreadShort page01="TOP" href01="/" page02="マンガ - 第2話" />
         </div>
-        <Label01 text="次回7/16 配信予定" />
+        <Label01 text="次回7/21 配信予定" />
         <ComicContentsInner>
           <div className={styles.comic_wrapper}>
             <ComicArea src={src} />
@@ -140,7 +140,7 @@ const ComicPage = ({ location }) => {
                 </Button>
               </div>
               {/* <div className={styles.btn_plan}>
-                <Button isDisabled={true}>次回7/16 配信予定</Button>
+                <Button isDisabled={true}>次回7/21 配信予定</Button>
               </div> */}
             </div>
           </div>
