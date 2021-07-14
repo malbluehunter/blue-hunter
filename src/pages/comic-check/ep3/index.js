@@ -116,9 +116,6 @@ const ComicPage = ({ location }) => {
                   第4話を読む
                 </Button>
               </div>
-              {/* <div className={styles.btn_plan}>
-                <Button isDisabled={true}>次回7/21 配信予定</Button>
-              </div> */}
             </div>
           </div>
         </ComicContentsInner>
