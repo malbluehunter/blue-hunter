@@ -52,7 +52,7 @@ const NewsPage = ({ location }) => {
               <TextHeading text="Chapter 4 of the BLUE HUNTER manga now available!" />
               <ContentsLine pathname={location.pathname} />
               <TextMediumTrim>
-              Chapter 4 of the BLUE HUNTER manga now available. <a className={styles.textlink} href="/en/comic/ep4/">Read the latest chapter here &gt;</a>
+                The fourth chapter of BLUE HUNTER has been published! <a className={styles.textlink} href="/en/comic/ep4/">Read the latest chapter here &gt;</a>
               </TextMediumTrim>
             </MainContentsMiddleWorld>
             <MainContentsBottom pathname={location.pathname} />
