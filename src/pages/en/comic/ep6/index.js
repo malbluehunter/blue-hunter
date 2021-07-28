@@ -92,11 +92,11 @@ const ComicPage = ({ location }) => {
       <Helmet>
         <html lang="en" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 開始 --------------------------------------- */}
-        <title>Episode 1 | BLUE HUNTER Official Site</title>
+        <title>Episode 6 | BLUE HUNTER Official Site</title>
         <meta name="description" content="The official website for the BLUE HUNTER project. Free BLUE HUNTER manga starts July 2021! Check out all you need to know about the world of BLUE HUNTER here." />
         <meta name="keywords" content="BLUE HUNTER, BH, BLUE HUNTER Project, Free Comic, Art Contest  " />
-        <link rel="canonical" href="https://manga.uminohi.jp/en/comic/ep1/" />
-        <meta property="og:url" content="https://manga.uminohi.jp/en/comic/ep1/" />
+        <link rel="canonical" href="https://manga.uminohi.jp/en/comic/ep6/" />
+        <meta property="og:url" content="https://manga.uminohi.jp/en/comic/ep6/" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="BLUE HUNTER Official Site" />
@@ -128,13 +128,16 @@ const ComicPage = ({ location }) => {
           </div>
           <div>
             <ShareArea />
-            {/* <div className={styles.btn_wrapper}>
-              <div className={styles.btn_next}>
-                <Button href="/en/comic-check/ep7/" isDisabled={false}>
+            <div className={styles.btn_wrapper}>
+              {/* <div className={styles.btn_next}>
+                <Button href="/en/comic/ep7/" isDisabled={false}>
                   Read Chapter 7
                 </Button>
+              </div> */}
+              <div className={styles.btn_plan}>
+                <Button isDisabled={true}>Next chapter out August 5</Button>
               </div>
-            </div> */}
+            </div>
           </div>
         </ComicContentsInner>
       </LayoutTwoColumnComic>

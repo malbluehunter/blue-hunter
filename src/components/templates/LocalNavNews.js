@@ -11,6 +11,10 @@ const LocalNavNews = () => {
       <div className={styles.localNav_area}>
         <ol className={styles.localNav_list} start="0">
           <li className={`${styles.localNav_item} ${styles.current}`}>
+            <Link to="#news_06">第6話を公開しました</Link>
+            <p className={styles.date}>2021.7.30</p>
+          </li>
+          <li className={`${styles.localNav_item}`}>
             <Link to="#news_04">第5話を公開しました</Link>
             <p className={styles.date}>2021.7.21</p>
           </li>

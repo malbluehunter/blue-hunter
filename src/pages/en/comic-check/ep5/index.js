@@ -117,7 +117,7 @@ const ComicPage = ({ location }) => {
         <div className={styles.bread_wrapper}>
           <BreadShort page01="TOP" href01="/en/" page02="Comic - Episode 5" />
         </div>
-        <Label01 text="Next chapter out July 29" />
+        <Label01 text="Next chapter out August 5" />
         <ComicContentsInner>
           <div className={styles.comic_wrapper}>
             <ComicArea src={src} />
