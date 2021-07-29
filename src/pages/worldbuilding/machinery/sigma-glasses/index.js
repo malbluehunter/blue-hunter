@@ -53,7 +53,7 @@ const WorldPage = ({ location }) => {
           <MainContentsMiddleWorld pathname={location.pathname}>
             <TextHeading text="-Σ(シグマ)グラス-" />
             <ContentsLine pathname={location.pathname} />
-            <TextMedium text="ΣR（Σリアリティ）、ΣＶ（Σビュー）などに対応する多⽬的ゴーグル。ハンターギルドの創始者であるΣ（シグマ）が開発し、その後普及した。ハンターの眼を潮⾵や紫外線から守る意味もある。" />
+            <TextMedium text="ΣR（Σアール）、ΣＶ（Σビュー）などに対応する多⽬的ゴーグル。ハンターギルドの創始者であるΣ（シグマ）が開発し、その後普及した。ハンターの眼を潮⾵や紫外線から守る意味もある。" />
             <div className={styles.img_wrapper}>
               <img src="/world/world_img_machinery_10.png" alt="" />
             </div>
