@@ -276,12 +276,12 @@ const ComicPage = ({ location }) => {
             <div className={styles.btn_wrapper}>
               {/* <div className={styles.btn_next}>
                 <Button href="/comic/ep8/" isDisabled={false}>
-                  第8 話を読む
+                  第8話を読む
                 </Button>
               </div> */}
-              {/* <div className={styles.btn_plan}>
-                <Button isDisabled={true}>次回7/21 配信予定</Button>
-              </div> */}
+              <div className={styles.btn_plan}>
+                <Button isDisabled={true}>次回9/30 配信予定</Button>
+              </div>
             </div>
           </div>
         </ComicContentsInner>

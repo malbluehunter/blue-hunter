@@ -46,6 +46,17 @@ const NewsPage = ({ location }) => {
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/en/" page02="News" />
         <NewsContentsInner>
+          <div className={styles.contents_02} id="news_06">
+            <MainContentsTop pathname={location.pathname} text="August 5, 2021" />
+            <MainContentsMiddleWorld pathname={location.pathname}>
+              <TextHeading text="Chapter 7 of the BLUE HUNTER manga now available!" />
+              <ContentsLine pathname={location.pathname} />
+              <TextMediumTrim>
+                The seventh chapter of BLUE HUNTER has been published! <a className={styles.textlink} href="/en/comic/ep7/">Read the latest chapter here &gt;</a>
+              </TextMediumTrim>
+            </MainContentsMiddleWorld>
+            <MainContentsBottom pathname={location.pathname} />
+          </div>
           <div className={styles.contents_02} id="news_05">
             <MainContentsTop pathname={location.pathname} text="July 29, 2021" />
             <MainContentsMiddleWorld pathname={location.pathname}>

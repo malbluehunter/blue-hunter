@@ -121,7 +121,7 @@ const ComicPage = ({ location }) => {
         <div className={styles.bread_wrapper}>
           <BreadShort page01="TOP" href01="/en/" page02="Comic - Episode 6" />
         </div>
-        <Label01 text="Next chapter out August 5" />
+        <Label01 text="Next chapter out October 6" />
         <ComicContentsInner>
           <div className={styles.comic_wrapper}>
             <ComicArea src={src} />
@@ -129,14 +129,14 @@ const ComicPage = ({ location }) => {
           <div>
             <ShareArea />
             <div className={styles.btn_wrapper}>
-              {/* <div className={styles.btn_next}>
+              <div className={styles.btn_next}>
                 <Button href="/en/comic/ep7/" isDisabled={false}>
                   Read Chapter 7
                 </Button>
-              </div> */}
-              <div className={styles.btn_plan}>
-                <Button isDisabled={true}>Next chapter out August 5</Button>
               </div>
+              {/* <div className={styles.btn_plan}>
+                <Button isDisabled={true}>Next chapter out August 5</Button>
+              </div> */}
             </div>
           </div>
         </ComicContentsInner>
