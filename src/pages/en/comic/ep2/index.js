@@ -104,7 +104,20 @@ const ComicPage = ({ location }) => {
     "/comic/02_en/BH_ep002_english_089.png",
     "/comic/02_en/BH_ep002_english_090.png",
     "/comic/02_en/BH_ep002_english_091.png",
-    "/comic/02_en/BH_ep002_english_092.png"
+    "/comic/02_en/BH_ep002_english_092.png",
+    "/comic/02_en/BH_ep002_english_093.png",
+    "/comic/02_en/BH_ep002_english_094.png",
+    "/comic/02_en/BH_ep002_english_095.png",
+    "/comic/02_en/BH_ep002_english_096.png",
+    "/comic/02_en/BH_ep002_english_097.png",
+    "/comic/02_en/BH_ep002_english_098.png",
+    "/comic/02_en/BH_ep002_english_099.png",
+    "/comic/02_en/BH_ep002_english_100.png",
+    "/comic/02_en/BH_ep002_english_101.png",
+    "/comic/02_en/BH_ep002_english_102.png",
+    "/comic/02_en/BH_ep002_english_103.png",
+    "/comic/02_en/BH_ep002_english_104.png",
+    "/comic/02_en/BH_ep002_english_105.png"
   ]
   // /* --------------------------------------- mal様修正範囲(マンガ画像を表示順で設定) 終了 --------------------------------------- */
 
