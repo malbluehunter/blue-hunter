@@ -46,6 +46,56 @@ const NewsPage = ({ location }) => {
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/en/" page02="News" />
         <NewsContentsInner>
+        <div className={styles.contents_02} id="news_07">
+            <MainContentsTop pathname={location.pathname} text="September 9, 2021" />
+            <MainContentsMiddleWorld pathname={location.pathname}>
+              <TextHeading text="Applications to the art contest are now closed" />
+              <ContentsLine pathname={location.pathname} />
+              <TextMediumTrim>
+              As of September 9, applications for the BLUE HUNTER art competition are now closed. Thank you so much to all of our entrants! Nominees will be announced on October 14.
+              </TextMediumTrim>
+              <TextMediumTrim>
+              We hope you look forward to the announcement!
+              </TextMediumTrim>
+              <TextMediumTrim>
+                The schedule for the remainder of the event is as follows:
+              </TextMediumTrim>
+              <TextMediumTrim>
+                ●Results of Preliminary Selection
+              </TextMediumTrim>
+              <TextMediumTrim>
+                October 14, 2021
+              </TextMediumTrim>
+              <TextMediumTrim>
+                ●Final Selection
+              </TextMediumTrim>
+              <TextMediumTrim>
+                October 14 - October 21, 2021
+              </TextMediumTrim>
+              <TextMediumTrim>
+                ●MAL User Web Vote Selection
+              </TextMediumTrim>
+              <TextMediumTrim>
+                October 14 - October 21, 2021
+              </TextMediumTrim>
+              <TextMediumTrim>
+                ●Commemoration Ceremony
+              </TextMediumTrim>
+              <TextMediumTrim>
+                November 4, 2021
+              </TextMediumTrim>
+              <TextMediumTrim>
+                ●Announcement of Winning Works
+              </TextMediumTrim>
+              <TextMediumTrim>
+                November 4, 2021
+              </TextMediumTrim>
+              <TextMediumTrim>
+                ※Date of announcements subject to change.
+              </TextMediumTrim>
+            </MainContentsMiddleWorld>
+            <MainContentsBottom pathname={location.pathname} />
+          </div>
           <div className={styles.contents_02} id="news_06">
             <MainContentsTop pathname={location.pathname} text="August 5, 2021" />
             <MainContentsMiddleWorld pathname={location.pathname}>

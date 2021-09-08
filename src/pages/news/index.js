@@ -47,6 +47,55 @@ const NewsPage = ({ location }) => {
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/" page02="ニュース" />
         <NewsContentsInner>
+        <div className={styles.contents_02} id="news_07">
+            <MainContentsTop pathname={location.pathname} text="2021.9.10" />
+            <MainContentsMiddleWorld pathname={location.pathname}>
+              <TextHeading text="作品の募集を締め切りました" />
+              <ContentsLine pathname={location.pathname} />
+              <TextMediumTrim>
+              『BLUE HUNTER アートコンペティション』の作品募集は、9月10日をもって締め切らせていただきました。たくさんのご応募、ありがとうございました！
+              ノミネート作品発表は10月15日を予定しております。発表まで今しばらくお待ちください。
+              </TextMediumTrim>
+              <TextMediumTrim>
+                今後のスケジュールは下記の通りです。
+              </TextMediumTrim>
+              <TextMediumTrim>
+                ●一次選考結果発表
+              </TextMediumTrim>
+              <TextMediumTrim>
+                2021年10月15日
+              </TextMediumTrim>
+              <TextMediumTrim>
+                ●最終審査期間
+              </TextMediumTrim>
+              <TextMediumTrim>
+                2021年10月15日〜10月22日
+              </TextMediumTrim>
+              <TextMediumTrim>
+                ●MALユーザーWeb投票期間
+              </TextMediumTrim>
+              <TextMediumTrim>
+                2021年10月15日〜10月22日
+              </TextMediumTrim>
+              <TextMediumTrim>
+                ●公開審査会・表彰式
+              </TextMediumTrim>
+              <TextMediumTrim>
+                2021年11月5日
+              </TextMediumTrim>
+              <TextMediumTrim>
+                ●受賞作品結果発表
+              </TextMediumTrim>
+              <TextMediumTrim>
+                2021年11月5日
+              </TextMediumTrim>
+              <TextMediumTrim>
+                ※結果発表は日時が変更される場合がございます
+              </TextMediumTrim>
+              
+            </MainContentsMiddleWorld>
+            <MainContentsBottom pathname={location.pathname} />
+          </div>
           <div className={styles.contents_02} id="news_06">
             <MainContentsTop pathname={location.pathname} text="2021.8.6" />
             <MainContentsMiddleWorld pathname={location.pathname}>
