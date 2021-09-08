@@ -150,7 +150,7 @@ const StaffPage = ({ location }) => {
                   />
                   <TextLargeTrim
                     text={
-                      "Satomi Abe / Kubota Shinji / YURI"
+                      "Satomi Abe / Kubota Shinji / YURI / YYBoy / Mami Okada / Tsutomu Yano"
                     }
                   />
                 </div>
