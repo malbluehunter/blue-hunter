@@ -1,1 +1,11 @@
 @import "../../assets/scss/mixin";
+
+.comic_wrapper {
+
+    @include mq(md) {
+        img {
+            margin-top: -1px;
+        }
+    }
+    
+}
