@@ -19,11 +19,11 @@ const TopMainVisual = () => {
             <img src="/top/top_main_text.png" alt="まだ見たことない海洋生物がこの広い海のどこかに存在しているんだ" />
           </div>
           <div className={styles.news_wrapper}>
-            <Link className={styles.news_text_wrapper} to="/news/">
-              <p className={styles.news_date}>2021.9.10</p>
-              <p className={styles.news_text}>作品の募集を締め切りました</p>
+            <Link className={styles.news_text_wrapper} to="/comic/ep8/">
+              <p className={styles.news_date}>2021.9.30</p>
+              <p className={styles.news_text}>マンガ第8話を公開しました</p>
             </Link>
-            <Link className={styles.news_btn} to="/news/">
+            <Link className={styles.news_btn} to="/comic/ep8/">
               <picture>
                 <source srcset="/top/top_newsArea_btn.png" media="(min-width: 768px)" />
                 <img src="/top/top_newsArea_btn_sp.png" alt="MORE" />
