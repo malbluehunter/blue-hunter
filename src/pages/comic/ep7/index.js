@@ -266,7 +266,7 @@ const ComicPage = ({ location }) => {
         <div className={styles.bread_wrapper}>
           <BreadShort page01="TOP" href01="/" page02="マンガ - 第7話" />
         </div>
-        <Label01 text="次回9/30 配信予定" />
+        <Label01 text="次回10/29 配信予定" />
         <ComicContentsInner>
           <div className={styles.comic_wrapper}>
             <ComicArea src={src} />
@@ -274,14 +274,14 @@ const ComicPage = ({ location }) => {
           <div>
             <ShareArea />
             <div className={styles.btn_wrapper}>
-              {/* <div className={styles.btn_next}>
+              <div className={styles.btn_next}>
                 <Button href="/comic/ep8/" isDisabled={false}>
                   第8話を読む
                 </Button>
-              </div> */}
-              <div className={styles.btn_plan}>
-                <Button isDisabled={true}>次回9/30 配信予定</Button>
               </div>
+              {/* <div className={styles.btn_plan}>
+                <Button isDisabled={true}>次回9/30 配信予定</Button>
+              </div> */}
             </div>
           </div>
         </ComicContentsInner>
