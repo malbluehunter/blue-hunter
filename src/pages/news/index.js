@@ -47,6 +47,25 @@ const NewsPage = ({ location }) => {
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/" page02="ニュース" />
         <NewsContentsInner>
+          <div className={styles.contents_02} id="news_09">
+            <MainContentsTop pathname={location.pathname} text="2021.10.15" />
+            <MainContentsMiddleWorld pathname={location.pathname}>
+              <TextHeading text="ノミネート作品発表・Web投票開始しました！" />
+              <ContentsLine pathname={location.pathname} />
+              <TextMediumTrim>
+              いよいよ『BLUE HUNTER アートコンペティション』のノミネート作品の発表です。アートコンペティション事務局による厳正な選考のもと、29作品が選ばれました！これから最終審査です。また、みんなの人気投票で決定するMAL賞のWeb投票も開始されました。MyAnimeListのアカウントをお持ちの方は自分の好きな作品をひとつ選んで投票してください。
+              </TextMediumTrim>
+              <TextMediumTrim>
+              ※投票にはMyAnimeList IDが必要です。
+              </TextMediumTrim>
+              <div className={styles.img_wrapper}>
+                <a href="https://bha.myanimelist.net">
+                  <img src="/common/bnr_art.png" alt="" />
+                </a>
+              </div>
+            </MainContentsMiddleWorld>
+            <MainContentsBottom pathname={location.pathname} />
+          </div>
           <div className={styles.contents_02} id="news_08">
             <MainContentsTop pathname={location.pathname} text="2021.9.30" />
             <MainContentsMiddleWorld pathname={location.pathname}>
@@ -159,11 +178,6 @@ const NewsPage = ({ location }) => {
               <TextMediumTrim>
                 BLUE HUNTER公開を記念して、BLUE HUNTERをテーマにしたアートコンペの開催が決定いたしました。『BLUE HUNTERアートコンペティション』では「海洋の未来技術を牽引するような、独創的な発想・造形・設定が表現された作品」を、部門別に募集いたします。キッズを対象にした賞もご用意がありますで、幅広い年齢の方にご参加いただけます。たくさんのご応募をお待ちしております！
               </TextMediumTrim>
-              <div className={styles.img_wrapper}>
-                <a href="https://bha.myanimelist.net">
-                  <img src="/common/bnr_art.png" alt="" />
-                </a>
-              </div>
             </MainContentsMiddleWorld>
             <MainContentsBottom pathname={location.pathname} />
           </div>

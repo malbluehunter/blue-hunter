@@ -46,6 +46,20 @@ const NewsPage = ({ location }) => {
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/en/" page02="News" />
         <NewsContentsInner>
+        <div className={styles.contents_02} id="news_09">
+          <MainContentsTop pathname={location.pathname} text="October 14, 2021" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
+            <TextHeading text="Shortlist of winners revealed; voting for MAL User Prize open!" />
+            <ContentsLine pathname={location.pathname} />
+            <TextMediumTrim>We are very happy to announce the BLUE HUNTER Art Contest shortlist. Despite receiving so many wonderful entries, the judging panel have narrowed things down to 29 nominees. These works will move on to the final selection process. We have also opened voting for the MAL User Prize, so don’t forget to vote for your favorite nominated work!</TextMediumTrim>
+            <div className={styles.img_wrapper}>
+              <a href="https://bha.myanimelist.net/en">
+                <img src="/common/bnr_art_en.png" alt="" />
+              </a>
+            </div>
+          </MainContentsMiddleWorld>
+          <MainContentsBottom pathname={location.pathname} />
+         </div>
          <div className={styles.contents_02} id="news_08">
             <MainContentsTop pathname={location.pathname} text="September 29, 2021" />
             <MainContentsMiddleWorld pathname={location.pathname}>
@@ -159,11 +173,6 @@ const NewsPage = ({ location }) => {
                 <TextMediumTrim>To celebrate the launch of BLUE HUNTER, a specially-themed art contest is being opened.</TextMediumTrim>
                 <TextMediumTrim>We are looking for works in various different categories showcasing original ideas, forms and settings that will lead to the future technology of the ocean!</TextMediumTrim>
                 <TextMediumTrim>We will have plenty of prize categories suitable for people of all ages, so we hope to see many people taking part!</TextMediumTrim>
-                <div className={styles.img_wrapper}>
-                  <a href="https://bha.myanimelist.net/en">
-                    <img src="/common/bnr_art_en.png" alt="" />
-                  </a>
-                </div>
               </MainContentsMiddleWorld>
               <MainContentsBottom pathname={location.pathname} />
             </div>
