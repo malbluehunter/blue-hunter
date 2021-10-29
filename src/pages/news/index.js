@@ -53,7 +53,7 @@ const NewsPage = ({ location }) => {
               <TextHeading text="第9話を公開しました" />
               <ContentsLine pathname={location.pathname} />
               <TextMediumTrim>
-                マンガ第6話を公開しました。<a className={styles.textlink} href="/comic/ep9/">マンガの最新話はこちら&gt;</a>
+                マンガ第9話を公開しました。<a className={styles.textlink} href="/comic/ep9/">マンガの最新話はこちら&gt;</a>
               </TextMediumTrim>
             </MainContentsMiddleWorld>
             <MainContentsBottom pathname={location.pathname} />
