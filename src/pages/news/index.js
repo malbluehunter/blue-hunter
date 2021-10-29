@@ -47,6 +47,17 @@ const NewsPage = ({ location }) => {
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/" page02="ニュース" />
         <NewsContentsInner>
+         <div className={styles.contents_02} id="news_10">
+            <MainContentsTop pathname={location.pathname} text="2021.11.1" />
+            <MainContentsMiddleWorld pathname={location.pathname}>
+              <TextHeading text="第9話を公開しました" />
+              <ContentsLine pathname={location.pathname} />
+              <TextMediumTrim>
+                マンガ第6話を公開しました。<a className={styles.textlink} href="/comic/ep9/">マンガの最新話はこちら&gt;</a>
+              </TextMediumTrim>
+            </MainContentsMiddleWorld>
+            <MainContentsBottom pathname={location.pathname} />
+          </div>
           <div className={styles.contents_02} id="news_09">
             <MainContentsTop pathname={location.pathname} text="2021.10.15" />
             <MainContentsMiddleWorld pathname={location.pathname}>
@@ -72,7 +83,7 @@ const NewsPage = ({ location }) => {
               <TextHeading text="第8話を公開しました" />
               <ContentsLine pathname={location.pathname} />
               <TextMediumTrim>
-                マンガ第8話を公開しました。<a className={styles.textlink} href="/comic/ep8/">マンガの最新話はこちら&gt;</a>
+                マンガ第8話を公開しました。<a className={styles.textlink} href="/comic/ep8/">第8話はこちら&gt;</a>
               </TextMediumTrim>
             </MainContentsMiddleWorld>
             <MainContentsBottom pathname={location.pathname} />
@@ -108,16 +119,10 @@ const NewsPage = ({ location }) => {
                 2021年10月15日〜10月22日
               </TextMediumTrim>
               <TextMediumTrim>
-                ●公開審査会・表彰式
-              </TextMediumTrim>
-              <TextMediumTrim>
-                2021年11月5日
-              </TextMediumTrim>
-              <TextMediumTrim>
                 ●受賞作品結果発表
               </TextMediumTrim>
               <TextMediumTrim>
-                2021年11月5日
+                2021年11月22日
               </TextMediumTrim>
               <TextMediumTrim>
                 ※結果発表は日時が変更される場合がございます
