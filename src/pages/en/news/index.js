@@ -104,16 +104,10 @@ const NewsPage = ({ location }) => {
                 October 14 - October 21, 2021
               </TextMediumTrim>
               <TextMediumTrim>
-                ●Commemoration Ceremony
-              </TextMediumTrim>
-              <TextMediumTrim>
-                November 4, 2021
-              </TextMediumTrim>
-              <TextMediumTrim>
                 ●Announcement of Winning Works
               </TextMediumTrim>
               <TextMediumTrim>
-                November 4, 2021
+                November 21, 2021
               </TextMediumTrim>
               <TextMediumTrim>
                 ※Date of announcements subject to change.
