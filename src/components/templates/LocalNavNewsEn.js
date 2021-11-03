@@ -11,6 +11,10 @@ const LocalNavNews = () => {
       <div className={styles.localNav_area}>
         <ol className={styles.localNav_list} start="0">
           <li className={`${styles.localNav_item} ${styles.current}`}>
+            <Link to="#news_10">Chapter 9 of the BLUE HUNTER manga now available!</Link>
+            <p className={styles.date}>November 4, 2021</p>
+          </li>
+          <li className={`${styles.localNav_item}`}>
             <Link to="#news_09">Shortlist of winners revealed; voting for MAL User Prize open!</Link>
             <p className={styles.date}>October 14, 2021</p>
           </li>

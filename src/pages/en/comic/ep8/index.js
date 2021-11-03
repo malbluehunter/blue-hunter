@@ -143,14 +143,14 @@ const ComicPage = ({ location }) => {
           <div>
             <ShareArea />
             <div className={styles.btn_wrapper}>
-              {/* <div className={styles.btn_next}>
+              <div className={styles.btn_next}>
                 <Button href="/en/comic/ep9/" isDisabled={false}>
                   Read Chapter 9
                 </Button>
-              </div> */}
-              <div className={styles.btn_plan}>
-                <Button isDisabled={true}>Next chapter out November 4</Button>
               </div>
+              {/* <div className={styles.btn_plan}>
+                <Button isDisabled={true}>Next chapter out November 4</Button>
+              </div> */}
             </div>
           </div>
         </ComicContentsInner>
