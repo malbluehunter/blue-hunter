@@ -48,14 +48,15 @@ const SpecialPage = ({ location }) => {
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/" page02="スペシャル" />
         <ContentsInner>
-          {/* <MainContentsMiddle>
+          <MainContentsMiddle>
             <div className={styles.contents_inner}>
               <div className={styles.section01}>
                 <div className={styles.textHeading_wrapper}>
-                  <TextHeading text="最終選考審査会(仮）" />
+                  <TextHeading text="BLUE HUNTER アートコンペティション 表彰式" />
                 </div>
                 <div className={styles.text_wrapper}>
-                  <TextMedium text="表彰イベントの当日の様子を公開しています。などの簡単な説明文が入ります。表彰イベントの当日の様子を公開しています。などの簡単な説明文が入ります。" />
+                  <TextMedium text="BLUE HUNTERをテーマにしたアートコンペを開催し、約700点もの素晴らしい作品、アイディアが集まりました。アートコンペにご参加いただいた皆さまにおいては心から感謝いたします。また、Web投票にご参加いただいた皆さまも、ご参加いただきありがとうございました。" />
+                  <TextMedium text="先だって催されたオンライン表彰式の模様を動画で公開いたします。受賞作品の発表や受賞者のコメントを紹介しておりますので、動画と合わせて結果発表をお楽しみください。" />
                 </div>
                 <div className={styles.video}>
                   <iframe
@@ -82,29 +83,29 @@ const SpecialPage = ({ location }) => {
                 </div>
                 <Label04 text="Blue Hunter 大賞" />
                 <div className={styles.prizeMoney_wrapper}>
-                  <p>賞金 50万円</p>
+                  <p>賞金 30万円</p>
                 </div>
                 <div className={styles.img_wrapper}>
-                  <img src="/special/special_img01.jpg" alt="" />
+                  <img src="/special/i-16.png" alt="Manaaki ʻAukai" />
                 </div>
                 <div className={styles.prizeWinner_wrapper}>
                   <div className={styles.prizeWinner_item}>
                     <Label05 text="作品名" />
                     <div className={styles.prizeWinner_item_text}>
-                      <TextLarge text="作品タイトルが入ります" />
+                      <TextLarge text="Manaaki ʻAukai" />
                     </div>
                   </div>
                   <div className={styles.prizeWinner_item}>
                     <Label05 text="受賞者" />
                     <div className={styles.prizeWinner_item_text}>
-                      <TextLarge text="山田 太郎" />
+                      <TextLarge text="Qushung" />
                     </div>
                   </div>
                 </div>
                 <div className={styles.text_wrapper}>
                   <TextMedium
                     text={
-                      "受賞者による作品の説明が入ります。（ナラティブです。）\n私は今日初めてこの学習院というものの中に這入はいりました。もっとも以前から学習院は多分この見当だろうぐらいに考えていたには相違そういありませんが、はっきりとは存じませんでした。中へ這入ったのは無論今日が初めてでございます。"
+                      "Manaaki is a seeker who originally belongs to a small village in Hawaii not too far from GRAND/MW. Growing up, he was named the Kraken for his electronical armor E-AS gear and the frequent success he had in his missions. However, his position as Captain had been suspended due to revalation of his suspicious involvement in an expirament at a young age; resulting in him possessing blue blood which allows him to survive, similar to octopuses, in extreme temperatures in the water. Being the sole survivor of his guild, Manaaki is determined to come to terms with his past as well as coming into recent contact with ΨORCA as well as to find the truth behind the suspicious irregularities in the fracture zone under the depths of the ocean."
                     }
                   />
                 </div>
@@ -116,36 +117,306 @@ const SpecialPage = ({ location }) => {
                 </div>
                 <Label04 text="審査員特別賞" />
                 <div className={styles.prizeMoney_wrapper}>
-                  <p>賞金 10万円</p>
+                  <p>賞金 4万円</p>
                 </div>
                 <div className={styles.img_wrapper}>
-                  <img src="/special/special_img01.jpg" alt="" />
+                  <img src="/special/i-10.png" alt="moving city model 227" />
                 </div>
                 <div className={styles.prizeWinner_wrapper}>
                   <div className={styles.prizeWinner_item}>
                     <Label05 text="作品名" />
                     <div className={styles.prizeWinner_item_text}>
-                      <TextLarge text="作品タイトルが入ります" />
+                      <TextLarge text="moving city model 227" />
                     </div>
                   </div>
                   <div className={styles.prizeWinner_item}>
                     <Label05 text="受賞者" />
                     <div className={styles.prizeWinner_item_text}>
-                      <TextLarge text="山田 太郎" />
+                      <TextLarge text="Moving City Model 227" />
                     </div>
                   </div>
                 </div>
                 <div className={styles.text_wrapper}>
                   <TextMedium
                     text={
-                      "受賞者による作品の説明が入ります。（ナラティブです。）\n私は今日初めてこの学習院というものの中に這入はいりました。もっとも以前から学習院は多分この見当だろうぐらいに考えていたには相違そういありませんが、はっきりとは存じませんでした。中へ這入ったのは無論今日が初めてでございます。"
+                      "Since the world is drowning due to global warming all goverments in the wolrd have funded this project so they can save humanity from extension. It uses solar panels as an energy source."
                     }
                   />
                 </div>
               </div>
-              <div className={styles.dot_wrapper}>
-                <img src="/special/dot_img.png" alt="・・・" />
+              <div className={styles.section03}>
+                <div className={styles.line_wrapper}>
+                  <LineImg pathname={location.pathname} />
+                  <LineImgSp pathname={location.pathname} />
+                </div>
+                <Label04 text="ナラティブ賞" />
+                <div className={styles.prizeMoney_wrapper}>
+                  <p>賞金 2万円</p>
+                </div>
+                <div className={styles.img_wrapper}>
+                  <img src="/special/i-12.png" alt="Amaiai" />
+                </div>
+                <div className={styles.prizeWinner_wrapper}>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="作品名" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="Amaiai" />
+                    </div>
+                  </div>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="受賞者" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="Houba" />
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.text_wrapper}>
+                  <TextMedium
+                    text={
+                      "Originally made as a classic oil rig, Amaiai was later turned into a multi-purpose station. The rig still drills for oil, but rather than for making petrol it's now used as a propellant for High-Efficiency Hydrogen Fuel production units. The hydrogen fuel made here is compressed into capsules which are used as a common source of power for majority of current vessels around the globe. Another part of the rig is equipped with a water desalination unit which allows the inhabitants of the rig to survive and which brings them sizeable income from fresh water trade. The rig is mobile and feeds on the very last residues of oil left in the world. Since the existence of the rig is crucial for the sailors to survive on the open sea, it's considered to be untouchable by any means of force. Special rules apply as soon as you enter its deck, including the one which doesn't allow you to stay longer than 30 hours at once."
+                    }
+                  />
+                </div>
               </div>
+              <div className={styles.section03}>
+                <div className={styles.line_wrapper}>
+                  <LineImg pathname={location.pathname} />
+                  <LineImgSp pathname={location.pathname} />
+                </div>
+                <Label04 text="ハンターアイテム部門賞" />
+                <div className={styles.prizeMoney_wrapper}>
+                  <p>賞金 2万円</p>
+                </div>
+                <div className={styles.img_wrapper}>
+                  <img src="/special/i-1.png" alt="Moray Spear" />
+                </div>
+                <div className={styles.prizeWinner_wrapper}>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="作品名" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="Moray Spear" />
+                    </div>
+                  </div>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="受賞者" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="Nik" />
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.text_wrapper}>
+                  <TextMedium
+                    text={
+                      "Used to latch onto large animals harmlessly to get to them or get DNA, the base attaches to the thrower or a vehicle."
+                    }
+                  />
+                </div>
+              </div>
+              <div className={styles.section03}>
+                <div className={styles.line_wrapper}>
+                  <LineImg pathname={location.pathname} />
+                  <LineImgSp pathname={location.pathname} />
+                </div>
+                <Label04 text="未来の船舶・移動手段部門賞" />
+                <div className={styles.prizeMoney_wrapper}>
+                  <p>賞金 2万円</p>
+                </div>
+                <div className={styles.img_wrapper}>
+                  <img src="/special/i-4.png" alt="Nanomorpher Pod" />
+                </div>
+                <div className={styles.prizeWinner_wrapper}>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="作品名" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="Nanomorpher Pod" />
+                    </div>
+                  </div>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="受賞者" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="Furubita Kuruma" />
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.text_wrapper}>
+                  <TextMedium
+                    text={
+                      "A submersible capable of copying various identified species with the help of the technology similar to the Nanoballs. Used to avoid provoking nearby animals."
+                    }
+                  />
+                </div>
+              </div>
+              <div className={styles.section03}>
+                <div className={styles.line_wrapper}>
+                  <LineImg pathname={location.pathname} />
+                  <LineImgSp pathname={location.pathname} />
+                </div>
+                <Label04 text="未知の海洋生物部門賞" />
+                <div className={styles.prizeMoney_wrapper}>
+                  <p>賞金 2万円</p>
+                </div>
+                <div className={styles.img_wrapper}>
+                  <img src="/special/i-6.png" alt="Coralback Turtle" />
+                </div>
+                <div className={styles.prizeWinner_wrapper}>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="作品名" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="Coralback Turtle" />
+                    </div>
+                  </div>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="受賞者" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="pete_art" />
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.text_wrapper}>
+                  <TextMedium
+                    text={
+                      "Many Coralback Turtles suffer from coral bleaching. The main cause is the rising water temperature caused by global warming and pollution. "
+                    }
+                  />
+                </div>
+              </div>
+              <div className={styles.section03}>
+                <div className={styles.line_wrapper}>
+                  <LineImg pathname={location.pathname} />
+                  <LineImgSp pathname={location.pathname} />
+                </div>
+                <Label04 text="未来の風景・建築部門賞" />
+                <div className={styles.prizeMoney_wrapper}>
+                  <p>賞金 2万円</p>
+                </div>
+                <div className={styles.img_wrapper}>
+                  <img src="/special/i-13.png" alt="Old Asia" />
+                </div>
+                <div className={styles.prizeWinner_wrapper}>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="作品名" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="Old Asia" />
+                    </div>
+                  </div>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="受賞者" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="Old Asia" />
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.text_wrapper}>
+                  <TextMedium
+                    text={
+                      "Due to the rising sea level and negligience by the old government, the people who aren't wealthy enough to go to a better place, had to rebuild a community using the high rise residential building that has been abandoned. Run by an asian group made up of Japanese, Indian and Chinese. Use hydroeletricity as the main source of energy. A lawless territory. Really hate \"wealthy\" people. Love cats"
+                    }
+                  />
+                </div>
+              </div>
+              <div className={styles.section03}>
+                <div className={styles.line_wrapper}>
+                  <LineImg pathname={location.pathname} />
+                  <LineImgSp pathname={location.pathname} />
+                </div>
+                <Label04 text="BLUE HUNTER（新キャラ）賞" />
+                <div className={styles.prizeMoney_wrapper}>
+                  <p>賞金 2万円</p>
+                </div>
+                <div className={styles.img_wrapper}>
+                  <img src="/special/m-12.png" alt="Hikari Astil" />
+                </div>
+                <div className={styles.prizeWinner_wrapper}>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="作品名" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="Hikari Astil" />
+                    </div>
+                  </div>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="受賞者" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="Kagetamago" />
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.text_wrapper}>
+                  <TextMedium
+                    text={
+                      "High spirited and dependable person; can stay underwater without equipment or kurage. He joined Blue Hunter to fulfill his brother's wish and wears kurage made by his brother."
+                    }
+                  />
+                </div>
+              </div>
+              <div className={styles.section03}>
+                <div className={styles.line_wrapper}>
+                  <LineImg pathname={location.pathname} />
+                  <LineImgSp pathname={location.pathname} />
+                </div>
+                <Label04 text="Under 20部門賞" />
+                <div className={styles.prizeMoney_wrapper}>
+                  <p>賞金 2万円</p>
+                </div>
+                <div className={styles.img_wrapper}>
+                  <img src="/special/m-3.png" alt="Interposer インターポーザー" />
+                </div>
+                <div className={styles.prizeWinner_wrapper}>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="作品名" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="Interposer インターポーザー" />
+                    </div>
+                  </div>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="受賞者" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="Wifi saga" />
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.text_wrapper}>
+                  <TextMedium
+                    text={
+                      "3 bullets. Within 100 meters, Interposer generates an energy to decrease sea creatures activeness. (no side effect) For Protector to complete capture mission easier."
+                    }
+                  />
+                </div>
+              </div>
+              <div className={styles.section03}>
+                <div className={styles.line_wrapper}>
+                  <LineImg pathname={location.pathname} />
+                  <LineImgSp pathname={location.pathname} />
+                </div>
+                <Label04 text="MALユーザー賞" />
+                <div className={styles.prizeMoney_wrapper}>
+                  <p>賞金 2万円</p>
+                </div>
+                <div className={styles.img_wrapper}>
+                  <img src="/special/i-8.png" alt="Pearloon" />
+                </div>
+                <div className={styles.prizeWinner_wrapper}>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="作品名" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="Pearloon" />
+                    </div>
+                  </div>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="受賞者" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="Nubilily" />
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.text_wrapper}>
+                  <TextMedium
+                    text={
+                      "Pearloon is a toothless piranha that finds it difficult to stay in the ocean with other similar species for its weak system and vulnerability, unlike other marine creatures they can create large bubbles in which they can swim inside and be more protected. Due to their very ambitious personality, once they grow older they start making even bigger bubbles to go out of the ocean and start exploring the skies. The more time they spend outside, the more their structure becomes bubbly with a clear color. Despite the rather soft look, they can be very distrustful and wary, hence the difficulty of capturing them."
+                    }
+                  />
+                </div>
+              </div>
+              
               <div className={styles.section02}>
                 <div className={styles.textHeading_wrapper}>
                   <TextHeading text="アートコンペ概要" />
@@ -153,67 +424,85 @@ const SpecialPage = ({ location }) => {
                 <div className={styles.line_wrapper}>
                   <LineImg pathname={location.pathname} />
                   <LineImgSp pathname={location.pathname} />
-                </div> */}
+                </div>
                 {/* テーブル(見出しなし) 開始 */}
-                {/* <div className={styles.table_sub_wrapper}>
+                <div className={styles.table_sub_wrapper}>
                   <table className={styles.table_sub}>
                     <tr className={styles.table_tr}>
                       <td className={styles.td_leading}>テーマ</td>
                       <td className={styles.td_item}>
-                        ブルーハンターの世界を4つのテーマに分けて、アート作品を募集。
-                        <br />
-                        （１）メカ部門・・・ハンターたちが使いそうなアイテムや乗り物
-                        <br />
-                        （２）生物部門・・・ブルーハンターの世界に存在しそうな生き物
-                        <br />
-                        （３）ランドスケープ部門・・・温暖化や海面上昇が進んだ都市風景、温暖化が解消された建造物やインフラなど
-                        <br />
-                        （４）ブルーハンター部門・・・あなたが考える新キャラクターのデザイン
+                      『BLUE HUNTER アートコンペティション』では「海洋の未来技術を牽引するような、独創的な発想・造形・設定が表現された作品」を、部門別に募集いたします。<br />
+                      次の5部門から好きなテーマを選び、自分が想像するBLUE HUNTERの世界をアートで表現してください。皆様の自由な発想が、海洋の未来を創ります。
+                        <br /><br />
+                        （１）ハンターアイテム部門<br />
+                        BLUE HUNTER世界で、BLUE HUNTERが使用している、未来の技術が用いられた捕獲アイテム、装備、武器など
+                        <br /><br />
+                        （２）未来の船舶・移動手段部門<br />
+                        BLUE HUNTER世界で使われている交通手段、調査船、その他乗り物全般
+                        <br /><br />
+                        （３）未知の海洋生物部門<br />
+                        BLUE HUNTER世界に存在するであろう、まだ見ぬ新種の生物
+                        <br /><br />
+                        （４）未来の風景・建築部門<br />
+                        温暖化や海面上昇が進んだ都市風景、温暖化が解消された建造物やインフラなど、BLUE HUNTER世界を押し広げる新しい世界観・風景
+                        <br /><br />
+                        （５）BLUE HUNTER（新キャラ）部門<br />
+                        あなたが考えるBLUE HUNTER新キャラクターのキャラデザインと設定
                       </td>
                     </tr>
                     <tr className={styles.table_tr}>
                       <td className={styles.td_leading}>賞</td>
                       <td className={styles.td_item}>
-                        ・BH大賞　賞金50万円
+                        ・BH大賞　賞金30万円
                         <br />
-                        ・審査員特別賞　賞金10万円
+                        ・審査員特別賞　賞金4万円
                         <br />
                         ・ナラティブ賞　賞金10万円
                         <br />
-                        ・MALユーザー賞　賞金5万円
+                        ・ハンターアイテム部門賞　賞金2万円
                         <br />
-                        ・メカ部門賞　賞金5万円
+                        ・未来の船舶・移動手段部門賞　賞金2万円
                         <br />
-                        ・生物部門賞　賞金5万円
+                        ・未知の海洋生物部門賞　賞金2万円
                         <br />
-                        ・ランドスケープ部門賞　賞金5万円
+                        ・未来の風景・建築部門賞　賞金2万円
                         <br />
-                        ・ブルーハンター部門賞　賞金5万円
+                        ・BLUE HUNTER（新キャラ）賞　賞金2万円
                         <br />
-                        ・キッズ部門賞　賞金5万円
+                        ・Under 20部門賞　賞金2万円
+                        <br />
+                        ・MALユーザー賞　賞金2万円
                       </td>
                     </tr>
                     <tr className={styles.table_tr}>
                       <td className={styles.td_leading}>応募期間</td>
-                      <td className={styles.td_item}>2020年6月7日（月）〜8月30日（月）</td>
+                      <td className={styles.td_item}>2021年7月9日〜9月10日</td>
                     </tr>
                     <tr className={styles.table_tr}>
-                      <td className={styles.td_leading}>Web投票期間</td>
-                      <td className={styles.td_item}>2020年8月x日（x）〜x月x日（x）</td>
+                      <td className={styles.td_leading}>一次選考結果発表</td>
+                      <td className={styles.td_item}>2021年10月15日</td>
+                    </tr>
+                    <tr className={styles.table_tr}>
+                      <td className={styles.td_leading}>MALユーザーWeb投票期間・最終審査期間</td>
+                      <td className={styles.td_item}>2021年10月15日〜10月22日</td>
+                    </tr>
+                    <tr className={styles.table_tr}>
+                      <td className={styles.td_leading}>受賞作品結果発表</td>
+                      <td className={styles.td_item}>2021年12月6日</td>
                     </tr>
                     <tr className={styles.table_tr}>
                       <td className={styles.td_leading}>応募総数</td>
-                      <td className={styles.td_item}>1000件</td>
+                      <td className={styles.td_item}>691件</td>
                     </tr>
                   </table>
-                </div> */}
+                </div>
                 {/* テーブル(見出しなし) 終了 */}
-                {/* <div className={styles.text_wrapper}>
-                  <TextMedium text={"受賞者におかれましては、おめでとうございます。また、今回アートコンペに参加していただいたすべての皆さまに、心より感謝申し上げます。"} />
+                <div className={styles.text_wrapper}>
+                  <TextMedium text={"受賞者の皆さま、この度はおめでとうございます！ BLUE HUNTERを通して一人一人が海の環境問題へ目を向け、明るい未来へとつながる一歩となりますように願っております。ありがとうございました。"} />
                 </div>
               </div>
             </div>
-          </MainContentsMiddle> */}
+          </MainContentsMiddle>
           {/* --------------------------------------- mal様修正範囲 終了 --------------------------------------- */}
         </ContentsInner>
       </LayoutTwoColumn>
