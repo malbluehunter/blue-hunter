@@ -70,7 +70,7 @@ const NewsPage = ({ location }) => {
               ※投票にはMyAnimeList IDが必要です。
               </TextMediumTrim>
               <div className={styles.img_wrapper}>
-                <a href="https://bha.myanimelist.net">
+                <a href="/special/">
                   <img src="/common/bnr_art.png" alt="" />
                 </a>
               </div>

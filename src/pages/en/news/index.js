@@ -64,7 +64,7 @@ const NewsPage = ({ location }) => {
             <ContentsLine pathname={location.pathname} />
             <TextMediumTrim>We are very happy to announce the BLUE HUNTER Art Contest shortlist. Despite receiving so many wonderful entries, the judging panel have narrowed things down to 29 nominees. These works will move on to the final selection process. We have also opened voting for the MAL User Prize, so don’t forget to vote for your favorite nominated work!</TextMediumTrim>
             <div className={styles.img_wrapper}>
-              <a href="https://bha.myanimelist.net/en">
+              <a href="/en/special/">
                 <img src="/common/bnr_art_en.png" alt="" />
               </a>
             </div>
