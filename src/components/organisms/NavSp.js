@@ -116,7 +116,7 @@ const NavSp = props => {
             </Link>
           </li>
           <li className={`${styles.inner_item} ${specialCurrent ? styles.current : ""}`}>
-            <Link className={styles.inner_item_link} to="/special/index02">
+            <Link className={styles.inner_item_link} to="/special/">
               <img src={specialCurrent ? "/common/nav_text_special_current_sp.svg" : "/common/nav_text_special_sp.svg"} alt="Special" className={styles.inner_item_img_07} />
               <p className={styles.text}>スペシャル</p>
             </Link>
