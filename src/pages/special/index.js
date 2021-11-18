@@ -256,26 +256,26 @@ const SpecialPage = ({ location }) => {
                   <p>賞金 2万円</p>
                 </div>
                 <div className={styles.img_wrapper}>
-                  <img src="/special/i-6.png" alt="Coralback Turtle" />
+                  <img src="/special/i-7.png" alt="ツタガラミクラゲ" />
                 </div>
                 <div className={styles.prizeWinner_wrapper}>
                   <div className={styles.prizeWinner_item}>
                     <Label05 text="作品名" />
                     <div className={styles.prizeWinner_item_text}>
-                      <TextLarge text="Coralback Turtle" />
+                      <TextLarge text="ツタガラミクラゲ" />
                     </div>
                   </div>
                   <div className={styles.prizeWinner_item}>
                     <Label05 text="受賞者" />
                     <div className={styles.prizeWinner_item_text}>
-                      <TextLarge text="pete_art" />
+                      <TextLarge text="JANS" />
                     </div>
                   </div>
                 </div>
                 <div className={styles.text_wrapper}>
                   <TextMedium
                     text={
-                      "Many Coralback Turtles suffer from coral bleaching. The main cause is the rising water temperature caused by global warming and pollution. "
+                      "温暖化により生息域が変化し目撃されるようになった。触手から猛毒が分泌され、触ったモノは激痛を感じ麻痺する。ツタガラミクラゲは触手を絡め丸ごと分解し食べる。カサの上部に光に敏感な眼球を持っている。浮遊せずに意識して泳げる為、脳があるとわかった。これは、クラゲとイカとの間の一種だろうか、という仮説も。 "
                     }
                   />
                 </div>
@@ -378,6 +378,40 @@ const SpecialPage = ({ location }) => {
                   <TextMedium
                     text={
                       "3 bullets. Within 100 meters, Interposer generates an energy to decrease sea creatures activeness. (no side effect) For Protector to complete capture mission easier."
+                    }
+                  />
+                </div>
+              </div>
+              <div className={styles.section03}>
+                <div className={styles.line_wrapper}>
+                  <LineImg pathname={location.pathname} />
+                  <LineImgSp pathname={location.pathname} />
+                </div>
+                <Label04 text="Under 20部門賞" />
+                <div className={styles.prizeMoney_wrapper}>
+                  <p>賞金 2万円</p>
+                </div>
+                <div className={styles.img_wrapper}>
+                  <img src="/special/i-6.png" alt="Coralback Turtle" />
+                </div>
+                <div className={styles.prizeWinner_wrapper}>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="作品名" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="Coralback Turtle" />
+                    </div>
+                  </div>
+                  <div className={styles.prizeWinner_item}>
+                    <Label05 text="受賞者" />
+                    <div className={styles.prizeWinner_item_text}>
+                      <TextLarge text="pete_art" />
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.text_wrapper}>
+                  <TextMedium
+                    text={
+                      "Many Coralback Turtles suffer from coral bleaching. The main cause is the rising water temperature caused by global warming and pollution. "
                     }
                   />
                 </div>
