@@ -81,7 +81,7 @@ const SpecialPage = ({ location }) => {
                   <LineImg pathname={location.pathname} />
                   <LineImgSp pathname={location.pathname} />
                 </div>
-                <Label04 text="Blue Hunter 大賞" />
+                <Label04 text="BH大賞" />
                 <div className={styles.prizeMoney_wrapper}>
                   <p>賞金 30万円</p>
                 </div>
@@ -491,7 +491,7 @@ const SpecialPage = ({ location }) => {
                         <br />
                         ・審査員特別賞　賞金4万円
                         <br />
-                        ・ナラティブ賞　賞金10万円
+                        ・ナラティブ賞　賞金2万円
                         <br />
                         ・ハンターアイテム部門賞　賞金2万円
                         <br />
@@ -517,7 +517,7 @@ const SpecialPage = ({ location }) => {
                       <td className={styles.td_item}>2021年10月15日</td>
                     </tr>
                     <tr className={styles.table_tr}>
-                      <td className={styles.td_leading}>MALユーザーWeb投票期間・最終審査期間</td>
+                      <td className={styles.td_leading}>MALユーザーWeb投票期間<br />最終審査期間</td>
                       <td className={styles.td_item}>2021年10月15日〜10月22日</td>
                     </tr>
                     <tr className={styles.table_tr}>

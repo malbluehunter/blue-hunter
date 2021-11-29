@@ -204,6 +204,11 @@ table {
 
   & .td_leading {
     width: get_vw(160);
+    @include fz_vw_sp(12);
+
+    @include mq(md) {
+      @include fz_vw(14);
+    }
   }
 }
 .view_pc {
