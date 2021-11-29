@@ -55,8 +55,8 @@ const SpecialPage = ({ location }) => {
                   <TextHeading text="BLUE HUNTER Art Contest Award Ceremony" />
                 </div>
                 <div className={styles.text_wrapper}>
-                  <TextMedium text="The BLUE HUNTER Art Contest was honored to receive almost 700 wonderful pieces of art brimming with innovative ideas. We are so grateful for every single person who took part. We would also like to express our thanks to everybody who voted for their favorite work." />
-                  <TextMedium text="Below you can find a video of the Award Ceremony to commemorate the winning works. We have comments from the winners themselves, so please be sure to enjoy them together with their works, which can be found down below." />
+                  <TextMedium text="The BLUE HUNTER Art Contest was honored to receive almost 700 wonderful pieces of art brimming with innovative ideas. We are so grateful for every single person who took part and would also like to express our thanks to everybody who took part in the voting for the MAL User Prize." />
+                  <TextMedium text="Below you can find a video of the Award Ceremony to commemorate the winning works. We have comments from the winners themselves, so please be sure to enjoy them together with their entries which can be found down below." />
                 </div>
                 <div className={styles.video}>
                   <iframe
