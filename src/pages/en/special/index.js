@@ -11,7 +11,7 @@ import TextMedium from "../../../components/atoms/TextMedium"
 import LineImg from "../../../components/atoms/LineImg"
 import LineImgSp from "../../../components/atoms/LineImgSp"
 import Label05 from "../../../components/molecules/Label05"
-import Label04 from "../../../components/molecules/Label04"
+import Label04 from "../../../components/molecules/Label04En"
 import TextLarge from "../../../components/atoms/TextLarge"
 
 const SpecialPage = ({ location }) => {
