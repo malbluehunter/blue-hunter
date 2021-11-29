@@ -52,11 +52,11 @@ const SpecialPage = ({ location }) => {
             <div className={styles.contents_inner}>
               <div className={styles.section01}>
                 <div className={styles.textHeading_wrapper}>
-                  <TextHeading text="BLUE HUNTER Art Contest 表彰式" />
+                  <TextHeading text="BLUE HUNTER Art Contest Award Ceremony" />
                 </div>
                 <div className={styles.text_wrapper}>
-                  <TextMedium text="BLUE HUNTERをテーマにしたアートコンペを開催し、約700点もの素晴らしい作品、アイディアが集まりました。アートコンペにご参加いただいた皆さまにおいては心から感謝いたします。また、Web投票にご参加いただいた皆さまも、ご参加いただきありがとうございました。" />
-                  <TextMedium text="先だって催されたオンライン表彰式の模様を動画で公開いたします。受賞作品の発表や受賞者のコメントを紹介しておりますので、動画と合わせて結果発表をお楽しみください。" />
+                  <TextMedium text="The BLUE HUNTER Art Contest was honored to receive almost 700 wonderful pieces of art brimming with innovative ideas. We are so grateful for every single person who took part. We would also like to express our thanks to everybody who voted for their favorite work." />
+                  <TextMedium text="Below you can find a video of the Award Ceremony to commemorate the winning works. We have comments from the winners themselves, so please be sure to enjoy them together with their works, which can be found down below." />
                 </div>
                 <div className={styles.video}>
                   <iframe
@@ -72,10 +72,10 @@ const SpecialPage = ({ location }) => {
               </div>
               <div className={styles.section02}>
                 <div className={`${styles.textHeading_wrapper} ${styles.view_pc}`}>
-                  <TextHeading text={"アートコンペ受賞者結果発表"} />
+                  <TextHeading text={"Art Contest Winners"} />
                 </div>
                 <div className={`${styles.textHeading_wrapper} ${styles.view_sp}`}>
-                  <TextHeading text={"アートコンペ受賞者\n結果発表"} />
+                  <TextHeading text={"Art Contest\nWinners"} />
                 </div>
                 <div className={styles.line_wrapper}>
                   <LineImg pathname={location.pathname} />
@@ -453,7 +453,7 @@ const SpecialPage = ({ location }) => {
               
               <div className={styles.section02}>
                 <div className={styles.textHeading_wrapper}>
-                  <TextHeading text="アートコンペ概要" />
+                  <TextHeading text="Art Contest Overview" />
                 </div>
                 <div className={styles.line_wrapper}>
                   <LineImg pathname={location.pathname} />
@@ -525,14 +525,14 @@ const SpecialPage = ({ location }) => {
                       <td className={styles.td_item}>December 5, 2021</td>
                     </tr>
                     <tr className={styles.table_tr}>
-                      <td className={styles.td_leading}>応募総数</td>
-                      <td className={styles.td_item}>691件</td>
+                      <td className={styles.td_leading}>Number of Entries</td>
+                      <td className={styles.td_item}>691</td>
                     </tr>
                   </table>
                 </div>
                 {/* テーブル(見出しなし) 終了 */}
                 <div className={styles.text_wrapper}>
-                  <TextMedium text={"受賞者の皆さま、この度はおめでとうございます！ BLUE HUNTERを通して一人一人が海の環境問題へ目を向け、明るい未来へとつながる一歩となりますように願っております。ありがとうございました。"} />
+                  <TextMedium text={"Congratulations to all the winners! We hope that BLUE HUNTER has helped to bring attention to environmental issues affecting our oceans, and has brought us a step closer towards a bright future."} />
                 </div>
               </div>
             </div>
