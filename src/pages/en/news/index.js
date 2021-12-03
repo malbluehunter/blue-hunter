@@ -118,7 +118,7 @@ const NewsPage = ({ location }) => {
                 ●Announcement of Winning Works
               </TextMediumTrim>
               <TextMediumTrim>
-                December 5, 2021
+                December 9, 2021
               </TextMediumTrim>
               <TextMediumTrim>
                 ※Date of announcements subject to change.

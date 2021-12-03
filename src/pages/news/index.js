@@ -133,7 +133,7 @@ const NewsPage = ({ location }) => {
                 ●受賞作品結果発表
               </TextMediumTrim>
               <TextMediumTrim>
-                2021年12月6日
+                2021年12月10日
               </TextMediumTrim>
               <TextMediumTrim>
                 ※結果発表は日時が変更される場合がございます
