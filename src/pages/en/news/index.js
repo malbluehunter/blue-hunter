@@ -46,17 +46,28 @@ const NewsPage = ({ location }) => {
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/en/" page02="News" />
         <NewsContentsInner>
-          <div className={styles.contents_02} id="news_10">
-            <MainContentsTop pathname={location.pathname} text="November 4, 2021" />
-            <MainContentsMiddleWorld pathname={location.pathname}>
-              <TextHeading text="Chapter 9 of the BLUE HUNTER manga now available!" />
-              <ContentsLine pathname={location.pathname} />
-              <TextMediumTrim>
-                The ninth chapter of BLUE HUNTER has been published! <a className={styles.textlink} href="/en/comic/ep9/">Read the latest chapter here &gt;</a>
-              </TextMediumTrim>
-            </MainContentsMiddleWorld>
-            <MainContentsBottom pathname={location.pathname} />
-          </div>
+        <div className={styles.contents_02} id="news_11">
+          <MainContentsTop pathname={location.pathname} text="December 9, 2021" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
+            <TextHeading text="Chapter 10 of the BLUE HUNTER manga now available!" />
+            <ContentsLine pathname={location.pathname} />
+            <TextMediumTrim>
+              The 10th chapter of BLUE HUNTER has been published! <a className={styles.textlink} href="/en/comic/ep10/">Read the latest chapter here &gt;</a>
+            </TextMediumTrim>
+          </MainContentsMiddleWorld>
+          <MainContentsBottom pathname={location.pathname} />
+        </div>
+        <div className={styles.contents_02} id="news_10">
+          <MainContentsTop pathname={location.pathname} text="November 4, 2021" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
+            <TextHeading text="Chapter 9 of the BLUE HUNTER manga now available!" />
+            <ContentsLine pathname={location.pathname} />
+            <TextMediumTrim>
+              The ninth chapter of BLUE HUNTER has been published! <a className={styles.textlink} href="/en/comic/ep9/">Read the latest chapter here &gt;</a>
+            </TextMediumTrim>
+          </MainContentsMiddleWorld>
+          <MainContentsBottom pathname={location.pathname} />
+        </div>
         <div className={styles.contents_02} id="news_09">
           <MainContentsTop pathname={location.pathname} text="October 14, 2021" />
           <MainContentsMiddleWorld pathname={location.pathname}>
