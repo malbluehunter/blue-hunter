@@ -62,7 +62,7 @@ const SpecialPage = ({ location }) => {
                   <iframe
                     width="100%"
                     height="315"
-                    src="https://www.youtube.com/embed/0jqxkDfmvYo"
+                    src="https://www.youtube.com/embed/0YEmUpLxjyk"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -517,7 +517,7 @@ const SpecialPage = ({ location }) => {
                       <td className={styles.td_item}>October 14, 2021</td>
                     </tr>
                     <tr className={styles.table_tr}>
-                      <td className={styles.td_leading}>MAL User Web Vote Selection / Final Selection</td>
+                      <td className={styles.td_leading}>MAL User Web Vote Selection<br />Final Selection</td>
                       <td className={styles.td_item}>October 14 - October 21, 2021</td>
                     </tr>
                     <tr className={styles.table_tr}>
