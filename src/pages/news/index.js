@@ -47,7 +47,18 @@ const NewsPage = ({ location }) => {
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/" page02="ニュース" />
         <NewsContentsInner>
-        <div className={styles.contents_02} id="news_11">
+        <div className={styles.contents_02} id="news_12">
+            <MainContentsTop pathname={location.pathname} text="2021.12.13" />
+            <MainContentsMiddleWorld pathname={location.pathname}>
+              <TextHeading text="アートコンペ結果発表！" />
+              <ContentsLine pathname={location.pathname} />
+              <TextMediumTrim>
+              『BLUE HUNTER アートコンペティション』の受賞者が決定いたしました！映えあるBH対象は誰の手に！？表彰式の模様を動画でご覧いただけますので、お楽しみください！ <a className={styles.textlink} href="/special/">結果発表はこちら&gt;</a>
+              </TextMediumTrim>
+            </MainContentsMiddleWorld>
+            <MainContentsBottom pathname={location.pathname} />
+          </div>
+          <div className={styles.contents_02} id="news_11">
             <MainContentsTop pathname={location.pathname} text="2021.12.3" />
             <MainContentsMiddleWorld pathname={location.pathname}>
               <TextHeading text="第10話を公開しました" />

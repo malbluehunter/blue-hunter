@@ -46,6 +46,17 @@ const NewsPage = ({ location }) => {
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/en/" page02="News" />
         <NewsContentsInner>
+        <div className={styles.contents_02} id="news_12">
+          <MainContentsTop pathname={location.pathname} text="December 12, 2021" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
+            <TextHeading text="Contest winners finally revealed!" />
+            <ContentsLine pathname={location.pathname} />
+            <TextMediumTrim>
+            The winners of the BLUE HUNTER Art Contest have been revealed! What work could have been awarded the BH Grand Prize? Find out with a special Awards Ceremony video on the results page. <a className={styles.textlink} href="/en/special/">To results page &gt;</a>
+            </TextMediumTrim>
+          </MainContentsMiddleWorld>
+          <MainContentsBottom pathname={location.pathname} />
+        </div>
         <div className={styles.contents_02} id="news_11">
           <MainContentsTop pathname={location.pathname} text="December 9, 2021" />
           <MainContentsMiddleWorld pathname={location.pathname}>
