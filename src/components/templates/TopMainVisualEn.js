@@ -19,11 +19,11 @@ const TopMainVisual = () => {
             <img src="/top/top_main_text_en.png" alt="These vast waters, are hiding so much life" />
           </div>
           <div className={styles.news_wrapper}>
-            <Link className={styles.news_text_wrapper} to="/en/comic/ep10/">
-              <p className={styles.news_date}>December 9, 2021</p>
-              <p className={styles.news_text}>Chapter 10 of the BLUE HUNTER manga now available!</p>
+            <Link className={styles.news_text_wrapper} to="/en/special/">
+              <p className={styles.news_date}>December 12, 2021</p>
+              <p className={styles.news_text}>Contest winners finally revealed!</p>
             </Link>
-            <Link className={styles.news_btn} to="/en/comic/ep10/">
+            <Link className={styles.news_btn} to="/en/special/">
               <picture>
                 <source srcset="/top/top_newsArea_btn.png" media="(min-width: 768px)" />
                 <img src="/top/top_newsArea_btn_sp.png" alt="MORE" />
