@@ -20,10 +20,10 @@ const TopMainVisual = () => {
           </div>
           <div className={styles.news_wrapper}>
             <Link className={styles.news_text_wrapper} to="/en/comic/ep11/">
-              <p className={styles.news_date}>January 24, 2022</p>
-              <p className={styles.news_text}>Chapter 11 of the BLUE HUNTER manga now available!</p>
+              <p className={styles.news_date}>February 24, 2022</p>
+              <p className={styles.news_text}>Chapter 12 of the BLUE HUNTER manga now available!</p>
             </Link>
-            <Link className={styles.news_btn} to="/en/comic/ep11/">
+            <Link className={styles.news_btn} to="/en/comic/ep12/">
               <picture>
                 <source srcset="/top/top_newsArea_btn.png" media="(min-width: 768px)" />
                 <img src="/top/top_newsArea_btn_sp.png" alt="MORE" />
