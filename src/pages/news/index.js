@@ -47,6 +47,17 @@ const NewsPage = ({ location }) => {
         {/* パンクズリスト */}
         <BreadShort page01="TOP" href01="/" page02="ニュース" />
         <NewsContentsInner>
+        <div className={styles.contents_02} id="news_15">
+          <MainContentsTop pathname={location.pathname} text="2022.3.30" />
+          <MainContentsMiddleWorld pathname={location.pathname}>
+            <TextHeading text="第13話を公開しました" />
+            <ContentsLine pathname={location.pathname} />
+            <TextMediumTrim>
+              マンガ第13話を公開しました。<a className={styles.textlink} href="/comic/ep13/">マンガの最新話はこちら&gt;</a>
+            </TextMediumTrim>
+          </MainContentsMiddleWorld>
+          <MainContentsBottom pathname={location.pathname} />
+        </div>
         <div className={styles.contents_02} id="news_14">
           <MainContentsTop pathname={location.pathname} text="2022.2.25" />
           <MainContentsMiddleWorld pathname={location.pathname}>

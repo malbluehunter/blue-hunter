@@ -65,12 +65,12 @@ const LocalNavComic = () => {
           <li className={`${styles.LocalNav_item}`}>
             <Link to="/en/comic/ep11/">Episode 11</Link>
           </li>
-          <li className={`${styles.LocalNav_item} ${styles.current}`}>
+          <li className={`${styles.LocalNav_item}`}>
             <Link to="/en/comic/ep12/">Episode 12</Link>
-            <LabelNew />
           </li>
-          <li className={`${styles.LocalNav_item} ${styles.disabled}`}>
-            <Link to="#">Episode 13</Link>
+          <li className={`${styles.LocalNav_item} ${styles.current}`}>
+            <Link to="/en/comic/ep13/">Episode 13</Link>
+            <LabelNew />
           </li>
           <li className={`${styles.LocalNav_item} ${styles.disabled}`}></li>
         </ul>
