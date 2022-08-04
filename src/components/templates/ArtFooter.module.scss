@@ -1,0 +1,47 @@
+@import "../../assets/scss/mixin";
+
+footer {
+  position: relative;
+  color: #000;
+}
+.footer_area {
+  position: relative;
+  width: 100%;
+  padding: get_vw_sp(28) 0 get_vw_sp(38);
+  background-color: #fff;
+
+  @include mq(md) {
+    padding: 40px 0;
+  }
+}
+.footer_inner {
+  width: 87%;
+  margin: auto;
+
+  @include mq(md) {
+    width: get_vw(705);
+  }
+}
+.footer_snsTitle {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  font-family: Verdana、sans-serif;
+  font-weight: 500;
+}
+.footer_snsList {
+  display: flex;
+  justify-content: center;
+  margin-top: 29px;
+}
+.footer_snsItem {
+  & + & {
+    margin-left: 40px;
+  }
+}
+.footer_copyright {
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+  margin-top: 40px;
+}

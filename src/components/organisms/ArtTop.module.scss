@@ -1,0 +1,76 @@
+.mv_area {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/art/bg_mv.png');
+  background-size: cover;
+  z-index: 10;
+  position: relative;
+  padding-top: 40px;
+}
+.mv_left {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+
+.mv_main {
+  max-width: 1160px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 230px;
+    height: 648px;
+    background-image: url('/art/mv_character.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.mv_lotoTop {
+  max-width: 417px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mv_lotoCenter {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.mv_announce {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: solid 1px #017A94;
+  margin-top: 20px;
+}
+
+.mv_announceTop {
+  p {
+    font-size: 30px;
+    color: #007AAB;
+    font-weight: bold;
+    span {
+      font-size: 56px;
+    }
+  }
+}
+
+.mv_announceBottom {
+  dl {
+    display: flex;
+    border-top: solid 1px #017A94;
+    border-bottom: solid 1px #017A94;
+  }
+}
