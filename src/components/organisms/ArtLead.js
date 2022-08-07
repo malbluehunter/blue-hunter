@@ -8,7 +8,10 @@ const ArtLead = () => {
     <div className={styles.lead_area}>
       <div className={styles.lead_inner}>
         <h2 className={styles.lead_title}>
-          <img src="/art/lead_heading.svg" width="819" height="56" />
+          <picture>
+            <source srcSet="/art/lead_heading.svg" media="(min-width: 768px)" width="819" height="56" />
+            <img src="/art/lead_heading_sp.svg" alt="" />
+          </picture>
         </h2>
         <div className={styles.lead_textBlock}>
           <p className={styles.lead_text}>「みんなで海洋の未来を空想し、より良い未来を創る」</p>
@@ -23,6 +26,7 @@ const ArtLead = () => {
           発想(空想)を具現化していく。より良い海洋未来を創るプロジェクトです。</p>
         </div>
         <p className={styles.lead_attention}>※「海洋マンガによる海の未来普及プロジェクト」を推進する一般社団法人マンガ・アニメ・ゲーム教育創造機構は、<br />日本財団「海と日本プロジェクト」の一環として、本活動を行っております。</p>
+        <Link to="/" className={styles.lead_btn}>BLUE HUNTERプロジェクトとは？</Link>
       </div>
     </div>
   )

@@ -1,8 +1,12 @@
+@import "../../assets/scss/mixin";
 
 .bnr_area {
   background-image: url('/art/bg_2.jpg');
   background-size: cover;
-  padding: 80px 0;
+  padding: get_vw_sp(58) get_vw_sp(30);
+  @include mq(md) {
+    padding: 80px 0;
+  }
 }
 .bnr_inner {
   max-width: 920px;
@@ -23,12 +27,51 @@
   height: 180px;
   background: #fff;
   margin-top: 40px;
+  background-image: url('/art/bg_slash.svg');
+  background-size: 450px 180px;
+  background-repeat: no-repeat;
+  background-position: top 0 right 80px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 379px;
+    height: 222px;
+    background-image: url('/art/blue_hunter_characters.png');
+    background-size: cover;
+    position: absolute;
+    right: 124px;
+    top: -21px;
+  }
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url('/art/arrow_right2.svg');
+    background-size: cover;
+    position: absolute;
+    right: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .bnr_topTitle {
   color: #017A94;
   font-size: 21px;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 524px 0 60px;
+  span {
+    display: block;
+    max-width: 235px;
+    margin-top: 16px;
+  }
 }
 
 .bnr_titleWrap {
@@ -65,17 +108,48 @@
 
 .bnr_list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin-top: 40px;
+  @include mq(md) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .bnr_item {
   position: relative;
   max-width: 440px;
 
+  & + & {
+    margin-top: get_vw_sp(20);
+    @include mq(md) {
+      margin-top: 0;
+    }
+  }
+
   img {
     width: 100%;
   }
 }
-.bnr_btn {
+
+.bnr_pop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: get_vw_sp(72);
+  height: get_vw_sp(72);
+  border-radius: 50%;
+  background-color: #F9FF00;
+  color: #017A94;
+  font-size: 16px;
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: bold;
   position: absolute;
+  top: get_vw_sp(-15);
+  left: get_vw_sp(-15);
+  @include mq(md) {
+    width: 72px;
+    height: 72px;
+    top: -15px;
+    left: -15px;
+  }
 }

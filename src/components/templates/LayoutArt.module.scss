@@ -1,7 +1,7 @@
 @import "../../assets/scss/mixin";@import "../../assets/scss/mixin";
 
 .container::before {
-  background-image: url("/common/bg_main_sp.png");
+  background-image: url("/art/bg_art_sp.png");
   background-size: cover;
 
   position: fixed;
@@ -13,12 +13,12 @@
   z-index: -1;
 
   @include mq(md) {
-    background-image: url("/common/bg_art.png");
+    background-image: url("/art/bg_art.png");
   }
 }
 .contents_wrapper {
   margin: 0 auto;
-  padding-top: get_vw_sp(35);
+  padding-top: get_vw_sp(80);
   margin-bottom: get_vw_sp(140);
   // width: 87%;
 
@@ -26,7 +26,7 @@
     max-width: 920px;
     width: 100%;
     padding-top: 0;
-    margin-top: get_vw(25);
-    margin-bottom: get_vw(80);
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 }

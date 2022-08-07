@@ -7,8 +7,16 @@ const ArtTop = () => {
   return (
     <div className={styles.mv_area}>
       <div className={styles.mv_left}>
-        <div>
-          <img src="/art/logo_mv_left.svg" width="200" height="342" />
+        <div className={styles.mv_leftImg}>
+          <picture>
+            <source srcSet="/art/logo_mv_left.svg" media="(min-width: 768px)" />
+            <img src="/art/logo_mv_left_sp.svg" alt="" />
+          </picture>
+        </div>
+        <div className={styles.mv_lang}>
+          <p className={styles.mv_langActive}>日本語</p>
+          <span>|</span>
+          <Link to="/" className={styles.mv_langInactive}>English</Link>
         </div>
       </div>
       <div className={styles.mv_main}>
@@ -29,6 +37,11 @@ const ArtTop = () => {
             </dl>
           </div>
         </div>
+      </div>
+      <div className={styles.twitter_logo}>
+        <Link to="/">
+          <img src="/art/icon_hover_twitter.svg" width="62" height="74" />
+        </Link>
       </div>
     </div>
   )

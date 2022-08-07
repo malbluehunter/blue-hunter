@@ -1,16 +1,55 @@
+@import "../../assets/scss/mixin";
+
 .mv_area {
   width: 100vw;
-  height: 100vh;
-  background-image: url('/art/bg_mv.png');
+  background-image: url('/art/bg_mv_sp.png');
   background-size: cover;
   z-index: 10;
   position: relative;
   padding-top: 40px;
+  height: get_vw_sp(810);
+  padding: get_vw_sp(30) get_vw_sp(30) 0;
+  @include mq(md) {
+    padding: 0;
+    height: 100%;
+    min-height: 100vh;
+    background-image: url('/art/bg_mv.png');
+  }
+  &::before {
+    content: "";
+    width: get_vw_sp(250);
+    height: get_vw_sp(742);
+    background-image: url('/art/mv_character.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:  get_vw_sp(-451);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    @include mq(md) {
+      display: none;
+    }
+  }
 }
 .mv_left {
-  position: absolute;
-  left: 40px;
-  top: 40px;
+  display: flex;
+  justify-content: space-between;
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    z-index: 100;
+  }
+}
+
+.mv_leftImg {
+  width: get_vw_sp(210);
+  @include mq(md) {
+    width: 100%;
+    max-width: 200px;
+  }
 }
 
 .mv_main {
@@ -22,30 +61,50 @@
   position: relative;
 
   &::before {
-    content: "";
-    width: 230px;
-    height: 648px;
-    background-image: url('/art/mv_character.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
+    display: none;
+    @include mq(md) {
+      display: block;
+      content: "";
+      background-image: url('/art/mv_character.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      width: 230px;
+      height: 648px;
+      top: 0;
+      right: 0;
+    }
   }
 }
 
 .mv_lotoTop {
-  max-width: 417px;
+  width: get_vw_sp(250);
   margin-left: auto;
   margin-right: auto;
+  margin-top: get_vw_sp(30);
+  @include mq(md) {
+    width: 100%;
+    max-width: 417px;
+    margin-top: 0;
+  }
 }
 
 .mv_lotoCenter {
-  max-width: 640px;
+  width: get_vw_sp(345);
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  @include mq(md) {
+    max-width: 640px;
+    position: static;
+    transform: translateX(0);
+  }
 }
 
 .mv_announce {
@@ -54,15 +113,28 @@
   margin-right: auto;
   border-top: solid 1px #017A94;
   margin-top: 20px;
+  background: linear-gradient(to right,rgba(#fff, 0) 0%,rgba(#fff, 1) 15%, rgba(#fff,1) 85%, rgba(#fff, 0) 100%);
 }
 
 .mv_announceTop {
+  padding: 11px 0;
   p {
-    font-size: 30px;
+    @include fz_vw_sp(24);
     color: #007AAB;
+    letter-spacing: 0.1em;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    @include mq(md) {
+      font-size: 30px;
+    }
     span {
-      font-size: 56px;
+      @include fz_vw_sp(48);
+      @include mq(md) {
+        font-size: 56px;
+      }
     }
   }
 }
@@ -70,7 +142,99 @@
 .mv_announceBottom {
   dl {
     display: flex;
+    align-items: center;
     border-top: solid 1px #017A94;
     border-bottom: solid 1px #017A94;
+    padding: 8px 0;
+    color: #017A94;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+  }
+  dt {
+    position: relative;
+    padding: 0 get_vw_sp(5) 0 get_vw_sp(3);
+    @include fz_vw_sp(16);
+    @include mq(md) {
+      font-size: 20px;
+      padding: 0 24px;
+    }
+    &::before {
+      content: ":";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      color: #017A94;
+      @include mq(md) {
+        content: "";
+        width: 1px;
+        height: 80%;
+        background-color: #017A94;
+      }
+    }
+  }
+  dd {
+    @include fz_vw_sp(16);
+    padding-left: fz_vw_sp(5);
+    @include mq(md) {
+      font-size: 24px;
+      padding-left: 35px;
+    }
+  }
+}
+
+.twitter_logo {
+  position: fixed;
+  right: get_vw_sp(10);
+  bottom: get_vw_sp(20);
+
+  @include mq(md) {
+    right: auto;
+    bottom: auto;
+    top: 53px;
+    left: 85%;
+  }
+}
+
+.mv_lang {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+
+  @include mq(md) {
+    flex-direction: row;
+    margin-top: 24px;
+  }
+
+  span {
+    display: none;
+    @include mq(md) {
+      display: block;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.mv_langActive {
+  @include fz_vw_sp(16);
+  font-weight: bold;
+  color: #333;
+  @include mq(md) {
+    font-size: 16px;
+  }
+}
+.mv_langInactive {
+  @include fz_vw_sp(16);
+  color: #017A94;
+  text-decoration: underline;
+  @include mq(md) {
+    font-size: 16px;
+  }
+  &:hover {
+    text-decoration: none;
   }
 }
