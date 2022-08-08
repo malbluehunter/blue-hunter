@@ -7,7 +7,7 @@ footer {
 .footer_area {
   position: relative;
   width: 100%;
-  padding: get_vw_sp(28) 0 get_vw_sp(38);
+  padding: get_vw_sp(38) 0 get_vw_sp(38);
   background-color: #fff;
 
   @include mq(md) {
@@ -32,16 +32,27 @@ footer {
 .footer_snsList {
   display: flex;
   justify-content: center;
-  margin-top: 29px;
+  margin-top: get_vw_sp(20);
+  @include mq(md) {
+    margin-top: 20px;
+  }
 }
 .footer_snsItem {
   & + & {
-    margin-left: 40px;
+    margin-left: get_vw_sp(22);
+    @include mq(md) {
+      margin-left: 22px;
+    }
   }
 }
 .footer_copyright {
-  font-size: 12px;
+  @include fz_vw_sp(12);
   color: #333;
   text-align: center;
-  margin-top: 40px;
+  margin-top: get_vw_sp(26);
+  letter-spacing: 0.05em;
+  @include mq(md) {
+    font-size: 12px;
+    margin-top: 25px;
+  }
 }

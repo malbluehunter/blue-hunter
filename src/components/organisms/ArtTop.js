@@ -38,11 +38,6 @@ const ArtTop = () => {
           </div>
         </div>
       </div>
-      <div className={styles.twitter_logo}>
-        <Link to="/">
-          <img src="/art/icon_hover_twitter.svg" width="62" height="74" />
-        </Link>
-      </div>
     </div>
   )
 }

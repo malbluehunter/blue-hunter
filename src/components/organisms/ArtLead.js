@@ -10,7 +10,7 @@ const ArtLead = () => {
         <h2 className={styles.lead_title}>
           <picture>
             <source srcSet="/art/lead_heading.svg" media="(min-width: 768px)" width="819" height="56" />
-            <img src="/art/lead_heading_sp.svg" alt="" />
+            <img src="/art/lead_heading_sp.svg" alt="What is the BLUE HUNTER project?" />
           </picture>
         </h2>
         <div className={styles.lead_textBlock}>

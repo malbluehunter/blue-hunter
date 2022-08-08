@@ -25,7 +25,7 @@ const ArtBnr = () => {
           </div>
           <ul className={styles.bnr_list}>
             <li className={styles.bnr_item}>
-              <Link to="/">
+              <Link to="/test/">
                 <img src="/art/bnr1.jpg" width="440" height="240" />
               </Link>
             </li>

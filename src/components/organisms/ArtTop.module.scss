@@ -28,7 +28,18 @@
     transform: translateX(-50%);
     z-index: -1;
     @include mq(md) {
-      display: none;
+      content: "";
+      background-image: url('/art/mv_character.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: auto;
+      z-index: -1;
+      transform: translateX(0);
+      width: 230px;
+      height: 684px;
+      top: 16px;
+      left: calc(50% + 318px);
     }
   }
 }
@@ -59,24 +70,27 @@
   margin-right: auto;
   text-align: center;
   position: relative;
+  @include mq(md) {
+    padding-top: 40px;
+  }
 
   &::before {
     display: none;
-    @include mq(md) {
-      display: block;
-      content: "";
-      background-image: url('/art/mv_character.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
-      width: 230px;
-      height: 648px;
-      top: 0;
-      right: 0;
-    }
+    // @include mq(md) {
+    //   display: block;
+    //   content: "";
+    //   background-image: url('/art/mv_character.png');
+    //   background-size: contain;
+    //   background-repeat: no-repeat;
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   z-index: -1;
+    //   width: 230px;
+    //   height: 648px;
+    //   top: 0;
+    //   right: 0;
+    // }
   }
 }
 
@@ -96,13 +110,14 @@
   width: get_vw_sp(345);
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: get_vw_sp(10);
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   @include mq(md) {
     max-width: 640px;
     position: static;
+    margin-top: 20px;
     transform: translateX(0);
   }
 }
@@ -117,7 +132,10 @@
 }
 
 .mv_announceTop {
-  padding: 11px 0;
+  padding: get_vw_sp(4) 0;
+  @include mq(md) {
+    padding: 11px 0;
+  }
   p {
     @include fz_vw_sp(24);
     color: #007AAB;
@@ -129,11 +147,18 @@
     line-height: 1;
     @include mq(md) {
       font-size: 30px;
+      letter-spacing: 0.25em;
+      padding-right: 10px;
+      position: relative;
+      top: 3px;
     }
     span {
       @include fz_vw_sp(48);
       @include mq(md) {
         font-size: 56px;
+        position: relative;
+        top: -3px;
+        letter-spacing: 0.05em;
       }
     }
   }
@@ -145,11 +170,14 @@
     align-items: center;
     border-top: solid 1px #017A94;
     border-bottom: solid 1px #017A94;
-    padding: 8px 0;
+    padding: get_vw_sp(9) 0;
     color: #017A94;
     font-weight: bold;
     letter-spacing: 0.1em;
     white-space: nowrap;
+    @include mq(md) {
+      padding: 8px 0;
+    }
   }
   dt {
     position: relative;
@@ -158,55 +186,50 @@
     @include mq(md) {
       font-size: 20px;
       padding: 0 24px;
+      line-height: 1.25;
     }
     &::before {
       content: ":";
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      right: 0;
+      right: get_vw_sp(-2);
       color: #017A94;
       @include mq(md) {
         content: "";
         width: 1px;
         height: 80%;
+        right: 0;
         background-color: #017A94;
       }
     }
   }
   dd {
     @include fz_vw_sp(16);
-    padding-left: fz_vw_sp(5);
+    padding-left: get_vw_sp(5);
+    letter-spacing: 0.02em;
     @include mq(md) {
       font-size: 24px;
       padding-left: 35px;
+      letter-spacing: 0;
+      letter-spacing: 0.12em;
     }
-  }
-}
-
-.twitter_logo {
-  position: fixed;
-  right: get_vw_sp(10);
-  bottom: get_vw_sp(20);
-
-  @include mq(md) {
-    right: auto;
-    bottom: auto;
-    top: 53px;
-    left: 85%;
   }
 }
 
 .mv_lang {
   display: flex;
   flex-direction: column;
-  font-size: 16px;
+  @include fz_vw_sp(16);
   justify-content: center;
   align-items: center;
+  line-height: 2;
 
   @include mq(md) {
+    font-size: 16px;
     flex-direction: row;
-    margin-top: 24px;
+    margin-top: 20px;
+    line-height: 1.5;
   }
 
   span {

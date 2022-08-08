@@ -5,7 +5,7 @@
   background-size: cover;
   padding: get_vw_sp(58) get_vw_sp(30);
   @include mq(md) {
-    padding: 80px 0;
+    padding: 78px 0 80px;
   }
 }
 .bnr_inner {
@@ -16,9 +16,11 @@
 }
 
 .bnr_block {
-
   & + & {
-    margin-top: 80px;
+    margin-top: get_vw_sp(36);
+    @include mq(md) {
+      margin-top: 76px;
+    }
   }
 }
 
@@ -26,7 +28,7 @@
   width: 100%;
   height: 180px;
   background: #fff;
-  margin-top: 40px;
+  margin-top: get_vw_sp(15);
   background-image: url('/art/bg_slash.svg');
   background-size: 450px 180px;
   background-repeat: no-repeat;
@@ -34,6 +36,9 @@
   position: relative;
   display: flex;
   align-items: center;
+  @include mq(md) {
+    margin-top: 35px;
+  }
 
   &::before {
     content: "";
@@ -66,11 +71,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 524px 0 60px;
+  padding: 25px 524px 0 60px;
+  letter-spacing: 0.05em;
   span {
     display: block;
     max-width: 235px;
-    margin-top: 16px;
+    margin-top: 8px;
   }
 }
 
@@ -102,17 +108,22 @@
 
 .bnr_title {
   display: inline-block;
-  font-size: 20px;
+  @include fz_vw_sp(20);
   letter-spacing: 0.05em;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  @include mq(md) {
+    font-size: 20px;
+  }
 }
 
 .bnr_list {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: get_vw_sp(17);
   @include mq(md) {
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 37px;
   }
 }
 .bnr_item {
@@ -128,6 +139,33 @@
 
   img {
     width: 100%;
+  }
+
+  &:hover {
+    cursor: pointer;
+    &::before {
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+  }
+
+  a {
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(#fff, 0.2);
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
   }
 }
 
