@@ -1,7 +1,11 @@
-@import "../../assets/scss/mixin";
+@import "../../../assets/scss/mixin";
 
 * {
   box-sizing: border-box;
+}
+
+body, input, button, p, div, select, textarea, span, a {
+  font-family: Verdana, Arial, sans-serif;
 }
 
 a {
@@ -695,10 +699,14 @@ a {
     @include fz_vw_sp(14);
     font-weight: bold;
     text-align: left;
+    padding-top: get_vw_sp(10);
+    padding-bottom: get_vw_sp(10);
     padding-left: get_vw_sp(10);
     padding-right: get_vw_sp(10);
     @include mq(md) {
       font-size: 14px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       padding-left: 20px;
       padding-right: 0;
       width: calc(100vw * 298 / 800);

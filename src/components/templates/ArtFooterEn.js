@@ -1,8 +1,8 @@
 import * as React from "react"
-import * as styles from "./ArtFooter.module.scss"
+import * as styles from "./ArtFooterEn.module.scss"
 import { Link } from "gatsby"
 
-const ArtFooter = () => {
+const ArtFooterEn = () => {
   return (
     <footer>
       <div className={styles.footer_area}>
@@ -29,4 +29,4 @@ const ArtFooter = () => {
   )
 }
 
-export default ArtFooter
+export default ArtFooterEn

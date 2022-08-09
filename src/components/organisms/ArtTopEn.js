@@ -1,8 +1,8 @@
 import * as React from "react"
-import * as styles from "./ArtTop.module.scss"
+import * as styles from "./ArtTopEn.module.scss"
 import { Link } from "gatsby"
 
-const ArtTop = () => {
+const ArtTopEn = () => {
 
   return (
     <div className={styles.mv_area}>
@@ -14,9 +14,9 @@ const ArtTop = () => {
           </picture>
         </div>
         <div className={styles.mv_lang}>
-          <p className={styles.mv_langActive}>日本語</p>
+          <Link to="/art/" className={styles.mv_langInactive}>日本語</Link>
           <span>|</span>
-          <Link to="/en/art/" className={styles.mv_langInactive}>English</Link>
+          <p className={styles.mv_langActive}>English</p>
         </div>
       </div>
       <div className={styles.mv_main}>
@@ -24,17 +24,14 @@ const ArtTop = () => {
           <img src="/art/logo_mv_main.png" width="417" height="80" alt="BLUEHUNTER 真夏と時のカイリュウ" />
         </div>
         <div className={styles.mv_lotoCenter}>
-          <img src="/art/logo_art_compe.svg" width="640" height="348" alt="BLUE HUNTER Art Contest ブルーハンターアートコンペティションvol.2 " />
+          <img src="/art/logo_art_compe.svg" width="640" height="348" alt="BLUE HUNTER Art Contest ブルーハンターアートコンペティションvol.2 "/>
         </div>
         <div className={styles.mv_announce}>
           <div className={styles.mv_announceTop}>
-            <p>最高賞金<span>30</span>万円!</p>
+            <p>Grand Prize <span><span className={styles.mv_price}>300,000</span> JPY!</span></p>
           </div>
           <div className={styles.mv_announceBottom}>
-            <dl>
-              <dt>応募期間</dt>
-              <dd>2022年10月13日(木) 10:00まで</dd>
-            </dl>
+            <p>Submit by October 13, <br className={styles.sp_only}/>2022 12am (JST)</p>
           </div>
         </div>
       </div>
@@ -42,4 +39,4 @@ const ArtTop = () => {
   )
 }
 
-export default ArtTop
+export default ArtTopEn
