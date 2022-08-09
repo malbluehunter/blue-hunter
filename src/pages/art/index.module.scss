@@ -49,7 +49,7 @@ a {
 
 .bnr_area {
   margin: get_vw_sp(28) calc(50% - 50vw) 0;
-  background-image: url('/art/bg_2.jpg');
+  background-image: url("/art/bg_2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -67,6 +67,9 @@ a {
   margin-right: auto;
   @include mq(md) {
     width: 100%;
+    padding: 70px 40px 60px;
+  }
+  @include mq(lg) {
     padding: 70px 60px 60px;
   }
   p {
@@ -103,9 +106,9 @@ a {
 
 .main_heading2 {
   @include fz_vw_sp(18);
-  color: #017A94;
+  color: #017a94;
   font-weight: bold;
-  background-color: #D6F6F8;
+  background-color: #d6f6f8;
   padding: get_vw_sp(8) get_vw_sp(10);
   margin-bottom: get_vw_sp(24);
   letter-spacing: 0.05em;
@@ -119,7 +122,7 @@ a {
 
 .main_heading3 {
   @include fz_vw_sp(18);
-  color: #017A94;
+  color: #017a94;
   font-weight: bold;
   margin-bottom: get_vw_sp(16);
   letter-spacing: 0.05em;
@@ -150,29 +153,61 @@ a {
     margin-bottom: 24px;
   }
 
+  picture {
+    width: 100%;
+  }
+
   &Theme {
     img {
       max-width: 318px;
+      width: 100%;
+      @include mq(sm) {
+        max-width: 100%;
+      }
+      @include mq(md) {
+        max-width: 318px;
+      }
     }
   }
   &Prizes {
     img {
       max-width: 294px;
+      width: 100%;
+      @include mq(sm) {
+        max-width: 100%;
+      }
+      @include mq(md) {
+        max-width: 294px;
+      }
     }
   }
   &Howto {
     img {
       max-width: 424px;
+      width: 100%;
+      @include mq(sm) {
+        max-width: 100%;
+      }
+      @include mq(md) {
+        max-width: 424px;
+      }
     }
   }
   &Detail {
     img {
       max-width: 506px;
+      width: 100%;
+      @include mq(sm) {
+        max-width: 100%;
+      }
+      @include mq(md) {
+        max-width: 506px;
+      }
     }
   }
   span {
     @include fz_vw_sp(14);
-    color: #017A94;
+    color: #017a94;
     margin-top: get_vw_sp(14);
     font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
     @include mq(md) {
@@ -195,7 +230,7 @@ a {
   }
 
   &Hashtag {
-    color: #1D9BF0;
+    color: #1d9bf0;
     font-weight: bold;
   }
 
@@ -222,7 +257,7 @@ a {
 
 .main_link {
   @include fz_vw_sp(16);
-  color: #D7515E;
+  color: #d7515e;
   text-decoration: underline;
   text-underline-offset: 0.1em;
   letter-spacing: 0.05em;
@@ -231,6 +266,25 @@ a {
   }
   &:hover {
     text-decoration: none;
+  }
+  &Anchor {
+    position: relative;
+    &::before {
+      content: "";
+      width: get_vw_sp(8);
+      height: get_vw_sp(8);
+      border-right: solid 2px #d7515e;
+      border-bottom: solid 2px #d7515e;
+      position: absolute;
+      top: 50%;
+      right: get_vw_sp(-16);
+      transform: translateY(-50%) rotate(45deg);
+      @include mq(md) {
+        width: 8px;
+        height: 8px;
+        right: -16px;
+      }
+    }
   }
 }
 
@@ -252,9 +306,10 @@ a {
   }
 
   .main_numberList {
-    padding-left: 1.5em;
+    padding-left: 0;
+    text-indent: 0;
     @include mq(md) {
-      padding-left: 2em;
+      padding-left: 0;
     }
     li + li {
       margin-top: get_vw_sp(23);
@@ -263,12 +318,18 @@ a {
       }
     }
   }
+  .main_textBold {
+    & + .main_text {
+      padding-left: 1.3em;
+    }
+  }
 }
 
 .main_period {
   .main_numberList {
     margin-top: 40px;
     padding-left: 0;
+    text-indent: 0;
 
     li + li {
       margin-top: 40px;
@@ -276,6 +337,7 @@ a {
 
     li {
       list-style: none;
+      padding-left: 0;
     }
   }
 }
@@ -292,7 +354,7 @@ a {
 
     &::before {
       content: "・";
-      color: #017A94;
+      color: #017a94;
       @include fz_vw_sp(16);
       position: absolute;
       left: 0;
@@ -306,22 +368,32 @@ a {
 }
 
 .main_numberList {
-  list-style-type: decimal;
   padding-left: 2em;
+  text-indent: -1.5em;
   margin-bottom: get_vw_sp(16);
   @include mq(md) {
     margin-bottom: 16px;
     margin-left: -2px;
   }
-  li {
-    padding-left: 0.5em;
-    &::marker {
-      @include fz_vw_sp(16);
-      color: #017A94;
-      @include mq(md) {
-        font-size: 16px;
-      }
-    }
+  // li {
+  //   padding-left: 0.5em;
+  //   &::marker {
+  //     @include fz_vw_sp(16);
+  //     color: #017A94;
+  //     font-family: "Noto Sans CJK JP Subset", "Noto Sans", "Noto Sans CJK JP", sans-serif;
+  //     @include mq(md) {
+  //       font-size: 16px;
+  //     }
+  //   }
+  // }
+}
+
+.main_num {
+  @include fz_vw_sp(16);
+  color: #017a94;
+  font-weight: bold;
+  @include mq(md) {
+    font-size: 16px;
   }
 }
 
@@ -332,14 +404,15 @@ a {
   margin-right: auto;
 
   tr {
-    &:nth-child(2n + 1){
-      background-color: rgba(#78E1E9, 0.3);
+    &:nth-child(2n + 1) {
+      background-color: rgba(#78e1e9, 0.3);
     }
-    &:nth-child(2n){
-      background-color: rgba(#D6F6EF, 0.3);
+    &:nth-child(2n) {
+      background-color: rgba(#d6f6ef, 0.3);
     }
   }
-  th, td {
+  th,
+  td {
     color: #333;
   }
   th {
@@ -371,8 +444,8 @@ a {
   display: inline-block;
   padding: get_vw_sp(6);
   border-radius: 50%;
-  background-color: #F9FF00;
-  color: #017A94;
+  background-color: #f9ff00;
+  color: #017a94;
   font-family: Verdana, Arial, sans-serif;
   font-weight: bold;
   @include fz_vw_sp(10);
@@ -390,8 +463,10 @@ a {
   max-width: 240px;
   margin-left: auto;
   margin-right: auto;
-  @include mq(md) {
+  @include mq(sm) {
     max-width: 100%;
+  }
+  @include mq(md) {
     flex-direction: row;
     justify-content: space-between;
     margin-left: 0;
@@ -413,17 +488,26 @@ a {
       margin-top: 0;
     }
   }
-  &:not(:last-child){
+  &:not(:last-child) {
     position: relative;
     &::before {
       content: "";
-      width: 16px;
-      height: 16px;
-      background-image: url('/art/arrow.svg');
+      width: get_vw_sp(16);
+      height: get_vw_sp(16);
+      background-image: url("/art/arrow_right.svg");
       background-size: cover;
       position: absolute;
-      right: -20px;
-      top: 20px;
+      bottom: get_vw_sp(-30);
+      right: 50%;
+      transform: translateX(50%) rotate(90deg);
+      @include mq(md) {
+        width: 16px;
+        height: 16px;
+        right: -28px;
+        top: 60px;
+        bottom: auto;
+        transform: translateX(0) rotate(0);
+      }
     }
   }
 }
@@ -449,7 +533,7 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 100px;
-  background-color: #D7515E;
+  background-color: #d7515e;
   @include fz_vw_sp(14);
   font-weight: bold;
   margin-top: get_vw_sp(16);
@@ -459,13 +543,13 @@ a {
     height: 40px;
   }
 
-  &Anker {
+  &Anchor {
     position: relative;
     &::before {
       content: "";
       width: get_vw_sp(12);
       height: get_vw_sp(8);
-      background-image: url('/art/icon_arrow_bottom.svg');
+      background-image: url("/art/icon_arrow_bottom.svg");
       background-size: contain;
       background-repeat: no-repeat;
       position: absolute;
@@ -485,7 +569,7 @@ a {
       content: "";
       width: get_vw_sp(14);
       height: get_vw_sp(14);
-      background-image: url('/art/icon_external.svg');
+      background-image: url("/art/icon_external.svg");
       background-size: contain;
       background-repeat: no-repeat;
       position: absolute;
@@ -502,10 +586,10 @@ a {
 }
 
 .main_stepBtnImg {
-  max-width: 24px;
   width: get_vw_sp(24);
   @include mq(md) {
     width: 100%;
+    max-width: 24px;
   }
 }
 
@@ -519,12 +603,16 @@ a {
   align-items: center;
   @include fz_vw_sp(16);
   font-weight: bold;
-  color: #1D9BF0;
+  color: #1d9bf0;
   background-color: #fff;
   border-radius: 100px;
-  border: solid 1px #1D9BF0;
+  border: solid 1px #1d9bf0;
   margin-top: get_vw_sp(24);
+  @include mq(sm) {
+    max-width: 100%;
+  }
   @include mq(md) {
+    max-width: 300px;
     margin-top: 32px;
     font-size: 16px;
     height: 45px;
@@ -536,7 +624,7 @@ a {
       content: "";
       width: get_vw_sp(14);
       height: get_vw_sp(14);
-      background-image: url('/art/icon_external_twitter.svg');
+      background-image: url("/art/icon_external_twitter.svg");
       background-size: contain;
       background-repeat: no-repeat;
       position: absolute;
@@ -552,10 +640,10 @@ a {
   }
 
   &Img {
-    max-width: 24px;
     width: get_vw_sp(24);
     @include mq(md) {
       width: 100%;
+      max-width: 24px;
     }
   }
 }
@@ -570,20 +658,20 @@ a {
 
     th,
     td {
-      border-bottom: solid 1px #017A94;
+      border-bottom: solid 1px #017a94;
     }
 
     &:first-child {
       th,
       td {
-        border-top: solid 1px #017A94;
+        border-top: solid 1px #017a94;
       }
     }
   }
   th {
     max-width: 298px;
     width: calc(100vw * 158 / 375);
-    background-color: #F3FCFA;
+    background-color: #f3fcfa;
     @include fz_vw_sp(14);
     font-weight: bold;
     text-align: left;
@@ -594,7 +682,7 @@ a {
       width: calc(100vw * 298 / 800);
     }
     span {
-      color: #D7515E;
+      color: #d7515e;
     }
   }
   td {
@@ -627,5 +715,11 @@ a {
   margin-top: 80px;
   @include mq(md) {
     margin-top: 80px;
+  }
+}
+
+.sp_only {
+  @include mq(md) {
+    display: none;
   }
 }

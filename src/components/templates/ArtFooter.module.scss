@@ -24,10 +24,13 @@ footer {
 }
 .footer_snsTitle {
   text-align: center;
-  font-size: 16px;
+  @include fz_vw_sp(16);
   color: #333;
   font-family: Verdana, Arial, sans-serif;
   font-weight: 500;
+  @include mq(md) {
+    font-size: 16px;
+  }
 }
 .footer_snsList {
   display: flex;

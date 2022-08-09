@@ -7,20 +7,23 @@ const ArtBnr = () => {
   return (
     <div className={styles.bnr_area}>
       <div className={styles.bnr_inner}>
+        
+        {/* 初回公開時非表示 */}
         <div className={styles.bnr_block}>
           <div className={styles.bnr_titleWrap}>
             <h3 className={styles.bnr_title}>BLUE HUNTERの世界</h3>
           </div>
           <div className={styles.bnr_top}>
             <Link to="/">
-              <h4 className={styles.bnr_topTitle}>BLUE HUNTERプロジェクトとは？
-                <span><img src="/art/text_bnr_top.svg" width="235" height="16" /></span>
-              </h4>
+              <picture>
+                <source srcSet="/art/bnr_about.png" media="(min-width: 768px)" />
+                <img src="/art/bnr_about_sp.jpg" width="316" height="180" />
+              </picture>
             </Link>
           </div>
         </div>
         <div className={styles.bnr_block}>
-          <div className={styles.bnr_titleWrap}>
+          <div className={`${styles.bnr_titleWrap} ${styles.bnr_titleWrapVer2}`}>
             <h3 className={styles.bnr_title}>連載マンガ</h3>
           </div>
           <ul className={styles.bnr_list}>

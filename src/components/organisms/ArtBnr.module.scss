@@ -1,10 +1,16 @@
 @import "../../assets/scss/mixin";
 
 .bnr_area {
-  background-image: url('/art/bg_2.jpg');
+  background-image: url('/art/bg_2_sp.jpg');
   background-size: cover;
+  background-repeat: repeat;
   padding: get_vw_sp(58) get_vw_sp(30);
   @include mq(md) {
+    padding: 78px 20px 80px;
+    background-image: url('/art/bg_2.jpg');
+    background-repeat: no-repeat;
+  }
+  @include mq(lg) {
     padding: 78px 0 80px;
   }
 }
@@ -19,64 +25,46 @@
   & + & {
     margin-top: get_vw_sp(36);
     @include mq(md) {
-      margin-top: 76px;
+      margin-top: 55px;
     }
   }
 }
 
 .bnr_top {
   width: 100%;
-  height: 180px;
-  background: #fff;
   margin-top: get_vw_sp(15);
-  background-image: url('/art/bg_slash.svg');
-  background-size: 450px 180px;
-  background-repeat: no-repeat;
-  background-position: top 0 right 80px;
   position: relative;
-  display: flex;
-  align-items: center;
   @include mq(md) {
-    margin-top: 35px;
+    margin-top: 15px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    &::before {
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+  }
+
+  a {
+    &:hover {
+      opacity: 1;
+    }
   }
 
   &::before {
-    content: "";
-    width: 379px;
-    height: 222px;
-    background-image: url('/art/blue_hunter_characters.png');
-    background-size: cover;
+    @include mq(md) {
+      content: "";
+    }
+    width: 100%;
+    height: 80%;
     position: absolute;
-    right: 124px;
-    top: -21px;
-  }
-
-  &::after {
-    content: "";
-    width: 32px;
-    height: 32px;
-    background-image: url('/art/arrow_right2.svg');
-    background-size: cover;
-    position: absolute;
-    right: 48px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-
-.bnr_topTitle {
-  color: #017A94;
-  font-size: 21px;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 25px 524px 0 60px;
-  letter-spacing: 0.05em;
-  span {
-    display: block;
-    max-width: 235px;
-    margin-top: 8px;
+    top: 10%;
+    left: 0;
+    background-color: rgba(#fff, 0.2);
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
   }
 }
 
@@ -86,23 +74,44 @@
 
   &::before {
     content: "";
-    width: 40%;
+    width: 8%;
     height: 1px;
     background-color: #fff;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
+    @include mq(md) {
+      width: 35%;
+    }
   }
   &::after {
     content: "";
-    width: 40%;
+    width: 8%;
     height: 1px;
     background-color: #fff;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 0;
+    @include mq(md) {
+      width: 35%;
+    }
+  }
+
+  &Ver2 {
+    &::before {
+      width: 27%;
+      @include mq(md) {
+        width: 42%;
+      }
+    }
+    &::after {
+      width: 27%;
+      @include mq(md) {
+        width: 42%;
+      }
+    }
   }
 }
 
@@ -128,12 +137,22 @@
 }
 .bnr_item {
   position: relative;
-  max-width: 440px;
+
+  @include mq(sm) {
+    max-width: 100%;
+  }
+  @include mq(md) {
+    max-width: 440px;
+  }
 
   & + & {
     margin-top: get_vw_sp(20);
     @include mq(md) {
       margin-top: 0;
+      margin-left: 20px;
+    }
+    @include mq(lg) {
+      margin-left: 0;
     }
   }
 
@@ -156,7 +175,9 @@
   }
 
   &::before {
-    content: "";
+    @include mq(md) {
+      content: "";
+    }
     width: 100%;
     height: 100%;
     position: absolute;
@@ -178,7 +199,7 @@
   border-radius: 50%;
   background-color: #F9FF00;
   color: #017A94;
-  font-size: 16px;
+  @include fz_vw_sp(16);
   font-family: Verdana, Arial, sans-serif;
   font-weight: bold;
   position: absolute;
@@ -189,5 +210,6 @@
     height: 72px;
     top: -15px;
     left: -15px;
+    font-size: 16px;
   }
 }
