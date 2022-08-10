@@ -1,10 +1,22 @@
-import React from "react"
+import React, {useEffect} from "react"
 import * as styles from "./index.module.scss"
 import { Helmet } from "react-helmet"
 import LayoutArt from "../../components/templates/LayoutArt"
 import { Link } from "gatsby"
 
 const ArtPage = ({ location }) => {
+
+  const addScript = url => {
+    const script = document.createElement("script")
+    script.src = url
+    script.async = true
+    document.body.appendChild(script)
+  }
+
+  useEffect(() => {
+      addScript("https://platform.twitter.com/widgets.js")
+  },[]);
+
   return (
     <>
       <Helmet>
@@ -437,6 +449,20 @@ const ArtPage = ({ location }) => {
                   <p className={styles.main_annotation}>※ハッシュタグは「#bh_mal」だけでも構いません。<br />※最低限、作品画像とハッシュタグ「#bh_mal」がついた投稿であれば、当コンペへ応募したとみなされます。ハッシュタグがついていない投稿、間違ったハッシュタグをつけている投稿は、応募が認められませんのでご注意ください。</p>
                 </div>
               </div>
+              <div className={styles.main_block}>
+                <h3 className={styles.main_heading3}>投稿例</h3>
+                <div className={styles.main_embedTwitter}>
+                  <blockquote className="twitter-tweet tw-align-center">
+                    <p lang="qme" dir="ltr">
+                      <a href="https://twitter.com/hashtag/bh_mal?src=hash&amp;ref_src=twsrc%5Etfw">#bh_mal</a>
+                      <a href="https://twitter.com/hashtag/bh_land?src=hash&amp;ref_src=twsrc%5Etfw">#bh_land</a> <a href="https://t.co/kgNUOsZ1UV">pic.twitter.com/kgNUOsZ1UV</a>
+                    </p>
+                    &mdash; BLUE HUNTER ArtCompetition (Official/アートコンペ公式) (@BlueHunter_Art){" "}
+                    <a href="https://twitter.com/BlueHunter_Art/status/1555368544506101760?ref_src=twsrc%5Etfw">August 5, 2022</a>
+                  </blockquote>{" "}
+                  {/* <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> */}
+                </div>
+              </div>
             </div>
             <div className={`${styles.main_block} ${styles.main_privacy}`}>
               <h2 className={styles.main_heading2}>個人情報について</h2>
@@ -497,20 +523,6 @@ const ArtPage = ({ location }) => {
                 <p className={styles.main_text}>お問い合わせは下記メールアドレスへお願いいたします。</p>
               </div>
               <p className={styles.main_text}>bluehunter.art@gmail.com</p>
-            </div>
-            <div className={styles.main_block}>
-              <h3 className={styles.main_heading3}>投稿例</h3>
-              <div className={styles.main_embedTwitter}>
-                <blockquote className="twitter-tweet tw-align-center">
-                  <p lang="qme" dir="ltr">
-                    <a href="https://twitter.com/hashtag/bh_mal?src=hash&amp;ref_src=twsrc%5Etfw">#bh_mal</a>
-                    <a href="https://twitter.com/hashtag/bh_land?src=hash&amp;ref_src=twsrc%5Etfw">#bh_land</a> <a href="https://t.co/kgNUOsZ1UV">pic.twitter.com/kgNUOsZ1UV</a>
-                  </p>
-                  &mdash; BLUE HUNTER ArtCompetition (Official/アートコンペ公式) (@BlueHunter_Art){" "}
-                  <a href="https://twitter.com/BlueHunter_Art/status/1555368544506101760?ref_src=twsrc%5Etfw">August 5, 2022</a>
-                </blockquote>{" "}
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
             </div>
           </div>
 
