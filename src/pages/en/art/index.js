@@ -182,10 +182,10 @@ const ArtPage = ({ location }) => {
                 </Link>
               </div>
             </div>
-            <Link to="/" className={`${styles.main_btn} ${styles.main_btnExternal}`}>
+            <a href="https://twitter.com/hashtag/bh_mal?src=hashtag_click&f=live" target="_blank" rel="noopener" className={`${styles.main_btn} ${styles.main_btnExternal}`}>
               <img src="/art/icon_twitter_sm.svg" className={styles.main_btnImg} alt="Twitter" />
               作品を見る
-            </Link>
+            </a>
           </div>
 
           <div className={styles.main_blockLg}>
@@ -218,7 +218,8 @@ const ArtPage = ({ location }) => {
                     Entrants who pass the preliminary selection will be contacted via direct message and asked to provide the following:
                     <br />
                     Data: image/jpg, PNG &#040;1200px or above, square&#041; or a video/picture of the 3DCG &#040;extension, capacity, etc.&#041;
-                    <br />
+                  </p>
+                  <p className={styles.main_text}>
                     Items for confirmation:
                     <br className={styles.sp_only} />
                     Agreement to Campaign Terms of Use, age confirmation &#040;parental or legal guardian consent required for children under 18 years&#041;
@@ -361,15 +362,15 @@ const ArtPage = ({ location }) => {
                 <p className={styles.main_text}>Judging will be conducted in two stages: preliminary selection &#040;selection of nominated works by the Art Contest Administrative Office and final selection &#040;open screening&#041;.</p>
               </div>
               <div className={styles.main_blockSm}>
-                <p className={`${styles.main_text} ${styles.main_textBold}`}>○Preliminary selection</p>
+                <p className={`${styles.main_text} ${styles.main_textBold}`}>◯Preliminary selection</p>
                 <p className={styles.main_text}>The BLUE HUNTER Art Contest Administrative Office will select 20 nominees based on a rigorous selection process of all entries. Those who pass the preliminary selection will be contacted directly by the Art Contest Administrative Office via Twitter to confirm their age and submit their work data. The nominated works will be announced on this website.</p>
               </div>
               <div className={styles.main_blockSm}>
-                <p className={`${styles.main_text} ${styles.main_textBold}`}>○Final Selection</p>
+                <p className={`${styles.main_text} ${styles.main_textBold}`}>◯Final Selection</p>
                 <p className={styles.main_text}>A panel of judges will review the 20 entries that passed the preliminary selection to determine and award each category prize. The award-winning works will be announced on the BLUE HUNTER official website.</p>
               </div>
               <div className={styles.main_blockSm}>
-                <p className={`${styles.main_text} ${styles.main_textBold}`}>●Panel of Judges &#040;Subject to change&#041;</p>
+                <p className={`${styles.main_text} ${styles.main_textBold}`}>Panel of Judges &#040;Subject to change&#041;</p>
                 <ul className={styles.main_list}>
                   <li>
                     <p className={styles.main_text}>Panel of Judges &#040;Subject to change&#041;</p>
@@ -414,7 +415,7 @@ const ArtPage = ({ location }) => {
                   (3) Open the new Tweet screen on Twitter, select the image or 3DCG video/image of the work you want to post, and press "Next". Follow the official Twitter account.
                   </p>
                 </div>
-                <div className={styles.main_blockSm}>
+                <div className={styles.main_blockSm} id="hashtag">
                   <div className={styles.main_blockSm}>
                     <p className={styles.main_text}>
                     (4) Add the following two hashtags to your caption
@@ -425,7 +426,7 @@ const ArtPage = ({ location }) => {
                     <p className={styles.main_text}>Please use the common hashtag for all entries as well as the hashtag for the name of the category you are applying for. The types of hashtags are as follows:</p>
                   </div>
                   <div className={styles.main_blockSm}>
-                    <tabel className={styles.main_table} id="hashtag">
+                    <tabel className={styles.main_table}>
                       <tr>
                         <th>
                         Common hashtag for all entries<span> &#040;Required&#041;</span>
@@ -463,7 +464,7 @@ const ArtPage = ({ location }) => {
                 </div>
               </div>
               <div className={styles.main_block}>
-                <h3 className={styles.main_heading3}>投稿例</h3>
+                <h3 className={styles.main_heading3}>Example submission</h3>
                 <div className={styles.main_embedTwitter}>
                   <blockquote className="twitter-tweet tw-align-center">
                     <p lang="qme" dir="ltr">
@@ -533,7 +534,7 @@ const ArtPage = ({ location }) => {
                     <p className={`${styles.main_text} ${styles.main_textBold}`}>
                       General
                     </p>
-                    <p className={styles.main_text}>By participating, you agree to these Rules and Regulations, any other instructions or rules we may post regarding the contest. If for any reason the contest is not capable of running as planned, Sponsor and Organizer reserve the right, in their sole discretion, to cancel, modify, or suspend the contest.。</p>
+                    <p className={styles.main_text}>By participating, you agree to these Rules and Regulations, any other instructions or rules we may post regarding the contest. If for any reason the contest is not capable of running as planned, Sponsor and Organizer reserve the right, in their sole discretion, to cancel, modify, or suspend the contest.</p>
                   </li>
                 </ol>
               </div>
