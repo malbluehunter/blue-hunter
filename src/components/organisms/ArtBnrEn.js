@@ -13,7 +13,7 @@ const ArtBnrEn = () => {
           <div className={styles.bnr_titleWrap}>
             <h3 className={styles.bnr_title}>BLUE HUNTER's World</h3>
           </div>
-          <div className={styles.bnr_top} id="about">
+          <div className={styles.bnr_top}>
             <Link to="/">
               <picture>
                 <source srcSet="/art/bnr_about.png" media="(min-width: 768px)" />
@@ -28,14 +28,14 @@ const ArtBnrEn = () => {
           </div>
           <ul className={styles.bnr_list}>
             <li className={styles.bnr_item}>
-              <Link to="/test/">
+              <Link to="/">
                 <img src="/art/bnr1.jpg" width="440" height="240" alt="BLUE HUNTER 今すぐ読む"/>
               </Link>
             </li>
             <li className={styles.bnr_item}>
               <Link to="/">
                 <span className={styles.bnr_pop}>NEW</span>
-                <img src="/art/bnr2.jpg" width="440" height="240" />
+                <img src="/art/bnr2.jpg" width="440" height="240" alt="10月×日連載開始"/>
               </Link>
             </li>
           </ul>

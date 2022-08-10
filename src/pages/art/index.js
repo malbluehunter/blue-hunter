@@ -52,8 +52,8 @@ const ArtPage = ({ location }) => {
               </picture>
               <span>テーマ</span>
             </h2>
-            <p className={styles.main_text}>『BLUE HUNTER アートコンペティション』では「海洋の未来技術を牽引するような、独創的な発想・造形・設定が表現された作品」を、部門別に募集いたします。</p>
-            <p className={styles.main_text}>次の5部門から好きなテーマを選び、自分が想像するBLUE HUNTERの世界をアートで表現してください。皆様の自由な発想が、海洋の未来を創ります。</p>
+            <p className={styles.main_text}>『BLUE HUNTER アートコンペティション』では「海洋の未来技術を牽引するような、独創的な発想・造形・設定が表現された作品」を、部門別に募集致します。</p>
+            <p className={styles.main_text}>次の5部門から好きなテーマを選び、自分が想像するBLUE HUNTERの世界をアート&#040;イラスト、3DCG&#041;で表現してください。皆様の自由な発想が、海洋の未来を創ります。</p>
 
             <div className={styles.main_apply}>
               <h2 className={styles.main_heading2}>応募部門</h2>
@@ -182,10 +182,10 @@ const ArtPage = ({ location }) => {
                 </Link>
               </div>
             </div>
-            <Link to="/" className={`${styles.main_btn} ${styles.main_btnExternal}`}>
+            <a href="https://twitter.com/hashtag/bh_mal?src=hashtag_click&f=live" target="_blank" rel="noopener" className={`${styles.main_btn} ${styles.main_btnExternal}`}>
               <img src="/art/icon_twitter_sm.svg" className={styles.main_btnImg} alt="Twitter"/>
               作品を見る
-            </Link>
+            </a>
           </div>
 
           <div className={styles.main_blockLg}>
@@ -217,7 +217,7 @@ const ArtPage = ({ location }) => {
                   <p className={styles.main_text}>
                     1次選考後、通過者にDMにて通知
                     <br />
-                    作品納入データ：画像/jpg, PNG（1200px以上　正方形） or 3DCGを撮影した動画または画像(拡張子や容量など)/
+                    作品納入データ：画像/jpg, PNG（1200px以上　正方形） or 3DCGを撮影した動画または画像(拡張子や容量など)
                     <br />
                     確認事項：
                     <br className={styles.sp_only} />
@@ -331,15 +331,15 @@ const ArtPage = ({ location }) => {
                 <p className={styles.main_text}>応募作品の著作権と作品取り扱いについて</p>
               </div>
               <div className={styles.main_blockSm}>
-                <p className={styles.main_text}>□ 応募者は作品の著作権を有することが必要です。 作者&#040;著作権者&#041;以外の方が応募する場合は，必ず著作権者に承諾を得てください。</p>
-                <p className={styles.main_text}>□ 作品中に使用される美術、映画、写真、映像、プログラムおよび音楽等については、必ず著作権者の許諾を得た上で応募 してください。第三者からの権利侵害、損害賠償等の主張がなされたとしても、応募者が自らの責任で対処することとし、 主催者は一切の責任を負いません。</p>
+                <p className={styles.main_text}>□ 応募者は作品の著作権を有することが必要です。作者&#040;著作権者&#041;以外の方が応募する場合は、必ず著作権者に承諾を得てください。</p>
+                <p className={styles.main_text}>□ 作品中に使用される美術、映画、写真、映像、プログラムおよび音楽等については、必ず著作権者の許諾を得た上で応募してください。第三者からの権利侵害、損害賠償等の主張がなされたとしても、応募者が自らの責任で対処することとし、主催者は一切の責任を負いません。</p>
                 <p className={styles.main_text}>□ 作品の形態によって応募部門を変更する場合があります。</p>
                 <p className={styles.main_text}>□ 応募に伴う一切の費用は、応募者の負担となります。</p>
                 <p className={styles.main_text}>□ 提出された応募作品・資料は、原則として返却いたしません。</p>
                 <p className={styles.main_text}>□ 審査の状況によっては追加資料の提出が必要となる場合があります。 </p>
                 <p className={styles.main_text}>□ 応募作品の審査経過・結果についてのお問合せは、事務局ではお受けできません。 </p>
                 <p className={styles.main_text}>□ 審査過程の範囲に限り、応募された作品・資料について複製等の行為をさせていただくことがあります。  </p>
-                <p className={styles.main_text}>□ 応募によって作品の著作権が主催者へ移転することはありませんが、受賞作品および審査委員会推薦作品は、主催者による 審査結果発表、受賞作品展、広報およびその他関連事業において、複製、上映、公衆送信(放送・ウェブサイトによる公開)、 展示、翻訳等の行為を無償でさせていただくことがあります。 </p>
+                <p className={styles.main_text}>□ 応募によって作品の著作権が主催者へ移転することはありませんが、受賞作品および審査委員会推薦作品は、主催者による審査結果発表、受賞作品展、広報およびその他関連事業において、複製、上映、公衆送信(放送・ウェブサイトによる公開)、展示、翻訳等の行為を無償でさせていただくことがあります。</p>
               </div>
             </div>
             <div className={styles.main_block}>
@@ -348,15 +348,15 @@ const ArtPage = ({ location }) => {
                 <p className={styles.main_text}>審査は一次選考（アートコンペティション事務局によるノミネート作品の選出）、最終選考（公開審査）の二段階方式で行います。</p>
               </div>
               <div className={styles.main_blockSm}>
-                <p className={`${styles.main_text} ${styles.main_textBold}`}>○一次選考</p>
+                <p className={`${styles.main_text} ${styles.main_textBold}`}>◯一次選考</p>
                 <p className={styles.main_text}>全応募作品を対象にアートコンペティション事務局による厳正な選考のもと、ノミネート作品を20点選出します。一次選考通過者には、アートコンペティション事務局よりTwitterを通して直接ご連絡し、年齢確認および作品データの提出をしていただきます。ノミネート作品は当サイトにて発表します。</p>
               </div>
               <div className={styles.main_blockSm}>
-                <p className={`${styles.main_text} ${styles.main_textBold}`}>○最終選考</p>
+                <p className={`${styles.main_text} ${styles.main_textBold}`}>◯最終選考</p>
                 <p className={styles.main_text}>一次選考を通過した20作品を、審査員により審査を行います。各部門賞を決定し表彰式にて表彰します。合わせて受賞作品を、BLUE HUNTER公式サイトにて発表致します。</p>
               </div>
               <div className={styles.main_blockSm}>
-                <p className={`${styles.main_text} ${styles.main_textBold}`}>●審査員(予定)</p>
+                <p className={`${styles.main_text} ${styles.main_textBold}`}>審査員(予定)</p>
                 <ul className={styles.main_list}>
                   <li>
                     <p className={styles.main_text}>日本財団　海野常務</p>
@@ -401,7 +401,7 @@ const ArtPage = ({ location }) => {
                   （３）Tweet画面を開き、投稿する作品画像、または3DCGを撮影した動画または画像を選んで「次へ」を押してください。公式Twitterアカウントをフォロー
                   </p>
                 </div>
-                <div className={styles.main_blockSm}>
+                <div className={styles.main_blockSm} id="hashtag">
                   <div className={styles.main_blockSm}>
                     <p className={styles.main_text}>
                     （４）キャプション（本文）に2種類のハッシュタグを入力してください。
@@ -412,7 +412,7 @@ const ArtPage = ({ location }) => {
                     <p className={styles.main_text}>応募者全員が共通でつけていただくハッシュタグと、それぞれ応募する部門名のハッシュタグをつけてください。ハッシュタグの種類は次のとおりです。</p>
                   </div>
                   <div className={styles.main_blockSm}>
-                    <tabel className={styles.main_table} id="hashtag">
+                    <tabel className={styles.main_table}>
                       <tr>
                         <th>
                           全員共通<span>（必須）</span>
@@ -467,7 +467,7 @@ const ArtPage = ({ location }) => {
             <div className={`${styles.main_block} ${styles.main_privacy}`}>
               <h2 className={styles.main_heading2}>個人情報について</h2>
               <div className={styles.main_blockSm}>
-                <p className={styles.main_text}>応募者の個人情報保護の考え方を以下の通り定め、これを遵守することにより、 個人情報の漏洩、流用、改ざん等の防止に細心の注意を払います。</p>
+                <p className={styles.main_text}>応募者の個人情報保護の考え方を以下の通り定め、これを遵守することにより、個人情報の漏洩、流用、改ざん等の防止に細心の注意を払います。</p>
               </div>
               <div className={styles.main_blockSm}>
                 <ol className={styles.main_numberList}>
@@ -505,7 +505,7 @@ const ArtPage = ({ location }) => {
                     <p className={`${styles.main_text} ${styles.main_textBold}`}>
                       <span className={styles.main_num}>2.</span>  第三者への開示・提示
                     </p>
-                    <p className={styles.main_text}>応募者の個人情報は、適切な方法で管理・保護に努めてまいります。 応募者の個人情報を、ご本人の同意なく第三者に開示・提供は致しません。ただし、BLUE HUNTERアートコンペティション開催、事務局 運営の業務に必要な範囲内で業務委託先に開示することがあります。 また、人の生命、身体または財産の保護のために開示の必要があり、ご本人の同意を得ることが困難である場合、また 法令により個人情報の開示が求められた場合はこの限りではありません。</p>
+                    <p className={styles.main_text}>応募者の個人情報は、適切な方法で管理・保護に努めてまいります。応募者の個人情報を、ご本人の同意なく第三者に開示・提供は致しません。ただし、BLUE HUNTERアートコンペティション開催、事務局運営の業務に必要な範囲内で業務委託先に開示することがあります。 また、人の生命、身体または財産の保護のために開示の必要があり、ご本人の同意を得ることが困難である場合、また法令により個人情報の開示が求められた場合はこの限りではありません。</p>
                   </li>
                   <li>
                     <p className={`${styles.main_text} ${styles.main_textBold}`}>
