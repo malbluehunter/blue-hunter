@@ -103,42 +103,38 @@ const ArtPage = ({ location }) => {
             <table className={styles.prizes_table}>
               <tbody>
                 <tr>
-                  <th>BH大賞</th>
-                  <td>賞金30万円</td>
+                  <th>BH Grand Prize</th>
+                  <td>200,000 JPY</td>
                 </tr>
                 <tr>
-                  <th>審査員特別賞</th>
-                  <td>賞金12万円</td>
+                  <th>Judges’ Special Prize</th>
+                  <td>100,000 JPY</td>
                 </tr>
                 <tr>
                   <th>
-                    3DCG部門<span className={styles.main_tableIcon}>NEW</span>
+                  3DCG Prize<span className={styles.main_tableIcon}>NEW</span>
                   </th>
-                  <td>賞金10万円</td>
+                  <td>100,000 JPY</td>
                 </tr>
                 <tr>
-                  <th>ナラティブ賞</th>
-                  <td>賞金2万円</td>
+                  <th>Hunter Item Category Prize</th>
+                  <td>50,000 JPY</td>
                 </tr>
                 <tr>
-                  <th>ハンターアイテム部門賞</th>
-                  <td>賞金2万円</td>
+                  <th>Future Water Vessels and Transport Category Prize</th>
+                  <td>50,000 JPY</td>
                 </tr>
                 <tr>
-                  <th>未来の船舶・移動手段部門賞</th>
-                  <td>賞金2万円</td>
+                  <th>Undiscovered Marine Life Category Prize</th>
+                  <td>50,000 JPY</td>
                 </tr>
                 <tr>
-                  <th>未知の海洋生物部門賞</th>
-                  <td>賞金2万円</td>
+                  <th>Future Landscape / Architecture Category Prize</th>
+                  <td>50,000 JPY</td>
                 </tr>
                 <tr>
-                  <th>未来の風景・建築部門賞</th>
-                  <td>賞金2万円</td>
-                </tr>
-                <tr>
-                  <th>BLUE HUNTER（新キャラ）賞</th>
-                  <td>賞金2万円</td>
+                  <th>Blue Hunter (Original Character) Category Prize</th>
+                  <td>50,000 JPY</td>
                 </tr>
               </tbody>
             </table>
@@ -157,34 +153,34 @@ const ArtPage = ({ location }) => {
                 <div className={styles.main_stepImg}>
                   <img src="/art/step1.jpg" alt="" />
                 </div>
-                <p className={styles.main_stepTxt}>BLUE HUNTERのTwitter公式アカウントをフォロー</p>
+                <p className={styles.main_stepTxt}>Follow the official BLUE HUNTER Twitter</p>
                 <a href="https://twitter.com/BlueHunter_Art" className={`${styles.main_stepBtn} ${styles.main_stepBtnExternal}`} target="_blank" rel="noopener">
                   <img src="/art/icon_twitter_simple.svg" width="24" height="24" className={styles.main_stepBtnImg} alt="Twitter"/>
-                  フォローする
+                  Official Twitter account
                 </a>
               </div>
               <div className={styles.main_stepItem}>
                 <div className={styles.main_stepImg}>
                   <img src="/art/step2.jpg" alt=""/>
                 </div>
-                <p className={styles.main_stepTxt}>テーマに沿って作品を制作</p>
+                <p className={styles.main_stepTxt}>Create a piece of art based on one of the specified themes</p>
                 <Link to="#apply" className={`${styles.main_stepBtn} ${styles.main_stepBtnAnchor}`}>
-                  応募方法について
+                Application Format
                 </Link>
               </div>
               <div className={styles.main_stepItem}>
                 <div className={styles.main_stepImg}>
                   <img src="/art/step3.jpg" alt=""/>
                 </div>
-                <p className={styles.main_stepTxt}>Twitterに#ハッシュタグをつけて作品を投稿</p>
+                <p className={styles.main_stepTxt}>Post your art on Twitter with the application hashtags</p>
                 <Link to="#hashtag" className={`${styles.main_stepBtn} ${styles.main_stepBtnAnchor}`}>
-                  ハッシュタグの詳細
+                About hashtags
                 </Link>
               </div>
             </div>
             <a href="https://twitter.com/hashtag/bh_mal?src=hashtag_click&f=live" target="_blank" rel="noopener" className={`${styles.main_btn} ${styles.main_btnExternal}`}>
               <img src="/art/icon_twitter_sm.svg" className={styles.main_btnImg} alt="Twitter" />
-              作品を見る
+              View entries
             </a>
           </div>
 
@@ -199,7 +195,7 @@ const ArtPage = ({ location }) => {
             <div className={`${styles.main_period} ${styles.main_block}`}>
               <h2 className={styles.main_heading2}>Contest Period</h2>
               <p className={`${styles.main_text} ${styles.main_textLg}`}>
-              Contest runtime: August 23, 2022 10:00 JST -
+              Contest runtime: August 23, 2022 10:00 JST -&nbsp;
                 <br className={styles.sp_only} />
                 October 13, 2022 10:00 JST
               </p>
@@ -220,15 +216,15 @@ const ArtPage = ({ location }) => {
                     Data: image/jpg, PNG &#040;1200px or above, square&#041; or a video/picture of the 3DCG &#040;extension, capacity, etc.&#041;
                   </p>
                   <p className={styles.main_text}>
-                    Items for confirmation:
+                    Items for confirmation:&nbsp;
                     <br className={styles.sp_only} />
-                    Agreement to Campaign Terms of Use, age confirmation &#040;parental or legal guardian consent required for children under 18 years&#041;
+                    Agreement to Campaign Terms of Use, age confirmation &#040;parental or legal guardian consent required&#041;
                   </p>
                   <p className={styles.main_annotation}>※ Both professionals and amateurs are welcome to enter.</p>
                   <p className={styles.main_text}>
-                    Other:
+                    Other:&nbsp;
                     <br className={styles.sp_only} />
-                    PayPal account for receipt of prize money &#040;in the case of minors, the PayPal account must belong to winner’s parent or legal guardian&#041;
+                    PayPal account for receipt of prize money  &#040;in the case of minors, the PayPal account must belong to winner’s parent or legal guardian&#041;
                   </p>
                   <p className={styles.main_annotation}>※In the case that a winner does not have a PayPal account, they must create one and let us know in order to accept prize money.</p>
                 </li>
@@ -266,7 +262,7 @@ const ArtPage = ({ location }) => {
               <div className={styles.main_blockSm}>
                 <ul className={styles.main_list}>
                 <li className={styles.main_blockSm}>
-                  <p className={`${styles.main_text} ${styles.main_textBold}`}>BH Grand Prize &#040;250,000 JPY&#041;</p>
+                  <p className={`${styles.main_text} ${styles.main_textBold}`}>BH Grand Prize &#040;200,000 JPY&#041;</p>
                   <p className={styles.main_text}>Awarded to the most outstanding work regardless of category.</p>
                 </li>
                 <li className={styles.main_blockSm}>
@@ -278,27 +274,23 @@ const ArtPage = ({ location }) => {
                   <p className={styles.main_text}>For this contest, 3DCG submissions will be accepted for the first time, alongside illustrations.. This award will be given to the best 3DCG entry regardless of category.</p>
                 </li>
                 <li className={styles.main_blockSm}>
-                  <p className={`${styles.main_text} ${styles.main_textBold}`}>Narrative Prize &#040;20,000 JPY&#041;</p>
-                  <p className={styles.main_text}>Awarded to the work with the most well-thought out setting and story regardless of category.</p>
-                </li>
-                <li className={styles.main_blockSm}>
-                  <p className={`${styles.main_text} ${styles.main_textBold}`}>Hunter Item Category Prize &#040;20,000 JPY&#041;</p>
+                  <p className={`${styles.main_text} ${styles.main_textBold}`}>Hunter Item Category Prize &#040;50,000 JPY&#041;</p>
                   <p className={styles.main_text}>Awarded to the work which best depicts futuristic items that would be used by Blue Hunters, such as wearable equipment, equipment for capturing specimens and other equipment.</p>
                 </li>
                 <li className={styles.main_blockSm}>
-                  <p className={`${styles.main_text} ${styles.main_textBold}`}>Future Water Vessels and Transport Category Prize &#040;20,000 JPY&#041;</p>
+                  <p className={`${styles.main_text} ${styles.main_textBold}`}>Future Water Vessels and Transport Category Prize &#040;50,000 JPY&#041;</p>
                   <p className={styles.main_text}>Awarded to a work which best depicts groundbreaking ideas in a revolutionary vehicle, mechanism, or item that will lead future technology.</p>
                 </li>
                 <li className={styles.main_blockSm}>
-                  <p className={`${styles.main_text} ${styles.main_textBold}`}>Undiscovered Marine Life Category Prize &#040;20,000 JPY&#041;</p>
+                  <p className={`${styles.main_text} ${styles.main_textBold}`}>Undiscovered Marine Life Category Prize &#040;50,000 JPY&#041;</p>
                   <p className={styles.main_text}>Awarded to a work which best depicts undiscovered marine life targeted by Blue Hunters. The award will be given to the work that expresses a new idea.</p>
                 </li>
                 <li className={styles.main_blockSm}>
-                  <p className={`${styles.main_text} ${styles.main_textBold}`}>Future Landscape / Architecture Category Prize &#040;20,000 JPY&#041;</p>
+                  <p className={`${styles.main_text} ${styles.main_textBold}`}>Future Landscape / Architecture Category Prize &#040;50,000 JPY&#041;</p>
                   <p className={styles.main_text}>Awarded to the work that has the most potential to expand the world view of BLUE HUNTER by depicting a future landscape be it beautiful or devastating.</p>
                 </li>
                 <li className={styles.main_blockSm}>
-                  <p className={`${styles.main_text} ${styles.main_textBold}`}>Blue Hunter &#040;Original Character&#041; Category Prize &#040;20,000 JPY&#041;</p>
+                  <p className={`${styles.main_text} ${styles.main_textBold}`}>Blue Hunter &#040;Original Character&#041; Category Prize &#040;50,000 JPY&#041;</p>
                   <p className={styles.main_text}>Awarded to the work which best depicts a realistic character that may appear in the world of Blue Hunter.</p>
                 </li>
               </ul>
@@ -353,7 +345,7 @@ const ArtPage = ({ location }) => {
                 <p className={`${styles.main_text} ${styles.main_textBold}`}>
                   Release
                 </p>
-                <p className={styles.main_text}>By entering this contest and giveaway, you release the Sponsor and Organizer and their employees, officers, directors, managers and agents from any liability whatsoever, and waive any and all causes of action, related to any claims, costs, injuries, losses or damages of any kind arising out of or in connection with this contest or the transmission, failed transmission or acceptance of any prize, whether under a theory of contract, tort &#040;including negligence, warranty or any other theory.</p>
+                <p className={styles.main_text}>By entering this contest and giveaway, you release the Sponsor and Organizer and their employees, officers, directors, managers and agents from any liability whatsoever, and waive any and all causes of action, related to any claims, costs, injuries, losses or damages of any kind arising out of or in connection with this contest or the transmission, failed transmission or acceptance of any prize, whether under a theory of contract, tort &#040;including negligence&#041;, warranty or any other theory.</p>
               </div>
             </div>
             <div className={styles.main_block}>
@@ -376,22 +368,25 @@ const ArtPage = ({ location }) => {
                     <p className={styles.main_text}>Panel of Judges &#040;Subject to change&#041;</p>
                   </li>
                   <li>
-                    <p className={styles.main_text}>The Nippon Foundation Uminohi</p>
+                    <p className={styles.main_text}>The Nippon Foundation Managing Director Mitsuyuki Umino</p>
                   </li>
                   <li>
                     <p className={styles.main_text}>Marine Life Researcher Karibu Suzuki</p>
                   </li>
                   <li>
-                    <p className={styles.main_text}>Japan Marine Surveys Association, Researchers</p>
+                    <p className={styles.main_text}>Marine specialist</p>
                   </li>
                   <li>
-                    <p className={styles.main_text}>Voice actor/actress○○</p>
+                    <p className={styles.main_text}>Voice actor</p>
                   </li>
                   <li>
-                    <p className={styles.main_text}>BLUE HUNTER Original Creator Renowned 3D Modeller Daiki Yoshimoto</p>
+                    <p className={styles.main_text}>BLUE HUNTER Original Creator</p>
                   </li>
                   <li>
-                    <p className={styles.main_text}>MyAnimeList Representative  Gino Naoki</p>
+                    <p className={styles.main_text}>Renowned 3D Modeler Daiki Yoshimoto</p>
+                  </li>
+                  <li>
+                    <p className={styles.main_text}>MyAnimeList Community Representative Gino Naoki</p>
                   </li>
                 </ul>
                 <p className={styles.main_annotation}>* The panel of Judges will judge the 20 entries, narrowed down by the Art Contest Administrative Office from October 21 &#040;Friday&#041; to November 1 &#040;Tuesday&#041;.</p>

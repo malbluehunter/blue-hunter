@@ -28,7 +28,7 @@ const ArtTopEn = () => {
         </div>
         <div className={styles.mv_announce}>
           <div className={styles.mv_announceTop}>
-            <p>Grand Prize <span><span className={styles.mv_price}>300,000</span> JPY!</span></p>
+            <p>Grand Prize <span><span className={styles.mv_price}>200,000</span> JPY!</span></p>
           </div>
           <div className={styles.mv_announceBottom}>
             <p>Submit by October 13, <br className={styles.sp_only}/>2022 12am (JST)</p>
