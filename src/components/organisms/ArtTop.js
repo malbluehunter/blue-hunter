@@ -28,7 +28,7 @@ const ArtTop = () => {
         </div>
         <div className={styles.mv_announce}>
           <div className={styles.mv_announceTop}>
-            <p>最高賞金<span>30</span>万円!</p>
+            <p>最高賞金<span>20</span>万円!</p>
           </div>
           <div className={styles.mv_announceBottom}>
             <dl>

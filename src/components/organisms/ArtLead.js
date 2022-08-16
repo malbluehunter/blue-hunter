@@ -15,7 +15,7 @@ const ArtLead = () => {
         </h2>
         <div className={styles.lead_textBlock}>
           <p className={styles.lead_text}>「みんなで海洋の未来を空想し、より良い未来を創る」</p>
-          <p className={styles.lead_text}>全世界で70万人超が熱狂するWebtoon(縦読みマンガ)作品『BLUE HUNTER』を中心に<br className={styles.pc_only}/>
+          <p className={styles.lead_text}>全世界で100万人超が熱狂するWebtoon(縦読みマンガ)作品『BLUE HUNTER』を中心に<br className={styles.pc_only}/>
           ”海洋の未来”をテーマにした物語・世界観を多言語、多メディアで展開。</p>
           <p className={styles.lead_text}>世界観に共鳴する世界中のBLUE HUNTERファンから、<br className={styles.pc_only} />
           アートコンペティションを通じて、現実の科学技術を牽引するような独創的な発想(空想)を募集。<br />
