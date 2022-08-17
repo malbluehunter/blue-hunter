@@ -138,6 +138,9 @@ const ArtPage = ({ location }) => {
                 </tr>
               </tbody>
             </table>
+            <div className={styles.main_annotationTableWrap}>
+              <p className={styles.main_annotation}>※Total amount 650,000 JPY</p>
+            </div>
           </div>
 
           <div className={styles.main_blockLg}>
@@ -156,7 +159,7 @@ const ArtPage = ({ location }) => {
                 <p className={styles.main_stepTxt}>Follow the official BLUE HUNTER Twitter</p>
                 <a href="https://twitter.com/BlueHunter_Art" className={`${styles.main_stepBtn} ${styles.main_stepBtnExternal}`} target="_blank" rel="noopener">
                   <img src="/art/icon_twitter_simple.svg" width="24" height="24" className={styles.main_stepBtnImg} alt="Twitter"/>
-                  Official Twitter account
+                  Official account
                 </a>
               </div>
               <div className={styles.main_stepItem}>
@@ -364,9 +367,6 @@ const ArtPage = ({ location }) => {
               <div className={styles.main_blockSm}>
                 <p className={`${styles.main_text} ${styles.main_textBold}`}>Panel of Judges &#040;Subject to change&#041;</p>
                 <ul className={styles.main_list}>
-                  <li>
-                    <p className={styles.main_text}>Panel of Judges &#040;Subject to change&#041;</p>
-                  </li>
                   <li>
                     <p className={styles.main_text}>The Nippon Foundation Managing Director Mitsuyuki Umino</p>
                   </li>

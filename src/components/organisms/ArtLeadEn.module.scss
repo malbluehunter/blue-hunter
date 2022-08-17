@@ -108,6 +108,17 @@
   margin-right: auto;
   position: relative;
   margin-top: get_vw_sp(40);
+  &Pc {
+    display: none;
+    @include mq(md) {
+      display: flex;
+    }
+  }
+  &Sp {
+    @include mq(md) {
+      display: none;
+    }
+  }
   @include mq(sm) {
     max-width: 100%;
   }
