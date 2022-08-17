@@ -117,15 +117,11 @@ const ArtPage = ({ location }) => {
                   <td>賞金10万円</td>
                 </tr>
                 <tr>
-                  <th>ハンターアイテム部門賞</th>
+                  <th>未知の海洋生物部門賞</th>
                   <td>賞金5万円</td>
                 </tr>
                 <tr>
                   <th>未来の船舶・移動手段部門賞</th>
-                  <td>賞金5万円</td>
-                </tr>
-                <tr>
-                  <th>未知の海洋生物部門賞</th>
                   <td>賞金5万円</td>
                 </tr>
                 <tr>
@@ -136,8 +132,15 @@ const ArtPage = ({ location }) => {
                   <th>BLUE HUNTER（新キャラ）賞</th>
                   <td>賞金5万円</td>
                 </tr>
+                <tr>
+                  <th>ハンターアイテム部門賞</th>
+                  <td>賞金5万円</td>
+                </tr>
               </tbody>
             </table>
+            <div className={styles.main_annotationTableWrap}>
+              <p className={styles.main_annotation}>※総額65万円</p>
+            </div>
           </div>
 
           <div className={styles.main_blockLg}>
@@ -273,16 +276,12 @@ const ArtPage = ({ location }) => {
                   <p className={styles.main_text}>本コンテストでは、イラストだけでなく、3DCGの応募を受け付けます。<br />部門問わず、優秀な3DCG作品に贈られます。</p>
                 </li>
                 <li className={styles.main_blockSm}>
-                  <p className={`${styles.main_text} ${styles.main_textBold}`}>ハンターアイテム部門賞（賞金5万円）</p>
-                  <p className={styles.main_text}>BLUE HUNTERが使用しているであろう、未来の技術が用いられた捕獲アイテム、装備、武器など</p>
+                  <p className={`${styles.main_text} ${styles.main_textBold}`}>未知の海洋生物部門賞（賞金5万円）</p>
+                  <p className={styles.main_text}>BLUE HUNTERがターゲットとする、まだ発見されていない新種の海洋生物。新しい発想を表現した作品に贈られます。</p>
                 </li>
                 <li className={styles.main_blockSm}>
                   <p className={`${styles.main_text} ${styles.main_textBold}`}>未来の船舶・移動手段部門賞（賞金5万円）</p>
                   <p className={styles.main_text}>未来の技術を牽引する、画期的な乗り物、メカ、アイテムで画期的なアイデアのある作品に贈られます。</p>
-                </li>
-                <li className={styles.main_blockSm}>
-                  <p className={`${styles.main_text} ${styles.main_textBold}`}>未知の海洋生物部門賞（賞金5万円）</p>
-                  <p className={styles.main_text}>BLUE HUNTERがターゲットとする、まだ発見されていない新種の海洋生物。新しい発想を表現した作品に贈られます。</p>
                 </li>
                 <li className={styles.main_blockSm}>
                   <p className={`${styles.main_text} ${styles.main_textBold}`}>未来の風景・建築部門賞（賞金5万円）</p>
@@ -291,6 +290,10 @@ const ArtPage = ({ location }) => {
                 <li className={styles.main_blockSm}>
                   <p className={`${styles.main_text} ${styles.main_textBold}`}>BLUE HUNTER（新キャラ）賞（賞金5万円）</p>
                   <p className={styles.main_text}>BLUE HUNTERの世界に登場しそうなリアリティのあるキャラクターを描いた作品に贈ります。</p>
+                </li>
+                <li className={styles.main_blockSm}>
+                  <p className={`${styles.main_text} ${styles.main_textBold}`}>ハンターアイテム部門賞（賞金5万円）</p>
+                  <p className={styles.main_text}>BLUE HUNTERが使用しているであろう、未来の技術が用いられた捕獲アイテム、装備、武器など</p>
                 </li>
               </ul>
               </div>
