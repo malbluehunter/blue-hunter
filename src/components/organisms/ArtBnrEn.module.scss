@@ -188,6 +188,14 @@
     opacity: 0;
     pointer-events: none;
   }
+  &NoLink {
+    &:hover {
+      cursor: initial;
+    }
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .bnr_pop {

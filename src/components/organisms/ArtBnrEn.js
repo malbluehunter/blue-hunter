@@ -32,9 +32,9 @@ const ArtBnrEn = () => {
                 <img src="/art/bnr1.jpg" width="440" height="240" alt="BLUE HUNTER 今すぐ読む"/>
               </Link>
             </li>
-            <li className={styles.bnr_item}>
+            <li className={`${styles.bnr_item} ${styles.bnr_itemNoLink}`}>
               <span className={styles.bnr_pop}>NEW</span>
-              <img src="/art/bnr2.jpg" width="440" height="240" alt="10月×日連載開始"/>
+              <img src="/art/bnr2.jpg" width="440" height="240" alt="coming soon"/>
             </li>
           </ul>
         </div>
