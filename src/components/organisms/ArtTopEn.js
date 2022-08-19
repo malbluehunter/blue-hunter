@@ -8,10 +8,12 @@ const ArtTopEn = () => {
     <div className={styles.mv_area}>
       <div className={styles.mv_left}>
         <div className={styles.mv_leftImg}>
-          <picture>
-            <source srcSet="/art/logo_mv_left.svg" media="(min-width: 768px)" />
-            <img src="/art/logo_mv_left_sp.svg" alt="日本財団海と日本PROJECTCHANGE FOR THE BLUE 海の未来を変える挑戦" />
-          </picture>
+          <a href="https://uminohi.jp/" target="_blank">
+            <picture>
+              <source srcSet="/art/logo_mv_left.svg" media="(min-width: 768px)" />
+              <img src="/art/logo_mv_left_sp.svg" alt="日本財団海と日本PROJECTCHANGE FOR THE BLUE 海の未来を変える挑戦" />
+            </picture>
+          </a>
         </div>
         <div className={styles.mv_lang}>
           <Link to="/art/" className={styles.mv_langInactive}>日本語</Link>
@@ -28,10 +30,10 @@ const ArtTopEn = () => {
         </div>
         <div className={styles.mv_announce}>
           <div className={styles.mv_announceTop}>
-            <p>Grand Prize <span><span className={styles.mv_price}>200,000</span> JPY!</span></p>
+            <p>Total amount <span><span className={styles.mv_price}>650,000</span> JPY!</span></p>
           </div>
           <div className={styles.mv_announceBottom}>
-            <p>Submit by October 13, <br className={styles.sp_only}/>2022 12am (JST)</p>
+            <p>Submit by October 13, <br className={styles.sp_only}/>2022 10am (JST)</p>
           </div>
         </div>
       </div>

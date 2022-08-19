@@ -22,7 +22,7 @@ const ArtFooterEn = () => {
               </li>
             </ul>
           </div>
-          <p className={styles.footer_copyright}>©2021 MyAnimeList Co.,Ltd., All Rights Reserved</p>
+          <p className={styles.footer_copyright}>Copyright © The Nippon Foundation</p>
         </div>
       </div>
     </footer>

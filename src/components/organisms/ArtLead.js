@@ -26,7 +26,8 @@ const ArtLead = () => {
           発想(空想)を具現化していく。より良い海洋未来を創るプロジェクトです。</p>
         </div>
         <p className={styles.lead_attention}>※「海洋マンガによる海の未来普及プロジェクト」を推進する一般社団法人マンガ・アニメ・ゲーム教育創造機構は、<br className={styles.pc_only} />日本財団「海と日本プロジェクト」の一環として、本活動を行っております。</p>
-        <Link to="/" className={styles.lead_btn}>BLUE HUNTERプロジェクトとは？</Link>
+        {/* BH プロジェクト LP ができたらボタン差し替え */}
+        {/* <Link to="/" className={styles.lead_btn}>BLUE HUNTERプロジェクトとは？</Link> */}
         <div className={styles.lead_btnComingSoon}>coming soon</div>
       </div>
     </div>

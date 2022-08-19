@@ -8,10 +8,12 @@ const ArtTop = () => {
     <div className={styles.mv_area}>
       <div className={styles.mv_left}>
         <div className={styles.mv_leftImg}>
-          <picture>
-            <source srcSet="/art/logo_mv_left.svg" media="(min-width: 768px)" />
-            <img src="/art/logo_mv_left_sp.svg" alt="日本財団海と日本PROJECTCHANGE FOR THE BLUE 海の未来を変える挑戦" />
-          </picture>
+          <a href="https://uminohi.jp/" target="_blank">
+            <picture>
+              <source srcSet="/art/logo_mv_left.svg" media="(min-width: 768px)" />
+              <img src="/art/logo_mv_left_sp.svg" alt="日本財団海と日本PROJECTCHANGE FOR THE BLUE 海の未来を変える挑戦" />
+            </picture>
+          </a>
         </div>
         <div className={styles.mv_lang}>
           <p className={styles.mv_langActive}>日本語</p>
@@ -28,7 +30,7 @@ const ArtTop = () => {
         </div>
         <div className={styles.mv_announce}>
           <div className={styles.mv_announceTop}>
-            <p>最高賞金<span>20</span>万円!</p>
+            <p>総額<span>65</span>万円!</p>
           </div>
           <div className={styles.mv_announceBottom}>
             <dl>

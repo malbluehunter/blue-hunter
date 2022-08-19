@@ -32,7 +32,7 @@ const ArtPage = ({ location }) => {
         <meta property="og:url" content="https://manga.uminohi.jp/en/art/" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
         <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
+        <meta property="og:site_name" content="BLUE HUNTER Art Contest Official Website" />
         <meta property="og:image" content="https://manga.uminohi.jp/art/ogp.png" />
       </Helmet>
 
@@ -260,7 +260,7 @@ const ArtPage = ({ location }) => {
             <div className={styles.main_block}>
               <h2 className={styles.main_heading2}>Prize Categories</h2>
               <div className={styles.main_blockSm}>
-                <p className={styles.main_text}>Entries will be judged for their original ideas and narratives and how well they take into account leadership of the future of our oceans. The prizes available are as follows:</p>
+                <p className={styles.main_text}>Entries will be judged for their original ideas and how well they take into account leadership of the future of our oceans. The prizes available are as follows:</p>
               </div>
               <div className={styles.main_blockSm}>
                 <ul className={styles.main_list}>
@@ -364,7 +364,7 @@ const ArtPage = ({ location }) => {
                 <p className={`${styles.main_text} ${styles.main_textBold}`}>◯Final Selection</p>
                 <p className={styles.main_text}>A panel of judges will review the 20 entries that passed the preliminary selection to determine and award each category prize. The award-winning works will be announced on the BLUE HUNTER official website.</p>
               </div>
-              <div className={styles.main_blockSm}>
+              {/* <div className={styles.main_blockSm}>
                 <p className={`${styles.main_text} ${styles.main_textBold}`}>Panel of Judges &#040;Subject to change&#041;</p>
                 <ul className={styles.main_list}>
                   <li>
@@ -390,7 +390,7 @@ const ArtPage = ({ location }) => {
                   </li>
                 </ul>
                 <p className={styles.main_annotation}>* The panel of Judges will judge the 20 entries, narrowed down by the Art Contest Administrative Office from October 21 &#040;Friday&#041; to November 1 &#040;Tuesday&#041;.</p>
-              </div>
+              </div> */}
               <h3 className={styles.main_heading3} id="apply">Application Process</h3>
               <div>
                 <div className={styles.main_blockSm}>
@@ -401,19 +401,13 @@ const ArtPage = ({ location }) => {
                 </div>
                 <div className={styles.main_blockSm}>
                   <p className={styles.main_text}>
-                  (2) Save your entry to the smartphone from which you intend to upload your entry.
-                  </p>
-                  <p className={styles.main_annotation}>Data: image/jpg, PNG &#040;1200px or above, square&#041; or a video/picture of the 3DCG (extension, capacity, etc.)</p>
-                </div>
-                <div className={styles.main_blockSm}>
-                  <p className={styles.main_text}>
-                  (3) Open the new Tweet screen on Twitter, select the image or 3DCG video/image of the work you want to post, and press "Next". Follow the official Twitter account.
+                  (2) Open the new Tweet screen on Twitter, select the image or 3DCG video/image of the work you want to post, and press "Next". Follow the official Twitter account.
                   </p>
                 </div>
                 <div className={styles.main_blockSm} id="hashtag">
                   <div className={styles.main_blockSm}>
                     <p className={styles.main_text}>
-                    (4) Add the following two hashtags to your caption
+                    (3) Add the following two hashtags to your caption
                       <br/>　【１】#bh_mal &#040;Required&#041;<br />　【２】Category hashtag &#040;Optional, see table below&#041;
                     </p>
                   </div>
@@ -453,7 +447,7 @@ const ArtPage = ({ location }) => {
                 </div>
                 <div className={styles.main_blockSm}>
                   <p className={styles.main_text}>
-                  (5) Once you’ve finished entering all the details, tap the checkmark to upload your post and your entry is complete.
+                  (4) Once you’ve finished entering all the details, tap the checkmark to upload your post and your entry is complete.
                   </p>
                   <p className={styles.main_annotation}>※Your entry will count even if you only use the #bh_mal hashtag.<br />※At the very least, a post with an image of your work and the hashtag "#bh_mal" to be considered as an entry to this contest. Please note that submissions without a hashtag or with the wrong hashtag will not be accepted.</p>
                 </div>

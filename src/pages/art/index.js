@@ -32,7 +32,7 @@ const ArtPage = ({ location }) => {
         <meta property="og:url" content="https://manga.uminohi.jp/art/" />
         {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
         <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="「BLUE HUNTER」公式サイト" />
+        <meta property="og:site_name" content="「BLUE HUNTER」アートコンペ公式サイト" />
         <meta property="og:image" content="https://manga.uminohi.jp/art/ogp.png" />
       </Helmet>
 
@@ -216,7 +216,7 @@ const ArtPage = ({ location }) => {
                   <p className={styles.main_text}>
                     1次選考後、通過者にDMにて通知
                     <br />
-                    作品納入データ：画像/jpg, PNG（1200px以上　正方形） or 3DCGを撮影した動画または画像(拡張子や容量など)
+                    作品納入データ：画像/jpg, PNG（1200px以上　正方形） or 3DCGを撮影した動画または画像
                     <br />
                     確認事項：
                     <br className={styles.sp_only} />
@@ -259,7 +259,7 @@ const ArtPage = ({ location }) => {
             <div className={styles.main_block}>
               <h2 className={styles.main_heading2}>募集部門</h2>
               <div className={styles.main_blockSm}>
-                <p className={styles.main_text}>未来の海洋技術を牽引する独創的な発想・造形・設定&#040;ナラティブ&#041;を考慮し、審査させて頂きます。</p>
+                <p className={styles.main_text}>未来の海洋技術を牽引する独創的な発想・造形を考慮し、審査させて頂きます。</p>
               </div>
               <div className={styles.main_blockSm}>
                 <ul className={styles.main_list}>
@@ -304,7 +304,7 @@ const ArtPage = ({ location }) => {
                 <p className={styles.main_text}>応募する作品が下記に該当するかを必ず確認の上でご応募ください。</p>
               </div>
               <div className={styles.main_blockSm}>
-                <p className={styles.main_text}>□ 2022 年 8月 15 日 日本時間10:00から 2022 年 10月 13 日 日本時間00:00までの間に完成または、すでに完成してこの期間内に投稿された作品。</p>
+                <p className={styles.main_text}>□ 2022 年 8月 15 日 日本時間10:00から 2022 年 10月 13 日 日本時間10:00までの間に完成または、すでに完成してこの期間内に投稿された作品。</p>
                 <p className={styles.main_annotation}>※更新、リニューアルされた作品で上記期間中に完成、または発表された作品も応募可能<br/>※応募する作品数に制限なし</p>
                 <p className={styles.main_text}>□ 応募者は作品の著作権を有することが必須。  作者&#040;著作権者&#041;以外の方が応募する場合は、必ず著作権者に承諾を得てください。</p>
                 <p className={styles.main_text}>□プロ/アマ問わず応募可</p>
@@ -350,7 +350,7 @@ const ArtPage = ({ location }) => {
                 <p className={`${styles.main_text} ${styles.main_textBold}`}>◯最終選考</p>
                 <p className={styles.main_text}>一次選考を通過した20作品を、審査員により審査を行います。各部門賞を決定し表彰式にて表彰します。合わせて受賞作品を、BLUE HUNTER公式サイトにて発表致します。</p>
               </div>
-              <div className={styles.main_blockSm}>
+              {/* <div className={styles.main_blockSm}>
                 <p className={`${styles.main_text} ${styles.main_textBold}`}>審査員(予定)</p>
                 <ul className={styles.main_list}>
                   <li>
@@ -376,30 +376,24 @@ const ArtPage = ({ location }) => {
                   </li>
                 </ul>
                 <p className={styles.main_annotation}>※審査員は、事務局が絞り込んだ20作品の審査を、10月21日(金)〜11月1日(火)の期間で審査</p>
-              </div>
+              </div> */}
               <h3 className={styles.main_heading3} id="apply">応募方法</h3>
               <div>
                 <div className={styles.main_blockSm}>
                   <p className={styles.main_text}>
-                  （１）規約をお読み頂き、BLUE HUNTER公式Twitterアカウントをフォローしてください
+                  （1）規約をお読み頂き、BLUE HUNTER公式Twitterアカウントをフォローしてください
                   </p>
                   <p className={styles.main_annotation}>※一次審査通過のご連絡をTwitterDMで行いますので、必ずフォローをお願い致します。</p>
                 </div>
                 <div className={styles.main_blockSm}>
                   <p className={styles.main_text}>
-                  （２）手持ちの端末に作品画像を保存します。
-                  </p>
-                  <p className={styles.main_annotation}>※作品納入データ：画像/jpg, PNG（1200px以上　正方形） or 3DCGを撮影した動画または画像(拡張子や容量など)</p>
-                </div>
-                <div className={styles.main_blockSm}>
-                  <p className={styles.main_text}>
-                  （３）Tweet画面を開き、投稿する作品画像、または3DCGを撮影した動画または画像を選んで「次へ」を押してください。公式Twitterアカウントをフォロー
+                  （2）Tweet画面を開き、投稿する作品画像、または3DCGを撮影した動画または画像を選んで「次へ」を押してください。公式Twitterアカウントをフォロー
                   </p>
                 </div>
                 <div className={styles.main_blockSm} id="hashtag">
                   <div className={styles.main_blockSm}>
                     <p className={styles.main_text}>
-                    （４）キャプション（本文）に2種類のハッシュタグを入力してください。
+                    （3）キャプション（本文）に2種類のハッシュタグを入力してください。
                       <br/>　【１】#bh_mal（必須）<br />　【２】#bh_部門名（任意）
                     </p>
                   </div>
@@ -439,7 +433,7 @@ const ArtPage = ({ location }) => {
                 </div>
                 <div className={styles.main_blockSm}>
                   <p className={styles.main_text}>
-                  （５）すべての入力が終わったら「Tweet」を押し、投稿したら応募完了です。
+                  （4）すべての入力が終わったら「Tweet」を押し、投稿したら応募完了です。
                   </p>
                   <p className={styles.main_annotation}>※ハッシュタグは「#bh_mal」だけでも構いません。<br />※最低限、作品画像とハッシュタグ「#bh_mal」がついた投稿であれば、当コンペへ応募したとみなされます。ハッシュタグがついていない投稿、間違ったハッシュタグをつけている投稿は、応募が認められませんのでご注意ください。</p>
                 </div>
