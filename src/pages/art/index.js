@@ -304,7 +304,7 @@ const ArtPage = ({ location }) => {
                 <p className={styles.main_text}>応募する作品が下記に該当するかを必ず確認の上でご応募ください。</p>
               </div>
               <div className={styles.main_blockSm}>
-                <p className={styles.main_text}>□ 2022 年 8月 15 日 日本時間10:00から 2022 年 10月 13 日 日本時間10:00までの間に完成または、すでに完成してこの期間内に投稿された作品。</p>
+                <p className={styles.main_text}>□ 2022 年 8月 23 日 日本時間10:00から 2022 年 10月 13 日 日本時間10:00までの間に完成または、すでに完成してこの期間内に投稿された作品。</p>
                 <p className={styles.main_annotation}>※更新、リニューアルされた作品で上記期間中に完成、または発表された作品も応募可能<br/>※応募する作品数に制限なし</p>
                 <p className={styles.main_text}>□ 応募者は作品の著作権を有することが必須。  作者&#040;著作権者&#041;以外の方が応募する場合は、必ず著作権者に承諾を得てください。</p>
                 <p className={styles.main_text}>□プロ/アマ問わず応募可</p>

@@ -305,7 +305,7 @@ const ArtPage = ({ location }) => {
                 <p className={styles.main_text}>Entrants must confirm that they meet the criteria outlined below prior to application.</p>
               </div>
               <div className={styles.main_blockSm}>
-                <p className={styles.main_text}>Works must be submitted between 10:00 JST on August 15 and 10:00 JST on October 13, 2022 in order to be eligible for prizes.  </p>
+                <p className={styles.main_text}>Works must be submitted between 10:00 JST on August 23 and 10:00 JST on October 13, 2022 in order to be eligible for prizes.  </p>
                 <p className={styles.main_annotation}>※Works which have been updated and resubmitted are eligible as long as it is within the above-stated time period.<br/>※There is no limit to the number of works an entrant may submit.</p>
                 <p className={styles.main_text}>□ Applicants must own the copyright of the work they submit.  If someone other than the author (copyright holder) submits the work, the entrant must obtain permission from the copyright holder.</p>
                 <p className={styles.main_text}>□ Professional and amateur artists are welcome.</p>
