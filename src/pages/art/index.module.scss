@@ -754,3 +754,11 @@ a {
     display: none;
   }
 }
+
+.mail {
+  width: 80%;
+
+  @include mq(md) {
+    width: 231px;
+  }
+}

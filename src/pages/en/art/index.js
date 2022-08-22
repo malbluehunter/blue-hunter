@@ -533,7 +533,7 @@ const ArtPage = ({ location }) => {
               <div className={styles.main_blockSm}>
                 <p className={styles.main_text}>Please contact us with any questions or other inquiries via the address below.</p>
               </div>
-              <p className={styles.main_text}>bluehunter.art@gmail.com</p>
+              <img src="/art/mail.png" className={styles.mail} alt="bluehunter.art@gmail.com" />
               <p className={styles.main_text}>Inquiries made to MyAnimeList Customer Support regarding BLUE HUNTER Art Contest will not receive a response.</p>
             </div>
           </div>

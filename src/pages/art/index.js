@@ -112,7 +112,7 @@ const ArtPage = ({ location }) => {
                 </tr>
                 <tr>
                   <th>
-                    3DCG部門<span className={styles.main_tableIcon}>NEW</span>
+                    3DCG賞<span className={styles.main_tableIcon}>NEW</span>
                   </th>
                   <td>賞金10万円</td>
                 </tr>
@@ -272,7 +272,7 @@ const ArtPage = ({ location }) => {
                   <p className={styles.main_text}>『海と日本PROJECT』の日本財団が選ぶ、優秀作品に贈られます。</p>
                 </li>
                 <li className={styles.main_blockSm}>
-                  <p className={`${styles.main_text} ${styles.main_textBold}`}>3DCG部門（賞金10万円）</p>
+                  <p className={`${styles.main_text} ${styles.main_textBold}`}>3DCG賞（賞金10万円）</p>
                   <p className={styles.main_text}>本コンテストでは、イラストだけでなく、3DCGの応募を受け付けます。<br />部門問わず、優秀な3DCG作品に贈られます。</p>
                 </li>
                 <li className={styles.main_blockSm}>
@@ -511,7 +511,7 @@ const ArtPage = ({ location }) => {
               <div className={styles.main_blockSm}>
                 <p className={styles.main_text}>お問い合わせは下記メールアドレスへお願いいたします。</p>
               </div>
-              <p className={styles.main_text}>bluehunter.art@gmail.com</p>
+              <img src="/art/mail.png" className={styles.mail} alt="bluehunter.art@gmail.com" />
             </div>
           </div>
 
