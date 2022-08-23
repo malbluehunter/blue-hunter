@@ -33,7 +33,7 @@ const ArtPage = ({ location }) => {
         {/* --------------------------------------- mal様修正範囲(meta情報) 終了 --------------------------------------- */}
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="BLUE HUNTER Art Contest Official Website" />
-        <meta property="og:image" content="https://manga.uminohi.jp/art/ogp.png" />
+        <meta property="og:image" content="https://manga.uminohi.jp/art/ogp_art.png" />
       </Helmet>
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
