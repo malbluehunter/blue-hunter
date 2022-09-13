@@ -33,8 +33,10 @@ const ArtBnr = () => {
               </Link>
             </li>
             <li className={`${styles.bnr_item} ${styles.bnr_itemNoLink}`}>
-              <span className={styles.bnr_pop}>NEW</span>
-              <img src="/art/bnr2.jpg" width="440" height="240" alt="coming soon"/>
+              <a href="https://bluehunter.jp/" target="_blank">
+                <span className={styles.bnr_pop}>NEW</span>
+                <img src="/art/bnr2.jpg" width="440" height="240" alt="coming soon"/>
+              </a>
             </li>
           </ul>
         </div>
