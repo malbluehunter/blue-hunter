@@ -6,13 +6,13 @@
   background-size: cover;
   z-index: 10;
   position: relative;
-  height: get_vw_sp(810);
+  height: get_vw_sp(854);
   padding: get_vw_sp(30) get_vw_sp(30) 0;
   @include mq(md) {
     padding: 0;
     height: 100%;
     // height: 100vh;
-    padding-bottom: 80px;
+    padding-bottom: 45px;
     background-image: url('/art/bg_mv.png');
   }
   @include mq(xxl) {
@@ -26,7 +26,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    bottom:  get_vw_sp(-451);
+    bottom:  get_vw_sp(-520);
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
@@ -135,21 +135,21 @@
   width: get_vw_sp(345);
   margin-left: auto;
   margin-right: auto;
-  margin-top: get_vw_sp(10);
+  margin-top: get_vw_sp(76);
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   @include mq(md) {
     max-width: 50vw;
     position: static;
-    margin-top: calc(100vw * 40 / 1028);;
+    margin-top: calc(100vw * 80 / 1028);;
     transform: translateX(0);
   }
   @media screen and (min-width: 1160px){
     max-width: 640px;
   }
   @include mq(lg) {
-    margin-top: 20px;
+    margin-top: 80px;
     max-width: calc(100vw * 640 / 1366);
   }
 }
@@ -212,6 +212,25 @@
 }
 
 .mv_announceBottom {
+  border-top: solid 1px #017A94;
+  border-bottom: solid 1px #017A94; 
+  padding: get_vw_sp(4) 0;
+  @include mq(md) {
+    padding: 8px 0;
+  }
+  p {
+    @include fz_vw_sp(16);
+    display: flex;
+    color: #017A94;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    @include mq(md) {
+      letter-spacing: 0.1em;
+      font-size: 26px;
+    }
+  }
   dl {
     display: flex;
     align-items: center;
@@ -270,6 +289,43 @@
   }
 }
 
+.mv_notice {
+  font-weight: bold;
+  color: #D7515E;
+  margin-top: 12px;
+  @include fz_vw_sp(16);
+
+  @include mq(md) {
+    font-size: 16px;
+  }
+}
+
+.mv_balloon {
+  position: absolute;
+  top: get_vw_sp(48);
+  left: get_vw_sp(-30);
+  width: 100%;
+  max-width: calc(100vw * 280 / 375);
+  // left: calc(50% - 380px);
+
+  img {
+    width: 100%;
+  }
+
+  @include mq(md) {
+    top: 130px;
+    left: calc(50% - 27vw);
+    max-width: calc(100vw * 390 / 1366);
+  }
+  @include mq(lg) {
+  
+  }
+  @media screen and (min-width: 1160px){
+    left: calc(50% - 380px);
+    max-width: 390px;
+  }
+}
+
 .mv_lang {
   display: flex;
   flex-direction: column;
@@ -312,5 +368,11 @@
   }
   &:hover {
     text-decoration: none;
+  }
+}
+
+.showSp {
+  @include mq(md) {
+    display: none;
   }
 }

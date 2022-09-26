@@ -25,6 +25,12 @@ const ArtTop = () => {
         <div className={styles.mv_lotoTop}>
           <img src="/art/logo_mv_main.png" width="417" height="80" alt="BLUEHUNTER 真夏と時のカイリュウ" />
         </div>
+        <div className={styles.mv_balloon}>
+          <picture>
+            <source srcSet="/art/img_end_balloon.svg" media="(min-width: 768px)" />
+            <img src="/art/img_end_balloon_sp.svg" width="2390" height="153" alt="応募締め切りました。たくさんのご応募ありがとうございました" />
+          </picture>
+        </div>
         <div className={styles.mv_lotoCenter}>
           <img src="/art/logo_art_compe.svg" width="640" height="348" alt="BLUE HUNTER Art Contest ブルーハンターアートコンペティションvol.2 " />
         </div>
@@ -33,12 +39,10 @@ const ArtTop = () => {
             <p>総額<span>65</span>万円!</p>
           </div>
           <div className={styles.mv_announceBottom}>
-            <dl>
-              <dt>応募期間</dt>
-              <dd>2022年10月13日(木) 10:00まで</dd>
-            </dl>
+            <p>ノミネート作品発表は2022年11月xx日です</p>
           </div>
         </div>
+        <p className={styles.mv_notice}>2022年度作品の募集は締め切りました。<br className={styles.showSp} />現在一次審査中です。</p>
       </div>
     </div>
   )
