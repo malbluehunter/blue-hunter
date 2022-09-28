@@ -146,6 +146,7 @@
     transform: translateX(0);
   }
   @media screen and (min-width: 1160px){
+    margin-top: calc(100vw * 80 / 1366);
     max-width: 640px;
   }
   @include mq(lg) {
@@ -317,12 +318,10 @@
     left: calc(50% - 27vw);
     max-width: calc(100vw * 390 / 1366);
   }
-  @include mq(lg) {
-  
-  }
   @media screen and (min-width: 1160px){
-    left: calc(50% - 380px);
-    max-width: 390px;
+    top: calc(100vw * 130 / 1366);
+    left: calc(50% - 27vw);
+    max-width: calc(100vw * 390 /1366);
   }
 }
 
