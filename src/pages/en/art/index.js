@@ -200,7 +200,7 @@ const ArtPage = ({ location }) => {
               <p className={`${styles.main_text} ${styles.main_textLg}`}>
               Contest runtime: August 23, 2022 10:00 JST -&nbsp;
                 <br className={styles.sp_only} />
-                October 13, 2022 10:00 JST
+                October 31, 2022 10:00 JST
               </p>
               <p className={styles.main_annotation}>※Entry is required. For those who pass the preliminary selection, submission of “Materials for Screening” is also required</p>
               <ol className={styles.main_numberList}>
@@ -235,15 +235,15 @@ const ArtPage = ({ location }) => {
                   <h3 className={styles.main_heading3}>3.Schedule &#040;JST&#041;</h3>
                   <div className={styles.main_blockSm}>
                     <h4 className={styles.main_heading4}>Preliminaries</h4>
-                    <p className={styles.main_text}>August 23 - October 13, 2022</p>
+                    <p className={styles.main_text}>August 23 - October 31, 2022</p>
                   </div>
                   <div className={styles.main_blockSm}>
                     <h4 className={styles.main_heading4}>Results of Preliminary Selection</h4>
-                    <p className={styles.main_text}>October 21, 2022</p>
+                    <p className={styles.main_text}>November 24, 2022</p>
                   </div>
                   <div className={styles.main_blockSm}>
                     <h4 className={styles.main_heading4}>Final Selection</h4>
-                    <p className={styles.main_text}>October 21 - November 1, 2022</p>
+                    <p className={styles.main_text}>November 24 - December 18, 2022</p>
                   </div>
                   <div className={styles.main_blockSm}>
                     <h4 className={styles.main_heading4}>Public Examination Committee / Award Ceremony</h4>
@@ -305,7 +305,7 @@ const ArtPage = ({ location }) => {
                 <p className={styles.main_text}>Entrants must confirm that they meet the criteria outlined below prior to application.</p>
               </div>
               <div className={styles.main_blockSm}>
-                <p className={styles.main_text}>Works must be submitted between 10:00 JST on August 23 and 10:00 JST on October 13, 2022 in order to be eligible for prizes.  </p>
+                <p className={styles.main_text}>Works must be submitted between 10:00 JST on August 23 and 10:00 JST on October 31, 2022 in order to be eligible for prizes.  </p>
                 <p className={styles.main_annotation}>※Works which have been updated and resubmitted are eligible as long as it is within the above-stated time period.<br/>※There is no limit to the number of works an entrant may submit.</p>
                 <p className={styles.main_text}>□ Applicants must own the copyright of the work they submit.  If someone other than the author (copyright holder) submits the work, the entrant must obtain permission from the copyright holder.</p>
                 <p className={styles.main_text}>□ Professional and amateur artists are welcome.</p>

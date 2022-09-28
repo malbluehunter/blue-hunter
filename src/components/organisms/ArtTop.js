@@ -35,7 +35,7 @@ const ArtTop = () => {
           <div className={styles.mv_announceBottom}>
             <dl>
               <dt>応募期間</dt>
-              <dd>2022年10月13日(木) 10:00まで</dd>
+              <dd>2022年10月31日(月) 10:00まで</dd>
             </dl>
           </div>
         </div>

@@ -200,7 +200,7 @@ const ArtPage = ({ location }) => {
               <p className={`${styles.main_text} ${styles.main_textLg}`}>
                 作品募集 2022年8月23日(火) 日本時間10:00~
                 <br className={styles.sp_only} />
-                10月13日(木)日本時間10:00
+                10月31日(月)日本時間10:00
               </p>
               <p className={styles.main_annotation}>※作品の応募には、「応募申込」と一次審査通過者には「審査用資料の提出」が必要です。</p>
               <ol className={styles.main_numberList}>
@@ -234,15 +234,15 @@ const ArtPage = ({ location }) => {
                   <h3 className={styles.main_heading3}>3.スケジュール</h3>
                   <div className={styles.main_blockSm}>
                     <h4 className={styles.main_heading4}>一次審査</h4>
-                    <p className={styles.main_text}>2022年8月23日〜10月13日</p>
+                    <p className={styles.main_text}>2022年8月23日〜10月31日</p>
                   </div>
                   <div className={styles.main_blockSm}>
                     <h4 className={styles.main_heading4}>一次選考結果発表</h4>
-                    <p className={styles.main_text}>2022年10月21日</p>
+                    <p className={styles.main_text}>2022年11月24日</p>
                   </div>
                   <div className={styles.main_blockSm}>
                     <h4 className={styles.main_heading4}>最終審査期間</h4>
-                    <p className={styles.main_text}>2022年10月21日〜11月1日</p>
+                    <p className={styles.main_text}>2022年10月24日〜12月18日</p>
                   </div>
                   <div className={styles.main_blockSm}>
                     <h4 className={styles.main_heading4}>公開審査会・表彰式</h4>
@@ -304,7 +304,7 @@ const ArtPage = ({ location }) => {
                 <p className={styles.main_text}>応募する作品が下記に該当するかを必ず確認の上でご応募ください。</p>
               </div>
               <div className={styles.main_blockSm}>
-                <p className={styles.main_text}>□ 2022 年 8月 23 日 日本時間10:00から 2022 年 10月 13 日 日本時間10:00までの間に完成または、すでに完成してこの期間内に投稿された作品。</p>
+                <p className={styles.main_text}>□ 2022 年 8月 23 日 日本時間10:00から 2022 年 10月 13日 日本時間10:00までの間に完成または、すでに完成してこの期間内に投稿された作品。</p>
                 <p className={styles.main_annotation}>※更新、リニューアルされた作品で上記期間中に完成、または発表された作品も応募可能<br/>※応募する作品数に制限なし</p>
                 <p className={styles.main_text}>□ 応募者は作品の著作権を有することが必須。  作者&#040;著作権者&#041;以外の方が応募する場合は、必ず著作権者に承諾を得てください。</p>
                 <p className={styles.main_text}>□プロ/アマ問わず応募可</p>
