@@ -146,11 +146,11 @@
     transform: translateX(0);
   }
   @media screen and (min-width: 1160px){
-    margin-top: calc(100vw * 80 / 1366);
+    margin-top: 80px;
     max-width: 640px;
   }
   @include mq(lg) {
-    margin-top: 80px;
+    margin-top: calc(100vw * 80 / 1366);
     max-width: calc(100vw * 640 / 1366);
   }
 }
