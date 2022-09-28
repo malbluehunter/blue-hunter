@@ -33,7 +33,7 @@ const ArtTopEn = () => {
             <p>Total amount <span><span className={styles.mv_price}>650,000</span> JPY!</span></p>
           </div>
           <div className={styles.mv_announceBottom}>
-            <p>Submit by October 13, <br className={styles.sp_only}/>2022 10am (JST)</p>
+            <p>Submit by October 31, <br className={styles.sp_only}/>2022 10am (JST)</p>
           </div>
         </div>
       </div>
