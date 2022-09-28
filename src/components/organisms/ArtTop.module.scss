@@ -314,7 +314,7 @@
   }
 
   @include mq(md) {
-    top: 130px;
+    top: calc(100vw * 130 / 1366);
     left: calc(50% - 27vw);
     max-width: calc(100vw * 390 / 1366);
   }
