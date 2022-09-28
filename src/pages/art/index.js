@@ -242,7 +242,7 @@ const ArtPage = ({ location }) => {
                   </div>
                   <div className={styles.main_blockSm}>
                     <h4 className={styles.main_heading4}>最終審査期間</h4>
-                    <p className={styles.main_text}>2022年10月24日〜12月18日</p>
+                    <p className={styles.main_text}>2022年11月24日〜12月18日</p>
                   </div>
                   <div className={styles.main_blockSm}>
                     <h4 className={styles.main_heading4}>公開審査会・表彰式</h4>
