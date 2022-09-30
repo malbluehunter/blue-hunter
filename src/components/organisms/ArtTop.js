@@ -39,7 +39,7 @@ const ArtTop = () => {
             <p>総額<span>65</span>万円!</p>
           </div>
           <div className={styles.mv_announceBottom}>
-            <p>ノミネート作品発表は2022年11月xx日です</p>
+            <p>ノミネート作品発表は2022年11月24日です</p>
           </div>
         </div>
         <p className={styles.mv_notice}>2022年度作品の募集は締め切りました。<br className={styles.showSp} />現在一次審査中です。</p>
