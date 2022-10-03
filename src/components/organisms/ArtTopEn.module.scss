@@ -325,12 +325,14 @@
   }
 
   @include mq(md) {
-    top: calc(100vw * 130 / 1366);
+    top: calc(100vw * 190 / 1366);
     left: calc(50% - 27vw);
     max-width: calc(100vw * 390 / 1366);
   }
-  @media screen and (min-width: 1160px){
+  @include mq(lg) {
     top: calc(100vw * 130 / 1366);
+  }
+  @media screen and (min-width: 1160px){
     left: calc(50% - 27vw);
     max-width: calc(100vw * 390 /1366);
   }
