@@ -1,0 +1,44 @@
+.op {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.opSvgWrap {
+  position: absolute;
+	top: 46%;
+	left: 49.5%;
+  transform: translate(-50%, -50%);
+  max-width: 1150px;
+  width: 100%;
+}
+
+.opSvgWrap svg {
+  max-width: 1130px;
+  width: 100%;
+}
+
+.opSvgWrap svg path {
+  fill-opacity: 0;/*最初は透過0で見えない状態*/
+  transition: fill-opacity .5s;/*カラーがつく際のアニメーション0.5秒で変化*/
+  fill: none;/*塗りがない状態*/
+  stroke: #333;/*線の色*/
+}
+
+.opSvgWrap svg.done path{
+  fill: #333;/*塗りの色*/
+  fill-opacity: 1;/*透過1で見える状態*/
+  stroke: none;/*線の色なし*/
+}
+
+// #mask path{
+//   fill: #333;/*塗りの色*/
+//   fill-opacity: 1;/*透過1で見える状態*/
+//   stroke: none;/*線の色なし*/
+// }
