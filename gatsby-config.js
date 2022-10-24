@@ -20,6 +20,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
