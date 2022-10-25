@@ -155,8 +155,8 @@ const LpPage = ({ location }) => {
 
           </div>
 
-          <div id="section1" data-num="1" ref={addToTargets} className={styles.sec1}>
-            <p className={styles.lead_curtain_txt}>
+          <div data-num="1" ref={addToTargets} className={styles.sec1}>
+            <p className={styles.lead_curtain_txt} id="section1">
               <span>What is the Manga Project <br className={styles.showSp} />for the Ocean’s Future?</span>
             </p>
             <h2 className={styles.lead_main_txt}>
@@ -225,10 +225,10 @@ const LpPage = ({ location }) => {
                 <h2 className={styles.sec_cont_logo}>
                   <img src="/manga-project/area2_logo.svg" alt="" />
                 </h2>
-                <p className={styles.sec_text}>The first BLUE HUNTER Art Competition was held with great success in 2021, with 691 entries from 49 countries around the world. Based on the same theme of “original ideas that capture the future of the ocean”, the contest has returned once more with some exciting upgrades. With an amazing total of 650,000 JPY in cash prizes, this year’s contest will accept not only illustrations but 3DCG submissions with its new “3DCG Prize” category. Submissions are open until October 23, 2022, with an awards ceremony planned to take place in December.
+                <p className={styles.sec_text}>The first BLUE HUNTER Art Competition was held with great success in 2021, with 691 entries from 49 countries around the world. Based on the same theme of “original ideas that capture the future of the ocean”, the contest has returned once more with some exciting upgrades. With an amazing total of 650,000 JPY in cash prizes, this year’s contest will accept not only illustrations but 3DCG submissions with its new “3DCG Prize” category. Submissions are open until October 31, 2022, with an awards ceremony planned to take place in December.
                 </p>
                 <div className={styles.sec_linkGroup}>
-                  <a className={`${styles.sec_linkBtn} ${styles.sec_linkBtn2}`}  href="https://manga.uminohi.jp/en/art/">Official site</a>
+                  <a className={`${styles.sec_linkBtn} ${styles.sec_linkBtn2}`}  href="https://manga.uminohi.jp/en/art/" target="_blank" rel="noopener">Official site</a>
                   <a className={styles.sec_linkTwitter} href="https://twitter.com/BlueHunter_Art" target="_blank" rel="noopener">
                     <img src="/manga-project/icon_twitter.svg" alt=""/>
                   </a>
@@ -255,7 +255,7 @@ const LpPage = ({ location }) => {
                 </h2>
                 <p className={styles.sec_text}>Top minds and cutting-edge technology gather from all corners of the Earth to embark on a mission to classify all species to inhabit our oceans — including millions yet to even be discovered.<br />Magnificent bounties await as we face the mysteries of the seven seas in this epic fantastical adventure.</p>
                 <div>
-                  <a className={`${styles.sec_linkBtn} ${styles.sec_linkBtn3}`}  href="https://manga.uminohi.jp/en/">Official site</a>
+                  <a className={`${styles.sec_linkBtn} ${styles.sec_linkBtn3}`}  href="https://manga.uminohi.jp/en/" target="_blank" rel="noopener">Official site</a>
                 </div>
               </div>
             </div>
@@ -276,18 +276,18 @@ const LpPage = ({ location }) => {
               </a>
             </div>
           </div>
-          <button className={styles.scroll_top} onClick={() => scrollTo('#top')}>ページトップへ戻る</button>
+          <button className={styles.scroll_top} onClick={() => scrollTo('#top')}>Back to Top</button>
         </section>
       </div>
       <nav id="pagination" className={styles.pagination}>
         <ul className={styles.paginationList}>
           <li className={styles.paginationItem}>
             <button onClick={() => scrollTo('#section1')} ref={ref1}></button>
-            <div className={styles.paginationHoverTxt}>プロジェクト概要</div>
+            <div className={styles.paginationHoverTxt}>What is the Manga Project<br />for the Ocean’s Future?</div>
           </li>
           <li className={styles.paginationItem}>
             <button onClick={() => scrollTo('#section2')} ref={ref2}></button>
-            <div className={styles.paginationHoverTxt}>BLUE HUNTER<br />真夏の時とカイリュウ</div>
+            <div className={styles.paginationHoverTxt}>BLUE HUNTER<br />-Manatsu to Toki no Kairyu-</div>
           </li>
           <li className={styles.paginationItem}>
             <button onClick={() => scrollTo('#section3')} ref={ref3}></button>
