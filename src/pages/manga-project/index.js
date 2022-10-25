@@ -155,8 +155,8 @@ const LpPage = ({ location }) => {
 
           </div>
 
-          <div id="section1" data-num="1" ref={addToTargets} className={styles.sec1}>
-            <p className={styles.lead_curtain_txt}>
+          <div className={styles.sec1} data-num="1" ref={addToTargets}>
+            <p className={styles.lead_curtain_txt} id="section1">
               <span>海洋マンガによる<br className={styles.showSp} />海の未来普及プロジェクトとは？</span>
             </p>
             <h2 className={styles.lead_main_txt}>
@@ -225,10 +225,10 @@ const LpPage = ({ location }) => {
                 <h2 className={styles.sec_cont_logo}>
                   <img src="/manga-project/area2_logo.svg" alt="" />
                 </h2>
-                <p className={styles.sec_text}>昨年49カ国691件の応募があった『BLUE HUNTER Art Competition』をバージョンアップし、グローバルで第二弾を開催中。応募締め切りは2022年10月13日。「未来の海洋を表現する独創的な投稿作品」に対して、総額65万円の賞金が贈られます。今回はイラストのみではなく、3DCG作品の応募も受け付け”3DCG賞”を設けております。 12月にアワードイベントを開催し、受賞作品を表彰いたします。
+                <p className={styles.sec_text}>昨年49カ国691件の応募があった『BLUE HUNTER Art Competition』をバージョンアップし、グローバルで第二弾を開催中。応募締め切りは2022年10月31日。「未来の海洋を表現する独創的な投稿作品」に対して、総額65万円の賞金が贈られます。今回はイラストのみではなく、3DCG作品の応募も受け付け”3DCG賞”を設けております。 12月にアワードイベントを開催し、受賞作品を表彰いたします。
                 </p>
                 <div className={styles.sec_linkGroup}>
-                  <a className={`${styles.sec_linkBtn} ${styles.sec_linkBtn2}`}  href="https://manga.uminohi.jp/art/">公式サイトをみる</a>
+                  <a className={`${styles.sec_linkBtn} ${styles.sec_linkBtn2}`}  href="https://manga.uminohi.jp/art/" target="_blank" rel="noopener">公式サイトをみる</a>
                   <a className={styles.sec_linkTwitter} href="https://twitter.com/BlueHunter_Art" target="_blank" rel="noopener">
                     <img src="/manga-project/icon_twitter.svg" alt=""/>
                   </a>
@@ -255,7 +255,7 @@ const LpPage = ({ location }) => {
                 </h2>
                 <p className={styles.sec_text}>「まだ見たことのない海洋生物が、この広い海のどこかに存在しているんだ」<br />未発見生物220万種を含む、地球上全ての海洋生物を発見するというミッションに挑み、世界中の人々の叡知を集結し、海の神秘と莫大な褒賞に挑む壮大なファンタジー。</p>
                 <div>
-                  <a className={`${styles.sec_linkBtn} ${styles.sec_linkBtn3}`}  href="https://manga.uminohi.jp/">公式サイトをみる</a>
+                  <a className={`${styles.sec_linkBtn} ${styles.sec_linkBtn3}`}  href="https://manga.uminohi.jp/" target="_blank" rel="noopener">公式サイトをみる</a>
                 </div>
               </div>
             </div>
@@ -283,11 +283,11 @@ const LpPage = ({ location }) => {
         <ul className={styles.paginationList}>
           <li className={styles.paginationItem}>
             <button onClick={() => scrollTo('#section1')} ref={ref1}></button>
-            <div className={styles.paginationHoverTxt}>プロジェクト概要</div>
+            <div className={styles.paginationHoverTxt}>海洋マンガによる<br />海の未来普及プロジェクトとは？</div>
           </li>
           <li className={styles.paginationItem}>
             <button onClick={() => scrollTo('#section2')} ref={ref2}></button>
-            <div className={styles.paginationHoverTxt}>BLUE HUNTER<br />真夏の時とカイリュウ</div>
+            <div className={styles.paginationHoverTxt}>BLUE HUNTER<br />- 真夏と時のカイリュウ -</div>
           </li>
           <li className={styles.paginationItem}>
             <button onClick={() => scrollTo('#section3')} ref={ref3}></button>
