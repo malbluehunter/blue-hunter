@@ -4,7 +4,7 @@ import "./index.scss"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 import scrollTo from 'gatsby-plugin-smoothscroll';
-// import LpOpening from "../../components/organisms/LpOpening"
+import LpOpening from "../../../components/organisms/LpOpening"
 
 const LpPage = ({ location }) => {
 
@@ -110,7 +110,7 @@ const LpPage = ({ location }) => {
 
       {/* --------------------------------------- mal様修正範囲 開始 --------------------------------------- */}
 
-      {/* <LpOpening /> */}
+      <LpOpening />
       <div className={styles.bgVideoWrap}>
         <video className={styles.bgVideo} src="/manga-project/lp_bg.mov" loop autoPlay muted></video>
       </div>

@@ -17,18 +17,20 @@
 	top: 47%;
 	left: 49.5%;
   transform: translate(-50%, -50%);
-  max-width: 1150px;
   width: 100%;
   padding: 0 23px;
   @include mq(md){
     top: 46%;
     padding: 0;
+    max-width: clamp(920px, 60vw, 1150px);
   }
 }
 
 .opSvgWrap svg {
-  max-width: 1130px;
   width: 100%;
+  @include mq(md){
+    max-width: clamp(904px, 58.8vw, 1130px);
+  }
 }
 
 .opSvgWrap svg path {
