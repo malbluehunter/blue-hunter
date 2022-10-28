@@ -8,19 +8,6 @@ import LpOpening from "../../../components/organisms/LpOpening"
 
 const LpPage = ({ location }) => {
 
-  const addScript = url => {
-    const script = document.createElement("script")
-    script.src = url
-    script.async = true
-    document.body.appendChild(script)
-  }
-
-  useEffect(() => {
-    // addScript("https://code.jquery.com/jquery-3.4.1.min.js")
-    // addScript("https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js")
-    // addScript("https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-5/js/4-1-5.js")
-  },[]);
-
   const targets = useRef([])
   const ref1 = useRef()
   const ref2 = useRef()
