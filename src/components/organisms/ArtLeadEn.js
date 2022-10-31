@@ -21,9 +21,7 @@ const ArtLeadEn = () => {
           <p className={styles.lead_text}>We aim to raise public interest in the future of our oceans and marine life by expanding the world of BLUE HUNTER through artistic thought and vision. </p>
         </div>
         <p className={styles.lead_attention}>*The “Project to raise awareness of the ocean’s future by marine manga” is being led by the General Incorporated Association for the Creation of Manga / Anime / Games as part of the “Umi to Nippon” project by the Nippon Foundation.</p>
-        {/* BH プロジェクト LP ができたらボタン差し替え */}
-        {/* <Link to="/" className={`${styles.lead_btn} ${styles.lead_btnPc}`}>What is the BLUE HUNTER project?</Link>
-        <Link to="/" className={`${styles.lead_btn} ${styles.lead_btnSp}`}>What is the BH project?</Link> */}
+        <Link to="/manga-project/" className={`${styles.lead_btn} ${styles.lead_btnPc}`}>What is the BLUE HUNTER project?</Link>
         <div className={styles.lead_btnComingSoon}>coming soon</div>
       </div>
     </div>
