@@ -27,8 +27,8 @@ const ArtTop = () => {
         </div>
         <div className={styles.mv_balloon}>
           <picture>
-            <source srcSet="/art/img_end_balloon.svg" media="(min-width: 768px)" />
-            <img src="/art/img_end_balloon_sp.svg" width="2390" height="153" alt="応募締め切りました。たくさんのご応募ありがとうございました" />
+            <source srcSet="/art/img_balloon.svg" media="(min-width: 768px)" />
+            <img src="/art/img_balloon_sp.svg" width="2390" height="153" alt="結果発表イベント開催!!" />
           </picture>
         </div>
         <div className={styles.mv_lotoCenter}>
@@ -38,11 +38,11 @@ const ArtTop = () => {
           <div className={styles.mv_announceTop}>
             <p>総額<span>65</span>万円!</p>
           </div>
-          <div className={styles.mv_announceBottom}>
+          {/* <div className={styles.mv_announceBottom}>
             <p>ノミネート作品発表は2022年11月24日です</p>
-          </div>
+          </div> */}
         </div>
-        <p className={styles.mv_notice}>2022年度作品の募集は締め切りました。<br className={styles.showSp} />現在一次審査中です。</p>
+        {/* <p className={styles.mv_notice}>2022年度作品の募集は締め切りました。<br className={styles.showSp} />現在一次審査中です。</p> */}
       </div>
     </div>
   )

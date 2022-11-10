@@ -9,24 +9,55 @@ const ArtLead = () => {
       <div className={styles.lead_inner}>
         <h2 className={styles.lead_title}>
           <picture>
-            <source srcSet="/art/lead_heading.svg" media="(min-width: 768px)" width="819" height="56" />
-            <img src="/art/lead_heading_sp.svg" alt="What is the BLUE HUNTER project?" loading="lazy" />
+            <source srcSet="/art/text_lead_heading.svg" media="(min-width: 768px)" width="819" height="56" />
+            <img src="/art/text_lead_heading_sp.svg" alt="ノミネート作品を公開！結果発表イベントを開催します" loading="lazy" />
           </picture>
         </h2>
-        <div className={styles.lead_textBlock}>
-          <p className={styles.lead_text}>「みんなで海洋の未来を空想し、より良い未来を創る」</p>
-          <p className={styles.lead_text}>全世界で100万人超が熱狂するWebtoon(縦読みマンガ)作品『BLUE HUNTER』を中心に<br className={styles.pc_only}/>
-          ”海洋の未来”をテーマにした物語・世界観を多言語、多メディアで展開。</p>
-          <p className={styles.lead_text}>世界観に共鳴する世界中のBLUE HUNTERファンから、<br className={styles.pc_only} />
-          アートコンペティションを通じて、現実の科学技術を牽引するような独創的な発想(空想)を募集。<br />
-          海洋の専門家を中心とした審査チームが「発想の何が独創的なのか？」<br className={styles.pc_only} />
-          「実現可能性と実現した際の海洋未来へのインパクト」を真剣に検討し、<br className={styles.pc_only} />
-          トークセッションと共にアワード形式のイベントを行い、全世界へ発信。</p>
-          <p className={styles.lead_text}>発想(空想)の力で『BLUE HUNTER』の世界を拡張し人々の関心を高め、<br className={styles.pc_only} />
-          発想(空想)を具現化していく。より良い海洋未来を創るプロジェクトです。</p>
+        <div className={styles.lead_event}>
+          <dl className={styles.lead_event_detail}>
+            <div className={styles.lead_event_item}>
+              <dt>イベント名</dt>
+              <dd><p className={styles.lead_event_txt}>BLUE HUNTER ART COMPETITION AWARD 2022</p></dd>
+            </div>
+            <div className={styles.lead_event_item}>
+              <dt>開催日時</dt>
+              <dd>
+                <p className={styles.lead_event_txt}>2022年12月18日(日)</p>
+                <p className={styles.lead_event_txt_sm}>14時30分入場　15時開始予定</p>
+              </dd>
+            </div>
+            <div className={styles.lead_event_item}>
+              <dt>会場</dt>
+              <dd>
+                <p className={styles.lead_event_txt}>WITH HARAJUKU HALL</p>
+                <p className={styles.lead_event_txt_sm}>東京都渋谷区神宮前1丁目14-30<a href="" className={styles.lead_event_txt_link}>地図で見る</a></p>
+              </dd>
+            </div>
+            <div className={styles.lead_event_item}>
+              <dt>出演者</dt>
+              <dd>
+                <ul className={styles.lead_performer_list}>
+                  <li>
+                    <p className={styles.lead_event_txt}>長江里加<span className={styles.lead_event_txt_sm}>（日下部 真夏役）</span></p>
+                  </li>
+                  <li>
+                    <p className={styles.lead_event_txt}>井上麻里奈<span className={styles.lead_event_txt_sm}>（須藤 藍白役）</span></p>
+                  </li>
+                  <li>
+                    <p className={styles.lead_event_txt}>上田瞳<span className={styles.lead_event_txt_sm}>（真行寺 沙羅役）</span></p>
+                  </li>
+                  <li>
+                    <p className={styles.lead_event_txt}>高橋花林<span className={styles.lead_event_txt_sm}>（漣 燈子役）</span></p>
+                  </li>
+                </ul>
+              </dd>
+            </div>
+          </dl>
         </div>
-        <p className={styles.lead_attention}>※「海洋マンガによる海の未来普及プロジェクト」を推進する一般社団法人マンガ・アニメ・ゲーム教育創造機構は、<br className={styles.pc_only} />日本財団「海と日本プロジェクト」の一環として、本活動を行っております。</p>
-        <Link to="/manga-project/" className={styles.lead_btn}>BLUE HUNTERプロジェクトとは？</Link>
+        <div className={styles.lead_textBlock}>
+          <p className={styles.lead_text}>12月18日にWITH HARAJUKU HALLで、結果発表イベントを行います。<br />イベントへの参加は誰でもできます。<br />イベントの模様はオンラインでも公開されます。楽しみにお待ちください。</p>
+        </div>
+        <Link to="/manga-project/" className={styles.lead_btn}>イベントについて詳細はこちら</Link>
       </div>
     </div>
   )

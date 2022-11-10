@@ -563,6 +563,7 @@ a {
   align-items: center;
   border-radius: 100px;
   background-color: #d7515e;
+  color: #fff;
   @include fz_vw_sp(14);
   font-weight: bold;
   margin-top: get_vw_sp(16);
@@ -760,5 +761,83 @@ a {
 
   @include mq(md) {
     width: 231px;
+  }
+}
+
+.galleryImgList {
+  display: flex;
+}
+
+.galleryImgItem {
+  width: 185px;
+
+  & + & {
+    margin-left: 20px;
+  }
+}
+
+.tabContainer {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  // background-color: #fff;
+}
+
+.tabList {
+  display: flex;
+}
+
+.tabItem {
+  width: 50%;
+  height: 64px;
+  border-top: solid 4px #017A94;
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #017A94;
+    &[aria-selected="true"] {
+      background-color: #fff;
+      color: #017A94;
+    }
+  }
+
+  & + & {
+    margin-left: 8px;
+  }
+}
+
+.tabListBottom {
+  .tabItem {
+    border-top: none;
+    border-bottom: solid 4px #017A94;
+  }
+}
+
+.tabContent {
+  padding: 64px 60px 80px;
+  background-color: #fff;
+}
+
+.tabPanel {
+  &[aria-hidden="true"] {
+    display: none;
+  }
+  &[aria-hidden="false"] {
+    display: block;
+  }
+  p {
+    color: #333;
   }
 }

@@ -248,3 +248,18 @@ label {
 strong {
   font-weight: bold;
 }
+
+
+
+.wrapper {
+  max-width: 1350px;
+  padding: 0px 60px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.wrapper img {
+  cursor: pointer;
+}
