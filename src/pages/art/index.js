@@ -35,9 +35,20 @@ const ArtPage = ({ location }) => {
   const [clickedData, setClickedData] = useState(null);
 
   const handleClick = (item, index) => {
-    console.log(item);
-    setCurrentIndex(index);
+    // console.log(item);
     setClickedData(item);
+
+    if(item.category === "1"){
+      setCurrentIndex(index);
+    }else if(item.category === "2"){
+      setCurrentIndex(index + 4);
+    }else if(item.category === "3"){
+      setCurrentIndex(index + 8);
+    }else if(item.category === "4"){
+      setCurrentIndex(index + 13);
+    }else if(item.category === "5"){
+      setCurrentIndex(index + 17);
+    }
   };
 
   const handelRotationRight = () => {
@@ -76,6 +87,15 @@ const ArtPage = ({ location }) => {
     });
     setClickedData(newData[0]);
   };
+
+  useEffect(() => {
+    const html = document.querySelector('html');
+    if(clickedData){
+      html.style.overflowY = "hidden";
+    } else {
+      html.style.overflowY = "scroll";
+    }
+  }, [clickedData]);
 
   return (
     <>
@@ -140,11 +160,10 @@ const ArtPage = ({ location }) => {
                 {data.data.filter(item => item.category === "1").map((item, index) => (
                   <div key={index} className={styles.galleryImgItem}>
                     <img
-                      src={item.link}
+                      src={item.image[0]}
                       alt={item.title}
-                      onClick={() => handleClick(item, index)}
+                      onClick={() => handleClick(item, index + 0)}
                     />
-                    <h2>{item.title}</h2>
                   </div>
                 ))}
               </div>
@@ -153,50 +172,46 @@ const ArtPage = ({ location }) => {
                 {data.data.filter(item => item.category === "2").map((item, index) => (
                   <div key={index} className={styles.galleryImgItem}>
                     <img
-                      src={item.link}
+                      src={item.image[0]}
                       alt={item.title}
                       onClick={() => handleClick(item, index)}
                     />
-                    <h2>{item.title}</h2>
                   </div>
                 ))}
               </div>
               <h2 className={styles.main_heading2}>未知の海洋生物部門</h2>
               <div className={styles.galleryImgList}>
-                {data.data.filter(item => item.category === "2").map((item, index) => (
+                {data.data.filter(item => item.category === "3").map((item, index) => (
                   <div key={index} className={styles.galleryImgItem}>
                     <img
-                      src={item.link}
+                      src={item.image[0]}
                       alt={item.title}
                       onClick={() => handleClick(item, index)}
                     />
-                    <h2>{item.title}</h2>
                   </div>
                 ))}
               </div>
               <h2 className={styles.main_heading2}>未来の風景・建築部門</h2>
               <div className={styles.galleryImgList}>
-                {data.data.filter(item => item.category === "2").map((item, index) => (
+                {data.data.filter(item => item.category === "4").map((item, index) => (
                   <div key={index} className={styles.galleryImgItem}>
                     <img
-                      src={item.link}
+                      src={item.image[0]}
                       alt={item.title}
                       onClick={() => handleClick(item, index)}
                     />
-                    <h2>{item.title}</h2>
                   </div>
                 ))}
               </div>
               <h2 className={styles.main_heading2}>BLUE HUNTER（新キャラ）部門</h2>
               <div className={styles.galleryImgList}>
-                {data.data.filter(item => item.category === "2").map((item, index) => (
+                {data.data.filter(item => item.category === "5").map((item, index) => (
                   <div key={index} className={styles.galleryImgItem}>
                     <img
-                      src={item.link}
+                      src={item.image[0]}
                       alt={item.title}
                       onClick={() => handleClick(item, index)}
                     />
-                    <h2>{item.title}</h2>
                   </div>
                 ))}
               </div>

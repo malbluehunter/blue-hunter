@@ -6,7 +6,7 @@
   background-size: cover;
   z-index: 10;
   position: relative;
-  height: get_vw_sp(854);
+  height: get_vw_sp(813);
   padding: get_vw_sp(30) get_vw_sp(30) 0;
   @include mq(md) {
     padding: 0;
@@ -26,7 +26,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    bottom:  get_vw_sp(-520);
+    bottom:  get_vw_sp(-480);
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;

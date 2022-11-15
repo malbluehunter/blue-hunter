@@ -18,14 +18,20 @@ const ArtModal = ({
     <>
       <div className={`${styles.overlay} dismiss`} onClick={handleClick}>
         <div className={styles.modal_container}>
-          <img src={clickedData.link} alt="bigger pic" />
+          {clickedData.image.map((img, i) => <div key={i} className={styles.modal_img_wrap}><img src={img} alt="" /></div>)}
+          {clickedData.video &&
+            <video src={clickedData.video} controls/>
+          }
           <div className={styles.modal_product_info}>
-            <p>{clickedData.title}</p>
-            <p>{clickedData.author}</p>
-            <p>{clickedData.function}</p>
-            <p>{clickedData.level}</p>
-            <p>{clickedData.size}</p>
-            <p>{clickedData.feature}</p>
+            {clickedData.title &&
+              <p className={styles.modal_product_title}><span>作品タイトル</span>:{clickedData.title}</p>
+            }
+            {clickedData.author &&
+              <p className={styles.modal_product_author}><span>作者</span>:{clickedData.author}</p>
+            }
+            {clickedData.feature &&
+              <p className={styles.modal_product_feature}><span>作品の説明</span>{clickedData.feature}</p>
+            }
           </div>
         </div>
         <button className={`${styles.btn_close} dismiss`} onClick={handleClick}>
@@ -33,10 +39,12 @@ const ArtModal = ({
             <path d="M93,7.014,90.987,5,83,12.986,75.015,5,73,7.014,80.987,15,73,22.986,75.015,25,83,17.014,90.987,25,93,22.986,85.015,15Z" transform="translate(-73.001 -5)" fill="#fff"/>
           </svg>
         </button>
-        <button onClick={handelRotationLeft} className={styles.overlay_arrows_left}>
-        </button>
-        <button onClick={handelRotationRight} className={styles.overlay_arrows_right}>
-        </button>
+        <div className={styles.overlay_arrows}>
+          <button onClick={handelRotationLeft} className={styles.overlay_arrows_left}>
+          </button>
+          <button onClick={handelRotationRight} className={styles.overlay_arrows_right}>
+          </button>
+        </div>
       </div>
     </>
   );

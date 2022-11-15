@@ -170,7 +170,7 @@ a {
         max-width: 100%;
       }
       @include mq(md) {
-        max-width: 318px;
+        max-width: 339px;
       }
     }
   }
@@ -766,13 +766,63 @@ a {
 
 .galleryImgList {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: calc(100vw * -10 / 375);
+  @include mq(md) {
+    margin-bottom: -20px;
+  }
+
+  & + .main_heading2 {
+    margin-top: calc(100vw * 60 / 375);
+    @include mq(md) {
+      margin-top: 60px;
+    }
+  }
 }
 
 .galleryImgItem {
-  width: 185px;
+  width: calc(100vw * 152 / 375);
+  margin-bottom: calc(100vw * 10 / 375);
 
+  @include mq(md) {
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: calc((100% - 60px) / 4);
+  }
+  @include mq(lg) {
+    width: 185px;
+  }
   & + & {
-    margin-left: 20px;
+    margin-left: calc(100vw * 10 / 375);
+    @include mq(md) {
+      margin-left: 20px;
+    }
+  }
+  &:nth-child(2n + 3){
+    margin-left: 0;
+    @include mq(md) {
+      margin-left: 20px;
+    }
+  }
+  &:nth-child(4n + 5){
+    @include mq(md) {
+      margin-left: 0;
+    }
+  }
+
+  img {
+    width: calc(100vw * 152.5 / 375);
+    height: calc(100vw * 152.5 / 375);
+    object-fit: cover;
+    @include mq(md) {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+    }
+    @include mq(lg) {
+      width: 185px;
+      height: 185px;
+    }
   }
 }
 
@@ -780,7 +830,12 @@ a {
   max-width: 920px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 get_vw_sp(10);
   // background-color: #fff;
+  @include mq(md) {
+    padding: 0;
+    box-shadow: 0 0 50px rgba(#007AAB, 0.1);
+  }
 }
 
 .tabList {
@@ -798,7 +853,7 @@ a {
     outline: none;
     padding: 0;
     appearance: none;
-    font-size: 20px;
+    @include fz_vw_sp(16);
     font-weight: bold;
     color: #fff;
     display: flex;
@@ -810,6 +865,10 @@ a {
     &[aria-selected="true"] {
       background-color: #fff;
       color: #017A94;
+    }
+
+    @include mq(md) {
+      font-size: 20px;
     }
   }
 
@@ -826,8 +885,12 @@ a {
 }
 
 .tabContent {
-  padding: 64px 60px 80px;
   background-color: #fff;
+  padding: get_vw_sp(70) get_vw_sp(20) get_vw_sp(40);
+  
+  @include mq(md) {
+    padding: 79px 60px 80px;
+  }
 }
 
 .tabPanel {

@@ -214,6 +214,7 @@
   position: absolute;
   top: get_vw_sp(-15);
   left: get_vw_sp(-15);
+  z-index: 1;
   @include mq(md) {
     width: 72px;
     height: 72px;

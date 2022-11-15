@@ -23,7 +23,7 @@ const ArtLead = () => {
               <dt>開催日時</dt>
               <dd>
                 <p className={styles.lead_event_txt}>2022年12月18日(日)</p>
-                <p className={styles.lead_event_txt_sm}>14時30分入場　15時開始予定</p>
+                <p className={styles.lead_event_txt_sm}>14時30分入場 15時開始予定</p>
               </dd>
             </div>
             <div className={styles.lead_event_item}>
