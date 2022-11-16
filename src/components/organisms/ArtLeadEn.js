@@ -13,15 +13,51 @@ const ArtLeadEn = () => {
             <img src="/art/lead_heading_sp.svg" alt="What is the BLUE HUNTER project?" loading="lazy"/>
           </picture>
         </h2>
+        <div className={styles.lead_event}>
+          <dl className={styles.lead_event_detail}>
+            <div className={styles.lead_event_item}>
+              <dt>イベント名</dt>
+              <dd><p className={styles.lead_event_txt}>BLUE HUNTER ART COMPETITION AWARD 2022</p></dd>
+            </div>
+            <div className={styles.lead_event_item}>
+              <dt>開催日時</dt>
+              <dd>
+                <p className={styles.lead_event_txt}>2022年12月18日(日)</p>
+                <p className={styles.lead_event_txt_sm}>14時30分入場 15時開始予定</p>
+              </dd>
+            </div>
+            <div className={styles.lead_event_item}>
+              <dt>会場</dt>
+              <dd>
+                <p className={styles.lead_event_txt}>WITH HARAJUKU HALL</p>
+                <p className={styles.lead_event_txt_sm}>東京都渋谷区神宮前1丁目14-30<a href="https://www.google.co.jp/maps/place/WITH+HARAJUKU+HALL/@35.670496,139.7029529,21z/data=!3m1!5s0x60188cbadaff9a03:0x993c37339a5b439e!4m6!3m5!1s0x60188d3ced759743:0xe9cd4e70975bad6b!8m2!3d35.6706188!4d139.7031351!16s%2Fg%2F11fmc3nnn6?hl=en" target="_blank" rel="noopener" className={styles.lead_event_txt_link}>地図で見る</a></p>
+              </dd>
+            </div>
+            <div className={styles.lead_event_item}>
+              <dt>出演者</dt>
+              <dd>
+                <ul className={styles.lead_performer_list}>
+                  <li>
+                    <p className={styles.lead_event_txt}>長江里加<span className={styles.lead_event_txt_sm}>（日下部 真夏役）</span></p>
+                  </li>
+                  <li>
+                    <p className={styles.lead_event_txt}>井上麻里奈<span className={styles.lead_event_txt_sm}>（須藤 藍白役）</span></p>
+                  </li>
+                  <li>
+                    <p className={styles.lead_event_txt}>上田瞳<span className={styles.lead_event_txt_sm}>（真行寺 沙羅役）</span></p>
+                  </li>
+                  <li>
+                    <p className={styles.lead_event_txt}>高橋花林<span className={styles.lead_event_txt_sm}>（漣 燈子役）</span></p>
+                  </li>
+                </ul>
+              </dd>
+            </div>
+          </dl>
+        </div>
         <div className={styles.lead_textBlock}>
           <p className={styles.lead_text}>“Imagining and forging a better future for the ocean, together”</p>
-          <p className={styles.lead_text}>With over 1 million fans worldwide, BLUE HUNTER is a webtoon focused on “the future of the ocean” that has been published in multiple languages and media formats.</p>
-          <p className={styles.lead_text}>Through this contest, we invite fans who resonate with the world of BLUE HUNTER to submit their original ideas and visions. Innovations in science and technology will be led by your creations.  </p>
-          <p className={styles.lead_text}>The panel of judges will include real marine experts, who will judge submissions for their originality and feasibility, as well as the actual impact they might have on the ocean if made a reality. They will also hold a talk session during the awards ceremony.</p>
-          <p className={styles.lead_text}>We aim to raise public interest in the future of our oceans and marine life by expanding the world of BLUE HUNTER through artistic thought and vision. </p>
         </div>
-        <p className={styles.lead_attention}>*The “Project to raise awareness of the ocean’s future by marine manga” is being led by the General Incorporated Association for the Creation of Manga / Anime / Games as part of the “Umi to Nippon” project by the Nippon Foundation.</p>
-        <Link to="/en/manga-project/" className={`${styles.lead_btn} ${styles.lead_btnPc}`}>What is the BLUE HUNTER project?</Link>
+        <Link to="#" className={`${styles.lead_btn}`}>What is the BLUE HUNTER project?</Link>
       </div>
     </div>
   )

@@ -6,7 +6,7 @@
   background-size: cover;
   z-index: 10;
   position: relative;
-  height: get_vw_sp(950);
+  height: get_vw_sp(810);
   padding: get_vw_sp(30) get_vw_sp(30) 0;
   @include mq(md) {
     padding: 0;
@@ -160,6 +160,7 @@
   margin-left: auto;
   margin-right: auto;
   border-top: solid 1px #017A94;
+  border-bottom: solid 1px #017A94; 
   margin-top: get_vw_sp(20);
   background: linear-gradient(to right,rgba(#fff, 0) 0%,rgba(#fff, 1) 15%, rgba(#fff,1) 85%, rgba(#fff, 0) 100%);
   @include mq(md) {

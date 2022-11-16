@@ -38,11 +38,11 @@ const ArtTopEn = () => {
           <div className={styles.mv_announceTop}>
             <p>Total amount <span><span className={styles.mv_price}>650,000</span> JPY!</span></p>
           </div>
-          <div className={styles.mv_announceBottom}>
+          {/* <div className={styles.mv_announceBottom}>
             <p>Preliminary results will be announced on November 11, 2022.</p>
-          </div>
+          </div> */}
         </div>
-        <p className={styles.mv_notice}>Submissions are now being screened as part of the preliminary selection process.</p>
+        {/* <p className={styles.mv_notice}>Submissions are now being screened as part of the preliminary selection process.</p> */}
       </div>
     </div>
   )
