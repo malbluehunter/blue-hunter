@@ -143,6 +143,7 @@ const ArtPage = ({ location }) => {
               </button>
             </li>
           </ul>
+
           <div className={styles.tabContent}>
             <div  className={styles.tabPanel}
                   role="tabpanel"
