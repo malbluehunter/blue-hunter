@@ -30,7 +30,7 @@ const ArtLead = () => {
               <dt>会場</dt>
               <dd>
                 <p className={styles.lead_event_txt}>WITH HARAJUKU HALL</p>
-                <p className={styles.lead_event_txt_sm}>東京都渋谷区神宮前1丁目14-30<a href="" className={styles.lead_event_txt_link}>地図で見る</a></p>
+                <p className={styles.lead_event_txt_sm}>東京都渋谷区神宮前1丁目14-30<a href="https://www.google.co.jp/maps/place/WITH+HARAJUKU+HALL/@35.670496,139.7029529,21z/data=!3m1!5s0x60188cbadaff9a03:0x993c37339a5b439e!4m6!3m5!1s0x60188d3ced759743:0xe9cd4e70975bad6b!8m2!3d35.6706188!4d139.7031351!16s%2Fg%2F11fmc3nnn6?hl=ja" target="_blank" rel="noopener" className={styles.lead_event_txt_link}>地図で見る</a></p>
               </dd>
             </div>
             <div className={styles.lead_event_item}>
@@ -57,7 +57,7 @@ const ArtLead = () => {
         <div className={styles.lead_textBlock}>
           <p className={styles.lead_text}>12月18日にWITH HARAJUKU HALLで、結果発表イベントを行います。<br />イベントへの参加は誰でもできます。<br />イベントの模様はオンラインでも公開されます。楽しみにお待ちください。</p>
         </div>
-        <Link to="/manga-project/" className={styles.lead_btn}>イベントについて詳細はこちら</Link>
+        <Link to="#" className={styles.lead_btn}>イベントについて詳細はこちら</Link>
       </div>
     </div>
   )
