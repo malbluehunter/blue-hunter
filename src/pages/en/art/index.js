@@ -155,7 +155,7 @@ const ArtPage = ({ location }) => {
                 </picture>
                 <span>ノミネート作品</span>
               </h2>
-              <h2 className={styles.main_heading2}>ハンターアイテム部門</h2>
+              <h2 className={styles.main_heading2}>Hunter Item Category</h2>
               <div className={styles.galleryImgList}>
                 {data.data.filter(item => item.category === "1").map((item, index) => (
                   <div key={index} className={styles.galleryImgItem}>
@@ -167,7 +167,7 @@ const ArtPage = ({ location }) => {
                   </div>
                 ))}
               </div>
-              <h2 className={styles.main_heading2}>未来の船舶・移動手段部門</h2>
+              <h2 className={styles.main_heading2}>Future Vessels and Transport Category</h2>
               <div className={styles.galleryImgList}>
                 {data.data.filter(item => item.category === "2").map((item, index) => (
                   <div key={index} className={styles.galleryImgItem}>
@@ -179,7 +179,7 @@ const ArtPage = ({ location }) => {
                   </div>
                 ))}
               </div>
-              <h2 className={styles.main_heading2}>未知の海洋生物部門</h2>
+              <h2 className={styles.main_heading2}>Undiscovered Marine Life Category</h2>
               <div className={styles.galleryImgList}>
                 {data.data.filter(item => item.category === "3").map((item, index) => (
                   <div key={index} className={styles.galleryImgItem}>
@@ -191,7 +191,7 @@ const ArtPage = ({ location }) => {
                   </div>
                 ))}
               </div>
-              <h2 className={styles.main_heading2}>未来の風景・建築部門</h2>
+              <h2 className={styles.main_heading2}>Future Landscape / Architecture Category</h2>
               <div className={styles.galleryImgList}>
                 {data.data.filter(item => item.category === "4").map((item, index) => (
                   <div key={index} className={styles.galleryImgItem}>
@@ -203,7 +203,7 @@ const ArtPage = ({ location }) => {
                   </div>
                 ))}
               </div>
-              <h2 className={styles.main_heading2}>BLUE HUNTER（新キャラ）部門</h2>
+              <h2 className={styles.main_heading2}>Blue Hunter (Original Character) Category</h2>
               <div className={styles.galleryImgList}>
                 {data.data.filter(item => item.category === "5").map((item, index) => (
                   <div key={index} className={styles.galleryImgItem}>

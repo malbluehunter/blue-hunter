@@ -9,8 +9,8 @@ const ArtLeadEn = () => {
       <div className={styles.lead_inner}>
         <h2 className={styles.lead_title}>
           <picture>
-            <source srcSet="/art/lead_heading.svg" media="(min-width: 768px)" width="819" height="56" />
-            <img src="/art/lead_heading_sp.svg" alt="What is the BLUE HUNTER project?" loading="lazy"/>
+            <source srcSet="/art/text_lead_heading.svg" media="(min-width: 768px)" width="819" height="56" />
+            <img src="/art/text_lead_heading_sp.svg" alt="ノミネート作品を公開！結果発表イベントを開催します" loading="lazy" />
           </picture>
         </h2>
         <div className={styles.lead_event}>
@@ -30,7 +30,7 @@ const ArtLeadEn = () => {
               <dt>会場</dt>
               <dd>
                 <p className={styles.lead_event_txt}>WITH HARAJUKU HALL</p>
-                <p className={styles.lead_event_txt_sm}>東京都渋谷区神宮前1丁目14-30<a href="https://www.google.co.jp/maps/place/WITH+HARAJUKU+HALL/@35.670496,139.7029529,21z/data=!3m1!5s0x60188cbadaff9a03:0x993c37339a5b439e!4m6!3m5!1s0x60188d3ced759743:0xe9cd4e70975bad6b!8m2!3d35.6706188!4d139.7031351!16s%2Fg%2F11fmc3nnn6?hl=en" target="_blank" rel="noopener" className={styles.lead_event_txt_link}>地図で見る</a></p>
+                <p className={styles.lead_event_txt_sm}>東京都渋谷区神宮前1丁目14-30<a href="https://www.google.co.jp/maps/place/WITH+HARAJUKU+HALL/@35.670355,139.7024034,18.61z/data=!3m1!5s0x60188cbadaff9a03:0x993c37339a5b439e!4m6!3m5!1s0x60188d3ced759743:0xe9cd4e70975bad6b!8m2!3d35.6706188!4d139.7031351!16s%2Fg%2F11fmc3nnn6?hl=en" target="_blank" rel="noopener" className={styles.lead_event_txt_link}>地図で見る</a></p>
               </dd>
             </div>
             <div className={styles.lead_event_item}>
@@ -55,9 +55,9 @@ const ArtLeadEn = () => {
           </dl>
         </div>
         <div className={styles.lead_textBlock}>
-          <p className={styles.lead_text}>“Imagining and forging a better future for the ocean, together”</p>
+          <p className={styles.lead_text}>12月18日にWITH HARAJUKU HALLで、結果発表イベントを行います。<br />イベントへの参加は誰でもできます。<br />イベントの模様はオンラインでも公開されます。楽しみにお待ちください。</p>
         </div>
-        <Link to="#" className={`${styles.lead_btn}`}>What is the BLUE HUNTER project?</Link>
+        <Link to="#" className={`${styles.lead_btn}`}>ダミーテキストダミーテキスト</Link>
       </div>
     </div>
   )
