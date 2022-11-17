@@ -27,8 +27,8 @@ const ArtTopEn = () => {
         </div>
         <div className={styles.mv_balloon}>
           <picture>
-            <source srcSet="/art/img_balloon.svg" media="(min-width: 768px)" />
-            <img src="/art/img_balloon_sp.svg" width="2390" height="153" alt="結果発表イベント開催!!" />
+            <source srcSet="/art/img_balloon_en.svg" media="(min-width: 768px)" />
+            <img src="/art/img_balloon_en_sp.svg" width="2390" height="153" alt="Preliminary Results Announcement Event!" />
           </picture>
         </div>
         <div className={styles.mv_lotoCenter}>

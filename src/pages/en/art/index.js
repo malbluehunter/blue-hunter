@@ -130,7 +130,7 @@ const ArtPage = ({ location }) => {
                       aria-controls="panel1"
                       aria-selected={state.tab === 'panel1'}
                       onClick={handleTabClick}>
-                ノミネート作品
+                Nominations
               </button>
             </li>
             <li role="presentation" className={styles.tabItem}>
@@ -138,7 +138,7 @@ const ArtPage = ({ location }) => {
                       aria-controls="panel2"
                       aria-selected={state.tab === 'panel2'}
                       onClick={handleTabClick}>
-                コンテストについて
+                About the contest
               </button>
             </li>
           </ul>
@@ -712,7 +712,7 @@ const ArtPage = ({ location }) => {
                       aria-controls="panel1"
                       aria-selected={state.tab === 'panel1'}
                       onClick={handleTabClick}>
-                ノミネート作品
+                Nominations
               </button>
             </li>
             <li role="presentation" className={styles.tabItem}>
@@ -720,7 +720,7 @@ const ArtPage = ({ location }) => {
                       aria-controls="panel2"
                       aria-selected={state.tab === 'panel2'}
                       onClick={handleTabClick}>
-                コンテストについて
+                About the contest
               </button>
             </li>
           </ul>

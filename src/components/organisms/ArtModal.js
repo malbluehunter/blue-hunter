@@ -20,7 +20,7 @@ const ArtModal = ({
         <div className={styles.modal_container}>
           {clickedData.image.map((img, i) => <div key={i} className={styles.modal_img_wrap}><img src={img} alt="" /></div>)}
           {clickedData.video &&
-            <video src={clickedData.video} controls/>
+            clickedData.video.map((elem, i) => <div key={i} className={styles.modal_video_wrap}><video src={elem} controls/></div>)
           }
           <div className={styles.modal_product_info}>
             {clickedData.title &&

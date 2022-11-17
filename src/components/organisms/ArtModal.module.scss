@@ -188,3 +188,17 @@
 .modal_img_wrap + .modal_img_wrap {
   margin-top: 20px;
 }
+
+.modal_img_wrap + .modal_video_wrap {
+  margin-top: 20px;
+}
+
+.modal_video_wrap + .modal_video_wrap {
+  margin-top: 20px;
+}
+
+.modal_video_wrap {
+  video {
+    width: 100%;
+  }
+}
