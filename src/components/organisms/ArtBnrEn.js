@@ -13,7 +13,7 @@ const ArtBnrEn = () => {
             <h3 className={styles.bnr_title}>BLUE HUNTER's World</h3>
           </div>
           <div className={styles.bnr_top}>
-            <Link to="/">
+            <Link to="/en/manga-project/">
               <picture>
                 <source srcSet="/art/bnr_about.png" media="(min-width: 768px)" />
                 <img src="/art/bnr_about_sp.jpg" width="316" height="180" alt="BLUE HUNTERプロジェクトとは? What is the BLUE HUNTER project?" />
