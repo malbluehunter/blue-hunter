@@ -24,7 +24,7 @@ const ArtModal = ({
           }
           <div className={styles.modal_product_info}>
             {clickedData.title &&
-              <p className={styles.modal_product_title}><span>作品タイトル / Title of  artwork</span>:{clickedData.title}</p>
+              <p className={styles.modal_product_title}><span>作品タイトル / Title of artwork</span>:{clickedData.title}</p>
             }
             {clickedData.author &&
               <p className={styles.modal_product_author}><span>作者 / Name of artist</span>:{clickedData.author}</p>
