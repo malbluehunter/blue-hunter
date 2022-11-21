@@ -8,8 +8,7 @@ const ArtBnr = () => {
     <div className={styles.bnr_area}>
       <div className={styles.bnr_inner}>
 
-        {/* 初回公開時非表示 */}
-        {/* <div className={styles.bnr_block}>
+        <div className={styles.bnr_block}>
           <div className={styles.bnr_titleWrap}>
             <h3 className={styles.bnr_title}>BLUE HUNTERの世界</h3>
           </div>
@@ -21,7 +20,7 @@ const ArtBnr = () => {
               </picture>
             </Link>
           </div>
-        </div> */}
+        </div>
         <div className={styles.bnr_block}>
           <div className={`${styles.bnr_titleWrap} ${styles.bnr_titleWrapVer2}`}>
             <h3 className={styles.bnr_title}>連載マンガ</h3>
