@@ -38,16 +38,16 @@ const ArtLeadEn = () => {
               <dd>
                 <ul className={styles.lead_performer_list}>
                   <li>
-                    <p className={styles.lead_event_txt}>長江里加<span className={styles.lead_event_txt_sm}>（日下部 真夏役）</span></p>
+                    <p className={styles.lead_event_txt}>Rika Nagae<span className={styles.lead_event_txt_sm}>（VA: Manatsu Kusakabe）</span></p>
                   </li>
                   <li>
-                    <p className={styles.lead_event_txt}>井上麻里奈<span className={styles.lead_event_txt_sm}>（須藤 藍白役）</span></p>
+                    <p className={styles.lead_event_txt}>Marina Inoue<span className={styles.lead_event_txt_sm}>（VA: Ashiro Sudo）</span></p>
                   </li>
                   <li>
-                    <p className={styles.lead_event_txt}>上田瞳<span className={styles.lead_event_txt_sm}>（真行寺 沙羅役）</span></p>
+                    <p className={styles.lead_event_txt}>Hitomi Ueda<span className={styles.lead_event_txt_sm}>（VA: Sara Shingyoji）</span></p>
                   </li>
                   <li>
-                    <p className={styles.lead_event_txt}>高橋花林<span className={styles.lead_event_txt_sm}>（漣 燈子役）</span></p>
+                    <p className={styles.lead_event_txt}>Karin Takahashi<span className={styles.lead_event_txt_sm}>（VA: Toko Sazanami）</span></p>
                   </li>
                 </ul>
               </dd>
