@@ -23,16 +23,16 @@ const ArtTopEn = () => {
       </div>
       <div className={styles.mv_main}>
         <div className={styles.mv_lotoTop}>
-          <img src="/art/logo_mv_main.png" width="417" height="80" alt="BLUEHUNTER 真夏と時のカイリュウ" />
+          <img src="/art/logo_mv_main.png" width="417" height="80" alt="BLUEHUNTER Manatsu to Toki no Kairyu" />
         </div>
         <div className={styles.mv_balloon}>
           <picture>
-            <source srcSet="/art/img_balloon_en.svg" media="(min-width: 768px)" />
-            <img src="/art/img_balloon_en_sp.svg" width="2390" height="153" alt="Preliminary Results Announcement Event!" />
+            <source srcSet="/art/img_balloon_en.svg?221121" media="(min-width: 768px)" />
+            <img src="/art/img_balloon_en_sp.svg?221121" width="2390" height="153" alt="Preliminary Results Announcement" />
           </picture>
         </div>
         <div className={styles.mv_lotoCenter}>
-          <img src="/art/logo_art_compe.svg" width="640" height="348" alt="BLUE HUNTER Art Contest ブルーハンターアートコンペティションvol.2 "/>
+          <img src="/art/logo_art_compe.svg" width="640" height="348" alt="BLUE HUNTER Art Contest Art Contest vol.2 "/>
         </div>
         <div className={styles.mv_announce}>
           <div className={styles.mv_announceTop}>

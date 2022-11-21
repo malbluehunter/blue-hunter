@@ -10,7 +10,7 @@ const ArtLeadEn = () => {
         <h2 className={styles.lead_title}>
           <picture>
             <source srcSet="/art/text_lead_heading_en.svg" media="(min-width: 768px)" width="819" height="56" />
-            <img src="/art/text_lead_heading_en_sp.svg" alt="ノミネート作品を公開！結果発表イベントを開催します" loading="lazy" />
+            <img src="/art/text_lead_heading_en_sp.svg" alt="Preliminary Results Are Out! Award Ceremony" loading="lazy" />
           </picture>
         </h2>
         <div className={styles.lead_event}>
