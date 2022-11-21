@@ -55,7 +55,7 @@ const ArtLeadEn = () => {
           </dl>
         </div>
         <div className={styles.lead_textBlock}>
-          <p className={styles.lead_text}>Entries that were nominated by the judges during the preliminary selection process will be announced on December 18 at WITH HARAJUKU HALL via a special event. The event will be shared online, and everyone is welcome to join. Look forward to it! </p>
+          <p className={styles.lead_text}>Entries chosen by the judges during the final selection process will be announced at the special event held at WITH HARAJUKU HALL on December 18.</p>
         </div>
         {/* 詳細がないのでボタンを非表示にする */}
         {/* <Link to="#" className={`${styles.lead_btn}`}>Learn more about the event</Link> */}
