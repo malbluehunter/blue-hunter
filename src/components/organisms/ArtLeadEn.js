@@ -30,7 +30,7 @@ const ArtLeadEn = () => {
               <dt>Location</dt>
               <dd>
                 <p className={styles.lead_event_txt}>WITH HARAJUKU HALL</p>
-                <p className={styles.lead_event_txt_sm}>東京都渋谷区神宮前1丁目14-30<a href="https://www.google.co.jp/maps/place/WITH+HARAJUKU+HALL/@35.670355,139.7024034,18.61z/data=!3m1!5s0x60188cbadaff9a03:0x993c37339a5b439e!4m6!3m5!1s0x60188d3ced759743:0xe9cd4e70975bad6b!8m2!3d35.6706188!4d139.7031351!16s%2Fg%2F11fmc3nnn6?hl=en" target="_blank" rel="noopener" className={styles.lead_event_txt_link}>地図で見る</a></p>
+                <p className={styles.lead_event_txt_sm}>1-14-30 Jingumae, Shibuya-ku, Tokyo<a href="https://www.google.co.jp/maps/place/WITH+HARAJUKU+HALL/@35.670355,139.7024034,18.61z/data=!3m1!5s0x60188cbadaff9a03:0x993c37339a5b439e!4m6!3m5!1s0x60188d3ced759743:0xe9cd4e70975bad6b!8m2!3d35.6706188!4d139.7031351!16s%2Fg%2F11fmc3nnn6?hl=en" target="_blank" rel="noopener" className={styles.lead_event_txt_link}>View map</a></p>
               </dd>
             </div>
             <div className={styles.lead_event_item}>
