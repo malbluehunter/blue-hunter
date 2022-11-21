@@ -57,7 +57,8 @@ const ArtLead = () => {
         <div className={styles.lead_textBlock}>
           <p className={styles.lead_text}>12月18日にWITH HARAJUKU HALLで、結果発表イベントを行います。<br />イベントへの参加は誰でもできます。<br />イベントの模様はオンラインでも公開されます。楽しみにお待ちください。</p>
         </div>
-        <Link to="#" className={styles.lead_btn}>イベントについて詳細はこちら</Link>
+        {/* 詳細がないのでボタンを非表示にする */}
+        {/* <Link to="#" className={styles.lead_btn}>イベントについて詳細はこちら</Link> */}
       </div>
     </div>
   )
