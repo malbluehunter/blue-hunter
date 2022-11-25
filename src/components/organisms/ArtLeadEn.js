@@ -9,11 +9,11 @@ const ArtLeadEn = () => {
       <div className={styles.lead_inner}>
         <h2 className={styles.lead_title}>
           <picture>
-            <source srcSet="/art/text_lead_heading_en.svg" media="(min-width: 768px)" width="819" height="56" />
-            <img src="/art/text_lead_heading_en_sp.svg" alt="Preliminary Results Are Out! Award Ceremony" loading="lazy" />
+            <source srcSet="/art/text_lead_heading_final_en.svg" media="(min-width: 768px)" width="819" height="56" />
+            <img src="/art/text_lead_heading_final_en_sp.svg" alt="Thank you for all your submissions" loading="lazy" />
           </picture>
         </h2>
-        <div className={styles.lead_event}>
+        {/* <div className={styles.lead_event}>
           <dl className={styles.lead_event_detail}>
             <div className={styles.lead_event_item}>
               <dt>Event</dt>
@@ -56,7 +56,7 @@ const ArtLeadEn = () => {
         </div>
         <div className={styles.lead_textBlock}>
           <p className={styles.lead_text}>Entries chosen by the judges during the final selection process will be announced at the special event held at WITH HARAJUKU HALL on December 18.</p>
-        </div>
+        </div> */}
         {/* 詳細がないのでボタンを非表示にする */}
         {/* <Link to="#" className={`${styles.lead_btn}`}>Learn more about the event</Link> */}
       </div>

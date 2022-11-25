@@ -9,11 +9,11 @@ const ArtLead = () => {
       <div className={styles.lead_inner}>
         <h2 className={styles.lead_title}>
           <picture>
-            <source srcSet="/art/text_lead_heading.svg" media="(min-width: 768px)" width="819" height="56" />
-            <img src="/art/text_lead_heading_sp.svg" alt="ノミネート作品を公開！結果発表イベントを開催します" loading="lazy" />
+            <source srcSet="/art/text_lead_heading_final.svg" media="(min-width: 768px)" width="819" height="56" />
+            <img src="/art/text_lead_heading_final_sp.svg" alt="コンペは終了しました たくさんのご応募ありがとうございました" loading="lazy" />
           </picture>
         </h2>
-        <div className={styles.lead_event}>
+        {/* <div className={styles.lead_event}>
           <dl className={styles.lead_event_detail}>
             <div className={styles.lead_event_item}>
               <dt>イベント名</dt>
@@ -56,7 +56,7 @@ const ArtLead = () => {
         </div>
         <div className={styles.lead_textBlock}>
           <p className={styles.lead_text}>12月18日にWITH HARAJUKU HALLで、結果発表イベントを行います。<br />イベントへの参加は誰でもできます。<br />イベントの模様はオンラインでも公開されます。楽しみにお待ちください。</p>
-        </div>
+        </div> */}
         {/* 詳細がないのでボタンを非表示にする */}
         {/* <Link to="#" className={styles.lead_btn}>イベントについて詳細はこちら</Link> */}
       </div>
