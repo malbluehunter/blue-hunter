@@ -14,7 +14,7 @@ const LayoutArtEn = ({ children }) => {
         {/* <Header /> */}
         <ArtTopEn />
         <ArtLeadEn />
-        <main>
+        <main className={styles.main}>
           <div className={styles.contents_wrapper}>{children}</div>
           <ScrollToTop />
         </main>

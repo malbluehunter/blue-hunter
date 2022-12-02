@@ -187,7 +187,7 @@ const ArtPage = ({ location }) => {
                       aria-controls="panel2"
                       aria-selected={state.tab === 'panel2'}
                       onClick={handleTabClick}>
-                ノミネート作品
+                ノミネート<br className={styles.showSp}/>作品
               </button>
             </li>
             <li role="presentation" className={styles.tabItem}>
@@ -195,7 +195,7 @@ const ArtPage = ({ location }) => {
                       aria-controls="panel3"
                       aria-selected={state.tab === 'panel3'}
                       onClick={handleTabClick}>
-                コンテストについて
+                コンテスト<br className={styles.showSp}/>について
               </button>
             </li>
           </ul>
@@ -205,18 +205,18 @@ const ArtPage = ({ location }) => {
                     role="tabpanel"
                     id="panel1"
                     aria-hidden={state.tab !== 'panel1'}>
-              <h2 className={styles.youtube_title}>BLUE HUNTER アートコンペティション 表彰式</h2>
+              <h2 className={styles.youtube_title}>BLUE HUNTER アートコンペティション <br className={styles.showSp}/>表彰式</h2>
               <div className={styles.youtube}>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/R8qj9zHk5-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HbJCu_PNDWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <h2 className={`${styles.main_imgHeading} ${styles.main_imgHeadingTheme}`}>
+              <h2 className={`${styles.main_imgHeading} ${styles.main_imgHeadingResult}`}>
                 <picture>
                   <source srcSet="/art/text_result_award.svg" media="(min-width: 768px)" />
                   <img src="/art/text_result_award_sp.svg" alt="Result Announcement" />
                 </picture>
                 <span>結果発表</span>
               </h2>
-              <h2 className={styles.main_heading2}>BH大賞……賞金 20万円</h2>
+              <h2 className={styles.main_heading2}>BH大賞⋯⋯賞金 20万円</h2>
               <div className={styles.awardImg}>
                 <img
                   src={awardData.data[0].image[0]}
@@ -224,7 +224,7 @@ const ArtPage = ({ location }) => {
                   onClick={() => handleAwardClick(awardData.data[0],0)}
                 />
               </div>
-              <h2 className={styles.main_heading2}>審査員特別賞……賞金10万円</h2>
+              <h2 className={styles.main_heading2}>審査員特別賞⋯⋯賞金10万円</h2>
               <div className={styles.awardImg}>
                 <img
                     src={awardData.data[1].image[0]}
@@ -232,7 +232,7 @@ const ArtPage = ({ location }) => {
                     onClick={() => handleAwardClick(awardData.data[1],1)}
                 />
               </div>
-              <h2 className={styles.main_heading2}>3DCG賞……賞金10万円</h2>
+              <h2 className={styles.main_heading2}>3DCG賞⋯⋯賞金10万円</h2>
               <div className={styles.awardImg}>
                 <img
                     src={awardData.data[2].image[0]}
@@ -240,7 +240,7 @@ const ArtPage = ({ location }) => {
                     onClick={() => handleAwardClick(awardData.data[2],2)}
                 />
               </div>
-              <h2 className={styles.main_heading2}>未知の海洋生物部門賞……賞金5万円</h2>
+              <h2 className={styles.main_heading2}>未知の海洋生物部門賞⋯⋯賞金5万円</h2>
               <div className={styles.awardImg}>
                 <img
                     src={awardData.data[3].image[0]}
@@ -248,7 +248,7 @@ const ArtPage = ({ location }) => {
                     onClick={() => handleAwardClick(awardData.data[3],3)}
                 />
               </div>
-              <h2 className={styles.main_heading2}>未来の船舶・移動手段部門賞……賞金5万円</h2>
+              <h2 className={styles.main_heading2}>未来の船舶・移動手段部門賞⋯⋯賞金5万円</h2>
               <div className={styles.awardImg}>
                 <img
                     src={awardData.data[4].image[0]}
@@ -256,7 +256,7 @@ const ArtPage = ({ location }) => {
                     onClick={() => handleAwardClick(awardData.data[4],4)}
                 />
               </div>
-              <h2 className={styles.main_heading2}>未来の風景・建築部門賞……賞金5万円</h2>
+              <h2 className={styles.main_heading2}>未来の風景・建築部門賞⋯⋯賞金5万円</h2>
               <div className={styles.awardImg}>
                 <img
                     src={awardData.data[5].image[0]}
@@ -264,7 +264,7 @@ const ArtPage = ({ location }) => {
                     onClick={() => handleAwardClick(awardData.data[5],5)}
                 />
               </div>
-              <h2 className={styles.main_heading2}>BLUE HUNTER（新キャラ）賞……賞金5万円</h2>
+              <h2 className={styles.main_heading2}>BLUE HUNTER（新キャラ）賞⋯⋯賞金5万円</h2>
               <div className={styles.awardImg}>
                 <img
                     src={awardData.data[6].image[0]}
@@ -272,7 +272,7 @@ const ArtPage = ({ location }) => {
                     onClick={() => handleAwardClick(awardData.data[6],6)}
                 />
               </div>
-              <h2 className={styles.main_heading2}>ハンターアイテム部門賞……賞金5万円</h2>
+              <h2 className={styles.main_heading2}>ハンターアイテム部門賞⋯⋯賞金5万円</h2>
               <div className={styles.awardImg}>
                 <img
                     src={awardData.data[7].image[0]}
@@ -864,7 +864,7 @@ const ArtPage = ({ location }) => {
                       aria-controls="panel2"
                       aria-selected={state.tab === 'panel2'}
                       onClick={handleTabClick}>
-                ノミネート作品
+                ノミネート<br className={styles.showSp}/>作品
               </button>
             </li>
             <li role="presentation" className={styles.tabItem}>
@@ -872,7 +872,7 @@ const ArtPage = ({ location }) => {
                       aria-controls="panel3"
                       aria-selected={state.tab === 'panel3'}
                       onClick={handleTabClick}>
-                コンテストについて
+                コンテスト<br className={styles.showSp}/>について
               </button>
             </li>
           </ul>

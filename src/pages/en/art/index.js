@@ -3,7 +3,8 @@ import * as styles from "./index.module.scss"
 import { Helmet } from "react-helmet"
 import LayoutArtEn from "../../../components/templates/LayoutArtEn"
 import { Link } from "gatsby"
-import data from "../../../data/nomination_list.json";
+import nominationData from "../../../data/nomination_list.json";
+import awardData from "../../../data/award_list.json";
 import ArtModal from "../../../components/organisms/ArtModal";
 
 const ArtPage = ({ location }) => {
@@ -30,71 +31,114 @@ const ArtPage = ({ location }) => {
     });
   }, []);
 
-  const [currentIndex, setCurrentIndex] = useState(null);
-  const [clickedData, setClickedData] = useState(null);
+  const [currentNominationIndex, setCurrentNominationIndex] = useState(null);
+  const [clickedNominationData, setClickedNominationData] = useState(null);
+  const [currentAwardIndex, setCurrentAwardIndex] = useState(null);
+  const [clickedAwardData, setClickedAwardData] = useState(null);
 
-  const handleClick = (item, index) => {
-    // console.log(item);
-    setClickedData(item);
+  const handleNominationClick = (item, index) => {
+    setClickedNominationData(item);
 
     if(item.category === "1"){
-      setCurrentIndex(index);
+      setCurrentNominationIndex(index);
     }else if(item.category === "2"){
-      setCurrentIndex(index + 4);
+      setCurrentNominationIndex(index + 4);
     }else if(item.category === "3"){
-      setCurrentIndex(index + 8);
+      setCurrentNominationIndex(index + 8);
     }else if(item.category === "4"){
-      setCurrentIndex(index + 13);
+      setCurrentNominationIndex(index + 13);
     }else if(item.category === "5"){
-      setCurrentIndex(index + 17);
+      setCurrentNominationIndex(index + 17);
     }
   };
 
   const handelRotationRight = () => {
-    const totalLength = data.data.length;
-    if (currentIndex + 1 >= totalLength) {
-      setCurrentIndex(0);
+    const totalLength = nominationData.data.length;
+    if (currentNominationIndex + 1 >= totalLength) {
+      setCurrentNominationIndex(0);
 
-      const newData = data.data[0];
-      setClickedData(newData);
+      const newData = nominationData.data[0];
+      setClickedNominationData(newData);
       return;
     }
-    const newIndex = currentIndex + 1;
-    setCurrentIndex(newIndex);
+    const newIndex = currentNominationIndex + 1;
+    setCurrentNominationIndex(newIndex);
 
-    const newData = data.data.filter((item) => {
-      return data.data.indexOf(item) === newIndex;
+    const newData = nominationData.data.filter((item) => {
+      return nominationData.data.indexOf(item) === newIndex;
     });
-    setClickedData(newData[0]);
+    setClickedNominationData(newData[0]);
   };
 
   const handelRotationLeft = () => {
-    const totalLength = data.data.length;
-    if (currentIndex === 0) {
-      setCurrentIndex(totalLength - 1);
+    const totalLength = nominationData.data.length;
+    if (currentNominationIndex === 0) {
+      setCurrentNominationIndex(totalLength - 1);
 
-      const newData = data.data[totalLength - 1];
-      setClickedData(newData);
+      const newData = nominationData.data[totalLength - 1];
+      setClickedNominationData(newData);
       return;
     }
-    const newIndex = currentIndex - 1;
+    const newIndex = currentNominationIndex - 1;
 
-    setCurrentIndex(newIndex);
+    setCurrentNominationIndex(newIndex);
 
-    const newData = data.data.filter((item) => {
-      return data.data.indexOf(item) === newIndex;
+    const newData = nominationData.data.filter((item) => {
+      return nominationData.data.indexOf(item) === newIndex;
     });
-    setClickedData(newData[0]);
+    setClickedNominationData(newData[0]);
+  };
+
+  const handleAwardClick = (item, index) => {
+    setClickedAwardData(item);
+    setCurrentAwardIndex(index);
+  };
+
+  const handelRotationRight2 = () => {
+    const totalLength = awardData.data.length;
+    if (currentAwardIndex + 1 >= totalLength) {
+      setCurrentAwardIndex(0);
+
+      const newData = awardData.data[0];
+      setClickedAwardData(newData);
+      return;
+    }
+    const newIndex = currentAwardIndex + 1;
+    setCurrentAwardIndex(newIndex);
+
+    const newData = awardData.data.filter((item) => {
+      return awardData.data.indexOf(item) === newIndex;
+    });
+    setClickedAwardData(newData[0]);
+  };
+
+  const handelRotationLeft2 = () => {
+    const totalLength = awardData.data.length;
+    if (currentAwardIndex === 0) {
+      setCurrentAwardIndex(totalLength - 1);
+
+      const newData = awardData.data[totalLength - 1];
+      setClickedAwardData(newData);
+      return;
+    }
+    const newIndex = currentAwardIndex - 1;
+
+    setCurrentAwardIndex(newIndex);
+
+    const newData = awardData.data.filter((item) => {
+      return awardData.data.indexOf(item) === newIndex;
+    });
+    setClickedAwardData(newData[0]);
   };
 
   useEffect(() => {
     const html = document.querySelector('html');
-    if(clickedData){
+    if(clickedNominationData || clickedAwardData ){
       html.style.overflowY = "hidden";
     } else {
       html.style.overflowY = "scroll";
     }
-  }, [clickedData]);
+  }, [clickedNominationData, clickedAwardData]);
 
   return (
     <>
@@ -130,7 +174,7 @@ const ArtPage = ({ location }) => {
                       aria-controls="panel1"
                       aria-selected={state.tab === 'panel1'}
                       onClick={handleTabClick}>
-                Nominations
+                Winners
               </button>
             </li>
             <li role="presentation" className={styles.tabItem}>
@@ -138,16 +182,114 @@ const ArtPage = ({ location }) => {
                       aria-controls="panel2"
                       aria-selected={state.tab === 'panel2'}
                       onClick={handleTabClick}>
+                Nominations
+              </button>
+            </li>
+            <li role="presentation" className={styles.tabItem}>
+              <button role="tab"
+                      aria-controls="panel3"
+                      aria-selected={state.tab === 'panel3'}
+                      onClick={handleTabClick}>
                 About the contest
               </button>
             </li>
           </ul>
 
           <div className={styles.tabContent}>
+          <div className={styles.tabPanel}
+                    role="tabpanel"
+                    id="panel1"
+                    aria-hidden={state.tab !== 'panel1'}>
+              <h2 className={styles.youtube_title}>BLUE HUNTER Art Contest Awards Ceremony</h2>
+              <div className={styles.youtube}>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HbJCu_PNDWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <h2 className={`${styles.main_imgHeading} ${styles.main_imgHeadingResult}`}>
+                <picture>
+                  <source srcSet="/art/text_result_award.svg" media="(min-width: 768px)" />
+                  <img src="/art/text_result_award_sp.svg" alt="Result Announcement" />
+                </picture>
+                <span>結果発表</span>
+              </h2>
+              <h2 className={styles.main_heading2}>BH Grand⋯⋯Prize200,000 JPY</h2>
+              <div className={styles.awardImg}>
+                <img
+                  src={awardData.data[0].image[0]}
+                  alt={awardData.data[0].title}
+                  onClick={() => handleAwardClick(awardData.data[0],0)}
+                />
+              </div>
+              <h2 className={styles.main_heading2}>Judges’ Special⋯⋯Prize100,000 JPY</h2>
+              <div className={styles.awardImg}>
+                <img
+                    src={awardData.data[1].image[0]}
+                    alt={awardData.data[1].title}
+                    onClick={() => handleAwardClick(awardData.data[1],1)}
+                />
+              </div>
+              <h2 className={styles.main_heading2}>3DCG⋯⋯Prize100,000 JPY</h2>
+              <div className={styles.awardImg}>
+                <img
+                    src={awardData.data[2].image[0]}
+                    alt={awardData.data[2].title}
+                    onClick={() => handleAwardClick(awardData.data[2],2)}
+                />
+              </div>
+              <h2 className={styles.main_heading2}>Undiscovered Marine Life Category⋯⋯Prize50,000 JPY</h2>
+              <div className={styles.awardImg}>
+                <img
+                    src={awardData.data[3].image[0]}
+                    alt={awardData.data[3].title}
+                    onClick={() => handleAwardClick(awardData.data[3],3)}
+                />
+              </div>
+              <h2 className={styles.main_heading2}>Future Water Vessels and Transport Category⋯⋯Prize50,000 JPY</h2>
+              <div className={styles.awardImg}>
+                <img
+                    src={awardData.data[4].image[0]}
+                    alt={awardData.data[4].title}
+                    onClick={() => handleAwardClick(awardData.data[4],4)}
+                />
+              </div>
+              <h2 className={styles.main_heading2}>Future Landscape / Architecture Category⋯⋯Prize50,000 JPY</h2>
+              <div className={styles.awardImg}>
+                <img
+                    src={awardData.data[5].image[0]}
+                    alt={awardData.data[5].title}
+                    onClick={() => handleAwardClick(awardData.data[5],5)}
+                />
+              </div>
+              <h2 className={styles.main_heading2}>Blue Hunter (Original Character) Category⋯⋯Prize50,000 JPY</h2>
+              <div className={styles.awardImg}>
+                <img
+                    src={awardData.data[6].image[0]}
+                    alt={awardData.data[6].title}
+                    onClick={() => handleAwardClick(awardData.data[6],6)}
+                />
+              </div>
+              <h2 className={styles.main_heading2}>Hunter Item Category⋯⋯Prize50,000 JPY</h2>
+              <div className={styles.awardImg}>
+                <img
+                    src={awardData.data[7].image[0]}
+                    alt={awardData.data[7].title}
+                    onClick={() => handleAwardClick(awardData.data[7],7)}
+                />
+              </div>
+              <div>
+                {clickedAwardData && (
+                  <ArtModal
+                    handelRotationRight={handelRotationRight2}
+                    handelRotationLeft={handelRotationLeft2}
+                    clickedData={clickedAwardData}
+                    setClickedData={setClickedAwardData}
+                  />
+                )}
+              </div>
+            </div>
             <div  className={styles.tabPanel}
                   role="tabpanel"
-                  id="panel1"
-                  aria-hidden={state.tab !== 'panel1'}>
+                  id="panel2"
+                  aria-hidden={state.tab !== 'panel2'}>
               <h2 className={`${styles.main_imgHeading} ${styles.main_imgHeadingTheme}`}>
                 <picture>
                   <source srcSet="/art/text_nominee.svg" media="(min-width: 768px)" />
@@ -157,73 +299,71 @@ const ArtPage = ({ location }) => {
               </h2>
               <h2 className={styles.main_heading2}>Hunter Item Category</h2>
               <div className={styles.galleryImgList}>
-                {data.data.filter(item => item.category === "1").map((item, index) => (
+              {nominationData.data.filter(item => item.category === "1").map((item, index) => (
                   <div key={index} className={styles.galleryImgItem}>
                     <img
                       src={item.image[0]}
                       alt={item.title}
-                      onClick={() => handleClick(item, index + 0)}
+                      onClick={() => handleNominationClick(item, index)}
                     />
                   </div>
                 ))}
               </div>
               <h2 className={styles.main_heading2}>Future Vessels and Transport Category</h2>
               <div className={styles.galleryImgList}>
-                {data.data.filter(item => item.category === "2").map((item, index) => (
+              {nominationData.data.filter(item => item.category === "2").map((item, index) => (
                   <div key={index} className={styles.galleryImgItem}>
                     <img
                       src={item.image[0]}
                       alt={item.title}
-                      onClick={() => handleClick(item, index)}
+                      onClick={() => handleNominationClick(item, index)}
                     />
                   </div>
                 ))}
               </div>
               <h2 className={styles.main_heading2}>Undiscovered Marine Life Category</h2>
               <div className={styles.galleryImgList}>
-                {data.data.filter(item => item.category === "3").map((item, index) => (
+              {nominationData.data.filter(item => item.category === "3").map((item, index) => (
                   <div key={index} className={styles.galleryImgItem}>
                     <img
                       src={item.image[0]}
                       alt={item.title}
-                      onClick={() => handleClick(item, index)}
+                      onClick={() => handleNominationClick(item, index)}
                     />
                   </div>
                 ))}
               </div>
               <h2 className={styles.main_heading2}>Future Landscape / Architecture Category</h2>
               <div className={styles.galleryImgList}>
-                {data.data.filter(item => item.category === "4").map((item, index) => (
+              {nominationData.data.filter(item => item.category === "4").map((item, index) => (
                   <div key={index} className={styles.galleryImgItem}>
                     <img
                       src={item.image[0]}
                       alt={item.title}
-                      onClick={() => handleClick(item, index)}
+                      onClick={() => handleNominationClick(item, index)}
                     />
                   </div>
                 ))}
               </div>
               <h2 className={styles.main_heading2}>Blue Hunter (Original Character) Category</h2>
               <div className={styles.galleryImgList}>
-                {data.data.filter(item => item.category === "5").map((item, index) => (
+              {nominationData.data.filter(item => item.category === "5").map((item, index) => (
                   <div key={index} className={styles.galleryImgItem}>
                     <img
                       src={item.image[0]}
                       alt={item.title}
-                      onClick={() => handleClick(item, index)}
+                      onClick={() => handleNominationClick(item, index)}
                     />
                   </div>
                 ))}
               </div>
               <div>
-                {clickedData && (
+              {clickedNominationData && (
                   <ArtModal
-                    // clickedImg={clickedImg}
                     handelRotationRight={handelRotationRight}
-                    // setClickedImg={setClickedImg}
                     handelRotationLeft={handelRotationLeft}
-                    clickedData={clickedData}
-                    setClickedData={setClickedData}
+                    clickedData={clickedNominationData}
+                    setClickedData={setClickedNominationData}
                   />
                 )}
               </div>
@@ -231,8 +371,8 @@ const ArtPage = ({ location }) => {
 
             <div  className={styles.tabPanel}
                   role="tabpanel"
-                  id="panel2"
-                  aria-hidden={state.tab !== 'panel2'}>
+                  id="panel3"
+                  aria-hidden={state.tab !== 'panel3'}>
               <div className={styles.main_blockLg}>
                 <h2 className={`${styles.main_imgHeading} ${styles.main_imgHeadingTheme}`}>
                   <picture>
@@ -712,13 +852,21 @@ const ArtPage = ({ location }) => {
                       aria-controls="panel1"
                       aria-selected={state.tab === 'panel1'}
                       onClick={handleTabClick}>
-                Nominations
+                Winners
               </button>
             </li>
             <li role="presentation" className={styles.tabItem}>
               <button role="tab"
                       aria-controls="panel2"
                       aria-selected={state.tab === 'panel2'}
+                      onClick={handleTabClick}>
+                Nominations
+              </button>
+            </li>
+            <li role="presentation" className={styles.tabItem}>
+              <button role="tab"
+                      aria-controls="panel3"
+                      aria-selected={state.tab === 'panel3'}
                       onClick={handleTabClick}>
                 About the contest
               </button>

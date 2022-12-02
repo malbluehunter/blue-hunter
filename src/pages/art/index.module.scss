@@ -161,6 +161,18 @@ a {
   picture {
     width: 100%;
   }
+  &Result {
+    img {
+      max-width: 242px;
+      width: 100%;
+      @include mq(sm) {
+        max-width: 100%;
+      }
+      @include mq(md) {
+        max-width: 552px;
+      }
+    }
+  }
 
   &Theme {
     img {
@@ -833,8 +845,8 @@ a {
   padding: 0 get_vw_sp(10);
   // background-color: #fff;
   @include mq(md) {
-    padding: 0;
     box-shadow: 0 0 50px rgba(#007AAB, 0.1);
+    padding: 0;
   }
 }
 
@@ -844,8 +856,9 @@ a {
 
 .tabItem {
   width: 50%;
-  height: 64px;
+  height: get_vw_sp(64);
   border-top: solid 4px #017A94;
+  box-shadow: 0 0 50px rgba(#007AAB, 0.1);
   button {
     background-color: transparent;
     border: none;
@@ -872,6 +885,11 @@ a {
     }
   }
 
+  @include mq(md) {
+    height: 64px;
+    box-shadow: none;
+  }
+
   & + & {
     margin-left: 8px;
   }
@@ -887,9 +905,10 @@ a {
 .tabContent {
   background-color: #fff;
   padding: get_vw_sp(70) get_vw_sp(20) get_vw_sp(40);
-  
+  box-shadow: 0 0 50px rgba(#007AAB, 0.1);
   @include mq(md) {
     padding: 79px 60px 80px;
+    box-shadow: none;
   }
 }
 
@@ -927,10 +946,20 @@ a {
 
 .awardImg {
 
+  @include mq(md) {
+    padding: 0 60px;
+  }
   & + .main_heading2 {
     margin-top: calc(100vw * 60 / 375);
     @include mq(md) {
       margin-top: 60px;
     }
+  }
+}
+
+.showSp {
+  display: block;
+  @include mq(md) {
+    display: none;
   }
 }
