@@ -211,7 +211,7 @@ const ArtPage = ({ location }) => {
                 </picture>
                 <span>結果発表</span>
               </h2>
-              <h2 className={styles.main_heading2}>BH Grand⋯⋯Prize200,000 JPY</h2>
+              <h2 className={styles.main_heading2}>BH Grand Prize⋯⋯200,000 JPY</h2>
               <div className={styles.awardImg}>
                 <img
                   src={awardData.data[0].image[0]}
