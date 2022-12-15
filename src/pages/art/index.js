@@ -207,7 +207,7 @@ const ArtPage = ({ location }) => {
                     aria-hidden={state.tab !== 'panel1'}>
               <h2 className={styles.youtube_title}>BLUE HUNTER アートコンペティション <br className={styles.showSp}/>表彰式</h2>
               <div className={styles.youtube}>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/HbJCu_PNDWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MDXy1OQVt-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <h2 className={`${styles.main_imgHeading} ${styles.main_imgHeadingResult}`}>
                 <picture>
