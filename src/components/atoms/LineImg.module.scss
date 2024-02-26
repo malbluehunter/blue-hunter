@@ -1,9 +1,0 @@
-@import "../../assets/scss/mixin";
-
-.line_area {
-  display: none;
-
-  @include mq(md) {
-    display: block;
-  }
-}
